@@ -24,9 +24,12 @@
 
    <!-- Script
    ================================================== -->
-   <script src="app.js"></script>
-   <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=webViewers">   
-   </script>
+   <script>
+   function cb(response) {
+   document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/www.bluehawana.com/visits?callback=cb"></script>
 
    <!-- Favicons
 	================================================== -->
