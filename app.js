@@ -1,3 +1,3 @@
-function websiteViewers(response) {
-  document.getElementById("visits").innerText = response.Value;
+function webViewers(response) {
+  document.getElementById("visits").innerText = response.value;
 }
