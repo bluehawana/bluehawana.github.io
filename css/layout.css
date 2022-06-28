@@ -212,12 +212,12 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 100%;
 }
 .profile-pic2{
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
   position:absolute;
   top: 13px;
   right: 5px;
-  margin-top: 14px;
+  margin-top: 15px;
 }
 
 #about .contact-details { width: 41.66667%; }
