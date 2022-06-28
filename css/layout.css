@@ -216,8 +216,8 @@ ul#nav li.current a { color: #F06000; }
   height: 50px;
   position:absolute;
   top: 11px;
-  right: 10px;
-  margin-top: 1px;
+  right: 6px;
+  margin-top: 0;
 }
 
 #about .contact-details { width: 41.66667%; }
