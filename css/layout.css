@@ -266,6 +266,15 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
+.pic  {
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top: 11px;
+  right: 10px;
+  margin-top: 1px;
+}
+
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
