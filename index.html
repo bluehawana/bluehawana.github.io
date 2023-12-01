@@ -26,13 +26,15 @@
    ================================================== -->
 
 
-<script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
 <script>
-   function javascriptCallback(response) {
-    // Logic to hide the Turnstile overlay
-    document.querySelector('.cf-turnstile').style.display = 'none';
-    // Additional logic once Turnstile is completed
-   }
+function javascriptCallback(response) {
+    // Hides the Turnstile overlay upon successful verification
+    var turnstileOverlay = document.querySelector('.cf-turnstile');
+    if (turnstileOverlay) {
+        turnstileOverlay.style.display = 'none';
+    }
+    // Additional logic can be added here if needed
+}
 </script>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
