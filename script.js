@@ -1,13 +1,18 @@
 // script.js
 
-function turnstileCallback(token) {
-  console.log("Turnstile token:", token);
-  // You can perform actions here after the Turnstile challenge is completed
-  // Example: Hide the Turnstile widget
-  var turnstileWidget = document.querySelector(".cf-turnstile");
-  if (turnstileWidget) {
-    turnstileWidget.style.display = "none";
-  }
+function turnstileCallback(response) {
+    console.log('Turnstile verification response:', response);
+    setTimeout(function() {
+        var turnstileOverlay = document.querySelector('.cf-turnstile');
+        if (turnstileOverlay) {
+            console.log('Hiding Turnstile overlay');
+            turnstileOverlay.style.display = 'none';
+        } else {
+            console.error('Turnstile overlay not found');
+        }
+    }, 1000); // Delay of 1000 milliseconds (1 second)
+}
+
 
   // If you had a server-side endpoint, you'd send the token to it for validation
   // Example:
