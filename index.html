@@ -27,8 +27,15 @@
 
 
 <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
-<script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb">  </script>
+<script>
+   function javascriptCallback(response) {
+    // Logic to hide the Turnstile overlay
+    document.querySelector('.cf-turnstile').style.display = 'none';
+    // Additional logic once Turnstile is completed
+   }
+</script>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
    <!-- Favicons
 	================================================== -->
