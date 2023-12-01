@@ -28,12 +28,18 @@
 
 <script>
 function javascriptCallback(response) {
-    // Hides the Turnstile overlay upon successful verification
-    var turnstileOverlay = document.querySelector('.cf-turnstile');
-    if (turnstileOverlay) {
-        turnstileOverlay.style.display = 'none';
-    }
-    // Additional logic can be added here if needed
+    console.log('Turnstile verification response:', response);
+
+    // Delay execution to ensure Turnstile is fully loaded and interactive
+    setTimeout(function() {
+        var turnstileOverlay = document.querySelector('.cf-turnstile');
+        if (turnstileOverlay) {
+            console.log('Hiding Turnstile overlay');
+            turnstileOverlay.style.display = 'none';
+        } else {
+            console.error('Turnstile overlay not found');
+        }
+    }, 500); // Delay of 500 milliseconds
 }
 </script>
 
