@@ -1,16 +1,31 @@
 // script.js
 
-function turnstileCallback(response) {
-  console.log("Turnstile verification response:", response);
+function turnstileCallback(token) {
+  console.log("Turnstile token:", token);
 
-  // Delay execution to ensure Turnstile is fully loaded and interactive
-  setTimeout(function () {
-    var turnstileOverlay = document.querySelector(".cf-turnstile");
-    if (turnstileOverlay) {
-      console.log("Hiding Turnstile overlay");
-      turnstileOverlay.style.display = "none";
-    } else {
-      console.error("Turnstile overlay not found");
-    }
-  }, 500); // Delay of 500 milliseconds
+  // Replace with your Cloudflare Worker's endpoint
+  const workerEndpoint = "https://turnstilebot.bluehawana.workers.dev/";
+
+  fetch(workerEndpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ token: token }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Verification result:", data);
+      if (data.success) {
+        // CAPTCHA verified successfully
+        // You can now proceed with form submission or other actions
+        console.log("CAPTCHA verification successful");
+      } else {
+        // CAPTCHA verification failed
+        console.error("CAPTCHA verification failed");
+      }
+    })
+    .catch((error) => {
+      console.error("Error during CAPTCHA verification:", error);
+    });
 }
