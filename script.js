@@ -38,7 +38,7 @@ function sendTokenToServer(token) {
 
 // Function to render the Turnstile widget and handle the generated token
 function onloadTurnstileCallback() {
-  turnstile.render("#example-container", {
+  turnstile.render("#turnstile-container", {
     sitekey: "0x4AAAAAAALTkPrvFDCTqdiq", // Replace with your actual Turnstile site key
     callback: function (token) {
       console.log(`Challenge Success: ${token}`);
