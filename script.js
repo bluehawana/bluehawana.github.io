@@ -10,18 +10,15 @@ function sendTokenToServer(token) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ token: token }),
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
       console.log("Verification result:", data);
       if (data.success) {
         console.log("CAPTCHA verification successful");
+        // Hide the Turnstile widget
+        document.getElementById("turnstile-container").style.display = "none";
         // Reveal the rest of the website or continue with form submission
-        document.getElementById("your-website-content").style.display = "block";
+        document.getElementById("main-content").style.display = "block";
       } else {
         console.error(
           "CAPTCHA verification failed",
