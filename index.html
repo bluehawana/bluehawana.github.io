@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Hongzhi Li's Portfolio</title>
-	<meta name="description" content="Hongzhi Li - Full-Stack Developer and Cloud Architect">
+	<title>https://bluehawana.com</title>
+	<meta name="description" content="">
 	<meta name="author" content="">
-   <link rel="preload" href="/script.js" as="script">
 
    <!-- Mobile Specific Metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
@@ -25,19 +26,18 @@
    ================================================== -->
 
 
+<script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
+<script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb">  </script>
 
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png?v=2" >
-
+	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
 
 <body>
-<!-- Turnstile CAPTCHA container -->
-<div id="turnstile-container"></div>
-<div id="main-content" style="display:none;">
+
    <!-- Header
    ================================================== -->
    <header id="home">
@@ -58,6 +58,16 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Tjena, jag heter Hongzhi Li.</h1>
+         
+
+            <ul class="social">
+               <li><a href="https://twitter.com/bluehawana"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://bluehawana.com"><i class="fa fa-external-link"></i></a></li>
+               <li><a href="https://linkedin.com/in/hzl"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://instagram.com/bluehawana"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://youtube.com/channel/UCQya5ebWMfkXh65wUfqDdXQ"><i class="fa fa-youtube"></i></a></li>
+               <li><a href="https://github.com/bluehawana"><i class="fa fa-github"></i></a></li>
+            </ul>
          </div>
       </div>
 
@@ -97,7 +107,7 @@
 
    </section> <!-- About Section End-->
 
-   <div class="cf-turnstile turnstile-overlay" data-sitekey="0x4AAAAAAALTkPrvFDCTqdiq" data-callback="turnstileCallback"></div>
+   <div class="cf-turnstile" data-sitekey="0x4AAAAAAAN9UuAZLjzLIKRD" data-callback="javascriptCallback"></div>
 
    <!-- Resume Section
    ================================================== -->
@@ -471,11 +481,6 @@
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
 -->
-
-</div>
-<!-- Turnstile and custom scripts -->
-<script src="script.js"></script>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 
 </body>
 
