@@ -11,24 +11,43 @@ async function fetchLinkedInPosts() {
         }
         
         const postsContainer = document.getElementById('linkedin-posts');
-        if (!postsContainer) return;
+        const postsFullContainer = document.getElementById('linkedin-posts-full');
         
-        postsContainer.innerHTML = '';
+        if (postsContainer) {
+            postsContainer.innerHTML = '';
+            // Show latest 3 posts for homepage
+            posts.slice(0, 3).forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.className = 'linkedin-post';
+                
+                postElement.innerHTML = `
+                    <p>${post.content}</p>
+                    <div class="post-date">
+                        <small>${new Date(post.date).toLocaleDateString()} • <a href="${post.url}" target="_blank" class="linkedin-link">View on LinkedIn</a></small>
+                    </div>
+                `;
+                
+                postsContainer.appendChild(postElement);
+            });
+        }
         
-        // Show latest 5 posts
-        posts.slice(0, 5).forEach(post => {
-            const postElement = document.createElement('div');
-            postElement.className = 'linkedin-post';
-            
-            postElement.innerHTML = `
-                <p>${post.content}</p>
-                <div class="post-date">
-                    <small>${new Date(post.date).toLocaleDateString()} • <a href="${post.url}" target="_blank" class="linkedin-link">View on LinkedIn</a></small>
-                </div>
-            `;
-            
-            postsContainer.appendChild(postElement);
-        });
+        if (postsFullContainer) {
+            postsFullContainer.innerHTML = '';
+            // Show all posts for blog page
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.className = 'linkedin-post';
+                
+                postElement.innerHTML = `
+                    <p>${post.content}</p>
+                    <div class="post-date">
+                        <small>${new Date(post.date).toLocaleDateString()} • <a href="${post.url}" target="_blank" class="linkedin-link">View on LinkedIn</a></small>
+                    </div>
+                `;
+                
+                postsFullContainer.appendChild(postElement);
+            });
+        }
         
     } catch (error) {
         console.error('Error fetching LinkedIn posts:', error);
