@@ -26,11 +26,11 @@ async function fetchLinkedInPosts() {
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
-                        <span class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
+                        ${post.date ? `<span class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
                             year: 'numeric', 
                             month: 'short', 
                             day: 'numeric' 
-                        })}</span>
+                        })}</span>` : ''}
                     </div>
                 `;
                 
@@ -48,17 +48,17 @@ async function fetchLinkedInPosts() {
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
                 postElement.innerHTML = `
-                    <div class="post-header">
+                    ${post.date ? `<div class="post-header">
                         <div class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
                             year: 'numeric', 
                             month: 'long', 
                             day: 'numeric' 
                         })}</div>
-                    </div>
+                    </div>` : ''}
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
-                        <a href="${post.url.includes('activity') ? post.url : 'https://www.linkedin.com/in/hzl/recent-activity/all/'}" target="_blank" class="source-link">
+                        <a href="${post.url}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> View Original Post
                         </a>
                     </div>
