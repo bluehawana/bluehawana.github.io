@@ -9,7 +9,7 @@
    
    <!-- CSS -->
    <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css?v=2025071903">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/blog.css">
@@ -30,6 +30,7 @@
             <li><a href="index.html">Home</a></li>
             <li class="current"><a href="blog.html">Blog</a></li>
             <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
          </ul>
@@ -47,7 +48,7 @@
 
       <div class="row">
          <!-- Main Content -->
-         <div class="eight columns">
+         <div class="twelve columns">
             <div class="content-notice">
                <h3>Real Content, Real Updates</h3>
                <p>Instead of maintaining separate blog posts, I share my insights and experiences directly through LinkedIn posts and GitHub projects. This ensures you get authentic, real-time updates about my work and thoughts on technology.</p>
@@ -56,7 +57,7 @@
             <!-- LinkedIn Posts Section -->
             <div class="linkedin-section">
                <h2><i class="fa fa-linkedin"></i> Latest LinkedIn Posts</h2>
-               <div id="linkedin-posts-full">
+               <div id="linkedin-posts" class="linkedin-posts-grid">
                   <p>Loading LinkedIn posts...</p>
                </div>
                <div class="text-center">
@@ -67,60 +68,13 @@
             <!-- GitHub Projects Section -->
             <div class="github-section">
                <h2><i class="fa fa-github"></i> Recent GitHub Activity</h2>
-               <div id="github-repos-full">
+               <div id="github-repos">
                   <p>Loading repositories...</p>
                </div>
                <div class="text-center">
                   <a href="https://github.com/bluehawana" class="button" target="_blank">View All GitHub Projects</a>
                </div>
             </div>
-         </div>
-
-         <!-- Sidebar -->
-         <div class="four columns">
-            <aside class="sidebar">
-               <!-- About Widget -->
-               <div class="widget about-widget">
-                  <h5>About Me</h5>
-                  <img src="images/me1.png" alt="Hongzhi Li" class="sidebar-avatar" />
-                  <p>Fullstack Developer with expertise in Java/J2EE, Spring Boot, Angular/React, and cloud technologies.</p>
-                  <a href="about.html" class="button">Learn More</a>
-               </div>
-
-               <!-- Categories Widget -->
-               <div class="widget categories-widget">
-                  <h5>Categories</h5>
-                  <ul>
-                     <li><a href="#">Cloud Architecture (8)</a></li>
-                     <li><a href="#">DevOps (6)</a></li>
-                     <li><a href="#">Java Development (12)</a></li>
-                     <li><a href="#">Microservices (9)</a></li>
-                     <li><a href="#">Frontend Development (7)</a></li>
-                     <li><a href="#">Tech Leadership (5)</a></li>
-                     <li><a href="#">Database Optimization (4)</a></li>
-                  </ul>
-               </div>
-
-               <!-- Recent Posts Widget -->
-               <div class="widget recent-posts-widget">
-                  <h5>Recent Posts</h5>
-                  <ul>
-                     <li><a href="blog/cloud-migration-strategies.html">Cloud Migration Strategies for Enterprise Applications</a></li>
-                     <li><a href="blog/kubernetes-cost-optimization.html">Kubernetes Cost Optimization: Lessons from AKS to Local Clusters</a></li>
-                     <li><a href="blog/resilient-microservices-spring-boot.html">Building Resilient Microservices with Spring Boot</a></li>
-                     <li><a href="blog/cross-cultural-tech-teams.html">Bridging the Gap: Managing Cross-Cultural Technical Teams</a></li>
-                     <li><a href="blog/react-native-lessons.html">5 Lessons Learned Building Cross-Platform Apps with React Native</a></li>
-                  </ul>
-               </div>
-
-               <!-- LinkedIn Posts Widget -->
-               <div class="widget linkedin-widget">
-                  <h5>From My LinkedIn</h5>
-                  <div id="linkedin-posts">
-                     <p>Loading LinkedIn posts...</p>
-                  </div>
-               </div>
-            </aside>
          </div>
       </div>
    </section>
@@ -160,9 +114,9 @@
    <script>
    // Load GitHub repos for blog page
    document.addEventListener('DOMContentLoaded', function() {
-      // Update GitHub repos to target the full container
+      // Update GitHub repos to target the correct container
       if (typeof fetchGitHubRepos === 'function') {
-         fetchGitHubRepos('github-repos-full');
+         fetchGitHubRepos('github-repos');
       }
    });
    </script>

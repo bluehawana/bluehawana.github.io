@@ -1,5 +1,11 @@
 [
   {
+    "content": "🚀 Excited to share my website transformation journey! What started as a simple resume has evolved into a full-fledged tech website at www.bluehawana.com with customized logo, updated resume, LinkedIn blogs integration, GitHub projects showcase, contact form, and automatic JavaScript syncing. The most rewarding part? Setting up LinkedIn Developer API integration for seamless post synchronization. Unexpected bonus: analytics showing visitors from USA, Ireland, and Australia! 🌍",
+    "date": "",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7352317553118965763/",
+    "tags": ["WebsiteAnalytics", "PersonalBlog", "GitHubProjects", "LinkedInAPI", "TechWebsite", "DeveloperTips"]
+  },
+  {
     "content": "🌞 Summer Vacation Gift for AI Coding Enthusiasts & Skeptics 💻 As we enjoy our well-deserved vacations, let's take a moment to reflect on AI's role in coding. Although some still view AI code as a disruptive force and cling to traditional methods, we must remember the valuable lesson from Nokia's engineers who held onto Symbian and eventually lost their edge. Here's how to get started with Claude Code: 1. Install Claude Code globally: npm install -g @anthropic-ai/claude-code 2. Get 60 USD in credits from anyrouter.top 3. Navigate to your project and run: claude. I was able to develop my TaxiCarPooling project with ReactNative, Springboot, MySQL in just half a day using Claude Code, all for only 7.4 USD credits! Happy coding & Happy Summer! 🚀",
     "date": "",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7350531400724340736/",
@@ -51,11 +57,24 @@
     "content": "Undoubtedly, this is the finest beach in Sweden! A 380 km drive for this cozy spot on midsummer was absolutely worth it. Thank you, Louise Nordin, for the amazing recommendation!",
     "date": "",
     "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
-    "tags": [
-      "Sweden",
-      "Beach",
-      "Midsummer",
-      "Travel"
-    ]
+    "tags": ["Sweden", "Beach", "Midsummer", "Travel"]
+  },
+  {
+    "content": "Unleash your inner racer and conquer the track with Bluehawana! Embrace the thrill of the race and go for the win！",
+    "date": "",
+    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
+    "tags": ["Bluehawana", "DareToDrive", "DareToWin", "RacingSpirit", "Gokart", "LapTime"]
+  },
+  {
+    "content": "I've been following Sander Van Vugt's CKA 4th tutorial on O'Reilly since last week. However, when we reached the '4. Kubernetes Monitoring' section, I ran into issues with Calico pods that prevented me from moving forward. I spent several days debugging and troubleshooting the problem. Eventually, I discovered that the calico.yaml file v3.27.3 is generally compatible with chips like AMD and Intel, but not specifically designed for the Mac Silicon. If you're using a MacBook M1 or later MacBook Pro with VMware Fusion to set up your K8s system, you'll need to edit your calico.yaml file. Simply search for 'docker' and change all instances of v3.27.3 to v3.27.3-arm. Hopefully, this post will save some of you time during your studies!",
+    "date": "",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7024674911428177920/",
+    "tags": ["CKA", "Kubernetes", "MacSilicon", "Troubleshooting", "CalicoPods", "VMwareFusion"]
+  },
+  {
+    "content": "Experience the power of Linux containers on your Mac devices with Apple's Container CLI tool, an innovative solution designed to build, run, and deploy Linux containers on macOS. Developed by Apple using Swift, this open-source project offers secure, private, and efficient containerization optimized for Apple silicon. With the Container CLI, you can create, manage, and customize Linux containers seamlessly, taking advantage of its features for container image management, virtualization, and environment customization.",
+    "date": "",
+    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
+    "tags": ["MacLinux", "ContainerCLI", "SwiftContainers", "LinuxOnMac", "OpenSource"]
   }
 ]

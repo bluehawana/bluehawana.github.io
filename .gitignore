@@ -1,0 +1,27 @@
+# LinkedIn API Configuration
+config.js
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Credentials and secrets
+secrets/
+credentials/
+
+# Local development
+.DS_Store
+node_modules/
+*.log
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*~
