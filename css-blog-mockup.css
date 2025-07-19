@@ -7,7 +7,7 @@
 }
 
 .section-dark {
-    background-color: #000;
+    background-color: #2B2B2B;
     color: #fff;
     padding: 90px 0;
 }
@@ -49,40 +49,6 @@
     transition: transform 0.5s ease;
 }
 
-/* Image placeholder fallback */
-.blog-image img[src*="cloud-migration"]:before,
-.blog-image img[src*="kubernetes"]:before,
-.blog-image img[src*="microservices"]:before,
-.blog-image img[src*="cross-cultural"]:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-    position: relative;
-}
-
-.image-placeholder {
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.project-image .image-placeholder {
-    height: 300px;
-    font-size: 18px;
-}
-
 .blog-card:hover .blog-image img {
     transform: scale(1.05);
 }
@@ -114,7 +80,7 @@
 
 .read-more {
     align-self: flex-start;
-    color: #000;
+    color: #11ABB0;
     font-weight: 600;
     text-decoration: none;
     position: relative;
@@ -128,14 +94,14 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #000;
+    background-color: #11ABB0;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
 
 .read-more:hover {
-    color: #666;
+    color: #0a8085;
 }
 
 .read-more:hover:after {
@@ -184,7 +150,7 @@
 }
 
 .post-header h2 a:hover {
-    color: #666;
+    color: #11ABB0;
 }
 
 .post-meta {
@@ -240,7 +206,7 @@
 }
 
 .pagination .current {
-    background: #000;
+    background: #11ABB0;
     color: #fff;
 }
 
@@ -307,16 +273,15 @@
 
 .categories-widget a:hover,
 .recent-posts-widget a:hover {
-    color: #000;
+    color: #11ABB0;
 }
 
 .linkedin-post {
-    background: #f8f8f8;
-    border-left: 5px solid #666;
+    background: #f0f7fb;
+    border-left: 5px solid #3b5998;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 0 5px 5px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .linkedin-post p {
@@ -325,7 +290,7 @@
 }
 
 .linkedin-link {
-    color: #000;
+    color: #0077b5;
     font-weight: 600;
     text-decoration: none;
 }
@@ -347,8 +312,6 @@
 
 #contactForm input[type="text"],
 #contactForm input[type="email"],
-#contactForm input[type="tel"],
-#contactForm input[type="url"],
 #contactForm textarea {
     width: 100%;
     padding: 12px;
@@ -356,7 +319,6 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 15px;
-    box-sizing: border-box;
 }
 
 #contactForm textarea {
@@ -364,7 +326,7 @@
 }
 
 #contactForm button.submit {
-    background: #000;
+    background: #11ABB0;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -375,7 +337,7 @@
 }
 
 #contactForm button.submit:hover {
-    background: #333;
+    background: #0a8085;
 }
 
 #image-loader {
@@ -393,15 +355,13 @@
 }
 
 #message-warning {
-    background: #f5f5f5;
-    color: #333;
-    border: 1px solid #ccc;
+    background: #ffecec;
+    color: #e74c3c;
 }
 
 #message-success {
-    background: #f8f8f8;
-    color: #000;
-    border: 1px solid #ddd;
+    background: #e9ffd9;
+    color: #27ae60;
 }
 
 .contact-details {
@@ -431,7 +391,7 @@
 }
 
 .social-connect a:hover {
-    color: #000;
+    color: #11ABB0;
 }
 
 /* Responsive adjustments for blog */

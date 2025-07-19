@@ -4,21 +4,13 @@
    <meta charset="utf-8">
    <title>Contact - Hongzhi Li</title>
    <meta name="description" content="Contact Hongzhi Li for collaboration, consulting, or project inquiries">
-   <meta name="author" content="Hongzhi Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-   
-   <!-- CSS -->
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/blog.css">
+   <link rel="stylesheet" href="css/blog.css"> <!-- New stylesheet for blog features -->
    <link rel="shortcut icon" href="favicon.png">
-
-   <!-- Script -->
-   <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
-   <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb"></script>
 </head>
 <body>
    <!-- Header -->
@@ -49,7 +41,7 @@
       <div class="row">
          <div class="eight columns">
             <!-- Contact Form -->
-            <form action="mailto:hongzhili01@gmail.com" method="post" enctype="text/plain" id="contactForm" name="contactForm">
+            <form action="https://formspree.io/f/your-formspree-endpoint" method="POST" id="contactForm" name="contactForm">
                <fieldset>
                   <div class="row">
                      <div class="six columns">
@@ -60,18 +52,6 @@
                      <div class="six columns">
                         <label for="contactEmail">Email <span class="required">*</span></label>
                         <input type="email" size="35" id="contactEmail" name="contactEmail" required>
-                     </div>
-                  </div>
-
-                  <div class="row">
-                     <div class="six columns">
-                        <label for="contactPhone">Phone Number</label>
-                        <input type="tel" size="35" id="contactPhone" name="contactPhone" placeholder="+46 123 456 789">
-                     </div>
-
-                     <div class="six columns">
-                        <label for="contactWebsite">Website/Portfolio Link</label>
-                        <input type="url" size="35" id="contactWebsite" name="contactWebsite" placeholder="https://yourwebsite.com">
                      </div>
                   </div>
 
@@ -86,7 +66,7 @@
                   </div>
 
                   <div>
-                     <button class="submit" type="button" onclick="sendEmail()">Submit</button>
+                     <button class="submit" type="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
@@ -162,38 +142,5 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   
-   <script>
-   function sendEmail() {
-      const name = document.getElementById('contactName').value;
-      const email = document.getElementById('contactEmail').value;
-      const phone = document.getElementById('contactPhone').value;
-      const website = document.getElementById('contactWebsite').value;
-      const subject = document.getElementById('contactSubject').value || 'Contact from bluehawana.com';
-      const message = document.getElementById('contactMessage').value;
-      
-      if (!name || !email || !message) {
-         document.getElementById('message-warning').style.display = 'block';
-         document.getElementById('message-success').style.display = 'none';
-         return;
-      }
-      
-      const emailBody = `Name: ${name}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-Website: ${website || 'Not provided'}
-
-Message:
-${message}`;
-      
-      const emailSubject = encodeURIComponent(subject);
-      const emailBodyEncoded = encodeURIComponent(emailBody);
-      
-      window.location.href = `mailto:hongzhili01@gmail.com?subject=${emailSubject}&body=${emailBodyEncoded}`;
-      
-      document.getElementById('message-warning').style.display = 'none';
-      document.getElementById('message-success').style.display = 'block';
-   }
-   </script>
 </body>
 </html>
