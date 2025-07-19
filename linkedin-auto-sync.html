@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Auto Sync - Hongzhi Li</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0070f3 0%, #0051a2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .auth-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .auth-status {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        
+        .auth-status.authenticated {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .auth-status.not-authenticated {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .button {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .button:hover {
+            background: #0051a2;
+        }
+        
+        .button.success {
+            background: #28a745;
+        }
+        
+        .button.success:hover {
+            background: #1e7e34;
+        }
+        
+        .button.danger {
+            background: #dc3545;
+        }
+        
+        .button.danger:hover {
+            background: #c82333;
+        }
+        
+        .sync-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .sync-results {
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .post-preview {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #0070f3;
+        }
+        
+        .post-content {
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .post-meta {
+            font-size: 12px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .post-tags {
+            margin: 8px 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #0070f3;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+        
+        .json-output {
+            background: #f8f9fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #0070f3;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .instructions {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ol {
+            color: #856404;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔄 LinkedIn Auto Sync</h1>
+            <p>Automatically sync your LinkedIn posts with activity IDs</p>
+        </div>
+        
+        <div class="content">
+            <div class="instructions">
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Authenticate with LinkedIn using your credentials</li>
+                    <li>Fetch your latest posts using LinkedIn API</li>
+                    <li>Automatically extract activity IDs from post data</li>
+                    <li>Generate updated JSON for your website</li>
+                    <li>Copy the JSON to update your linkedin-posts.json file</li>
+                </ol>
+            </div>
+            
+            <div class="auth-section">
+                <div id="authStatus" class="auth-status not-authenticated">
+                    🔒 Not authenticated with LinkedIn
+                </div>
+                
+                <div id="authButtons">
+                    <button id="authenticateBtn" class="button">
+                        🔗 Connect LinkedIn Account
+                    </button>
+                    <button id="logoutBtn" class="button danger" style="display: none;">
+                        🚪 Logout
+                    </button>
+                </div>
+                
+                <div id="userInfo" style="display: none; margin-top: 15px;">
+                    <p>Authenticated as: <strong id="userName">Loading...</strong></p>
+                </div>
+            </div>
+            
+            <div class="sync-section">
+                <h3>🔄 Sync LinkedIn Posts</h3>
+                <p>Fetch your latest LinkedIn posts and extract activity IDs automatically.</p>
+                
+                <div style="margin-top: 20px;">
+                    <button id="syncBtn" class="button success" disabled>
+                        🚀 Sync Posts Now
+                    </button>
+                    <button id="clearDataBtn" class="button danger">
+                        🗑️ Clear Cached Data
+                    </button>
+                </div>
+                
+                <div id="syncResults" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/linkedin-api-sync.js"></script>
+    <script>
+        let currentPosts = [];
+        
+        // DOM elements
+        const authStatus = document.getElementById('authStatus');
+        const authenticateBtn = document.getElementById('authenticateBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const userInfo = document.getElementById('userInfo');
+        const userName = document.getElementById('userName');
+        const syncBtn = document.getElementById('syncBtn');
+        const clearDataBtn = document.getElementById('clearDataBtn');
+        const syncResults = document.getElementById('syncResults');
+        
+        // Initialize the page
+        function initializePage() {
+            updateAuthStatus();
+            
+            authenticateBtn.addEventListener('click', authenticateWithLinkedIn);
+            logoutBtn.addEventListener('click', logout);
+            syncBtn.addEventListener('click', syncPosts);
+            clearDataBtn.addEventListener('click', clearCachedData);
+            
+            // Listen for LinkedIn auth events
+            window.addEventListener('linkedin-sync-complete', handleSyncComplete);
+            window.addEventListener('linkedin-sync-error', handleSyncError);
+        }
+        
+        // Update authentication status
+        function updateAuthStatus() {
+            const isAuthenticated = window.linkedInSync.isTokenValid();
+            
+            if (isAuthenticated) {
+                authStatus.className = 'auth-status authenticated';
+                authStatus.innerHTML = '✅ Authenticated with LinkedIn';
+                authenticateBtn.style.display = 'none';
+                logoutBtn.style.display = 'inline-block';
+                userInfo.style.display = 'block';
+                syncBtn.disabled = false;
+                
+                // Load user profile
+                loadUserProfile();
+            } else {
+                authStatus.className = 'auth-status not-authenticated';
+                authStatus.innerHTML = '🔒 Not authenticated with LinkedIn';
+                authenticateBtn.style.display = 'inline-block';
+                logoutBtn.style.display = 'none';
+                userInfo.style.display = 'none';
+                syncBtn.disabled = true;
+            }
+        }
+        
+        // Authenticate with LinkedIn
+        function authenticateWithLinkedIn() {
+            try {
+                const authUrl = window.linkedInSync.initializeAuth();
+                showMessage('Opening LinkedIn authentication window...', 'success');
+            } catch (error) {
+                showMessage('Authentication error: ' + error.message, 'error');
+            }
+        }
+        
+        // Load user profile
+        async function loadUserProfile() {
+            try {
+                const profile = await window.linkedInSync.getUserProfile();
+                const fullName = `${profile.firstName.localized.en_US} ${profile.lastName.localized.en_US}`;
+                userName.textContent = fullName;
+            } catch (error) {
+                userName.textContent = 'Profile load failed';
+                console.error('Profile load error:', error);
+            }
+        }
+        
+        // Logout
+        function logout() {
+            localStorage.removeItem('linkedin_access_token');
+            localStorage.removeItem('linkedin_token_expires');
+            localStorage.removeItem('linkedin_oauth_state');
+            updateAuthStatus();
+            showMessage('Logged out successfully', 'success');
+        }
+        
+        // Sync posts
+        async function syncPosts() {
+            try {
+                syncBtn.disabled = true;
+                syncBtn.textContent = '🔄 Syncing...';
+                
+                showSyncLoading();
+                
+                const posts = await window.linkedInSync.syncLinkedInPosts();
+                currentPosts = posts;
+                
+                displaySyncResults(posts);
+                showMessage(`Successfully synced ${posts.length} posts!`, 'success');
+                
+            } catch (error) {
+                showMessage('Sync error: ' + error.message, 'error');
+                console.error('Sync error:', error);
+            } finally {
+                syncBtn.disabled = false;
+                syncBtn.textContent = '🚀 Sync Posts Now';
+            }
+        }
+        
+        // Show sync loading
+        function showSyncLoading() {
+            syncResults.style.display = 'block';
+            syncResults.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Fetching your LinkedIn posts...</p>
+                </div>
+            `;
+        }
+        
+        // Display sync results
+        function displaySyncResults(posts) {
+            if (posts.length === 0) {
+                syncResults.innerHTML = '<p>No posts found.</p>';
+                return;
+            }
+            
+            const postsHtml = posts.map(post => {
+                const tags = post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('');
+                const preview = post.content.substring(0, 150) + (post.content.length > 150 ? '...' : '');
+                
+                return `
+                    <div class="post-preview">
+                        <div class="post-content">${preview}</div>
+                        <div class="post-tags">${tags}</div>
+                        <div class="post-meta">
+                            <span>Date: ${post.date || 'Not available'}</span>
+                            <a href="${post.url}" target="_blank">View Post</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            const jsonOutput = window.linkedInSync.generateUpdatedJSON(posts);
+            
+            syncResults.innerHTML = `
+                <h4>✅ Synced ${posts.length} posts:</h4>
+                <div class="sync-results">
+                    ${postsHtml}
+                </div>
+                
+                <h4>📋 Updated JSON (copy to linkedin-posts.json):</h4>
+                <div class="json-output" id="jsonOutput">${jsonOutput}</div>
+                <button class="button" onclick="copyToClipboard('jsonOutput')">📋 Copy JSON</button>
+            `;
+            
+            syncResults.style.display = 'block';
+        }
+        
+        // Handle sync completion
+        function handleSyncComplete(event) {
+            const { posts, jsonOutput } = event.detail;
+            displaySyncResults(posts);
+            updateAuthStatus();
+        }
+        
+        // Handle sync error
+        function handleSyncError(event) {
+            showMessage('LinkedIn sync error: ' + event.detail.error, 'error');
+            updateAuthStatus();
+        }
+        
+        // Clear cached data
+        function clearCachedData() {
+            localStorage.removeItem('linkedin_access_token');
+            localStorage.removeItem('linkedin_token_expires');
+            localStorage.removeItem('linkedin_oauth_state');
+            syncResults.style.display = 'none';
+            currentPosts = [];
+            updateAuthStatus();
+            showMessage('Cached data cleared', 'success');
+        }
+        
+        // Show message
+        function showMessage(message, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = type;
+            messageDiv.textContent = message;
+            
+            const content = document.querySelector('.content');
+            content.insertBefore(messageDiv, content.firstChild);
+            
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
+        
+        // Copy to clipboard
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                showMessage('JSON copied to clipboard!', 'success');
+            }).catch(err => {
+                showMessage('Failed to copy: ' + err.message, 'error');
+            });
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializePage);
+    </script>
+</body>
+</html>
