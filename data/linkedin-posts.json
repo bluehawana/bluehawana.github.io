@@ -1,27 +1,62 @@
 [
   {
-    "content": "Excited to share that our team at ECARX has successfully completed the migration from AKS to local Kubernetes clusters, resulting in a 40% reduction in operational costs while maintaining system reliability. #CloudOptimization #Kubernetes",
+    "content": "Excited to share that our team at ECARX has successfully completed the migration from AKS to local Kubernetes clusters, resulting in a 40% reduction in operational costs while maintaining system reliability. This wasn't just about cost savings - we gained better control over our infrastructure, improved performance, and enhanced our team's DevOps capabilities. The migration involved careful planning, phased rollouts, and comprehensive testing to ensure zero downtime for our production services.",
     "date": "2025-07-15",
-    "url": "https://www.linkedin.com/in/hzl"
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["CloudOptimization", "Kubernetes", "DevOps", "CostReduction"]
   },
   {
-    "content": "Just published an article on microservices architecture best practices based on our recent project. Check it out if you're interested in building scalable and maintainable distributed systems. #Microservices #SoftwareArchitecture",
+    "content": "As we enjoy our well-deserved vacations, let's take a moment to reflect on AI's role in coding. Just like Nokia once dominated the mobile phone market but fell behind due to resistance to change, programmers who don't embrace AI coding tools risk being left behind. I've been experimenting with Claude Code and managed to build a complete TaxiCarPooling project with ReactNative, SpringBoot, and MySQL in just half a day for only $7.4 USD in credits! The future is here, and it's time to adapt.",
+    "date": "2025-07-12",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7350531400724340736/",
+    "tags": ["AICoding", "ClaudeCode", "SummerOfCode", "CodingTips", "CodeWithAI"]
+  },
+  {
+    "content": "Just published an article on microservices architecture best practices based on our recent project. The key lessons: proper service boundaries, effective inter-service communication, and robust monitoring are crucial for scalable distributed systems. We've seen 3x performance improvements by implementing these patterns correctly.",
     "date": "2025-07-10",
-    "url": "https://www.linkedin.com/in/hzl"
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["Microservices", "SoftwareArchitecture", "SpringBoot"]
   },
   {
-    "content": "Working on an exciting TaxiCarPooling platform using Spring Boot and React Native. The goal is to optimize urban transportation in Gothenburg while reducing environmental impact. #SpringBoot #ReactNative #SustainableTech",
+    "content": "Working on an exciting TaxiCarPooling platform using Spring Boot and React Native. The goal is to optimize urban transportation in Gothenburg while reducing environmental impact. Features include real-time matching, route optimization, and carbon footprint tracking. Excited to contribute to sustainable tech solutions!",
     "date": "2025-07-05",
-    "url": "https://www.linkedin.com/in/hzl"
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["SpringBoot", "ReactNative", "SustainableTech", "Gothenburg"]
   },
   {
-    "content": "Completed AWS Certified Data Analytics – Specialty certification! Always learning and staying updated with the latest cloud technologies. Next up: diving deeper into machine learning workflows on AWS. #AWS #DataAnalytics #CloudCertification",
+    "content": "Completed AWS Certified Data Analytics – Specialty certification! Always learning and staying updated with the latest cloud technologies. The exam covered everything from data collection and storage to processing and visualization. Next up: diving deeper into machine learning workflows on AWS with SageMaker.",
     "date": "2025-06-28",
-    "url": "https://www.linkedin.com/in/hzl"
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["AWS", "DataAnalytics", "CloudCertification", "MachineLearning"]
   },
   {
-    "content": "Reflecting on my experience bridging Swedish and Chinese development teams at Senior Material. Cross-cultural technical communication is both challenging and rewarding. Key: patience, clear documentation, and cultural awareness. #TechLeadership #CrossCultural",
+    "content": "Reflecting on my experience bridging Swedish and Chinese development teams at Senior Material. Cross-cultural technical communication is both challenging and rewarding. Key lessons: patience, clear documentation, cultural awareness, and establishing common technical vocabularies. These skills are invaluable in today's global tech environment.",
     "date": "2025-06-20",
-    "url": "https://www.linkedin.com/in/hzl"
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["TechLeadership", "CrossCultural", "TeamManagement"]
+  },
+  {
+    "content": "Just deployed our new .NET full-stack CryptoWallet application! Used Xamarin for cross-platform mobile development, Azure Cosmos DB for scalable data storage, and SignalR for real-time price updates. The integration between different Azure services really shows the power of cloud-native architecture.",
+    "date": "2025-06-15",
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["DotNet", "Xamarin", "Azure", "CryptoWallet", "SignalR"]
+  },
+  {
+    "content": "Published a new article: 'Unlocking Responsive UI with MediatR in .NET Core Applications'. Exploring how the mediator pattern can significantly improve user experience by decoupling business logic from UI concerns. The response time improvements we've seen are remarkable!",
+    "date": "2025-06-10",
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["DotNetCore", "MediatR", "ResponsiveUI", "SoftwareArchitecture"]
+  },
+  {
+    "content": "Started my journey at ECARX as IT/Infrastructure Specialist in Gothenburg! Excited to work on automotive technology solutions and contribute to the future of connected vehicles. The intersection of IT infrastructure and automotive innovation presents fascinating challenges.",
+    "date": "2024-10-15",
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["ECARX", "CareerUpdate", "AutomotiveTech", "Infrastructure"]
+  },
+  {
+    "content": "Completed my freelance project at Synteda, where I developed a comprehensive talent management system using C# and .NET Core. The cloud-native architecture serves multiple client organizations efficiently. Grateful for the opportunity to work on such impactful solutions!",
+    "date": "2024-09-20",
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": ["Freelance", "TalentManagement", "DotNetCore", "CloudNative"]
   }
 ]
