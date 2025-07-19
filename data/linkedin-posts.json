@@ -3,48 +3,59 @@
     "content": "🌞 Summer Vacation Gift for AI Coding Enthusiasts & Skeptics 💻 As we enjoy our well-deserved vacations, let's take a moment to reflect on AI's role in coding. Although some still view AI code as a disruptive force and cling to traditional methods, we must remember the valuable lesson from Nokia's engineers who held onto Symbian and eventually lost their edge. Here's how to get started with Claude Code: 1. Install Claude Code globally: npm install -g @anthropic-ai/claude-code 2. Get 60 USD in credits from anyrouter.top 3. Navigate to your project and run: claude. I was able to develop my TaxiCarPooling project with ReactNative, Springboot, MySQL in just half a day using Claude Code, all for only 7.4 USD credits! Happy coding & Happy Summer! 🚀",
     "date": "",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7350531400724340736/",
-    "tags": ["AICoding", "ClaudeCode", "SummerOfCode", "CodingTips", "CodeWithAI"]
+    "tags": [
+      "AICoding",
+      "ClaudeCode",
+      "SummerOfCode",
+      "CodingTips",
+      "CodeWithAI"
+    ]
   },
   {
     "content": "Super excited to share that I've been selected for the 2025 The Linux Foundation LiFT Scholarship! 🎉 As someone who's really into Linux and Kubernetes this means a lot. The scholarship covers one training course and a certification exam — I'll be going for the CKA Exam first. While preparing in just two weeks feels intense, but I'm ready to give it everything this summer. A huge shout-out to the The Linux Foundation for this wicked opportunity and for supporting the open-source community in such an awesome way. Let's do IT! 🐧☸️",
     "date": "",
     "url": "https://www.linkedin.com/posts/hzl_linuxfoundation-liftscholarship-cka-activity-7343283675876241408-389U/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-    "tags": ["LinuxFoundation", "LiFTScholarship", "CKA", "Kubernetes", "Linux", "OpenSource"]
+    "tags": [
+      "LinuxFoundation",
+      "LiFTScholarship",
+      "CKA",
+      "Kubernetes",
+      "Linux",
+      "OpenSource"
+    ]
   },
   {
     "content": "As the debate on the potential plagiarism and shortcuts involved in AI coding continues, my taxi management system has already been utilizing Python in the backend to automatically match orders based on location and time sequences. Stay tuned to witness the complete implementation of this hobby project, Bo Sun perhaps it's time we schedule a live demonstration of our workflow to gather some valuable material for our presentation?",
     "date": "",
     "url": "https://www.linkedin.com/posts/hzl_as-the-debate-on-the-potential-plagiarism-activity-7350566713710604288-auzw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-    "tags": ["Python", "TaxiManagement", "AIDebate", "Backend"]
+    "tags": [
+      "Python",
+      "TaxiManagement",
+      "AIDebate",
+      "Backend"
+    ]
   },
   {
     "content": "While I largely agree with Alexander Klose's view on the challenges Chinese BEV companies face in Europe, it's also essential to consider the underlying factors affecting their integration. Chinese companies often struggle to adapt to overseas markets, and issues like distrust and prejudice create barriers for them as well. Despite the challenges, there's a significant opportunity for collaboration and growth between EU and Chinese companies to bridge the gaps in the electric vehicle (EV) and AI sectors. By combining European automotive heritage with Chinese innovation, the potential for a transformative partnership is vast.",
     "date": "",
     "url": "https://www.linkedin.com/posts/hzl_bev-electricvehicles-chineseautomakers-activity-7346263813920296961-X1mp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-    "tags": ["BEV", "ElectricVehicles", "ChineseAutomakers", "EUChinaPartnership", "InnovationBridge"]
+    "tags": [
+      "BEV",
+      "ElectricVehicles",
+      "ChineseAutomakers",
+      "EUChinaPartnership",
+      "InnovationBridge"
+    ]
   },
   {
     "content": "Undoubtedly, this is the finest beach in Sweden! A 380 km drive for this cozy spot on midsummer was absolutely worth it. Thank you, Louise Nordin, for the amazing recommendation!",
     "date": "",
     "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
-    "tags": ["Sweden", "Beach", "Midsummer", "Travel"]
-  },
-  {
-    "content": "Unleash your inner racer and conquer the track with Bluehawana! Embrace the thrill of the race and go for the win！",
-    "date": "",
-    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
-    "tags": ["Bluehawana", "DareToDrive", "DareToWin", "RacingSpirit", "Gokart", "LapTime"]
-  },
-  {
-    "content": "I've been following Sander Van Vugt's CKA 4th tutorial on O'Reilly since last week. However, when we reached the '4. Kubernetes Monitoring' section, I ran into issues with Calico pods that prevented me from moving forward. I spent several days debugging and troubleshooting the problem. Eventually, I discovered that the calico.yaml file v3.27.3 is generally compatible with chips like AMD and Intel, but not specifically designed for the Mac Silicon. If you're using a MacBook M1 or later MacBook Pro with VMware Fusion to set up your K8s system, you'll need to edit your calico.yaml file. Simply search for 'docker' and change all instances of v3.27.3 to v3.27.3-arm. Hopefully, this post will save some of you time during your studies!",
-    "date": "",
-    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
-    "tags": ["CKA", "Kubernetes", "MacSilicon", "Troubleshooting", "CalicoPods", "VMwareFusion"]
-  },
-  {
-    "content": "Experience the power of Linux containers on your Mac devices with Apple's Container CLI tool, an innovative solution designed to build, run, and deploy Linux containers on macOS. Developed by Apple using Swift, this open-source project offers secure, private, and efficient containerization optimized for Apple silicon. With the Container CLI, you can create, manage, and customize Linux containers seamlessly, taking advantage of its features for container image management, virtualization, and environment customization.",
-    "date": "",
-    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
-    "tags": ["MacLinux", "ContainerCLI", "SwiftContainers", "LinuxOnMac", "OpenSource"]
+    "tags": [
+      "Sweden",
+      "Beach",
+      "Midsummer",
+      "Travel"
+    ]
   }
 ]
