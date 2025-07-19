@@ -49,7 +49,7 @@
          <!-- Main Blog Content -->
          <div class="eight columns">
             <!-- Blog Post 1 -->
-            <article class="blog-post">
+            <article class="blog-post" id="cloud-migration">
                <div class="post-header">
                   <h2><a href="blog/cloud-migration-strategies.html">Cloud Migration Strategies for Enterprise Applications</a></h2>
                   <div class="post-meta">
@@ -67,7 +67,7 @@
             </article>
 
             <!-- Blog Post 2 -->
-            <article class="blog-post">
+            <article class="blog-post" id="kubernetes-optimization">
                <div class="post-header">
                   <h2><a href="blog/kubernetes-cost-optimization.html">Kubernetes Cost Optimization: Lessons from AKS to Local Clusters</a></h2>
                   <div class="post-meta">
@@ -85,7 +85,7 @@
             </article>
 
             <!-- Blog Post 3 -->
-            <article class="blog-post">
+            <article class="blog-post" id="microservices-patterns">
                <div class="post-header">
                   <h2><a href="blog/resilient-microservices-spring-boot.html">Building Resilient Microservices with Spring Boot</a></h2>
                   <div class="post-meta">
@@ -103,7 +103,7 @@
             </article>
 
             <!-- Blog Post 4 -->
-            <article class="blog-post">
+            <article class="blog-post" id="cross-cultural-teams">
                <div class="post-header">
                   <h2><a href="blog/cross-cultural-tech-teams.html">Bridging the Gap: Managing Cross-Cultural Technical Teams</a></h2>
                   <div class="post-meta">
@@ -186,7 +186,7 @@
          <div class="twelve columns">
             <ul class="social-links">
                <li><a href="https://twitter.com/bluehawana"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://linkedin.com/in/hzl"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/hzl"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://bluehawana.com"><i class="fa fa-external-link"></i></a></li>
                <li><a href="https://github.com/bluehawana"><i class="fa fa-github"></i></a></li>
             </ul>
@@ -211,5 +211,19 @@
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
    <script src="js/linkedin-posts.js"></script>
+   <script>
+   // Smooth scrolling for blog anchors
+   document.addEventListener('DOMContentLoaded', function() {
+      // Check if there's a hash in the URL
+      if (window.location.hash) {
+         setTimeout(function() {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+               target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+         }, 100);
+      }
+   });
+   </script>
 </body>
 </html>

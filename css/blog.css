@@ -506,6 +506,108 @@
     color: #000;
 }
 
+/* Compact Blog Cards for Homepage */
+.blog-card-compact {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    height: 100%;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.blog-card-compact:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-meta .date {
+    color: #ccc;
+    font-weight: 500;
+}
+
+.blog-meta .category {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+}
+
+.blog-card-compact h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.blog-card-compact h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-card-compact h3 a:hover {
+    color: #ddd;
+}
+
+.blog-card-compact p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.read-more-compact {
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.read-more-compact:hover {
+    color: #ddd;
+    transform: translateX(4px);
+}
+
+.button-tech {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button-tech:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.blog-grid {
+    margin-top: 40px;
+}
+
 /* Responsive adjustments for blog */
 @media only screen and (max-width: 767px) {
     .blog-content h3 {
@@ -520,5 +622,19 @@
     .post-meta span {
         display: block;
         margin-bottom: 5px;
+    }
+
+    .blog-card-compact {
+        margin-bottom: 20px;
+    }
+
+    .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .blog-card-compact h3 {
+        font-size: 16px;
     }
 }
