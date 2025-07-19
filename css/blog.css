@@ -83,6 +83,67 @@
     font-size: 18px;
 }
 
+/* GitHub Repositories Styling */
+#github-repos {
+    margin-top: 20px;
+}
+
+.repo-item {
+    margin-bottom: 20px;
+}
+
+.repo-card {
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repo-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.repo-card h4 a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repo-card h4 a:hover {
+    color: #666;
+}
+
+.repo-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.repo-meta {
+    font-size: 14px;
+    color: #888;
+}
+
+.repo-meta span {
+    margin-right: 15px;
+}
+
+.language {
+    font-weight: 600;
+    color: #000;
+}
+
+.stars {
+    color: #666;
+}
+
 .blog-card:hover .blog-image img {
     transform: scale(1.05);
 }
@@ -332,6 +393,17 @@
 
 .linkedin-link:hover {
     text-decoration: underline;
+}
+
+.post-date {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.post-date small {
+    color: #999;
+    font-size: 12px;
 }
 
 /* Contact Form */

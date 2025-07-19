@@ -1,0 +1,77 @@
+name: Update Website Content
+
+on:
+  schedule:
+    # Run daily at 8 AM UTC (9/10 AM CET depending on season)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allow manual trigger
+    inputs:
+      linkedin_posts:
+        description: 'LinkedIn posts (JSON format)'
+        required: false
+        type: string
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Update LinkedIn content
+      if: github.event.inputs.linkedin_posts != ''
+      run: |
+        # Create or update LinkedIn posts data
+        mkdir -p data
+        echo '${{ github.event.inputs.linkedin_posts }}' > data/linkedin-posts.json
+        
+    - name: Create default LinkedIn content if not exists
+      run: |
+        mkdir -p data
+        if [ ! -f data/linkedin-posts.json ]; then
+          cat > data/linkedin-posts.json << 'EOF'
+        [
+          {
+            "content": "Excited to share that our team at ECARX has successfully completed the migration from AKS to local Kubernetes clusters, resulting in a 40% reduction in operational costs while maintaining system reliability. #CloudOptimization #Kubernetes",
+            "date": "2025-07-15",
+            "url": "https://linkedin.com/in/hzl"
+          },
+          {
+            "content": "Just published an article on microservices architecture best practices based on our recent project. Check it out if you're interested in building scalable and maintainable distributed systems. #Microservices #SoftwareArchitecture",
+            "date": "2025-07-10",
+            "url": "https://linkedin.com/in/hzl"
+          },
+          {
+            "content": "Working on an exciting TaxiCarPooling platform using Spring Boot and React Native. The goal is to optimize urban transportation in Gothenburg while reducing environmental impact. #SpringBoot #ReactNative #SustainableTech",
+            "date": "2025-07-05",
+            "url": "https://linkedin.com/in/hzl"
+          },
+          {
+            "content": "Completed AWS Certified Data Analytics – Specialty certification! Always learning and staying updated with the latest cloud technologies. Next up: diving deeper into machine learning workflows on AWS. #AWS #DataAnalytics #CloudCertification",
+            "date": "2025-06-28",
+            "url": "https://linkedin.com/in/hzl"
+          },
+          {
+            "content": "Reflecting on my experience bridging Swedish and Chinese development teams at Senior Material. Cross-cultural technical communication is both challenging and rewarding. Key: patience, clear documentation, and cultural awareness. #TechLeadership #CrossCultural",
+            "date": "2025-06-20",
+            "url": "https://linkedin.com/in/hzl"
+          }
+        ]
+        EOF
+        fi
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/
+        git diff --staged --quiet || git commit -m "Update LinkedIn content - $(date '+%Y-%m-%d')"
+        git push
