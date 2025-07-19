@@ -58,7 +58,7 @@ async function fetchLinkedInPosts() {
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
-                        <a href="${post.url}" target="_blank" class="source-link">
+                        <a href="${post.url.includes('activity') ? post.url : 'https://www.linkedin.com/in/hzl/recent-activity/all/'}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> View Original Post
                         </a>
                     </div>

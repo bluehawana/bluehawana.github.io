@@ -499,30 +499,36 @@
 /* Tags Styling - High Contrast Vercel Style */
 .tag {
     display: inline-block;
-    background: #000000;
+    background: #0070f3;
     color: #ffffff;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
     font-weight: 600;
     margin-right: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: 1px solid #000000;
+    border: 1px solid #0070f3;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: #0051a2;
+    border-color: #0051a2;
 }
 
 .linkedin-post-compact .tag {
-    background: #000000;
+    background: #0070f3;
     color: #ffffff;
-    border: 1px solid #000000;
+    border: 1px solid #0070f3;
     font-weight: 700;
     text-shadow: none;
 }
 
 .linkedin-post-compact .tag:hover {
-    background: #374151;
-    border-color: #374151;
+    background: #0051a2;
+    border-color: #0051a2;
 }
 
 /* Source Link */
