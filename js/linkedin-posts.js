@@ -31,6 +31,9 @@ async function fetchLinkedInPosts() {
                             month: 'short', 
                             day: 'numeric' 
                         })}</span>` : ''}
+                        <a href="${post.url}" target="_blank" class="source-link">
+                            <i class="fa fa-linkedin"></i> View Original Post
+                        </a>
                     </div>
                 `;
                 
