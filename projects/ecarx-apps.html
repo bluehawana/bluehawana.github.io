@@ -2,18 +2,333 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>ECARX Android Auto Apps - Hongzhi Li's Projects</title>
-   <meta name="description" content="ECARX Android Auto Applications - Custom AI bots and TV apps for automotive platforms by Hongzhi Li">
+   <title>ECARX Android Auto Apps | Hongzhi Li</title>
+   <meta name="description" content="Advanced Android Auto applications with AI voice assistants and entertainment systems for automotive platforms">
    <meta name="author" content="Hongzhi Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    
    <!-- CSS -->
    <link rel="stylesheet" href="../css/default.css">
-   <link rel="stylesheet" href="../css/layout.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
    <link rel="stylesheet" href="../css/media-queries.css">
    <link rel="stylesheet" href="../css/magnific-popup.css">
    <link rel="stylesheet" href="../css/blog.css">
    <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- Project-specific styles -->
+   <style>
+      :root {
+         --terminal-bg: #0d1117;
+         --terminal-text: #c9d1d9;
+         --terminal-green: #7ce38b;
+         --terminal-blue: #58a6ff;
+         --terminal-yellow: #f2cc60;
+         --terminal-red: #ff7b72;
+         --code-bg: #161b22;
+         --border-color: #30363d;
+      }
+
+      .project-hero {
+         background: linear-gradient(135deg, var(--terminal-bg) 0%, #1c2128 100%);
+         color: var(--terminal-text);
+         padding: 100px 0 80px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .project-hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+         opacity: 0.5;
+      }
+
+      .project-hero .row {
+         position: relative;
+         z-index: 2;
+      }
+
+      .project-title {
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 42px;
+         color: var(--terminal-green);
+         margin-bottom: 20px;
+         text-shadow: 0 0 20px rgba(124, 227, 139, 0.3);
+      }
+
+      .project-subtitle {
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 18px;
+         color: var(--terminal-blue);
+         margin-bottom: 30px;
+      }
+
+      .terminal-window {
+         background: var(--terminal-bg);
+         border: 1px solid var(--border-color);
+         border-radius: 8px;
+         margin: 30px 0;
+         overflow: hidden;
+         box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      }
+
+      .terminal-header {
+         background: #21262d;
+         padding: 12px 16px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--border-color);
+      }
+
+      .terminal-buttons {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-button {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-button.close { background: #ff5f56; }
+      .terminal-button.minimize { background: #ffbd2e; }
+      .terminal-button.maximize { background: #27ca3f; }
+
+      .terminal-title {
+         color: var(--terminal-text);
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 14px;
+         margin-left: 16px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 14px;
+         line-height: 1.6;
+         color: var(--terminal-text);
+         background: var(--terminal-bg);
+      }
+
+      .terminal-line {
+         margin-bottom: 8px;
+      }
+
+      .terminal-prompt {
+         color: var(--terminal-green);
+      }
+
+      .terminal-command {
+         color: var(--terminal-blue);
+      }
+
+      .terminal-output {
+         color: var(--terminal-yellow);
+         margin-left: 20px;
+      }
+
+      .code-block {
+         background: var(--code-bg);
+         border: 1px solid var(--border-color);
+         border-radius: 6px;
+         padding: 20px;
+         margin: 20px 0;
+         overflow-x: auto;
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 14px;
+         color: var(--terminal-text);
+      }
+
+      .code-block pre {
+         margin: 0;
+         white-space: pre-wrap;
+      }
+
+      .app-stack {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+         margin: 40px 0;
+      }
+
+      .app-item {
+         background: var(--code-bg);
+         border: 1px solid var(--border-color);
+         border-radius: 8px;
+         padding: 24px;
+         transition: all 0.3s ease;
+      }
+
+      .app-item:hover {
+         border-color: var(--terminal-blue);
+         box-shadow: 0 8px 25px rgba(88, 166, 255, 0.15);
+      }
+
+      .app-item h4 {
+         color: var(--terminal-green);
+         margin-bottom: 16px;
+         font-family: 'Monaco', 'Consolas', monospace;
+      }
+
+      .app-item ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      .app-item li {
+         color: var(--terminal-text);
+         padding: 6px 0;
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 14px;
+      }
+
+      .app-item li::before {
+         content: '▶ ';
+         color: var(--terminal-blue);
+         margin-right: 8px;
+      }
+
+      .project-section {
+         background: #0d1117;
+         color: var(--terminal-text);
+         padding: 80px 0;
+      }
+
+      .project-section h2 {
+         color: var(--terminal-green);
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 28px;
+         margin-bottom: 30px;
+         text-align: center;
+      }
+
+      .feature-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 30px;
+         margin: 40px 0;
+      }
+
+      .feature-card {
+         background: var(--code-bg);
+         border: 1px solid var(--border-color);
+         border-radius: 8px;
+         padding: 30px;
+         transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+         border-color: var(--terminal-yellow);
+         transform: translateY(-5px);
+      }
+
+      .feature-card h3 {
+         color: var(--terminal-yellow);
+         font-family: 'Monaco', 'Consolas', monospace;
+         margin-bottom: 16px;
+      }
+
+      .feature-card p {
+         color: var(--terminal-text);
+         line-height: 1.7;
+      }
+
+      .project-links {
+         text-align: center;
+         margin: 50px 0;
+      }
+
+      .btn-terminal {
+         background: transparent;
+         border: 2px solid var(--terminal-green);
+         color: var(--terminal-green);
+         padding: 12px 30px;
+         font-family: 'Monaco', 'Consolas', monospace;
+         font-size: 14px;
+         text-decoration: none;
+         border-radius: 4px;
+         margin: 0 10px;
+         transition: all 0.3s ease;
+         display: inline-block;
+      }
+
+      .btn-terminal:hover {
+         background: var(--terminal-green);
+         color: var(--terminal-bg);
+         box-shadow: 0 0 20px rgba(124, 227, 139, 0.3);
+      }
+
+      .btn-terminal.secondary {
+         border-color: var(--terminal-blue);
+         color: var(--terminal-blue);
+      }
+
+      .btn-terminal.secondary:hover {
+         background: var(--terminal-blue);
+         color: var(--terminal-bg);
+         box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+      }
+
+      .architecture-diagram {
+         background: var(--code-bg);
+         border: 1px solid var(--border-color);
+         border-radius: 8px;
+         padding: 40px;
+         margin: 40px 0;
+         text-align: center;
+         font-family: 'Monaco', 'Consolas', monospace;
+      }
+
+      .diagram-flow {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 20px;
+      }
+
+      .diagram-box {
+         background: var(--terminal-bg);
+         border: 1px solid var(--terminal-blue);
+         border-radius: 6px;
+         padding: 16px;
+         color: var(--terminal-blue);
+         font-size: 12px;
+         min-width: 120px;
+      }
+
+      .diagram-arrow {
+         color: var(--terminal-yellow);
+         font-size: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+         .project-title {
+            font-size: 28px;
+         }
+         
+         .project-subtitle {
+            font-size: 16px;
+         }
+         
+         .app-stack {
+            grid-template-columns: 1fr;
+         }
+         
+         .diagram-flow {
+            flex-direction: column;
+         }
+         
+         .diagram-arrow {
+            transform: rotate(90deg);
+         }
+      }
+   </style>
 </head>
 <body>
    <!-- Header -->
@@ -26,188 +341,315 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../blog.html">Blog</a></li>
             <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../projects.html">Projects</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
          </ul>
       </nav>
    </header>
 
-   <!-- Project Content -->
-   <section id="project-details">
+   <!-- Project Hero -->
+   <section class="project-hero">
       <div class="row">
-         <div class="ten columns offset-by-one">
-            <h1>ECARX Android Auto Applications</h1>
-            <p class="lead">Advanced Android Auto applications featuring AI-powered voice assistants and entertainment systems</p>
+         <div class="twelve columns">
+            <h1 class="project-title">$ ./ecarx-android-auto --suite</h1>
+            <p class="project-subtitle">> Advanced automotive applications with AI voice assistants and entertainment systems</p>
             
-            <div class="project-image">
-               <div class="image-placeholder">ECARX Android Auto Suite</div>
-            </div>
-            
-            <div class="project-info">
-               <div class="row">
-                  <div class="six columns">
-                     <h3>Project Overview</h3>
-                     <p>
-                        A comprehensive suite of Android Auto applications designed for ECARX automotive platforms, featuring custom AI voice assistants and entertainment applications that enhance the driving experience with advanced functionality beyond standard Google Assistant capabilities.
-                     </p>
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-buttons">
+                     <div class="terminal-button close"></div>
+                     <div class="terminal-button minimize"></div>
+                     <div class="terminal-button maximize"></div>
                   </div>
-                  <div class="six columns">
-                     <h3>Technical Stack</h3>
-                     <ul>
-                        <li><strong>Languages:</strong> JavaScript, Kotlin</li>
-                        <li><strong>Platform:</strong> Android Auto SDK</li>
-                        <li><strong>AI/ML:</strong> Custom voice processing</li>
-                        <li><strong>Integration:</strong> ECARX vehicle systems</li>
-                        <li><strong>Architecture:</strong> Modular app design</li>
-                        <li><strong>Development:</strong> Android Studio, Git</li>
-                     </ul>
+                  <div class="terminal-title">ecarx-project-overview.sh</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">hongzhi@ecarx:~/android-auto$</span> 
+                     <span class="terminal-command">cat project_suite.txt</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     🚗 ECARX ANDROID AUTO APPLICATIONS - AUTOMOTIVE AI SUITE
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     🤖 EcarBot AI: Advanced voice assistant (JavaScript)
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     📺 EcarTV: Entertainment platform (Kotlin)
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     🎯 AndroidAuto EBot: Task automation system
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     ⚡ Platform: Android Auto SDK + ECARX Integration
                   </div>
                </div>
             </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Application Architecture -->
+   <section class="project-section">
+      <div class="row">
+         <div class="twelve columns">
+            <h2>// Application Architecture</h2>
             
-            <div class="project-description">
-               <h3>Applications Suite</h3>
-               
-               <div class="app-section">
+            <div class="architecture-diagram">
+               <div class="diagram-flow">
+                  <div class="diagram-box">Android Auto<br/>Platform</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box">ECARX<br/>Integration</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box">AI Processing<br/>Engine</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box">Vehicle<br/>Systems</div>
+               </div>
+            </div>
+
+            <div class="code-block">
+               <pre>
+<span style="color: #7ce38b;">// EcarBot AI voice processing architecture</span>
+<span style="color: #ff7b72;">class</span> <span style="color: #ffa657;">EcarBotAI</span> {
+    <span style="color: #79c0ff;">constructor</span>() {
+        <span style="color: #79c0ff;">this</span>.voiceEngine = <span style="color: #79c0ff;">new</span> <span style="color: #ffa657;">AutomotiveVoiceEngine</span>();
+        <span style="color: #79c0ff;">this</span>.ecarxInterface = <span style="color: #79c0ff;">new</span> <span style="color: #ffa657;">EcarxVehicleInterface</span>();
+    }
+    
+    <span style="color: #d2a8ff;">processVoiceCommand</span>(audioInput) {
+        <span style="color: #7ce38b;">// Enhanced voice recognition for automotive environment</span>
+        <span style="color: #79c0ff;">const</span> command = <span style="color: #79c0ff;">this</span>.voiceEngine.recognize(audioInput);
+        <span style="color: #79c0ff;">return</span> <span style="color: #79c0ff;">this</span>.executeAutomotiveAction(command);
+    }
+}
+               </pre>
+            </div>
+
+            <div class="app-stack">
+               <div class="app-item">
                   <h4>🤖 EcarBot AI (JavaScript)</h4>
-                  <p>
-                     A sophisticated AI-powered voice assistant specifically designed for Android Auto that extends far beyond the capabilities of Google Assistant. EcarBot AI provides customized automotive-specific functions and enhanced interaction capabilities.
-                  </p>
-                  
-                  <h5>Key Features:</h5>
                   <ul>
-                     <li>Advanced voice recognition optimized for in-vehicle environments</li>
-                     <li>Custom automotive commands and vehicle-specific functions</li>
-                     <li>Enhanced natural language processing for complex queries</li>
-                     <li>Integration with ECARX vehicle systems and sensors</li>
-                     <li>Personalized user preferences and learning capabilities</li>
-                     <li>Multi-language support with automotive terminology</li>
+                     <li>Advanced voice recognition</li>
+                     <li>Automotive-specific commands</li>
+                     <li>Natural language processing</li>
+                     <li>ECARX vehicle integration</li>
+                     <li>Personalized learning</li>
+                     <li>Multi-language support</li>
                   </ul>
-                  
-                  <div class="project-cta">
-                     <a href="https://github.com/bluehawana/ecarbot-js-ai-androidauto" class="button" target="_blank">View EcarBot AI on GitHub</a>
-                  </div>
                </div>
                
-               <div class="app-section">
+               <div class="app-item">
                   <h4>📺 EcarTV (Kotlin)</h4>
-                  <p>
-                     A comprehensive entertainment application built specifically for Android Auto platforms, providing advanced media streaming and entertainment features designed for the automotive environment.
-                  </p>
-                  
-                  <h5>Key Features:</h5>
                   <ul>
-                     <li>Optimized video streaming for automotive displays</li>
-                     <li>Safety-focused interface design for driver interaction</li>
-                     <li>Custom content management and playlist features</li>
-                     <li>Integration with vehicle entertainment systems</li>
-                     <li>Offline content caching for connectivity-poor areas</li>
-                     <li>Passenger-specific controls and content filtering</li>
+                     <li>Optimized video streaming</li>
+                     <li>Safety-focused interface</li>
+                     <li>Content management</li>
+                     <li>Vehicle entertainment systems</li>
+                     <li>Offline content caching</li>
+                     <li>Passenger controls</li>
                   </ul>
-                  
-                  <div class="project-cta">
-                     <a href="https://github.com/bluehawana/ecartv-kotlin-androidauto" class="button" target="_blank">View EcarTV on GitHub</a>
-                  </div>
                </div>
                
-               <div class="app-section">
+               <div class="app-item">
                   <h4>🚗 AndroidAuto EBot</h4>
-                  <p>
-                     An additional voice bot implementation that complements the main EcarBot AI, providing specialized task automation and enhanced voice interaction capabilities within the Android Auto ecosystem.
-                  </p>
-                  
-                  <h5>Key Features:</h5>
                   <ul>
-                     <li>Task automation and job scheduling</li>
-                     <li>Enhanced voice command processing</li>
-                     <li>Integration with external automotive services</li>
-                     <li>Custom workflow automation</li>
-                     <li>Advanced context awareness</li>
+                     <li>Task automation</li>
+                     <li>Enhanced voice commands</li>
+                     <li>External service integration</li>
+                     <li>Workflow automation</li>
+                     <li>Context awareness</li>
+                     <li>Real-time processing</li>
                   </ul>
-                  
-                  <div class="project-cta">
-                     <a href="https://github.com/bluehawana/AndroidAuto-Ebot" class="button" target="_blank">View AndroidAuto EBot on GitHub</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+            
+            
+   <!-- Application Details -->
+   <section class="project-section" style="background: #161b22;">
+      <div class="row">
+         <div class="twelve columns">
+            <h2>// Application Portfolio</h2>
+            
+            <div class="feature-grid">
+               <div class="feature-card">
+                  <h3>🤖 EcarBot AI (JavaScript)</h3>
+                  <p>Sophisticated AI-powered voice assistant that extends beyond Google Assistant capabilities. Features advanced voice recognition optimized for in-vehicle environments, custom automotive commands, and deep integration with ECARX vehicle systems.</p>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/ecarbot-js-ai-androidauto" target="_blank" class="btn-terminal">
+                        $ git clone ecarbot-ai
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="feature-card">
+                  <h3>📺 EcarTV (Kotlin)</h3>
+                  <p>Comprehensive entertainment application for Android Auto platforms. Provides optimized video streaming, safety-focused interface design, content management, and offline caching for connectivity-poor areas.</p>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/ecartv-kotlin-androidauto" target="_blank" class="btn-terminal">
+                        $ git clone ecartv
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="feature-card">
+                  <h3>🚗 AndroidAuto EBot</h3>
+                  <p>Specialized task automation system that complements EcarBot AI. Features enhanced voice command processing, workflow automation, external service integration, and advanced context awareness.</p>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/AndroidAuto-Ebot" target="_blank" class="btn-terminal">
+                        $ git clone android-ebot
+                     </a>
                   </div>
                </div>
             </div>
+         </div>
+      </div>
+   </section>
             
-            <div class="project-description">
-               <h3>Technical Innovation</h3>
-               
-               <h4>Advanced Voice Processing</h4>
-               <p>
-                  The applications feature custom voice processing algorithms optimized for automotive environments, including noise cancellation, echo reduction, and enhanced speech recognition in challenging acoustic conditions.
-               </p>
-               
-               <h4>ECARX Platform Integration</h4>
-               <p>
-                  Deep integration with ECARX vehicle systems enables access to vehicle telemetry, environmental sensors, and automotive-specific functionality that traditional voice assistants cannot provide.
-               </p>
-               
-               <h4>Safety-First Design</h4>
-               <p>
-                  All applications are designed with automotive safety standards in mind, featuring hands-free operation, voice-first interaction, and minimal visual distraction for drivers.
-               </p>
-               
-               <h4>Modular Architecture</h4>
-               <p>
-                  The suite uses a modular design allowing for easy integration, customization, and deployment across different ECARX vehicle models and configurations.
-               </p>
-            </div>
+   <!-- Technical Innovation -->
+   <section class="project-section">
+      <div class="row">
+         <div class="twelve columns">
+            <h2>// Technical Innovation</h2>
             
-            <div class="project-gallery">
-               <h3>Application Features</h3>
-               <div class="row">
-                  <div class="four columns">
-                     <div class="image-placeholder">Voice Assistant Interface</div>
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-buttons">
+                     <div class="terminal-button close"></div>
+                     <div class="terminal-button minimize"></div>
+                     <div class="terminal-button maximize"></div>
                   </div>
-                  <div class="four columns">
-                     <div class="image-placeholder">Entertainment Dashboard</div>
+                  <div class="terminal-title">innovation-features.log</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[VOICE]</span> 
+                     <span style="color: #f2cc60;">Advanced voice processing with noise cancellation</span>
                   </div>
-                  <div class="four columns">
-                     <div class="image-placeholder">Vehicle Integration</div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[INTEGRATION]</span> 
+                     <span style="color: #58a6ff;">Deep ECARX vehicle systems integration</span>
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[SAFETY]</span> 
+                     <span style="color: #58a6ff;">Hands-free operation with minimal distraction</span>
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[ARCHITECTURE]</span> 
+                     <span style="color: #58a6ff;">Modular design for easy deployment</span>
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[PERFORMANCE]</span> 
+                     <span style="color: #7ce38b;">Optimized for automotive environments</span>
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">[LANGUAGES]</span> 
+                     <span style="color: #7ce38b;">Multi-language support with automotive terminology</span>
                   </div>
                </div>
             </div>
-            
-            <div class="project-description">
-               <h4>Development Status</h4>
-               <p>
-                  These applications represent ongoing development work in the automotive AI space, leveraging modern Android Auto development practices and ECARX platform capabilities to create next-generation in-vehicle experiences.
-               </p>
-               
-               <h4>Professional Context</h4>
-               <p>
-                  Developed as part of automotive software innovation work, these projects demonstrate expertise in automotive application development, AI integration, and platform-specific optimization for connected vehicle environments.
-               </p>
+
+            <div class="code-block">
+               <pre>
+<span style="color: #7ce38b;">// ECARX vehicle integration implementation</span>
+<span style="color: #ff7b72;">interface</span> <span style="color: #ffa657;">EcarxVehicleInterface</span> {
+    <span style="color: #d2a8ff;">getVehicleTelemetry</span>(): VehicleData;
+    <span style="color: #d2a8ff;">controlClimate</span>(temperature: <span style="color: #79c0ff;">number</span>): <span style="color: #79c0ff;">void</span>;
+    <span style="color: #d2a8ff;">adjustSeating</span>(position: SeatPosition): <span style="color: #79c0ff;">void</span>;
+    <span style="color: #d2a8ff;">getNavigationStatus</span>(): NavigationData;
+}
+
+<span style="color: #7ce38b;">// Safety-first voice command processing</span>
+<span style="color: #ff7b72;">class</span> <span style="color: #ffa657;">SafetyVoiceProcessor</span> {
+    <span style="color: #d2a8ff;">processCommand</span>(command: <span style="color: #79c0ff;">string</span>): CommandResult {
+        <span style="color: #7ce38b;">// Validate safety constraints before execution</span>
+        <span style="color: #79c0ff;">if</span> (<span style="color: #79c0ff;">this</span>.isVehicleInMotion() && <span style="color: #79c0ff;">this</span>.requiresVisualAttention(command)) {
+            <span style="color: #79c0ff;">return</span> <span style="color: #79c0ff;">this</span>.deferCommand(command);
+        }
+        <span style="color: #79c0ff;">return</span> <span style="color: #79c0ff;">this</span>.executeCommand(command);
+    }
+}
+               </pre>
             </div>
+         </div>
+      </div>
+   </section>
             
-            <div class="project-cta">
-               <a href="../contact.html" class="button">Contact for More Information</a>
-               <a href="https://github.com/bluehawana" class="button" target="_blank">View All Projects</a>
+   <!-- Project Status & Links -->
+   <section class="project-section" style="background: #0d1117;">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="project-links">
+               <h2 style="margin-bottom: 40px;">// Explore the Applications</h2>
+               
+               <div class="terminal-window">
+                  <div class="terminal-header">
+                     <div class="terminal-buttons">
+                        <div class="terminal-button close"></div>
+                        <div class="terminal-button minimize"></div>
+                        <div class="terminal-button maximize"></div>
+                     </div>
+                     <div class="terminal-title">development-status.sh</div>
+                  </div>
+                  <div class="terminal-content">
+                     <div class="terminal-line">
+                        <span class="terminal-prompt">[STATUS]</span> 
+                        <span style="color: #7ce38b;">Ongoing automotive AI development</span>
+                     </div>
+                     <div class="terminal-line">
+                        <span class="terminal-prompt">[CONTEXT]</span> 
+                        <span style="color: #58a6ff;">Professional automotive software innovation</span>
+                     </div>
+                     <div class="terminal-line">
+                        <span class="terminal-prompt">[EXPERTISE]</span> 
+                        <span style="color: #58a6ff;">Android Auto + ECARX platform optimization</span>
+                     </div>
+                     <div class="terminal-line">
+                        <span class="terminal-prompt">[DEPLOYMENT]</span> 
+                        <span style="color: #f2cc60;">Next-generation in-vehicle experiences</span>
+                     </div>
+                  </div>
+               </div>
+               
+               <div style="margin-top: 40px;">
+                  <a href="https://github.com/bluehawana" target="_blank" class="btn-terminal">
+                     $ git clone --all-projects
+                  </a>
+                  <a href="../projects.html" class="btn-terminal secondary">
+                     $ cd ../projects
+                  </a>
+               </div>
             </div>
          </div>
       </div>
    </section>
 
    <!-- Footer -->
-   <footer>
+   <footer style="background: #0d1117; border-top: 1px solid #30363d;">
       <div class="row">
          <div class="twelve columns">
             <ul class="social-links">
-               <li><a href="https://twitter.com/bluehawana"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://linkedin.com/in/hzl"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://bluehawana.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://github.com/bluehawana"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/bluehawana" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:hongzhili01@gmail.com"><i class="fa fa-envelope"></i></a></li>
             </ul>
 
             <ul class="copyright">
-               <li>&copy; 2025 Hongzhi Li</li>
-               <li>Design: <a href="https://www.styleshout.com/free-templates/ceevee/">CeeVee</a> (Modified)</li>
+               <li style="color: #7ce38b; font-family: 'Monaco', 'Consolas', monospace;">&copy; 2025 Hongzhi Li</li>
             </ul>
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#" style="background: #30363d; color: #7ce38b;">
+               <i class="icon-up-open"></i>
+            </a>
+         </div>
       </div>
    </footer>
 
