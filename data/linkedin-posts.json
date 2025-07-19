@@ -31,20 +31,20 @@
   },
   {
     "content": "Unleash your inner racer and conquer the track with Bluehawana! Embrace the thrill of the race and go for the win！",
-    "date": "2024-12-10",
-    "url": "https://www.linkedin.com/in/hzl",
+    "date": "",
+    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
     "tags": ["Bluehawana", "DareToDrive", "DareToWin", "RacingSpirit", "Gokart", "LapTime"]
   },
   {
     "content": "I've been following Sander Van Vugt's CKA 4th tutorial on O'Reilly since last week. However, when we reached the '4. Kubernetes Monitoring' section, I ran into issues with Calico pods that prevented me from moving forward. I spent several days debugging and troubleshooting the problem. Eventually, I discovered that the calico.yaml file v3.27.3 is generally compatible with chips like AMD and Intel, but not specifically designed for the Mac Silicon. If you're using a MacBook M1 or later MacBook Pro with VMware Fusion to set up your K8s system, you'll need to edit your calico.yaml file. Simply search for 'docker' and change all instances of v3.27.3 to v3.27.3-arm. Hopefully, this post will save some of you time during your studies!",
-    "date": "2024-12-05",
-    "url": "https://www.linkedin.com/in/hzl",
+    "date": "",
+    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
     "tags": ["CKA", "Kubernetes", "MacSilicon", "Troubleshooting", "CalicoPods", "VMwareFusion"]
   },
   {
     "content": "Experience the power of Linux containers on your Mac devices with Apple's Container CLI tool, an innovative solution designed to build, run, and deploy Linux containers on macOS. Developed by Apple using Swift, this open-source project offers secure, private, and efficient containerization optimized for Apple silicon. With the Container CLI, you can create, manage, and customize Linux containers seamlessly, taking advantage of its features for container image management, virtualization, and environment customization.",
-    "date": "2024-12-01",
-    "url": "https://www.linkedin.com/in/hzl",
+    "date": "",
+    "url": "https://www.linkedin.com/in/hzl/recent-activity/all/",
     "tags": ["MacLinux", "ContainerCLI", "SwiftContainers", "LinuxOnMac", "OpenSource"]
   }
 ]
