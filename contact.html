@@ -49,7 +49,7 @@
       <div class="row">
          <div class="eight columns">
             <!-- Contact Form -->
-            <form action="https://formspree.io/hongzhili01@gmail.com" method="POST" id="contactForm" name="contactForm">
+            <form action="mailto:hongzhili01@gmail.com" method="post" enctype="text/plain" id="contactForm" name="contactForm">
                <fieldset>
                   <div class="row">
                      <div class="six columns">
@@ -86,7 +86,7 @@
                   </div>
 
                   <div>
-                     <button class="submit" type="submit">Submit</button>
+                     <button class="submit" type="button" onclick="sendEmail()">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
@@ -162,5 +162,38 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   
+   <script>
+   function sendEmail() {
+      const name = document.getElementById('contactName').value;
+      const email = document.getElementById('contactEmail').value;
+      const phone = document.getElementById('contactPhone').value;
+      const website = document.getElementById('contactWebsite').value;
+      const subject = document.getElementById('contactSubject').value || 'Contact from bluehawana.com';
+      const message = document.getElementById('contactMessage').value;
+      
+      if (!name || !email || !message) {
+         document.getElementById('message-warning').style.display = 'block';
+         document.getElementById('message-success').style.display = 'none';
+         return;
+      }
+      
+      const emailBody = `Name: ${name}
+Email: ${email}
+Phone: ${phone || 'Not provided'}
+Website: ${website || 'Not provided'}
+
+Message:
+${message}`;
+      
+      const emailSubject = encodeURIComponent(subject);
+      const emailBodyEncoded = encodeURIComponent(emailBody);
+      
+      window.location.href = `mailto:hongzhili01@gmail.com?subject=${emailSubject}&body=${emailBodyEncoded}`;
+      
+      document.getElementById('message-warning').style.display = 'none';
+      document.getElementById('message-success').style.display = 'block';
+   }
+   </script>
 </body>
 </html>
