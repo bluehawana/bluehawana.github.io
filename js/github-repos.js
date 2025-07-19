@@ -1,7 +1,7 @@
 /**
  * Fetch latest GitHub repositories for bluehawana
  */
-async function fetchLatestRepos() {
+async function fetchLatestRepos(containerId = 'github-repos') {
     try {
         const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=5');
         const repos = await response.json();
@@ -10,7 +10,7 @@ async function fetchLatestRepos() {
             throw new Error(`GitHub API error: ${response.status}`);
         }
         
-        const repoContainer = document.getElementById('github-repos');
+        const repoContainer = document.getElementById(containerId);
         if (!repoContainer) return;
         
         repoContainer.innerHTML = '';
@@ -39,7 +39,7 @@ async function fetchLatestRepos() {
         
     } catch (error) {
         console.error('Error fetching GitHub repos:', error);
-        const repoContainer = document.getElementById('github-repos');
+        const repoContainer = document.getElementById(containerId);
         if (repoContainer) {
             repoContainer.innerHTML = '<p>Unable to load repositories at this time.</p>';
         }
