@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Dashboard - Hongzhi Li</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0070f3 0%, #0051a2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .status-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #0070f3;
+        }
+        
+        .status-card h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .status-value {
+            font-weight: 600;
+            color: #0070f3;
+        }
+        
+        .button {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .button:hover {
+            background: #0051a2;
+        }
+        
+        .button.success {
+            background: #28a745;
+        }
+        
+        .button.success:hover {
+            background: #1e7e34;
+        }
+        
+        .button.warning {
+            background: #ffc107;
+            color: #000;
+        }
+        
+        .button.warning:hover {
+            background: #e0a800;
+        }
+        
+        .button.danger {
+            background: #dc3545;
+        }
+        
+        .button.danger:hover {
+            background: #c82333;
+        }
+        
+        .activity-log {
+            background: #f8f9fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+            font-family: 'Monaco', 'Consolas', monospace;
+        }
+        
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .log-time {
+            color: #666;
+            margin-right: 10px;
+        }
+        
+        .log-info { color: #0070f3; }
+        .log-success { color: #28a745; }
+        .log-warning { color: #ffc107; }
+        .log-error { color: #dc3545; }
+        
+        .notification {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: none;
+        }
+        
+        .notification.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .notification.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .notification.info {
+            background: #cce7ff;
+            color: #004085;
+            border: 1px solid #99d4ff;
+        }
+        
+        .controls-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .search-section {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .search-results {
+            margin-top: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .search-result {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .activity-id-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Automation Dashboard</h1>
+            <p>Monitor and control LinkedIn & GitHub content synchronization</p>
+        </div>
+        
+        <div class="content">
+            <div id="notifications"></div>
+            
+            <div class="status-grid">
+                <div class="status-card">
+                    <h3>🔄 Monitoring Status</h3>
+                    <div class="status-item">
+                        <span>System Status:</span>
+                        <span id="systemStatus" class="status-value">Loading...</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Active Hours:</span>
+                        <span class="status-value">8:00 AM - 11:59 PM</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Check Interval:</span>
+                        <span class="status-value">30 minutes</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Current Time:</span>
+                        <span id="currentTime" class="status-value">--:--</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Next Check:</span>
+                        <span id="nextCheck" class="status-value">--:--</span>
+                    </div>
+                </div>
+                
+                <div class="status-card">
+                    <h3>🔗 LinkedIn Status</h3>
+                    <div class="status-item">
+                        <span>Authentication:</span>
+                        <span id="linkedinAuth" class="status-value">Checking...</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Last Check:</span>
+                        <span id="linkedinLastCheck" class="status-value">Never</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Total Posts:</span>
+                        <span id="linkedinPostCount" class="status-value">--</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Broken URLs:</span>
+                        <span id="brokenUrls" class="status-value">3 remaining</span>
+                    </div>
+                </div>
+                
+                <div class="status-card">
+                    <h3>🐙 GitHub Status</h3>
+                    <div class="status-item">
+                        <span>API Status:</span>
+                        <span id="githubStatus" class="status-value">Active</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Last Check:</span>
+                        <span id="githubLastCheck" class="status-value">Never</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Total Repos:</span>
+                        <span id="githubRepoCount" class="status-value">--</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Recent Updates:</span>
+                        <span id="recentUpdates" class="status-value">--</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls-section">
+                <h3>🎛️ Manual Controls</h3>
+                <p>Use these controls to manually trigger checks or manage the automation system.</p>
+                <div style="margin-top: 15px;">
+                    <button id="manualCheckBtn" class="button success">🔄 Check Now</button>
+                    <button id="startMonitoringBtn" class="button">▶️ Start Monitoring</button>
+                    <button id="stopMonitoringBtn" class="button warning">⏸️ Stop Monitoring</button>
+                    <button id="linkedinSyncBtn" class="button">🔗 LinkedIn Sync</button>
+                    <button id="clearLogsBtn" class="button danger">🗑️ Clear Logs</button>
+                </div>
+                <div style="margin-top: 10px;">
+                    <span style="font-size: 12px; color: #666;">
+                        💡 Tip: Use Ctrl/Cmd + Shift + U for quick manual check from any page
+                    </span>
+                </div>
+            </div>
+            
+            <div class="search-section">
+                <h3>🔍 Manual Activity ID Search</h3>
+                <p>Search for specific LinkedIn posts to find their activity IDs for the 3 remaining broken URLs.</p>
+                <div style="margin-top: 15px;">
+                    <input type="text" id="searchInput" placeholder="Enter search keywords (e.g., 'beach Sweden Louise Nordin')" style="width: 70%; padding: 8px; margin-right: 10px;">
+                    <button id="searchBtn" class="button">🔍 Search LinkedIn</button>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+            <div class="activity-log">
+                <h4>📊 Activity Log</h4>
+                <div id="logEntries">
+                    <div class="log-entry">
+                        <span class="log-time">--:--:--</span>
+                        <span class="log-info">System initializing...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/linkedin-api-sync.js"></script>
+    <script src="js/automation-scheduler.js"></script>
+    <script>
+        let activityLog = [];
+        
+        // DOM elements
+        const notifications = document.getElementById('notifications');
+        const systemStatus = document.getElementById('systemStatus');
+        const currentTime = document.getElementById('currentTime');
+        const nextCheck = document.getElementById('nextCheck');
+        const linkedinAuth = document.getElementById('linkedinAuth');
+        const linkedinLastCheck = document.getElementById('linkedinLastCheck');
+        const linkedinPostCount = document.getElementById('linkedinPostCount');
+        const brokenUrls = document.getElementById('brokenUrls');
+        const githubStatus = document.getElementById('githubStatus');
+        const githubLastCheck = document.getElementById('githubLastCheck');
+        const githubRepoCount = document.getElementById('githubRepoCount');
+        const recentUpdates = document.getElementById('recentUpdates');
+        const logEntries = document.getElementById('logEntries');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        
+        // Control buttons
+        const manualCheckBtn = document.getElementById('manualCheckBtn');
+        const startMonitoringBtn = document.getElementById('startMonitoringBtn');
+        const stopMonitoringBtn = document.getElementById('stopMonitoringBtn');
+        const linkedinSyncBtn = document.getElementById('linkedinSyncBtn');
+        const clearLogsBtn = document.getElementById('clearLogsBtn');
+        const searchBtn = document.getElementById('searchBtn');
+        
+        // Initialize dashboard
+        function initializeDashboard() {
+            updateStatus();
+            loadActivityLog();
+            
+            // Set up event listeners
+            manualCheckBtn.addEventListener('click', triggerManualCheck);
+            startMonitoringBtn.addEventListener('click', startMonitoring);
+            stopMonitoringBtn.addEventListener('click', stopMonitoring);
+            linkedinSyncBtn.addEventListener('click', openLinkedInSync);
+            clearLogsBtn.addEventListener('click', clearActivityLog);
+            searchBtn.addEventListener('click', searchLinkedInPosts);
+            
+            // Listen for automation events
+            window.addEventListener('content-notification', handleContentNotification);
+            window.addEventListener('new-linkedin-posts', handleNewLinkedInPosts);
+            window.addEventListener('new-github-repos', handleNewGitHubRepos);
+            
+            // Update time every second
+            setInterval(updateCurrentTime, 1000);
+            
+            // Update status every 30 seconds
+            setInterval(updateStatus, 30000);
+            
+            logActivity('info', 'Dashboard initialized');
+        }
+        
+        // Update current time display
+        function updateCurrentTime() {
+            currentTime.textContent = new Date().toLocaleTimeString();
+        }
+        
+        // Update all status displays
+        function updateStatus() {
+            // System status
+            const monitor = window.contentMonitor;
+            if (monitor) {
+                systemStatus.textContent = monitor.isRunning ? 
+                    (monitor.isWithinActiveHours() ? 'Active' : 'Standby (outside hours)') : 
+                    'Stopped';
+                
+                // Calculate next check time
+                const now = new Date();
+                const nextCheckTime = new Date(now.getTime() + 30 * 60 * 1000);
+                nextCheck.textContent = monitor.isRunning ? nextCheckTime.toLocaleTimeString() : '--:--';
+                
+                // Last check times
+                if (monitor.lastCheck.linkedin !== new Date(0).toISOString()) {
+                    linkedinLastCheck.textContent = new Date(monitor.lastCheck.linkedin).toLocaleTimeString();
+                }
+                if (monitor.lastCheck.github !== new Date(0).toISOString()) {
+                    githubLastCheck.textContent = new Date(monitor.lastCheck.github).toLocaleTimeString();
+                }
+            }
+            
+            // LinkedIn authentication
+            if (window.linkedInSync) {
+                linkedinAuth.textContent = window.linkedInSync.isTokenValid() ? 'Authenticated' : 'Not Authenticated';
+            }
+            
+            // Load current post count
+            loadPostCounts();
+        }
+        
+        // Load post counts
+        async function loadPostCounts() {
+            try {
+                const response = await fetch('./data/linkedin-posts.json?v=' + Date.now());
+                const posts = await response.json();
+                linkedinPostCount.textContent = posts.length;
+                
+                // Count broken URLs
+                const brokenCount = posts.filter(post => 
+                    post.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/'
+                ).length;
+                brokenUrls.textContent = `${brokenCount} remaining`;
+                
+            } catch (error) {
+                linkedinPostCount.textContent = 'Error';
+            }
+            
+            try {
+                const response = await fetch('https://api.github.com/users/bluehawana/repos');
+                const repos = await response.json();
+                githubRepoCount.textContent = repos.length;
+                
+                // Count recent updates (last 7 days)
+                const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+                const recentCount = repos.filter(repo => 
+                    new Date(repo.updated_at) > weekAgo
+                ).length;
+                recentUpdates.textContent = recentCount;
+                
+            } catch (error) {
+                githubRepoCount.textContent = 'Error';
+                recentUpdates.textContent = 'Error';
+            }
+        }
+        
+        // Manual check trigger
+        async function triggerManualCheck() {
+            manualCheckBtn.disabled = true;
+            manualCheckBtn.textContent = '🔄 Checking...';
+            
+            logActivity('info', 'Manual check triggered');
+            
+            try {
+                await window.contentMonitor.triggerManualCheck();
+                showNotification('Manual check completed successfully', 'success');
+            } catch (error) {
+                showNotification('Manual check failed: ' + error.message, 'error');
+                logActivity('error', 'Manual check failed: ' + error.message);
+            } finally {
+                manualCheckBtn.disabled = false;
+                manualCheckBtn.textContent = '🔄 Check Now';
+                updateStatus();
+            }
+        }
+        
+        // Start monitoring
+        function startMonitoring() {
+            window.contentMonitor.startMonitoring();
+            updateStatus();
+            logActivity('success', 'Monitoring started');
+            showNotification('Automated monitoring started', 'success');
+        }
+        
+        // Stop monitoring
+        function stopMonitoring() {
+            window.contentMonitor.stopMonitoring();
+            updateStatus();
+            logActivity('warning', 'Monitoring stopped');
+            showNotification('Automated monitoring stopped', 'info');
+        }
+        
+        // Open LinkedIn sync page
+        function openLinkedInSync() {
+            window.open('./linkedin-auto-sync.html', '_blank');
+        }
+        
+        // Search LinkedIn posts
+        function searchLinkedInPosts() {
+            const query = searchInput.value.trim();
+            if (!query) return;
+            
+            logActivity('info', `Searching LinkedIn for: "${query}"`);
+            
+            // Create search URLs
+            const searchUrls = [
+                `https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(query)}`,
+                `https://www.google.com/search?q=site:linkedin.com+${encodeURIComponent(query)}+Hongzhi+Li`,
+                `https://www.linkedin.com/search/results/people/?keywords=hongzhi%20li&origin=GLOBAL_SEARCH_HEADER`
+            ];
+            
+            let resultsHtml = `
+                <h4>🔍 Search Results for: "${query}"</h4>
+                <p>Click the links below to search manually and find the activity ID:</p>
+            `;
+            
+            searchUrls.forEach((url, index) => {
+                const title = index === 0 ? 'LinkedIn Content Search' : 
+                             index === 1 ? 'Google Site Search' : 'LinkedIn People Search';
+                resultsHtml += `
+                    <div class="search-result">
+                        <strong>${title}</strong><br>
+                        <a href="${url}" target="_blank">${url}</a>
+                        <div style="margin-top: 10px;">
+                            <label>Found Activity ID:</label>
+                            <input type="text" class="activity-id-input" placeholder="Paste the 19-digit activity ID here">
+                            <button class="button" onclick="updateActivityId(this, '${query}')">Update JSON</button>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            searchResults.innerHTML = resultsHtml;
+        }
+        
+        // Update activity ID for a post
+        function updateActivityId(button, searchQuery) {
+            const input = button.previousElementSibling;
+            const activityId = input.value.trim();
+            
+            if (!/^\d{19}$/.test(activityId)) {
+                showNotification('Please enter a valid 19-digit activity ID', 'error');
+                return;
+            }
+            
+            const newUrl = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+            
+            showNotification(`Activity ID ${activityId} noted. Please update the JSON file manually with URL: ${newUrl}`, 'info');
+            logActivity('info', `Activity ID found for "${searchQuery}": ${activityId}`);
+        }
+        
+        // Log activity
+        function logActivity(type, message) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = { timestamp, type, message };
+            
+            activityLog.unshift(logEntry);
+            if (activityLog.length > 100) activityLog.pop(); // Keep only last 100 entries
+            
+            // Update display
+            const entryDiv = document.createElement('div');
+            entryDiv.className = 'log-entry';
+            entryDiv.innerHTML = `
+                <span class="log-time">${timestamp}</span>
+                <span class="log-${type}">${message}</span>
+            `;
+            
+            logEntries.insertBefore(entryDiv, logEntries.firstChild);
+            
+            // Remove old entries from display
+            if (logEntries.children.length > 50) {
+                logEntries.removeChild(logEntries.lastChild);
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('automation_log', JSON.stringify(activityLog));
+        }
+        
+        // Load activity log from localStorage
+        function loadActivityLog() {
+            const saved = localStorage.getItem('automation_log');
+            if (saved) {
+                activityLog = JSON.parse(saved);
+                logEntries.innerHTML = '';
+                
+                activityLog.slice(0, 50).forEach(entry => {
+                    const entryDiv = document.createElement('div');
+                    entryDiv.className = 'log-entry';
+                    entryDiv.innerHTML = `
+                        <span class="log-time">${entry.timestamp}</span>
+                        <span class="log-${entry.type}">${entry.message}</span>
+                    `;
+                    logEntries.appendChild(entryDiv);
+                });
+            }
+        }
+        
+        // Clear activity log
+        function clearActivityLog() {
+            activityLog = [];
+            logEntries.innerHTML = '<div class="log-entry"><span class="log-time">--:--:--</span><span class="log-info">Log cleared</span></div>';
+            localStorage.removeItem('automation_log');
+            logActivity('info', 'Activity log cleared');
+        }
+        
+        // Show notification
+        function showNotification(message, type) {
+            const notificationDiv = document.createElement('div');
+            notificationDiv.className = `notification ${type}`;
+            notificationDiv.textContent = message;
+            notificationDiv.style.display = 'block';
+            
+            notifications.appendChild(notificationDiv);
+            
+            setTimeout(() => {
+                notificationDiv.remove();
+            }, 5000);
+        }
+        
+        // Handle content notifications
+        function handleContentNotification(event) {
+            const { platform, count, message } = event.detail;
+            showNotification(message, 'success');
+            logActivity('success', message);
+            updateStatus();
+        }
+        
+        // Handle new LinkedIn posts
+        function handleNewLinkedInPosts(event) {
+            const { newPosts } = event.detail;
+            logActivity('success', `${newPosts.length} new LinkedIn posts detected`);
+            updateStatus();
+        }
+        
+        // Handle new GitHub repos
+        function handleNewGitHubRepos(event) {
+            const { newRepos } = event.detail;
+            logActivity('success', `${newRepos.length} GitHub repositories updated`);
+            updateStatus();
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeDashboard);
+    </script>
+</body>
+</html>

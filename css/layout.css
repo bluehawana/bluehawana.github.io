@@ -171,15 +171,26 @@ ul#nav li a {
    text-align: left;
    color: #fff;
 
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #fff !important; }
+ul#nav li.current a { 
+   color: #0070f3 !important; 
+   background: rgba(0, 112, 243, 0.1) !important;
+   border-radius: 4px !important;
+   font-weight: 600 !important;
+}
+
+ul#nav li a:hover {
+   color: #0070f3 !important;
+   background: rgba(0, 112, 243, 0.05) !important;
+   border-radius: 4px !important;
+}
 
 
 /* ------------------------------------------------------------------ */
