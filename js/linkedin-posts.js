@@ -26,11 +26,6 @@ async function fetchLinkedInPosts() {
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
-                        ${post.date ? `<span class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
-                            year: 'numeric', 
-                            month: 'short', 
-                            day: 'numeric' 
-                        })}</span>` : ''}
                         <a href="${post.url}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> View Original Post
                         </a>
@@ -51,13 +46,6 @@ async function fetchLinkedInPosts() {
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
                 postElement.innerHTML = `
-                    ${post.date ? `<div class="post-header">
-                        <div class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
-                            year: 'numeric', 
-                            month: 'long', 
-                            day: 'numeric' 
-                        })}</div>
-                    </div>` : ''}
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
