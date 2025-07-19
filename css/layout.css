@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #ccc; }
+ul#nav li.current a { color: #fff !important; }
 
 
 /* ------------------------------------------------------------------ */
@@ -284,6 +284,8 @@ ul#nav li.current a { color: #ccc; }
 }
 #resume h1 span {
    padding-bottom: 6px;
+   border-bottom: none !important;
+   text-decoration: none !important;
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
