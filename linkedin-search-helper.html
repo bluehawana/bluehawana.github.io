@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Activity ID Finder - Hongzhi Li</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #0070f3;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .search-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .search-item.found {
+            border-left-color: #28a745;
+        }
+        
+        .post-preview {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            font-style: italic;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .search-info {
+            margin-bottom: 15px;
+        }
+        
+        .search-keywords {
+            margin-bottom: 10px;
+        }
+        
+        .keyword {
+            display: inline-block;
+            background: #0070f3;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .search-link {
+            display: inline-block;
+            background: #0070f3;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .search-link:hover {
+            background: #0051a2;
+        }
+        
+        .activity-input {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border: 2px solid #e1e4e8;
+            border-radius: 8px;
+        }
+        
+        .activity-input input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .activity-input label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .update-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .instructions {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ol {
+            color: #856404;
+            padding-left: 20px;
+        }
+        
+        .results {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .results pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LinkedIn Activity ID Finder</h1>
+            <p>Find missing activity IDs for LinkedIn posts</p>
+        </div>
+        
+        <div class="content">
+            <div class="instructions">
+                <h3>How to Find Activity IDs:</h3>
+                <ol>
+                    <li>Click the LinkedIn search links below</li>
+                    <li>Find your specific post on LinkedIn</li>
+                    <li>Copy the post URL (should contain activity-XXXXXXXXXXXXXXXXX-)</li>
+                    <li>Extract the number after "activity-" and before the next "-"</li>
+                    <li>Paste the activity ID in the input field</li>
+                    <li>Click "Update" to mark as found</li>
+                </ol>
+            </div>
+            
+            <div id="searchItems"></div>
+            
+            <div class="results" id="results">
+                <h3>Updated Mappings (Copy to linkedin-posts.js):</h3>
+                <pre id="mappingsOutput"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const missingPosts = [
+            {
+                key: "Undoubtedly, this is the finest beach",
+                preview: "Undoubtedly, this is the finest beach in Sweden! A 380 km drive for this cozy spot on midsummer was absolutely worth it. Thank you, Louise Nordin, for the amazing recommendation!",
+                keywords: ["Sweden", "beach", "midsummer", "Louise Nordin", "380 km"],
+                searchHint: "Swedish beach midsummer recommendation",
+                activityId: null
+            },
+            {
+                key: "Unleash your inner racer",
+                preview: "Unleash your inner racer and conquer the track with Bluehawana! Embrace the thrill of the race and go for the win！",
+                keywords: ["Bluehawana", "racing", "track", "conquer", "win"],
+                searchHint: "Bluehawana racing go-kart",
+                activityId: null
+            },
+            {
+                key: "I've been following Sander Van Vugt",
+                preview: "I've been following Sander Van Vugt's CKA 4th tutorial on O'Reilly since last week. However, when we reached the '4. Kubernetes Monitoring' section, I ran into issues with Calico pods...",
+                keywords: ["CKA", "tutorial", "Calico", "MacSilicon", "VMware Fusion"],
+                searchHint: "CKA tutorial Calico MacSilicon debugging",
+                activityId: null
+            },
+            {
+                key: "Experience the power of Linux containers",
+                preview: "Experience the power of Linux containers on your Mac devices with Apple's Container CLI tool, an innovative solution designed to build, run, and deploy Linux containers on macOS...",
+                keywords: ["Container CLI", "macOS", "Apple", "Swift", "Linux"],
+                searchHint: "Apple Container CLI Linux containers macOS",
+                activityId: null
+            }
+        ];
+        
+        function renderSearchItems() {
+            const container = document.getElementById('searchItems');
+            container.innerHTML = '';
+            
+            missingPosts.forEach((post, index) => {
+                const item = document.createElement('div');
+                item.className = `search-item ${post.activityId ? 'found' : ''}`;
+                
+                const keywords = post.keywords.map(k => `<span class="keyword">${k}</span>`).join('');
+                
+                item.innerHTML = `
+                    <div class="post-preview">"${post.preview}"</div>
+                    
+                    <div class="search-info">
+                        <strong>Search for:</strong> ${post.searchHint}
+                    </div>
+                    
+                    <div class="search-keywords">
+                        <strong>Keywords:</strong> ${keywords}
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(post.searchHint)}&origin=GLOBAL_SEARCH_HEADER" 
+                           target="_blank" class="search-link">Search LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/hzl/recent-activity/all/" 
+                           target="_blank" class="search-link">View Your Activity</a>
+                        <a href="https://www.google.com/search?q=site:linkedin.com+%22${encodeURIComponent(post.searchHint)}%22" 
+                           target="_blank" class="search-link">Google Search</a>
+                    </div>
+                    
+                    <div class="activity-input">
+                        <label>Activity ID (numbers only):</label>
+                        <input type="text" id="activity_${index}" placeholder="7343283675876241408" 
+                               value="${post.activityId || ''}" />
+                        <button class="update-btn" onclick="updateActivityId(${index})">Update</button>
+                    </div>
+                `;
+                
+                container.appendChild(item);
+            });
+        }
+        
+        function updateActivityId(index) {
+            const input = document.getElementById(`activity_${index}`);
+            const activityId = input.value.trim();
+            
+            if (activityId && /^\d{19}$/.test(activityId)) {
+                missingPosts[index].activityId = activityId;
+                renderSearchItems();
+                generateOutput();
+            } else {
+                alert('Please enter a valid 19-digit activity ID');
+            }
+        }
+        
+        function generateOutput() {
+            const mappings = {};
+            let hasUpdates = false;
+            
+            missingPosts.forEach(post => {
+                if (post.activityId) {
+                    mappings[post.key] = post.activityId;
+                    hasUpdates = true;
+                }
+            });
+            
+            if (hasUpdates) {
+                const output = `// Updated content mappings for linkedin-posts.js
+const contentMappings = {
+${missingPosts.map(post => 
+    `    "${post.key}": ${post.activityId ? `"${post.activityId}"` : 'null'}, // ${post.activityId ? 'FOUND!' : 'TODO: Find activity ID'}`
+).join(',\n')}
+};`;
+                
+                document.getElementById('mappingsOutput').textContent = output;
+                document.getElementById('results').style.display = 'block';
+            }
+        }
+        
+        // Initialize
+        renderSearchItems();
+    </script>
+</body>
+</html>
