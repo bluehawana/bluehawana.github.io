@@ -14,6 +14,455 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/blog.css">
    <link rel="shortcut icon" href="favicon.png">
+   
+   <!-- Cyberpunk Project Styles -->
+   <style>
+      :root {
+         --cyber-bg: #0a0a0a;
+         --cyber-dark: #111111;
+         --cyber-primary: #00ffff;
+         --cyber-secondary: #ff00ff;
+         --cyber-accent: #39ff14;
+         --cyber-warning: #ffff00;
+         --cyber-danger: #ff073a;
+         --cyber-text: #ffffff;
+         --cyber-text-dim: #cccccc;
+         --cyber-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--cyber-bg) 0%, var(--cyber-dark) 100%);
+         color: var(--cyber-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+      }
+
+      .cyber-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%);
+         position: relative;
+         overflow: hidden;
+         padding: 120px 0 80px;
+         border-bottom: 2px solid var(--cyber-primary);
+      }
+
+      .cyber-hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 255, 0.03) 2px,
+            rgba(0, 255, 255, 0.03) 4px
+         );
+         animation: scan 4s linear infinite;
+      }
+
+      @keyframes scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .cyber-title {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 20px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .cyber-subtitle {
+         font-size: 18px;
+         color: var(--cyber-secondary);
+         text-align: center;
+         margin-bottom: 40px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .matrix-bg {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         z-index: -1;
+         opacity: 0.1;
+      }
+
+      .project-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         gap: 30px;
+         padding: 80px 0;
+         background: var(--cyber-bg);
+      }
+
+      .cyber-project {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 10px;
+         padding: 30px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+         cursor: pointer;
+      }
+
+      .cyber-project::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+         transition: left 0.5s ease;
+      }
+
+      .cyber-project:hover::before {
+         left: 100%;
+      }
+
+      .cyber-project:hover {
+         border-color: var(--cyber-primary);
+         box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+         transform: translateY(-5px);
+      }
+
+      .project-header {
+         display: flex;
+         align-items: center;
+         margin-bottom: 20px;
+      }
+
+      .project-icon {
+         width: 50px;
+         height: 50px;
+         background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+         border-radius: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 24px;
+         margin-right: 15px;
+         box-shadow: var(--neon-glow);
+      }
+
+      .project-title {
+         font-size: 20px;
+         font-weight: bold;
+         color: var(--cyber-accent);
+         margin: 0;
+      }
+
+      .project-tech {
+         color: var(--cyber-warning);
+         font-size: 12px;
+         margin-top: 5px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .project-desc {
+         color: var(--cyber-text-dim);
+         line-height: 1.6;
+         margin: 20px 0;
+         font-size: 14px;
+      }
+
+      .project-actions {
+         display: flex;
+         gap: 10px;
+         margin-top: 25px;
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--cyber-primary);
+         color: var(--cyber-primary);
+         padding: 8px 16px;
+         font-family: inherit;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .cyber-btn::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: var(--cyber-primary);
+         transition: left 0.3s ease;
+         z-index: -1;
+      }
+
+      .cyber-btn:hover::before {
+         left: 0;
+      }
+
+      .cyber-btn:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 15px var(--cyber-primary);
+      }
+
+      .cyber-btn.secondary {
+         border-color: var(--cyber-secondary);
+         color: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary::before {
+         background: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary:hover {
+         box-shadow: 0 0 15px var(--cyber-secondary);
+      }
+
+      .cyber-btn.accent {
+         border-color: var(--cyber-accent);
+         color: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent::before {
+         background: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent:hover {
+         box-shadow: 0 0 15px var(--cyber-accent);
+      }
+
+      .stats-section {
+         background: linear-gradient(45deg, #0d0d0d 0%, #1a001a 50%, #000d0d 100%);
+         padding: 80px 0;
+         border-top: 1px solid var(--cyber-border);
+         border-bottom: 1px solid var(--cyber-border);
+      }
+
+      .stats-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 40px;
+         text-align: center;
+      }
+
+      .stat-item {
+         position: relative;
+      }
+
+      .stat-number {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         text-shadow: var(--neon-glow);
+         display: block;
+      }
+
+      .stat-label {
+         color: var(--cyber-text-dim);
+         font-size: 14px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         margin-top: 10px;
+      }
+
+      .tech-matrix {
+         background: var(--cyber-dark);
+         padding: 80px 0;
+      }
+
+      .tech-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 30px;
+      }
+
+      .tech-category {
+         background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         padding: 25px;
+         position: relative;
+      }
+
+      .tech-category::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 3px;
+         height: 100%;
+         background: linear-gradient(180deg, var(--cyber-primary), var(--cyber-secondary), var(--cyber-accent));
+      }
+
+      .tech-category h4 {
+         color: var(--cyber-accent);
+         margin-bottom: 20px;
+         font-size: 16px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .tech-list {
+         list-style: none;
+         padding: 0;
+      }
+
+      .tech-list li {
+         color: var(--cyber-text-dim);
+         padding: 8px 0;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+         position: relative;
+         padding-left: 15px;
+      }
+
+      .tech-list li::before {
+         content: '▶';
+         color: var(--cyber-primary);
+         position: absolute;
+         left: 0;
+      }
+
+      .terminal-window {
+         background: #000000;
+         border: 1px solid var(--cyber-primary);
+         border-radius: 8px;
+         margin: 40px 0;
+         box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+         overflow: hidden;
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--cyber-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--cyber-danger); }
+      .terminal-dot.yellow { background: var(--cyber-warning); }
+      .terminal-dot.green { background: var(--cyber-accent); }
+
+      .terminal-title {
+         color: var(--cyber-text);
+         margin-left: 15px;
+         font-size: 14px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Courier New', monospace;
+         font-size: 14px;
+         line-height: 1.6;
+      }
+
+      .terminal-line {
+         margin-bottom: 5px;
+      }
+
+      .terminal-prompt {
+         color: var(--cyber-accent);
+      }
+
+      .terminal-command {
+         color: var(--cyber-primary);
+      }
+
+      .terminal-output {
+         color: var(--cyber-text-dim);
+         margin-left: 20px;
+      }
+
+      .glitch {
+         position: relative;
+         display: inline-block;
+      }
+
+      .glitch::before,
+      .glitch::after {
+         content: attr(data-text);
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+
+      .glitch::before {
+         animation: glitch-anim-1 0.3s infinite linear alternate-reverse;
+         color: var(--cyber-secondary);
+         z-index: -1;
+      }
+
+      .glitch::after {
+         animation: glitch-anim-2 0.3s infinite linear alternate-reverse;
+         color: var(--cyber-primary);
+         z-index: -2;
+      }
+
+      @keyframes glitch-anim-1 {
+         0% { clip: rect(42px, 9999px, 44px, 0); }
+         25% { clip: rect(12px, 9999px, 59px, 0); }
+         50% { clip: rect(63px, 9999px, 27px, 0); }
+         75% { clip: rect(2px, 9999px, 46px, 0); }
+         100% { clip: rect(39px, 9999px, 14px, 0); }
+      }
+
+      @keyframes glitch-anim-2 {
+         0% { clip: rect(65px, 9999px, 119px, 0); }
+         25% { clip: rect(52px, 9999px, 74px, 0); }
+         50% { clip: rect(79px, 9999px, 85px, 0); }
+         75% { clip: rect(75px, 9999px, 5px, 0); }
+         100% { clip: rect(67px, 9999px, 61px, 0); }
+      }
+
+      @media screen and (max-width: 768px) {
+         .cyber-title {
+            font-size: 32px;
+         }
+         
+         .project-grid {
+            grid-template-columns: 1fr;
+         }
+         
+         .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+         }
+         
+         .tech-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
 
    <!-- Script -->
    <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
@@ -38,154 +487,55 @@
       </nav>
    </header>
 
-   <!-- Projects Hero Section -->
-   <section id="projects-hero" class="section-dark">
+   <!-- Cyberpunk Hero Section -->
+   <section class="cyber-hero">
+      <div class="matrix-bg"></div>
       <div class="row">
          <div class="twelve columns">
-            <h1><i class="fa fa-code"></i> Projects Portfolio</h1>
-            <p class="lead">Discover my latest software projects, open-source contributions, and technical innovations. From full-stack web applications to mobile apps and cloud solutions.</p>
-         </div>
-      </div>
-   </section>
-
-   <!-- GitHub Projects Section -->
-   <section id="github-projects" class="section-light">
-      <div class="row">
-         <div class="twelve columns">
-            <h2><i class="fa fa-github"></i> GitHub Repositories</h2>
-            <p>Live repositories from my GitHub profile, automatically updated with latest commits and project information.</p>
-         </div>
-      </div>
-
-      <div class="row">
-         <div class="twelve columns">
-            <div id="github-repos" class="github-repos-grid">
-               <p>Loading GitHub repositories...</p>
-            </div>
-            <div class="text-center" style="margin-top: 30px;">
-               <a href="https://github.com/bluehawana" class="button button-large" target="_blank">
-                  <i class="fa fa-github"></i> View All on GitHub
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <!-- Featured Projects Section -->
-   <section id="featured-projects" class="section-dark">
-      <div class="row">
-         <div class="twelve columns">
-            <h2><i class="fa fa-star"></i> Featured Projects</h2>
-            <p>Highlighted projects showcasing different technologies and architectural approaches.</p>
-         </div>
-      </div>
-
-      <div class="row">
-         <!-- Taxi Carpooling Project -->
-         <div class="six columns">
-            <div class="project-card">
-               <div class="project-image">
-                  <img src="images/taxi-carpooling-preview.jpg" alt="Taxi Carpooling App" onerror="this.src='images/project-placeholder.jpg'"/>
-                  <div class="project-overlay">
-                     <a href="projects/taxi-carpooling.html" class="project-link">
-                        <i class="fa fa-external-link"></i>
-                     </a>
+            <h1 class="cyber-title glitch" data-text="[ PROJECTS.EXE ]">[ PROJECTS.EXE ]</h1>
+            <p class="cyber-subtitle">> Initializing project matrix... Loading digital arsenal...</p>
+            
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-dots">
+                     <div class="terminal-dot red"></div>
+                     <div class="terminal-dot yellow"></div>
+                     <div class="terminal-dot green"></div>
                   </div>
+                  <div class="terminal-title">system@bluehawana:~/projects</div>
                </div>
-               <div class="project-info">
-                  <h3>Gothenburg Taxi Carpooling</h3>
-                  <p class="project-tech">Spring Boot • React Native • PostgreSQL • Google Maps API</p>
-                  <p>Intelligent carpooling platform with automated matching algorithms, real-time geolocation, and integrated payment processing. Cross-platform mobile app with comprehensive backend services.</p>
-                  <div class="project-links">
-                     <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="button">
-                        <i class="fa fa-github"></i> Code
-                     </a>
-                     <a href="projects/taxi-carpooling.html" class="button button-alt">
-                        <i class="fa fa-info-circle"></i> Details
-                     </a>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@matrix:~$</span> 
+                     <span class="terminal-command">ls -la projects/</span>
                   </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- ECARX Apps Project -->
-         <div class="six columns">
-            <div class="project-card">
-               <div class="project-image">
-                  <img src="images/ecarx-apps-preview.jpg" alt="ECARX Android Auto Apps" onerror="this.src='images/project-placeholder.jpg'"/>
-                  <div class="project-overlay">
-                     <a href="projects/ecarx-apps.html" class="project-link">
-                        <i class="fa fa-external-link"></i>
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     drwxr-xr-x  8 hong  staff   256 Jan 19 2025 ./
                   </div>
-               </div>
-               <div class="project-info">
-                  <h3>ECARX Android Auto Suite</h3>
-                  <p class="project-tech">Android Auto • Java • Kotlin • Voice Commands • REST API</p>
-                  <p>Professional automotive applications for Android Auto platform including EcarxTV entertainment system and EcarxBot AI assistant with voice command integration and vehicle data access.</p>
-                  <div class="project-links">
-                     <a href="https://github.com/bluehawana/ecarbot-js-ai-androidauto" target="_blank" class="button">
-                        <i class="fa fa-github"></i> EcarBot
-                     </a>
-                     <a href="projects/ecarx-apps.html" class="button button-alt">
-                        <i class="fa fa-info-circle"></i> Details
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     drwxr-xr-x  3 hong  staff    96 Jan 19 2025 ../
                   </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="row">
-         <!-- Personal Website Project -->
-         <div class="six columns">
-            <div class="project-card">
-               <div class="project-image">
-                  <img src="images/website-preview.jpg" alt="Personal Website" onerror="this.src='images/project-placeholder.jpg'"/>
-                  <div class="project-overlay">
-                     <a href="https://www.bluehawana.com" class="project-link" target="_blank">
-                        <i class="fa fa-external-link"></i>
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     -rw-r--r--  1 hong  staff  2048 Jan 19 2025 taxi-carpooling.jar
                   </div>
-               </div>
-               <div class="project-info">
-                  <h3>Personal Tech Website</h3>
-                  <p class="project-tech">HTML5 • CSS3 • JavaScript • LinkedIn API • GitHub API • Automation</p>
-                  <p>This very website! Evolved from a simple resume to a full-featured platform with LinkedIn API integration, automated content sync, and intelligent post discovery. Features real-time updates and responsive design.</p>
-                  <div class="project-links">
-                     <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="button">
-                        <i class="fa fa-github"></i> Source
-                     </a>
-                     <a href="automation-dashboard.html" class="button button-alt">
-                        <i class="fa fa-cogs"></i> Dashboard
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     -rw-r--r--  1 hong  staff  4096 Jan 19 2025 ecarx-android-auto.apk
                   </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- E-commerce Platform -->
-         <div class="six columns">
-            <div class="project-card">
-               <div class="project-image">
-                  <img src="images/ecommerce-preview.jpg" alt="E-commerce Platform" onerror="this.src='images/project-placeholder.jpg'"/>
-                  <div class="project-overlay">
-                     <a href="https://smrtmart.com" class="project-link" target="_blank">
-                        <i class="fa fa-external-link"></i>
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     -rw-r--r--  1 hong  staff  1024 Jan 19 2025 bluehawana-web.html
                   </div>
-               </div>
-               <div class="project-info">
-                  <h3>Hong Yan AB - Smart Mart</h3>
-                  <p class="project-tech">Spring Boot • React • PostgreSQL • MongoDB • Microservices</p>
-                  <p>Full-stack e-commerce platform with microservices architecture, comprehensive order management, inventory tracking, payment processing, and optimized performance for scalability.</p>
-                  <div class="project-links">
-                     <a href="https://smrtmart.com" target="_blank" class="button">
-                        <i class="fa fa-external-link"></i> Visit
-                     </a>
-                     <a href="#" class="button button-alt" onclick="alert('Contact me for more details about this commercial project')">
-                        <i class="fa fa-info-circle"></i> Details
-                     </a>
+                  <div class="terminal-line terminal-output">
+                     -rw-r--r--  1 hong  staff  3072 Jan 19 2025 smartmart-ecommerce.war
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@matrix:~$</span> 
+                     <span class="terminal-command">./scan_projects --verbose</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     [✓] Found 4 active projects in digital arsenal
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     [✓] All systems operational. Ready for deployment.
                   </div>
                </div>
             </div>
@@ -193,106 +543,297 @@
       </div>
    </section>
 
-   <!-- Tech Stack Section -->
-   <section id="tech-stack" class="section-light">
+   <!-- Digital Arsenal Section -->
+   <section class="project-grid">
       <div class="row">
          <div class="twelve columns">
-            <h2><i class="fa fa-wrench"></i> Technology Stack</h2>
-            <p>Technologies and tools I use across my projects</p>
-         </div>
-      </div>
+            <div class="project-grid">
+               <!-- Taxi Carpooling Project -->
+               <div class="cyber-project" onclick="window.open('projects/taxi-carpooling.html', '_blank')">
+                  <div class="project-header">
+                     <div class="project-icon">🚖</div>
+                     <div>
+                        <h3 class="project-title">GOTHENBURG_TAXI.EXE</h3>
+                        <div class="project-tech">Spring Boot × React Native × PostgreSQL × ML</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     Neural network-powered carpooling matrix with real-time geolocation tracking, automated passenger matching algorithms, and integrated payment processing. Cross-platform mobile deployment with comprehensive backend microservices architecture.
+                  </div>
+                  <div class="project-actions">
+                     <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                     <a href="projects/taxi-carpooling.html" class="cyber-btn secondary">[ NEURAL_NET ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
 
-      <div class="row">
-         <div class="three columns tech-category">
-            <h4>Backend</h4>
-            <ul class="tech-list">
-               <li>Java / Spring Boot</li>
-               <li>C# / .NET Core</li>
-               <li>Node.js</li>
-               <li>Python</li>
-               <li>RESTful APIs</li>
-               <li>Microservices</li>
-            </ul>
-         </div>
+               <!-- ECARX Android Auto -->
+               <div class="cyber-project" onclick="window.open('projects/ecarx-apps.html', '_blank')">
+                  <div class="project-header">
+                     <div class="project-icon">🤖</div>
+                     <div>
+                        <h3 class="project-title">ECARX_ANDROID_AI.APK</h3>
+                        <div class="project-tech">Android Auto × AI × Kotlin × Voice Recognition</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     Advanced automotive AI suite featuring EcarxBot neural assistant and EcarxTV entertainment system. Integrated voice command processing, vehicle telemetry access, and autonomous task execution within Android Auto ecosystem.
+                  </div>
+                  <div class="project-actions">
+                     <a href="https://github.com/bluehawana/ecarbot-js-ai-androidauto" target="_blank" class="cyber-btn">[ AI_CORE ]</a>
+                     <a href="projects/ecarx-apps.html" class="cyber-btn secondary">[ ANDROID_MATRIX ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
 
-         <div class="three columns tech-category">
-            <h4>Frontend</h4>
-            <ul class="tech-list">
-               <li>React / Angular</li>
-               <li>React Native</li>
-               <li>HTML5 / CSS3</li>
-               <li>JavaScript ES6+</li>
-               <li>Responsive Design</li>
-               <li>Progressive Web Apps</li>
-            </ul>
-         </div>
+               <!-- Personal Website -->
+               <div class="cyber-project" onclick="window.open('https://www.bluehawana.com', '_blank')">
+                  <div class="project-header">
+                     <div class="project-icon">🌐</div>
+                     <div>
+                        <h3 class="project-title">BLUEHAWANA_WEB.HTML</h3>
+                        <div class="project-tech">LinkedIn API × GitHub API × Automation × Cyberpunk</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     This digital fortress! Evolved from static resume to dynamic platform with LinkedIn API integration, automated content synchronization, intelligent post discovery algorithms. Features terminal aesthetics and real-time data feeds.
+                  </div>
+                  <div class="project-actions">
+                     <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                     <a href="automation-dashboard.html" class="cyber-btn secondary">[ DASHBOARD ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
 
-         <div class="three columns tech-category">
-            <h4>Database & Cloud</h4>
-            <ul class="tech-list">
-               <li>PostgreSQL / MySQL</li>
-               <li>MongoDB</li>
-               <li>AWS / Azure / GCP</li>
-               <li>Docker / Kubernetes</li>
-               <li>CI/CD Pipelines</li>
-               <li>Cloud Architecture</li>
-            </ul>
-         </div>
+               <!-- Smart Mart E-commerce -->
+               <div class="cyber-project" onclick="window.open('https://smrtmart.com', '_blank')">
+                  <div class="project-header">
+                     <div class="project-icon">🛒</div>
+                     <div>
+                        <h3 class="project-title">SMARTMART_COMMERCE.WAR</h3>
+                        <div class="project-tech">Spring Boot × React × PostgreSQL × Microservices</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     Full-stack e-commerce battlestation with microservices architecture, comprehensive order management protocols, inventory tracking systems, payment processing modules, and performance optimization for infinite scalability.
+                  </div>
+                  <div class="project-actions">
+                     <a href="https://smrtmart.com" target="_blank" class="cyber-btn">[ DEPLOY_SITE ]</a>
+                     <a href="contact.html" class="cyber-btn secondary">[ REQUEST_ACCESS ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
 
-         <div class="three columns tech-category">
-            <h4>Tools & Practices</h4>
-            <ul class="tech-list">
-               <li>Git / GitHub</li>
-               <li>Agile / Scrum</li>
-               <li>Test-Driven Development</li>
-               <li>Code Reviews</li>
-               <li>Performance Optimization</li>
-               <li>Security Best Practices</li>
-            </ul>
+               <!-- GitHub Repositories Matrix -->
+               <div class="cyber-project">
+                  <div class="project-header">
+                     <div class="project-icon">📁</div>
+                     <div>
+                        <h3 class="project-title">GITHUB_REPOS.JSON</h3>
+                        <div class="project-tech">Live Repository Feed × API Integration</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking, and automated updates. Access the complete digital arsenal of open-source contributions and development experiments.
+                  </div>
+                  <div class="project-actions">
+                     <a href="https://github.com/bluehawana" target="_blank" class="cyber-btn">[ GITHUB_MATRIX ]</a>
+                     <a href="#stats-section" class="cyber-btn secondary">[ SCAN_STATS ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
+
+               <!-- Services Platform -->
+               <div class="cyber-project" onclick="window.open('services.html', '_blank')">
+                  <div class="project-header">
+                     <div class="project-icon">💼</div>
+                     <div>
+                        <h3 class="project-title">SERVICES_MATRIX.EXE</h3>
+                        <div class="project-tech">Calendly × Professional Services × Automation</div>
+                     </div>
+                  </div>
+                  <div class="project-desc">
+                     Professional services deployment platform with Calendly integration, automated booking systems, consulting modules, development services, and direct payment processing through multiple channels.
+                  </div>
+                  <div class="project-actions">
+                     <a href="services.html" class="cyber-btn">[ ACCESS_SERVICES ]</a>
+                     <a href="services.html#calendly-booking" class="cyber-btn secondary">[ BOOK_SESSION ]</a>
+                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </section>
 
-   <!-- Project Stats Section -->
-   <section id="project-stats" class="section-dark">
+   <!-- Digital Arsenal Tech Matrix -->
+   <section class="tech-matrix">
       <div class="row">
-         <div class="twelve columns text-center">
-            <h2>Project Statistics</h2>
+         <div class="twelve columns">
+            <h2 style="color: var(--cyber-primary); font-size: 32px; text-align: center; margin-bottom: 20px; text-shadow: var(--neon-glow);">[ TECH_ARSENAL.JSON ]</h2>
+            <p style="color: var(--cyber-text-dim); text-align: center; margin-bottom: 50px; font-family: monospace;">> Loading digital weaponry and development frameworks...</p>
          </div>
       </div>
 
       <div class="row">
-         <div class="three columns stat-item">
-            <div class="stat-number" id="github-repo-count">--</div>
-            <div class="stat-label">GitHub Repositories</div>
-         </div>
+         <div class="tech-grid">
+            <div class="tech-category">
+               <h4>Backend.Matrix</h4>
+               <ul class="tech-list">
+                  <li>Java / Spring Boot</li>
+                  <li>C# / .NET Core</li>
+                  <li>Node.js Runtime</li>
+                  <li>Python Neural Nets</li>
+                  <li>RESTful API Design</li>
+                  <li>Microservices Architecture</li>
+                  <li>GraphQL Queries</li>
+               </ul>
+            </div>
 
-         <div class="three columns stat-item">
-            <div class="stat-number" id="github-commit-count">--</div>
-            <div class="stat-label">Total Commits</div>
-         </div>
+            <div class="tech-category">
+               <h4>Frontend.Interface</h4>
+               <ul class="tech-list">
+                  <li>React / Angular</li>
+                  <li>React Native Mobile</li>
+                  <li>HTML5 / CSS3</li>
+                  <li>JavaScript ES2024+</li>
+                  <li>TypeScript Systems</li>
+                  <li>Responsive Design</li>
+                  <li>Progressive Web Apps</li>
+               </ul>
+            </div>
 
-         <div class="three columns stat-item">
-            <div class="stat-number" id="languages-count">8+</div>
-            <div class="stat-label">Programming Languages</div>
-         </div>
+            <div class="tech-category">
+               <h4>Database.Storage</h4>
+               <ul class="tech-list">
+                  <li>PostgreSQL / MySQL</li>
+                  <li>MongoDB NoSQL</li>
+                  <li>Redis Caching</li>
+                  <li>Elasticsearch</li>
+                  <li>AWS RDS</li>
+                  <li>Data Pipelines</li>
+                  <li>Real-time Sync</li>
+               </ul>
+            </div>
 
-         <div class="three columns stat-item">
-            <div class="stat-number" id="years-experience">5+</div>
-            <div class="stat-label">Years Experience</div>
+            <div class="tech-category">
+               <h4>Cloud.Infrastructure</h4>
+               <ul class="tech-list">
+                  <li>AWS / Azure / GCP</li>
+                  <li>Docker Containers</li>
+                  <li>Kubernetes Orchestration</li>
+                  <li>CI/CD Pipelines</li>
+                  <li>Serverless Functions</li>
+                  <li>Load Balancers</li>
+                  <li>CDN Networks</li>
+               </ul>
+            </div>
+
+            <div class="tech-category">
+               <h4>DevOps.Automation</h4>
+               <ul class="tech-list">
+                  <li>Git / GitHub Actions</li>
+                  <li>Terraform IaC</li>
+                  <li>Monitoring Systems</li>
+                  <li>Log Aggregation</li>
+                  <li>Security Scanning</li>
+                  <li>Performance Testing</li>
+                  <li>Incident Response</li>
+               </ul>
+            </div>
+
+            <div class="tech-category">
+               <h4>AI.Neural_Networks</h4>
+               <ul class="tech-list">
+                  <li>Machine Learning</li>
+                  <li>Natural Language Processing</li>
+                  <li>Computer Vision</li>
+                  <li>Deep Learning Models</li>
+                  <li>AI Integration APIs</li>
+                  <li>Recommendation Systems</li>
+                  <li>Predictive Analytics</li>
+               </ul>
+            </div>
          </div>
       </div>
    </section>
 
-   <!-- Contact CTA Section -->
-   <section id="project-contact-cta" class="section-light">
+   <!-- Cyber Stats Matrix -->
+   <section id="stats-section" class="stats-section">
       <div class="row">
-         <div class="twelve columns text-center">
-            <h2>Interested in Collaboration?</h2>
-            <p>I'm always open to discussing new projects, innovative ideas, and collaboration opportunities.</p>
-            <a href="contact.html" class="button button-large">
-               <i class="fa fa-envelope"></i> Get In Touch
-            </a>
+         <div class="twelve columns">
+            <h2 style="color: var(--cyber-accent); font-size: 32px; text-align: center; margin-bottom: 50px; text-shadow: var(--neon-glow);">[ SYSTEM_METRICS.LOG ]</h2>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="stats-grid">
+            <div class="stat-item">
+               <div class="stat-number" id="github-repo-count">--</div>
+               <div class="stat-label">Digital Repositories</div>
+            </div>
+
+            <div class="stat-item">
+               <div class="stat-number" id="github-commit-count">--</div>
+               <div class="stat-label">Neural Commits</div>
+            </div>
+
+            <div class="stat-item">
+               <div class="stat-number" id="languages-count">12+</div>
+               <div class="stat-label">Code Languages</div>
+            </div>
+
+            <div class="stat-item">
+               <div class="stat-number" id="years-experience">5+</div>
+               <div class="stat-label">Matrix Years</div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row" style="margin-top: 60px;">
+         <div class="twelve columns">
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-dots">
+                     <div class="terminal-dot red"></div>
+                     <div class="terminal-dot yellow"></div>
+                     <div class="terminal-dot green"></div>
+                  </div>
+                  <div class="terminal-title">real-time-stats.sh</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">hong@bluehawana:~$</span> 
+                     <span class="terminal-command">curl -s api.github.com/users/bluehawana | jq '.public_repos'</span>
+                  </div>
+                  <div class="terminal-line terminal-output" id="live-repo-count">
+                     Loading repository count from GitHub API...
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">hong@bluehawana:~$</span> 
+                     <span class="terminal-command">echo "Status: $(date '+%Y-%m-%d %H:%M:%S') - All systems operational"</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     Status: <span id="current-timestamp">Loading...</span> - All systems operational
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Neural Network Contact -->
+   <section style="background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%); padding: 80px 0; border-top: 1px solid var(--cyber-primary);">
+      <div class="row">
+         <div class="twelve columns" style="text-align: center;">
+            <h2 style="color: var(--cyber-primary); font-size: 32px; margin-bottom: 20px; text-shadow: var(--neon-glow);">[ INITIATE_COLLABORATION.EXE ]</h2>
+            <p style="color: var(--cyber-text-dim); margin-bottom: 40px; font-family: monospace;">Ready to join forces for digital innovation? The neural network is always accepting new connection requests.</p>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+               <a href="contact.html" class="cyber-btn" style="padding: 15px 30px; font-size: 14px;">[ SEND_MESSAGE ]</a>
+               <a href="services.html" class="cyber-btn secondary" style="padding: 15px 30px; font-size: 14px;">[ REQUEST_SERVICES ]</a>
+               <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent" style="padding: 15px 30px; font-size: 14px;">[ FUEL_MATRIX ]</a>
+            </div>
          </div>
       </div>
    </section>
@@ -337,41 +878,174 @@
    <script src="js/automation-scheduler.js"></script>
 
    <script>
-   // Load GitHub repos and stats for projects page
+   // Cyberpunk Matrix Effects & GitHub Integration
    document.addEventListener('DOMContentLoaded', function() {
-      // Load GitHub repositories
-      if (typeof fetchGitHubRepos === 'function') {
-         fetchGitHubRepos('github-repos');
-      }
-
+      // Initialize the digital matrix
+      initCyberMatrix();
+      
       // Load GitHub statistics
-      fetchGitHubStats();
+      fetchCyberStats();
+      
+      // Start real-time updates
+      startCyberUpdates();
    });
 
-   // Fetch GitHub statistics
-   async function fetchGitHubStats() {
+   // Create matrix rain effect
+   function initCyberMatrix() {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.className = 'matrix-bg';
+      canvas.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; opacity: 0.05;';
+      document.body.appendChild(canvas);
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+      const drops = [];
+
+      for (let x = 0; x < canvas.width / 10; x++) {
+         drops[x] = 1;
+      }
+
+      function draw() {
+         ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
+         ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+         ctx.fillStyle = '#00ffff';
+         ctx.font = '15px monospace';
+
+         for (let i = 0; i < drops.length; i++) {
+            const text = matrix[Math.floor(Math.random() * matrix.length)];
+            ctx.fillText(text, i * 10, drops[i] * 10);
+
+            if (drops[i] * 10 > canvas.height && Math.random() > 0.975) {
+               drops[i] = 0;
+            }
+            drops[i]++;
+         }
+      }
+
+      setInterval(draw, 35);
+   }
+
+   // Fetch and display cyber statistics
+   async function fetchCyberStats() {
       try {
          const response = await fetch('https://api.github.com/users/bluehawana/repos?per_page=100');
          const repos = await response.json();
          
-         // Update repo count
-         document.getElementById('github-repo-count').textContent = repos.length;
+         // Animate counter for repo count
+         animateCounter('github-repo-count', repos.length);
          
-         // Calculate total commits (approximate)
+         // Update live terminal display
+         document.getElementById('live-repo-count').textContent = repos.length;
+         
+         // Calculate total commits (enhanced estimation)
          let totalSize = 0;
+         let activeRepos = 0;
          repos.forEach(repo => {
             totalSize += repo.size;
+            if (repo.updated_at > '2023-01-01') activeRepos++;
          });
-         // Rough estimate: 1KB ≈ 20 lines, 1 commit ≈ 50 lines
-         const estimatedCommits = Math.floor(totalSize / 2.5);
-         document.getElementById('github-commit-count').textContent = estimatedCommits + '+';
+         
+         const estimatedCommits = Math.floor(totalSize / 2.2) + (activeRepos * 15);
+         animateCounter('github-commit-count', estimatedCommits, '+');
+         
+         // Update language count based on unique languages
+         const languages = new Set();
+         for (const repo of repos) {
+            if (repo.language) languages.add(repo.language);
+         }
+         animateCounter('languages-count', languages.size, '+');
          
       } catch (error) {
-         console.error('Error fetching GitHub stats:', error);
-         document.getElementById('github-repo-count').textContent = '20+';
-         document.getElementById('github-commit-count').textContent = '500+';
+         console.error('Error fetching cyber stats:', error);
+         document.getElementById('github-repo-count').textContent = 'ERR';
+         document.getElementById('github-commit-count').textContent = 'ERR';
+         document.getElementById('live-repo-count').textContent = 'Connection lost...';
       }
    }
+
+   // Animate number counter with cyber effect
+   function animateCounter(elementId, target, suffix = '') {
+      const element = document.getElementById(elementId);
+      if (!element) return;
+      
+      let current = 0;
+      const increment = target / 50;
+      const timer = setInterval(() => {
+         current += increment;
+         if (current >= target) {
+            current = target;
+            clearInterval(timer);
+         }
+         element.textContent = Math.floor(current) + suffix;
+      }, 30);
+   }
+
+   // Start real-time cyber updates
+   function startCyberUpdates() {
+      // Update timestamp every second
+      function updateTimestamp() {
+         const now = new Date();
+         const timestamp = now.toISOString().replace('T', ' ').substr(0, 19);
+         const element = document.getElementById('current-timestamp');
+         if (element) {
+            element.textContent = timestamp;
+         }
+      }
+      
+      updateTimestamp();
+      setInterval(updateTimestamp, 1000);
+
+      // Add glitch effects to project cards
+      const projects = document.querySelectorAll('.cyber-project');
+      projects.forEach(project => {
+         project.addEventListener('mouseenter', () => {
+            if (Math.random() > 0.8) {
+               project.style.animation = 'glitch-anim-1 0.3s ease-in-out';
+               setTimeout(() => {
+                  project.style.animation = '';
+               }, 300);
+            }
+         });
+      });
+
+      // Random cyber text effects
+      setInterval(() => {
+         const outputs = document.querySelectorAll('.terminal-output');
+         outputs.forEach(output => {
+            if (Math.random() > 0.95) {
+               const originalText = output.textContent;
+               output.textContent = '[SCANNING...]';
+               setTimeout(() => {
+                  output.textContent = originalText;
+               }, 500);
+            }
+         });
+      }, 5000);
+   }
+
+   // Add click effects for cyber buttons
+   document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('cyber-btn')) {
+         const button = e.target;
+         button.style.transform = 'scale(0.95)';
+         setTimeout(() => {
+            button.style.transform = '';
+         }, 150);
+      }
+   });
+
+   // Handle window resize for matrix effect
+   window.addEventListener('resize', () => {
+      const canvas = document.querySelector('.matrix-bg');
+      if (canvas) {
+         canvas.width = window.innerWidth;
+         canvas.height = window.innerHeight;
+      }
+   });
    </script>
 </body>
 </html>
