@@ -53,8 +53,9 @@ async function fetchLinkedInPosts() {
         
         if (postsContainer) {
             postsContainer.innerHTML = '';
-            // Show all posts (limit 3 only on homepage)
-            const postsToShow = postsContainer.closest('#latest-activity') ? posts.slice(0, 3) : posts;
+            // Show all posts (limit 3 only on homepage with #latest-activity section)
+            const isHomepage = postsContainer.closest('#latest-activity');
+            const postsToShow = isHomepage ? posts.slice(0, 3) : posts;
             postsToShow.forEach(post => {
                 const postElement = document.createElement('div');
                 postElement.className = 'linkedin-post-compact';
