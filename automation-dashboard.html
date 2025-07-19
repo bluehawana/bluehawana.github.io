@@ -208,20 +208,23 @@
         
         /* LinkedIn Posts Styling */
         .linkedin-post-compact {
-            background: #f8f9fa;
+            background: #2a2a3a;
+            color: #ffffff;
             border: 1px solid #e1e4e8;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 15px;
-            transition: box-shadow 0.2s;
+            transition: all 0.3s ease;
         }
         
         .linkedin-post-compact:hover {
+            background: #ffffff;
+            color: #000000;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .linkedin-post-compact .post-content {
-            color: #333;
+            color: inherit;
             line-height: 1.6;
             margin-bottom: 15px;
             font-size: 14px;
@@ -252,6 +255,11 @@
             text-decoration: none;
             font-size: 14px;
             font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .linkedin-post-compact:hover .source-link {
+            color: #0070f3;
         }
         
         .linkedin-post-compact .source-link:hover {
