@@ -1,0 +1,50 @@
+[build]
+  publish = "."
+  command = "echo 'No build needed - static site'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
+
+# Redirect API calls to Edge Functions
+[[redirects]]
+  from = "/api/linkedin-sync"
+  to = "/.netlify/functions/linkedin-sync"
+  status = 200
+
+[[redirects]]
+  from = "/api/automation-status"
+  to = "/.netlify/functions/automation-status"
+  status = 200
+
+[[redirects]]
+  from = "/api/github-update"
+  to = "/.netlify/functions/github-update"
+  status = 200
+
+# SPA fallback for any unmatched routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[edge_functions]
+  directory = "netlify/edge-functions"

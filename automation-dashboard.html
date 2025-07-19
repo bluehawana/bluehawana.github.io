@@ -205,6 +205,62 @@
             font-family: monospace;
             font-size: 12px;
         }
+        
+        /* LinkedIn Posts Styling */
+        .linkedin-post-compact {
+            background: #f8f9fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: box-shadow 0.2s;
+        }
+        
+        .linkedin-post-compact:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .linkedin-post-compact .post-content {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .linkedin-post-compact .post-tags {
+            margin-bottom: 15px;
+        }
+        
+        .linkedin-post-compact .post-tags .tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+            text-decoration: none;
+        }
+        
+        .linkedin-post-compact .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .linkedin-post-compact .source-link {
+            color: #0070f3;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .linkedin-post-compact .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .linkedin-post-compact .source-link i {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -300,6 +356,12 @@
                 </div>
             </div>
             
+            <div class="posts-section">
+                <h3>🔗 LinkedIn Posts (All 9 Posts)</h3>
+                <p>Current LinkedIn posts in the system - click to view original posts on LinkedIn.</p>
+                <div id="linkedin-posts" style="margin-top: 20px;"></div>
+            </div>
+            
             <div class="search-section">
                 <h3>🔍 Manual Activity ID Search</h3>
                 <p>Search for specific LinkedIn posts to find their activity IDs for the 3 remaining broken URLs.</p>
@@ -324,6 +386,7 @@
 
     <script src="js/linkedin-api-sync.js"></script>
     <script src="js/automation-scheduler.js"></script>
+    <script src="js/linkedin-posts.js"></script>
     <script>
         let activityLog = [];
         
