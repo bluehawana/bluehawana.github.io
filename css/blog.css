@@ -405,25 +405,25 @@
     margin-bottom: 20px;
 }
 
-/* Compact LinkedIn Posts for Homepage */
+/* Compact LinkedIn Posts for Homepage - Vercel Style High Contrast */
 .linkedin-post-compact {
-    background: #1e1e1e;
-    border: 2px solid #333;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .linkedin-post-compact:hover {
-    background: #2a2a2a;
-    border-color: #555;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    background: #ffffff;
+    border-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .linkedin-post-compact .post-content {
-    color: #e8e8e8;
+    color: #000000;
     line-height: 1.7;
     margin-bottom: 20px;
     font-size: 16px;
@@ -439,11 +439,11 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
-    border-top: 2px solid #444;
+    border-top: 1px solid #e5e7eb;
 }
 
 .linkedin-post-compact .post-date {
-    color: #bbb;
+    color: #6b7280;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -496,11 +496,11 @@
     border-top: 1px solid #e8e8e8;
 }
 
-/* Tags Styling */
+/* Tags Styling - High Contrast Vercel Style */
 .tag {
     display: inline-block;
-    background: rgba(0, 123, 255, 0.1);
-    color: #007bff;
+    background: #000000;
+    color: #ffffff;
     padding: 4px 8px;
     border-radius: 12px;
     font-size: 11px;
@@ -509,24 +509,25 @@
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    border: 1px solid #000000;
 }
 
 .linkedin-post-compact .tag {
-    background: #0077b5;
-    color: #fff;
-    border: 1px solid #005582;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
     font-weight: 700;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 .linkedin-post-compact .tag:hover {
-    background: #005582;
-    border-color: #003d5c;
+    background: #374151;
+    border-color: #374151;
 }
 
 /* Source Link */
 .source-link {
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -534,7 +535,7 @@
 }
 
 .source-link:hover {
-    color: #0056b3;
+    color: #374151;
     text-decoration: underline;
 }
 
@@ -576,6 +577,31 @@
 .post-date small {
     color: #999;
     font-size: 12px;
+}
+
+/* App Section Styling */
+.app-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid #000;
+}
+
+.app-section h4 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.app-section h5 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.app-section .project-cta {
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 /* Contact Form */
