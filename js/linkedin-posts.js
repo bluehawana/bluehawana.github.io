@@ -18,12 +18,19 @@ async function fetchLinkedInPosts() {
             // Show latest 3 posts for homepage
             posts.slice(0, 3).forEach(post => {
                 const postElement = document.createElement('div');
-                postElement.className = 'linkedin-post';
+                postElement.className = 'linkedin-post-compact';
+                
+                const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
                 postElement.innerHTML = `
-                    <p>${post.content}</p>
-                    <div class="post-date">
-                        <small>${new Date(post.date).toLocaleDateString()} • <a href="${post.url}" target="_blank" class="linkedin-link">View on LinkedIn</a></small>
+                    <div class="post-content">${post.content}</div>
+                    ${tags ? `<div class="post-tags">${tags}</div>` : ''}
+                    <div class="post-meta">
+                        <span class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'short', 
+                            day: 'numeric' 
+                        })}</span>
                     </div>
                 `;
                 
@@ -35,13 +42,25 @@ async function fetchLinkedInPosts() {
             postsFullContainer.innerHTML = '';
             // Show all posts for blog page
             posts.forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.className = 'linkedin-post';
+                const postElement = document.createElement('article');
+                postElement.className = 'linkedin-post-full';
+                
+                const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
                 postElement.innerHTML = `
-                    <p>${post.content}</p>
-                    <div class="post-date">
-                        <small>${new Date(post.date).toLocaleDateString()} • <a href="${post.url}" target="_blank" class="linkedin-link">View on LinkedIn</a></small>
+                    <div class="post-header">
+                        <div class="post-date">${new Date(post.date).toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        })}</div>
+                    </div>
+                    <div class="post-content">${post.content}</div>
+                    ${tags ? `<div class="post-tags">${tags}</div>` : ''}
+                    <div class="post-footer">
+                        <a href="${post.url}" target="_blank" class="source-link">
+                            <i class="fa fa-linkedin"></i> View Original Post
+                        </a>
                     </div>
                 `;
                 
