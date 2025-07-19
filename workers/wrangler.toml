@@ -1,0 +1,16 @@
+name = "linkedin-sync-worker"
+main = "linkedin-sync-worker.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (set these in Cloudflare Dashboard)
+# LINKEDIN_CLIENT_ID = "your_linkedin_client_id"
+# LINKEDIN_CLIENT_SECRET = "your_linkedin_client_secret"  
+# LINKEDIN_ACCESS_TOKEN = "your_linkedin_access_token"
+# GITHUB_TOKEN = "your_github_token"
+# GITHUB_REPO = "bluehawana/bluehawana.github.io"
+
+[triggers]
+crons = ["0 */6 * * *"]  # Run every 6 hours
+
+[vars]
+ENVIRONMENT = "production"
