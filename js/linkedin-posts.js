@@ -1,4 +1,20 @@
 /**
+ * Convert LinkedIn share URL to direct feed URL
+ * Extract activity ID from LinkedIn URLs and generate clean feed URL
+ */
+function convertToDirectLinkedInURL(url) {
+    // Extract activity ID from LinkedIn URLs
+    const activityMatch = url.match(/activity-(\d+)-/);
+    if (activityMatch) {
+        const activityId = activityMatch[1];
+        return `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+    }
+    
+    // If already in direct format or no activity ID found, return as is
+    return url;
+}
+
+/**
  * Fetch latest LinkedIn posts from data file
  */
 async function fetchLinkedInPosts() {
@@ -26,7 +42,7 @@ async function fetchLinkedInPosts() {
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
-                        <a href="${post.url}" target="_blank" class="source-link">
+                        <a href="${convertToDirectLinkedInURL(post.url)}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> View Original Post
                         </a>
                     </div>
@@ -49,7 +65,7 @@ async function fetchLinkedInPosts() {
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
-                        <a href="${post.url}" target="_blank" class="source-link">
+                        <a href="${convertToDirectLinkedInURL(post.url)}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> View Original Post
                         </a>
                     </div>
