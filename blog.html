@@ -40,94 +40,39 @@
    <section id="blog-content">
       <div class="row">
          <div class="twelve columns">
-            <h1>Blog</h1>
-            <p class="lead">Thoughts, insights, and experiences from my journey in software development, cloud architecture, and IT infrastructure.</p>
+            <h1>Professional Updates</h1>
+            <p class="lead">Latest posts from LinkedIn and recent projects from GitHub - authentic content from my professional journey.</p>
          </div>
       </div>
 
       <div class="row">
-         <!-- Main Blog Content -->
+         <!-- Main Content -->
          <div class="eight columns">
-            <!-- Blog Post 1 -->
-            <article class="blog-post" id="cloud-migration">
-               <div class="post-header">
-                  <h2><a href="blog/cloud-migration-strategies.html">Cloud Migration Strategies for Enterprise Applications</a></h2>
-                  <div class="post-meta">
-                     <span class="date">July 15, 2025</span>
-                     <span class="categories">Cloud, Enterprise, Migration</span>
-                  </div>
-               </div>
-               <div class="post-image">
-                  <div class="image-placeholder">Cloud Migration</div>
-               </div>
-               <div class="post-excerpt">
-                  <p>Migrating legacy enterprise applications to the cloud presents numerous challenges, from ensuring data integrity to maintaining business continuity. In this post, I share effective strategies based on my experience migrating critical business applications to modern cloud infrastructure with minimal disruption...</p>
-                  <a href="blog/cloud-migration-strategies.html" class="read-more">Continue Reading</a>
-               </div>
-            </article>
+            <div class="content-notice">
+               <h3>Real Content, Real Updates</h3>
+               <p>Instead of maintaining separate blog posts, I share my insights and experiences directly through LinkedIn posts and GitHub projects. This ensures you get authentic, real-time updates about my work and thoughts on technology.</p>
+            </div>
 
-            <!-- Blog Post 2 -->
-            <article class="blog-post" id="kubernetes-optimization">
-               <div class="post-header">
-                  <h2><a href="blog/kubernetes-cost-optimization.html">Kubernetes Cost Optimization: Lessons from AKS to Local Clusters</a></h2>
-                  <div class="post-meta">
-                     <span class="date">June 28, 2025</span>
-                     <span class="categories">Kubernetes, Cost Optimization, DevOps</span>
-                  </div>
+            <!-- LinkedIn Posts Section -->
+            <div class="linkedin-section">
+               <h2><i class="fa fa-linkedin"></i> Latest LinkedIn Posts</h2>
+               <div id="linkedin-posts-full">
+                  <p>Loading LinkedIn posts...</p>
                </div>
-               <div class="post-image">
-                  <div class="image-placeholder">Kubernetes</div>
+               <div class="text-center">
+                  <a href="https://www.linkedin.com/in/hzl" class="button" target="_blank">View All LinkedIn Posts</a>
                </div>
-               <div class="post-excerpt">
-                  <p>While managed Kubernetes services like AKS offer convenience, they can become costly as your infrastructure scales. At ECARX, we successfully reduced operational expenses by migrating from Azure Kubernetes Service to local Kubernetes clusters while maintaining reliability and performance. Here's how we did it...</p>
-                  <a href="blog/kubernetes-cost-optimization.html" class="read-more">Continue Reading</a>
-               </div>
-            </article>
+            </div>
 
-            <!-- Blog Post 3 -->
-            <article class="blog-post" id="microservices-patterns">
-               <div class="post-header">
-                  <h2><a href="blog/resilient-microservices-spring-boot.html">Building Resilient Microservices with Spring Boot</a></h2>
-                  <div class="post-meta">
-                     <span class="date">June 10, 2025</span>
-                     <span class="categories">Microservices, Spring Boot, Architecture</span>
-                  </div>
+            <!-- GitHub Projects Section -->
+            <div class="github-section">
+               <h2><i class="fa fa-github"></i> Recent GitHub Activity</h2>
+               <div id="github-repos-full">
+                  <p>Loading repositories...</p>
                </div>
-               <div class="post-image">
-                  <div class="image-placeholder">Microservices</div>
+               <div class="text-center">
+                  <a href="https://github.com/bluehawana" class="button" target="_blank">View All GitHub Projects</a>
                </div>
-               <div class="post-excerpt">
-                  <p>Microservices architecture offers numerous benefits, but also introduces complexity in terms of service discovery, fault tolerance, and monitoring. In this practical guide, I share patterns and practices for designing and implementing resilient microservices using Spring Boot and related technologies...</p>
-                  <a href="blog/resilient-microservices-spring-boot.html" class="read-more">Continue Reading</a>
-               </div>
-            </article>
-
-            <!-- Blog Post 4 -->
-            <article class="blog-post" id="cross-cultural-teams">
-               <div class="post-header">
-                  <h2><a href="blog/cross-cultural-tech-teams.html">Bridging the Gap: Managing Cross-Cultural Technical Teams</a></h2>
-                  <div class="post-meta">
-                     <span class="date">May 22, 2025</span>
-                     <span class="categories">Leadership, Cultural Intelligence, Team Management</span>
-                  </div>
-               </div>
-               <div class="post-image">
-                  <div class="image-placeholder">Cross-Cultural Teams</div>
-               </div>
-               <div class="post-excerpt">
-                  <p>Drawing from my experience at Senior Material (Europe) AB, where I served as a technical bridge between Swedish and Chinese development teams, I discuss strategies for effective cross-cultural technical communication, knowledge transfer, and collaborative development across different time zones and cultural contexts...</p>
-                  <a href="blog/cross-cultural-tech-teams.html" class="read-more">Continue Reading</a>
-               </div>
-            </article>
-
-            <!-- Pagination -->
-            <div class="pagination">
-               <a href="#" class="page current">1</a>
-               <a href="#" class="page">2</a>
-               <a href="#" class="page">3</a>
-               <span class="page dots">…</span>
-               <a href="#" class="page">9</a>
-               <a href="#" class="page next">Next</a>
             </div>
          </div>
 
@@ -211,17 +156,13 @@
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
    <script src="js/linkedin-posts.js"></script>
+   <script src="js/github-repos.js"></script>
    <script>
-   // Smooth scrolling for blog anchors
+   // Load GitHub repos for blog page
    document.addEventListener('DOMContentLoaded', function() {
-      // Check if there's a hash in the URL
-      if (window.location.hash) {
-         setTimeout(function() {
-            const target = document.querySelector(window.location.hash);
-            if (target) {
-               target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-         }, 100);
+      // Update GitHub repos to target the full container
+      if (typeof fetchGitHubRepos === 'function') {
+         fetchGitHubRepos('github-repos-full');
       }
    });
    </script>
