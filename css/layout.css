@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 no-repeat top center;
+   background: #000 no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #666; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -117,7 +117,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #666; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -140,7 +140,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: #000; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #000; }
 
 
 /* ------------------------------------------------------------------ */
@@ -187,14 +187,14 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: #000;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #666; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -274,7 +274,7 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #000; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -283,7 +283,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #000;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -829,7 +829,7 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #11ABB0; }
+#contact a, #contact a:visited  { color: #000; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -890,7 +890,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #000;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -909,7 +909,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #000;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -920,8 +920,8 @@ call-to-action .button {
    width: 65%;
    margin-left: 26%;
 }
-#message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-warning { color: #333; }
+#message-success { color: #000; }
 
 #message-warning i,
 #message-success i {
@@ -1005,7 +1005,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #000;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
