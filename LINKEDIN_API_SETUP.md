@@ -69,6 +69,21 @@ r_organization_social
 w_organization_social
 ```
 
+## ⚠️ **IMPORTANT: Access Token Generation Issue**
+
+### 🚨 **Postman/Browser Limitation Discovered**
+During testing, we discovered that **LinkedIn OAuth authorization cannot be completed through Postman or desktop browsers** due to LinkedIn's security restrictions. 
+
+**Required Solution:**
+1. **Use LinkedIn Mobile App** when you receive the authorization email from LinkedIn.com
+2. **Complete authorization on mobile device** (iOS/Android LinkedIn app)
+3. **Then proceed with token exchange** using Postman/curl
+
+### Root Cause:
+- LinkedIn detects automated/non-mobile authorization attempts
+- Desktop browsers may trigger additional security checks
+- Mobile app authorization is the reliable method
+
 ## 🛠️ Technical Implementation
 
 ### OAuth Flow
