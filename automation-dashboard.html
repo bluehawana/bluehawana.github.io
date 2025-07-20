@@ -456,7 +456,7 @@
         }
         
         // Update all status displays
-        function updateStatus() {
+        async function updateStatus() {
             // System status
             const monitor = window.contentMonitor;
             if (monitor) {
@@ -478,13 +478,48 @@
                 }
             }
             
-            // LinkedIn authentication
-            if (window.linkedInSync) {
-                linkedinAuth.textContent = window.linkedInSync.isTokenValid() ? 'Authenticated' : 'Not Authenticated';
-            }
+            // Check API status via Netlify function
+            await checkAPIStatus();
             
             // Load current post count
             loadPostCounts();
+        }
+        
+        // Check API status via automation-status endpoint
+        async function checkAPIStatus() {
+            try {
+                // Determine the correct endpoint based on environment
+                const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+                const endpoint = isLocal 
+                    ? 'https://bluehawana.netlify.app/.netlify/functions/automation-status'
+                    : '/.netlify/functions/automation-status';
+                
+                const response = await fetch(endpoint);
+                const status = await response.json();
+                
+                if (status.linkedIn) {
+                    linkedinAuth.textContent = status.linkedIn.status === 'connected' ? 'Connected' : 'Error';
+                    if (status.linkedIn.lastChecked) {
+                        linkedinLastCheck.textContent = new Date(status.linkedIn.lastChecked).toLocaleTimeString();
+                    }
+                }
+                
+                if (status.gitHub) {
+                    githubStatus.textContent = status.gitHub.status === 'connected' ? 'Connected' : 'Error';
+                    if (status.gitHub.lastChecked) {
+                        githubLastCheck.textContent = new Date(status.gitHub.lastChecked).toLocaleTimeString();
+                    }
+                }
+                
+            } catch (error) {
+                console.error('Failed to check API status:', error);
+                linkedinAuth.textContent = 'Check Failed';
+                
+                // Fallback: show local status if available
+                if (window.linkedInSync) {
+                    linkedinAuth.textContent = window.linkedInSync.isTokenValid() ? 'Local Token' : 'No Token';
+                }
+            }
         }
         
         // Load post counts
