@@ -73,7 +73,7 @@ exports.handler = async (event, context) => {
 async function fetchLinkedInPosts() {
   try {
     // Get user profile first
-    const profileResponse = await fetch(`${LINKEDIN_API_BASE}/people/~`, {
+    const profileResponse = await fetch(`${LINKEDIN_API_BASE}/userinfo`, {
       headers: {
         'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
         'Content-Type': 'application/json'
@@ -85,7 +85,7 @@ async function fetchLinkedInPosts() {
     }
 
     const profile = await profileResponse.json();
-    const personUrn = profile.id;
+    const personUrn = profile.sub; // OpenID Connect uses 'sub' field for user ID
 
     // Fetch user's posts/shares
     const postsResponse = await fetch(
