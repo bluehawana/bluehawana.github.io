@@ -69,11 +69,10 @@ exports.handler = async (event, context) => {
  */
 async function checkLinkedInAPIStatus() {
   try {
-    const response = await fetch('https://api.linkedin.com/v2/me', {
+    const response = await fetch('https://api.linkedin.com/v2/people/~', {
       headers: {
         'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
-        'Accept': 'application/json',
-        'X-RestLi-Protocol-Version': '2.0.0'
+        'Content-Type': 'application/json'
       }
     });
     
