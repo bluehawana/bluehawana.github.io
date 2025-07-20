@@ -72,7 +72,8 @@ async function checkLinkedInAPIStatus() {
     const response = await fetch('https://api.linkedin.com/v2/people/~', {
       headers: {
         'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-RestLi-Protocol-Version': '2.0.0'
       }
     });
     
