@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>CarBot AI | Hongzhi Li</title>
+   <meta name="description" content="Advanced AI-powered automotive assistant with voice recognition and smart automation">
+   <meta name="author" content="Hongzhi Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific-popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- Project-specific styles -->
+   <style>
+      :root {
+         --cyber-bg: #0a0a0a;
+         --cyber-dark: #111111;
+         --cyber-primary: #00d4ff;
+         --cyber-secondary: #bd93f9;
+         --cyber-accent: #50fa7b;
+         --cyber-warning: #ffff00;
+         --cyber-danger: #ff073a;
+         --cyber-text: #ffffff;
+         --cyber-text-dim: #cccccc;
+         --cyber-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--cyber-bg) 0%, var(--cyber-dark) 100%);
+         color: var(--cyber-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+      }
+
+      .cyber-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%);
+         position: relative;
+         overflow: hidden;
+         padding: 120px 0 80px;
+         border-bottom: 2px solid var(--cyber-primary);
+      }
+
+      .cyber-title {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 20px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .cyber-subtitle {
+         font-size: 18px;
+         color: var(--cyber-secondary);
+         text-align: center;
+         margin-bottom: 40px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .project-content {
+         background: var(--cyber-bg);
+         padding: 80px 0;
+      }
+
+      .feature-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 30px;
+         margin: 40px 0;
+      }
+
+      .feature-card {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 10px;
+         padding: 30px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+         border-color: var(--cyber-primary);
+         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .feature-icon {
+         font-size: 48px;
+         color: var(--cyber-accent);
+         margin-bottom: 20px;
+         display: block;
+      }
+
+      .feature-title {
+         font-size: 24px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         margin-bottom: 15px;
+      }
+
+      .feature-desc {
+         color: var(--cyber-text-dim);
+         line-height: 1.6;
+         margin-bottom: 20px;
+      }
+
+      .tech-stack {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+         margin-top: 20px;
+      }
+
+      .tech-badge {
+         background: rgba(0, 212, 255, 0.1);
+         border: 1px solid var(--cyber-primary);
+         color: var(--cyber-primary);
+         padding: 5px 12px;
+         font-size: 12px;
+         border-radius: 15px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--cyber-primary);
+         color: var(--cyber-primary);
+         padding: 15px 30px;
+         font-family: inherit;
+         font-size: 14px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+      }
+
+      .cyber-btn:hover {
+         background: var(--cyber-primary);
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+      }
+
+      @media screen and (max-width: 768px) {
+         .cyber-title {
+            font-size: 32px;
+         }
+         
+         .feature-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li class="current"><a href="../projects.html">Projects</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="cyber-hero">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="cyber-title">🤖 CARBOT AI</h1>
+            <p class="cyber-subtitle">> Advanced AI-Powered Automotive Assistant</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Project Content -->
+   <section class="project-content">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="feature-grid">
+               <!-- AI Voice Assistant -->
+               <div class="feature-card">
+                  <span class="feature-icon">🗣️</span>
+                  <h3 class="feature-title">AI Voice Assistant</h3>
+                  <p class="feature-desc">
+                     Advanced natural language processing with context-aware responses, voice command recognition, and intelligent conversation flow for seamless automotive interaction.
+                  </p>
+                  <div class="tech-stack">
+                     <span class="tech-badge">JavaScript</span>
+                     <span class="tech-badge">Speech API</span>
+                     <span class="tech-badge">NLP</span>
+                  </div>
+               </div>
+
+               <!-- Smart Automation -->
+               <div class="feature-card">
+                  <span class="feature-icon">⚡</span>
+                  <h3 class="feature-title">Smart Automation</h3>
+                  <p class="feature-desc">
+                     Intelligent task automation system that learns user preferences and adapts to driving patterns, providing personalized automotive experience and predictive assistance.
+                  </p>
+                  <div class="tech-stack">
+                     <span class="tech-badge">Machine Learning</span>
+                     <span class="tech-badge">Automation</span>
+                     <span class="tech-badge">Analytics</span>
+                  </div>
+               </div>
+
+               <!-- Entertainment Platform -->
+               <div class="feature-card">
+                  <span class="feature-icon">📺</span>
+                  <h3 class="feature-title">Entertainment Hub</h3>
+                  <p class="feature-desc">
+                     Comprehensive entertainment platform with media streaming, playlist management, and content recommendation system optimized for automotive environments.
+                  </p>
+                  <div class="tech-stack">
+                     <span class="tech-badge">Kotlin</span>
+                     <span class="tech-badge">Media APIs</span>
+                     <span class="tech-badge">Streaming</span>
+                  </div>
+               </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+               <h2 style="color: var(--cyber-primary); margin-bottom: 30px;">Project Status</h2>
+               <p style="color: var(--cyber-text-dim); font-size: 18px; margin-bottom: 40px;">
+                  CarBot AI is currently in development as a personal research project exploring AI-powered automotive interfaces and intelligent automation systems.
+               </p>
+               
+               <div>
+                  <a href="https://github.com/bluehawana" class="cyber-btn">View GitHub</a>
+                  <a href="../contact.html" class="cyber-btn">Get In Touch</a>
+                  <a href="../projects.html" class="cyber-btn">All Projects</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+      <div class="row">
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/bluehawana" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://twitter.com/bluehawana" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="mailto:hongzhili01@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; 2025 Hongzhi Li</li>
+               <li>Design: <a href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
+            </ul>
+         </div>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#projects-hero">
+               <i class="icon-up-open"></i>
+            </a>
+         </div>
+      </div>
+   </footer>
+
+   <!-- JavaScript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="../js/jquery.flexslider.js"></script>
+   <script src="../js/waypoints.js"></script>
+   <script src="../js/jquery.fittext.js"></script>
+   <script src="../js/magnific-popup.js"></script>
+   <script src="../js/init.js"></script>
+</body>
+</html>
