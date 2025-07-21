@@ -4,7 +4,7 @@
  */
 
 // Load the configuration
-const ACCESS_TOKEN = 'AQXPq0nVBlhAfLxvHL1t0yKGqbpF767sq28qpTPUp6pgiHS92wzbEybkimwgMVt1vZ9Hv7rBShwkkogH5M_gV8cb_oMX5wBfarfBCyWz11SZx0rFYQJzgI7H34O2Z4HD4kx_pjBd0QmmMhSgdC1JBdyl3fW7H2bK_5hlKsspEXpmcTU4B5oimLpCJLGAUYLczOsLdnPL1IUkD2gDxWKmKZlXns7dAzhMqvLfS2sAX-xWbLG0Zq6rtpKVy1LVKBDxkDHkqmnJ8YCq5VtYgk49xZsApUKSAhOZ9t9EKqDOfZRSgWSdtVMUEc0oA0ynoGHLteaK4Hg9iJq6odq1z1YT1Vs0vw5FFA';
+const ACCESS_TOKEN = localStorage.getItem('linkedin_access_token') || 'CONFIGURE_YOUR_TOKEN_VIA_OAUTH';
 
 // Test functions
 async function testProfileAPI() {
