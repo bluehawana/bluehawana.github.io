@@ -1,10 +1,30 @@
+# Netlify Configuration for LinkedIn API Integration
+# This file configures build settings, redirects, and environment variables
+
 [build]
   publish = "."
-  command = "echo 'No build needed - static site'"
+  command = "echo 'Static site - no build required'"
 
+# Environment Variables for Production
 [build.environment]
-  NODE_VERSION = "18"
+  # LinkedIn API Configuration
+  LINKEDIN_CLIENT_ID = "77duha47hcbh8o"
+  # Note: LINKEDIN_CLIENT_SECRET should be set in Netlify UI for security
+  
+  # API Version Configuration  
+  LINKEDIN_API_VERSION = "202505"
+  
+  # Enable HTTPS redirects
+  HTTPS_REDIRECT = "true"
 
+# Headers for CORS and Security
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization, LinkedIn-Version, X-Restli-Protocol-Version"
+    
 [[headers]]
   for = "/*"
   [headers.values]
@@ -13,35 +33,39 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-[[headers]]
-  for = "/api/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
-    Access-Control-Allow-Headers = "Content-Type, Authorization"
-
-# Redirect API calls to Edge Functions
+# LinkedIn OAuth Callback Redirect
 [[redirects]]
-  from = "/api/linkedin-sync"
-  to = "/.netlify/functions/linkedin-sync"
+  from = "/linkedin-callback"
+  to = "/linkedin-callback.html"
   status = 200
 
+# API Proxy for LinkedIn (if needed to avoid CORS)
 [[redirects]]
-  from = "/api/automation-status"
-  to = "/.netlify/functions/automation-status"
+  from = "/api/linkedin/*"
+  to = "https://api.linkedin.com/:splat"
+  status = 200
+  headers = {X-From = "Netlify"}
+
+# Redirect HTTP to HTTPS
+[[redirects]]
+  from = "http://bluehawana.com/*"
+  to = "https://bluehawana.com/:splat"
+  status = 301
+  force = true
+
+# LinkedIn sync page redirects
+[[redirects]]
+  from = "/linkedin-sync"
+  to = "/linkedin-auto-sync.html"
   status = 200
 
-[[redirects]]
-  from = "/api/github-update"
-  to = "/.netlify/functions/github-update"
+[[redirects]]  
+  from = "/debug"
+  to = "/linkedin-debug.html"
   status = 200
 
-# SPA fallback for any unmatched routes
+# 404 page
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/404.html"
   status = 404
-
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
