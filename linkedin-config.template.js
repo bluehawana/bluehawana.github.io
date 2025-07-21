@@ -1,21 +1,25 @@
 /**
- * LinkedIn API Configuration
- * This file contains the LinkedIn API credentials for the application.
+ * LinkedIn API Configuration Template
  * 
- * SECURITY NOTE: In production, these values should be set via environment variables
- * or a secure configuration management system, not hardcoded in files.
+ * SECURITY: Copy this file to 'linkedin-config.js' and fill in your actual credentials.
+ * NEVER commit linkedin-config.js to the repository!
+ * 
+ * To use:
+ * 1. Copy this file: cp linkedin-config.template.js linkedin-config.js
+ * 2. Fill in your actual LinkedIn API credentials in linkedin-config.js
+ * 3. The .gitignore file will prevent linkedin-config.js from being committed
  */
 
 // Configuration object for LinkedIn API
 window.linkedinConfig = {
-    LINKEDIN_CLIENT_ID: '77duha47hcbh8o',
-    LINKEDIN_CLIENT_SECRET: 'WPL_AP1.KCsCGIG1HHXfY8LV.1OEJWQ==',
+    LINKEDIN_CLIENT_ID: 'YOUR_CLIENT_ID_HERE',
+    LINKEDIN_CLIENT_SECRET: 'YOUR_CLIENT_SECRET_HERE',
     
     // API Configuration
-    API_VERSION: '202505',  // Latest version as per your endpoint list
-    BASE_URL: 'https://api.linkedin.com/rest',  // Updated to REST API
+    API_VERSION: '202505',  // Latest version as per LinkedIn API docs
+    BASE_URL: 'https://api.linkedin.com/rest',  // Community Management API
     
-    // OAuth Configuration
+    // OAuth Configuration - DO NOT MODIFY THESE SCOPES
     SCOPES: [
         'r_member_social',      // Access to member's social activity
         'r_basicprofile',       // Basic profile information
@@ -24,12 +28,23 @@ window.linkedinConfig = {
         'w_organization_social'  // Community Management API WRITE access (required for v202505)
     ],
     
-    // Pre-configured access token (if available)
-    ACCESS_TOKEN: 'AQXPq0nVBlhAfLxvHL1t0yKGqbpF767sq28qpTPUp6pgiHS92wzbEybkimwgMVt1vZ9Hv7rBShwkkogH5M_gV8cb_oMX5wBfarfBCyWz11SZx0rFYQJzgI7H34O2Z4HD4kx_pjBd0QmmMhSgdC1JBdyl3fW7H2bK_5hlKsspEXpmcTU4B5oimLpCJLGAUYLczOsLdnPL1IUkD2gDxWKmKZlXns7dAzhMqvLfS2sAX-xWbLG0Zq6rtpKVy1LVKBDxkDHkqmnJ8YCq5VtYgk49xZsApUKSAhOZ9t9EKqDOfZRSgWSdtVMUEc0oA0ynoGHLteaK4Hg9iJq6odq1z1YT1Vs0vw5FFA'
+    // Pre-configured access token (if available) - OPTIONAL
+    ACCESS_TOKEN: null // Set to your token string if you have one
 };
 
 // Auto-configure localStorage with credentials when this script loads
 if (typeof window !== 'undefined') {
+    // Validate configuration
+    if (!window.linkedinConfig.LINKEDIN_CLIENT_ID || window.linkedinConfig.LINKEDIN_CLIENT_ID === 'YOUR_CLIENT_ID_HERE') {
+        console.error('❌ LinkedIn Client ID not configured! Please update linkedin-config.js with your actual credentials.');
+        return;
+    }
+    
+    if (!window.linkedinConfig.LINKEDIN_CLIENT_SECRET || window.linkedinConfig.LINKEDIN_CLIENT_SECRET === 'YOUR_CLIENT_SECRET_HERE') {
+        console.error('❌ LinkedIn Client Secret not configured! Please update linkedin-config.js with your actual credentials.');
+        return;
+    }
+    
     // Set configuration in localStorage
     localStorage.setItem('LINKEDIN_CLIENT_ID', window.linkedinConfig.LINKEDIN_CLIENT_ID);
     localStorage.setItem('LINKEDIN_CLIENT_SECRET', window.linkedinConfig.LINKEDIN_CLIENT_SECRET);
