@@ -87,16 +87,36 @@ async function fetchLinkedInPosts() {
     const profile = await profileResponse.json();
     const personUrn = profile.sub; // OpenID Connect uses 'sub' field for user ID
 
-    // Fetch user's posts/shares
-    const postsResponse = await fetch(
-      `${LINKEDIN_API_BASE}/shares?q=owners&owners=urn:li:person:${personUrn}&count=50&sortBy=CREATED_TIME`,
-      {
-        headers: {
-          'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
-          'Content-Type': 'application/json'
+    // Try multiple LinkedIn API endpoints for posts
+    let postsResponse;
+    const endpoints = [
+      `/ugcPosts?q=authors&authors=List(urn:li:person:${personUrn})&count=50&sortBy=CREATED_TIME`,
+      `/posts?q=author&author=urn:li:person:${personUrn}&count=50&sortBy=CREATED_TIME`,
+      `/shares?q=owners&owners=urn:li:person:${personUrn}&count=50&sortBy=CREATED_TIME`
+    ];
+    
+    for (const endpoint of endpoints) {
+      try {
+        postsResponse = await fetch(
+          `${LINKEDIN_API_BASE}${endpoint}`,
+          {
+            headers: {
+              'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
+              'Content-Type': 'application/json'
+            }
+          }
+        );
+        
+        if (postsResponse.ok) {
+          console.log(`Successfully fetched from endpoint: ${endpoint}`);
+          break;
+        } else {
+          console.log(`Failed endpoint ${endpoint}: ${postsResponse.status}`);
         }
+      } catch (error) {
+        console.log(`Error with endpoint ${endpoint}:`, error.message);
       }
-    );
+    }
 
     if (!postsResponse.ok) {
       throw new Error(`LinkedIn posts API error: ${postsResponse.status}`);
