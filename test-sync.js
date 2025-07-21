@@ -4,7 +4,7 @@
  */
 
 // Load the configuration
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = localStorage.getItem('linkedin_access_token') || 'CONFIGURE_YOUR_TOKEN_VIA_OAUTH';
 
 // Test functions
 async function testProfileAPI() {
