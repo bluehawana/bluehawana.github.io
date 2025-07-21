@@ -280,7 +280,28 @@
         </div>
     </div>
 
-    <script src="linkedin-config.js"></script>
+    <script>
+        // Check if linkedin-config.js exists, otherwise show setup instructions
+        const script = document.createElement('script');
+        script.src = 'linkedin-config.js';
+        script.onerror = function() {
+            // linkedin-config.js not found - show setup instructions
+            document.querySelector('.content').innerHTML = `
+                <div class="error">
+                    <h3>⚠️ LinkedIn API Configuration Missing</h3>
+                    <p>The LinkedIn API configuration file is missing. This is expected for security reasons.</p>
+                    <h4>Setup Instructions:</h4>
+                    <ol>
+                        <li>Copy <code>linkedin-config.template.js</code> to <code>linkedin-config.js</code></li>
+                        <li>Fill in your LinkedIn API credentials in <code>linkedin-config.js</code></li>
+                        <li>Refresh this page</li>
+                    </ol>
+                    <p><strong>Note:</strong> The <code>linkedin-config.js</code> file is gitignored for security.</p>
+                </div>
+            `;
+        };
+        document.head.appendChild(script);
+    </script>
     <script src="js/linkedin-api-sync.js"></script>
     <script>
         let currentPosts = [];
