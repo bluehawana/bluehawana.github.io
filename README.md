@@ -373,7 +373,6 @@ bluehawana.github.io/
 │
 ├── 📊 Projects & Portfolio
 │   └── projects/
-│       ├── ecarx-apps.html     # Android Auto applications
 │       └── taxi-carpooling.html # Web application project
 │
 └── 📋 Documentation
