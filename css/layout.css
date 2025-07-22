@@ -40,24 +40,30 @@ header {
    overflow: hidden;
 }
 
-/* Page headers should be much smaller */
-#page-header {
+/* Page headers should be much smaller - but NOT the home page */
+header#page-header {
    height: 60px !important;
    min-height: 60px !important;
    padding: 10px 0;
    background: #111 !important;
 }
 
-#page-header:before {
+header#page-header:before {
    display: none !important;
 }
 
-#page-header nav {
+/* Keep home page header large */
+header#home {
+   height: 800px;
+   min-height: 500px;
+}
+
+header#page-header nav {
    margin: 0;
    padding: 0;
 }
 
-#page-header .nav {
+header#page-header .nav {
    margin: 0;
    padding: 0;
    display: flex;
@@ -66,11 +72,11 @@ header {
    height: 40px;
 }
 
-#page-header .nav li {
+header#page-header .nav li {
    margin: 0 15px;
 }
 
-#page-header .nav a {
+header#page-header .nav a {
    color: #fff;
    text-decoration: none;
    padding: 8px 15px;
@@ -78,8 +84,8 @@ header {
    transition: background 0.3s ease;
 }
 
-#page-header .nav a:hover,
-#page-header .nav .current a {
+header#page-header .nav a:hover,
+header#page-header .nav .current a {
    background: #0070f3;
    color: #fff;
 }
