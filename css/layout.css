@@ -200,7 +200,7 @@ ul#nav li a:hover {
 #about {
    background: #000;
    padding-top: 40px;
-   padding-bottom: 66px;
+   padding-bottom: 30px;
    overflow: hidden;
 }
 
@@ -281,7 +281,7 @@ ul#nav li a:hover {
 #resume {
    background: #fff;
    padding-top: 40px;
-   padding-bottom: 72px;
+   padding-bottom: 30px;
    overflow: hidden;
 }
 
@@ -459,7 +459,7 @@ ul#nav li a:hover {
 #portfolio {
    background: #ebeeee;
    padding-top: 40px;
-   padding-bottom: 60px;
+   padding-bottom: 30px;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -629,7 +629,7 @@ ul#nav li a:hover {
 
 #call-to-action {
    background: #212121;
-   padding-top: 66px;
+   padding-top: 30px;
    padding-bottom: 48px;
 }
 #call-to-action h1 {
@@ -697,7 +697,7 @@ call-to-action .button {
 }
 #testimonials .text-container {
    padding-top: 40px;
-   padding-bottom: 66px;
+   padding-bottom: 30px;
 }
 #testimonials h1 {
    font: 18px/24px 'opensans-bold', sans-serif;   
