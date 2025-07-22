@@ -8,12 +8,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    
    <!-- CSS -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css?v=2025071903">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/blog.css">
-   <link rel="shortcut icon" href="favicon.png">
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific-popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
    
    <!-- Cyberpunk Project Styles -->
    <style>
@@ -641,7 +641,6 @@
                   <div class="project-actions">
                      <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
                      <a href="projects/taxi-carpooling.html" class="cyber-btn secondary">[ NEURAL_NET ]</a>
-                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
                   </div>
                </div>
 
@@ -661,7 +660,6 @@
                   <div class="project-actions">
                      <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
                      <a href="automation-dashboard.html" class="cyber-btn secondary">[ SYNC_STATUS ]</a>
-                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
                   </div>
                </div>
 
@@ -679,8 +677,7 @@
                   </div>
                   <div class="project-actions">
                      <a href="https://smrtmart.com" target="_blank" class="cyber-btn">[ DEPLOY_SITE ]</a>
-                     <a href="contact.html" class="cyber-btn secondary">[ REQUEST_ACCESS ]</a>
-                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
+                     <a href="../pages/contact.html" class="cyber-btn secondary">[ REQUEST_ACCESS ]</a>
                   </div>
                </div>
 
@@ -699,7 +696,6 @@
                   <div class="project-actions">
                      <a href="https://github.com/bluehawana" target="_blank" class="cyber-btn">[ GITHUB_MATRIX ]</a>
                      <a href="#stats-section" class="cyber-btn secondary">[ SCAN_STATS ]</a>
-                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
                   </div>
                </div>
 
@@ -723,7 +719,6 @@
                   <div class="project-actions">
                      <a href="../pages/services.html" class="cyber-btn">[ ACCESS_SERVICES ]</a>
                      <a href="../pages/services.html#calendly-booking" class="cyber-btn secondary">[ BOOK_SESSION ]</a>
-                     <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent">[ FUEL_PROJECT ]</a>
                   </div>
                </div>
             </div>
@@ -897,7 +892,6 @@
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                <a href="../pages/contact.html" class="cyber-btn" style="padding: 15px 30px; font-size: 14px; position: relative; z-index: 10;">[ SEND_MESSAGE ]</a>
                <a href="../pages/services.html" class="cyber-btn secondary" style="padding: 15px 30px; font-size: 14px; position: relative; z-index: 10;">[ REQUEST_SERVICES ]</a>
-               <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="cyber-btn accent" style="padding: 15px 30px; font-size: 14px; position: relative; z-index: 10;">[ FUEL_MATRIX ]</a>
             </div>
          </div>
       </div>
@@ -1141,7 +1135,7 @@
                   minute: '2-digit' 
                });
                const ext = getFileExtension(repo.language);
-               output += `<div>-rw-r--r--  1 bluehawana  users  ${size} ${date} ${repo.name}.${ext}</div>`;
+               output += `<div>${repo.name}.${ext} - ${repo.language || 'Unknown'} - ${date}</div>`;
             });
             repoList.innerHTML = output;
          }
