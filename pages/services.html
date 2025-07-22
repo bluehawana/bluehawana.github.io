@@ -267,6 +267,17 @@
          box-shadow: 0 0 20px rgba(124, 227, 139, 0.3);
       }
 
+      .btn-terminal.buymeacoffee {
+         border-color: var(--terminal-yellow);
+         color: var(--terminal-yellow);
+      }
+
+      .btn-terminal.buymeacoffee:hover {
+         background: var(--terminal-yellow);
+         color: var(--terminal-bg);
+         box-shadow: 0 0 20px rgba(242, 204, 96, 0.3);
+      }
+
 
       .calendly-section {
          background: var(--code-bg);
@@ -587,11 +598,12 @@
             <div class="support-section">
                <h3>💡 Ready to Get Started?</h3>
                <p style="color: var(--terminal-text); margin-bottom: 30px;">
-                  Choose from 1-on-1 meetings, professional services, or support my open-source work.
+                  Schedule meetings, request services, or support my work. Payment via Buy Me a Coffee before service delivery.
                </p>
                
                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                   <a href="#calendly-booking" class="btn-terminal primary">$ schedule --meeting</a>
+                  <a href="https://buymeacoffee.com/bluehawana" target="_blank" class="btn-terminal buymeacoffee">☕ $ buymeacoffee</a>
                   <a href="contact.html" class="btn-terminal">$ request --service</a>
                </div>
             </div>
