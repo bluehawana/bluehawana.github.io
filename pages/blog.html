@@ -445,11 +445,16 @@
    <script src="../js/linkedin_posts.js?v=2025071902"></script>
    <script src="../js/github_repos.js"></script>
    <script>
-   // Load GitHub repos for blog page
+   // Load GitHub repos and LinkedIn posts for blog page
    document.addEventListener('DOMContentLoaded', function() {
-      // Update GitHub repos to target the correct container
+      // Load GitHub repos
       if (typeof fetchGitHubRepos === 'function') {
          fetchGitHubRepos('github-repos');
+      }
+      
+      // Load LinkedIn posts
+      if (typeof fetchLinkedInPosts === 'function') {
+         fetchLinkedInPosts();
       }
    });
    </script>
