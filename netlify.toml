@@ -64,8 +64,8 @@
   to = "/linkedin-debug.html"
   status = 200
 
-# 404 page
+# 404 page for HTML pages only
 [[redirects]]
-  from = "/*"
+  from = "/*.html"
   to = "/404.html"
   status = 404
