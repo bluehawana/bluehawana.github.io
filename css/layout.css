@@ -30,14 +30,58 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
+   height: 120px;
+   min-height: 80px;
    width: 100%;
    background: #000 no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+}
+
+/* Page headers should be much smaller */
+#page-header {
+   height: 60px !important;
+   min-height: 60px !important;
+   padding: 10px 0;
+   background: #111 !important;
+}
+
+#page-header:before {
+   display: none !important;
+}
+
+#page-header nav {
+   margin: 0;
+   padding: 0;
+}
+
+#page-header .nav {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+}
+
+#page-header .nav li {
+   margin: 0 15px;
+}
+
+#page-header .nav a {
+   color: #fff;
+   text-decoration: none;
+   padding: 8px 15px;
+   border-radius: 4px;
+   transition: background 0.3s ease;
+}
+
+#page-header .nav a:hover,
+#page-header .nav .current a {
+   background: #0070f3;
+   color: #fff;
 }
 
 /* vertically center banner section */
