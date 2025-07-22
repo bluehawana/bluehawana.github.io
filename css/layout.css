@@ -199,7 +199,7 @@ ul#nav li a:hover {
 
 #about {
    background: #000;
-   padding-top: 96px;
+   padding-top: 40px;
    padding-bottom: 66px;
    overflow: hidden;
 }
@@ -280,7 +280,7 @@ ul#nav li a:hover {
 
 #resume {
    background: #fff;
-   padding-top: 90px;
+   padding-top: 40px;
    padding-bottom: 72px;
    overflow: hidden;
 }
@@ -458,7 +458,7 @@ ul#nav li a:hover {
 
 #portfolio {
    background: #ebeeee;
-   padding-top: 90px;
+   padding-top: 40px;
    padding-bottom: 60px;
 }
 #portfolio h1 {
@@ -696,7 +696,7 @@ call-to-action .button {
    overflow: hidden;
 }
 #testimonials .text-container {
-   padding-top: 96px;
+   padding-top: 40px;
    padding-bottom: 66px;
 }
 #testimonials h1 {
@@ -835,8 +835,8 @@ call-to-action .button {
 
 #contact {
    background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
+   padding-top: 40px;
+   padding-bottom: 40px;
    color: #636363;
 }
 #contact .section-head { margin-bottom: 42px; }

@@ -3,13 +3,13 @@
 /* Section Styling */
 .section-light {
     background-color: #f5f5f5;
-    padding: 90px 0;
+    padding: 40px 0;
 }
 
 .section-dark {
     background-color: #000;
     color: #fff;
-    padding: 90px 0;
+    padding: 40px 0;
 }
 
 .text-center {
@@ -1109,13 +1109,13 @@
 /* Enhanced Section Backgrounds for Projects Page */
 .section-light {
     background: #f8f9fa;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .section-dark {
     background: #333;
     color: white;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .section-dark h2,
