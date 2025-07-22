@@ -596,32 +596,24 @@
                <div class="terminal-content">
                   <div class="terminal-line">
                      <span class="terminal-prompt">root@matrix:~$</span> 
-                     <span class="terminal-command">ls -la projects/</span>
+                     <span class="terminal-command">curl -s api.github.com/users/bluehawana/repos | jq -r '.[0:5]'</span>
                   </div>
-                  <div class="terminal-line terminal-output">
-                     drwxr-xr-x  8 hong  staff   256 Jan 19 2025 ./
-                  </div>
-                  <div class="terminal-line terminal-output">
-                     drwxr-xr-x  3 hong  staff    96 Jan 19 2025 ../
-                  </div>
-                  <div class="terminal-line terminal-output">
-                     -rw-r--r--  1 hong  staff  2048 Jan 19 2025 taxi-carpooling.jar
-                  </div>
-                  <div class="terminal-line terminal-output">
-                     -rw-r--r--  1 hong  staff  1024 Jan 19 2025 bluehawana-web.html
-                  </div>
-                  <div class="terminal-line terminal-output">
-                     -rw-r--r--  1 hong  staff  3072 Jan 19 2025 smartmart-ecommerce.war
+                  <div id="terminal-repo-list" class="terminal-output">
+                     Loading repositories...
                   </div>
                   <div class="terminal-line">
                      <span class="terminal-prompt">root@matrix:~$</span> 
-                     <span class="terminal-command">./scan_projects --verbose</span>
+                     <span class="terminal-command">git log --oneline -3</span>
+                  </div>
+                  <div id="terminal-commit-list" class="terminal-output">
+                     Loading recent commits...
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@matrix:~$</span> 
+                     <span class="terminal-command">echo "Status: $(date) - All systems operational"</span>
                   </div>
                   <div class="terminal-line terminal-output">
-                     [✓] Found 3 active projects in digital arsenal
-                  </div>
-                  <div class="terminal-line terminal-output">
-                     [✓] All systems operational. Ready for deployment.
+                     <span id="terminal-status">Status: <span id="current-date">Loading...</span> - All systems operational</span>
                   </div>
                </div>
             </div>
@@ -959,6 +951,9 @@
       // Load GitHub statistics
       fetchCyberStats();
       
+      // Populate terminal with real data
+      populateTerminalData();
+      
       // Start real-time updates
       startCyberUpdates();
    });
@@ -1124,6 +1119,63 @@
          'Swift': 'swift'
       };
       return extensions[language] || 'exe';
+   }
+
+   // Populate terminal with real GitHub data
+   async function populateTerminalData() {
+      try {
+         // Fetch repositories
+         const repoResponse = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=5');
+         const repos = await repoResponse.json();
+         
+         // Update terminal repo list
+         const repoList = document.getElementById('terminal-repo-list');
+         if (repoList && repos.length > 0) {
+            let output = '';
+            repos.forEach((repo, index) => {
+               const size = Math.floor(Math.random() * 5000 + 1000); // Simulated file size
+               const date = new Date(repo.updated_at).toLocaleDateString('en-US', { 
+                  month: 'short', 
+                  day: '2-digit', 
+                  hour: '2-digit', 
+                  minute: '2-digit' 
+               });
+               const ext = getFileExtension(repo.language);
+               output += `<div>-rw-r--r--  1 hong  staff  ${size} ${date} ${repo.name}.${ext}</div>`;
+            });
+            repoList.innerHTML = output;
+         }
+
+         // Fetch recent commits
+         const commitResponse = await fetch('https://api.github.com/repos/bluehawana/bluehawana.github.io/commits?per_page=3');
+         const commits = await commitResponse.json();
+         
+         // Update terminal commit list
+         const commitList = document.getElementById('terminal-commit-list');
+         if (commitList && commits.length > 0) {
+            let output = '';
+            commits.forEach(commit => {
+               const shortSha = commit.sha.substring(0, 7);
+               const message = commit.commit.message.split('\n')[0];
+               output += `<div>${shortSha} ${message}</div>`;
+            });
+            commitList.innerHTML = output;
+         }
+
+         // Update current date
+         const dateElement = document.getElementById('current-date');
+         if (dateElement) {
+            dateElement.textContent = new Date().toLocaleString();
+         }
+
+      } catch (error) {
+         console.error('Error populating terminal data:', error);
+         const repoList = document.getElementById('terminal-repo-list');
+         if (repoList) repoList.textContent = 'Error loading repository data';
+         
+         const commitList = document.getElementById('terminal-commit-list');
+         if (commitList) commitList.textContent = 'Error loading commit data';
+      }
    }
 
    // Animate number counter with cyber effect
