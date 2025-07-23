@@ -3,6 +3,7 @@
 
 # Automation Dashboard Access
 /automation-dashboard /pages/automation_dashboard.html 200
+/automation-dashboard.html /pages/automation_dashboard.html 200
 
 # LinkedIn sync page redirects  
 /linkedin-sync /pages/linkedin_auto_sync.html 200
