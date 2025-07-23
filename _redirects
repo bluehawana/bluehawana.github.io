@@ -6,6 +6,7 @@
 
 # LinkedIn sync page redirects  
 /linkedin-sync /pages/linkedin_auto_sync.html 200
+/linkedin_auto_sync.html /pages/linkedin_auto_sync.html 200
 /debug /pages/linkedin_debug.html 200
 
 # LinkedIn OAuth Callback

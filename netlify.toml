@@ -60,6 +60,11 @@
   to = "/pages/linkedin_auto_sync.html"
   status = 200
 
+[[redirects]]
+  from = "/linkedin_auto_sync.html"
+  to = "/pages/linkedin_auto_sync.html"
+  status = 200
+
 [[redirects]]  
   from = "/debug"
   to = "/pages/linkedin_debug.html"
