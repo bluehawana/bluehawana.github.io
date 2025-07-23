@@ -280,27 +280,43 @@
         </div>
     </div>
 
+    <script src="../js/linkedin_config_netlify.js"></script>
     <script>
-        // Check if linkedin-config.js exists, otherwise show setup instructions
-        const script = document.createElement('script');
-        script.src = 'linkedin-config.js';
-        script.onerror = function() {
-            // linkedin-config.js not found - show setup instructions
-            document.querySelector('.content').innerHTML = `
-                <div class="error">
-                    <h3>⚠️ LinkedIn API Configuration Missing</h3>
-                    <p>The LinkedIn API configuration file is missing. This is expected for security reasons.</p>
-                    <h4>Setup Instructions:</h4>
-                    <ol>
-                        <li>Copy <code>linkedin-config.template.js</code> to <code>linkedin-config.js</code></li>
-                        <li>Fill in your LinkedIn API credentials in <code>linkedin-config.js</code></li>
-                        <li>Refresh this page</li>
-                    </ol>
-                    <p><strong>Note:</strong> The <code>linkedin-config.js</code> file is gitignored for security.</p>
-                </div>
-            `;
-        };
-        document.head.appendChild(script);
+        // Initialize LinkedIn configuration via Netlify
+        async function initializeNetlifyConfig() {
+            try {
+                const isConfigured = await window.isLinkedInConfigured();
+                if (!isConfigured) {
+                    throw new Error('LinkedIn not configured in Netlify environment variables');
+                }
+                console.log('✅ LinkedIn configuration loaded from Netlify');
+            } catch (error) {
+                console.error('❌ LinkedIn configuration error:', error);
+                document.querySelector('.content').innerHTML = `
+                    <div class="error">
+                        <h3>⚠️ LinkedIn API Configuration Missing</h3>
+                        <p>The LinkedIn API configuration is not properly set up in Netlify environment variables.</p>
+                        <h4>Setup Instructions:</h4>
+                        <ol>
+                            <li>Log in to your <a href="https://app.netlify.com" target="_blank">Netlify Dashboard</a></li>
+                            <li>Go to your site settings → Environment Variables</li>
+                            <li>Add the following environment variables:
+                                <ul>
+                                    <li><code>LINKEDIN_CLIENT_ID</code> - Your LinkedIn app client ID</li>
+                                    <li><code>LINKEDIN_CLIENT_SECRET</code> - Your LinkedIn app client secret</li>
+                                    <li><code>LINKEDIN_ACCESS_TOKEN</code> - Your LinkedIn access token (optional)</li>
+                                </ul>
+                            </li>
+                            <li>Redeploy your site</li>
+                        </ol>
+                        <p><strong>Note:</strong> This method is more secure and works in production without local config files.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Initialize on page load
+        initializeNetlifyConfig();
     </script>
     <script src="../js/linkedin-api-sync.js"></script>
     <script>

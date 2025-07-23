@@ -419,6 +419,7 @@
         </div>
     </div>
 
+    <script src="../js/linkedin_config_netlify.js"></script>
     <script src="../js/linkedin_api_sync.js"></script>
     <script src="../js/automation_scheduler.js"></script>
     <script src="../js/linkedin_posts.js"></script>
@@ -512,20 +513,15 @@
             loadPostCounts();
         }
         
-        // Check API status via automation-status endpoint
+        // Check API status via Netlify Functions
         async function checkAPIStatus() {
             try {
-                // Determine the correct endpoint based on environment
-                const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-                const endpoint = isLocal 
-                    ? 'https://bluehawana.netlify.app/.netlify/functions/automation-status'
-                    : '/.netlify/functions/automation-status';
-                
-                const response = await fetch(endpoint);
-                const status = await response.json();
+                // Use the new Netlify configuration system
+                const status = await window.getAutomationStatus();
                 
                 if (status.linkedIn) {
-                    linkedinAuth.textContent = status.linkedIn.status === 'connected' ? 'Connected' : 'Error';
+                    linkedinAuth.textContent = status.linkedIn.status === 'connected' ? 'Connected' : 
+                                             status.linkedIn.status === 'configured' ? 'Configured' : 'Error';
                     if (status.linkedIn.lastChecked) {
                         linkedinLastCheck.textContent = new Date(status.linkedIn.lastChecked).toLocaleTimeString();
                     }
@@ -537,14 +533,24 @@
                         githubLastCheck.textContent = new Date(status.gitHub.lastChecked).toLocaleTimeString();
                     }
                 }
+
+                // Check if LinkedIn is properly configured
+                const isConfigured = await window.isLinkedInConfigured();
+                if (!isConfigured) {
+                    linkedinAuth.textContent = 'Not Configured';
+                    console.warn('LinkedIn not properly configured - check Netlify environment variables');
+                }
                 
             } catch (error) {
                 console.error('Failed to check API status:', error);
                 linkedinAuth.textContent = 'Check Failed';
                 
-                // Fallback: show local status if available
-                if (window.linkedInSync) {
-                    linkedinAuth.textContent = window.linkedInSync.isTokenValid() ? 'Local Token' : 'No Token';
+                // Try to check configuration directly
+                try {
+                    const isConfigured = await window.isLinkedInConfigured();
+                    linkedinAuth.textContent = isConfigured ? 'Config OK' : 'Not Configured';
+                } catch (configError) {
+                    linkedinAuth.textContent = 'Config Error';
                 }
             }
         }
@@ -620,9 +626,38 @@
             showNotification('Automated monitoring stopped', 'info');
         }
         
-        // Open LinkedIn sync page
-        function openLinkedInSync() {
-            window.open('./linkedin_auto_sync.html', '_blank');
+        // LinkedIn sync via Netlify Function
+        async function openLinkedInSync() {
+            try {
+                linkedinSyncBtn.disabled = true;
+                linkedinSyncBtn.textContent = '🔄 Syncing...';
+                
+                logActivity('info', 'Starting LinkedIn sync via Netlify');
+                
+                const result = await window.syncLinkedInViaNetlify();
+                
+                if (result.success) {
+                    showNotification(`✅ LinkedIn sync completed: ${result.postsCount} posts processed`, 'success');
+                    logActivity('success', `LinkedIn sync completed: ${result.postsCount} posts processed`);
+                    
+                    // Refresh the dashboard
+                    updateStatus();
+                } else {
+                    throw new Error(result.error || 'Sync failed');
+                }
+                
+            } catch (error) {
+                console.error('LinkedIn sync failed:', error);
+                showNotification(`❌ LinkedIn sync failed: ${error.message}`, 'error');
+                logActivity('error', `LinkedIn sync failed: ${error.message}`);
+                
+                // Fallback: open the manual sync page
+                window.open('./linkedin_auto_sync.html', '_blank');
+                
+            } finally {
+                linkedinSyncBtn.disabled = false;
+                linkedinSyncBtn.textContent = '🔗 LinkedIn Sync';
+            }
         }
         
         // Search LinkedIn posts

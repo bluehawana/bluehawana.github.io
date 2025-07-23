@@ -10,9 +10,17 @@
   # LinkedIn API Configuration
   LINKEDIN_CLIENT_ID = "77duha47hcbh8o"
   # Note: LINKEDIN_CLIENT_SECRET should be set in Netlify UI for security
+  # Note: LINKEDIN_ACCESS_TOKEN should be set in Netlify UI for security
   
   # API Version Configuration  
   LINKEDIN_API_VERSION = "202505"
+  
+  # GitHub Configuration (for automated updates)
+  GITHUB_REPO = "bluehawana/bluehawana.github.io"
+  # Note: GITHUB_TOKEN should be set in Netlify UI for security
+  
+  # Site Configuration
+  SITE_URL = "https://bluehawana.com"
   
   # Enable HTTPS redirects
   HTTPS_REDIRECT = "true"
