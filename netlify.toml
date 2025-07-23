@@ -77,6 +77,12 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/automation-dashboard.html"
+  to = "/pages/automation_dashboard.html"
+  status = 200
+  force = true
+
 # 404 page for HTML pages only
 [[redirects]]
   from = "/*.html"
