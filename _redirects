@@ -16,5 +16,6 @@
 # Redirect HTTP to HTTPS
 http://bluehawana.com/* https://bluehawana.com/:splat 301!
 
-# 404 fallback
+# 404 fallback - exclude dashboard pages
+/pages/*.html 200  
 /*.html /404.html 404
