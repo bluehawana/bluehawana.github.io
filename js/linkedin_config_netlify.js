@@ -15,16 +15,45 @@ class LinkedInConfigNetlify {
      * Get base URL for API calls
      */
     getBaseURL() {
-        // If we're running locally, use the Netlify dev URL or production URL
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        // Try multiple possible Netlify function URLs
+        const possibleURLs = [
+            '/.netlify/functions',
+            'https://bluehawana.netlify.app/.netlify/functions',
+            'https://bluehawana.com/.netlify/functions'
+        ];
         
-        if (isLocal) {
-            // For local development, you can use the production URL
-            return 'https://bluehawana.netlify.app/.netlify/functions';
+        // For now, return the first one, but we'll test all in loadConfig
+        return possibleURLs[0];
+    }
+
+    /**
+     * Try multiple base URLs to find working functions
+     */
+    async findWorkingBaseURL() {
+        const possibleURLs = [
+            '/.netlify/functions',
+            'https://bluehawana.netlify.app/.netlify/functions',
+            'https://bluehawana.com/.netlify/functions'
+        ];
+
+        for (const baseURL of possibleURLs) {
+            try {
+                console.log(`🔍 Testing functions at: ${baseURL}`);
+                const response = await fetch(`${baseURL}/test`, {
+                    method: 'GET',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    console.log(`✅ Found working functions at: ${baseURL}`);
+                    return baseURL;
+                }
+            } catch (error) {
+                console.log(`❌ ${baseURL} failed:`, error.message);
+            }
         }
         
-        // For production, use relative path
-        return '/.netlify/functions';
+        throw new Error('No working Netlify functions endpoint found');
     }
 
     /**
@@ -38,7 +67,17 @@ class LinkedInConfigNetlify {
         try {
             console.log('🔄 Loading LinkedIn configuration from Netlify...');
             
-            const response = await fetch(`${this.baseURL}/linkedin-env`, {
+            // First try to find a working base URL
+            let workingBaseURL;
+            try {
+                workingBaseURL = await this.findWorkingBaseURL();
+                this.baseURL = workingBaseURL;
+            } catch (error) {
+                console.warn('⚠️ No working functions endpoint found, using default');
+                workingBaseURL = this.baseURL;
+            }
+
+            const response = await fetch(`${workingBaseURL}/linkedin-env`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -46,7 +85,7 @@ class LinkedInConfigNetlify {
             });
 
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                throw new Error(`HTTP ${response.status}: ${response.statusText} - Functions may not be deployed yet`);
             }
 
             const data = await response.json();
@@ -66,7 +105,7 @@ class LinkedInConfigNetlify {
         } catch (error) {
             console.error('❌ Failed to load LinkedIn configuration:', error);
             
-            // Show user-friendly error message
+            // Show user-friendly error message with more details
             this.showConfigError(error.message);
             
             throw error;
@@ -210,24 +249,38 @@ class LinkedInConfigNetlify {
             content.insertBefore(errorDiv, content.firstChild);
         }
 
+        const isNetlifyFunctionError = errorMessage.includes('404') || errorMessage.includes('Functions may not be deployed');
+        
         errorDiv.innerHTML = `
             <h3>⚠️ LinkedIn Configuration Error</h3>
             <p><strong>Error:</strong> ${errorMessage}</p>
             <hr style="margin: 15px 0; border: none; border-top: 1px solid #fcc;">
-            <h4>To Fix This Issue:</h4>
+            ${isNetlifyFunctionError ? `
+                <h4>Functions Deployment Issue:</h4>
+                <p>The Netlify Functions are not responding (404 error). This usually means:</p>
+                <ul>
+                    <li>Functions haven't been deployed yet (wait 2-3 minutes after pushing code)</li>
+                    <li>Functions directory is not properly configured in netlify.toml</li>
+                    <li>There's an error in the function code preventing deployment</li>
+                </ul>
+                <p><strong>Current Status:</strong> Checking multiple function endpoints...</p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #fcc;">
+            ` : ''}
+            <h4>Environment Variables Setup:</h4>
             <ol>
                 <li>Log in to your <a href="https://app.netlify.com" target="_blank">Netlify Dashboard</a></li>
-                <li>Go to your site settings → Environment Variables</li>
-                <li>Add the following environment variables:
+                <li>Find your site: <strong>bluehawana.github.io</strong></li>
+                <li>Go to: Site Settings → Environment Variables</li>
+                <li>Add these variables:
                     <ul>
-                        <li><code>LINKEDIN_CLIENT_ID</code> - Your LinkedIn app client ID</li>
-                        <li><code>LINKEDIN_CLIENT_SECRET</code> - Your LinkedIn app client secret</li>
-                        <li><code>LINKEDIN_ACCESS_TOKEN</code> - Your LinkedIn access token (if you have one)</li>
+                        <li><code>LINKEDIN_CLIENT_ID</code> = <code>77duha47hcbh8o</code></li>
+                        <li><code>LINKEDIN_CLIENT_SECRET</code> = [Your LinkedIn app secret]</li>
+                        <li><code>LINKEDIN_ACCESS_TOKEN</code> = [Your access token]</li>
                     </ul>
                 </li>
-                <li>Redeploy your site</li>
+                <li>Save and wait for automatic redeploy (1-2 minutes)</li>
             </ol>
-            <p><strong>Note:</strong> This method is more secure than local config files and works in production.</p>
+            <p><strong>Note:</strong> Functions must be working AND environment variables must be set.</p>
         `;
     }
 
