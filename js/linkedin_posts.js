@@ -41,7 +41,7 @@ function convertToDirectLinkedInURL(url, postContent = '') {
  */
 async function fetchLinkedInPosts() {
     try {
-        const response = await fetch('./data/linkedin-posts.json');
+        const response = await fetch('/data/linkedin-posts.json');
         const posts = await response.json();
         
         if (!response.ok) {
