@@ -1,0 +1,18 @@
+# Netlify Redirects File
+# This provides an alternative to netlify.toml redirects
+
+# Automation Dashboard Access
+/automation-dashboard /pages/automation_dashboard.html 200
+
+# LinkedIn sync page redirects  
+/linkedin-sync /pages/linkedin_auto_sync.html 200
+/debug /pages/linkedin_debug.html 200
+
+# LinkedIn OAuth Callback
+/linkedin-callback /pages/linkedin_callback.html 200
+
+# Redirect HTTP to HTTPS
+http://bluehawana.com/* https://bluehawana.com/:splat 301!
+
+# 404 fallback
+/*.html /404.html 404

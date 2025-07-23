@@ -2,9 +2,9 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>Projects - Hongzhi Li</title>
-   <meta name="description" content="Software projects and open-source contributions by Hongzhi Li - Full Stack Developer">
-   <meta name="author" content="Hongzhi Li">
+   <title>Projects - Hongzhi (Harvad) Li</title>
+   <meta name="description" content="Software projects and open-source contributions by Hongzhi (Harvad) Li - Full Stack Developer">
+   <meta name="author" content="Hongzhi (Harvad) Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    
    <!-- CSS -->
@@ -99,11 +99,12 @@
       }
 
       .project-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         display: flex;
+         flex-wrap: wrap;
          gap: 30px;
          padding: 40px 0;
          background: var(--cyber-bg);
+         align-items: flex-start;
       }
 
       .cyber-project {
@@ -115,6 +116,9 @@
          overflow: hidden;
          transition: all 0.3s ease;
          cursor: pointer;
+         flex: 1 1 calc(50% - 15px);
+         min-width: 400px;
+         max-width: 600px;
       }
 
       .cyber-project::before {
@@ -540,7 +544,13 @@
          }
          
          .project-grid {
-            grid-template-columns: 1fr;
+            flex-direction: column;
+         }
+         
+         .cyber-project {
+            flex: 1 1 100%;
+            min-width: 300px;
+            max-width: 100%;
          }
          
          .stats-grid {
@@ -691,17 +701,12 @@
                      </div>
                   </div>
                   <div class="project-desc">
-                     Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking, and automated updates. Access the complete digital arsenal of open-source contributions and development experiments.
+                     Real-time repository matrix synchronized with GitHub API featuring dynamic project discovery, automated commit tracking, and live statistics updates. Provides comprehensive access to the complete digital arsenal of open-source contributions, development experiments, and technical innovations. Includes automated categorization by programming language, star tracking, and repository activity monitoring with cyberpunk-themed visualization interface.
                   </div>
                   <div class="project-actions">
                      <a href="https://github.com/bluehawana" target="_blank" class="cyber-btn">[ GITHUB_MATRIX ]</a>
                      <a href="#stats-section" class="cyber-btn secondary">[ SCAN_STATS ]</a>
                   </div>
-               </div>
-
-               <!-- Dynamic GitHub Repositories (Auto-synced) -->
-               <div id="dynamic-github-repos" class="github-repo-grid">
-                  <!-- Auto-populated by GitHub API -->
                </div>
 
                <!-- Services Platform -->
@@ -714,13 +719,28 @@
                      </div>
                   </div>
                   <div class="project-desc">
-                     Professional services deployment platform with Calendly integration, automated booking systems, consulting modules, development services, and direct payment processing through multiple channels.
+                     Professional services deployment platform featuring Calendly integration for automated meeting scheduling, comprehensive consulting modules for career guidance and technical discussions, full-stack development services with modern technologies, enterprise IT infrastructure support, and multi-channel payment processing for seamless client transactions. Includes specialized China-Global business bridging services and local agent support for major technology vendors.
                   </div>
                   <div class="project-actions">
                      <a href="../pages/services.html" class="cyber-btn">[ ACCESS_SERVICES ]</a>
                      <a href="../pages/services.html#calendly-booking" class="cyber-btn secondary">[ BOOK_SESSION ]</a>
                   </div>
                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Dynamic GitHub Repositories Section -->
+   <section style="background: #161b22; padding: 40px 0;">
+      <div class="row">
+         <div class="twelve columns">
+            <h2 style="color: var(--cyber-secondary); font-size: 32px; text-align: center; margin-bottom: 20px; text-shadow: var(--neon-glow);">[ LIVE_REPOSITORIES.API ]</h2>
+            <p style="color: var(--cyber-text-dim); text-align: center; margin-bottom: 40px; font-family: monospace;">> Real-time repository feed synchronized with GitHub API...</p>
+            
+            <!-- Dynamic GitHub Repositories (Auto-synced) -->
+            <div id="dynamic-github-repos" class="github-repo-grid">
+               <!-- Auto-populated by GitHub API -->
             </div>
          </div>
       </div>
@@ -909,7 +929,7 @@
             </ul>
 
             <ul class="copyright">
-               <li>&copy; 2025 Hongzhi Li</li>
+               <li>&copy; 2025 Hongzhi (Harvad) Li</li>
                <li>Design: <a href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
                <li>Visits: <span id="visits">Loading...</span></li>
             </ul>

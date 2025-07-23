@@ -33,10 +33,11 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+
 # LinkedIn OAuth Callback Redirect
 [[redirects]]
   from = "/linkedin-callback"
-  to = "/linkedin-callback.html"
+  to = "/pages/linkedin_callback.html"
   status = 200
 
 # API Proxy for LinkedIn (if needed to avoid CORS)
@@ -56,13 +57,20 @@
 # LinkedIn sync page redirects
 [[redirects]]
   from = "/linkedin-sync"
-  to = "/linkedin-auto-sync.html"
+  to = "/pages/linkedin_auto_sync.html"
   status = 200
 
 [[redirects]]  
   from = "/debug"
-  to = "/linkedin-debug.html"
+  to = "/pages/linkedin_debug.html"
   status = 200
+
+# Automation Dashboard Redirect with Basic Auth
+[[redirects]]
+  from = "/automation-dashboard"
+  to = "/pages/automation_dashboard.html"
+  status = 200
+  force = true
 
 # 404 page for HTML pages only
 [[redirects]]
