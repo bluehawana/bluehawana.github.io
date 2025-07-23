@@ -272,6 +272,33 @@
     </style>
 </head>
 <body>
+    <script>
+        // Simple access control for private dashboard
+        (function() {
+            const authKey = sessionStorage.getItem('dashboard_auth_2025');
+            const correctHash = 'a7b8c9d0e1f2g3h4i5j6k7l8m9n0p1q2'; // Replace with your hash
+            
+            if (authKey !== correctHash) {
+                const userInput = prompt('🔐 Dashboard Access Code:');
+                if (!userInput) {
+                    window.location.href = '/';
+                    return;
+                }
+                
+                // Simple hash check (replace 'harvad2025' with your password)
+                const expectedInput = 'harvad2025';
+                if (userInput !== expectedInput) {
+                    alert('❌ Invalid access code');
+                    window.location.href = '/';
+                    return;
+                }
+                
+                // Store auth token for session
+                sessionStorage.setItem('dashboard_auth_2025', correctHash);
+            }
+        })();
+    </script>
+    
     <div class="container">
         <div class="header">
             <h1>🤖 Automation Dashboard</h1>
@@ -392,7 +419,7 @@
         </div>
     </div>
 
-    <script src="../js/linkedin-api-sync.js"></script>
+    <script src="../js/linkedin_api_sync.js"></script>
     <script src="../js/automation_scheduler.js"></script>
     <script src="../js/linkedin_posts.js"></script>
     <script>
@@ -595,7 +622,7 @@
         
         // Open LinkedIn sync page
         function openLinkedInSync() {
-            window.open('./linkedin-auto-sync.html', '_blank');
+            window.open('./linkedin_auto_sync.html', '_blank');
         }
         
         // Search LinkedIn posts
