@@ -139,8 +139,14 @@ async function processLinkedInPosts(rawPosts) {
 
   for (const post of rawPosts) {
     try {
-      // Extract activity ID from post URN
-      const activityId = extractActivityId(post.activity);
+      // Extract activity ID from multiple possible sources
+      let activityId = extractActivityId(post.activity);
+      if (!activityId) {
+        activityId = extractActivityId(post.id);
+      }
+      if (!activityId && post.urn) {
+        activityId = extractActivityId(post.urn);
+      }
       
       // Get post content
       const content = extractPostContent(post);
@@ -148,20 +154,35 @@ async function processLinkedInPosts(rawPosts) {
       // Generate tags from content
       const tags = generateTags(content);
       
-      // Create LinkedIn URL
-      const linkedInUrl = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+      // Create LinkedIn URL - fallback to profile if no activity ID
+      let linkedInUrl;
+      if (activityId) {
+        linkedInUrl = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+      } else {
+        console.warn('⚠️ No activity ID found for post, using profile URL as fallback');
+        linkedInUrl = 'https://www.linkedin.com/in/hzl';
+      }
       
       // Get post date
       const date = new Date(post.created?.time || Date.now()).toISOString().split('T')[0];
 
-      processedPosts.push({
+      const processedPost = {
         content: content,
         date: date,
         url: linkedInUrl,
         tags: tags,
-        activityId: activityId,
         timestamp: post.created?.time
-      });
+      };
+
+      // Only add activityId if we found one
+      if (activityId) {
+        processedPost.activityId = activityId;
+      }
+
+      processedPosts.push(processedPost);
+
+      // Log for debugging
+      console.log(`Processed post: ${content.substring(0, 50)}... → ${activityId ? `Activity ID: ${activityId}` : 'No Activity ID'}`);
 
     } catch (error) {
       console.error('Error processing post:', error);

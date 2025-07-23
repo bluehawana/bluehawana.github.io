@@ -35,6 +35,27 @@
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type, Authorization, LinkedIn-Version, X-Restli-Protocol-Version"
+
+# Static file MIME types
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "*.ico"
+  [headers.values]
+    Content-Type = "image/x-icon"
     
 [[headers]]
   for = "/*"
