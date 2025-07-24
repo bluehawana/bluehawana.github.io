@@ -286,7 +286,7 @@ class ContentMonitor {
         if ('Notification' in window && Notification.permission === 'granted') {
             new Notification(`New ${platform.charAt(0).toUpperCase() + platform.slice(1)} Content`, {
                 body: message,
-                icon: '/images/logo.png',
+                icon: '/images/me1.png',
                 tag: `${platform}-update`
             });
         }
@@ -336,7 +336,7 @@ class ContentMonitor {
                 console.log('✅ Notification permission granted');
                 new Notification('Content Monitor Active', {
                     body: 'You will now receive notifications for new content updates',
-                    icon: '/images/logo.png'
+                    icon: '/images/me1.png'
                 });
             } else {
                 console.log('❌ Notification permission denied');

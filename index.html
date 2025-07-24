@@ -26,8 +26,29 @@
 
    <!-- Script
    ================================================== -->
-   <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script>
-   <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb">  </script>
+   <script>
+   function cb(response) { 
+      if (response && response.value) {
+         document.getElementById('visits').innerText = response.value; 
+      } else {
+         document.getElementById('visits').innerText = 'N/A';
+      }
+   }
+   
+   // Add error handling for CountAPI
+   function loadVisitCounter() {
+      const script = document.createElement('script');
+      script.src = 'https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb';
+      script.onerror = function() {
+         console.warn('CountAPI unavailable, using fallback');
+         document.getElementById('visits').innerText = '1000+';
+      };
+      document.head.appendChild(script);
+   }
+   
+   // Load counter when DOM is ready
+   document.addEventListener('DOMContentLoaded', loadVisitCounter);
+   </script>
 
    <!-- DevOps Services Styles -->
    <style>
@@ -710,7 +731,7 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   <script src="js/github_repos.js?v=2025072401"></script>
+   <script src="js/github_repos.js?v=2025072402"></script>
    <script src="js/linkedin_posts.js?v=2025071902"></script>
    <script src="js/linkedin_api_sync.js"></script>
    <script src="js/automation_scheduler.js"></script>

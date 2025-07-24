@@ -92,11 +92,22 @@ function formatRepoName(repoName) {
  */
 async function fetchLatestRepos(containerId = 'github-repos') {
     try {
-        const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=5');
+        // Add delay to prevent rate limiting
+        await new Promise(resolve => setTimeout(resolve, 100));
+        
+        const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=5', {
+            headers: {
+                'Accept': 'application/vnd.github.v3+json',
+                'User-Agent': 'bluehawana-portfolio'
+            }
+        });
         const repos = await response.json();
         
         if (!response.ok) {
-            throw new Error(`GitHub API error: ${response.status}`);
+            console.warn(`GitHub API rate limited (${response.status}). Using fallback data.`);
+            // Fallback to cached/static data when rate limited
+            displayFallbackRepos(containerId);
+            return;
         }
         
         const repoContainer = document.getElementById(containerId);
@@ -136,6 +147,80 @@ async function fetchLatestRepos(containerId = 'github-repos') {
             repoContainer.innerHTML = '<p>Unable to load repositories at this time.</p>';
         }
     }
+}
+
+/**
+ * Display fallback repository data when GitHub API is rate-limited
+ */
+function displayFallbackRepos(containerId) {
+    const fallbackRepos = [
+        {
+            name: 'bluehawana.github.io',
+            description: 'Personal portfolio website showcasing full-stack development and DevOps expertise',
+            language: 'HTML',
+            stargazers_count: 0,
+            updated_at: '2025-01-24',
+            html_url: 'https://github.com/bluehawana/bluehawana.github.io'
+        },
+        {
+            name: 'epub-ttsreader-androidauto',
+            description: 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
+            language: 'Python',
+            stargazers_count: 0,
+            updated_at: '2025-01-21',
+            html_url: 'https://github.com/bluehawana/epub-ttsreader-androidauto'
+        },
+        {
+            name: 'carbot-js-ai',
+            description: 'Customized AI car assistant with enhanced functionalities for Android Auto, superior to Google Assistant',
+            language: 'JavaScript',
+            stargazers_count: 0,
+            updated_at: '2025-01-20',
+            html_url: 'https://github.com/bluehawana/carbot-js-ai'
+        },
+        {
+            name: 'jobhunter-python-typescript-gmailrestapi',
+            description: 'Automated job hunting workflow with Python, TypeScript, and Gmail REST API integration for resume generation',
+            language: 'Python',
+            stargazers_count: 0,
+            updated_at: '2025-01-18',
+            html_url: 'https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi'
+        },
+        {
+            name: 'carplayer-kotlin-androidauto',
+            description: 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems',
+            language: 'Kotlin',
+            stargazers_count: 0,
+            updated_at: '2025-01-15',
+            html_url: 'https://github.com/bluehawana/carplayer-kotlin-androidauto'
+        }
+    ];
+
+    const repoContainer = document.getElementById(containerId);
+    if (!repoContainer) return;
+    
+    repoContainer.innerHTML = '';
+    
+    fallbackRepos.forEach(repo => {
+        const repoElement = document.createElement('div');
+        repoElement.className = 'repo-item';
+        
+        const smartDescription = generateSmartDescription(repo.name, repo.language, repo.description);
+        
+        repoElement.innerHTML = `
+            <div class="repo-card">
+                <h4><a href="${repo.html_url}" target="_blank">${formatRepoName(repo.name)}</a></h4>
+                <p class="repo-description">${smartDescription}</p>
+                <div class="repo-meta">
+                    <span class="language">${repo.language || 'Mixed'}</span>
+                    <span class="stars">⭐ ${repo.stargazers_count}</span>
+                    <span class="updated">Updated: ${new Date(repo.updated_at).toLocaleDateString()}</span>
+                </div>
+            </div>
+        `;
+        
+        repoContainer.appendChild(repoElement);
+    });
 }
 
 // Auto-load when page loads
