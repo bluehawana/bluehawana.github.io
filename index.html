@@ -9,9 +9,95 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>Hongzhi (Harvad) Li - Resume</title>
-   <meta name="description" content="Hongzhi (Harvad) Li - Fullstack Developer Resume">
+   <title>Hongzhi (Harvad) Li - Full Stack Developer | Java Spring Boot Angular React | Sweden EU US</title>
+   <meta name="description" content="Full Stack Developer with expertise in Java Spring Boot, Angular, React, AWS. Linux Foundation member. Based in Sweden, open to opportunities in Gothenburg, Stockholm, EU remote, and US remote positions. 5+ years enterprise experience.">
+   <meta name="keywords" content="full stack developer sweden, java developer, spring boot developer, angular developer, react developer, gothenburg stockholm developer, eu remote work, us remote developer, freelance contract permanent, software developer">
    <meta name="author" content="Hongzhi (Harvad) Li">
+   
+   <!-- Open Graph meta tags for social media -->
+   <meta property="og:title" content="Hongzhi (Harvad) Li - Full Stack Developer | Java Spring Boot Angular React">
+   <meta property="og:description" content="Expert Full Stack Developer with 5+ years experience. Specializing in Java Spring Boot, Angular, React, AWS. Available for opportunities in Sweden and internationally.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://bluehawana.github.io">
+   <meta property="og:image" content="https://bluehawana.github.io/images/me1.png">
+   
+   <!-- Twitter Card meta tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Hongzhi (Harvad) Li - Full Stack Developer">
+   <meta name="twitter:description" content="Expert Java Spring Boot, Angular, React developer. Available for new opportunities.">
+   <meta name="twitter:image" content="https://bluehawana.github.io/images/me1.png">
+   
+   <!-- Professional Schema.org structured data -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Person",
+     "name": "Hongzhi Li",
+     "alternateName": "Harvad Li",
+     "jobTitle": "Full Stack Developer",
+     "description": "Expert Full Stack Developer with 5+ years experience. Available for new opportunities in Sweden (Gothenburg/Stockholm), EU remote, and US remote positions. Interested in freelance, contract, and permanent roles.",
+     "url": "https://bluehawana.github.io",
+     "image": "https://bluehawana.github.io/images/me1.png",
+     "sameAs": [
+       "https://www.linkedin.com/in/hzl",
+       "https://github.com/bluehawana",
+       "https://twitter.com/bluehawana"
+     ],
+     "worksFor": {
+       "@type": "Organization",
+       "name": "ECARX"
+     },
+     "workLocation": [
+       {
+         "@type": "Place",
+         "name": "Gothenburg, Sweden",
+         "address": {
+           "@type": "PostalAddress",
+           "addressLocality": "Gothenburg",
+           "addressCountry": "Sweden"
+         }
+       },
+       {
+         "@type": "Place",
+         "name": "Stockholm, Sweden",
+         "address": {
+           "@type": "PostalAddress",
+           "addressLocality": "Stockholm",
+           "addressCountry": "Sweden"
+         }
+       },
+       {
+         "@type": "Place",
+         "name": "European Union (Remote)"
+       },
+       {
+         "@type": "Place",
+         "name": "United States (Remote)"
+       }
+     ],
+     "knowsAbout": [
+       "Java Development",
+       "Spring Boot",
+       "Angular",
+       "React",
+       "AWS Cloud",
+       "DevOps",
+       "Enterprise Software",
+       "Full Stack Development",
+       "Remote Work"
+     ],
+     "offers": {
+       "@type": "Service",
+       "name": "Software Development Services",
+       "description": "Full stack development, enterprise consulting, and development services. Available for freelance, contract, and permanent positions."
+     },
+     "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Sweden",
+       "addressLocality": "Gothenburg"
+     }
+   }
+   </script>
 
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -26,113 +112,8 @@
 
    <!-- Script
    ================================================== -->
-   <script>
-      function cb(response) {
-         if (response && response.value) {
-            document.getElementById('visits').innerText = response.value;
-         } else {
-            document.getElementById('visits').innerText = 'N/A';
-         }
-      }
-
-      // Add error handling for CountAPI
-      function loadVisitCounter() {
-         const script = document.createElement('script');
-         script.src = 'https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb';
-         script.onerror = function () {
-            console.warn('CountAPI unavailable, using fallback');
-            document.getElementById('visits').innerText = '1000+';
-         };
-         document.head.appendChild(script);
-      }
-
-      // Load counter when DOM is ready
-      document.addEventListener('DOMContentLoaded', loadVisitCounter);
-   </script>
-
-   <!-- DevOps Services Styles -->
-   <style>
-      #devops-services {
-         padding: 60px 0;
-         background: #f8f9fa;
-      }
-
-      .service-highlight {
-         background: white;
-         padding: 30px 20px;
-         border-radius: 8px;
-         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-         text-align: center;
-         height: 100%;
-         transition: transform 0.3s ease, box-shadow 0.3s ease;
-         margin-bottom: 30px;
-      }
-
-      .service-highlight:hover {
-         transform: translateY(-5px);
-         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-      }
-
-      .service-icon {
-         font-size: 48px;
-         color: #11ABB0;
-         margin-bottom: 20px;
-      }
-
-      .service-highlight h3 {
-         color: #333;
-         font-size: 20px;
-         margin-bottom: 15px;
-         font-weight: 600;
-      }
-
-      .service-highlight p {
-         color: #666;
-         font-size: 14px;
-         line-height: 1.6;
-         margin-bottom: 20px;
-      }
-
-      .service-list {
-         list-style: none;
-         padding: 0;
-         margin: 0;
-         text-align: left;
-      }
-
-      .service-list li {
-         color: #555;
-         font-size: 13px;
-         padding: 5px 0;
-         border-bottom: 1px solid #eee;
-         position: relative;
-         padding-left: 20px;
-      }
-
-      .service-list li:before {
-         content: "▶";
-         color: #11ABB0;
-         font-size: 10px;
-         position: absolute;
-         left: 0;
-         top: 6px;
-      }
-
-      .service-list li:last-child {
-         border-bottom: none;
-      }
-
-      @media screen and (max-width: 768px) {
-         .service-highlight {
-            margin-bottom: 20px;
-         }
-
-         #devops-services .four.columns {
-            width: 100%;
-            margin-bottom: 20px;
-         }
-      }
-   </style>
+   <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script>
+   <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb">  </script>
 
    <!-- Favicons
 	================================================== -->
@@ -165,9 +146,8 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Tjena, jag heter Hongzhi (Harvad) Li.</h1>
-            <h3>I'm a <span>Fullstack Developer & Linux Enthusiast</span> with expertise in Java/J2EE, Spring Boot,
-               Angular/React, cloud technologies, and enterprise Linux infrastructure.</h3>
+            <h1 class="responsive-headline">Hi, I'm Hongzhi (Harvad) Li - Full Stack Developer</h1>
+            <h3>Expert in <span>Java Spring Boot</span> | <span>Angular & React</span> | <span>AWS Cloud Solutions</span> | Available for exciting opportunities</h3>
 
 
             <ul class="social">
@@ -202,33 +182,19 @@
 
             <h2>ABOUT ME</h2>
 
-            <p> Hej, I'm Hongzhi (Harvad) Li, <span>a Full-Stack Developer and Cross-Cultural Technology Consultant with
-                  over 5 years of experience bridging the gap between IT innovation and business strategy</span>.
-               Specializing in Java/J2EE, JavaScript, C#/.NET Core, and modern cloud technologies, I build scalable
-               applications with Spring Boot, Angular/React, and comprehensive database management across SQL and NoSQL
-               platforms.
+            <p><strong>Experienced Full Stack Developer</strong> - I'm Hongzhi (Harvad) Li, <span>a seasoned Full-Stack Developer with over 5 years of professional experience</span> specializing in enterprise-grade solutions. Expert in <strong>Java Spring Boot development</strong>, <strong>Angular and React frontend frameworks</strong>, <strong>AWS cloud architecture</strong>, and modern DevOps practices.
 
                </br>
                </br>
-               Currently serving as IT/Infrastructure Specialist at ECARX, I bring unique value through
-               <strong>cross-cultural communication expertise</strong> between Chinese and Swedish markets, helping
-               multinational enterprises navigate digital transformation challenges. As a <strong>Linux Foundation
-                  member and Linux enthusiast</strong>, I specialize in enterprise Linux environments, Kubernetes
-               deployments (both cloud and on-premises), and open-source infrastructure solutions. My services include
-               <strong>full-stack development, enterprise consulting, business bridging, and Linux-based IT
-                  infrastructure optimization</strong>.
+               Currently serving as <strong>IT/Infrastructure Specialist at ECARX</strong> while exploring new opportunities in the technology space. I'm particularly interested in <strong>challenging projects</strong> that involve <strong>full-stack development</strong>, <strong>enterprise software architecture</strong>, and <strong>international collaboration</strong>. Open to opportunities in <strong>Gothenburg, Stockholm, EU remote work, and US remote positions</strong>.
 
                </br>
                </br>
-               <strong>Core Expertise:</strong> Linux Foundation member • Enterprise Linux infrastructure • Kubernetes
-               (cloud & on-premises) • Bridging technical complexity with business objectives • Cross-cultural project
-               management • Enterprise digitalization • International business expansion • Cloud migration strategies •
-               Real-time system integration
+               <strong>Core Expertise:</strong> Enterprise Application Development • Cloud Architecture & Migration • DevOps & CI/CD Automation • Mobile App Development • Database Design & API Integration • Technical Leadership
 
                </br>
                </br>
-               Available for <span><a href="services.html">professional consulting services</a></span> and <span><a
-                     href="contact.html">collaboration opportunities</a></span>.
+               <strong>Interested in collaboration?</strong> <span><a href="pages/services.html">View my professional services</a></span> or <span><a href="pages/contact.html">get in touch for opportunities</a></span>.
 
 
          </div> <!-- end .main-col -->
@@ -237,71 +203,6 @@
 
    </section> <!-- About Section End-->
 
-   <!-- DevOps & Infrastructure Services Section -->
-   <section id="devops-services" class="section-light">
-      <div class="row">
-         <div class="twelve columns">
-            <h1><i class="fa fa-cogs"></i> DevOps & Infrastructure Services</h1>
-            <p class="lead">Professional monitoring, container management, and DevOps automation solutions</p>
-         </div>
-      </div>
-
-      <div class="row">
-         <!-- Monitoring & Observability -->
-         <div class="four columns">
-            <div class="service-highlight">
-               <i class="fa fa-line-chart service-icon"></i>
-               <h3>📊 Monitoring & Observability</h3>
-               <p>Comprehensive monitoring with Prometheus, Grafana, and APM solutions for complete system visibility
-                  and proactive alerting.</p>
-               <ul class="service-list">
-                  <li>Prometheus metrics & alerting</li>
-                  <li>Grafana dashboards</li>
-                  <li>Application performance monitoring</li>
-                  <li>Log aggregation & analysis</li>
-               </ul>
-            </div>
-         </div>
-
-         <!-- Container Management & Linux -->
-         <div class="four columns">
-            <div class="service-highlight">
-               <i class="fa fa-cube service-icon"></i>
-               <h3>🐳 Container & Linux Management</h3>
-               <p>Expert Docker containerization and Kubernetes orchestration on enterprise Linux environments. Linux
-                  Foundation member with deep expertise in both cloud and on-premises deployments.</p>
-               <ul class="service-list">
-                  <li>Enterprise Linux infrastructure</li>
-                  <li>Kubernetes (cloud & on-premises)</li>
-                  <li>Docker containerization</li>
-                  <li>Linux Foundation certified expertise</li>
-               </ul>
-            </div>
-         </div>
-
-         <!-- DevOps & CI/CD -->
-         <div class="four columns">
-            <div class="service-highlight">
-               <i class="fa fa-rocket service-icon"></i>
-               <h3>🚀 DevOps & CI/CD</h3>
-               <p>Complete DevOps automation with Infrastructure as Code, configuration management, and modern CI/CD
-                  pipelines.</p>
-               <ul class="service-list">
-                  <li>Infrastructure as Code (Terraform)</li>
-                  <li>Configuration management (Ansible)</li>
-                  <li>CI/CD pipelines (Jenkins, GitLab)</li>
-                  <li>GitOps workflow implementation</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-
-      <div class="row">
-         <div class="twelve columns text-center" style="margin-top: 30px;">
-            <a href="pages/services.html" class="button button-large">View All DevOps Services</a>
-         </div>
-      </div>
-   </section>
 
    <!-- Latest LinkedIn Posts Section -->
    <section id="latest-activity" class="section-dark">
@@ -318,8 +219,7 @@
                <p>Loading LinkedIn posts...</p>
             </div>
             <div class="text-center" style="margin-top: 30px;">
-               <a href="https://www.linkedin.com/in/hzl" class="button button-tech" target="_blank">View All LinkedIn
-                  Posts</a>
+               <a href="https://www.linkedin.com/in/hzl" class="button button-tech" target="_blank">View All LinkedIn Posts</a>
             </div>
          </div>
       </div>
@@ -369,8 +269,7 @@
          <div class="six columns">
             <div class="project-card">
                <h3>GitHub Repositories</h3>
-               <p>Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking,
-                  and automated updates.</p>
+               <p>Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking, and automated updates.</p>
                <a href="https://github.com/bluehawana" class="button">View GitHub</a>
             </div>
          </div>
@@ -436,9 +335,7 @@
                      <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, AWS RDS</li>
                      <li><strong>Testing:</strong> Unit Testing, Integration Testing, JUnit, Jest</li>
                      <li><strong>Cloud:</strong> AWS, Azure, GCP</li>
-                     <li><strong>Linux & DevOps:</strong> Enterprise Linux, Docker, Kubernetes (cloud & on-premises),
-                        CI/CD, Git</li>
-                     <li><strong>Memberships:</strong> Linux Foundation Member</li>
+                     <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD, Git</li>
                      <li><strong>Methods:</strong> Scrum, Kanban, Code Reviews</li>
                   </ul>
                </div>
@@ -752,7 +649,7 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   <script src="js/github_repos.js?v=2025072404"></script>
+   <script src="js/github_repos.js"></script>
    <script src="js/linkedin_posts.js?v=2025071902"></script>
    <script src="js/linkedin_api_sync.js"></script>
    <script src="js/automation_scheduler.js"></script>
