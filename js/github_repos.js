@@ -4,17 +4,18 @@
 function generateSmartDescription(repoName, language, originalDescription) {
     const name = repoName.toLowerCase();
     
-    // Project-specific descriptions based on your repositories
+    // Project-specific descriptions based on actual GitHub repository names (lowercase)
     const projectDescriptions = {
+        // Actual GitHub repo names converted to lowercase
+        'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
         'epub-ttsreader-androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
-        'carplayer-kotlin-androidauto': 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems',
-        'gothenburgtaxipooling-java-reacnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
         'jobhunter-python-typescript-gmailrestapi': 'Automated job hunting workflow with Python, TypeScript, and Gmail REST API integration for resume generation',
         'carbot-js-ai': 'Customized AI car assistant with enhanced functionalities for Android Auto, superior to Google Assistant',
+        'carplayer-kotlin-androidauto': 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems',
+        'gothenburgtaxipooling-java-reacnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
         'newapp': 'Latest application development project with modern architecture and cross-platform compatibility',
-        'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
         'smrtmart': 'E-commerce platform with Spring Boot backend and React frontend for online retail solutions',
-        // Additional repositories that need descriptions
+        // Additional variations and legacy names
         'gothenburgtaxipooling-java-reactnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
         'epub_ttsreader_androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
         'carplayer_kotlin_androidauto': 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems'
@@ -161,7 +162,7 @@ function displayFallbackRepos(containerId) {
     const fallbackRepos = [
         {
             name: 'bluehawana.github.io',
-            description: 'Personal portfolio website showcasing full-stack development and DevOps expertise',
+            description: null,
             language: 'HTML',
             stargazers_count: 0,
             updated_at: '2025-01-24',
@@ -169,35 +170,43 @@ function displayFallbackRepos(containerId) {
         },
         {
             name: 'epub-ttsreader-androidauto',
-            description: 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
+            description: null,
             language: 'Python',
             stargazers_count: 0,
-            updated_at: '2025-01-21',
+            updated_at: '2025-01-23',
             html_url: 'https://github.com/bluehawana/epub-ttsreader-androidauto'
         },
         {
+            name: 'JobHunter-Python-TypeScript-GmailRestAPI',
+            description: 'An automatically working flow integrated with python, typescript, gmail RestApi and etc, for seting up workflows by searching jobs in gmail, websites, and customized resumes by job descriptions, and generate resume and cover letter and send to me for applying jobs.',
+            language: 'Python',
+            stargazers_count: 0,
+            updated_at: '2025-01-21',
+            html_url: 'https://github.com/bluehawana/JobHunter-Python-TypeScript-GmailRestAPI'
+        },
+        {
             name: 'carbot-js-ai',
-            description: 'Customized AI car assistant with enhanced functionalities for Android Auto, superior to Google Assistant',
+            description: 'A customized carbot with better funtionalities than Google Assitant from Android Auto.',
             language: 'JavaScript',
             stargazers_count: 0,
-            updated_at: '2025-01-20',
+            updated_at: '2025-01-21',
             html_url: 'https://github.com/bluehawana/carbot-js-ai'
         },
         {
-            name: 'jobhunter-python-typescript-gmailrestapi',
-            description: 'Automated job hunting workflow with Python, TypeScript, and Gmail REST API integration for resume generation',
-            language: 'Python',
+            name: 'carplayer-kotlin-androidauto',
+            description: null,
+            language: 'HTML',
             stargazers_count: 0,
-            updated_at: '2025-01-18',
-            html_url: 'https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi'
+            updated_at: '2025-01-21',
+            html_url: 'https://github.com/bluehawana/carplayer-kotlin-androidauto'
         },
         {
-            name: 'carplayer-kotlin-androidauto',
-            description: 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems',
-            language: 'Kotlin',
+            name: 'GothenburgTaxiPooling-Java-ReacNative',
+            description: null,
+            language: 'JavaScript',
             stargazers_count: 0,
-            updated_at: '2025-01-15',
-            html_url: 'https://github.com/bluehawana/carplayer-kotlin-androidauto'
+            updated_at: '2025-01-18',
+            html_url: 'https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative'
         }
     ];
 
