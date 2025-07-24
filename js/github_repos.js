@@ -2,10 +2,6 @@
  * Generate smart descriptions based on repository name and language
  */
 function generateSmartDescription(repoName, language, originalDescription) {
-    if (originalDescription && originalDescription.trim() !== '') {
-        return originalDescription;
-    }
-    
     const name = repoName.toLowerCase();
     
     // Project-specific descriptions based on your repositories
@@ -17,12 +13,21 @@ function generateSmartDescription(repoName, language, originalDescription) {
         'carbot-js-ai': 'Customized AI car assistant with enhanced functionalities for Android Auto, superior to Google Assistant',
         'newapp': 'Latest application development project with modern architecture and cross-platform compatibility',
         'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
-        'smrtmart': 'E-commerce platform with Spring Boot backend and React frontend for online retail solutions'
+        'smrtmart': 'E-commerce platform with Spring Boot backend and React frontend for online retail solutions',
+        // Additional repositories that need descriptions
+        'gothenburgtaxipooling-java-reactnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
+        'epub_ttsreader_androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
+        'carplayer_kotlin_androidauto': 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems'
     };
     
-    // Check for exact matches first
+    // Check for exact matches first (prioritize our curated descriptions)
     if (projectDescriptions[name]) {
         return projectDescriptions[name];
+    }
+    
+    // If we have a good original description and no custom one, use it
+    if (originalDescription && originalDescription.trim() !== '' && originalDescription.length > 50) {
+        return originalDescription;
     }
     
     // Generate descriptions based on patterns and language

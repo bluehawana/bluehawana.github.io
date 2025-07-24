@@ -27,27 +27,27 @@
    <!-- Script
    ================================================== -->
    <script>
-   function cb(response) { 
-      if (response && response.value) {
-         document.getElementById('visits').innerText = response.value; 
-      } else {
-         document.getElementById('visits').innerText = 'N/A';
+      function cb(response) {
+         if (response && response.value) {
+            document.getElementById('visits').innerText = response.value;
+         } else {
+            document.getElementById('visits').innerText = 'N/A';
+         }
       }
-   }
-   
-   // Add error handling for CountAPI
-   function loadVisitCounter() {
-      const script = document.createElement('script');
-      script.src = 'https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb';
-      script.onerror = function() {
-         console.warn('CountAPI unavailable, using fallback');
-         document.getElementById('visits').innerText = '1000+';
-      };
-      document.head.appendChild(script);
-   }
-   
-   // Load counter when DOM is ready
-   document.addEventListener('DOMContentLoaded', loadVisitCounter);
+
+      // Add error handling for CountAPI
+      function loadVisitCounter() {
+         const script = document.createElement('script');
+         script.src = 'https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb';
+         script.onerror = function () {
+            console.warn('CountAPI unavailable, using fallback');
+            document.getElementById('visits').innerText = '1000+';
+         };
+         document.head.appendChild(script);
+      }
+
+      // Load counter when DOM is ready
+      document.addEventListener('DOMContentLoaded', loadVisitCounter);
    </script>
 
    <!-- DevOps Services Styles -->
@@ -61,7 +61,7 @@
          background: white;
          padding: 30px 20px;
          border-radius: 8px;
-         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
          text-align: center;
          height: 100%;
          transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -70,7 +70,7 @@
 
       .service-highlight:hover {
          transform: translateY(-5px);
-         box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
       }
 
       .service-icon {
@@ -126,7 +126,7 @@
          .service-highlight {
             margin-bottom: 20px;
          }
-         
+
          #devops-services .four.columns {
             width: 100%;
             margin-bottom: 20px;
@@ -166,7 +166,8 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Tjena, jag heter Hongzhi (Harvad) Li.</h1>
-            <h3>I'm a <span>Fullstack Developer & Linux Enthusiast</span> with expertise in Java/J2EE, Spring Boot, Angular/React, cloud technologies, and enterprise Linux infrastructure.</h3>
+            <h3>I'm a <span>Fullstack Developer & Linux Enthusiast</span> with expertise in Java/J2EE, Spring Boot,
+               Angular/React, cloud technologies, and enterprise Linux infrastructure.</h3>
 
 
             <ul class="social">
@@ -201,19 +202,33 @@
 
             <h2>ABOUT ME</h2>
 
-            <p> Hej, I'm Hongzhi (Harvad) Li, <span>a Full-Stack Developer and Cross-Cultural Technology Consultant with over 5 years of experience bridging the gap between IT innovation and business strategy</span>. Specializing in Java/J2EE, JavaScript, C#/.NET Core, and modern cloud technologies, I build scalable applications with Spring Boot, Angular/React, and comprehensive database management across SQL and NoSQL platforms.
+            <p> Hej, I'm Hongzhi (Harvad) Li, <span>a Full-Stack Developer and Cross-Cultural Technology Consultant with
+                  over 5 years of experience bridging the gap between IT innovation and business strategy</span>.
+               Specializing in Java/J2EE, JavaScript, C#/.NET Core, and modern cloud technologies, I build scalable
+               applications with Spring Boot, Angular/React, and comprehensive database management across SQL and NoSQL
+               platforms.
 
                </br>
                </br>
-               Currently serving as IT/Infrastructure Specialist at ECARX, I bring unique value through <strong>cross-cultural communication expertise</strong> between Chinese and Swedish markets, helping multinational enterprises navigate digital transformation challenges. As a <strong>Linux Foundation member and Linux enthusiast</strong>, I specialize in enterprise Linux environments, Kubernetes deployments (both cloud and on-premises), and open-source infrastructure solutions. My services include <strong>full-stack development, enterprise consulting, business bridging, and Linux-based IT infrastructure optimization</strong>.
+               Currently serving as IT/Infrastructure Specialist at ECARX, I bring unique value through
+               <strong>cross-cultural communication expertise</strong> between Chinese and Swedish markets, helping
+               multinational enterprises navigate digital transformation challenges. As a <strong>Linux Foundation
+                  member and Linux enthusiast</strong>, I specialize in enterprise Linux environments, Kubernetes
+               deployments (both cloud and on-premises), and open-source infrastructure solutions. My services include
+               <strong>full-stack development, enterprise consulting, business bridging, and Linux-based IT
+                  infrastructure optimization</strong>.
 
                </br>
                </br>
-               <strong>Core Expertise:</strong> Linux Foundation member • Enterprise Linux infrastructure • Kubernetes (cloud & on-premises) • Bridging technical complexity with business objectives • Cross-cultural project management • Enterprise digitalization • International business expansion • Cloud migration strategies • Real-time system integration
+               <strong>Core Expertise:</strong> Linux Foundation member • Enterprise Linux infrastructure • Kubernetes
+               (cloud & on-premises) • Bridging technical complexity with business objectives • Cross-cultural project
+               management • Enterprise digitalization • International business expansion • Cloud migration strategies •
+               Real-time system integration
 
                </br>
                </br>
-               Available for <span><a href="services.html">professional consulting services</a></span> and <span><a href="contact.html">collaboration opportunities</a></span>.
+               Available for <span><a href="services.html">professional consulting services</a></span> and <span><a
+                     href="contact.html">collaboration opportunities</a></span>.
 
 
          </div> <!-- end .main-col -->
@@ -237,7 +252,8 @@
             <div class="service-highlight">
                <i class="fa fa-line-chart service-icon"></i>
                <h3>📊 Monitoring & Observability</h3>
-               <p>Comprehensive monitoring with Prometheus, Grafana, and APM solutions for complete system visibility and proactive alerting.</p>
+               <p>Comprehensive monitoring with Prometheus, Grafana, and APM solutions for complete system visibility
+                  and proactive alerting.</p>
                <ul class="service-list">
                   <li>Prometheus metrics & alerting</li>
                   <li>Grafana dashboards</li>
@@ -252,7 +268,8 @@
             <div class="service-highlight">
                <i class="fa fa-cube service-icon"></i>
                <h3>🐳 Container & Linux Management</h3>
-               <p>Expert Docker containerization and Kubernetes orchestration on enterprise Linux environments. Linux Foundation member with deep expertise in both cloud and on-premises deployments.</p>
+               <p>Expert Docker containerization and Kubernetes orchestration on enterprise Linux environments. Linux
+                  Foundation member with deep expertise in both cloud and on-premises deployments.</p>
                <ul class="service-list">
                   <li>Enterprise Linux infrastructure</li>
                   <li>Kubernetes (cloud & on-premises)</li>
@@ -267,7 +284,8 @@
             <div class="service-highlight">
                <i class="fa fa-rocket service-icon"></i>
                <h3>🚀 DevOps & CI/CD</h3>
-               <p>Complete DevOps automation with Infrastructure as Code, configuration management, and modern CI/CD pipelines.</p>
+               <p>Complete DevOps automation with Infrastructure as Code, configuration management, and modern CI/CD
+                  pipelines.</p>
                <ul class="service-list">
                   <li>Infrastructure as Code (Terraform)</li>
                   <li>Configuration management (Ansible)</li>
@@ -300,7 +318,8 @@
                <p>Loading LinkedIn posts...</p>
             </div>
             <div class="text-center" style="margin-top: 30px;">
-               <a href="https://www.linkedin.com/in/hzl" class="button button-tech" target="_blank">View All LinkedIn Posts</a>
+               <a href="https://www.linkedin.com/in/hzl" class="button button-tech" target="_blank">View All LinkedIn
+                  Posts</a>
             </div>
          </div>
       </div>
@@ -350,7 +369,8 @@
          <div class="six columns">
             <div class="project-card">
                <h3>GitHub Repositories</h3>
-               <p>Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking, and automated updates.</p>
+               <p>Real-time repository matrix synchronized with GitHub API. Dynamic project discovery, commit tracking,
+                  and automated updates.</p>
                <a href="https://github.com/bluehawana" class="button">View GitHub</a>
             </div>
          </div>
@@ -416,7 +436,8 @@
                      <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, AWS RDS</li>
                      <li><strong>Testing:</strong> Unit Testing, Integration Testing, JUnit, Jest</li>
                      <li><strong>Cloud:</strong> AWS, Azure, GCP</li>
-                     <li><strong>Linux & DevOps:</strong> Enterprise Linux, Docker, Kubernetes (cloud & on-premises), CI/CD, Git</li>
+                     <li><strong>Linux & DevOps:</strong> Enterprise Linux, Docker, Kubernetes (cloud & on-premises),
+                        CI/CD, Git</li>
                      <li><strong>Memberships:</strong> Linux Foundation Member</li>
                      <li><strong>Methods:</strong> Scrum, Kanban, Code Reviews</li>
                   </ul>
@@ -731,7 +752,7 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   <script src="js/github_repos.js?v=2025072402"></script>
+   <script src="js/github_repos.js?v=2025072403"></script>
    <script src="js/linkedin_posts.js?v=2025071902"></script>
    <script src="js/linkedin_api_sync.js"></script>
    <script src="js/automation_scheduler.js"></script>
