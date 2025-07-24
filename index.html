@@ -29,6 +29,90 @@
    <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script>
    <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb">  </script>
 
+   <!-- DevOps Services Styles -->
+   <style>
+      #devops-services {
+         padding: 60px 0;
+         background: #f8f9fa;
+      }
+
+      .service-highlight {
+         background: white;
+         padding: 30px 20px;
+         border-radius: 8px;
+         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+         text-align: center;
+         height: 100%;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         margin-bottom: 30px;
+      }
+
+      .service-highlight:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      }
+
+      .service-icon {
+         font-size: 48px;
+         color: #11ABB0;
+         margin-bottom: 20px;
+      }
+
+      .service-highlight h3 {
+         color: #333;
+         font-size: 20px;
+         margin-bottom: 15px;
+         font-weight: 600;
+      }
+
+      .service-highlight p {
+         color: #666;
+         font-size: 14px;
+         line-height: 1.6;
+         margin-bottom: 20px;
+      }
+
+      .service-list {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         text-align: left;
+      }
+
+      .service-list li {
+         color: #555;
+         font-size: 13px;
+         padding: 5px 0;
+         border-bottom: 1px solid #eee;
+         position: relative;
+         padding-left: 20px;
+      }
+
+      .service-list li:before {
+         content: "▶";
+         color: #11ABB0;
+         font-size: 10px;
+         position: absolute;
+         left: 0;
+         top: 6px;
+      }
+
+      .service-list li:last-child {
+         border-bottom: none;
+      }
+
+      @media screen and (max-width: 768px) {
+         .service-highlight {
+            margin-bottom: 20px;
+         }
+         
+         #devops-services .four.columns {
+            width: 100%;
+            margin-bottom: 20px;
+         }
+      }
+   </style>
+
    <!-- Favicons
 	================================================== -->
    <link rel="shortcut icon" href="favicon.png">
@@ -61,8 +145,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Tjena, jag heter Hongzhi (Harvad) Li.</h1>
-            <h3>I'm a <span>Fullstack Developer</span> with expertise in Java/J2EE, Spring Boot, Angular/React, and
-               cloud technologies.</h3>
+            <h3>I'm a <span>Fullstack Developer & Linux Enthusiast</span> with expertise in Java/J2EE, Spring Boot, Angular/React, cloud technologies, and enterprise Linux infrastructure.</h3>
 
 
             <ul class="social">
@@ -101,11 +184,11 @@
 
                </br>
                </br>
-               Currently serving as IT/Infrastructure Specialist at ECARX, I bring unique value through <strong>cross-cultural communication expertise</strong> between Chinese and Swedish markets, helping multinational enterprises navigate digital transformation challenges. My services include <strong>full-stack development, enterprise consulting, business bridging, and IT infrastructure optimization</strong>.
+               Currently serving as IT/Infrastructure Specialist at ECARX, I bring unique value through <strong>cross-cultural communication expertise</strong> between Chinese and Swedish markets, helping multinational enterprises navigate digital transformation challenges. As a <strong>Linux Foundation member and Linux enthusiast</strong>, I specialize in enterprise Linux environments, Kubernetes deployments (both cloud and on-premises), and open-source infrastructure solutions. My services include <strong>full-stack development, enterprise consulting, business bridging, and Linux-based IT infrastructure optimization</strong>.
 
                </br>
                </br>
-               <strong>Core Expertise:</strong> Bridging technical complexity with business objectives • Cross-cultural project management • Enterprise digitalization • International business expansion • Cloud migration strategies • Real-time system integration
+               <strong>Core Expertise:</strong> Linux Foundation member • Enterprise Linux infrastructure • Kubernetes (cloud & on-premises) • Bridging technical complexity with business objectives • Cross-cultural project management • Enterprise digitalization • International business expansion • Cloud migration strategies • Real-time system integration
 
                </br>
                </br>
@@ -118,6 +201,68 @@
 
    </section> <!-- About Section End-->
 
+   <!-- DevOps & Infrastructure Services Section -->
+   <section id="devops-services" class="section-light">
+      <div class="row">
+         <div class="twelve columns">
+            <h1><i class="fa fa-cogs"></i> DevOps & Infrastructure Services</h1>
+            <p class="lead">Professional monitoring, container management, and DevOps automation solutions</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <!-- Monitoring & Observability -->
+         <div class="four columns">
+            <div class="service-highlight">
+               <i class="fa fa-line-chart service-icon"></i>
+               <h3>📊 Monitoring & Observability</h3>
+               <p>Comprehensive monitoring with Prometheus, Grafana, and APM solutions for complete system visibility and proactive alerting.</p>
+               <ul class="service-list">
+                  <li>Prometheus metrics & alerting</li>
+                  <li>Grafana dashboards</li>
+                  <li>Application performance monitoring</li>
+                  <li>Log aggregation & analysis</li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Container Management & Linux -->
+         <div class="four columns">
+            <div class="service-highlight">
+               <i class="fa fa-cube service-icon"></i>
+               <h3>🐳 Container & Linux Management</h3>
+               <p>Expert Docker containerization and Kubernetes orchestration on enterprise Linux environments. Linux Foundation member with deep expertise in both cloud and on-premises deployments.</p>
+               <ul class="service-list">
+                  <li>Enterprise Linux infrastructure</li>
+                  <li>Kubernetes (cloud & on-premises)</li>
+                  <li>Docker containerization</li>
+                  <li>Linux Foundation certified expertise</li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- DevOps & CI/CD -->
+         <div class="four columns">
+            <div class="service-highlight">
+               <i class="fa fa-rocket service-icon"></i>
+               <h3>🚀 DevOps & CI/CD</h3>
+               <p>Complete DevOps automation with Infrastructure as Code, configuration management, and modern CI/CD pipelines.</p>
+               <ul class="service-list">
+                  <li>Infrastructure as Code (Terraform)</li>
+                  <li>Configuration management (Ansible)</li>
+                  <li>CI/CD pipelines (Jenkins, GitLab)</li>
+                  <li>GitOps workflow implementation</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="twelve columns text-center" style="margin-top: 30px;">
+            <a href="pages/services.html" class="button button-large">View All DevOps Services</a>
+         </div>
+      </div>
+   </section>
 
    <!-- Latest LinkedIn Posts Section -->
    <section id="latest-activity" class="section-dark">
@@ -250,7 +395,8 @@
                      <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, AWS RDS</li>
                      <li><strong>Testing:</strong> Unit Testing, Integration Testing, JUnit, Jest</li>
                      <li><strong>Cloud:</strong> AWS, Azure, GCP</li>
-                     <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD, Git</li>
+                     <li><strong>Linux & DevOps:</strong> Enterprise Linux, Docker, Kubernetes (cloud & on-premises), CI/CD, Git</li>
+                     <li><strong>Memberships:</strong> Linux Foundation Member</li>
                      <li><strong>Methods:</strong> Scrum, Kanban, Code Reviews</li>
                   </ul>
                </div>
