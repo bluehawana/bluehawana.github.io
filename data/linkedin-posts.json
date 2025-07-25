@@ -16,6 +16,7 @@
     "content": "🔧 Testing the LinkedIn sync system after security fixes. The automated post syncing is working great with proper credential management!",
     "date": "2025-07-21",
     "url": "https://www.linkedin.com/in/hzl",
+    "activityId": null,
     "tags": [
       "Testing",
       "DevOps",
@@ -26,6 +27,7 @@
     "content": "🖥️ Tech Review: Twelve South Curve12-1708 Laptop Stand ⭐ After extensive use, I'm impressed by the craftsmanship, color matching, quality, and packaging of this black aluminum laptop stand. For anyone working long hours on laptops, this investment helps protect your neck, provides a better outdoor working angle, and improves your overall workspace ergonomics. I highly recommend the one-piece version for better stability. Worth every penny for your health and productivity! 💪",
     "date": "2025-07-21",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7352940417656467456/",
+    "activityId": "7352940417656467456",
     "tags": [
       "TechReview",
       "ProductRecommendation",
@@ -40,6 +42,7 @@
     "content": "🚀 Excited to share my website transformation journey! What started as a simple resume has evolved into a full-fledged tech website at www.bluehawana.com with customized logo, updated resume, LinkedIn blogs integration, GitHub projects showcase, contact form, and automatic JavaScript syncing. The most rewarding part? Setting up LinkedIn Developer API integration for seamless post synchronization. Unexpected bonus: analytics showing visitors from USA, Ireland, and Australia! 🌍",
     "date": "2025-07-20",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7352317553118965763/",
+    "activityId": "7352317553118965763",
     "tags": [
       "WebsiteAnalytics",
       "PersonalBlog",
@@ -53,6 +56,7 @@
     "content": "🌞 Summer Vacation Gift for AI Coding Enthusiasts & Skeptics 💻 As we enjoy our well-deserved vacations, let's take a moment to reflect on AI's role in coding. Although some still view AI code as a disruptive force and cling to traditional methods, we must remember the valuable lesson from Nokia's engineers who held onto Symbian and eventually lost their edge. Here's how to get started with Claude Code: 1. Install Claude Code globally: npm install -g @anthropic-ai/claude-code 2. Get 60 USD in credits from anyrouter.top 3. Navigate to your project and run: claude. I was able to develop my TaxiCarPooling project with ReactNative, Springboot, MySQL in just half a day using Claude Code, all for only 7.4 USD credits! Happy coding & Happy Summer! 🚀",
     "date": "2025-07-20",
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7350531400724340736/",
+    "activityId": "7350531400724340736",
     "tags": [
       "AICoding",
       "ClaudeCode",

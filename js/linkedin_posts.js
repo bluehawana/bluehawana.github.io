@@ -1,38 +1,32 @@
 /**
- * Smart LinkedIn URL converter with content-based mapping
- * Extract activity ID from LinkedIn URLs and generate clean feed URL
+ * Smart LinkedIn URL converter with proper activity ID handling
+ * Generate direct LinkedIn post URLs from activity IDs
  */
-function convertToDirectLinkedInURL(url, postContent = '') {
-    // Extract activity ID from LinkedIn URLs
-    const activityMatch = url.match(/activity-(\d+)-/);
+function convertToDirectLinkedInURL(url, postContent = '', postData = null) {
+    // First check if the post data has an activityId field
+    if (postData && postData.activityId) {
+        return `https://www.linkedin.com/feed/update/urn:li:activity:${postData.activityId}/`;
+    }
+    
+    // Extract activity ID from existing LinkedIn URLs
+    const activityMatch = url.match(/activity[:\-](\d+)/);
     if (activityMatch) {
         const activityId = activityMatch[1];
         return `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
     }
     
-    // Smart mapping for posts without activity IDs
-    const contentMappings = {
-        "Undoubtedly, this is the finest beach": null, // TODO: Find activity ID
-        "Unleash your inner racer": null, // TODO: Find activity ID  
-        "I've been following Sander Van Vugt": null, // TODO: Find activity ID
-        "Experience the power of Linux containers": null // TODO: Find activity ID
-    };
-    
-    // Check if we have a mapping for this post
-    const postStart = postContent.substring(0, 50);
-    for (const [key, activityId] of Object.entries(contentMappings)) {
-        if (postStart.includes(key)) {
-            if (activityId) {
-                return `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
-            } else {
-                // For now, return the original URL but we know we need to find the activity ID
-                console.warn(`Missing LinkedIn activity ID for post: ${key}`);
-                return url;
-            }
-        }
+    // Check if URL is already in the correct format
+    if (url.includes('/feed/update/urn:li:activity:')) {
+        return url;
     }
     
-    // If already in direct format or no activity ID found, return as is
+    // For posts without activity IDs, return profile URL as fallback
+    if (url.includes('/in/hzl') || !url.includes('activity')) {
+        console.warn(`Post missing activity ID, using profile fallback: ${postContent.substring(0, 50)}...`);
+        return 'https://www.linkedin.com/in/hzl';
+    }
+    
+    // Default fallback
     return url;
 }
 
@@ -62,12 +56,15 @@ async function fetchLinkedInPosts() {
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
+                const postUrl = convertToDirectLinkedInURL(post.url, post.content, post);
+                const linkText = postUrl.includes('/in/hzl') ? 'View LinkedIn Profile' : 'View Original Post';
+                
                 postElement.innerHTML = `
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
-                        <a href="${convertToDirectLinkedInURL(post.url, post.content)}" target="_blank" class="source-link">
-                            <i class="fa fa-linkedin"></i> View Original Post
+                        <a href="${postUrl}" target="_blank" class="source-link">
+                            <i class="fa fa-linkedin"></i> ${linkText}
                         </a>
                     </div>
                 `;
@@ -85,12 +82,15 @@ async function fetchLinkedInPosts() {
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
+                const postUrl = convertToDirectLinkedInURL(post.url, post.content, post);
+                const linkText = postUrl.includes('/in/hzl') ? 'View LinkedIn Profile' : 'View Original Post';
+                
                 postElement.innerHTML = `
                     <div class="post-content">${post.content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
-                        <a href="${convertToDirectLinkedInURL(post.url, post.content)}" target="_blank" class="source-link">
-                            <i class="fa fa-linkedin"></i> View Original Post
+                        <a href="${postUrl}" target="_blank" class="source-link">
+                            <i class="fa fa-linkedin"></i> ${linkText}
                         </a>
                     </div>
                 `;

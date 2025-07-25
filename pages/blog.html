@@ -186,7 +186,7 @@
       }
 
       .source-link {
-         color: var(--cyber-accent);
+         color: var(--cyber-accent) !important;
          text-decoration: none;
          font-size: 14px;
          font-weight: 500;
@@ -197,8 +197,17 @@
       }
 
       .source-link:hover {
-         color: var(--cyber-primary);
+         color: var(--cyber-primary) !important;
          text-shadow: var(--subtle-glow);
+      }
+      
+      /* Ensure consistent styling for all posts */
+      .linkedin-post-compact .source-link {
+         color: var(--cyber-accent) !important;
+      }
+      
+      .linkedin-post-compact .source-link:hover {
+         color: var(--cyber-primary) !important;
       }
 
       .source-link i {
@@ -442,7 +451,7 @@
    <script src="../js/jquery.fittext.js"></script>
    <script src="../js/magnific-popup.js"></script>
    <script src="../js/init.js"></script>
-   <script src="../js/linkedin_posts.js?v=2025071902"></script>
+   <script src="../js/linkedin_posts.js?v=2025072403"></script>
    <script src="../js/github_repos.js"></script>
    <script>
    // Load GitHub repos and LinkedIn posts for blog page
