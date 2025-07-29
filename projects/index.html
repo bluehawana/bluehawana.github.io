@@ -1096,7 +1096,7 @@
             <div class="repo-header">
                <div class="repo-icon">${repoIcon}</div>
                <div>
-                  <h4 class="repo-name">${repo.name.replace(/-/g, '_').toUpperCase()}.${getFileExtension(repo.language)}</h4>
+                  <h4 class="repo-name">${repo.name.replace(/-/g, '_').toUpperCase()}</h4>
                   <div class="repo-language">${repo.language || 'Unknown'}</div>
                </div>
             </div>
@@ -1138,7 +1138,7 @@
          'JavaScript': 'js',
          'TypeScript': 'ts',
          'Python': 'py',
-         'Java': 'jar',
+         'Java': 'java',
          'Kotlin': 'kt',
          'HTML': 'html',
          'CSS': 'css',
@@ -1148,9 +1148,11 @@
          'Rust': 'rs',
          'PHP': 'php',
          'Ruby': 'rb',
-         'Swift': 'swift'
+         'Swift': 'swift',
+         'Lua': 'lua'
       };
-      return extensions[language] || 'exe';
+      // Use the actual language extension, fallback to lowercase language name or txt
+      return extensions[language] || language?.toLowerCase() || 'txt';
    }
 
    // Populate terminal with real GitHub data
