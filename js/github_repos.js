@@ -17,7 +17,7 @@ function generateSmartDescription(repoName, language, originalDescription) {
         'gothenburgtaxipooling_java_reacnative': 'A comprehensive taxi pooling platform for Gothenburg built with Java backend and React Native frontend, helping people share taxis and reduce costs through smart route optimization',
         'newapp': 'A new application under development with modern architecture and cross-platform compatibility',
         'newapp.exe': 'A new application under development with modern architecture and cross-platform compatibility',
-        'smrtmart': 'A smart e-commerce platform with Spring Boot and React'
+        'smrtmart': 'A smart e-commerce platform with Spring Boot and React',
         // Additional variations and legacy names
         'gothenburgtaxipooling-java-reactnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
         'epub_ttsreader_androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
