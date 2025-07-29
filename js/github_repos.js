@@ -198,7 +198,7 @@ function displayFallbackRepos(containerId) {
         {
             name: 'carplayer-kotlin-androidauto',
             description: null,
-            language: 'HTML',
+            language: 'Kotlin',
             stargazers_count: 0,
             updated_at: '2025-01-21',
             html_url: 'https://github.com/bluehawana/carplayer-kotlin-androidauto'
@@ -206,7 +206,7 @@ function displayFallbackRepos(containerId) {
         {
             name: 'GothenburgTaxiPooling-Java-ReacNative',
             description: null,
-            language: 'JavaScript',
+            language: 'Java',
             stargazers_count: 0,
             updated_at: '2025-01-18',
             html_url: 'https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative'
