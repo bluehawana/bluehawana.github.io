@@ -8,15 +8,15 @@ function generateSmartDescription(repoName, language, originalDescription) {
     const projectDescriptions = {
         // Actual GitHub repo names converted to lowercase
         'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
-        'epub-ttsreader-androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving',
-        'epub_ttsreader_androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving',
+        'epub-ttsreader-androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving using Python and text-to-speech technology',
+        'epub_ttsreader_androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving using Python and text-to-speech technology',
         'jobhunter-python-typescript-gmailrestapi': 'An automatically working flow integrated with python, typescript, gmail RestApi and etc, for seting up workflows by searching jobs in gmail, websites, and customized resumes by job descriptions, and generate resume and cover letter and send to me for applying jobs.',
         'carbot-js-ai': 'A customized carbot with better funtionalities than Google Assitant from Android Auto.',
-        'carplayer-kotlin-androidauto': 'A customized car player with better funtionalities than Google car player or Spotify car player from Android Auto',
-        'gothenburgtaxipooling-java-reacnative': 'A taxi pooling platform for Gothenburg that helps people share taxis and save money',
-        'gothenburgtaxipooling_java_reacnative': 'A taxi pooling platform for Gothenburg that helps people share taxis and save money',
-        'newapp': 'A new application under development',
-        'newapp.exe': 'A new application under development',
+        'carplayer-kotlin-androidauto': 'A customized car player built with Kotlin for Android Auto, featuring better functionality than Google car player or Spotify car player, with enhanced audio controls and user interface',
+        'gothenburgtaxipooling-java-reacnative': 'A comprehensive taxi pooling platform for Gothenburg built with Java backend and React Native frontend, helping people share taxis and reduce costs through smart route optimization',
+        'gothenburgtaxipooling_java_reacnative': 'A comprehensive taxi pooling platform for Gothenburg built with Java backend and React Native frontend, helping people share taxis and reduce costs through smart route optimization',
+        'newapp': 'A new application under development with modern architecture and cross-platform compatibility',
+        'newapp.exe': 'A new application under development with modern architecture and cross-platform compatibility',
         'smrtmart': 'A smart e-commerce platform with Spring Boot and React'
         // Additional variations and legacy names
         'gothenburgtaxipooling-java-reactnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
