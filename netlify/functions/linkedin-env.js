@@ -43,10 +43,12 @@ exports.handler = async (event, context) => {
             // OAuth configuration
             REDIRECT_URI: `${process.env.URL || 'https://bluehawana.com'}/linkedin-callback.html`,
             SCOPES: [
-                'r_member_social',
-                'r_basicprofile', 
-                'r_1st_connections_size',
-                'w_organization_social'  // Community Management API
+                'email',
+                'openid',
+                'profile',
+                'r_events',
+                'rw_events',
+                'w_member_social'
             ]
         };
         
