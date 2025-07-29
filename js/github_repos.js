@@ -9,11 +9,14 @@ function generateSmartDescription(repoName, language, originalDescription) {
         // Actual GitHub repo names converted to lowercase
         'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
         'epub-ttsreader-androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
+        'epub_ttsreader_androidauto': 'EPUB text-to-speech reader application for Android Auto integration with voice navigation support',
         'jobhunter-python-typescript-gmailrestapi': 'Automated job hunting workflow with Python, TypeScript, and Gmail REST API integration for resume generation',
         'carbot-js-ai': 'Customized AI car assistant with enhanced functionalities for Android Auto, superior to Google Assistant',
         'carplayer-kotlin-androidauto': 'Android Auto car player application built with Kotlin for in-vehicle entertainment systems',
         'gothenburgtaxipooling-java-reacnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
+        'gothenburgtaxipooling_java_reacnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',
         'newapp': 'Latest application development project with modern architecture and cross-platform compatibility',
+        'newapp.exe': 'Latest Windows application development project with modern architecture',
         'smrtmart': 'E-commerce platform with Spring Boot backend and React frontend for online retail solutions',
         // Additional variations and legacy names
         'gothenburgtaxipooling-java-reactnative': 'Intelligent taxi carpooling platform for Gothenburg using Java backend and React Native mobile app',

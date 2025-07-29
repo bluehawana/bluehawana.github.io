@@ -383,7 +383,30 @@
                     <button id="startMonitoringBtn" class="button">▶️ Start Monitoring</button>
                     <button id="stopMonitoringBtn" class="button warning">⏸️ Stop Monitoring</button>
                     <button id="linkedinSyncBtn" class="button">🔗 LinkedIn Sync</button>
+                    <button id="addPostBtn" class="button success">➕ Add New Post</button>
                     <button id="clearLogsBtn" class="button danger">🗑️ Clear Logs</button>
+                </div>
+                
+                <!-- Quick Add Post Form -->
+                <div id="addPostForm" style="display: none; margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd;">
+                    <h4>📝 Quick Add LinkedIn Post</h4>
+                    <div style="margin-bottom: 15px;">
+                        <label>Post Content:</label>
+                        <textarea id="postContent" placeholder="Paste your LinkedIn post content here..." style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>LinkedIn Activity ID (optional):</label>
+                        <input type="text" id="postActivityId" placeholder="e.g., 7353057722931511296" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                        <small style="color: #666;">Leave empty if you don't have the activity ID</small>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label>Tags (comma-separated):</label>
+                        <input type="text" id="postTags" placeholder="e.g., OracleCloud, CloudCertification, TechCareer" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    <div>
+                        <button id="savePostBtn" class="button success">💾 Save Post</button>
+                        <button id="cancelPostBtn" class="button">❌ Cancel</button>
+                    </div>
                 </div>
                 <div style="margin-top: 10px;">
                     <span style="font-size: 12px; color: #666;">
@@ -462,6 +485,9 @@
             startMonitoringBtn.addEventListener('click', startMonitoring);
             stopMonitoringBtn.addEventListener('click', stopMonitoring);
             linkedinSyncBtn.addEventListener('click', openLinkedInSync);
+            addPostBtn.addEventListener('click', showAddPostForm);
+            savePostBtn.addEventListener('click', saveNewPost);
+            cancelPostBtn.addEventListener('click', hideAddPostForm);
             clearLogsBtn.addEventListener('click', clearActivityLog);
             searchBtn.addEventListener('click', searchLinkedInPosts);
             
@@ -658,6 +684,77 @@
             } finally {
                 linkedinSyncBtn.disabled = false;
                 linkedinSyncBtn.textContent = '🔗 LinkedIn Sync';
+            }
+        }
+        
+        // Quick Add Post Functions
+        function showAddPostForm() {
+            document.getElementById('addPostForm').style.display = 'block';
+            document.getElementById('postContent').focus();
+        }
+        
+        function hideAddPostForm() {
+            document.getElementById('addPostForm').style.display = 'none';
+            document.getElementById('postContent').value = '';
+            document.getElementById('postActivityId').value = '';
+            document.getElementById('postTags').value = '';
+        }
+        
+        async function saveNewPost() {
+            const content = document.getElementById('postContent').value.trim();
+            const activityId = document.getElementById('postActivityId').value.trim();
+            const tagsInput = document.getElementById('postTags').value.trim();
+            
+            if (!content) {
+                alert('Please enter post content');
+                return;
+            }
+            
+            try {
+                // Parse tags
+                const tags = tagsInput ? tagsInput.split(',').map(tag => tag.trim()) : ['LinkedInPost'];
+                
+                // Create new post object
+                const newPost = {
+                    content: content,
+                    date: new Date().toISOString().split('T')[0],
+                    url: activityId ? `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/` : 'https://www.linkedin.com/in/hzl',
+                    activityId: activityId || null,
+                    tags: tags
+                };
+                
+                // Generate updated JSON
+                const currentPosts = await fetch('./data/linkedin-posts.json?v=' + Date.now()).then(r => r.json()).catch(() => []);
+                const updatedPosts = [newPost, ...currentPosts];
+                const jsonOutput = JSON.stringify(updatedPosts, null, 2);
+                
+                // Show the JSON for manual copy-paste
+                const resultDiv = document.createElement('div');
+                resultDiv.innerHTML = `
+                    <div style="margin-top: 20px; padding: 20px; background: #e8f5e8; border-radius: 8px; border: 1px solid #4caf50;">
+                        <h4>✅ Post Added Successfully!</h4>
+                        <p><strong>Next Steps:</strong></p>
+                        <ol>
+                            <li>Copy the JSON below</li>
+                            <li>Replace the content of <code>data/linkedin-posts.json</code></li>
+                            <li>Commit and push the changes</li>
+                        </ol>
+                        <textarea readonly style="width: 100%; height: 200px; font-family: monospace; font-size: 12px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">${jsonOutput}</textarea>
+                        <div style="margin-top: 10px;">
+                            <button onclick="navigator.clipboard.writeText('${jsonOutput.replace(/'/g, "\\'")}'); alert('JSON copied to clipboard!');" class="button">📋 Copy JSON</button>
+                            <button onclick="this.parentElement.parentElement.parentElement.remove();" class="button">❌ Close</button>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('addPostForm').after(resultDiv);
+                hideAddPostForm();
+                
+                logActivity('success', `New post added: ${content.substring(0, 50)}...`);
+                
+            } catch (error) {
+                console.error('Error adding post:', error);
+                alert('Error adding post: ' + error.message);
             }
         }
         
