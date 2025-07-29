@@ -120,58 +120,87 @@ class ContentMonitor {
      */
     async checkLinkedInUpdates() {
         try {
-            console.log('🔗 Intelligently checking LinkedIn for new posts...');
+            console.log('🔗 Starting automatic LinkedIn sync via Netlify Function...');
             
-            // Only check if we have a valid token
-            if (!window.linkedInSync || !window.linkedInSync.isTokenValid()) {
-                console.log('⚠️ LinkedIn not authenticated, skipping check');
-                return;
+            // Call the Netlify function that handles LinkedIn API sync and GitHub updates
+            const response = await fetch('/.netlify/functions/linkedin-sync', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Netlify function error: ${response.status}`);
             }
-
-            // Use the enhanced sync function that automatically detects new posts
-            const syncResult = await window.linkedInSync.syncLinkedInPosts();
             
-            // The sync function already detects new posts and updates activity IDs
-            console.log(`📊 Sync completed with ${syncResult.length} total posts`);
+            const result = await response.json();
             
-            // Check if there were any updates by comparing with stored data
-            const currentPostsResponse = await fetch('./data/linkedin-posts.json?v=' + Date.now());
-            const currentPosts = await currentPostsResponse.json();
-            
-            // Find posts that were updated or added
-            const updatedPosts = this.findUpdatedPosts(syncResult, currentPosts);
-            
-            if (updatedPosts.newPosts.length > 0) {
-                console.log(`✨ Found ${updatedPosts.newPosts.length} new LinkedIn posts!`);
-                this.notifyNewContent('linkedin', updatedPosts.newPosts.length);
+            if (result.success) {
+                console.log(`✅ LinkedIn sync completed successfully!`);
+                console.log(`📊 Total posts: ${result.postsCount}`);
                 
-                // Trigger update event for UI
-                window.dispatchEvent(new CustomEvent('new-linkedin-posts', {
-                    detail: { 
-                        newPosts: updatedPosts.newPosts, 
-                        allPosts: syncResult,
-                        updatedPosts: updatedPosts.updatedPosts
-                    }
-                }));
-            } else if (updatedPosts.updatedPosts.length > 0) {
-                console.log(`🔧 Updated ${updatedPosts.updatedPosts.length} posts with activity IDs`);
-                
-                // Trigger update event for activity ID fixes
-                window.dispatchEvent(new CustomEvent('linkedin-posts-updated', {
-                    detail: { 
-                        updatedPosts: updatedPosts.updatedPosts,
-                        allPosts: syncResult
-                    }
-                }));
+                if (result.updateResult && result.updateResult.newPosts > 0) {
+                    console.log(`✨ Found ${result.updateResult.newPosts} new posts!`);
+                    this.notifyNewContent('linkedin', result.updateResult.newPosts);
+                    
+                    // Trigger page refresh to show new posts
+                    window.dispatchEvent(new CustomEvent('linkedin-posts-synced', {
+                        detail: { 
+                            newPosts: result.updateResult.newPosts,
+                            totalPosts: result.postsCount,
+                            commitSha: result.updateResult.commitSha
+                        }
+                    }));
+                    
+                    // Refresh the page after a short delay to show new posts
+                    setTimeout(() => {
+                        console.log('🔄 Refreshing page to show new LinkedIn posts...');
+                        window.location.reload();
+                    }, 3000);
+                } else {
+                    console.log('📝 No new posts detected');
+                }
             } else {
-                console.log('📝 No new LinkedIn posts or updates found');
+                throw new Error(result.error || 'LinkedIn sync failed');
             }
             
             this.lastCheck.linkedin = new Date().toISOString();
             localStorage.setItem('last_linkedin_check', this.lastCheck.linkedin);
             
         } catch (error) {
-            console.error('❌ LinkedIn check failed:', error);
+            console.error('❌ LinkedIn sync error:', error);
+            
+            // Fallback to local sync if Netlify function fails
+            console.log('🔄 Falling back to local LinkedIn sync...');
+            await this.fallbackLinkedInSync();
+        }
+    }
+    
+    /**
+     * Fallback LinkedIn sync using local API (when Netlify function fails)
+     */
+    async fallbackLinkedInSync() {
+        try {
+            // Only check if we have a valid token
+            if (!window.linkedInSync || !window.linkedInSync.isTokenValid()) {
+                console.log('⚠️ LinkedIn not authenticated, skipping fallback sync');
+                return;
+            }
+
+            // Use the enhanced sync function that automatically detects new posts
+            const syncResult = await window.linkedInSync.syncLinkedInPosts();
+            
+            console.log(`📊 Fallback sync completed with ${syncResult.length} total posts`);
+            console.log('⚠️ Note: Posts detected but not automatically saved. Manual update required.');
+            
+            // Generate JSON for manual copy-paste
+            const jsonOutput = window.linkedInSync.generateUpdatedJSON(syncResult);
+            console.log('📋 Updated posts JSON (copy to data/linkedin-posts.json):');
+            console.log(jsonOutput);
+            
+        } catch (error) {
+            console.error('❌ Fallback LinkedIn sync error:', error);
         }
     }
 
