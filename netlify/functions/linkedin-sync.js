@@ -158,9 +158,13 @@ async function processLinkedInPosts(rawPosts) {
       let linkedInUrl;
       if (activityId) {
         linkedInUrl = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+      } else if (post.id) {
+        linkedInUrl = `https://www.linkedin.com/feed/update/${post.id}/`;
+      } else if (post.activity) {
+        linkedInUrl = `https://www.linkedin.com/feed/update/${post.activity}/`;
       } else {
-        console.warn('⚠️ No activity ID found for post, using profile URL as fallback');
-        linkedInUrl = 'https://www.linkedin.com/in/hzl';
+        console.warn('⚠️ No post identifier found');
+        return null; // Skip posts without valid URLs
       }
       
       // Get post date
@@ -179,7 +183,9 @@ async function processLinkedInPosts(rawPosts) {
         processedPost.activityId = activityId;
       }
 
-      processedPosts.push(processedPost);
+      if (processedPost.url) {
+        processedPosts.push(processedPost);
+      }
 
       // Log for debugging
       console.log(`Processed post: ${content.substring(0, 50)}... → ${activityId ? `Activity ID: ${activityId}` : 'No Activity ID'}`);

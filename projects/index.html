@@ -564,8 +564,7 @@
    </style>
 
    <!-- Script -->
-   <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script> 
-   <script async src="https://api.countapi.xyz/hit/bluehawana.com/visits?callback=cb"></script>
+   <!-- Visit counter removed due to DNS issues -->
 </head>
 <body>
    <!-- Header -->
@@ -958,6 +957,74 @@
    <script src="../js/automation_scheduler.js"></script>
 
    <script>
+   // Generate smart descriptions function
+   function generateSmartDescription(repoName, language, originalDescription) {
+       const name = repoName.toLowerCase();
+       
+       // Project-specific descriptions
+       const projectDescriptions = {
+           'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
+           'epub-ttsreader-androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving using Python and text-to-speech technology',
+           'jobhunter-python-typescript-gmailrestapi': 'An automatically working flow integrated with python, typescript, gmail RestApi and etc, for seting up workflows by searching jobs in gmail, websites, and customized resumes by job descriptions, and generate resume and cover letter and send to me for applying jobs.',
+           'carbot-js-ai': 'A customized carbot with better funtionalities than Google Assitant from Android Auto.',
+           'carplayer-kotlin-androidauto': 'A customized car player built with Kotlin for Android Auto, featuring better functionality than Google car player or Spotify car player, with enhanced audio controls and user interface',
+           'gothenburgtaxipooling-java-reacnative': 'A comprehensive taxi pooling platform for Gothenburg built with Java backend and React Native frontend, helping people share taxis and reduce costs through smart route optimization',
+           'newapp': 'A new application under development with modern architecture and cross-platform compatibility',
+           'smrtmart': 'A smart e-commerce platform with Spring Boot and React'
+       };
+       
+       // Check for exact matches first
+       if (projectDescriptions[name]) {
+           return projectDescriptions[name];
+       }
+       
+       // If we have a good original description, use it
+       if (originalDescription && originalDescription.trim() !== '' && originalDescription.length > 50) {
+           return originalDescription;
+       }
+       
+       // Generate descriptions based on patterns and language
+       if (name.includes('job') && name.includes('hunter')) {
+           return `Automated job hunting workflow with ${language || 'Python'} and REST API integration for resume generation`;
+       }
+       
+       if (name.includes('carbot') || name.includes('ai')) {
+           return `AI-powered car assistant with enhanced functionalities using ${language || 'JavaScript'} for Android Auto`;
+       }
+       
+       if (name.includes('taxi') || name.includes('pool')) {
+           return `Transportation and carpooling solution built with ${language || 'modern technologies'}`;
+       }
+       
+       if (name.includes('android') || name.includes('auto')) {
+           return `Android application for automotive integration and mobile development with ${language || 'native technologies'}`;
+       }
+       
+       if (name.includes('reader') || name.includes('epub') || name.includes('tts')) {
+           return `Digital reading application with text-to-speech capabilities using ${language || 'mobile technologies'}`;
+       }
+       
+       if (name.includes('car') && name.includes('player')) {
+           return `Automotive media player application developed with ${language || 'modern frameworks'}`;
+       }
+       
+       // Language-based fallbacks
+       const languageDescriptions = {
+           'Python': 'Python application with automation and data processing capabilities',
+           'Java': 'Enterprise Java application with Spring Boot and microservices architecture',
+           'JavaScript': 'Modern JavaScript application with React/Node.js full-stack implementation',
+           'Kotlin': 'Android application built with Kotlin for mobile and automotive platforms',
+           'HTML': 'Web application with responsive design and modern frontend technologies',
+           'TypeScript': 'TypeScript application with type-safe development and modern frameworks'
+       };
+       
+       if (language && languageDescriptions[language]) {
+           return languageDescriptions[language];
+       }
+       
+       return `Software project showcasing modern development practices and technical expertise`;
+   }
+
    // Cyberpunk Matrix Effects & GitHub Integration
    document.addEventListener('DOMContentLoaded', function() {
       // Initialize the digital matrix
@@ -1075,11 +1142,32 @@
       const container = document.getElementById('dynamic-github-repos');
       if (!container) return;
       
-      // Filter and sort repositories (exclude forks, sort by most recent)
+      // Featured projects that shouldn't appear in dynamic section
+      const featuredProjects = [
+         'bluehawana.github.io',
+         'GothenburgTaxiPooling-Java-ReacNative',
+         'gothenburgtaxipooling-java-reacnative'
+      ];
+      
+      // Filter and sort repositories (exclude forks, featured projects, and low-quality repos)
       const filteredRepos = repos
-         .filter(repo => !repo.fork && repo.name !== 'bluehawana.github.io')
+         .filter(repo => {
+            // Exclude forks
+            if (repo.fork) return false;
+            
+            // Exclude featured projects to avoid duplicates
+            if (featuredProjects.some(featured => 
+               repo.name.toLowerCase().includes(featured.toLowerCase()) || 
+               featured.toLowerCase().includes(repo.name.toLowerCase())
+            )) return false;
+            
+            // Exclude repositories that are too generic or incomplete
+            if (repo.name.toLowerCase() === 'newapp' && !repo.description) return false;
+            
+            return true;
+         })
          .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-         .slice(0, 6); // Show top 6 most recent repos
+         .slice(0, 4); // Show top 4 most recent repos (reduced to avoid clutter)
       
       container.innerHTML = '';
       
@@ -1089,18 +1177,18 @@
          repoCard.onclick = () => window.open(repo.html_url, '_blank');
          
          const repoIcon = getRepoIcon(repo.language);
-         const description = repo.description || 'No description available';
+         const smartDescription = generateSmartDescription(repo.name, repo.language, repo.description);
          const lastUpdated = new Date(repo.updated_at).toLocaleDateString();
          
          repoCard.innerHTML = `
             <div class="repo-header">
                <div class="repo-icon">${repoIcon}</div>
                <div>
-                  <h4 class="repo-name">${repo.name.replace(/-/g, '_').toUpperCase()}.${getFileExtension(repo.language)}</h4>
+                  <h4 class="repo-name">${repo.name.replace(/-/g, '_').toUpperCase()}</h4>
                   <div class="repo-language">${repo.language || 'Unknown'}</div>
                </div>
             </div>
-            <div class="repo-description">${description}</div>
+            <div class="repo-description">${smartDescription}</div>
             <div class="repo-meta">
                <span class="repo-stars">⭐ ${repo.stargazers_count}</span>
                <span class="repo-updated">Updated: ${lastUpdated}</span>
@@ -1138,7 +1226,7 @@
          'JavaScript': 'js',
          'TypeScript': 'ts',
          'Python': 'py',
-         'Java': 'jar',
+         'Java': 'java',
          'Kotlin': 'kt',
          'HTML': 'html',
          'CSS': 'css',
@@ -1148,9 +1236,11 @@
          'Rust': 'rs',
          'PHP': 'php',
          'Ruby': 'rb',
-         'Swift': 'swift'
+         'Swift': 'swift',
+         'Lua': 'lua'
       };
-      return extensions[language] || 'exe';
+      // Use the actual language extension, fallback to lowercase language name or txt
+      return extensions[language] || language?.toLowerCase() || 'txt';
    }
 
    // Populate terminal with real GitHub data
