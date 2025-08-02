@@ -9,7 +9,7 @@ class LinkedInAPISync {
         this.clientId = this.getConfig('LINKEDIN_CLIENT_ID');
         this.clientSecret = this.getConfig('LINKEDIN_CLIENT_SECRET');
         this.redirectUri = window.location.origin + '/linkedin-callback.html';
-        this.scopes = ['r_member_social', 'r_basicprofile', 'r_1st_connections_size', 'w_organization_social']; // Added Community Management scope
+        this.scopes = ['email', 'openid', 'profile', 'r_events', 'rw_events', 'w_member_social']; // Updated to match token scopes
         this.apiVersion = '202505'; // Updated to latest version
         this.accessToken = localStorage.getItem('linkedin_access_token');
         this.baseUrl = 'https://api.linkedin.com/rest'; // Updated to REST endpoint
@@ -32,7 +32,7 @@ class LinkedInAPISync {
         
         // Try common default configurations for development
         const defaults = {
-            'LINKEDIN_CLIENT_ID': '78fqr84eoy65pf', // Default fallback (will need to be configured)
+            'LINKEDIN_CLIENT_ID': '77duha47hcbh8o', // Default client ID
             'LINKEDIN_CLIENT_SECRET': '' // Never set defaults for secrets
         };
         
