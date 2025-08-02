@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Live Demos - Hongzhi (Harvad) Li | Interactive Project Showcase</title>
+   <meta name="description" content="Experience live demos of full-stack applications by Hongzhi (Harvad) Li. Weather app, e-commerce platform, portfolio automation - all fully deployed and operational.">
+   <meta name="keywords" content="live demos, full stack developer portfolio, weather app demo, e-commerce demo, react applications, spring boot projects, interactive showcase">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- Open Graph meta tags -->
+   <meta property="og:title" content="Live Demos - Interactive Project Showcase | Hongzhi (Harvad) Li">
+   <meta property="og:description" content="Experience live, fully deployed applications showcasing full-stack development expertise. Weather apps, e-commerce platforms, and automated portfolio systems.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://bluehawana.github.io/pages/demos.html">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific_popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- Cyberpunk Demo Styles -->
+   <style>
+      :root {
+         --cyber-bg: #0a0a0a;
+         --cyber-dark: #111111;
+         --cyber-primary: #00d4ff;
+         --cyber-secondary: #bd93f9;
+         --cyber-accent: #50fa7b;
+         --cyber-warning: #ffff00;
+         --cyber-danger: #ff073a;
+         --cyber-text: #ffffff;
+         --cyber-text-dim: #cccccc;
+         --cyber-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--cyber-bg) 0%, var(--cyber-dark) 100%);
+         color: var(--cyber-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+      }
+
+      .demos-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%);
+         position: relative;
+         overflow: hidden;
+         padding: 60px 0 40px;
+         border-bottom: 2px solid var(--cyber-primary);
+      }
+
+      .demos-hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 255, 0.03) 2px,
+            rgba(0, 255, 255, 0.03) 4px
+         );
+         animation: scan 4s linear infinite;
+      }
+
+      @keyframes scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .demos-title {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 20px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .demos-subtitle {
+         font-size: 18px;
+         color: var(--cyber-secondary);
+         text-align: center;
+         margin-bottom: 40px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .demo-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         gap: 30px;
+         padding: 40px 0;
+         background: var(--cyber-bg);
+      }
+
+      .cyber-demo {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 10px;
+         padding: 30px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .cyber-demo::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+         transition: left 0.5s ease;
+      }
+
+      .cyber-demo:hover::before {
+         left: 100%;
+      }
+
+      .cyber-demo:hover {
+         border-color: var(--cyber-primary);
+         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .demo-header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 20px;
+      }
+
+      .demo-icon {
+         width: 50px;
+         height: 50px;
+         background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+         border-radius: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 24px;
+         margin-right: 15px;
+         box-shadow: var(--neon-glow);
+      }
+
+      .demo-title-section {
+         flex-grow: 1;
+      }
+
+      .demo-title {
+         font-size: 20px;
+         font-weight: bold;
+         color: var(--cyber-accent);
+         margin: 0;
+      }
+
+      .demo-status {
+         font-size: 12px;
+         font-weight: bold;
+         padding: 4px 8px;
+         border-radius: 4px;
+         text-transform: uppercase;
+         margin-top: 5px;
+         display: inline-block;
+      }
+
+      .demo-status.live {
+         color: var(--cyber-accent);
+         background: rgba(80, 250, 123, 0.1);
+         border: 1px solid var(--cyber-accent);
+      }
+
+      .demo-tech {
+         color: var(--cyber-warning);
+         font-size: 12px;
+         margin-top: 5px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .demo-desc {
+         color: var(--cyber-text-dim);
+         line-height: 1.6;
+         margin: 20px 0;
+         font-size: 14px;
+      }
+
+      .demo-features {
+         list-style: none;
+         padding: 0;
+         margin: 20px 0;
+      }
+
+      .demo-features li {
+         color: var(--cyber-text-dim);
+         padding: 4px 0;
+         font-size: 13px;
+         position: relative;
+         padding-left: 15px;
+      }
+
+      .demo-features li::before {
+         content: '▶';
+         color: var(--cyber-primary);
+         position: absolute;
+         left: 0;
+      }
+
+      .demo-actions {
+         display: flex;
+         gap: 10px;
+         margin-top: 25px;
+         flex-wrap: wrap;
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--cyber-primary);
+         color: var(--cyber-primary);
+         padding: 10px 20px;
+         font-family: inherit;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         position: relative;
+         overflow: hidden;
+         border-radius: 4px;
+      }
+
+      .cyber-btn::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: var(--cyber-primary);
+         transition: left 0.3s ease;
+         z-index: -1;
+      }
+
+      .cyber-btn:hover::before {
+         left: 0;
+      }
+
+      .cyber-btn:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+      }
+
+      .cyber-btn.accent {
+         border-color: var(--cyber-accent);
+         color: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent::before {
+         background: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(80, 250, 123, 0.4);
+      }
+
+      .cyber-btn.secondary {
+         border-color: var(--cyber-secondary);
+         color: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary::before {
+         background: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(189, 147, 249, 0.4);
+      }
+
+      .terminal-window {
+         background: #000000;
+         border: 1px solid var(--cyber-primary);
+         border-radius: 8px;
+         margin: 40px 0;
+         box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+         overflow: hidden;
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--cyber-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--cyber-danger); }
+      .terminal-dot.yellow { background: var(--cyber-warning); }
+      .terminal-dot.green { background: var(--cyber-accent); }
+
+      .terminal-title {
+         color: var(--cyber-text);
+         margin-left: 15px;
+         font-size: 14px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Courier New', monospace;
+         font-size: 14px;
+         line-height: 1.6;
+      }
+
+      .terminal-line {
+         margin-bottom: 5px;
+      }
+
+      .terminal-prompt {
+         color: var(--cyber-accent);
+      }
+
+      .terminal-command {
+         color: var(--cyber-primary);
+      }
+
+      .terminal-output {
+         color: var(--cyber-text-dim);
+         margin-left: 20px;
+      }
+
+      .demo-preview {
+         background: var(--cyber-dark);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         padding: 15px;
+         margin: 20px 0;
+         text-align: center;
+      }
+
+      .demo-preview img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 4px;
+         border: 1px solid var(--cyber-border);
+      }
+
+      .demo-url {
+         color: var(--cyber-primary);
+         font-family: 'Courier New', monospace;
+         font-size: 12px;
+         margin-top: 10px;
+         word-break: break-all;
+      }
+
+      @media screen and (max-width: 768px) {
+         .demos-title {
+            font-size: 32px;
+         }
+         
+         .demo-grid {
+            grid-template-columns: 1fr;
+         }
+         
+         .cyber-demo {
+            min-width: 300px;
+         }
+         
+         .demo-actions {
+            flex-direction: column;
+         }
+      }
+   </style>
+</head>
+<body>
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li class="current"><a href="demos.html">Demos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Demos Hero Section -->
+   <section class="demos-hero">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="demos-title">[ LIVE_DEMOS.EXE ]</h1>
+            <p class="demos-subtitle">> Initializing interactive showcase... Loading deployed applications...</p>
+            
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-dots">
+                     <div class="terminal-dot red"></div>
+                     <div class="terminal-dot yellow"></div>
+                     <div class="terminal-dot green"></div>
+                  </div>
+                  <div class="terminal-title">demo-launcher.sh</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@demos:~$</span> 
+                     <span class="terminal-command">curl -s https://api.github.com/users/bluehawana/repos | grep -E "(clone_url|name)" | head -10</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     "name": "check-weather-anywhere"
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     "clone_url": "https://github.com/bluehawana/check-weather-anywhere.git"
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     "name": "smrtmart-ecommerce"
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     "clone_url": "https://github.com/bluehawana/smrtmart.git"
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@demos:~$</span> 
+                     <span class="terminal-command">echo "Status: All demos operational and accessible"</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     Status: All demos operational and accessible
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Live Demos Grid -->
+   <section style="background: var(--cyber-bg); padding: 40px 0;">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="demo-grid">
+               
+               <!-- Weather App Demo -->
+               <div class="cyber-demo">
+                  <div class="demo-header">
+                     <div class="demo-icon">🌤️</div>
+                     <div class="demo-title-section">
+                        <h3 class="demo-title">WEATHER_ANYWHERE.APP</h3>
+                        <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                        <div class="demo-tech">JavaScript × Weather API × Responsive Design</div>
+                     </div>
+                  </div>
+                  
+                  <div class="demo-desc">
+                     Real-time weather application with global location search capabilities. Features detailed weather forecasts, 
+                     interactive maps, responsive design, and seamless API integration. Deployed on Heroku with automatic scaling.
+                  </div>
+                  
+                  <div class="demo-preview">
+                     <div class="demo-url">https://check-weather-anywhere-8c1ac4b95a6c.herokuapp.com/</div>
+                  </div>
+                  
+                  <ul class="demo-features">
+                     <li>Global weather data with real-time updates</li>
+                     <li>Location-based search and geolocation support</li>
+                     <li>Responsive design for all device types</li>
+                     <li>Interactive weather maps and visualizations</li>
+                     <li>7-day forecast with detailed metrics</li>
+                     <li>Heroku cloud deployment with auto-scaling</li>
+                  </ul>
+                  
+                  <div class="demo-actions">
+                     <a href="https://check-weather-anywhere-8c1ac4b95a6c.herokuapp.com/" target="_blank" class="cyber-btn accent">[ LAUNCH_DEMO ]</a>
+                     <a href="https://github.com/bluehawana/check-weather-anywhere" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                  </div>
+               </div>
+
+               <!-- Smart Mart E-commerce Demo -->
+               <div class="cyber-demo">
+                  <div class="demo-header">
+                     <div class="demo-icon">🛒</div>
+                     <div class="demo-title-section">
+                        <h3 class="demo-title">SMARTMART_COMMERCE.WAR</h3>
+                        <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                        <div class="demo-tech">Spring Boot × React × PostgreSQL × Microservices</div>
+                     </div>
+                  </div>
+                  
+                  <div class="demo-desc">
+                     Full-stack e-commerce platform featuring comprehensive product management, shopping cart functionality, 
+                     order processing, and payment integration. Built with Spring Boot backend and React frontend in microservices architecture.
+                  </div>
+                  
+                  <div class="demo-preview">
+                     <div class="demo-url">https://smrtmart.com</div>
+                  </div>
+                  
+                  <ul class="demo-features">
+                     <li>Complete e-commerce functionality with cart management</li>
+                     <li>Spring Boot REST API with PostgreSQL database</li>
+                     <li>React frontend with modern UI/UX design</li>
+                     <li>Microservices architecture for scalability</li>
+                     <li>Order management and payment processing</li>
+                     <li>Admin dashboard for inventory management</li>
+                     <li>Responsive design with mobile optimization</li>
+                  </ul>
+                  
+                  <div class="demo-actions">
+                     <a href="https://smrtmart.com" target="_blank" class="cyber-btn accent">[ LAUNCH_DEMO ]</a>
+                     <a href="contact.html" class="cyber-btn secondary">[ REQUEST_ACCESS ]</a>
+                  </div>
+               </div>
+
+               <!-- Portfolio Automation Demo -->
+               <div class="cyber-demo">
+                  <div class="demo-header">
+                     <div class="demo-icon">🤖</div>
+                     <div class="demo-title-section">
+                        <h3 class="demo-title">PORTFOLIO_AUTOMATION.SYS</h3>
+                        <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                        <div class="demo-tech">LinkedIn API × GitHub API × Automation × Cyberpunk UI</div>
+                     </div>
+                  </div>
+                  
+                  <div class="demo-desc">
+                     This very website! Dynamic portfolio system with LinkedIn API integration, GitHub repository synchronization, 
+                     automated content updates, and cyberpunk terminal aesthetics. Features real-time data feeds and intelligent automation.
+                  </div>
+                  
+                  <div class="demo-preview">
+                     <div class="demo-url">https://bluehawana.com</div>
+                  </div>
+                  
+                  <ul class="demo-features">
+                     <li>LinkedIn API integration for automatic post synchronization</li>
+                     <li>GitHub API for real-time repository updates</li>
+                     <li>Automated content refresh every 30 minutes</li>
+                     <li>Cyberpunk terminal-inspired UI design</li>
+                     <li>Responsive design with mobile optimization</li>
+                     <li>SEO optimization and social media integration</li>
+                     <li>Professional services booking with Calendly</li>
+                  </ul>
+                  
+                  <div class="demo-actions">
+                     <a href="https://bluehawana.com" target="_blank" class="cyber-btn accent">[ VIEW_LIVE ]</a>
+                     <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                     <a href="automation_dashboard.html" class="cyber-btn secondary">[ SYNC_STATUS ]</a>
+                  </div>
+               </div>
+
+               <!-- Taxi Carpooling Demo (In Development) -->
+               <div class="cyber-demo" style="opacity: 0.8; border-color: var(--cyber-warning);">
+                  <div class="demo-header">
+                     <div class="demo-icon">🚖</div>
+                     <div class="demo-title-section">
+                        <h3 class="demo-title">GOTHENBURG_TAXI.EXE</h3>
+                        <div class="demo-status" style="color: var(--cyber-warning); background: rgba(255, 255, 0, 0.1); border-color: var(--cyber-warning);">⚠ IN DEVELOPMENT</div>
+                        <div class="demo-tech">Spring Boot × React Native × PostgreSQL × ML Algorithms</div>
+                     </div>
+                  </div>
+                  
+                  <div class="demo-desc">
+                     Intelligent carpooling platform with machine learning-powered passenger matching, real-time geolocation tracking, 
+                     and integrated payment processing. Cross-platform mobile application with comprehensive backend microservices.
+                  </div>
+                  
+                  <div class="demo-preview" style="background: rgba(255, 255, 0, 0.05);">
+                     <div class="demo-url" style="color: var(--cyber-warning);">Demo deployment in progress...</div>
+                  </div>
+                  
+                  <ul class="demo-features">
+                     <li>AI-powered passenger matching algorithms</li>
+                     <li>Real-time GPS tracking and route optimization</li>
+                     <li>React Native cross-platform mobile app</li>
+                     <li>Spring Boot microservices architecture</li>
+                     <li>PostgreSQL database with optimized queries</li>
+                     <li>Integrated payment processing system</li>
+                     <li>Comprehensive testing suite and CI/CD pipeline</li>
+                  </ul>
+                  
+                  <div class="demo-actions">
+                     <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                     <a href="../projects/taxi-carpooling.html" class="cyber-btn secondary">[ PROJECT_DETAILS ]</a>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Call to Action -->
+   <section style="background: var(--cyber-dark); padding: 60px 0; text-align: center;">
+      <div class="row">
+         <div class="twelve columns">
+            <h2 style="color: var(--cyber-accent); font-size: 32px; margin-bottom: 20px;">Ready to Build Something Amazing?</h2>
+            <p style="color: var(--cyber-text-dim); font-size: 18px; margin-bottom: 40px;">
+               These demos showcase real-world applications built with modern technologies. 
+               Let's discuss your next project and bring your ideas to life.
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+               <a href="services.html" class="cyber-btn accent" style="padding: 15px 30px; font-size: 14px;">[ HIRE_DEVELOPER ]</a>
+               <a href="contact.html" class="cyber-btn" style="padding: 15px 30px; font-size: 14px;">[ DISCUSS_PROJECT ]</a>
+               <a href="../projects/index.html" class="cyber-btn secondary" style="padding: 15px 30px; font-size: 14px;">[ VIEW_PROJECTS ]</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer style="background: var(--cyber-bg); border-top: 1px solid var(--cyber-border);">
+      <div class="row">
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/bluehawana" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:hongzhili01@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li style="color: var(--cyber-accent); font-family: 'Monaco', 'Consolas', monospace;">&copy; 2025 Hongzhi (Harvad) Li</li>
+               <li style="color: var(--cyber-text-dim); font-family: 'Monaco', 'Consolas', monospace;">Full Stack Developer | Live Demos Portfolio</li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../js/jquery-1.10.2.min.js"></script>
+   <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="../js/jquery.flexslider.js"></script>
+   <script src="../js/waypoints.js"></script>
+   <script src="../js/jquery.fittext.js"></script>
+   <script src="../js/magnific-popup.js"></script>
+   <script src="../js/init.js"></script>
+</body>
+</html>

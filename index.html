@@ -116,6 +116,122 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/blog.css">
 
+   <!-- Demo Section Styles -->
+   <style>
+      .demo-card {
+         background: #1a1a1a;
+         border: 1px solid #333;
+         border-radius: 8px;
+         padding: 25px;
+         margin-bottom: 30px;
+         transition: all 0.3s ease;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .demo-card:hover {
+         border-color: #00d4ff;
+         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .demo-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 15px;
+      }
+
+      .demo-header h3 {
+         color: #00d4ff;
+         margin: 0;
+         font-size: 18px;
+      }
+
+      .demo-status {
+         font-size: 12px;
+         font-weight: bold;
+         padding: 4px 8px;
+         border-radius: 4px;
+         text-transform: uppercase;
+      }
+
+      .demo-status.live {
+         color: #50fa7b;
+         background: rgba(80, 250, 123, 0.1);
+         border: 1px solid #50fa7b;
+      }
+
+      .demo-card p {
+         color: #cccccc;
+         line-height: 1.6;
+         margin-bottom: 15px;
+         flex-grow: 1;
+      }
+
+      .demo-tech {
+         margin-bottom: 20px;
+      }
+
+      .tech-tag {
+         display: inline-block;
+         background: rgba(189, 147, 249, 0.1);
+         color: #bd93f9;
+         padding: 4px 8px;
+         border-radius: 4px;
+         font-size: 11px;
+         margin-right: 8px;
+         margin-bottom: 5px;
+         border: 1px solid rgba(189, 147, 249, 0.3);
+      }
+
+      .demo-actions {
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap;
+      }
+
+      .demo-btn {
+         background: linear-gradient(45deg, #00d4ff, #bd93f9);
+         color: #000;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 4px;
+         text-decoration: none;
+         font-size: 14px;
+         font-weight: bold;
+         transition: all 0.3s ease;
+      }
+
+      .demo-btn:hover {
+         transform: translateY(-1px);
+         box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+      }
+
+      .button-outline {
+         background: transparent;
+         color: #00d4ff;
+         border: 1px solid #00d4ff;
+      }
+
+      .button-outline:hover {
+         background: #00d4ff;
+         color: #000;
+      }
+
+      @media screen and (max-width: 768px) {
+         .demo-actions {
+            flex-direction: column;
+         }
+
+         .demo-btn,
+         .button-outline {
+            text-align: center;
+         }
+      }
+   </style>
+
    <!-- Script
    ================================================== -->
    <script>function cb(response) { document.getElementById('visits').innerText = response.value; }</script>
@@ -143,6 +259,7 @@
             <li><a href="pages/blog.html">Blog</a></li>
             <li><a href="pages/resume.html">Resume</a></li>
             <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="pages/demos.html">Demos</a></li>
             <li><a href="pages/services.html">Services</a></li>
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
@@ -262,6 +379,80 @@
             </div>
             <div class="text-center" style="margin-top: 30px;">
                <a href="https://github.com/bluehawana" class="button" target="_blank">View All GitHub Projects</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Live Demos Section -->
+   <section id="live-demos" class="section-dark">
+      <div class="row">
+         <div class="twelve columns">
+            <h1><i class="fa fa-rocket"></i> Live Demos</h1>
+            <p class="lead">Experience my applications in action - fully deployed and operational</p>
+         </div>
+      </div>
+
+      <div class="row">
+         <!-- Weather App Demo -->
+         <div class="four columns">
+            <div class="demo-card">
+               <div class="demo-header">
+                  <h3>Weather Anywhere</h3>
+                  <span class="demo-status live">● LIVE</span>
+               </div>
+               <p>Real-time weather application with global location search, detailed forecasts, and responsive design.
+                  Built with modern web technologies.</p>
+               <div class="demo-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">API Integration</span>
+                  <span class="tech-tag">Responsive</span>
+               </div>
+               <div class="demo-actions">
+                  <a href="https://check-weather-anywhere-8c1ac4b95a6c.herokuapp.com/" target="_blank"
+                     class="button demo-btn">Launch Demo</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Smart Mart Demo -->
+         <div class="four columns">
+            <div class="demo-card">
+               <div class="demo-header">
+                  <h3>Smart Mart E-commerce</h3>
+                  <span class="demo-status live">● LIVE</span>
+               </div>
+               <p>Full-stack e-commerce platform with Spring Boot backend, React frontend, comprehensive order
+                  management, and payment processing.</p>
+               <div class="demo-tech">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">PostgreSQL</span>
+               </div>
+               <div class="demo-actions">
+                  <a href="https://smrtmart.com" target="_blank" class="button demo-btn">Launch Demo</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Portfolio Demo -->
+         <div class="four columns">
+            <div class="demo-card">
+               <div class="demo-header">
+                  <h3>Dynamic Portfolio</h3>
+                  <span class="demo-status live">● LIVE</span>
+               </div>
+               <p>This very website! Features LinkedIn API integration, GitHub synchronization, automated content
+                  updates, and cyberpunk terminal aesthetics.</p>
+               <div class="demo-tech">
+                  <span class="tech-tag">LinkedIn API</span>
+                  <span class="tech-tag">GitHub API</span>
+                  <span class="tech-tag">Automation</span>
+               </div>
+               <div class="demo-actions">
+                  <a href="https://bluehawana.com" target="_blank" class="button demo-btn">View Live</a>
+                  <a href="pages/demos.html" class="button button-outline">All Demos</a>
+               </div>
             </div>
          </div>
       </div>
