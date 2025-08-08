@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>SmrtMart E-commerce Platform - Hongzhi (Harvad) Li</title>
+   <meta name="description" content="SmrtMart - Smart E-commerce platform with Spring Boot backend and React frontend">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific_popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- SmrtMart Demo Styles -->
+   <style>
+      :root {
+         --mart-primary: #ff6b35;
+         --mart-secondary: #f7931e;
+         --mart-accent: #50fa7b;
+         --mart-warning: #ffff00;  
+         --mart-danger: #ff073a;
+         --mart-bg: #0a0a0a;
+         --mart-dark: #1a1a1a;
+         --mart-text: #ffffff;
+         --mart-text-dim: #cccccc;
+         --mart-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--mart-bg) 0%, var(--mart-dark) 100%);
+         color: var(--mart-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+         min-height: 100vh;
+      }
+
+      .mart-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #331a00 50%, #1a0d00 100%);
+         padding: 40px 0;
+         border-bottom: 2px solid var(--mart-primary);
+         position: relative;
+         overflow: hidden;
+      }
+
+      .mart-hero::before {
+         content: '';
+         position: absolute;
+         top: 0; left: 0; right: 0; bottom: 0;
+         background: repeating-linear-gradient(
+            90deg, transparent, transparent 2px,
+            rgba(255, 107, 53, 0.03) 2px, rgba(255, 107, 53, 0.03) 4px
+         );
+         animation: scan 4s linear infinite;
+      }
+
+      @keyframes scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .mart-title {
+         font-size: 42px;
+         font-weight: bold;
+         color: var(--mart-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 15px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .mart-subtitle {
+         font-size: 16px;
+         color: var(--mart-secondary);
+         text-align: center;
+         margin-bottom: 30px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .app-preview {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--mart-border);
+         border-radius: 10px;
+         padding: 30px;
+         margin: 40px 0;
+         text-align: center;
+      }
+
+      .commerce-demo {
+         background: #000000;
+         border: 2px solid var(--mart-primary);
+         border-radius: 8px;
+         padding: 20px;
+         margin: 20px 0;
+         font-family: 'Courier New', monospace;
+         font-size: 16px;
+         line-height: 1.4;
+         color: var(--mart-accent);
+         box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--mart-primary);
+         color: var(--mart-primary);
+         padding: 15px 30px;
+         font-family: inherit;
+         font-size: 16px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         margin: 15px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .cyber-btn:hover {
+         color: var(--mart-bg);
+         background: var(--mart-primary);
+         box-shadow: 0 0 8px rgba(255, 107, 53, 0.4);
+      }
+
+      .cyber-btn.secondary {
+         border-color: var(--mart-secondary);
+         color: var(--mart-secondary);
+      }
+
+      .cyber-btn.secondary:hover {
+         background: var(--mart-secondary);
+         color: #000000;
+      }
+
+      .features-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 30px;
+         margin: 40px 0;
+         padding: 0 20px;
+      }
+
+      .feature-card {
+         background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+         border: 1px solid var(--mart-border);
+         border-radius: 8px;
+         padding: 25px;
+         position: relative;
+      }
+
+      .feature-card::before {
+         content: '';
+         position: absolute;
+         top: 0; left: 0;
+         width: 3px; height: 100%;
+         background: linear-gradient(180deg, var(--mart-primary), var(--mart-secondary));
+      }
+
+      .feature-card h3 {
+         color: var(--mart-accent);
+         margin-bottom: 15px;
+         font-size: 18px;
+      }
+
+      .feature-card p {
+         color: var(--mart-text-dim);
+         line-height: 1.6;
+         font-size: 14px;
+      }
+
+      .terminal-window {
+         background: #000000;
+         border: 1px solid var(--mart-primary);
+         border-radius: 8px;
+         margin: 20px 0;
+         box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+         overflow: hidden;
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--mart-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 12px; height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--mart-danger); }
+      .terminal-dot.yellow { background: var(--mart-warning); }
+      .terminal-dot.green { background: var(--mart-accent); }
+
+      .terminal-title {
+         color: var(--mart-text);
+         margin-left: 15px;
+         font-size: 14px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Courier New', monospace;
+         font-size: 14px;
+         line-height: 1.6;
+      }
+
+      .terminal-prompt {
+         color: var(--mart-accent);
+      }
+
+      .terminal-command {
+         color: var(--mart-primary);
+      }
+
+      .terminal-output {
+         color: var(--mart-text-dim);
+      }
+
+      @media screen and (max-width: 768px) {
+         .mart-title { font-size: 28px; }
+         .features-grid { grid-template-columns: 1fr; }
+         .commerce-demo { font-size: 14px; }
+      }
+   </style>
+</head>
+<body>
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/resume.html">Resume</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- SmrtMart Hero -->
+   <section class="mart-hero">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="mart-title">[ SMRTMART.COMMERCE ]</h1>
+            <p class="mart-subtitle">> Smart E-commerce platform with enterprise-grade features and modern architecture</p>
+            
+            <!-- Screenshot Preview -->
+            <div style="text-align: center; margin: 30px 0;">
+               <img src="../images/projects/smrtmart-screenshot.png" alt="SmrtMart E-commerce Screenshot" 
+                    style="max-width: 80%; height: auto; border: 2px solid var(--mart-primary); border-radius: 8px; box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);" onerror="this.style.display='none'">
+            </div>
+
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-dots">
+                     <div class="terminal-dot red"></div>
+                     <div class="terminal-dot yellow"></div>
+                     <div class="terminal-dot green"></div>
+                  </div>
+                  <div class="terminal-title">smrtmart@commerce:~/platform</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">user@smrtmart:~$</span> 
+                     <span class="terminal-command">docker-compose up --build</span>
+                  </div>
+                  <div class="terminal-output">
+                     Starting SmrtMart E-commerce Platform...
+                  </div>
+                  <div class="terminal-output">
+                     Spring Boot Backend: ✅ Ready
+                  </div>
+                  <div class="terminal-output">
+                     React Frontend: ✅ Built & Deployed
+                  </div>
+                  <div class="terminal-output">
+                     PostgreSQL Database: ✅ Connected
+                  </div>
+                  <div class="terminal-output">
+                     MongoDB Analytics: ✅ Online
+                  </div>
+                  <div class="terminal-output">
+                     Payment Gateway: ✅ Configured
+                  </div>
+                  <div class="terminal-output">
+                     Platform running at: <a href="https://smrtmart.com/" target="_blank" style="color: var(--mart-primary);">https://smrtmart.com/</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- App Preview -->
+   <section>
+      <div class="row">
+         <div class="twelve columns">
+            <div class="app-preview">
+               <h2 style="color: var(--mart-accent); margin-bottom: 30px;">Smart E-commerce Experience</h2>
+               
+               <div class="commerce-demo">
+                  <div style="color: var(--mart-accent);">🛒 SmrtMart E-commerce Platform</div>
+                  <div style="border-bottom: 1px solid #333; margin: 10px 0;"></div>
+                  <div style="color: var(--mart-primary); font-size: 18px; margin: 10px 0;">
+                     Products: 500+ | Orders: 1,200+ | Customers: 800+
+                  </div>
+                  <div style="color: var(--mart-secondary); margin: 15px 0;">
+┌─────────────────────────────────────────┐<br>
+│  🏪 Product Catalog Management          │<br>
+│  🛒 Shopping Cart & Checkout            │<br>
+│  💳 Secure Payment Processing           │<br>
+│  📦 Order Fulfillment & Tracking        │<br>
+│  👥 Customer Account Management         │<br>
+│  📊 Analytics & Reporting Dashboard     │<br>
+└─────────────────────────────────────────┘
+                  </div>
+                  <div style="color: var(--mart-accent); margin-top: 15px;">
+                     Architecture: Microservices with Spring Boot + React<br>
+                     <small style="color: var(--mart-text-dim);">Scalable • Secure • Enterprise-ready</small>
+                  </div>
+               </div>
+
+               <div style="margin-top: 30px;">
+                  <a href="https://smrtmart.com/" target="_blank" class="cyber-btn">[ VISIT STORE ]</a>
+                  <a href="https://github.com/bluehawana/smrtmart" target="_blank" class="cyber-btn secondary">[ VIEW SOURCE ]</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Features Grid -->
+   <section>
+      <div class="row">
+         <div class="twelve columns">
+            <div class="features-grid">
+               <div class="feature-card">
+                  <h3>Full-Stack E-commerce</h3>
+                  <p>Complete online shopping platform with product catalog, shopping cart, secure checkout, order management, and customer accounts. Built for scalability and performance.</p>
+               </div>
+
+               <div class="feature-card">
+                  <h3>Microservices Architecture</h3>
+                  <p>Modern Spring Boot backend with React frontend, PostgreSQL for transactions, MongoDB for analytics, and RESTful APIs for seamless integration.</p>
+               </div>
+
+               <div class="feature-card">
+                  <h3>Payment Processing</h3>
+                  <p>Integrated payment gateway with support for multiple payment methods, secure transactions, automated invoicing, and comprehensive financial reporting.</p>
+               </div>
+
+               <div class="feature-card">
+                  <h3>Admin Dashboard</h3>
+                  <p>Comprehensive management interface for inventory control, order processing, customer management, analytics, and business intelligence reporting.</p>
+               </div>
+
+               <div class="feature-card">
+                  <h3>Mobile Responsive</h3>
+                  <p>Fully responsive design optimized for desktop, tablet, and mobile devices with progressive web app capabilities and offline functionality.</p>
+               </div>
+
+               <div class="feature-card">
+                  <h3>Enterprise Security</h3>
+                  <p>Advanced security features including data encryption, secure authentication, PCI compliance, fraud detection, and comprehensive audit logging.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer style="background: var(--mart-dark); padding: 20px 0;">
+      <div class="row">
+         <div class="twelve columns" style="text-align: center;">
+            <p style="color: var(--mart-text-dim); margin: 0;">
+               SmrtMart • Smart E-commerce Platform<br>
+               <a href="https://smrtmart.com/" style="color: var(--mart-primary);">Live Store</a> • 
+               <a href="https://github.com/bluehawana/smrtmart" style="color: var(--mart-primary);">GitHub</a>
+            </p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- JavaScript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="../js/init.js"></script>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+      // Add smooth hover effects
+      const featureCards = document.querySelectorAll('.feature-card');
+      featureCards.forEach(card => {
+         card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-5px)';
+            card.style.boxShadow = '0 8px 25px rgba(255, 107, 53, 0.2)';
+         });
+         card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = 'none';
+         });
+      });
+
+      // Terminal command simulation
+      const terminalOutputs = document.querySelectorAll('.terminal-output');
+      terminalOutputs.forEach((output, index) => {
+         setTimeout(() => {
+            output.style.opacity = '0';
+            output.style.opacity = '1';
+         }, index * 200);
+      });
+   });
+   </script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>JobHunter AI Dashboard - Hongzhi (Harvad) Li</title>
+   <meta name="description" content="JobHunter AI - Automated job hunting and resume customization dashboard">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific_popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- JobHunter Dashboard Styles -->
+   <style>
+      :root {
+         --job-primary: #00d4ff;
+         --job-secondary: #bd93f9;
+         --job-accent: #50fa7b;
+         --job-warning: #ffff00;  
+         --job-danger: #ff073a;
+         --job-bg: #0a0a0a;
+         --job-dark: #111111;
+         --job-text: #ffffff;
+         --job-text-dim: #cccccc;
+         --job-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--job-bg) 0%, var(--job-dark) 100%);
+         color: var(--job-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+         min-height: 100vh;
+      }
+
+      .dashboard-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #001a33 50%, #1a000d 100%);
+         padding: 40px 0;
+         border-bottom: 2px solid var(--job-primary);
+         position: relative;
+         overflow: hidden;
+      }
+
+      .dashboard-hero::before {
+         content: '';
+         position: absolute;
+         top: 0; left: 0; right: 0; bottom: 0;
+         background: repeating-linear-gradient(
+            90deg, transparent, transparent 2px,
+            rgba(0, 255, 255, 0.03) 2px, rgba(0, 255, 255, 0.03) 4px
+         );
+         animation: scan 4s linear infinite;
+      }
+
+      @keyframes scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .dashboard-title {
+         font-size: 42px;
+         font-weight: bold;
+         color: var(--job-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 15px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .dashboard-subtitle {
+         font-size: 16px;
+         color: var(--job-secondary);
+         text-align: center;
+         margin-bottom: 30px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .stats-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 30px;
+         margin: 40px 0;
+         padding: 0 20px;
+      }
+
+      .stat-card {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--job-border);
+         border-radius: 10px;
+         padding: 25px;
+         text-align: center;
+         position: relative;
+         transition: all 0.3s ease;
+      }
+
+      .stat-card:hover {
+         border-color: var(--job-primary);
+         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .stat-number {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--job-primary);
+         text-shadow: var(--neon-glow);
+         display: block;
+         margin-bottom: 10px;
+      }
+
+      .stat-label {
+         color: var(--job-text-dim);
+         font-size: 14px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .activity-section {
+         background: var(--job-dark);
+         padding: 40px 0;
+         margin: 40px 0;
+      }
+
+      .activity-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         gap: 30px;
+         padding: 0 20px;
+      }
+
+      .activity-card {
+         background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+         border: 1px solid var(--job-border);
+         border-radius: 8px;
+         padding: 25px;
+      }
+
+      .activity-card h3 {
+         color: var(--job-accent);
+         margin-bottom: 20px;
+         font-size: 18px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .terminal-window {
+         background: #000000;
+         border: 1px solid var(--job-primary);
+         border-radius: 8px;
+         margin: 20px 0;
+         box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+         overflow: hidden;
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--job-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--job-danger); }
+      .terminal-dot.yellow { background: var(--job-warning); }
+      .terminal-dot.green { background: var(--job-accent); }
+
+      .terminal-title {
+         color: var(--job-text);
+         margin-left: 15px;
+         font-size: 14px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Courier New', monospace;
+         font-size: 13px;
+         line-height: 1.6;
+         max-height: 300px;
+         overflow-y: auto;
+      }
+
+      .terminal-line {
+         margin-bottom: 5px;
+      }
+
+      .terminal-prompt {
+         color: var(--job-accent);
+      }
+
+      .terminal-command {
+         color: var(--job-primary);
+      }
+
+      .terminal-output {
+         color: var(--job-text-dim);
+         margin-left: 20px;
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--job-primary);
+         color: var(--job-primary);
+         padding: 12px 24px;
+         font-family: inherit;
+         font-size: 14px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         margin: 10px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .cyber-btn:hover {
+         color: var(--job-bg);
+         background: var(--job-primary);
+         box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+      }
+
+      .job-list {
+         list-style: none;
+         padding: 0;
+      }
+
+      .job-item {
+         background: rgba(0, 212, 255, 0.1);
+         border-left: 3px solid var(--job-primary);
+         padding: 15px;
+         margin-bottom: 10px;
+         border-radius: 0 5px 5px 0;
+      }
+
+      .job-item h4 {
+         color: var(--job-accent);
+         margin: 0 0 5px 0;
+         font-size: 16px;
+      }
+
+      .job-item p {
+         color: var(--job-text-dim);
+         margin: 5px 0;
+         font-size: 13px;
+      }
+
+      .job-status {
+         display: inline-block;
+         padding: 3px 8px;
+         border-radius: 3px;
+         font-size: 11px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .job-status.applied { background: var(--job-accent); color: #000; }
+      .job-status.pending { background: var(--job-warning); color: #000; }
+      .job-status.interview { background: var(--job-secondary); color: #000; }
+
+      @media screen and (max-width: 768px) {
+         .dashboard-title { font-size: 28px; }
+         .stats-grid { grid-template-columns: repeat(2, 1fr); }
+         .activity-grid { grid-template-columns: 1fr; }
+      }
+   </style>
+</head>
+<body>
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/resume.html">Resume</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Dashboard Hero -->
+   <section class="dashboard-hero">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="dashboard-title">[ JOBHUNTER.AI ]</h1>
+            <p class="dashboard-subtitle">> Autonomous job hunting system with AI-powered resume customization</p>
+            
+            <!-- Screenshot Preview -->
+            <div style="text-align: center; margin: 30px 0;">
+               <img src="../images/projects/jobhunter-screenshot.png" alt="JobHunter AI Dashboard Screenshot" 
+                    style="max-width: 80%; height: auto; border: 2px solid var(--job-primary); border-radius: 8px; box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);">
+            </div>
+
+            <div class="terminal-window">
+               <div class="terminal-header">
+                  <div class="terminal-dots">
+                     <div class="terminal-dot red"></div>
+                     <div class="terminal-dot yellow"></div>
+                     <div class="terminal-dot green"></div>
+                  </div>
+                  <div class="terminal-title">jobhunter@system:~/dashboard</div>
+               </div>
+               <div class="terminal-content">
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@jobhunter:~$</span> 
+                     <span class="terminal-command">python main.py --status</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     System Status: OPERATIONAL
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     Last Scan: <span id="last-scan">Loading...</span>
+                  </div>
+                  <div class="terminal-line terminal-output">
+                     Active Monitors: Gmail API, Job Boards, Resume Generator
+                  </div>
+                  <div class="terminal-line">
+                     <span class="terminal-prompt">root@jobhunter:~$</span> 
+                     <span class="terminal-command">tail -f activity.log</span>
+                  </div>
+                  <div id="activity-log" class="terminal-output">
+                     [INFO] Scanning job boards for new opportunities...
+                     [SUCCESS] Found 3 new job matches
+                     [INFO] Generating customized resume for Software Engineer position
+                     [SUCCESS] Resume customized and saved
+                     [INFO] Application ready for review
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Statistics Dashboard -->
+   <section>
+      <div class="row">
+         <div class="twelve columns">
+            <div class="stats-grid">
+               <div class="stat-card">
+                  <div class="stat-number" id="jobs-found">127</div>
+                  <div class="stat-label">Jobs Discovered</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number" id="resumes-generated">43</div>
+                  <div class="stat-label">Resumes Generated</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number" id="applications-sent">28</div>
+                  <div class="stat-label">Applications Sent</div>
+               </div>
+               <div class="stat-card">
+                  <div class="stat-number" id="response-rate">18%</div>
+                  <div class="stat-label">Response Rate</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Activity Section -->
+   <section class="activity-section">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="activity-grid">
+               <!-- Recent Jobs -->
+               <div class="activity-card">
+                  <h3>Recent Job Matches</h3>
+                  <ul class="job-list">
+                     <li class="job-item">
+                        <h4>Senior Full Stack Developer</h4>
+                        <p>Spring Boot, React, AWS • Remote EU</p>
+                        <p><span class="job-status applied">Applied</span> • Salary: €65-80k</p>
+                     </li>
+                     <li class="job-item">
+                        <h4>Java Backend Engineer</h4>
+                        <p>Microservices, Kubernetes • Stockholm</p>
+                        <p><span class="job-status pending">Pending</span> • Salary: 750k SEK</p>
+                     </li>
+                     <li class="job-item">
+                        <h4>DevOps Specialist</h4>
+                        <p>AWS, Docker, CI/CD • Gothenburg</p>
+                        <p><span class="job-status interview">Interview</span> • Salary: €55-70k</p>
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- System Metrics -->
+               <div class="activity-card">
+                  <h3>System Performance</h3>
+                  <div class="terminal-window">
+                     <div class="terminal-header">
+                        <div class="terminal-dots">
+                           <div class="terminal-dot red"></div>
+                           <div class="terminal-dot yellow"></div>
+                           <div class="terminal-dot green"></div>
+                        </div>
+                        <div class="terminal-title">metrics.py</div>
+                     </div>
+                     <div class="terminal-content">
+                        <div class="terminal-line terminal-output">
+                           Email API Status: ✅ Connected
+                        </div>
+                        <div class="terminal-line terminal-output">
+                           Job Board Scrapers: ✅ 5/5 Active
+                        </div>
+                        <div class="terminal-line terminal-output">
+                           Resume Generator: ✅ Operational
+                        </div>
+                        <div class="terminal-line terminal-output">
+                           OpenAI Integration: ✅ Connected
+                        </div>
+                        <div class="terminal-line terminal-output">
+                           Last Successful Run: <span id="last-run">2 hours ago</span>
+                        </div>
+                        <div class="terminal-line terminal-output">
+                           Next Scheduled Scan: <span id="next-scan">in 4 hours</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Controls Section -->
+   <section style="background: var(--job-bg); padding: 40px 0; text-align: center;">
+      <div class="row">
+         <div class="twelve columns">
+            <h2 style="color: var(--job-secondary); margin-bottom: 30px;">System Controls</h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+               <a href="https://jobs.bluehawana.com/" target="_blank" class="cyber-btn">[ LAUNCH APP ]</a>
+               <a href="https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi" target="_blank" class="cyber-btn">[ VIEW SOURCE ]</a>
+               <a href="../pages/contact.html" class="cyber-btn">[ REQUEST ACCESS ]</a>
+               <a href="../projects/index.html" class="cyber-btn">[ BACK TO PROJECTS ]</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer style="background: var(--job-dark); padding: 20px 0;">
+      <div class="row">
+         <div class="twelve columns" style="text-align: center;">
+            <p style="color: var(--job-text-dim); margin: 0;">
+               JobHunter AI Dashboard • Automated Job Discovery & Application System<br>
+               <a href="mailto:hongzhili01@gmail.com" style="color: var(--job-primary);">Contact for Implementation</a>
+            </p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- JavaScript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="../js/init.js"></script>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+      // Update timestamps
+      function updateTimestamps() {
+         const now = new Date();
+         document.getElementById('last-scan').textContent = now.toLocaleString();
+         document.getElementById('last-run').textContent = '2 hours ago';
+         document.getElementById('next-scan').textContent = 'in 4 hours';
+      }
+      
+      updateTimestamps();
+      setInterval(updateTimestamps, 60000); // Update every minute
+
+      // Animate activity log
+      const activityLog = document.getElementById('activity-log');
+      const activities = [
+         '[INFO] Monitoring Indeed.com for new postings...',
+         '[SUCCESS] Found new Full Stack Developer role at TechCorp',
+         '[INFO] Analyzing job requirements...',
+         '[SUCCESS] Resume customized for React/Node.js focus',
+         '[INFO] Preparing application materials...',
+         '[SUCCESS] Application ready for review',
+         '[INFO] Checking LinkedIn job feed...',
+         '[SUCCESS] 2 new remote positions detected'
+      ];
+
+      let activityIndex = 0;
+      setInterval(() => {
+         activityLog.innerHTML += '<div>' + activities[activityIndex] + '</div>';
+         activityIndex = (activityIndex + 1) % activities.length;
+         activityLog.scrollTop = activityLog.scrollHeight;
+      }, 3000);
+
+      // Animate statistics
+      function animateCounter(elementId, target, suffix = '') {
+         const element = document.getElementById(elementId);
+         if (!element) return;
+         
+         let current = 0;
+         const increment = target / 50;
+         const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+               current = target;
+               clearInterval(timer);
+            }
+            element.textContent = Math.floor(current) + suffix;
+         }, 30);
+      }
+
+      // Simulate live updates
+      setTimeout(() => {
+         animateCounter('jobs-found', 127);
+         animateCounter('resumes-generated', 43);
+         animateCounter('applications-sent', 28);
+         animateCounter('response-rate', 18, '%');
+      }, 1000);
+   });
+   </script>
+</body>
+</html>

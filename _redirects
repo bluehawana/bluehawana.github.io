@@ -1,6 +1,14 @@
 # Netlify Redirects File
 # This provides an alternative to netlify.toml redirects
 
+# Subdomain redirects (handled by Cloudflare Page Rules)
+# jobs.bluehawana.com/* -> https://bluehawana.com/jobs
+# weather.bluehawana.com/* -> https://weatheranywhere-917b4ca5eb69.herokuapp.com/
+
+# Project Routes
+/jobs /pages/jobhunter_dashboard.html 200
+/weather /pages/weatheranywhere_app.html 200
+
 # Automation Dashboard Access
 /automation-dashboard /automation-dashboard.html 200
 /automation-dashboard.html /automation-dashboard.html 200

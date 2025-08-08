@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>EPUB Reader Demo - Android Auto Audiobook Player</title>
+   <meta name="description" content="EPUB to Audiobook Reader - Android Auto compatible reading app with text-to-speech and hands-free controls">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- EPUB Reader Demo Styles -->
+   <style>
+      :root {
+         --cyber-bg: #0a0a0a;
+         --cyber-dark: #111111;
+         --cyber-primary: #00d4ff;
+         --cyber-secondary: #bd93f9;
+         --cyber-accent: #50fa7b;
+         --cyber-warning: #ffff00;
+         --cyber-danger: #ff073a;
+         --cyber-text: #ffffff;
+         --cyber-text-dim: #cccccc;
+         --cyber-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--cyber-bg) 0%, var(--cyber-dark) 100%);
+         color: var(--cyber-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+         margin: 0;
+         padding: 0;
+      }
+
+      .reader-dashboard {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%);
+         min-height: 100vh;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .dashboard-header {
+         padding: 20px;
+         border-bottom: 2px solid var(--cyber-accent);
+         text-align: center;
+         position: relative;
+         z-index: 10;
+      }
+
+      .reader-title {
+         font-size: 36px;
+         color: var(--cyber-accent);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 10px;
+      }
+
+      .reader-subtitle {
+         color: var(--cyber-secondary);
+         font-size: 16px;
+         margin-bottom: 20px;
+      }
+
+      .main-interface {
+         display: flex;
+         height: calc(100vh - 140px);
+      }
+
+      .book-library {
+         width: 300px;
+         background: rgba(17, 17, 17, 0.9);
+         border-right: 2px solid var(--cyber-border);
+         overflow-y: auto;
+         padding: 20px;
+      }
+
+      .book-item {
+         display: flex;
+         align-items: center;
+         padding: 15px;
+         margin-bottom: 10px;
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+      }
+
+      .book-item:hover, .book-item.active {
+         border-color: var(--cyber-accent);
+         box-shadow: 0 4px 15px rgba(80, 250, 123, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .book-cover {
+         width: 40px;
+         height: 50px;
+         background: linear-gradient(45deg, var(--cyber-accent), var(--cyber-secondary));
+         border-radius: 4px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-right: 15px;
+         font-weight: bold;
+         color: black;
+         font-size: 12px;
+      }
+
+      .book-info h4 {
+         color: var(--cyber-accent);
+         margin: 0 0 5px 0;
+         font-size: 14px;
+      }
+
+      .book-info p {
+         color: var(--cyber-text-dim);
+         margin: 0;
+         font-size: 12px;
+      }
+
+      .reading-area {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+      }
+
+      .reading-container {
+         flex: 1;
+         background: rgba(0, 0, 0, 0.8);
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         border: 2px solid var(--cyber-accent);
+         margin: 20px;
+         border-radius: 10px;
+         overflow: hidden;
+      }
+
+      .chapter-header {
+         background: rgba(17, 17, 17, 0.9);
+         padding: 15px;
+         border-bottom: 1px solid var(--cyber-border);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .chapter-title {
+         color: var(--cyber-accent);
+         font-size: 18px;
+         margin: 0;
+      }
+
+      .chapter-progress {
+         color: var(--cyber-text-dim);
+         font-size: 14px;
+      }
+
+      .reading-content {
+         flex: 1;
+         padding: 30px;
+         font-size: 18px;
+         line-height: 1.8;
+         color: var(--cyber-text);
+         font-family: 'Georgia', serif;
+         overflow-y: auto;
+      }
+
+      .reading-content.listening-mode {
+         background: linear-gradient(45deg, rgba(80, 250, 123, 0.1), rgba(189, 147, 249, 0.1));
+         border: 2px solid var(--cyber-accent);
+         animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+         0%, 100% { opacity: 1; }
+         50% { opacity: 0.8; }
+      }
+
+      .current-sentence {
+         background: rgba(80, 250, 123, 0.3);
+         padding: 2px 4px;
+         border-radius: 3px;
+         animation: highlight 1s ease-in-out;
+      }
+
+      @keyframes highlight {
+         0% { background: rgba(80, 250, 123, 0.6); }
+         100% { background: rgba(80, 250, 123, 0.3); }
+      }
+
+      .audio-controls {
+         padding: 20px;
+         background: rgba(17, 17, 17, 0.9);
+         border-top: 2px solid var(--cyber-border);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         flex-wrap: wrap;
+      }
+
+      .audio-btn {
+         background: transparent;
+         border: 2px solid var(--cyber-accent);
+         color: var(--cyber-accent);
+         padding: 15px;
+         border-radius: 50%;
+         width: 60px;
+         height: 60px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 20px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .audio-btn::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: var(--cyber-accent);
+         transition: left 0.3s ease;
+         z-index: -1;
+      }
+
+      .audio-btn:hover::before {
+         left: 0;
+      }
+
+      .audio-btn:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 15px rgba(80, 250, 123, 0.6);
+      }
+
+      .speed-control, .voice-control {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         color: var(--cyber-text-dim);
+      }
+
+      .speed-slider, .voice-select {
+         background: var(--cyber-dark);
+         border: 1px solid var(--cyber-border);
+         color: var(--cyber-text);
+         padding: 8px;
+         border-radius: 4px;
+      }
+
+      .tts-status {
+         position: absolute;
+         top: 20px;
+         right: 20px;
+         background: rgba(17, 17, 17, 0.9);
+         padding: 15px;
+         border-radius: 8px;
+         border: 1px solid var(--cyber-border);
+         font-size: 12px;
+         z-index: 20;
+         min-width: 200px;
+      }
+
+      .tts-indicator {
+         color: var(--cyber-accent);
+         margin-bottom: 5px;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .tts-info {
+         color: var(--cyber-text-dim);
+         line-height: 1.4;
+      }
+
+      .firebase-section {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 100%);
+         border: 2px solid var(--cyber-secondary);
+         border-radius: 10px;
+         padding: 30px;
+         margin: 40px 20px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .firebase-section::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, transparent, rgba(189, 147, 249, 0.1), transparent);
+         transition: left 0.8s ease;
+      }
+
+      .firebase-section:hover::before {
+         left: 100%;
+      }
+
+      .firebase-title {
+         color: var(--cyber-secondary);
+         font-size: 24px;
+         text-align: center;
+         margin-bottom: 20px;
+         text-shadow: var(--neon-glow);
+      }
+
+      .download-btn {
+         background: transparent;
+         border: 2px solid var(--cyber-secondary);
+         color: var(--cyber-secondary);
+         padding: 15px 30px;
+         font-family: inherit;
+         font-size: 16px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         margin: 10px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .download-btn::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: var(--cyber-secondary);
+         transition: left 0.3s ease;
+         z-index: -1;
+      }
+
+      .download-btn:hover::before {
+         left: 0;
+      }
+
+      .download-btn:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 15px rgba(189, 147, 249, 0.6);
+      }
+
+      .features-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+         margin-top: 30px;
+      }
+
+      .feature-card {
+         background: rgba(17, 17, 17, 0.7);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         padding: 20px;
+         text-align: center;
+      }
+
+      .feature-icon {
+         font-size: 36px;
+         color: var(--cyber-accent);
+         margin-bottom: 15px;
+      }
+
+      .feature-title {
+         color: var(--cyber-accent);
+         font-size: 16px;
+         margin-bottom: 10px;
+      }
+
+      .feature-desc {
+         color: var(--cyber-text-dim);
+         font-size: 14px;
+         line-height: 1.4;
+      }
+
+      @media screen and (max-width: 768px) {
+         .main-interface {
+            flex-direction: column;
+         }
+         
+         .book-library {
+            width: 100%;
+            height: 200px;
+         }
+         
+         .reader-title {
+            font-size: 24px;
+         }
+         
+         .audio-controls {
+            flex-wrap: wrap;
+            gap: 10px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="reader-dashboard">
+      <div class="tts-status">
+         <div class="tts-indicator">
+            🎙️ <span id="tts-status">TTS Ready</span>
+         </div>
+         <div class="tts-info" id="tts-info">
+            Azure Neural Voice<br>
+            Voice: Aria (English US)
+         </div>
+      </div>
+
+      <div class="dashboard-header">
+         <h1 class="reader-title">📚 EPUB_READER.APK</h1>
+         <p class="reader-subtitle">> Android Auto Audiobook Reader with Text-to-Speech</p>
+      </div>
+
+      <div class="main-interface">
+         <div class="book-library">
+            <div class="book-item active" data-book="demo1">
+               <div class="book-cover">SCI</div>
+               <div class="book-info">
+                  <h4>The Martian</h4>
+                  <p>Andy Weir • 12 chapters</p>
+               </div>
+            </div>
+            <div class="book-item" data-book="demo2">
+               <div class="book-cover">FAN</div>
+               <div class="book-info">
+                  <h4>Dune</h4>
+                  <p>Frank Herbert • 48 chapters</p>
+               </div>
+            </div>
+            <div class="book-item" data-book="demo3">
+               <div class="book-cover">MYS</div>
+               <div class="book-info">
+                  <h4>Sherlock Holmes</h4>
+                  <p>Arthur C. Doyle • 24 stories</p>
+               </div>
+            </div>
+            <div class="book-item" data-book="demo4">
+               <div class="book-cover">CLA</div>
+               <div class="book-info">
+                  <h4>Pride & Prejudice</h4>
+                  <p>Jane Austen • 61 chapters</p>
+               </div>
+            </div>
+            <div class="book-item" data-book="demo5">
+               <div class="book-cover">ADV</div>
+               <div class="book-info">
+                  <h4>Twenty Thousand Leagues</h4>
+                  <p>Jules Verne • 47 chapters</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="reading-area">
+            <div class="reading-container">
+               <div class="chapter-header">
+                  <h3 class="chapter-title" id="chapter-title">Chapter 1: Sol 1</h3>
+                  <div class="chapter-progress" id="chapter-progress">Page 1 of 24</div>
+               </div>
+               
+               <div class="reading-content" id="reading-content">
+                  <p>I'm pretty much fucked. That's my considered opinion. Fucked.</p>
+                  <p>Six days ago, the Ares 3 crew faced an emergency dust storm. The mission control ordered us to abort. During the evacuation, I was struck by flying debris and knocked unconscious.</p>
+                  <p>When I came to, I was alone on Mars. The crew had evacuated thinking I was dead. The Hab is intact, the life support systems are working, and I have food for about 300 days.</p>
+                  <p><span class="current-sentence">But here's the kicker: the next mission isn't scheduled to arrive for four years.</span></p>
+                  <p>So I need to figure out how to survive on Mars for 4 years with what I've got. The good news is that Mars will come back around to where I can launch in 26 months. The bad news is that'll leave me 2 years to figure out how to survive.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="audio-controls">
+         <button class="audio-btn" id="prev-chapter" title="Previous Chapter">⏮</button>
+         <button class="audio-btn" id="play-pause-tts" title="Play/Pause TTS">🎙️</button>
+         <button class="audio-btn" id="next-chapter" title="Next Chapter">⏭</button>
+         
+         <div class="speed-control">
+            <span>Speed:</span>
+            <select class="speed-slider" id="tts-speed">
+               <option value="0.8">0.8x</option>
+               <option value="1.0" selected>1.0x</option>
+               <option value="1.2">1.2x</option>
+               <option value="1.5">1.5x</option>
+            </select>
+         </div>
+         
+         <div class="voice-control">
+            <span>Voice:</span>
+            <select class="voice-select" id="tts-voice">
+               <option value="aria">Aria (US)</option>
+               <option value="jenny">Jenny (US)</option>
+               <option value="guy">Guy (US)</option>
+               <option value="emma">Emma (UK)</option>
+            </select>
+         </div>
+         
+         <button class="audio-btn" id="bookmark-btn" title="Bookmark">🔖</button>
+      </div>
+
+      <div class="firebase-section">
+         <h2 class="firebase-title">📱 DOWNLOAD APK & TEST ON ANDROID AUTO</h2>
+         
+         <div style="text-align: center; margin-bottom: 30px;">
+            <p style="color: var(--cyber-text-dim); font-size: 16px; line-height: 1.6;">
+               Experience hands-free reading in your car with full Android Auto integration.<br>
+               Convert EPUB files to audiobooks with Azure Neural Voice TTS.
+            </p>
+         </div>
+
+         <div style="text-align: center;">
+            <a href="#" class="download-btn" onclick="downloadAPK('epub-reader')">
+               📱 DOWNLOAD EPUB READER APK
+            </a>
+            <a href="https://github.com/bluehawana/epub-to-audiobook-bot" target="_blank" class="download-btn">
+               📂 VIEW SOURCE CODE
+            </a>
+         </div>
+
+         <div class="features-grid">
+            <div class="feature-card">
+               <div class="feature-icon">🎙️</div>
+               <div class="feature-title">Azure Neural Voice TTS</div>
+               <div class="feature-desc">High-quality text-to-speech with multiple voice options and speed control</div>
+            </div>
+            <div class="feature-card">
+               <div class="feature-icon">🚗</div>
+               <div class="feature-title">Android Auto Compatible</div>
+               <div class="feature-desc">Hands-free operation with voice commands and steering wheel controls</div>
+            </div>
+            <div class="feature-card">
+               <div class="feature-icon">📚</div>
+               <div class="feature-title">EPUB Support</div>
+               <div class="feature-desc">Import and convert EPUB files to audiobooks with chapter navigation</div>
+            </div>
+            <div class="feature-card">
+               <div class="feature-icon">☁️</div>
+               <div class="feature-title">Cloud Processing</div>
+               <div class="feature-desc">Server-side EPUB processing with R2 storage and streaming delivery</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      // Demo books data
+      const demoBooks = {
+         'demo1': {
+            title: 'The Martian',
+            author: 'Andy Weir',
+            chapters: ['Sol 1', 'Sol 2', 'Sol 3', 'Sol 6'],
+            content: [
+               "I'm pretty much fucked. That's my considered opinion. Fucked. Six days ago, the Ares 3 crew faced an emergency dust storm...",
+               "I woke up to the gentle hum of life support systems. The Hab is working perfectly, thank God. I took inventory of my situation...",
+               "Today I began my planning phase. I need to figure out how to grow food on Mars. The good news is I'm a botanist...",
+               "The potato experiment is going well. I've managed to create a small farming area inside the Hab..."
+            ]
+         },
+         'demo2': {
+            title: 'Dune',
+            author: 'Frank Herbert',
+            chapters: ['The Awakening', 'Arrakis', 'The Spice', 'Desert Power'],
+            content: [
+               "A beginning is the time for taking the most delicate care that the balances are correct...",
+               "Arrakis - Dune - Desert Planet. The planet where the spice melange is found...",
+               "The spice extends life. The spice expands consciousness. The spice is vital to space travel...",
+               "Paul felt the desert's power flowing through him. He understood now what it meant to be Muad'Dib..."
+            ]
+         }
+      };
+
+      let currentBook = 'demo1';
+      let currentChapter = 0;
+      let isTTSPlaying = false;
+      let ttsUtterance = null;
+
+      // Initialize Web Speech API
+      const synth = window.speechSynthesis;
+
+      // TTS Status updates
+      function updateTTSStatus(status, info) {
+         document.getElementById('tts-status').textContent = status;
+         document.getElementById('tts-info').innerHTML = info;
+      }
+
+      // Book selection
+      document.querySelectorAll('.book-item').forEach(item => {
+         item.addEventListener('click', function() {
+            document.querySelectorAll('.book-item').forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+            
+            const bookId = this.dataset.book;
+            currentBook = bookId;
+            currentChapter = 0;
+            
+            if (demoBooks[bookId]) {
+               loadChapter();
+            } else {
+               // Show placeholder for other books
+               document.getElementById('chapter-title').textContent = 'Demo Book';
+               document.getElementById('chapter-progress').textContent = 'Chapter 1 of 1';
+               document.getElementById('reading-content').innerHTML = 
+                  '<p>This is a demo book. The full app would load the actual EPUB content here.</p>';
+            }
+            
+            stopTTS();
+         });
+      });
+
+      // Load chapter content
+      function loadChapter() {
+         const book = demoBooks[currentBook];
+         if (!book) return;
+         
+         document.getElementById('chapter-title').textContent = 
+            `Chapter ${currentChapter + 1}: ${book.chapters[currentChapter]}`;
+         document.getElementById('chapter-progress').textContent = 
+            `Chapter ${currentChapter + 1} of ${book.chapters.length}`;
+         
+         const content = book.content[currentChapter] || 'Chapter content not available in demo.';
+         document.getElementById('reading-content').innerHTML = 
+            content.split('. ').map(sentence => `<p>${sentence}.</p>`).join('');
+      }
+
+      // TTS Controls
+      document.getElementById('play-pause-tts').addEventListener('click', function() {
+         if (isTTSPlaying) {
+            stopTTS();
+         } else {
+            startTTS();
+         }
+      });
+
+      function startTTS() {
+         const content = document.getElementById('reading-content').textContent;
+         
+         if ('speechSynthesis' in window) {
+            ttsUtterance = new SpeechSynthesisUtterance(content);
+            
+            // Configure voice
+            const voices = synth.getVoices();
+            const selectedVoice = document.getElementById('tts-voice').value;
+            const voice = voices.find(v => v.name.toLowerCase().includes(selectedVoice)) || voices[0];
+            ttsUtterance.voice = voice;
+            
+            // Configure speed
+            ttsUtterance.rate = parseFloat(document.getElementById('tts-speed').value);
+            
+            // Event handlers
+            ttsUtterance.onstart = () => {
+               isTTSPlaying = true;
+               document.getElementById('play-pause-tts').textContent = '⏸️';
+               document.getElementById('reading-content').classList.add('listening-mode');
+               updateTTSStatus('🎙️ Speaking...', 'Azure Neural Voice<br>Reading aloud');
+            };
+            
+            ttsUtterance.onend = () => {
+               stopTTS();
+            };
+            
+            ttsUtterance.onerror = () => {
+               stopTTS();
+               updateTTSStatus('❌ TTS Error', 'Speech synthesis failed');
+            };
+            
+            synth.speak(ttsUtterance);
+         } else {
+            alert('🎙️ Text-to-Speech Demo\n\nYour browser doesn\'t support Web Speech API.\n\nIn the Android Auto app, this uses Azure Neural Voice for high-quality speech synthesis.');
+         }
+      }
+
+      function stopTTS() {
+         if (synth.speaking) {
+            synth.cancel();
+         }
+         isTTSPlaying = false;
+         document.getElementById('play-pause-tts').textContent = '🎙️';
+         document.getElementById('reading-content').classList.remove('listening-mode');
+         updateTTSStatus('TTS Ready', 'Azure Neural Voice<br>Voice: Aria (English US)');
+      }
+
+      // Chapter navigation
+      document.getElementById('prev-chapter').addEventListener('click', function() {
+         const book = demoBooks[currentBook];
+         if (book && currentChapter > 0) {
+            currentChapter--;
+            loadChapter();
+            stopTTS();
+         }
+      });
+
+      document.getElementById('next-chapter').addEventListener('click', function() {
+         const book = demoBooks[currentBook];
+         if (book && currentChapter < book.chapters.length - 1) {
+            currentChapter++;
+            loadChapter();
+            stopTTS();
+         }
+      });
+
+      // Voice and speed controls
+      document.getElementById('tts-voice').addEventListener('change', function() {
+         updateTTSStatus('TTS Ready', `Azure Neural Voice<br>Voice: ${this.options[this.selectedIndex].text}`);
+      });
+
+      document.getElementById('tts-speed').addEventListener('change', function() {
+         if (isTTSPlaying) {
+            stopTTS();
+         }
+      });
+
+      // Bookmark function
+      document.getElementById('bookmark-btn').addEventListener('click', function() {
+         alert(`🔖 Bookmark Added\n\nBookmarked: Chapter ${currentChapter + 1}\nBook: ${demoBooks[currentBook]?.title || 'Demo Book'}\n\nIn the full app, this would save your reading position for Android Auto sync.`);
+      });
+
+      // APK download simulation
+      function downloadAPK(appName) {
+         alert(`📱 Firebase App Distribution\n\nThis would download the ${appName} APK from Firebase.\n\nFeatures included:\n• EPUB to audiobook conversion\n• Azure TTS integration\n• Android Auto compatibility\n• QR code device linking\n• Offline reading support`);
+      }
+
+      // Initialize demo
+      loadChapter();
+      
+      // Load voices when available
+      if ('speechSynthesis' in window) {
+         speechSynthesis.addEventListener('voiceschanged', () => {
+            console.log('Voices loaded for TTS demo');
+         });
+      }
+   </script>
+</body>
+</html>
