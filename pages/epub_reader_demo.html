@@ -730,9 +730,11 @@
          alert(`🔖 Bookmark Added\n\nBookmarked: Chapter ${currentChapter + 1}\nBook: ${demoBooks[currentBook]?.title || 'Demo Book'}\n\nIn the full app, this would save your reading position for Android Auto sync.`);
       });
 
-      // APK download simulation
+      // APK download via Firebase App Distribution
       function downloadAPK(appName) {
-         alert(`📱 Firebase App Distribution\n\nThis would download the ${appName} APK from Firebase.\n\nFeatures included:\n• EPUB to audiobook conversion\n• Azure TTS integration\n• Android Auto compatibility\n• QR code device linking\n• Offline reading support`);
+         if (appName === 'epub-reader') {
+            window.open('https://appdistribution.firebase.google.com/testerapps/1:215346136917:android:e56310f95c517df13a51dc/releases/2n18rld9kkio0', '_blank');
+         }
       }
 
       // Initialize demo
