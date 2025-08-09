@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>EPUB Reader Android App - Professional Mobile Development | Hongzhi (Harvad) Li</title>
+   <meta name="description" content="Professional EPUB reader Android application with Firebase hosting and comprehensive testing. Demonstrates Android SDK expertise and mobile app development capabilities.">
+   <meta name="keywords" content="epub reader android, android app development, firebase hosting, mobile app development, android sdk, e-book reader">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/magnific_popup.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- Project-specific styles -->
+   <style>
+      :root {
+         --reader-primary: #2196f3;
+         --reader-secondary: #607d8b;
+         --reader-accent: #ff9800;
+         --reader-success: #4caf50;
+         --reader-bg: #0a0a0a;
+         --reader-card: #1a1a1a;
+         --reader-text: #ffffff;
+         --reader-text-dim: #cccccc;
+         --reader-border: #333333;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--reader-bg) 0%, #1a1a2e 100%);
+         color: var(--reader-text);
+         font-family: 'Roboto', 'Arial', sans-serif;
+      }
+
+      .project-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a2e1a 50%, #2e1a16 100%);
+         position: relative;
+         overflow: hidden;
+         padding: 60px 0 40px;
+         border-bottom: 2px solid var(--reader-primary);
+      }
+
+      .project-hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="book-grid" width="15" height="15" patternUnits="userSpaceOnUse"><path d="M 15 0 L 0 0 0 15" fill="none" stroke="%232196f3" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23book-grid)"/></svg>');
+         opacity: 0.3;
+      }
+
+      .project-title {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--reader-primary);
+         text-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
+         margin-bottom: 20px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .project-subtitle {
+         font-size: 20px;
+         color: var(--reader-accent);
+         text-align: center;
+         margin-bottom: 40px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .project-content {
+         background: var(--reader-bg);
+         padding: 40px 0;
+      }
+
+      .feature-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 30px;
+         margin: 40px 0;
+      }
+
+      .feature-card {
+         background: linear-gradient(145deg, var(--reader-card) 0%, #2a2a2a 50%, #1a1a1a 100%);
+         border: 1px solid var(--reader-border);
+         border-radius: 10px;
+         padding: 30px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+         border-color: var(--reader-primary);
+         box-shadow: 0 4px 15px rgba(33, 150, 243, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .feature-icon {
+         width: 60px;
+         height: 60px;
+         background: linear-gradient(45deg, var(--reader-primary), var(--reader-accent));
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 28px;
+         margin-bottom: 20px;
+         box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
+      }
+
+      .feature-card h3 {
+         color: var(--reader-primary);
+         margin-bottom: 15px;
+         font-size: 20px;
+      }
+
+      .feature-card p {
+         color: var(--reader-text-dim);
+         line-height: 1.6;
+         margin-bottom: 20px;
+      }
+
+      .tech-stack {
+         background: var(--reader-card);
+         border: 1px solid var(--reader-border);
+         border-radius: 10px;
+         padding: 30px;
+         margin: 40px 0;
+      }
+
+      .tech-stack h3 {
+         color: var(--reader-success);
+         margin-bottom: 20px;
+         text-align: center;
+      }
+
+      .tech-tags {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+         justify-content: center;
+      }
+
+      .tech-tag {
+         background: rgba(33, 150, 243, 0.1);
+         color: var(--reader-primary);
+         padding: 8px 16px;
+         border-radius: 20px;
+         font-size: 14px;
+         border: 1px solid rgba(33, 150, 243, 0.3);
+         transition: all 0.3s ease;
+      }
+
+      .tech-tag:hover {
+         background: var(--reader-primary);
+         color: white;
+         transform: translateY(-2px);
+      }
+
+      .demo-section {
+         background: var(--reader-card);
+         border: 1px solid var(--reader-border);
+         border-radius: 10px;
+         padding: 40px;
+         margin: 40px 0;
+         text-align: center;
+      }
+
+      .demo-link {
+         background: linear-gradient(45deg, var(--reader-primary), var(--reader-accent));
+         color: white;
+         padding: 15px 30px;
+         border-radius: 8px;
+         text-decoration: none;
+         font-size: 16px;
+         font-weight: bold;
+         display: inline-block;
+         margin: 10px;
+         transition: all 0.3s ease;
+         box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+      }
+
+      .demo-link:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+      }
+
+      .demo-link.secondary {
+         background: transparent;
+         border: 2px solid var(--reader-primary);
+         color: var(--reader-primary);
+      }
+
+      .demo-link.secondary:hover {
+         background: var(--reader-primary);
+         color: white;
+      }
+
+      .project-details {
+         background: var(--reader-card);
+         border-left: 4px solid var(--reader-success);
+         padding: 30px;
+         margin: 40px 0;
+         border-radius: 0 10px 10px 0;
+      }
+
+      .project-details h4 {
+         color: var(--reader-success);
+         margin-bottom: 15px;
+      }
+
+      .project-details ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      .project-details li {
+         color: var(--reader-text-dim);
+         padding: 8px 0;
+         position: relative;
+         padding-left: 20px;
+      }
+
+      .project-details li::before {
+         content: '✓';
+         color: var(--reader-success);
+         position: absolute;
+         left: 0;
+         font-weight: bold;
+      }
+
+      @media screen and (max-width: 768px) {
+         .project-title {
+            font-size: 32px;
+         }
+         
+         .feature-grid {
+            grid-template-columns: 1fr;
+         }
+         
+         .demo-link {
+            display: block;
+            margin: 10px 0;
+         }
+      }
+   </style>
+</head>
+<body>
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/resume.html">Resume</a></li>
+            <li class="current"><a href="index.html">Projects</a></li>
+            <li><a href="../pages/demos.html">Demos</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Project Hero -->
+   <section class="project-hero">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="project-title">EPUB Reader Android App</h1>
+            <p class="project-subtitle">Professional Mobile Application Development</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Project Content -->
+   <section class="project-content">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="project-details">
+               <h4>📚 Project Overview</h4>
+               <p style="color: var(--reader-text-dim); line-height: 1.7;">
+                  Advanced EPUB reader Android application demonstrating expertise in mobile app development and file parsing technologies. 
+                  This project showcases the ability to create professional e-book reading applications with modern Android SDK implementation, 
+                  custom UI/UX design, and comprehensive Firebase deployment pipeline.
+               </p>
+               <ul>
+                  <li>Successfully deployed through Firebase App Distribution</li>
+                  <li>Professional EPUB file parsing and rendering engine</li>
+                  <li>Modern Android SDK implementation with best practices</li>
+                  <li>Custom reading interface with user experience optimization</li>
+                  <li>Comprehensive testing and validation pipeline</li>
+               </ul>
+            </div>
+
+            <div class="demo-section">
+               <h3 style="color: var(--reader-primary); margin-bottom: 20px;">🔗 Firebase Deployment & Releases</h3>
+               <p style="color: var(--reader-text-dim); margin-bottom: 30px;">
+                  View the EPUB reader application releases and deployment history through Firebase Console. 
+                  The application demonstrates professional mobile development practices and modern deployment pipelines.
+               </p>
+               <a href="https://epubreader.bluehawana.com" 
+                  target="_blank" class="demo-link">🚀 Launch EPUB Reader App</a>
+               <a href="../pages/contact.html" class="demo-link secondary">💬 Discuss Project</a>
+            </div>
+
+            <div class="feature-grid">
+               <div class="feature-card">
+                  <div class="feature-icon">📖</div>
+                  <h3>EPUB File Parsing</h3>
+                  <p>Advanced EPUB file parsing engine with support for various e-book formats, 
+                     metadata extraction, and content rendering optimization for mobile devices.</p>
+               </div>
+
+               <div class="feature-card">
+                  <div class="feature-icon">🎨</div>
+                  <h3>Custom Reading UI</h3>
+                  <p>Professional reading interface design with customizable themes, font settings, 
+                     and reading preferences optimized for extended reading sessions.</p>
+               </div>
+
+               <div class="feature-card">
+                  <div class="feature-icon">📱</div>
+                  <h3>Android SDK Integration</h3>
+                  <p>Modern Android SDK implementation following Google's best practices for 
+                     mobile application development and user experience guidelines.</p>
+               </div>
+
+               <div class="feature-card">
+                  <div class="feature-icon">🔥</div>
+                  <h3>Firebase Deployment</h3>
+                  <p>Professional deployment using Firebase App Distribution with comprehensive 
+                     release management and testing validation workflows.</p>
+               </div>
+
+               <div class="feature-card">
+                  <div class="feature-icon">⚡</div>
+                  <h3>Performance Optimization</h3>
+                  <p>Optimized reading performance with efficient memory management, 
+                     smooth page transitions, and responsive user interface interactions.</p>
+               </div>
+
+               <div class="feature-card">
+                  <div class="feature-icon">✅</div>
+                  <h3>Quality Assurance</h3>
+                  <p>Comprehensive testing suite with validation processes ensuring reliability 
+                     and performance standards for professional mobile applications.</p>
+               </div>
+            </div>
+
+            <div class="tech-stack">
+               <h3>🛠️ Technology Stack</h3>
+               <div class="tech-tags">
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">Java/Kotlin</span>
+                  <span class="tech-tag">EPUB Parser</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">App Distribution</span>
+                  <span class="tech-tag">Custom UI</span>
+                  <span class="tech-tag">File Processing</span>
+                  <span class="tech-tag">Testing Suite</span>
+                  <span class="tech-tag">Mobile UX</span>
+               </div>
+            </div>
+
+            <div class="project-details">
+               <h4>🎯 Key Achievements</h4>
+               <ul>
+                  <li>Successfully developed and deployed professional EPUB reader application</li>
+                  <li>Implemented advanced file parsing algorithms for e-book content</li>
+                  <li>Created custom reading interface with user experience optimization</li>
+                  <li>Established modern Firebase deployment pipeline</li>
+                  <li>Demonstrated expertise in Android SDK and mobile development</li>
+                  <li>Achieved comprehensive testing validation and quality assurance</li>
+               </ul>
+            </div>
+
+            <div style="text-align: center; margin: 60px 0;">
+               <h3 style="color: var(--reader-success); margin-bottom: 20px;">Ready to Build Your Mobile Application?</h3>
+               <p style="color: var(--reader-text-dim); margin-bottom: 30px;">
+                  Let's discuss your Android app development or mobile application needs. 
+                  I bring proven expertise in creating professional mobile applications with modern technologies.
+               </p>
+               <a href="../pages/services.html" class="demo-link">💼 View Services</a>
+               <a href="../pages/contact.html" class="demo-link secondary">📧 Get In Touch</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer style="background: var(--reader-bg); border-top: 1px solid var(--reader-border);">
+      <div class="row">
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/bluehawana" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:hongzhili01@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li style="color: var(--reader-primary);">&copy; 2025 Hongzhi (Harvad) Li</li>
+               <li style="color: var(--reader-text-dim);">Android Mobile Development Specialist</li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../js/jquery-1.10.2.min.js"></script>
+   <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="../js/jquery.flexslider.js"></script>
+   <script src="../js/waypoints.js"></script>
+   <script src="../js/jquery.fittext.js"></script>
+   <script src="../js/magnific-popup.js"></script>
+   <script src="../js/init.js"></script>
+</body>
+</html>
