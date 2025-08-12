@@ -2,37 +2,27 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>Android Auto Car Player - Professional Automotive Application | Hongzhi (Harvad) Li</title>
-   <meta name="description" content="Professional Android Auto car player application with Firebase hosting, comprehensive testing, and automotive UI/UX expertise. Live demo and testing available.">
-   <meta name="keywords" content="android auto, car player, automotive app, firebase, android development, in-vehicle entertainment, automotive ui ux">
+   <title>Android Auto Car Player - Real Development Project | Hongzhi (Harvad) Li</title>
+   <meta name="description" content="Android Auto car player application with Firebase testing deployment. Real development project showcasing automotive Android development skills.">
+   <meta name="keywords" content="android auto, car player, firebase testing, android development, automotive app development">
    <meta name="author" content="Hongzhi (Harvad) Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    
-   <!-- Open Graph meta tags -->
-   <meta property="og:title" content="Android Auto Car Player - Professional Automotive Application">
-   <meta property="og:description" content="Experience a professional Android Auto car player application with comprehensive testing and modern automotive UI/UX design.">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://autoplay.bluehawana.com">
-   <meta property="og:image" content="https://bluehawana.github.io/images/android-auto-preview.png">
-   
    <!-- CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="shortcut icon" href="https://bluehawana.github.io/favicon.png">
+   <link rel="shortcut icon" href="../favicon.png">
    
-   <!-- Automotive Landing Page Styles -->
    <style>
       :root {
-         --auto-primary: #1976d2;
-         --auto-secondary: #424242;
-         --auto-accent: #ff5722;
-         --auto-success: #4caf50;
-         --auto-warning: #ff9800;
-         --auto-bg: #0a0a0a;
-         --auto-card: #1a1a1a;
-         --auto-text: #ffffff;
-         --auto-text-dim: #cccccc;
-         --auto-border: #333333;
-         --neon-glow: 0 0 20px currentColor;
+         --primary: #1976d2;
+         --secondary: #424242;
+         --accent: #ff5722;
+         --success: #4caf50;
+         --bg: #0a0a0a;
+         --card: #1a1a1a;
+         --text: #ffffff;
+         --text-dim: #cccccc;
+         --border: #333333;
       }
 
       * {
@@ -42,11 +32,10 @@
       }
 
       body {
-         background: linear-gradient(135deg, var(--auto-bg) 0%, #1a1a2e 100%);
-         color: var(--auto-text);
+         background: linear-gradient(135deg, var(--bg) 0%, #1a1a2e 100%);
+         color: var(--text);
          font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
          line-height: 1.6;
-         overflow-x: hidden;
       }
 
       .container {
@@ -55,312 +44,128 @@
          padding: 0 20px;
       }
 
-      /* Hero Section */
       .hero {
          background: linear-gradient(45deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-         position: relative;
-         overflow: hidden;
          padding: 80px 0 60px;
          text-align: center;
-         border-bottom: 2px solid var(--auto-primary);
-      }
-
-      .hero::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="automotive-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="%231976d2" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23automotive-grid)"/></svg>');
-         opacity: 0.3;
-         animation: gridMove 20s linear infinite;
-      }
-
-      @keyframes gridMove {
-         0% { transform: translateX(0) translateY(0); }
-         100% { transform: translateX(20px) translateY(20px); }
-      }
-
-      .hero-content {
-         position: relative;
-         z-index: 2;
+         border-bottom: 2px solid var(--primary);
       }
 
       .hero h1 {
-         font-size: 3.5rem;
-         font-weight: bold;
-         color: var(--auto-primary);
-         text-shadow: var(--neon-glow);
+         font-size: 3rem;
+         color: var(--primary);
          margin-bottom: 20px;
-         animation: fadeInUp 1s ease-out;
       }
 
       .hero .subtitle {
-         font-size: 1.3rem;
-         color: var(--auto-accent);
+         font-size: 1.2rem;
+         color: var(--accent);
          margin-bottom: 30px;
-         animation: fadeInUp 1s ease-out 0.2s both;
       }
 
       .hero .description {
          font-size: 1.1rem;
-         color: var(--auto-text-dim);
+         color: var(--text-dim);
          max-width: 800px;
          margin: 0 auto 40px;
-         animation: fadeInUp 1s ease-out 0.4s both;
-      }
-
-      @keyframes fadeInUp {
-         from {
-            opacity: 0;
-            transform: translateY(30px);
-         }
-         to {
-            opacity: 1;
-            transform: translateY(0);
-         }
-      }
-
-      /* Action Buttons */
-      .hero-actions {
-         display: flex;
-         justify-content: center;
-         gap: 20px;
-         flex-wrap: wrap;
-         animation: fadeInUp 1s ease-out 0.6s both;
       }
 
       .btn {
+         display: inline-block;
          padding: 15px 30px;
+         margin: 10px;
          border-radius: 8px;
          text-decoration: none;
-         font-size: 16px;
          font-weight: bold;
          transition: all 0.3s ease;
-         display: inline-block;
-         position: relative;
-         overflow: hidden;
       }
 
       .btn-primary {
-         background: linear-gradient(45deg, var(--auto-primary), var(--auto-accent));
+         background: linear-gradient(45deg, var(--primary), var(--accent));
          color: white;
-         box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
-      }
-
-      .btn-primary:hover {
-         transform: translateY(-2px);
-         box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
       }
 
       .btn-secondary {
          background: transparent;
-         border: 2px solid var(--auto-primary);
-         color: var(--auto-primary);
+         border: 2px solid var(--primary);
+         color: var(--primary);
       }
 
-      .btn-secondary:hover {
-         background: var(--auto-primary);
-         color: white;
-         box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
-      }
-
-      /* Status Badge */
-      .status-badge {
-         display: inline-block;
-         background: rgba(76, 175, 80, 0.1);
-         color: var(--auto-success);
-         padding: 8px 16px;
-         border-radius: 20px;
-         font-size: 14px;
-         font-weight: bold;
-         border: 1px solid var(--auto-success);
-         margin-bottom: 30px;
-         animation: pulse 2s infinite;
-      }
-
-      @keyframes pulse {
-         0%, 100% { opacity: 1; }
-         50% { opacity: 0.7; }
-      }
-
-      /* Features Section */
-      .features {
-         padding: 80px 0;
-         background: var(--auto-bg);
-      }
-
-      .section-title {
-         text-align: center;
-         font-size: 2.5rem;
-         color: var(--auto-primary);
-         margin-bottom: 20px;
-         text-shadow: var(--neon-glow);
-      }
-
-      .section-subtitle {
-         text-align: center;
-         color: var(--auto-text-dim);
-         margin-bottom: 60px;
-         font-size: 1.1rem;
-      }
-
-      .features-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         gap: 30px;
-         margin-top: 40px;
-      }
-
-      .feature-card {
-         background: linear-gradient(145deg, var(--auto-card) 0%, #2a2a2a 50%, #1a1a1a 100%);
-         border: 1px solid var(--auto-border);
-         border-radius: 15px;
-         padding: 30px;
-         text-align: center;
-         transition: all 0.3s ease;
-         position: relative;
-         overflow: hidden;
-      }
-
-      .feature-card::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: -100%;
-         width: 100%;
-         height: 100%;
-         background: linear-gradient(90deg, transparent, rgba(25, 118, 210, 0.1), transparent);
-         transition: left 0.5s ease;
-      }
-
-      .feature-card:hover::before {
-         left: 100%;
-      }
-
-      .feature-card:hover {
-         border-color: var(--auto-primary);
-         box-shadow: 0 8px 25px rgba(25, 118, 210, 0.2);
-         transform: translateY(-5px);
-      }
-
-      .feature-icon {
-         width: 80px;
-         height: 80px;
-         background: linear-gradient(45deg, var(--auto-primary), var(--auto-accent));
-         border-radius: 50%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         font-size: 2rem;
-         margin: 0 auto 20px;
-         box-shadow: var(--neon-glow);
-      }
-
-      .feature-card h3 {
-         color: var(--auto-primary);
-         margin-bottom: 15px;
-         font-size: 1.3rem;
-      }
-
-      .feature-card p {
-         color: var(--auto-text-dim);
-         line-height: 1.6;
-      }
-
-      /* Tech Stack */
-      .tech-stack {
-         background: var(--auto-card);
-         padding: 60px 0;
-         border-top: 1px solid var(--auto-border);
-         border-bottom: 1px solid var(--auto-border);
-      }
-
-      .tech-tags {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 15px;
-         justify-content: center;
-         margin-top: 40px;
-      }
-
-      .tech-tag {
-         background: rgba(25, 118, 210, 0.1);
-         color: var(--auto-primary);
-         padding: 12px 24px;
-         border-radius: 25px;
-         font-size: 14px;
-         font-weight: bold;
-         border: 1px solid rgba(25, 118, 210, 0.3);
-         transition: all 0.3s ease;
-      }
-
-      .tech-tag:hover {
-         background: var(--auto-primary);
-         color: white;
+      .btn:hover {
          transform: translateY(-2px);
          box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
       }
 
-      /* Demo Section */
-      .demo-section {
-         padding: 80px 0;
-         background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      .section {
+         padding: 60px 0;
+      }
+
+      .section-title {
+         font-size: 2.5rem;
+         color: var(--primary);
          text-align: center;
+         margin-bottom: 40px;
       }
 
-      .demo-preview {
-         background: var(--auto-card);
-         border: 2px solid var(--auto-primary);
-         border-radius: 15px;
-         padding: 40px;
-         margin: 40px auto;
-         max-width: 600px;
-         box-shadow: 0 0 30px rgba(25, 118, 210, 0.2);
-      }
-
-      .demo-url {
-         font-family: 'Courier New', monospace;
-         color: var(--auto-primary);
-         font-size: 14px;
-         word-break: break-all;
-         margin-bottom: 20px;
-      }
-
-      /* Screenshots placeholder */
-      .screenshots {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-         gap: 20px;
+      .firebase-info {
+         background: var(--card);
+         border: 1px solid var(--border);
+         border-radius: 10px;
+         padding: 30px;
          margin: 40px 0;
       }
 
-      .screenshot {
-         background: var(--auto-card);
-         border: 1px solid var(--auto-border);
-         border-radius: 10px;
+      .firebase-info h3 {
+         color: var(--success);
+         margin-bottom: 20px;
+      }
+
+      .code-block {
+         background: #000;
+         border: 1px solid var(--primary);
+         border-radius: 5px;
          padding: 20px;
-         text-align: center;
-         min-height: 200px;
+         font-family: 'Courier New', monospace;
+         font-size: 14px;
+         color: var(--primary);
+         margin: 20px 0;
+         overflow-x: auto;
+      }
+
+      .real-content {
+         background: var(--card);
+         border-left: 4px solid var(--success);
+         padding: 30px;
+         margin: 40px 0;
+         border-radius: 0 10px 10px 0;
+      }
+
+      .real-content h4 {
+         color: var(--success);
+         margin-bottom: 15px;
+      }
+
+      .tech-stack {
          display: flex;
-         align-items: center;
-         justify-content: center;
-         color: var(--auto-text-dim);
-         transition: all 0.3s ease;
+         flex-wrap: wrap;
+         gap: 10px;
+         margin: 20px 0;
       }
 
-      .screenshot:hover {
-         border-color: var(--auto-primary);
-         box-shadow: 0 4px 15px rgba(25, 118, 210, 0.1);
+      .tech-tag {
+         background: rgba(25, 118, 210, 0.1);
+         color: var(--primary);
+         padding: 8px 16px;
+         border-radius: 20px;
+         font-size: 14px;
+         border: 1px solid rgba(25, 118, 210, 0.3);
       }
 
-      /* Footer */
       .footer {
-         background: var(--auto-bg);
+         background: var(--bg);
          padding: 40px 0;
          text-align: center;
-         border-top: 1px solid var(--auto-border);
+         border-top: 1px solid var(--border);
       }
 
       .footer-links {
@@ -371,44 +176,22 @@
       }
 
       .footer-links a {
-         color: var(--auto-primary);
+         color: var(--primary);
          text-decoration: none;
-         font-size: 1.1rem;
-         transition: all 0.3s ease;
+         transition: color 0.3s ease;
       }
 
       .footer-links a:hover {
-         color: var(--auto-accent);
-         text-shadow: var(--neon-glow);
+         color: var(--accent);
       }
 
-      .footer p {
-         color: var(--auto-text-dim);
-         margin-top: 20px;
-      }
-
-      /* Responsive */
       @media (max-width: 768px) {
          .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
          }
          
-         .hero .subtitle {
-            font-size: 1.1rem;
-         }
-         
-         .hero-actions {
-            flex-direction: column;
-            align-items: center;
-         }
-         
-         .btn {
-            width: 100%;
-            max-width: 300px;
-         }
-         
-         .features-grid {
-            grid-template-columns: 1fr;
+         .container {
+            padding: 0 15px;
          }
          
          .footer-links {
@@ -422,111 +205,142 @@
    <!-- Hero Section -->
    <section class="hero">
       <div class="container">
-         <div class="hero-content">
-            <div class="status-badge">● LIVE & TESTED</div>
-            <h1>🚗 Android Auto Car Player</h1>
-            <p class="subtitle">Professional Automotive Application Development</p>
-            <p class="description">
-               Experience a professionally developed Android Auto car player application featuring 
-               automotive-optimized UI/UX, comprehensive testing validation, and modern deployment 
-               practices. Built with expertise in in-vehicle entertainment systems and Android Auto standards.
-            </p>
-            <div class="hero-actions">
-               <a href="https://appdistribution.firebase.google.com/testerapps/1:1055425659261:android:5ee98a20ffff8d755c8c14/releases/0iusjipqajaj8?utm_source=firebase-console" 
-                  target="_blank" class="btn btn-primary">🚀 Test Live App</a>
-               <a href="https://bluehawana.github.io/projects/android-auto-player.html" 
-                  target="_blank" class="btn btn-secondary">📋 Technical Details</a>
-               <a href="https://bluehawana.github.io/pages/contact.html" 
-                  target="_blank" class="btn btn-secondary">💬 Contact Developer</a>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <!-- Features Section -->
-   <section class="features">
-      <div class="container">
-         <h2 class="section-title">Key Features & Capabilities</h2>
-         <p class="section-subtitle">Professional automotive application development with modern Android Auto integration</p>
-         
-         <div class="features-grid">
-            <div class="feature-card">
-               <div class="feature-icon">🎵</div>
-               <h3>Media Player Integration</h3>
-               <p>Advanced media player functionality optimized for in-vehicle use with Android Auto compatibility, supporting various audio formats and seamless playback controls.</p>
-            </div>
-
-            <div class="feature-card">
-               <div class="feature-icon">🎨</div>
-               <h3>Automotive UI/UX</h3>
-               <p>Professional automotive user interface design following Google's Android Auto design guidelines, ensuring driver safety and optimal user experience.</p>
-            </div>
-
-            <div class="feature-card">
-               <div class="feature-icon">🔊</div>
-               <h3>Voice Control</h3>
-               <p>Hands-free operation support with voice commands integration, allowing drivers to control the application safely without manual interaction.</p>
-            </div>
-
-            <div class="feature-card">
-               <div class="feature-icon">📱</div>
-               <h3>Android Auto Integration</h3>
-               <p>Native Android Auto platform integration ensuring seamless connectivity with vehicle infotainment systems and compliance with automotive standards.</p>
-            </div>
-
-            <div class="feature-card">
-               <div class="feature-icon">🔥</div>
-               <h3>Firebase Deployment</h3>
-               <p>Professional deployment using Firebase App Distribution with comprehensive testing validation and modern DevOps practices.</p>
-            </div>
-
-            <div class="feature-card">
-               <div class="feature-icon">✅</div>
-               <h3>Comprehensive Testing</h3>
-               <p>Extensive testing suite with validation passed, ensuring reliability and performance standards required for automotive applications.</p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <!-- Tech Stack Section -->
-   <section class="tech-stack">
-      <div class="container">
-         <h2 class="section-title">Technology Stack</h2>
-         <p class="section-subtitle">Built with modern automotive development technologies and best practices</p>
-         
-         <div class="tech-tags">
-            <span class="tech-tag">Android Auto</span>
-            <span class="tech-tag">Android SDK</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">App Distribution</span>
-            <span class="tech-tag">Automotive UI</span>
-            <span class="tech-tag">Media Player</span>
-            <span class="tech-tag">Voice Control</span>
-            <span class="tech-tag">Testing Suite</span>
-            <span class="tech-tag">DevOps</span>
-            <span class="tech-tag">Java/Kotlin</span>
-         </div>
-      </div>
-   </section>
-
-   <!-- Demo Section -->
-   <section class="demo-section">
-      <div class="container">
-         <h2 class="section-title">Live Demo & Testing</h2>
-         <p class="section-subtitle">Experience the application through Firebase App Distribution</p>
-         
-         <div class="demo-preview">
-            <h3 style="color: var(--auto-primary); margin-bottom: 20px;">🔗 Firebase Test Distribution</h3>
-            <div class="demo-url">
-               https://appdistribution.firebase.google.com/testerapps/1:1055425659261:android:5ee98a20ffff8d755c8c14/releases/0iusjipqajaj8
-            </div>
-            <p style="color: var(--auto-text-dim); margin-bottom: 20px;">
-               Access the live testing environment to experience the Android Auto car player application. 
-               The app has passed comprehensive validation and is ready for automotive integration.
-            </p>
+         <h1>🚗 Android Auto Car Player</h1>
+         <p class="subtitle">Real Development Project - Firebase Testing Available</p>
+         <p class="description">
+            This is a real Android Auto car player application that I developed and deployed using Firebase App Distribution. 
+            The project demonstrates hands-on Android development skills, automotive UI implementation, and modern deployment practices.
+         </p>
+         <div>
             <a href="https://appdistribution.firebase.google.com/testerapps/1:1055425659261:android:5ee98a20ffff8d755c8c14/releases/0iusjipqajaj8?utm_source=firebase-console" 
-               target="_blank" class="btn btn-primary">Launch Test App</a>
+               target="_blank" class="btn btn-primary">🚀 Test Real App on Firebase</a>
+            <a href="https://bluehawana.github.io/projects/android-auto-player.html" 
+               target="_blank" class="btn btn-secondary">📋 Technical Details</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Real Project Info -->
+   <section class="section">
+      <div class="container">
+         <h2 class="section-title">Real Development Process</h2>
+         
+         <div class="firebase-info">
+            <h3>🔥 Firebase App Distribution</h3>
+            <p>This application is actually deployed and testable through Firebase App Distribution. No fake demos or mockups - this is a real working Android application.</p>
+            
+            <div class="code-block">
+App ID: 1:1055425659261:android:5ee98a20ffff8d755c8c14
+Package: com.bluehawana.carplayer
+Platform: Android Auto Compatible
+Status: Live Testing Available
+Deployment: Firebase App Distribution
+            </div>
+            
+            <p><strong>What you can do:</strong></p>
+            <ul style="margin: 15px 0; padding-left: 20px; color: var(--text-dim);">
+               <li>Download and install the actual APK</li>
+               <li>Test the Android Auto functionality</li>
+               <li>Experience the real user interface</li>
+               <li>Verify the automotive integration</li>
+            </ul>
+         </div>
+
+         <div class="real-content">
+            <h4>🎯 What This Project Demonstrates</h4>
+            <ul style="list-style: none; padding: 0;">
+               <li style="padding: 8px 0; position: relative; padding-left: 20px;">
+                  <span style="position: absolute; left: 0; color: var(--success);">✓</span>
+                  Real Android development skills with Android Auto SDK
+               </li>
+               <li style="padding: 8px 0; position: relative; padding-left: 20px;">
+                  <span style="position: absolute; left: 0; color: var(--success);">✓</span>
+                  Firebase deployment and app distribution setup
+               </li>
+               <li style="padding: 8px 0; position: relative; padding-left: 20px;">
+                  <span style="position: absolute; left: 0; color: var(--success);">✓</span>
+                  Automotive UI/UX design following Google guidelines
+               </li>
+               <li style="padding: 8px 0; position: relative; padding-left: 20px;">
+                  <span style="position: absolute; left: 0; color: var(--success);">✓</span>
+                  Professional app testing and validation process
+               </li>
+               <li style="padding: 8px 0; position: relative; padding-left: 20px;">
+                  <span style="position: absolute; left: 0; color: var(--success);">✓</span>
+                  Modern DevOps practices for mobile applications
+               </li>
+            </ul>
+         </div>
+
+         <div class="firebase-info">
+            <h3>📱 Technology Stack Used</h3>
+            <div class="tech-stack">
+               <span class="tech-tag">Android SDK</span>
+               <span class="tech-tag">Android Auto</span>
+               <span class="tech-tag">Java/Kotlin</span>
+               <span class="tech-tag">Firebase</span>
+               <span class="tech-tag">App Distribution</span>
+               <span class="tech-tag">Automotive UI</span>
+            </div>
+            <p style="margin-top: 20px; color: var(--text-dim);">
+               This project uses real Android development tools and follows industry best practices for automotive application development.
+            </p>
+         </div>
+
+         <div class="real-content">
+            <h4>📸 Screenshots & Testing Videos</h4>
+            <p>
+               Real screenshots and testing videos from the Firebase deployment showing the actual application interface, 
+               Android Auto integration, and testing process - not mockups or fake content.
+            </p>
+            
+            <!-- Media Gallery -->
+            <div class="media-gallery" style="margin: 30px 0;">
+               <h5 style="color: var(--primary); margin-bottom: 20px;">🖼️ Firebase Console & App Screenshots</h5>
+               <div class="screenshot-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                  <div class="screenshot-item">
+                     <img src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/1.png" 
+                          alt="Firebase Console - CarPlayer App Distribution" 
+                          style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">Firebase App Distribution Console</p>
+                  </div>
+                  <div class="screenshot-item">
+                     <img src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/2.png" 
+                          alt="Android Auto Car Player Interface" 
+                          style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">Car Player App Interface</p>
+                  </div>
+                  <div class="screenshot-item">
+                     <img src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/3.png" 
+                          alt="Android Auto Integration" 
+                          style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">Android Auto Integration</p>
+                  </div>
+                  <div class="screenshot-item">
+                     <img src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/4.png" 
+                          alt="Car Player Testing" 
+                          style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">App Testing Process</p>
+                  </div>
+                  <div class="screenshot-item">
+                     <img src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/5.png" 
+                          alt="Car Player Features" 
+                          style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">App Features & UI</p>
+                  </div>
+               </div>
+               
+               <h5 style="color: var(--primary); margin: 30px 0 20px 0;">🎥 Testing & Demo Videos</h5>
+               <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 20px 0;">
+                  <div class="video-item">
+                     <video controls style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                        <source src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                     </video>
+                     <p style="text-align: center; margin-top: 10px; color: var(--text-dim); font-size: 14px;">Car Player App Demo & Testing</p>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </section>
@@ -535,16 +349,12 @@
    <footer class="footer">
       <div class="container">
          <div class="footer-links">
-            <a href="https://bluehawana.github.io" target="_blank">🏠 Portfolio</a>
-            <a href="https://bluehawana.github.io/pages/services.html" target="_blank">💼 Services</a>
-            <a href="https://bluehawana.github.io/pages/contact.html" target="_blank">📧 Contact</a>
-            <a href="https://github.com/bluehawana" target="_blank">💻 GitHub</a>
-            <a href="https://linkedin.com/in/hzl" target="_blank">🔗 LinkedIn</a>
+            <a href="https://bluehawana.github.io">🏠 Portfolio</a>
+            <a href="https://bluehawana.github.io/pages/contact.html">📧 Contact</a>
+            <a href="https://github.com/bluehawana">💻 GitHub</a>
+            <a href="https://linkedin.com/in/hzl">🔗 LinkedIn</a>
          </div>
-         <p>&copy; 2025 Hongzhi (Harvad) Li - Android Auto Development Specialist</p>
-         <p style="margin-top: 10px; color: var(--auto-primary);">
-            Professional automotive application development with modern Android technologies
-         </p>
+         <p style="color: var(--text-dim);">&copy; 2025 Hongzhi (Harvad) Li - Real Android Development Projects</p>
       </div>
    </footer>
 </body>
