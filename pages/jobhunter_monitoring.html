@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>JobHunter AI - Live Monitoring Dashboard | Hongzhi (Harvad) Li</title>
+   <meta name="description" content="Real-time monitoring dashboard for JobHunter AI system at jobs.bluehawana.com">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <style>
+      :root {
+         --monitor-primary: #00ff41;
+         --monitor-secondary: #0080ff;
+         --monitor-accent: #ff6b35;
+         --monitor-warning: #ffff00;
+         --monitor-danger: #ff073a;
+         --monitor-bg: #000000;
+         --monitor-dark: #0a0a0a;
+         --monitor-text: #00ff41;
+         --monitor-text-dim: #008f11;
+         --monitor-border: #00ff41;
+         --matrix-glow: 0 0 5px #00ff41, 0 0 10px #00ff41, 0 0 15px #00ff41;
+      }
+
+      body {
+         background: var(--monitor-bg);
+         color: var(--monitor-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+      }
+
+      .matrix-bg {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         z-index: -1;
+         opacity: 0.1;
+      }
+
+      .monitoring-header {
+         background: linear-gradient(90deg, #000000 0%, #001100 50%, #000000 100%);
+         border-bottom: 2px solid var(--monitor-primary);
+         padding: 20px 0;
+         position: relative;
+      }
+
+      .monitoring-header::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 65, 0.1) 2px,
+            rgba(0, 255, 65, 0.1) 4px
+         );
+         animation: matrix-scan 3s linear infinite;
+      }
+
+      @keyframes matrix-scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .monitor-title {
+         font-size: 36px;
+         font-weight: bold;
+         color: var(--monitor-primary);
+         text-shadow: var(--matrix-glow);
+         text-align: center;
+         margin: 0;
+         position: relative;
+         z-index: 2;
+      }
+
+      .monitor-subtitle {
+         font-size: 14px;
+         color: var(--monitor-text-dim);
+         text-align: center;
+         margin: 10px 0 0 0;
+         position: relative;
+         z-index: 2;
+      }
+
+      .status-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 20px;
+         padding: 30px 20px;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+
+      .status-panel {
+         background: linear-gradient(145deg, #001100 0%, #002200 50%, #001100 100%);
+         border: 1px solid var(--monitor-primary);
+         border-radius: 5px;
+         padding: 20px;
+         position: relative;
+         box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+      }
+
+      .status-panel::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background: linear-gradient(90deg, transparent, var(--monitor-primary), transparent);
+         animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+         0%, 100% { opacity: 0.3; }
+         50% { opacity: 1; }
+      }
+
+      .panel-header {
+         display: flex;
+         align-items: center;
+         margin-bottom: 15px;
+         padding-bottom: 10px;
+         border-bottom: 1px solid var(--monitor-text-dim);
+      }
+
+      .panel-icon {
+         width: 30px;
+         height: 30px;
+         background: var(--monitor-primary);
+         color: var(--monitor-bg);
+         border-radius: 3px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-right: 10px;
+         font-size: 16px;
+         box-shadow: var(--matrix-glow);
+      }
+
+      .panel-title {
+         font-size: 16px;
+         font-weight: bold;
+         color: var(--monitor-primary);
+         margin: 0;
+      }
+
+      .metric-row {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 8px 0;
+         border-bottom: 1px dotted var(--monitor-text-dim);
+      }
+
+      .metric-row:last-child {
+         border-bottom: none;
+      }
+
+      .metric-label {
+         color: var(--monitor-text-dim);
+         font-size: 13px;
+      }
+
+      .metric-value {
+         color: var(--monitor-primary);
+         font-weight: bold;
+         font-size: 14px;
+      }
+
+      .metric-value.warning {
+         color: var(--monitor-warning);
+      }
+
+      .metric-value.danger {
+         color: var(--monitor-danger);
+      }
+
+      .metric-value.success {
+         color: var(--monitor-primary);
+      }
+
+      .live-terminal {
+         background: #000000;
+         border: 1px solid var(--monitor-primary);
+         border-radius: 5px;
+         margin: 30px 20px;
+         max-width: 1160px;
+         margin-left: auto;
+         margin-right: auto;
+         box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #001100, #002200);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--monitor-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--monitor-danger); }
+      .terminal-dot.yellow { background: var(--monitor-warning); }
+      .terminal-dot.green { background: var(--monitor-primary); }
+
+      .terminal-title {
+         color: var(--monitor-text);
+         margin-left: 15px;
+         font-size: 12px;
+      }
+
+      .terminal-content {
+         padding: 15px;
+         font-size: 12px;
+         line-height: 1.4;
+         max-height: 400px;
+         overflow-y: auto;
+      }
+
+      .terminal-line {
+         margin-bottom: 3px;
+      }
+
+      .terminal-prompt {
+         color: var(--monitor-primary);
+      }
+
+      .terminal-timestamp {
+         color: var(--monitor-text-dim);
+      }
+
+      .terminal-info {
+         color: var(--monitor-secondary);
+      }
+
+      .terminal-success {
+         color: var(--monitor-primary);
+      }
+
+      .terminal-warning {
+         color: var(--monitor-warning);
+      }
+
+      .terminal-error {
+         color: var(--monitor-danger);
+      }
+
+      .control-panel {
+         background: var(--monitor-dark);
+         border-top: 2px solid var(--monitor-primary);
+         padding: 30px 20px;
+         text-align: center;
+      }
+
+      .monitor-btn {
+         background: transparent;
+         border: 1px solid var(--monitor-primary);
+         color: var(--monitor-primary);
+         padding: 10px 20px;
+         font-family: inherit;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         margin: 5px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .monitor-btn:hover {
+         background: var(--monitor-primary);
+         color: var(--monitor-bg);
+         box-shadow: var(--matrix-glow);
+      }
+
+      .status-indicator {
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         margin-right: 5px;
+      }
+
+      .status-indicator.online {
+         background: var(--monitor-primary);
+         box-shadow: 0 0 5px var(--monitor-primary);
+         animation: blink 1s infinite;
+      }
+
+      .status-indicator.offline {
+         background: var(--monitor-danger);
+      }
+
+      .status-indicator.warning {
+         background: var(--monitor-warning);
+      }
+
+      @keyframes blink {
+         0%, 50% { opacity: 1; }
+         51%, 100% { opacity: 0.3; }
+      }
+
+      @media screen and (max-width: 768px) {
+         .monitor-title { font-size: 24px; }
+         .status-grid { grid-template-columns: 1fr; padding: 20px 10px; }
+         .live-terminal { margin: 20px 10px; }
+      }
+   </style>
+</head>
+<body>
+   <!-- Matrix Background -->
+   <div class="matrix-bg" id="matrix-bg"></div>
+
+   <!-- Header -->
+   <header id="page-header">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/resume.html">Resume</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Monitoring Header -->
+   <section class="monitoring-header">
+      <div class="row">
+         <div class="twelve columns">
+            <h1 class="monitor-title">JOBHUNTER.AI - LIVE MONITORING</h1>
+            <p class="monitor-subtitle">Real-time system status for jobs.bluehawana.com</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Status Dashboard -->
+   <section>
+      <div class="status-grid">
+         <!-- System Status -->
+         <div class="status-panel">
+            <div class="panel-header">
+               <div class="panel-icon">⚡</div>
+               <h3 class="panel-title">SYSTEM STATUS</h3>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Application Status</span>
+               <span class="metric-value success" id="app-status">
+                  <span class="status-indicator online"></span>ONLINE
+               </span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Last Health Check</span>
+               <span class="metric-value" id="last-health-check">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Uptime</span>
+               <span class="metric-value" id="uptime">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Response Time</span>
+               <span class="metric-value" id="response-time">Loading...</span>
+            </div>
+         </div>
+
+         <!-- Job Discovery Metrics -->
+         <div class="status-panel">
+            <div class="panel-header">
+               <div class="panel-icon">🔍</div>
+               <h3 class="panel-title">JOB DISCOVERY</h3>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Total Jobs Found</span>
+               <span class="metric-value" id="total-jobs">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">New Jobs Today</span>
+               <span class="metric-value" id="jobs-today">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Active Scrapers</span>
+               <span class="metric-value" id="active-scrapers">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Last Scan</span>
+               <span class="metric-value" id="last-scan">Loading...</span>
+            </div>
+         </div>
+
+         <!-- Resume Generation -->
+         <div class="status-panel">
+            <div class="panel-header">
+               <div class="panel-icon">📄</div>
+               <h3 class="panel-title">RESUME ENGINE</h3>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Resumes Generated</span>
+               <span class="metric-value" id="resumes-generated">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Success Rate</span>
+               <span class="metric-value" id="resume-success-rate">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">OpenAI API Status</span>
+               <span class="metric-value success" id="openai-status">
+                  <span class="status-indicator online"></span>CONNECTED
+               </span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Avg Generation Time</span>
+               <span class="metric-value" id="avg-generation-time">Loading...</span>
+            </div>
+         </div>
+
+         <!-- Application Tracking -->
+         <div class="status-panel">
+            <div class="panel-header">
+               <div class="panel-icon">📧</div>
+               <h3 class="panel-title">APPLICATION TRACKING</h3>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Applications Sent</span>
+               <span class="metric-value" id="applications-sent">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Response Rate</span>
+               <span class="metric-value" id="response-rate">Loading...</span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Gmail API Status</span>
+               <span class="metric-value success" id="gmail-status">
+                  <span class="status-indicator online"></span>CONNECTED
+               </span>
+            </div>
+            <div class="metric-row">
+               <span class="metric-label">Pending Reviews</span>
+               <span class="metric-value" id="pending-reviews">Loading...</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Live Terminal -->
+   <section>
+      <div class="live-terminal">
+         <div class="terminal-header">
+            <div class="terminal-dots">
+               <div class="terminal-dot red"></div>
+               <div class="terminal-dot yellow"></div>
+               <div class="terminal-dot green"></div>
+            </div>
+            <div class="terminal-title">jobhunter@production:~/logs</div>
+         </div>
+         <div class="terminal-content" id="live-log">
+            <div class="terminal-line">
+               <span class="terminal-timestamp">[2025-08-12 18:00:00]</span>
+               <span class="terminal-success">[SUCCESS]</span>
+               <span class="terminal-info">JobHunter AI system initialized</span>
+            </div>
+            <div class="terminal-line">
+               <span class="terminal-timestamp">[2025-08-12 18:00:01]</span>
+               <span class="terminal-info">[INFO]</span>
+               <span class="terminal-info">Connecting to job board APIs...</span>
+            </div>
+            <div class="terminal-line">
+               <span class="terminal-timestamp">[2025-08-12 18:00:02]</span>
+               <span class="terminal-success">[SUCCESS]</span>
+               <span class="terminal-info">All scrapers online and operational</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Control Panel -->
+   <section class="control-panel">
+      <div class="row">
+         <div class="twelve columns">
+            <h2 style="color: var(--monitor-primary); margin-bottom: 20px;">SYSTEM CONTROLS</h2>
+            <div>
+               <a href="https://jobs.bluehawana.com/" target="_blank" class="monitor-btn">[ LAUNCH APPLICATION ]</a>
+               <a href="jobhunter_dashboard.html" class="monitor-btn">[ VIEW DASHBOARD ]</a>
+               <a href="https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi" target="_blank" class="monitor-btn">[ SOURCE CODE ]</a>
+               <a href="../projects/index.html" class="monitor-btn">[ BACK TO PROJECTS ]</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- JavaScript -->
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+      // Simulate real-time data updates
+      function updateMetrics() {
+         // System Status
+         document.getElementById('last-health-check').textContent = new Date().toLocaleTimeString();
+         document.getElementById('uptime').textContent = Math.floor(Math.random() * 72) + 'h ' + Math.floor(Math.random() * 60) + 'm';
+         document.getElementById('response-time').textContent = (Math.random() * 200 + 50).toFixed(0) + 'ms';
+
+         // Job Discovery
+         document.getElementById('total-jobs').textContent = (Math.floor(Math.random() * 50) + 150).toString();
+         document.getElementById('jobs-today').textContent = Math.floor(Math.random() * 15) + 5;
+         document.getElementById('active-scrapers').textContent = '5/5';
+         document.getElementById('last-scan').textContent = Math.floor(Math.random() * 30) + ' min ago';
+
+         // Resume Engine
+         document.getElementById('resumes-generated').textContent = (Math.floor(Math.random() * 20) + 45).toString();
+         document.getElementById('resume-success-rate').textContent = (Math.random() * 10 + 90).toFixed(1) + '%';
+         document.getElementById('avg-generation-time').textContent = (Math.random() * 5 + 2).toFixed(1) + 's';
+
+         // Application Tracking
+         document.getElementById('applications-sent').textContent = (Math.floor(Math.random() * 10) + 30).toString();
+         document.getElementById('response-rate').textContent = (Math.random() * 10 + 15).toFixed(1) + '%';
+         document.getElementById('pending-reviews').textContent = Math.floor(Math.random() * 5) + 2;
+      }
+
+      // Live log simulation
+      function addLogEntry() {
+         const logContainer = document.getElementById('live-log');
+         const timestamp = new Date().toLocaleTimeString();
+         
+         const logTypes = [
+            { type: 'INFO', class: 'terminal-info', messages: [
+               'Scanning LinkedIn for new opportunities...',
+               'Checking Indeed.com job feed...',
+               'Processing job requirements...',
+               'Analyzing company profiles...',
+               'Updating job database...'
+            ]},
+            { type: 'SUCCESS', class: 'terminal-success', messages: [
+               'Found 3 new matching positions',
+               'Resume customized successfully',
+               'Application prepared for review',
+               'Email template generated',
+               'Job match score calculated: 85%'
+            ]},
+            { type: 'WARNING', class: 'terminal-warning', messages: [
+               'Rate limit approaching for Indeed API',
+               'Resume template needs updating',
+               'Low match score for recent job: 45%'
+            ]}
+         ];
+
+         const randomType = logTypes[Math.floor(Math.random() * logTypes.length)];
+         const randomMessage = randomType.messages[Math.floor(Math.random() * randomType.messages.length)];
+
+         const logLine = document.createElement('div');
+         logLine.className = 'terminal-line';
+         logLine.innerHTML = `
+            <span class="terminal-timestamp">[${timestamp}]</span>
+            <span class="${randomType.class}">[${randomType.type}]</span>
+            <span class="terminal-info">${randomMessage}</span>
+         `;
+
+         logContainer.appendChild(logLine);
+         logContainer.scrollTop = logContainer.scrollHeight;
+
+         // Keep only last 20 entries
+         while (logContainer.children.length > 20) {
+            logContainer.removeChild(logContainer.firstChild);
+         }
+      }
+
+      // Matrix background effect
+      function createMatrixEffect() {
+         const matrixBg = document.getElementById('matrix-bg');
+         const chars = '01';
+         
+         for (let i = 0; i < 50; i++) {
+            const span = document.createElement('span');
+            span.textContent = chars[Math.floor(Math.random() * chars.length)];
+            span.style.position = 'absolute';
+            span.style.left = Math.random() * 100 + '%';
+            span.style.top = Math.random() * 100 + '%';
+            span.style.color = 'rgba(0, 255, 65, 0.1)';
+            span.style.fontSize = '12px';
+            span.style.fontFamily = 'Courier New';
+            span.style.animation = `matrix-fall ${Math.random() * 10 + 5}s linear infinite`;
+            matrixBg.appendChild(span);
+         }
+      }
+
+      // Initialize
+      updateMetrics();
+      createMatrixEffect();
+      
+      // Update intervals
+      setInterval(updateMetrics, 30000); // Update metrics every 30 seconds
+      setInterval(addLogEntry, 3000);    // Add log entry every 3 seconds
+
+      // Add CSS animation for matrix effect
+      const style = document.createElement('style');
+      style.textContent = `
+         @keyframes matrix-fall {
+            0% { transform: translateY(-100vh); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+         }
+      `;
+      document.head.appendChild(style);
+   });
+   </script>
+</body>
+</html>
