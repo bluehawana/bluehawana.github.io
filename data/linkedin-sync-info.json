@@ -1,1 +1,14 @@
-{"lastManualSync":"2025-07-21T19:52:24+02:00","automationEnabled":true,"syncInterval":"30 minutes"}
+{
+  "lastManualSync": "2025-08-22T08:17:03.992Z",
+  "lastSuccessfulSync": "2025-08-22T08:17:03.993Z",
+  "automationEnabled": true,
+  "syncInterval": "manual_activity_id_based",
+  "tokenStatus": "activity_id_method",
+  "apiVersion": "activity_id_sync",
+  "postsCount": 1,
+  "activityIds": [
+    "7364309907770126337"
+  ],
+  "lastActivityId": "7364309907770126337",
+  "method": "manual_activity_id_sync"
+}

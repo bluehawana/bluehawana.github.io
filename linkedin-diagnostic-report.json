@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-08-22T08:03:54.529Z",
+  "projectDir": "/Users/bluehawana/IdeaProjects/bluehawana.github.io",
+  "configFiles": {
+    "linkedinConfig": true,
+    "netlifyToml": true
+  },
+  "dataFiles": {
+    "syncInfo": true,
+    "posts": true
+  },
+  "lastSync": "2025-07-21T19:52:24+02:00",
+  "postCount": 6
+}

@@ -1,82 +1,26 @@
 [
   {
-    "content": "🎯 Oracle Cloud Free Certification Challenge! 🚀 Great opportunity for cloud enthusiasts and professionals looking to validate their Oracle Cloud Infrastructure skills. Oracle is offering free certification vouchers for a limited time - perfect for expanding your cloud expertise portfolio. Whether you're working with compute, networking, storage, or database services, these certifications can significantly boost your career prospects. Don't miss this chance to get certified in one of the leading cloud platforms! #OracleCloud #CloudCertification #FreeCertification #TechCareer #CloudComputing",
-    "date": "2025-01-24",
-    "url": "https://www.linkedin.com/in/hzl",
-    "activityId": null,
+    "id": "linkedin-7364309907770126337",
+    "title": "Latest Project Update",
+    "text": "Excited to share my latest work on Android Auto development! 🚗📱 \n\nJust completed a comprehensive CarPlayer IPTV application with advanced features:\n• Smart network optimization for cellular hotspots\n• Hybrid media engine (ExoPlayer + VLC fallback)  \n• Android Auto native integration\n• Professional automotive UI/UX\n\nThe app is now live on Firebase App Distribution for testing. Building the future of in-vehicle entertainment with modern Android technologies!\n\n#AndroidAuto #AndroidDevelopment #IPTV #CarTech #Firebase #MobileDevelopment",
+    "publishedAt": "2025-08-22T07:30:00.000Z",
+    "url": "https://www.linkedin.com/posts/activity-7364309907770126337",
+    "linkedinUrl": "https://www.linkedin.com/posts/activity-7364309907770126337",
+    "platform": "linkedin",
+    "type": "project_showcase",
     "tags": [
-      "OracleCloud",
-      "CloudCertification",
-      "FreeCertification",
-      "TechCareer",
-      "CloudComputing",
-      "ProfessionalDevelopment"
-    ]
-  },
-  {
-    "content": "Why kids need to learn mathematics good - it's not just about numbers, it's about developing critical thinking skills, problem-solving abilities, and logical reasoning that will serve them throughout their lives. Math teaches patience, persistence, and the value of precision. These fundamentals build confidence and open doors to countless career opportunities in our increasingly digital world.",
-    "date": "2025-07-21",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7353057722931511296/",
-    "activityId": "7353057722931511296",
-    "tags": [
-      "Education",
-      "Mathematics",
-      "CriticalThinking",
-      "KidsLearning",
-      "STEM"
-    ]
-  },
-  {
-    "content": "🔧 Testing the LinkedIn sync system after security fixes. The automated post syncing is working great with proper credential management!",
-    "date": "2025-07-21",
-    "url": "https://www.linkedin.com/in/hzl",
-    "activityId": null,
-    "tags": [
-      "Testing",
-      "DevOps",
-      "Security"
-    ]
-  },
-  {
-    "content": "🖥️ Tech Review: Twelve South Curve12-1708 Laptop Stand ⭐ After extensive use, I'm impressed by the craftsmanship, color matching, quality, and packaging of this black aluminum laptop stand. For anyone working long hours on laptops, this investment helps protect your neck, provides a better outdoor working angle, and improves your overall workspace ergonomics. I highly recommend the one-piece version for better stability. Worth every penny for your health and productivity! 💪",
-    "date": "2025-07-21",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7352940417656467456/",
-    "activityId": "7352940417656467456",
-    "tags": [
-      "TechReview",
-      "ProductRecommendation",
-      "WorkspaceErgonomics",
-      "LaptopStand",
-      "TwelveSouth",
-      "Productivity",
-      "HealthTech"
-    ]
-  },
-  {
-    "content": "🚀 Excited to share my website transformation journey! What started as a simple resume has evolved into a full-fledged tech website at www.bluehawana.com with customized logo, updated resume, LinkedIn blogs integration, GitHub projects showcase, contact form, and automatic JavaScript syncing. The most rewarding part? Setting up LinkedIn Developer API integration for seamless post synchronization. Unexpected bonus: analytics showing visitors from USA, Ireland, and Australia! 🌍",
-    "date": "2025-07-20",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7352317553118965763/",
-    "activityId": "7352317553118965763",
-    "tags": [
-      "WebsiteAnalytics",
-      "PersonalBlog",
-      "GitHubProjects",
-      "LinkedInAPI",
-      "TechWebsite",
-      "DeveloperTips"
-    ]
-  },
-  {
-    "content": "🌞 Summer Vacation Gift for AI Coding Enthusiasts & Skeptics 💻 As we enjoy our well-deserved vacations, let's take a moment to reflect on AI's role in coding. Although some still view AI code as a disruptive force and cling to traditional methods, we must remember the valuable lesson from Nokia's engineers who held onto Symbian and eventually lost their edge. Here's how to get started with Claude Code: 1. Install Claude Code globally: npm install -g @anthropic-ai/claude-code 2. Get 60 USD in credits from anyrouter.top 3. Navigate to your project and run: claude. I was able to develop my TaxiCarPooling project with ReactNative, Springboot, MySQL in just half a day using Claude Code, all for only 7.4 USD credits! Happy coding & Happy Summer! 🚀",
-    "date": "2025-07-20",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7350531400724340736/",
-    "activityId": "7350531400724340736",
-    "tags": [
-      "AICoding",
-      "ClaudeCode",
-      "SummerOfCode",
-      "CodingTips",
-      "CodeWithAI"
-    ]
+      "android-auto",
+      "android-development",
+      "iptv",
+      "car-tech",
+      "firebase",
+      "mobile-development"
+    ],
+    "activityId": "7364309907770126337",
+    "author": {
+      "name": "Hongzhi (Harvad) Li",
+      "profileUrl": "https://linkedin.com/in/hzl"
+    },
+    "source": "activity_id_sync"
   }
 ]
