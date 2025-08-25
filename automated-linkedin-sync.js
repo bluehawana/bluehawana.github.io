@@ -17,7 +17,7 @@ const path = require('path');
 
 // Configuration
 const CONFIG = {
-  SCRAPINGDOG_API_KEY: process.env.SCRAPINGDOG_API_KEY || '68ac0adb282d10b8936bc5a5',
+  SCRAPINGDOG_API_KEY: process.env.SCRAPINGDOG_API_KEY,
   PROFILE_ID: 'hzl',
   LINKEDIN_API_URL: 'https://api.scrapingdog.com/linkedin',
   MAX_POSTS_TO_SYNC: 10, // Limit to avoid quota issues
@@ -312,6 +312,13 @@ function generateSyncReport(newPosts, totalPosts, profile) {
 
 async function main() {
   log('Starting automated LinkedIn sync for Harvad Li', 'INFO');
+  
+  // Check API key is available
+  if (!CONFIG.SCRAPINGDOG_API_KEY) {
+    log('ERROR: SCRAPINGDOG_API_KEY environment variable is required', 'ERROR');
+    log('Please set: export SCRAPINGDOG_API_KEY="your_api_key_here"', 'ERROR');
+    return { success: false, error: 'Missing API key' };
+  }
   
   try {
     // Step 1: Fetch current LinkedIn profile
