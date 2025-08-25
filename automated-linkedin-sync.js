@@ -15,6 +15,29 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+// Load environment variables from .env files
+function loadEnvFile(filepath) {
+  if (fs.existsSync(filepath)) {
+    const envContent = fs.readFileSync(filepath, 'utf8');
+    const lines = envContent.split('\n');
+    
+    lines.forEach(line => {
+      line = line.trim();
+      if (line && !line.startsWith('#')) {
+        const [key, ...valueParts] = line.split('=');
+        const value = valueParts.join('=').replace(/^["'](.*)["']$/, '$1');
+        if (key && value && !process.env[key]) {
+          process.env[key] = value;
+        }
+      }
+    });
+  }
+}
+
+// Load .env files in order (later files override earlier ones)
+loadEnvFile(path.join(__dirname, '.env'));
+loadEnvFile(path.join(__dirname, '.env.local'));
+
 // Configuration
 const CONFIG = {
   SCRAPINGDOG_API_KEY: process.env.SCRAPINGDOG_API_KEY,
