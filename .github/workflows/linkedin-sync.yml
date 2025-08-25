@@ -1,0 +1,160 @@
+name: Automated LinkedIn Post Sync
+
+on:
+  schedule:
+    # Run every 30 minutes (as requested)
+    - cron: '*/30 * * * *'
+    # Run every 2 hours (balanced approach - uncomment if needed)
+    # - cron: '0 */2 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    branches: [ main ]
+    paths: 
+      - 'automated-linkedin-sync.js'
+      - '.github/workflows/linkedin-sync.yml'
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  sync-linkedin-posts:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm ci --only=production 2>/dev/null || npm install --only=production 2>/dev/null || echo "No package.json found, using built-in Node.js modules"
+
+    - name: Create directories
+      run: |
+        mkdir -p _posts
+        mkdir -p _data
+        mkdir -p logs
+
+    - name: Run LinkedIn Sync
+      env:
+        # Enable mock mode if no real API keys are available
+        LINKEDIN_MOCK_MODE: ${{ (secrets.BRIGHT_DATA_API_KEY == '' && secrets.SCRAPINGDOG_API_KEY == '' && secrets.SCRAPIN_API_KEY == '' && secrets.APIFY_API_TOKEN == '' && secrets.PROXYCURL_API_KEY == '') || 'true' }}
+        
+        # Third-party API keys (set these in GitHub repository secrets)
+        PROXYCURL_API_KEY: ${{ secrets.PROXYCURL_API_KEY }}
+        BRIGHT_DATA_API_KEY: ${{ secrets.BRIGHT_DATA_API_KEY }}
+        SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
+        SCRAPIN_API_KEY: ${{ secrets.SCRAPIN_API_KEY }}
+        APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        PHANTOMBUSTER_API_KEY: ${{ secrets.PHANTOMBUSTER_API_KEY }}
+        
+        # LinkedIn OAuth tokens (optional, for profile sync)
+        LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+        LINKEDIN_REFRESH_TOKEN: ${{ secrets.LINKEDIN_REFRESH_TOKEN }}
+        LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+        LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+      run: |
+        echo "🚀 Starting automated LinkedIn post sync..."
+        node automated-linkedin-sync.js sync
+
+    - name: Check for new posts
+      id: check_changes
+      run: |
+        if git diff --quiet HEAD -- _posts/; then
+          echo "new_posts=false" >> $GITHUB_OUTPUT
+          echo "📭 No new posts to commit"
+        else
+          echo "new_posts=true" >> $GITHUB_OUTPUT
+          echo "✅ New posts found!"
+          git status --porcelain _posts/
+        fi
+
+    - name: Commit and push new posts
+      if: steps.check_changes.outputs.new_posts == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "LinkedIn Sync Bot"
+        
+        # Add only the new blog posts and data files
+        git add _posts/ _data/ sync.log
+        
+        # Count new posts
+        NEW_POSTS_COUNT=$(git diff --cached --name-only _posts/ | wc -l)
+        
+        # Create commit message
+        git commit -m "🔗 Automated LinkedIn sync: ${NEW_POSTS_COUNT} new posts
+
+        $(git diff --cached --name-only _posts/ | sed 's/^/- /')
+        
+        🤖 Synced automatically by GitHub Actions
+        📅 $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+
+    - name: Push changes
+      if: steps.check_changes.outputs.new_posts == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+
+    - name: Create deployment (trigger Jekyll build)
+      if: steps.check_changes.outputs.new_posts == 'true'
+      run: |
+        echo "🚀 New posts committed. Jekyll will rebuild the site automatically."
+
+    - name: Upload sync logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: linkedin-sync-logs-${{ github.run_id }}
+        path: |
+          sync.log
+          _data/linkedin-posts.json
+        retention-days: 30
+
+    - name: Notify on failure
+      if: failure()
+      run: |
+        echo "❌ LinkedIn sync failed! Check the logs for details."
+        echo "This could be due to:"
+        echo "1. Missing or invalid API keys"
+        echo "2. Rate limiting from LinkedIn or third-party APIs"
+        echo "3. Network connectivity issues"
+        echo "4. Changes in API endpoints"
+        
+        # Send basic error notification (you can enhance this)
+        curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+          -H 'Content-type: application/json' \
+          --data '{"text":"🚨 LinkedIn sync failed in GitHub Actions. Check the workflow logs."}' \
+          2>/dev/null || echo "Slack notification failed (webhook not configured)"
+
+    - name: Cleanup old logs
+      run: |
+        # Keep only the last 10 sync logs
+        ls -t sync.log* 2>/dev/null | tail -n +11 | xargs rm -f 2>/dev/null || true
+        
+        # Clean up any temporary files
+        rm -f *.tmp 2>/dev/null || true
+
+  # Optional: Send success notification
+  notify-success:
+    needs: sync-linkedin-posts
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+    - name: Send success notification
+      run: |
+        echo "✅ LinkedIn sync completed successfully!"
+        
+        # Optional: Send to Slack, Discord, etc.
+        curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+          -H 'Content-type: application/json' \
+          --data '{"text":"✅ LinkedIn posts synced successfully to blog!"}' \
+          2>/dev/null || echo "Success notification sent (or webhook not configured)"

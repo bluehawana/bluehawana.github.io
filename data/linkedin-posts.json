@@ -1,26 +1,26 @@
 [
   {
-    "id": "linkedin-7364309907770126337",
-    "title": "Latest Project Update",
-    "text": "Excited to share my latest work on Android Auto development! 🚗📱 \n\nJust completed a comprehensive CarPlayer IPTV application with advanced features:\n• Smart network optimization for cellular hotspots\n• Hybrid media engine (ExoPlayer + VLC fallback)  \n• Android Auto native integration\n• Professional automotive UI/UX\n\nThe app is now live on Firebase App Distribution for testing. Building the future of in-vehicle entertainment with modern Android technologies!\n\n#AndroidAuto #AndroidDevelopment #IPTV #CarTech #Firebase #MobileDevelopment",
-    "publishedAt": "2025-08-22T07:30:00.000Z",
-    "url": "https://www.linkedin.com/posts/activity-7364309907770126337",
-    "linkedinUrl": "https://www.linkedin.com/posts/activity-7364309907770126337",
-    "platform": "linkedin",
-    "type": "project_showcase",
-    "tags": [
-      "android-auto",
-      "android-development",
-      "iptv",
-      "car-tech",
-      "firebase",
-      "mobile-development"
-    ],
-    "activityId": "7364309907770126337",
-    "author": {
-      "name": "Hongzhi (Harvad) Li",
-      "profileUrl": "https://linkedin.com/in/hzl"
-    },
-    "source": "activity_id_sync"
+    "id": "activity-1756115243771-4",
+    "content": "We receive these kinds of \"Hi, #firstname\", “Dear #applicants”and “Hello #candidates”emails almost every day. Dear #senders, before you figure out…",
+    "url": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
+    "tags": [],
+    "publishedAt": "2025-08-25T09:47:23.771Z",
+    "activityId": "1756115243771"
+  },
+  {
+    "id": "activity-1756115243771-8",
+    "content": "The hardest thing in the world is to build #TRUST. Once you have that, almost everything else can be solved smoothly. So, here's a quick question:…",
+    "url": "https://www.linkedin.com/posts/hzl_trust-trust-trustworthiness-activity-7363162496699973632-Hsk6",
+    "tags": [],
+    "publishedAt": "2025-08-25T09:47:23.771Z",
+    "activityId": "1756115243771"
+  },
+  {
+    "id": "article-1756115243771-0",
+    "content": "Unlocking Responsive UI with MediatR in .NET Core Applications:The Imperative of a Superior User Experience",
+    "url": "https://www.linkedin.com/pulse/unlocking-responsive-ui-mediatr-net-core-imperative-superior-li-bplmf",
+    "tags": [],
+    "publishedAt": "2025-08-25T09:47:23.771Z",
+    "activityId": "article"
   }
 ]
