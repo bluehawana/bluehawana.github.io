@@ -31,6 +31,42 @@ function convertToDirectLinkedInURL(url, postContent = '', postData = null) {
 }
 
 /**
+ * Format markdown content to HTML
+ */
+function formatMarkdownContent(content) {
+    if (!content) return '';
+    
+    return content
+        // Headers
+        .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+        .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+        .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+        // Bold
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        // Italic
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        // Lists
+        .replace(/^- (.*$)/gm, '<li>$1</li>')
+        // Code blocks
+        .replace(/```[\s\S]*?```/g, (match) => {
+            const code = match.replace(/```/g, '').trim();
+            return `<pre><code>${code}</code></pre>`;
+        })
+        // Inline code
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        // Line breaks
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/\n/g, '<br>')
+        // Wrap in paragraphs
+        .replace(/^(?!<[h1-6]|<li|<pre|<code)(.+)$/gm, '<p>$1</p>')
+        // Clean up empty paragraphs
+        .replace(/<p><\/p>/g, '')
+        .replace(/<p><br><\/p>/g, '')
+        // Wrap lists
+        .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+}
+
+/**
  * Fetch latest LinkedIn posts from data file
  */
 async function fetchLinkedInPosts() {
@@ -61,8 +97,11 @@ async function fetchLinkedInPosts() {
                 const postUrl = convertToDirectLinkedInURL(post.url, post.content, post);
                 const linkText = postUrl.includes('/in/hzl') ? 'View LinkedIn Profile' : 'View Original Post';
                 
+                // Convert markdown to HTML for better display
+                const formattedContent = formatMarkdownContent(post.content);
+                
                 postElement.innerHTML = `
-                    <div class="post-content">${post.content}</div>
+                    <div class="post-content">${formattedContent}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
                         <a href="${postUrl}" target="_blank" class="source-link">
