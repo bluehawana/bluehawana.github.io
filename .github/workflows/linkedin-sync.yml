@@ -1,9 +1,9 @@
 name: Automated LinkedIn Post Sync
 
 on:
-  schedule:
-    # Run every 30 minutes (as requested)
-    - cron: '*/30 * * * *'
+  # schedule:
+    # Run every 30 minutes (as requested) - DISABLED
+    # - cron: '*/30 * * * *'
     # Run every 2 hours (balanced approach - uncomment if needed)
     # - cron: '0 */2 * * *'
   workflow_dispatch: # Allow manual triggering
