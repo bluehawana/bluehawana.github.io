@@ -35,7 +35,9 @@ function convertToDirectLinkedInURL(url, postContent = '', postData = null) {
  */
 async function fetchLinkedInPosts() {
     try {
-        const response = await fetch('/data/linkedin-posts.json');
+        // Add cache busting parameter
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`/data/linkedin-posts.json?v=${cacheBuster}`);
         const posts = await response.json();
         
         if (!response.ok) {
