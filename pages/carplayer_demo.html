@@ -661,7 +661,7 @@
    </div>
 
    <script>
-      // Demo streaming channels (using public streams for demo)
+      // Live IPTV streaming channels from our M3U playlist
       const demoStreams = {
          'demo1': 'https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8',
          'demo2': 'https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8',
@@ -674,6 +674,126 @@
       let isPlaying = false;
       let currentChannelIndex = 0;
       const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5'];
+      let videoPlayer = null;
+
+      // Load HLS stream function
+      function loadStream(streamUrl, channelName) {
+         console.log(`Loading stream: ${streamUrl} for ${channelName}`);
+         
+         const videoContainer = document.querySelector('.video-container');
+         const placeholder = document.getElementById('video-placeholder');
+         const player = document.getElementById('video-player');
+         
+         // Show loading state
+         placeholder.innerHTML = `
+            <div>📡 Loading ${channelName}...</div>
+            <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
+               Connecting to live stream...
+            </div>
+         `;
+         placeholder.style.display = 'flex';
+         player.style.display = 'none';
+         
+         // Try to load the stream
+         if (player.canPlayType('application/vnd.apple.mpegurl') || streamUrl.includes('.m3u8')) {
+            // Native HLS support or M3U8 playlist
+            player.src = streamUrl;
+            
+            // Setup event listeners
+            player.onloadstart = () => {
+               console.log('Stream loading started');
+               placeholder.innerHTML = `
+                  <div>🔄 Buffering ${channelName}...</div>
+                  <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-text-dim);">
+                     Please wait while we connect to the live stream
+                  </div>
+               `;
+            };
+            
+            player.oncanplay = () => {
+               console.log('Stream ready to play');
+               placeholder.style.display = 'none';
+               player.style.display = 'block';
+               
+               // Auto-play with error handling
+               const playPromise = player.play();
+               if (playPromise !== undefined) {
+                  playPromise.then(() => {
+                     console.log('Stream playing successfully');
+                     isPlaying = true;
+                     document.getElementById('play-pause-btn').textContent = '⏸';
+                  }).catch(error => {
+                     console.error('Autoplay failed:', error);
+                     placeholder.innerHTML = `
+                        <div>▶️ ${channelName} Ready</div>
+                        <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-accent);">
+                           Click play button to start streaming
+                        </div>
+                     `;
+                     placeholder.style.display = 'flex';
+                     player.style.display = 'none';
+                  });
+               }
+            };
+            
+            player.onerror = (e) => {
+               console.error('Stream error:', e);
+               let errorMessage = 'Stream temporarily unavailable';
+               if (player.error) {
+                  switch(player.error.code) {
+                     case player.error.MEDIA_ERR_ABORTED:
+                        errorMessage = 'Stream aborted by user';
+                        break;
+                     case player.error.MEDIA_ERR_NETWORK:
+                        errorMessage = 'Network error occurred';
+                        break;
+                     case player.error.MEDIA_ERR_DECODE:
+                        errorMessage = 'Stream decode error';
+                        break;
+                     case player.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                        errorMessage = 'Stream format not supported';
+                        break;
+                  }
+               }
+               
+               placeholder.innerHTML = `
+                  <div>❌ ${channelName}</div>
+                  <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-danger);">
+                     ${errorMessage}
+                  </div>
+                  <div style="font-size: 12px; margin-top: 10px; color: var(--cyber-text-dim);">
+                     <button onclick="loadStream('${streamUrl}', '${channelName}')" 
+                             style="background: var(--cyber-primary); color: black; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+                        🔄 Retry
+                     </button>
+                  </div>
+               `;
+               placeholder.style.display = 'flex';
+               player.style.display = 'none';
+            };
+            
+            player.onloadeddata = () => {
+               console.log('Stream data loaded');
+            };
+            
+         } else {
+            // Fallback for unsupported streams
+            placeholder.innerHTML = `
+               <div>⚠️ ${channelName}</div>
+               <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-warning);">
+                  HLS streaming not supported in this browser
+               </div>
+               <div style="font-size: 12px; margin-top: 10px; color: var(--cyber-text-dim);">
+                  <a href="${streamUrl}" target="_blank" 
+                     style="color: var(--cyber-primary); text-decoration: underline;">
+                     Open in external player
+                  </a>
+               </div>
+            `;
+         }
+         
+         videoPlayer = player;
+      }
 
       // Network simulation
       function simulateNetworkDetection() {
@@ -703,39 +823,61 @@
             currentChannel = channelId;
             currentChannelIndex = channels.indexOf(channelId);
             
-            // Update video placeholder
+            // Load actual video stream
             const channelName = this.querySelector('h4').textContent;
-            document.getElementById('video-placeholder').innerHTML = `
-               <div>📺 Loading ${channelName}...</div>
-               <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
-                  Stream URL: ${demoStreams[channelId] ? 'Connected' : 'Demo Mode'}
-               </div>
-            `;
+            const streamUrl = demoStreams[channelId];
             
-            // Simulate loading
-            setTimeout(() => {
+            if (streamUrl) {
+               loadStream(streamUrl, channelName);
+            } else {
                document.getElementById('video-placeholder').innerHTML = `
-                  <div>🎬 Now Playing: ${channelName}</div>
-                  <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-accent);">
-                     ▶ Stream Active • Android Auto Compatible
+                  <div>❌ Stream not available</div>
+                  <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
+                     ${channelName} • Demo Mode
                   </div>
                `;
-               isPlaying = true;
-               document.getElementById('play-pause-btn').textContent = '⏸';
-            }, 1500);
+            }
          });
       });
 
       // Player controls
       document.getElementById('play-pause-btn').addEventListener('click', function() {
-         isPlaying = !isPlaying;
-         this.textContent = isPlaying ? '⏸' : '▶';
-         
-         const placeholder = document.getElementById('video-placeholder');
-         if (isPlaying) {
-            placeholder.innerHTML = placeholder.innerHTML.replace('⏸ Stream Paused', '▶ Stream Active');
+         if (videoPlayer && videoPlayer.src) {
+            if (videoPlayer.paused) {
+               const playPromise = videoPlayer.play();
+               if (playPromise !== undefined) {
+                  playPromise.then(() => {
+                     isPlaying = true;
+                     this.textContent = '⏸';
+                     console.log('Playback started');
+                  }).catch(error => {
+                     console.error('Play failed:', error);
+                  });
+               }
+            } else {
+               videoPlayer.pause();
+               isPlaying = false;
+               this.textContent = '▶';
+               console.log('Playback paused');
+            }
          } else {
-            placeholder.innerHTML = placeholder.innerHTML.replace('▶ Stream Active', '⏸ Stream Paused');
+            // Fallback for when no stream is loaded
+            isPlaying = !isPlaying;
+            this.textContent = isPlaying ? '⏸' : '▶';
+            
+            const placeholder = document.getElementById('video-placeholder');
+            if (placeholder.innerHTML.includes('Ready') && isPlaying) {
+               // Try to reload current channel
+               const activeChannel = document.querySelector('.channel-item.active');
+               if (activeChannel) {
+                  const channelId = activeChannel.dataset.channel;
+                  const channelName = activeChannel.querySelector('h4').textContent;
+                  const streamUrl = demoStreams[channelId];
+                  if (streamUrl) {
+                     loadStream(streamUrl, channelName);
+                  }
+               }
+            }
          }
       });
 
@@ -754,12 +896,36 @@
       const volumeDisplay = document.getElementById('volume-display');
       
       volumeSlider.addEventListener('input', function() {
+         const volume = this.value / 100;
          volumeDisplay.textContent = this.value + '%';
+         
+         if (videoPlayer) {
+            videoPlayer.volume = volume;
+            if (volume === 0) {
+               videoPlayer.muted = true;
+            } else {
+               videoPlayer.muted = false;
+            }
+         }
       });
 
-      // Fullscreen simulation
+      // Fullscreen functionality
       document.getElementById('fullscreen-btn').addEventListener('click', function() {
-         alert('🚗 Android Auto Fullscreen Mode\n\nThis would enable fullscreen mode on your car display.');
+         if (videoPlayer && videoPlayer.src && !videoPlayer.paused) {
+            if (videoPlayer.requestFullscreen) {
+               videoPlayer.requestFullscreen();
+            } else if (videoPlayer.webkitRequestFullscreen) {
+               videoPlayer.webkitRequestFullscreen();
+            } else if (videoPlayer.mozRequestFullScreen) {
+               videoPlayer.mozRequestFullScreen();
+            } else if (videoPlayer.msRequestFullscreen) {
+               videoPlayer.msRequestFullscreen();
+            } else {
+               alert('🚗 Fullscreen Mode\n\nFullscreen is not supported in this browser.');
+            }
+         } else {
+            alert('🚗 Android Auto Fullscreen Mode\n\nStart playing a stream first to enable fullscreen mode.');
+         }
       });
 
       // R2 Storage Base URL
@@ -1120,6 +1286,13 @@
       setTimeout(() => {
          document.querySelector('.channel-item').click();
       }, 1000);
+      
+      // Set initial volume
+      const player = document.getElementById('video-player');
+      if (player) {
+         player.volume = 0.5; // 50%
+         player.muted = false;
+      }
    </script>
 </body>
 </html>
