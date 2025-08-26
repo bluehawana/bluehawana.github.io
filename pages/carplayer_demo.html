@@ -79,6 +79,7 @@
          border-right: 2px solid var(--cyber-border);
          overflow-y: auto;
          padding: 20px;
+         max-height: calc(100vh - 120px);
       }
 
       .channel-item {
@@ -461,38 +462,101 @@
       <div class="main-screen">
          <div class="channel-list">
             <div class="channel-item active" data-channel="demo1">
-               <div class="channel-logo">CNN</div>
+               <div class="channel-logo">BBC</div>
                <div class="channel-info">
-                  <h4>CNN International</h4>
-                  <p>News • HD</p>
+                  <h4>BBC World News</h4>
+                  <p>World News • HD</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo2">
-               <div class="channel-logo">AJE</div>
+               <div class="channel-logo">CNN</div>
                <div class="channel-info">
-                  <h4>Al Jazeera English</h4>
-                  <p>News • HD</p>
+                  <h4>CNN International</h4>
+                  <p>World News • HD</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo3">
-               <div class="channel-logo">ESPN</div>
+               <div class="channel-logo">GB</div>
                <div class="channel-info">
-                  <h4>ESPN Sports</h4>
-                  <p>Sports • HD</p>
+                  <h4>GB News</h4>
+                  <p>UK News • HD</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo4">
-               <div class="channel-logo">MTV</div>
+               <div class="channel-logo">CNBC</div>
                <div class="channel-info">
-                  <h4>MTV Music</h4>
-                  <p>Music • HD</p>
+                  <h4>CNBC Business</h4>
+                  <p>Business News • HD</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo5">
-               <div class="channel-logo">NAT</div>
+               <div class="channel-logo">SKY</div>
                <div class="channel-info">
-                  <h4>National Geographic</h4>
-                  <p>Documentary • 4K</p>
+                  <h4>Sky News</h4>
+                  <p>UK News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo6">
+               <div class="channel-logo">EURO</div>
+               <div class="channel-info">
+                  <h4>Euronews</h4>
+                  <p>European News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo7">
+               <div class="channel-logo">USA</div>
+               <div class="channel-info">
+                  <h4>USA Today</h4>
+                  <p>USA News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo8">
+               <div class="channel-logo">OAN</div>
+               <div class="channel-info">
+                  <h4>One America News</h4>
+                  <p>USA News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo9">
+               <div class="channel-logo">RT</div>
+               <div class="channel-info">
+                  <h4>RT News</h4>
+                  <p>Russia News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo10">
+               <div class="channel-logo">DW</div>
+               <div class="channel-info">
+                  <h4>DW English</h4>
+                  <p>Germany News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo11">
+               <div class="channel-logo">F24</div>
+               <div class="channel-info">
+                  <h4>France 24</h4>
+                  <p>France News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo12">
+               <div class="channel-logo">AJE</div>
+               <div class="channel-info">
+                  <h4>Al Jazeera</h4>
+                  <p>Middle East News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo13">
+               <div class="channel-logo">TRT</div>
+               <div class="channel-info">
+                  <h4>TRT World</h4>
+                  <p>Turkey News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo14">
+               <div class="channel-logo">NBC</div>
+               <div class="channel-info">
+                  <h4>NBC News Now</h4>
+                  <p>USA News • HD</p>
                </div>
             </div>
          </div>
@@ -664,28 +728,46 @@
    </div>
 
    <script>
-      // Live IPTV streaming channels with fallback options
+      // Live IPTV News Channels - Your working streams for visitors to preview
       const demoStreams = {
-         'demo1': 'https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8',
-         'demo2': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Al Jazeera as BBC alternative
-         'demo3': 'https://edge-1240-ch-gv.filmon.com/live/1240.low.stream/playlist.m3u8',
-         'demo4': 'https://edge-1649-ch-gv.filmon.com/live/1649.low.stream/playlist.m3u8',
-         'demo5': 'https://nationalgeographic-hd-1-eu.rakuten.wurl.tv/playlist.m3u8'
+         'demo1': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/40091.m3u8', // BBC WORLD NEWS
+         'demo2': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/36480.m3u8', // CNN
+         'demo3': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400200058.m3u8', // GB NEWS
+         'demo4': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/82803.m3u8', // CNBC
+         'demo5': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153846.m3u8', // SKY NEWS
+         'demo6': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/181673.m3u8', // EURO NEWS
+         'demo7': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/6625.m3u8', // USA TODAY
+         'demo8': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/181655.m3u8', // OAN
+         'demo9': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/181651.m3u8', // RT NEWS
+         'demo10': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/176619.m3u8', // DW ENGLISH
+         'demo11': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153855.m3u8', // FRANCE 24
+         'demo12': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230347.m3u8', // AL JAZEERA
+         'demo13': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230338.m3u8', // TRT WORLD
+         'demo14': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/82805.m3u8' // NBC NEWS NOW
       };
       
-      // Fallback streams if primary fails
+      // Fallback to public streams if main ones fail
       const fallbackStreams = {
-         'demo1': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
-         'demo2': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Deutsche Welle
-         'demo3': 'https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1a3e6ac1f6gvmb/prod/playlist.m3u8',
-         'demo4': 'https://feed.play.mv/live/10005200/ypOH1cTd4W/master.m3u8',
-         'demo5': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8'
+         'demo1': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Al Jazeera
+         'demo2': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // DW
+         'demo3': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8', // France 24
+         'demo4': 'https://rt-glb.rttv.com/live/rtnews/playlist.m3u8', // RT
+         'demo5': 'https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8', // Bloomberg
+         'demo6': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'demo7': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8',
+         'demo8': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8',
+         'demo9': 'https://rt-glb.rttv.com/live/rtnews/playlist.m3u8',
+         'demo10': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8',
+         'demo11': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8',
+         'demo12': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'demo13': 'https://rt-glb.rttv.com/live/rtnews/playlist.m3u8',
+         'demo14': 'https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8'
       };
 
       let currentChannel = 'demo1';
       let isPlaying = false;
       let currentChannelIndex = 0;
-      const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5'];
+      const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5', 'demo6', 'demo7', 'demo8', 'demo9', 'demo10', 'demo11', 'demo12', 'demo13', 'demo14'];
       let videoPlayer = null;
 
       // Load HLS stream function
@@ -759,7 +841,21 @@
             
             hls.on(Hls.Events.ERROR, (event, data) => {
                console.error('HLS error:', data);
-               handleStreamError(data.details || data.type, streamUrl, channelName);
+               
+               // Try fallback stream automatically
+               const channelId = getCurrentChannelId();
+               const fallbackUrl = fallbackStreams[channelId];
+               
+               if (fallbackUrl && streamUrl !== fallbackUrl && !window.triedFallback) {
+                  console.log('Trying fallback stream:', fallbackUrl);
+                  window.triedFallback = true;
+                  setTimeout(() => {
+                     loadStream(fallbackUrl, channelName + ' (Backup)');
+                  }, 1000);
+               } else {
+                  window.triedFallback = false;
+                  handleStreamError(data.details || data.type, streamUrl, channelName);
+               }
             });
             
          } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
@@ -874,6 +970,12 @@
          `;
          placeholder.style.display = 'flex';
          document.getElementById('video-player').style.display = 'none';
+      }
+      
+      // Helper function to get current channel ID
+      function getCurrentChannelId() {
+         const activeChannel = document.querySelector('.channel-item.active');
+         return activeChannel ? activeChannel.dataset.channel : 'demo1';
       }
       
       // Helper function to handle stream errors
