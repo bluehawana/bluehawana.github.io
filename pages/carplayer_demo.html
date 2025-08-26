@@ -471,8 +471,8 @@
             <div class="channel-item" data-channel="demo2">
                <div class="channel-logo">SKY</div>
                <div class="channel-info">
-                  <h4>Sky News</h4>
-                  <p>UK News • HD</p>
+                  <h4>Sky Sports News</h4>
+                  <p>Sports News • HD</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo3">
@@ -494,6 +494,55 @@
                <div class="channel-info">
                   <h4>Al Jazeera</h4>
                   <p>Middle East News • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo6">
+               <div class="channel-logo">SS1</div>
+               <div class="channel-info">
+                  <h4>Sky Sports Main Event</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo7">
+               <div class="channel-logo">SS2</div>
+               <div class="channel-info">
+                  <h4>Sky Sports Premier League</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo8">
+               <div class="channel-logo">SS+</div>
+               <div class="channel-info">
+                  <h4>Sky Sports+</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo9">
+               <div class="channel-logo">SSF</div>
+               <div class="channel-info">
+                  <h4>Sky Sports Football</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo10">
+               <div class="channel-logo">SSC</div>
+               <div class="channel-info">
+                  <h4>Sky Sports Cricket</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo11">
+               <div class="channel-logo">SST</div>
+               <div class="channel-info">
+                  <h4>Sky Sports Tennis</h4>
+                  <p>Sports • HD</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo12">
+               <div class="channel-logo">F1</div>
+               <div class="channel-info">
+                  <h4>Sky Sports F1</h4>
+                  <p>Sports • HD</p>
                </div>
             </div>
          </div>
@@ -665,13 +714,20 @@
    </div>
 
    <script>
-      // Live IPTV News Channels - Only working streams for visitors to preview
+      // Live IPTV Channels - Working streams for visitors to preview
       const demoStreams = {
          'demo1': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/36480.m3u8', // CNN
-         'demo2': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153846.m3u8', // SKY NEWS
+         'demo2': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153707.m3u8', // SKY SPORTS NEWS
          'demo3': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/6625.m3u8', // USA TODAY
          'demo4': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/176619.m3u8', // DW ENGLISH
-         'demo5': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230347.m3u8' // AL JAZEERA
+         'demo5': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230347.m3u8', // AL JAZEERA
+         'demo6': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153691.m3u8', // SKY SPORTS MAIN EVENT
+         'demo7': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153693.m3u8', // SKY SPORTS PREMIER LEAGUE
+         'demo8': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/401172773.m3u8', // SKY SPORTS+
+         'demo9': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153695.m3u8', // SKY SPORTS FOOTBALL
+         'demo10': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153697.m3u8', // SKY SPORTS CRICKET
+         'demo11': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/391270.m3u8', // SKY SPORTS TENNIS
+         'demo12': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/191464.m3u8' // SKY SPORTS F1
       };
       
       // Fallback to public streams if main ones fail
@@ -680,13 +736,20 @@
          'demo2': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // DW
          'demo3': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8', // France 24
          'demo4': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // DW
-         'demo5': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8' // Al Jazeera
+         'demo5': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Al Jazeera
+         'demo6': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'demo7': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8',
+         'demo8': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8',
+         'demo9': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'demo10': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8',
+         'demo11': 'https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8',
+         'demo12': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8'
       };
 
       let currentChannel = 'demo1';
       let isPlaying = false;
       let currentChannelIndex = 0;
-      const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5'];
+      const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5', 'demo6', 'demo7', 'demo8', 'demo9', 'demo10', 'demo11', 'demo12'];
       let videoPlayer = null;
 
       // Load HLS stream function
