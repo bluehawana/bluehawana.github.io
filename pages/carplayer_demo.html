@@ -13,6 +13,9 @@
    <link rel="stylesheet" href="../css/media-queries.css">
    <link rel="shortcut icon" href="../favicon.png">
    
+   <!-- HLS.js for better browser compatibility -->
+   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+   
    <!-- CarPlayer Demo Styles -->
    <style>
       :root {
@@ -465,9 +468,9 @@
                </div>
             </div>
             <div class="channel-item" data-channel="demo2">
-               <div class="channel-logo">BBC</div>
+               <div class="channel-logo">AJE</div>
                <div class="channel-info">
-                  <h4>BBC World News</h4>
+                  <h4>Al Jazeera English</h4>
                   <p>News • HD</p>
                </div>
             </div>
@@ -661,13 +664,22 @@
    </div>
 
    <script>
-      // Live IPTV streaming channels from our M3U playlist
+      // Live IPTV streaming channels with fallback options
       const demoStreams = {
          'demo1': 'https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8',
-         'demo2': 'https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8',
-         'demo3': 'https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/eu-central-1/6415628290001/playlist.m3u8',
-         'demo4': 'https://d36j2dqq6rr7d4.cloudfront.net/live/mtv/playlist.m3u8',
+         'demo2': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Al Jazeera as BBC alternative
+         'demo3': 'https://edge-1240-ch-gv.filmon.com/live/1240.low.stream/playlist.m3u8',
+         'demo4': 'https://edge-1649-ch-gv.filmon.com/live/1649.low.stream/playlist.m3u8',
          'demo5': 'https://nationalgeographic-hd-1-eu.rakuten.wurl.tv/playlist.m3u8'
+      };
+      
+      // Fallback streams if primary fails
+      const fallbackStreams = {
+         'demo1': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'demo2': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Deutsche Welle
+         'demo3': 'https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1a3e6ac1f6gvmb/prod/playlist.m3u8',
+         'demo4': 'https://feed.play.mv/live/10005200/ypOH1cTd4W/master.m3u8',
+         'demo5': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8'
       };
 
       let currentChannel = 'demo1';
@@ -684,6 +696,12 @@
          const placeholder = document.getElementById('video-placeholder');
          const player = document.getElementById('video-player');
          
+         // Clear any existing HLS instance
+         if (window.currentHls) {
+            window.currentHls.destroy();
+            window.currentHls = null;
+         }
+         
          // Show loading state
          placeholder.innerHTML = `
             <div>📡 Loading ${channelName}...</div>
@@ -694,9 +712,59 @@
          placeholder.style.display = 'flex';
          player.style.display = 'none';
          
-         // Try to load the stream
-         if (player.canPlayType('application/vnd.apple.mpegurl') || streamUrl.includes('.m3u8')) {
-            // Native HLS support or M3U8 playlist
+         // Use HLS.js for better compatibility
+         if (Hls.isSupported() && streamUrl.includes('.m3u8')) {
+            console.log('Using HLS.js for stream playback');
+            const hls = new Hls({
+               debug: false,
+               enableWorker: true,
+               lowLatencyMode: true,
+               backBufferLength: 90
+            });
+            
+            window.currentHls = hls;
+            
+            hls.loadSource(streamUrl);
+            hls.attachMedia(player);
+            
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+               console.log('HLS manifest parsed successfully');
+               placeholder.innerHTML = `
+                  <div>🔄 Buffering ${channelName}...</div>
+                  <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-text-dim);">
+                     Stream ready, starting playback...
+                  </div>
+               `;
+            });
+            
+            hls.on(Hls.Events.FRAG_LOADED, () => {
+               if (player.style.display === 'none') {
+                  placeholder.style.display = 'none';
+                  player.style.display = 'block';
+                  
+                  // Auto-play with error handling
+                  const playPromise = player.play();
+                  if (playPromise !== undefined) {
+                     playPromise.then(() => {
+                        console.log('HLS stream playing successfully');
+                        isPlaying = true;
+                        document.getElementById('play-pause-btn').textContent = '⏸';
+                     }).catch(error => {
+                        console.error('HLS autoplay failed:', error);
+                        showPlayButton(channelName);
+                     });
+                  }
+               }
+            });
+            
+            hls.on(Hls.Events.ERROR, (event, data) => {
+               console.error('HLS error:', data);
+               handleStreamError(data.details || data.type, streamUrl, channelName);
+            });
+            
+         } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
+            console.log('Using native HLS support');
+            // Native HLS support (Safari)
             player.src = streamUrl;
             
             // Setup event listeners
@@ -793,6 +861,52 @@
          }
          
          videoPlayer = player;
+      }
+      
+      // Helper function to show play button when autoplay fails
+      function showPlayButton(channelName) {
+         const placeholder = document.getElementById('video-placeholder');
+         placeholder.innerHTML = `
+            <div>▶️ ${channelName} Ready</div>
+            <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-accent);">
+               Click play button to start streaming
+            </div>
+         `;
+         placeholder.style.display = 'flex';
+         document.getElementById('video-player').style.display = 'none';
+      }
+      
+      // Helper function to handle stream errors
+      function handleStreamError(errorType, streamUrl, channelName) {
+         const placeholder = document.getElementById('video-placeholder');
+         let errorMessage = 'Stream temporarily unavailable';
+         
+         if (errorType.includes('NETWORK')) {
+            errorMessage = 'Network connection error';
+         } else if (errorType.includes('MANIFEST')) {
+            errorMessage = 'Stream format error';
+         } else if (errorType.includes('MEDIA')) {
+            errorMessage = 'Media playback error';
+         }
+         
+         placeholder.innerHTML = `
+            <div>❌ ${channelName}</div>
+            <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-danger);">
+               ${errorMessage}
+            </div>
+            <div style="font-size: 12px; margin-top: 10px; color: var(--cyber-text-dim);">
+               <button onclick="loadStream('${streamUrl}', '${channelName}')" 
+                       style="background: var(--cyber-primary); color: black; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin-right: 10px;">
+                  🔄 Retry
+               </button>
+               <a href="${streamUrl}" target="_blank" 
+                  style="color: var(--cyber-primary); text-decoration: underline;">
+                  Open Externally
+               </a>
+            </div>
+         `;
+         placeholder.style.display = 'flex';
+         document.getElementById('video-player').style.display = 'none';
       }
 
       // Network simulation

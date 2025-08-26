@@ -3,16 +3,16 @@
 https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BBCWorldNews" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC World News
-https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_world_service/t=3840/v=pv14/b=5070016/main.m3u8
 
 #EXTINF:-1 tvg-id="ESPN" tvg-logo="https://i.imgur.com/7SlZF9B.png" group-title="Sports",ESPN
-https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/eu-central-1/6415628290001/playlist.m3u8
+https://edge-1240-ch-gv.filmon.com/live/1240.low.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MTV" tvg-logo="https://i.imgur.com/uhVEE0w.png" group-title="Music",MTV
-https://d36j2dqq6rr7d4.cloudfront.net/live/mtv/playlist.m3u8
+https://edge-1649-ch-gv.filmon.com/live/1649.low.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="NationalGeographic" tvg-logo="https://i.imgur.com/cL56f2g.png" group-title="Documentary",National Geographic
-https://nationalgeographic-hd-1-eu.rakuten.wurl.tv/playlist.m3u8
+https://admdn2.cdn.mangomolo.com/nagtv/smil:nagtv.stream.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AlJazeeraEnglish" tvg-logo="https://i.imgur.com/BB93NQP.png" group-title="News",Al Jazeera English
 https://live-hls-web-aje.getaj.net/AJE/01.m3u8
