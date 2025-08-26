@@ -22,12 +22,12 @@ if [ $? -eq 0 ]; then
     echo "✅ Sync completed successfully!"
     echo "📝 Check your blog at: bluehawana.com/pages/blog"
     
-    # Optionally commit and push (uncomment if you want auto-commit)
-    # echo "📤 Committing changes to git..."
-    # git add -A
-    # git commit -m "📝 Manual LinkedIn sync - $(date)"
-    # git push origin main
-    # echo "🚀 Changes pushed to GitHub!"
+    # Auto-commit and push changes
+    echo "📤 Committing changes to git..."
+    git add -A
+    git commit -m "📝 Manual LinkedIn sync - $(date)"
+    git push origin main
+    echo "🚀 Changes pushed to GitHub - website will rebuild!"
 else
     echo ""
     echo "❌ Sync failed - check the error messages above"
