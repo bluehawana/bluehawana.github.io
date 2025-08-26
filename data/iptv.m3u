@@ -1,0 +1,30 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="CNNInternational" tvg-logo="https://i.imgur.com/ilZJT5s.png" group-title="News",CNN International
+https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BBCWorldNews" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC World News
+https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ESPN" tvg-logo="https://i.imgur.com/7SlZF9B.png" group-title="Sports",ESPN
+https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/eu-central-1/6415628290001/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MTV" tvg-logo="https://i.imgur.com/uhVEE0w.png" group-title="Music",MTV
+https://d36j2dqq6rr7d4.cloudfront.net/live/mtv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NationalGeographic" tvg-logo="https://i.imgur.com/cL56f2g.png" group-title="Documentary",National Geographic
+https://nationalgeographic-hd-1-eu.rakuten.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeeraEnglish" tvg-logo="https://i.imgur.com/BB93NQP.png" group-title="News",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/01.m3u8
+
+#EXTINF:-1 tvg-id="DeutscheWelle" tvg-logo="https://i.imgur.com/A1xzjOI.png" group-title="News",Deutsche Welle
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+
+#EXTINF:-1 tvg-id="France24English" tvg-logo="https://i.imgur.com/kxBwbYf.png" group-title="News",France 24 English
+https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
+
+#EXTINF:-1 tvg-id="RT" tvg-logo="https://i.imgur.com/o0eevnb.png" group-title="News",RT International
+https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BloombergTV" tvg-logo="https://i.imgur.com/OuogLHW.png" group-title="Business",Bloomberg TV
+https://bloomberg.com/media-manifest/streams/phoenix-us.m3u8
