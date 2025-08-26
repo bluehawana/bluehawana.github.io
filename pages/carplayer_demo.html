@@ -653,6 +653,9 @@
             <a href="#" class="download-btn" onclick="viewTestingReports()">
                📊 TESTING REPORTS
             </a>
+            <a href="#" class="download-btn" onclick="testVideoDirectly()">
+               🎬 TEST VIDEO DIRECTLY
+            </a>
          </div>
       </div>
    </div>
@@ -851,6 +854,8 @@
             return;
          }
          
+         console.log('Attempting to play video:', video.url);
+         
          // Create modal overlay
          const modal = document.createElement('div');
          modal.style.cssText = `
@@ -872,12 +877,58 @@
          videoElement.src = video.url;
          videoElement.controls = true;
          videoElement.autoplay = true;
+         videoElement.muted = true; // Add muted to allow autoplay
+         videoElement.playsInline = true; // For mobile compatibility
          videoElement.style.cssText = `
             max-width: 90%;
             max-height: 80%;
             border-radius: 10px;
             box-shadow: 0 0 30px rgba(189, 147, 249, 0.5);
          `;
+         
+         // Add error handling
+         videoElement.addEventListener('error', (e) => {
+            console.error('Video error:', e);
+            const errorMsg = document.createElement('div');
+            errorMsg.textContent = 'Error loading video. Please check console for details.';
+            errorMsg.style.cssText = `
+               color: var(--cyber-danger);
+               font-size: 18px;
+               margin-top: 20px;
+               text-align: center;
+            `;
+            modal.appendChild(errorMsg);
+            
+            // Try alternate approach with direct link
+            const altLink = document.createElement('a');
+            altLink.href = video.url;
+            altLink.target = '_blank';
+            altLink.textContent = 'Click here to open video directly';
+            altLink.style.cssText = `
+               color: var(--cyber-primary);
+               font-size: 16px;
+               margin-top: 10px;
+               text-decoration: underline;
+            `;
+            modal.appendChild(altLink);
+         });
+         
+         // Add loading state
+         videoElement.addEventListener('loadstart', () => {
+            console.log('Video loading started');
+         });
+         
+         videoElement.addEventListener('canplay', () => {
+            console.log('Video can play');
+         });
+         
+         videoElement.addEventListener('loadedmetadata', () => {
+            console.log('Video metadata loaded:', {
+               duration: videoElement.duration,
+               videoWidth: videoElement.videoWidth,
+               videoHeight: videoElement.videoHeight
+            });
+         });
          
          const title = document.createElement('div');
          title.textContent = video.title;
@@ -949,6 +1000,110 @@
       // Testing reports viewer
       function viewTestingReports() {
          window.open('https://console.firebase.google.com/project/bluehawana-android-auto/appdistribution/app/android:1:1055425659261:android:5ee98a20ffff8d755c8c14', '_blank');
+      }
+      
+      // Test video directly
+      function testVideoDirectly() {
+         const testUrl = `${R2_BASE_URL}/cartvfirebase/10.mp4`;
+         console.log('Testing video URL:', testUrl);
+         
+         // Create a simple test modal
+         const testModal = document.createElement('div');
+         testModal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            padding: 20px;
+            overflow-y: auto;
+         `;
+         
+         testModal.innerHTML = `
+            <div style="max-width: 800px; margin: 0 auto; color: white;">
+               <h2 style="color: var(--cyber-primary); margin-bottom: 20px;">Video Test Debug Panel</h2>
+               <div style="background: rgba(17, 17, 17, 0.9); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                  <p><strong>Test URL:</strong> ${testUrl}</p>
+                  <p><strong>Status:</strong> <span id="test-status">Initializing...</span></p>
+                  <div id="test-results" style="margin-top: 20px;"></div>
+               </div>
+               
+               <div style="margin: 20px 0;">
+                  <h3 style="color: var(--cyber-secondary);">Method 1: HTML5 Video Element</h3>
+                  <video id="test-video" width="100%" controls style="max-width: 600px; border-radius: 10px;">
+                     <source src="${testUrl}" type="video/mp4">
+                     Your browser does not support the video tag.
+                  </video>
+               </div>
+               
+               <div style="margin: 20px 0;">
+                  <h3 style="color: var(--cyber-secondary);">Method 2: Direct Link</h3>
+                  <a href="${testUrl}" target="_blank" style="color: var(--cyber-primary); text-decoration: underline;">
+                     Open video in new tab
+                  </a>
+               </div>
+               
+               <div style="margin: 20px 0;">
+                  <h3 style="color: var(--cyber-secondary);">Method 3: Iframe Embed</h3>
+                  <iframe src="${testUrl}" width="100%" height="400" style="max-width: 600px; border-radius: 10px; border: 2px solid var(--cyber-border);"></iframe>
+               </div>
+               
+               <button onclick="this.parentElement.parentElement.remove()" style="
+                  background: transparent;
+                  border: 2px solid var(--cyber-danger);
+                  color: var(--cyber-danger);
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  font-size: 16px;
+                  margin-top: 20px;
+               ">Close Test Panel</button>
+            </div>
+         `;
+         
+         document.body.appendChild(testModal);
+         
+         // Test the video
+         const testVideo = document.getElementById('test-video');
+         const testStatus = document.getElementById('test-status');
+         const testResults = document.getElementById('test-results');
+         
+         // Check video support
+         const videoSupport = testVideo.canPlayType('video/mp4');
+         testResults.innerHTML += `<p>Browser MP4 support: ${videoSupport || 'No support'}</p>`;
+         
+         testVideo.addEventListener('loadstart', () => {
+            testStatus.textContent = 'Loading video...';
+            testResults.innerHTML += '<p>Event: loadstart</p>';
+         });
+         
+         testVideo.addEventListener('error', (e) => {
+            testStatus.textContent = 'Error loading video!';
+            testResults.innerHTML += `<p style="color: var(--cyber-danger);">Error: ${e.target.error ? e.target.error.message : 'Unknown error'}</p>`;
+            console.error('Video error details:', e);
+         });
+         
+         testVideo.addEventListener('loadeddata', () => {
+            testStatus.textContent = 'Video loaded successfully!';
+            testResults.innerHTML += '<p style="color: var(--cyber-accent);">Event: loadeddata - Video is ready!</p>';
+         });
+         
+         testVideo.addEventListener('canplay', () => {
+            testResults.innerHTML += '<p>Event: canplay</p>';
+         });
+         
+         // Also test with fetch to check CORS
+         fetch(testUrl, { method: 'HEAD' })
+            .then(response => {
+               testResults.innerHTML += `<p>Fetch test: ${response.ok ? 'Success' : 'Failed'} (Status: ${response.status})</p>`;
+               testResults.innerHTML += `<p>Content-Type: ${response.headers.get('Content-Type') || 'Not specified'}</p>`;
+               testResults.innerHTML += `<p>CORS headers: ${response.headers.get('Access-Control-Allow-Origin') || 'Not present'}</p>`;
+            })
+            .catch(error => {
+               testResults.innerHTML += `<p style="color: var(--cyber-danger);">Fetch error: ${error.message}</p>`;
+            });
       }
 
       // APK download via Firebase App Distribution
