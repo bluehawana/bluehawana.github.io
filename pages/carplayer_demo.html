@@ -746,15 +746,8 @@
    </div>
 
    <script>
-      // CACHE BUSTER: Force reload - Version 2.1 - Updated 2024-08-28  
-      console.log('🔥 CARPLAYER DEMO v2.1 - CACHE CLEARED - Loading fresh code');
-      
-      // VERIFY CACHE CLEARED: Check if old URLs still exist
-      const testUrl = 'http://mwyceyp.mhubery.xyz';
-      if (document.documentElement.outerHTML.includes(testUrl)) {
-         console.error('❌ OLD CACHE DETECTED - Force reloading page');
-         location.reload(true);
-      }
+      // CARPLAYER DEMO v2.2 - Fixed infinite reload bug
+      console.log('🔥 CARPLAYER DEMO v2.2 - PREMIUM SPORTS CHANNELS ONLY');
       
       // ONLY YOUR CONFIRMED WORKING 7PAL.SHORT.GY RESOURCES
       const demoStreams = {
@@ -784,15 +777,8 @@
          delete window.oldDemoStreams;
       }
       
-      // VERIFY CORRECT STREAMS LOADED
-      console.log('✅ VERIFIED: demoStreams contains only 7pal.short.gy URLs:');
-      console.log(demoStreams);
-      const hasOldUrls = Object.values(demoStreams).some(url => !url.startsWith('https://7pal.short.gy/'));
-      if (hasOldUrls) {
-         console.error('🚨 CRITICAL: Old URLs detected in demoStreams!');
-      } else {
-         console.log('🏆 SUCCESS: All streams are premium 7pal.short.gy URLs');
-      }
+      // VERIFY STREAMS ON LOAD
+      console.log('🏆 Loaded ' + Object.keys(demoStreams).length + ' premium sports channels');
 
       let currentChannel = 'demo1';
       let isPlaying = false;
@@ -1119,24 +1105,28 @@
       // Channel selection
       document.querySelectorAll('.channel-item').forEach(item => {
          item.addEventListener('click', function() {
+            console.log('🎯 Channel clicked:', this.dataset.channel);
+            
             document.querySelectorAll('.channel-item').forEach(i => i.classList.remove('active'));
             this.classList.add('active');
             
             const channelId = this.dataset.channel;
-            currentChannel = channelId;
-            currentChannelIndex = channels.indexOf(channelId);
-            
-            // Load actual video stream
             const channelName = this.querySelector('h4').textContent;
             const streamUrl = demoStreams[channelId];
+            
+            console.log('📺 Loading:', channelName, 'URL:', streamUrl);
+            
+            currentChannel = channelId;
+            currentChannelIndex = channels.indexOf(channelId);
             
             if (streamUrl) {
                loadStream(streamUrl, channelName);
             } else {
+               console.error('❌ No stream URL for:', channelId);
                document.getElementById('video-placeholder').innerHTML = `
                   <div>❌ Stream not available</div>
                   <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
-                     ${channelName} • Demo Mode
+                     ${channelName} • Missing URL
                   </div>
                `;
             }
