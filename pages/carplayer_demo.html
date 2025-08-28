@@ -854,8 +854,20 @@
             return loadSecureStream(safeUrl, channelName + ' (Failsafe)', placeholder, player);
          }
          
+         // First, test the URL directly
+         console.log('🧪 Testing URL accessibility:', streamUrl);
+         fetch(streamUrl, { method: 'HEAD' })
+            .then(response => {
+               console.log('🌐 URL Response:', response.status, response.statusText);
+               console.log('🔗 Final URL after redirects:', response.url);
+               console.log('📋 Response headers:', [...response.headers.entries()]);
+            })
+            .catch(error => {
+               console.error('❌ URL fetch failed:', error);
+            });
+         
          // Use HLS.js for better compatibility
-         if (Hls.isSupported() && streamUrl.includes('.m3u8')) {
+         if (Hls.isSupported()) {
             console.log('🎬 Using HLS.js for stream playback');
             const hls = new Hls({
                debug: false,
@@ -869,8 +881,9 @@
             hls.loadSource(streamUrl);
             hls.attachMedia(player);
             
-            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+            hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
                console.log('✅ Smart Agent: HLS manifest parsed successfully');
+               console.log('📊 Stream details:', data);
                const isPremium = streamUrl.startsWith('https://7pal.short.gy/');
                const isBackup = channelName.includes('(Backup)') || channelName.includes('(Secure)');
                
@@ -906,28 +919,16 @@
             });
             
             hls.on(Hls.Events.ERROR, (event, data) => {
-               console.error('🚨 Smart Agent Error:', data);
+               console.error('🚨 HLS ERROR DETAILS:');
+               console.error('  Type:', data.type);
+               console.error('  Details:', data.details);
+               console.error('  Fatal:', data.fatal);
+               console.error('  URL:', data.url);
+               console.error('  Response:', data.response);
+               console.error('  Full error:', data);
                
-               // Enhanced smart error handling
                if (data.fatal) {
-                  const isHttpError = data.details === 'manifestLoadError' && streamUrl.startsWith('http://');
-                  const channelId = getCurrentChannelId();
-                  const fallbackUrl = fallbackStreams[channelId];
-                  
-                  if (isHttpError) {
-                     console.log('🔄 Smart Agent: HTTPS mixed content detected, switching to secure stream');
-                  }
-                  
-                  if (fallbackUrl && streamUrl !== fallbackUrl && !window.triedFallback) {
-                     console.log('🤖 Smart Agent Fallback:', fallbackUrl);
-                     window.triedFallback = true;
-                     setTimeout(() => {
-                        loadSecureStream(fallbackUrl, channelName + ' (Backup)', placeholder, player);
-                     }, 500);
-                  } else {
-                     window.triedFallback = false;
-                     handleStreamError(data.details || data.type, streamUrl, channelName, placeholder);
-                  }
+                  handleStreamError(data.details || data.type, streamUrl, channelName, placeholder);
                }
             });
             
