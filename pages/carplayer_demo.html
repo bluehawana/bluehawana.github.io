@@ -463,10 +463,10 @@
          <h1 class="car-title">🚗 CARPLAYER_IPTV.APK</h1>
          <p class="car-subtitle">> Android Auto IPTV Player with Smart Network Optimization</p>
          <div style="background: linear-gradient(45deg, var(--cyber-secondary), var(--cyber-primary)); padding: 12px; border-radius: 8px; margin-top: 15px; text-align: center; font-size: 14px; font-weight: bold; color: black; text-shadow: none;">
-            ⚡ WORKING DEMO: TNT Sports 1-4 FHD • Sky Sports F1/PL/Football/Tennis FHD • Box Office Live
+            📱 INTERFACE DEMO: TNT Sports 1-4 FHD • Sky Sports F1/PL/Football/Tennis FHD • Box Office
          </div>
          <div style="background: rgba(189, 147, 249, 0.1); border: 1px solid var(--cyber-secondary); padding: 8px; border-radius: 6px; margin-top: 10px; text-align: center; font-size: 12px;">
-            🎬 LIVE STREAMING DEMO: Functional IPTV Player • HTTPS HLS Streams • Android Auto Compatible
+            🎬 CARPLAYER UI SHOWCASE: Premium Channel Interface • Android Auto Ready • Connect Your M3U
          </div>
       </div>
 
@@ -746,26 +746,26 @@
    </div>
 
    <script>
-      // CARPLAYER DEMO v2.3 - Working HTTPS HLS streams
-      console.log('⚡ CARPLAYER DEMO v2.3 - WORKING HLS STREAMS');
+      // CARPLAYER DEMO v2.4 - Interface showcase (no AJ/DW)
+      console.log('📱 CARPLAYER DEMO v2.4 - UI SHOWCASE MODE');
       
-      // WORKING DEMO STREAMS (CORS-enabled HTTPS HLS)
+      // DEMO MODE: Show channel interface without actual streams
       const demoStreams = {
-         'demo1': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sports Stream 1
-         'demo2': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sports Stream 2  
-         'demo3': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sports Stream 3
-         'demo4': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sports Stream 4
-         'demo5': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sky Sports Main Event
-         'demo6': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sky Sports PL
-         'demo7': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sky Sports Football
-         'demo8': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sky Sports F1
-         'demo9': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sky Sports Tennis
-         'demo10': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sky Sports+
-         'demo11': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sky Sports Cricket
-         'demo12': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sky Sports Golf
-         'demo13': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8', // Demo: Sky Sports News
-         'demo14': 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8', // Demo: Sky Sports Action
-         'demo15': 'https://live-hls-web-aje.getaj.net/AJE/01.m3u8' // Demo: Sky Sports Box Office
+         'demo1': null, // TNT SPORTS 1 FHD
+         'demo2': null, // TNT SPORTS 2 FHD  
+         'demo3': null, // TNT SPORTS 3 FHD
+         'demo4': null, // TNT SPORTS 4 FHD
+         'demo5': null, // SKY SPORTS MAIN EVENT FHD
+         'demo6': null, // SKY SPORTS PREMIER LEAGUE FHD
+         'demo7': null, // SKY SPORTS FOOTBALL FHD
+         'demo8': null, // SKY SPORTS F1 FHD
+         'demo9': null, // SKY SPORTS TENNIS FHD
+         'demo10': null, // SKY SPORTS+ FHD
+         'demo11': null, // SKY SPORTS CRICKET FHD
+         'demo12': null, // SKY SPORTS GOLF FHD
+         'demo13': null, // SKY SPORTS NEWS FHD
+         'demo14': null, // SKY SPORTS ACTION FHD
+         'demo15': null // SKY SPORTS BOX OFFICE FHD
       };
       
       // NO FALLBACK STREAMS - ONLY YOUR PREMIUM RESOURCES  
@@ -777,8 +777,8 @@
          delete window.oldDemoStreams;
       }
       
-      // VERIFY STREAMS ON LOAD
-      console.log('✅ Loaded ' + Object.keys(demoStreams).length + ' working demo streams');
+      // VERIFY DEMO INTERFACE  
+      console.log('✅ Loaded ' + Object.keys(demoStreams).length + ' sports channel interfaces');
 
       let currentChannel = 'demo1';
       let isPlaying = false;
@@ -1120,17 +1120,22 @@
             currentChannel = channelId;
             currentChannelIndex = channels.indexOf(channelId);
             
-            if (streamUrl) {
-               loadStream(streamUrl, channelName);
-            } else {
-               console.error('❌ No stream URL for:', channelId);
-               document.getElementById('video-placeholder').innerHTML = `
-                  <div>❌ Stream not available</div>
-                  <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
-                     ${channelName} • Missing URL
-                  </div>
-               `;
-            }
+            // Show demo interface without actual streaming
+            document.getElementById('video-placeholder').innerHTML = `
+               <div>📺 ${channelName}</div>
+               <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-accent);">
+                  ⚡ Premium FHD Stream Ready
+               </div>
+               <div style="font-size: 14px; margin-top: 15px; color: var(--cyber-text-dim);">
+                  🎬 DEMO MODE: Channel interface active<br>
+                  📱 Connect your real IPTV source via Android Auto
+               </div>
+               <div style="font-size: 12px; margin-top: 20px; color: var(--cyber-primary); cursor: pointer;" onclick="showStreamInfo('${channelName}')">
+                  🔧 Technical Details
+               </div>
+            `;
+            document.getElementById('video-placeholder').style.display = 'flex';
+            document.getElementById('video-player').style.display = 'none';
          });
       });
 
@@ -1564,6 +1569,11 @@
             .catch(error => {
                testResults.innerHTML += `<p style="color: var(--cyber-danger);">Fetch error: ${error.message}</p>`;
             });
+      }
+
+      // Show technical stream information
+      function showStreamInfo(channelName) {
+         alert(`🔧 CarPlayer IPTV Technical Details\n\nChannel: ${channelName}\nResolution: 1920x1080 FHD\nCodec: H.264/AAC\nProtocol: HLS (HTTP Live Streaming)\nOptimization: Android Auto Compatible\n\n📱 This demo showcases the CarPlayer interface.\nConnect your M3U playlist for live streaming.`);
       }
 
       // APK download via Firebase App Distribution
