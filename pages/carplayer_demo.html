@@ -749,23 +749,23 @@
       // CARPLAYER DEMO v2.4 - Interface showcase (no AJ/DW)
       console.log('📱 CARPLAYER DEMO v2.4 - UI SHOWCASE MODE');
       
-      // DEMO MODE: Show channel interface without actual streams
+      // YOUR 7PAL.SHORT.GY URLS - Testing if they actually work
       const demoStreams = {
-         'demo1': null, // TNT SPORTS 1 FHD
-         'demo2': null, // TNT SPORTS 2 FHD  
-         'demo3': null, // TNT SPORTS 3 FHD
-         'demo4': null, // TNT SPORTS 4 FHD
-         'demo5': null, // SKY SPORTS MAIN EVENT FHD
-         'demo6': null, // SKY SPORTS PREMIER LEAGUE FHD
-         'demo7': null, // SKY SPORTS FOOTBALL FHD
-         'demo8': null, // SKY SPORTS F1 FHD
-         'demo9': null, // SKY SPORTS TENNIS FHD
-         'demo10': null, // SKY SPORTS+ FHD
-         'demo11': null, // SKY SPORTS CRICKET FHD
-         'demo12': null, // SKY SPORTS GOLF FHD
-         'demo13': null, // SKY SPORTS NEWS FHD
-         'demo14': null, // SKY SPORTS ACTION FHD
-         'demo15': null // SKY SPORTS BOX OFFICE FHD
+         'demo1': 'https://7pal.short.gy/tntspts1', // TNT SPORTS 1 FHD
+         'demo2': 'https://7pal.short.gy/tntspts2', // TNT SPORTS 2 FHD  
+         'demo3': 'https://7pal.short.gy/tntspts3', // TNT SPORTS 3 FHD
+         'demo4': 'https://7pal.short.gy/tntspts4', // TNT SPORTS 4 FHD
+         'demo5': 'https://7pal.short.gy/SkSpMainE', // SKY SPORTS MAIN EVENT FHD
+         'demo6': 'https://7pal.short.gy/ssportspl', // SKY SPORTS PREMIER LEAGUE FHD
+         'demo7': 'https://7pal.short.gy/ssportsfb', // SKY SPORTS FOOTBALL FHD
+         'demo8': 'https://7pal.short.gy/ssportsf1', // SKY SPORTS F1 FHD
+         'demo9': 'https://7pal.short.gy/ssportstn', // SKY SPORTS TENNIS FHD
+         'demo10': 'https://7pal.short.gy/ssportplus', // SKY SPORTS+ FHD
+         'demo11': 'https://7pal.short.gy/ssportscrk', // SKY SPORTS CRICKET FHD
+         'demo12': 'https://7pal.short.gy/ssportsgf', // SKY SPORTS GOLF FHD
+         'demo13': 'https://7pal.short.gy/ssportsnw', // SKY SPORTS NEWS FHD
+         'demo14': 'https://7pal.short.gy/ssportsat', // SKY SPORTS ACTION FHD
+         'demo15': 'https://7pal.short.gy/ssportsbo' // SKY SPORTS BOX OFFICE FHD
       };
       
       // NO FALLBACK STREAMS - ONLY YOUR PREMIUM RESOURCES  
@@ -785,6 +785,75 @@
       let currentChannelIndex = 0;
       const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5', 'demo6', 'demo7', 'demo8', 'demo9', 'demo10', 'demo11', 'demo12', 'demo13', 'demo14', 'demo15'];
       let videoPlayer = null;
+      
+      // Simple stream loader without all the Master Agent bullshit
+      function loadStreamSimple(streamUrl, channelName, placeholder, player) {
+         console.log('🎬 Attempting to load stream:', streamUrl);
+         
+         // Show loading state
+         placeholder.innerHTML = `
+            <div>🔄 Loading ${channelName}...</div>
+            <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-text-dim);">
+               Connecting to stream...
+            </div>
+         `;
+         
+         if (Hls.isSupported()) {
+            const hls = new Hls({
+               debug: true, // Enable debug to see what's happening
+               enableWorker: true,
+               lowLatencyMode: true
+            });
+            
+            hls.loadSource(streamUrl);
+            hls.attachMedia(player);
+            
+            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+               console.log('✅ Stream manifest loaded successfully');
+               placeholder.style.display = 'none';
+               player.style.display = 'block';
+               player.play().catch(e => console.log('Autoplay blocked:', e));
+            });
+            
+            hls.on(Hls.Events.ERROR, (event, data) => {
+               console.error('❌ HLS Error:', data.type, data.details, data.fatal);
+               if (data.fatal) {
+                  placeholder.innerHTML = `
+                     <div>❌ ${channelName} - Stream Error</div>
+                     <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-danger);">
+                        ${data.details === 'manifestLoadError' ? 'Cannot load stream (CORS/Network issue)' : data.details}
+                     </div>
+                     <div style="font-size: 12px; margin-top: 15px; color: var(--cyber-text-dim);">
+                        URL: ${streamUrl}<br>
+                        Error: ${data.type}
+                     </div>
+                  `;
+                  placeholder.style.display = 'flex';
+                  player.style.display = 'none';
+               }
+            });
+            
+            // Store HLS instance
+            if (window.currentHls) {
+               window.currentHls.destroy();
+            }
+            window.currentHls = hls;
+            
+         } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
+            // Native HLS support (Safari)
+            player.src = streamUrl;
+            player.play().catch(e => console.log('Autoplay blocked:', e));
+         } else {
+            placeholder.innerHTML = `
+               <div>⚠️ HLS not supported</div>
+               <div style="font-size: 14px; margin-top: 10px; color: var(--cyber-warning);">
+                  Your browser doesn't support HLS streaming
+               </div>
+            `;
+         }
+         
+         videoPlayer = player;
+      }
 
       // MASTER AGENT: Enterprise-grade stream intelligence with cache override
       function loadStream(streamUrl, channelName) {
@@ -1115,30 +1184,32 @@
             const channelName = this.querySelector('h4').textContent;
             const streamUrl = demoStreams[channelId];
             
-            console.log('📺 Demo mode:', channelName);
+            console.log('📺 Loading:', channelName, 'URL:', streamUrl);
             
             currentChannel = channelId;
             currentChannelIndex = channels.indexOf(channelId);
             
-            // Show demo interface immediately
             const placeholder = document.getElementById('video-placeholder');
             const player = document.getElementById('video-player');
             
-            placeholder.innerHTML = `
-               <div style="font-size: 24px; margin-bottom: 10px;">📺 ${channelName}</div>
-               <div style="font-size: 16px; margin-bottom: 20px; color: var(--cyber-accent);">
-                  ⚡ Premium FHD Stream Interface
-               </div>
-               <div style="font-size: 14px; margin-bottom: 15px; color: var(--cyber-text-dim); text-align: center;">
-                  🎬 DEMO MODE: UI Showcase Active<br>
-                  📱 Download APK to connect your M3U playlist
-               </div>
-               <div style="font-size: 12px; color: var(--cyber-primary); cursor: pointer; text-decoration: underline;" onclick="showStreamInfo('${channelName}')">
-                  🔧 View Technical Specifications
-               </div>
-            `;
-            placeholder.style.display = 'flex';
-            player.style.display = 'none';
+            if (streamUrl) {
+               // Try to load the stream with HLS.js
+               loadStreamSimple(streamUrl, channelName, placeholder, player);
+            } else {
+               // Show demo interface if no URL
+               placeholder.innerHTML = `
+                  <div style="font-size: 24px; margin-bottom: 10px;">📺 ${channelName}</div>
+                  <div style="font-size: 16px; margin-bottom: 20px; color: var(--cyber-accent);">
+                     ⚡ Premium FHD Stream Interface
+                  </div>
+                  <div style="font-size: 14px; margin-bottom: 15px; color: var(--cyber-text-dim); text-align: center;">
+                     🎬 DEMO MODE: UI Showcase Active<br>
+                     📱 Download APK to connect your M3U playlist
+                  </div>
+               `;
+               placeholder.style.display = 'flex';
+               player.style.display = 'none';
+            }
          });
       });
 
@@ -1586,14 +1657,48 @@
          }
       }
 
+      // Test all 7pal.short.gy URLs on load
+      async function testAllUrls() {
+         console.log('🧪 TESTING ALL 7PAL.SHORT.GY URLS...');
+         
+         for (const [channelId, url] of Object.entries(demoStreams)) {
+            try {
+               console.log(`\n📡 Testing ${channelId}: ${url}`);
+               
+               // Test with fetch first
+               const response = await fetch(url, { 
+                  method: 'GET',
+                  mode: 'no-cors' // Try no-cors mode to bypass CORS
+               });
+               
+               console.log(`✅ ${channelId}: Fetch completed (no-cors mode)`);
+               
+               // Also try with cors mode to see actual response
+               try {
+                  const corsResponse = await fetch(url, { method: 'GET' });
+                  console.log(`📊 ${channelId}: Status ${corsResponse.status}, Type: ${corsResponse.type}`);
+                  console.log(`🔗 Final URL: ${corsResponse.url}`);
+               } catch (corsError) {
+                  console.log(`⚠️ ${channelId}: CORS blocked - ${corsError.message}`);
+               }
+               
+            } catch (error) {
+               console.error(`❌ ${channelId}: ${error.message}`);
+            }
+         }
+         
+         console.log('\n🏁 URL TESTING COMPLETE');
+      }
+      
       // Initialize demo
       simulateNetworkDetection();
+      testAllUrls(); // Test URLs on load
       
       // Auto-select first channel after a delay  
       setTimeout(() => {
          console.log('🎯 Auto-selecting first channel for demo');
          document.querySelector('.channel-item').click();
-      }, 1000);
+      }, 2000);
       
       // Set initial volume
       const player = document.getElementById('video-player');
