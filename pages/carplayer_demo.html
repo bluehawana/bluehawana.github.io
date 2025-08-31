@@ -1115,27 +1115,30 @@
             const channelName = this.querySelector('h4').textContent;
             const streamUrl = demoStreams[channelId];
             
-            console.log('📺 Loading:', channelName, 'URL:', streamUrl);
+            console.log('📺 Demo mode:', channelName);
             
             currentChannel = channelId;
             currentChannelIndex = channels.indexOf(channelId);
             
-            // Show demo interface without actual streaming
-            document.getElementById('video-placeholder').innerHTML = `
-               <div>📺 ${channelName}</div>
-               <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-accent);">
-                  ⚡ Premium FHD Stream Ready
+            // Show demo interface immediately
+            const placeholder = document.getElementById('video-placeholder');
+            const player = document.getElementById('video-player');
+            
+            placeholder.innerHTML = `
+               <div style="font-size: 24px; margin-bottom: 10px;">📺 ${channelName}</div>
+               <div style="font-size: 16px; margin-bottom: 20px; color: var(--cyber-accent);">
+                  ⚡ Premium FHD Stream Interface
                </div>
-               <div style="font-size: 14px; margin-top: 15px; color: var(--cyber-text-dim);">
-                  🎬 DEMO MODE: Channel interface active<br>
-                  📱 Connect your real IPTV source via Android Auto
+               <div style="font-size: 14px; margin-bottom: 15px; color: var(--cyber-text-dim); text-align: center;">
+                  🎬 DEMO MODE: UI Showcase Active<br>
+                  📱 Download APK to connect your M3U playlist
                </div>
-               <div style="font-size: 12px; margin-top: 20px; color: var(--cyber-primary); cursor: pointer;" onclick="showStreamInfo('${channelName}')">
-                  🔧 Technical Details
+               <div style="font-size: 12px; color: var(--cyber-primary); cursor: pointer; text-decoration: underline;" onclick="showStreamInfo('${channelName}')">
+                  🔧 View Technical Specifications
                </div>
             `;
-            document.getElementById('video-placeholder').style.display = 'flex';
-            document.getElementById('video-player').style.display = 'none';
+            placeholder.style.display = 'flex';
+            player.style.display = 'none';
          });
       });
 
@@ -1583,33 +1586,12 @@
          }
       }
 
-      // CACHE BUSTER: Force fresh Master Agent deployment
-      console.log('🔥 MASTER AGENT v2.0 DEPLOYED - Cache Override Active');
-      console.log('🚨 Eliminating all cached fallback URLs');
-      
-      // RUNTIME VERIFICATION: Validate all fallback URLs are HTTPS
-      console.log('🔍 MASTER AGENT: Validating fallback stream integrity...');
-      Object.entries(fallbackStreams).forEach(([channelId, url]) => {
-         if (!url.startsWith('https://')) {
-            console.error(`❌ SECURITY VIOLATION: ${channelId} has non-HTTPS fallback: ${url}`);
-         } else {
-            console.log(`✅ ${channelId}: ${url.includes('live-hls-web-aje.getaj.net') ? 'AJ English' : url.includes('dwamdstream102.akamaized.net') ? 'DW' : 'RT'} verified`);
-         }
-      });
-      
-      // Force clear any browser cache affecting our agents
-      if ('serviceWorker' in navigator) {
-         navigator.serviceWorker.getRegistrations().then(registrations => {
-            registrations.forEach(registration => registration.unregister());
-         });
-      }
-      
       // Initialize demo
       simulateNetworkDetection();
       
-      // Auto-select first channel after a delay
+      // Auto-select first channel after a delay  
       setTimeout(() => {
-         console.log('🔥 MASTER AGENT: Auto-selecting first channel with fresh agents');
+         console.log('🎯 Auto-selecting first channel for demo');
          document.querySelector('.channel-item').click();
       }, 1000);
       
