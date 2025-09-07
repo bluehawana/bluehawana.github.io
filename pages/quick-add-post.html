@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Add LinkedIn Post - Bluehawana</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        input[type="url"] {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input[type="url"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .examples {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .examples h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .example-url {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+            word-break: break-all;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .example-url:hover {
+            background: #e9ecef;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Quick Add LinkedIn Post</h1>
+            <p>Instantly extract and add LinkedIn posts to your blog</p>
+        </div>
+        
+        <form id="addPostForm">
+            <div class="form-group">
+                <label for="linkedinUrl">LinkedIn Post URL</label>
+                <input 
+                    type="url" 
+                    id="linkedinUrl" 
+                    name="linkedinUrl" 
+                    placeholder="https://www.linkedin.com/feed/update/urn:li:activity:1234567890/"
+                    required
+                >
+            </div>
+            
+            <button type="submit" class="btn" id="submitBtn">
+                📥 Extract & Add Post
+            </button>
+        </form>
+        
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Extracting post content...</p>
+        </div>
+        
+        <div id="result" class="result"></div>
+        
+        <div class="examples">
+            <h3>📋 URL Format Examples</h3>
+            <div class="example-url" onclick="fillExample(this)">
+                https://www.linkedin.com/feed/update/urn:li:activity:1234567890/
+            </div>
+            <div class="example-url" onclick="fillExample(this)">
+                https://www.linkedin.com/posts/username-activity-1234567890
+            </div>
+            <div class="example-url" onclick="fillExample(this)">
+                https://linkedin.com/in/username/detail/recent-activity/shares/
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('addPostForm');
+        const loading = document.getElementById('loading');
+        const result = document.getElementById('result');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const url = document.getElementById('linkedinUrl').value;
+            
+            // Show loading state
+            loading.style.display = 'block';
+            result.style.display = 'none';
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Processing...';
+            
+            try {
+                // Call our Netlify function or API endpoint
+                const response = await fetch('/.netlify/functions/extract-linkedin-post', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ url: url })
+                });
+                
+                const data = await response.json();
+                
+                loading.style.display = 'none';
+                result.style.display = 'block';
+                
+                if (data.success) {
+                    result.className = 'result success';
+                    result.innerHTML = `
+                        <h4>✅ Post Added Successfully!</h4>
+                        <p><strong>Title:</strong> ${data.post.title}</p>
+                        <p><strong>Activity ID:</strong> ${data.post.activityId}</p>
+                        <p><strong>Tags:</strong> ${data.post.tags.join(', ')}</p>
+                        <p style="margin-top: 15px;">
+                            <a href="/pages/blog" target="_blank" style="color: #155724; text-decoration: none;">
+                                🌐 View on Blog →
+                            </a>
+                        </p>
+                    `;
+                    
+                    // Clear form
+                    document.getElementById('linkedinUrl').value = '';
+                } else {
+                    result.className = 'result error';
+                    result.innerHTML = `
+                        <h4>❌ Extraction Failed</h4>
+                        <p>${data.error || 'Unknown error occurred'}</p>
+                    `;
+                }
+            } catch (error) {
+                loading.style.display = 'none';
+                result.style.display = 'block';
+                result.className = 'result error';
+                result.innerHTML = `
+                    <h4>❌ Network Error</h4>
+                    <p>Failed to process the request: ${error.message}</p>
+                `;
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '📥 Extract & Add Post';
+            }
+        });
+        
+        function fillExample(element) {
+            document.getElementById('linkedinUrl').value = element.textContent;
+        }
+        
+        // Auto-focus the input
+        document.getElementById('linkedinUrl').focus();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "sync_timestamp": "2025-08-25T09:47:23.773Z",
+  "profile_name": "Harvad Li",
+  "new_posts_synced": 3,
+  "total_posts_in_system": 3,
+  "api_status": "working",
+  "next_sync_recommended": "2025-08-25T15:47:23.773Z",
+  "new_posts": [
+    {
+      "title": "We receive these kinds of \"Hi, #firstname\", “Dear #applicants”and “Hello #candidates”emails almost e...",
+      "type": "shared",
+      "link": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
+      "sync_date": "2025-08-25T09:47:23.771Z"
+    },
+    {
+      "title": "The hardest thing in the world is to build #TRUST. Once you have that, almost everything else can be...",
+      "type": "shared",
+      "link": "https://www.linkedin.com/posts/hzl_trust-trust-trustworthiness-activity-7363162496699973632-Hsk6",
+      "sync_date": "2025-08-25T09:47:23.771Z"
+    },
+    {
+      "title": "Unlocking Responsive UI with MediatR in .NET Core Applications:The Imperative of a Superior User Exp...",
+      "type": "article",
+      "link": "https://www.linkedin.com/pulse/unlocking-responsive-ui-mediatr-net-core-imperative-superior-li-bplmf",
+      "sync_date": "2025-08-25T09:47:23.771Z"
+    }
+  ]
+}

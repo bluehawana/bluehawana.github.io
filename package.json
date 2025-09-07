@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "firebase-tools": "^14.12.0"
+    "firebase-tools": "^14.12.0",
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "linkedin-sync": "node automated-linkedin-sync.js --immediate",
+    "start-monitoring": "node automated-linkedin-sync.js",
+    "sync-once": "node automated-linkedin-sync.js --immediate"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^21.0.0"
   }
 }
