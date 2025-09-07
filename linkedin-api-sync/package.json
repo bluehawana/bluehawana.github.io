@@ -1,0 +1,29 @@
+{
+  "name": "linkedin-api-sync",
+  "version": "1.0.0",
+  "description": "LinkedIn API-based post synchronization using real credentials",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sync": "node sync-posts.js",
+    "test": "node test-api.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "node-cron": "^3.0.2",
+    "dotenv": "^16.3.1",
+    "@octokit/rest": "^20.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "linkedin",
+    "api",
+    "automation",
+    "heroku"
+  ],
+  "author": "Hongzhi Li",
+  "license": "MIT"
+}

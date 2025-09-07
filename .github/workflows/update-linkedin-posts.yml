@@ -1,14 +1,18 @@
-name: Update LinkedIn Posts
+name: Update LinkedIn Posts (OAuth)
 
 on:
   schedule:
-    # Run every 6 hours
-    - cron: '0 */6 * * *'
+    # Run every 2 hours to catch new posts quickly
+    - cron: '0 */2 * * *'
   workflow_dispatch:
     # Allow manual triggering
     inputs:
       force_update:
         description: 'Force update even if no changes'
+        required: false
+        default: 'false'
+      test_mode:
+        description: 'Run in test mode (no commits)'
         required: false
         default: 'false'
 
@@ -27,129 +31,54 @@ jobs:
         with:
           node-version: '18'
           
-      - name: Install dependencies
+      - name: Setup environment
         run: |
-          npm install node-fetch cheerio xml2js
+          # Create data directory
+          mkdir -p data
+          mkdir -p _posts
           
-      - name: Create LinkedIn sync script
+      - name: Set up LinkedIn OAuth token
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
         run: |
-          cat > sync-linkedin.js << 'EOF'
-          const fs = require('fs').promises;
-          const fetch = require('node-fetch');
+          echo "OAuth token configured"
           
-          async function updateLinkedInPosts() {
-            try {
-              console.log('🔄 Starting LinkedIn post sync...');
-              
-              // Method 1: Try RSS feed
-              try {
-                const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/hzl/recent-activity/';
-                const response = await fetch(rssUrl);
-                const data = await response.json();
-                
-                if (data.status === 'ok' && data.items && data.items.length > 0) {
-                  const posts = data.items.slice(0, 5).map(item => ({
-                    content: cleanContent(item.description || item.title),
-                    date: new Date(item.pubDate).toISOString().split('T')[0],
-                    url: item.link || 'https://www.linkedin.com/in/hzl',
-                    tags: extractTags(item.description || item.title),
-                    source: 'rss_auto'
-                  }));
-                  
-                  await fs.writeFile('data/linkedin-posts.json', JSON.stringify(posts, null, 2));
-                  console.log('✅ RSS sync successful - updated with', posts.length, 'posts');
-                  return true;
-                }
-              } catch (error) {
-                console.warn('⚠️ RSS sync failed:', error.message);
-              }
-              
-              // Method 2: Keep existing posts if RSS fails
-              try {
-                const existingData = await fs.readFile('data/linkedin-posts.json', 'utf8');
-                const existingPosts = JSON.parse(existingData);
-                
-                // Add a timestamp to show the sync attempt
-                const updatedPosts = existingPosts.map((post, index) => {
-                  if (index === 0) {
-                    return {
-                      ...post,
-                      lastSyncAttempt: new Date().toISOString()
-                    };
-                  }
-                  return post;
-                });
-                
-                await fs.writeFile('data/linkedin-posts.json', JSON.stringify(updatedPosts, null, 2));
-                console.log('✅ Kept existing posts with sync timestamp');
-                return true;
-                
-              } catch (error) {
-                console.error('❌ Failed to maintain existing posts:', error);
-                return false;
-              }
-              
-            } catch (error) {
-              console.error('❌ LinkedIn sync failed:', error);
-              return false;
-            }
-          }
-          
-          function cleanContent(html) {
-            if (!html) return '';
-            return html
-              .replace(/<[^>]*>/g, '')
-              .replace(/&nbsp;/g, ' ')
-              .replace(/&amp;/g, '&')
-              .replace(/&lt;/g, '<')
-              .replace(/&gt;/g, '>')
-              .replace(/&quot;/g, '"')
-              .trim()
-              .substring(0, 500);
-          }
-          
-          function extractTags(content) {
-            if (!content) return ['Update'];
-            
-            const hashtags = content.match(/#\w+/g);
-            if (hashtags) {
-              return hashtags.map(tag => tag.substring(1));
-            }
-            
-            const keywords = ['development', 'coding', 'tech', 'programming', 'software', 'web', 'app', 'linkedin'];
-            const foundKeywords = keywords.filter(keyword => 
-              content.toLowerCase().includes(keyword)
-            );
-            
-            return foundKeywords.length > 0 ? foundKeywords : ['Update'];
-          }
-          
-          updateLinkedInPosts().then(success => {
-            process.exit(success ? 0 : 1);
-          });
-          EOF
-          
-      - name: Run LinkedIn sync
-        run: node sync-linkedin.js
+      - name: Run LinkedIn OAuth automation
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+        run: node linkedin-oauth-automation.js
         
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet data/linkedin-posts.json; then
+          # Check for changes in data files and blog posts
+          if git diff --quiet data/ _posts/; then
             echo "No changes detected"
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             echo "Changes detected"
             echo "has_changes=true" >> $GITHUB_OUTPUT
+            
+            # Show what changed
+            echo "Changed files:"
+            git diff --name-only data/ _posts/ || true
           fi
           
       - name: Commit and push changes
-        if: steps.changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true'
+        if: (steps.changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true') && github.event.inputs.test_mode != 'true'
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add data/linkedin-posts.json
-          git commit -m "🔄 Auto-update LinkedIn posts - $(date '+%Y-%m-%d %H:%M:%S')"
+          git config --local user.name "LinkedIn OAuth Bot"
+          git add data/ _posts/
+          
+          # Create detailed commit message
+          NEW_POSTS=$(find _posts -name "*linkedin*" -newer data/linkedin-sync-log.json 2>/dev/null | wc -l || echo "0")
+          git commit -m "🔄 LinkedIn OAuth sync - $(date '+%Y-%m-%d %H:%M:%S')
+
+          - New posts synced: ${NEW_POSTS}
+          - Updated data files and blog posts
+          - Automated via OAuth 2.0 API"
+          
           git push
           
       - name: Create sync report

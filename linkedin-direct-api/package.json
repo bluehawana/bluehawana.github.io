@@ -1,0 +1,23 @@
+{
+  "name": "linkedin-direct-api",
+  "version": "1.0.0",
+  "description": "Direct LinkedIn API access using access token",
+  "main": "linkedin-client.js",
+  "scripts": {
+    "test": "node test-token.js",
+    "sync": "node sync-posts.js",
+    "info": "node api-info.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "linkedin",
+    "api",
+    "direct",
+    "token"
+  ],
+  "author": "Hongzhi Li",
+  "license": "MIT"
+}

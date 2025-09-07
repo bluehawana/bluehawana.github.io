@@ -9,6 +9,7 @@ const https = require('https');
 const fs = require('fs').promises;
 const path = require('path');
 
+// Updated OAuth 2.0 Access Token with proper scopes
 const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || 'REMOVED_SECRET';
 
 const POSTS_DIR = path.join(__dirname, '_posts');

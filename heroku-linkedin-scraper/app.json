@@ -1,0 +1,61 @@
+{
+  "name": "LinkedIn Auto-Scraper",
+  "description": "Automatically scrapes LinkedIn posts and updates GitHub repository",
+  "repository": "https://github.com/bluehawana/linkedin-auto-scraper",
+  "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg",
+  "keywords": ["linkedin", "scraper", "automation", "github", "portfolio"],
+  "image": "heroku/nodejs",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub Personal Access Token with repo permissions",
+      "required": true
+    },
+    "GITHUB_REPO_OWNER": {
+      "description": "GitHub repository owner username",
+      "value": "bluehawana"
+    },
+    "GITHUB_REPO_NAME": {
+      "description": "GitHub repository name",
+      "value": "bluehawana.github.io"
+    },
+    "LINKEDIN_PROFILE_URL": {
+      "description": "Your LinkedIn profile URL",
+      "value": "https://www.linkedin.com/in/hzl"
+    },
+    "SCRAPE_INTERVAL_HOURS": {
+      "description": "How often to scrape (in hours)",
+      "value": "2"
+    },
+    "MAX_POSTS_TO_KEEP": {
+      "description": "Maximum number of posts to keep",
+      "value": "10"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'LinkedIn Auto-Scraper deployed successfully!'"
+  }
+}
