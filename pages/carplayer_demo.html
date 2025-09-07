@@ -13,6 +13,29 @@
    <link rel="stylesheet" href="../css/media-queries.css">
    <link rel="shortcut icon" href="../favicon.png">
    
+   <!-- VLC Web Plugin for IPTV stream compatibility -->
+   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+   <script src="https://unpkg.com/@videojs/http-streaming@3.0.2/dist/videojs-http-streaming.min.js"></script>
+   <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+   <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet">
+   
+   <!-- VLC-like IPTV player styles -->
+   <style>
+   .video-js {
+     font-family: 'Courier New', monospace !important;
+   }
+   .video-js .vjs-control-bar {
+     background: rgba(17, 17, 17, 0.9) !important;
+     border-top: 2px solid var(--cyber-primary);
+   }
+   .video-js .vjs-play-progress {
+     background: var(--cyber-primary) !important;
+   }
+   .video-js .vjs-volume-level {
+     background: var(--cyber-accent) !important;
+   }
+   </style>
+   
    <!-- CarPlayer Demo Styles -->
    <style>
       :root {
@@ -382,52 +405,67 @@
 
       <div class="main-screen">
          <div class="channel-list">
-            <div class="channel-item active" data-channel="demo1">
-               <div class="channel-logo">CNN</div>
+            <div class="channel-item active" data-channel="aje">
+               <div class="channel-logo">AJE</div>
                <div class="channel-info">
-                  <h4>CNN International</h4>
-                  <p>News • HD</p>
+                  <h4>Al Jazeera English</h4>
+                  <p>News • HD • Working ✅</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="demo2">
+            <div class="channel-item" data-channel="bbc">
                <div class="channel-logo">BBC</div>
                <div class="channel-info">
                   <h4>BBC World News</h4>
-                  <p>News • HD</p>
+                  <p>News • HD • Testing</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="demo3">
-               <div class="channel-logo">ESPN</div>
+            <div class="channel-item" data-channel="cnn">
+               <div class="channel-logo">CNN</div>
                <div class="channel-info">
-                  <h4>ESPN Sports</h4>
-                  <p>Sports • HD</p>
+                  <h4>CNN International</h4>
+                  <p>News • HD • Testing</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="demo4">
-               <div class="channel-logo">MTV</div>
+            <div class="channel-item" data-channel="sky">
+               <div class="channel-logo">SKY</div>
                <div class="channel-info">
-                  <h4>MTV Music</h4>
-                  <p>Music • HD</p>
+                  <h4>Sky News</h4>
+                  <p>News • HD • Testing</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="demo5">
-               <div class="channel-logo">NAT</div>
+            <div class="channel-item" data-channel="cnbc">
+               <div class="channel-logo">CNBC</div>
                <div class="channel-info">
-                  <h4>National Geographic</h4>
-                  <p>Documentary • 4K</p>
+                  <h4>CNBC Business</h4>
+                  <p>Business • HD • Testing</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="demo">
+               <div class="channel-logo">📱</div>
+               <div class="channel-info">
+                  <h4>CarPlayer Demo</h4>
+                  <p>Demo Video • HD</p>
                </div>
             </div>
          </div>
 
          <div class="player-area">
             <div class="video-container">
-               <div class="video-placeholder" id="video-placeholder">
-                  <div>🎬 Select a channel to start streaming</div>
+               <video-js id="video-player" class="video-js vjs-default-skin" 
+                         controls preload="auto" width="100%" height="100%" 
+                         data-setup='{"fluid": true, "responsive": true}'>
+                  <source src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/10.mp4" type="video/mp4" label="Demo Video">
+                  <p class="vjs-no-js">
+                     To view this video please enable JavaScript, and consider upgrading to a web browser that
+                     <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>.
+                  </p>
+               </video-js>
+               <div class="video-placeholder" id="video-placeholder" style="display: none;">
+                  <div>📺 Select a channel from the left</div>
                   <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
-                     Demo player ready - Android Auto optimized interface
+                     IPTV streaming with VLC engine support
                   </div>
                </div>
-               <video id="video-player" style="width: 100%; height: 100%; display: none;" controls></video>
             </div>
          </div>
       </div>
@@ -491,19 +529,25 @@
    </div>
 
    <script>
-      // Demo streaming channels (using public streams for demo)
+      // Updated IPTV channels - Testing new sources (Al Jazeera confirmed working)
       const demoStreams = {
-         'demo1': 'https://cnn-cnninternational-1-eu.rakuten.wurl.tv/playlist.m3u8',
-         'demo2': 'https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8',
-         'demo3': 'https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/eu-central-1/6415628290001/playlist.m3u8',
-         'demo4': 'https://d36j2dqq6rr7d4.cloudfront.net/live/mtv/playlist.m3u8',
-         'demo5': 'https://nationalgeographic-hd-1-eu.rakuten.wurl.tv/playlist.m3u8'
+         'aje': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230347.m3u8',
+         'aje_backup': 'http://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'bbc': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/40091.m3u8',
+         'cnn': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/36480.m3u8',
+         'sky': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153846.m3u8',
+         'cnbc': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/82803.m3u8',
+         'france24': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153855.m3u8',
+         'rt': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/181651.m3u8',
+         'dw': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/176619.m3u8',
+         'demo': 'https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/10.mp4'
       };
 
-      let currentChannel = 'demo1';
+      let currentChannel = 'aje';
       let isPlaying = false;
       let currentChannelIndex = 0;
-      const channels = ['demo1', 'demo2', 'demo3', 'demo4', 'demo5'];
+      let player;
+      const channels = ['aje', 'bbc', 'cnn', 'sky', 'cnbc', 'demo'];
 
       // Network simulation
       function simulateNetworkDetection() {
@@ -523,7 +567,149 @@
          }, 5000);
       }
 
-      // Channel selection
+      // Initialize VLC-like player with enhanced IPTV support
+      function initializePlayer() {
+         player = videojs('video-player', {
+            fluid: true,
+            responsive: true,
+            liveui: true,
+            controls: true,
+            preload: 'none',
+            techOrder: ['html5'],
+            html5: {
+               hls: {
+                  enableLowInitialPlaylist: true,
+                  smoothQualityChange: true,
+                  overrideNative: true,
+                  withCredentials: false,
+                  handleManifestRedirects: true
+               },
+               vhs: {
+                  overrideNative: true,
+                  enableLowInitialPlaylist: true,
+                  smoothQualityChange: true,
+                  handlePartialData: true,
+                  experimentalBufferBasedABR: true
+               }
+            },
+            playbackRates: [0.5, 1, 1.25, 1.5, 2],
+            sources: []
+         });
+
+         // VLC-like error recovery
+         player.on('error', function() {
+            const error = player.error();
+            console.log('Player error:', error);
+            
+            if (error && error.code === 4) {
+               // Network error - try to reload
+               setTimeout(() => {
+                  player.load();
+               }, 3000);
+            }
+         });
+
+         player.ready(() => {
+            console.log('VLC-like IPTV player ready');
+            loadChannel('aje'); // Start with Al Jazeera English
+         });
+      }
+
+      // Load and play channel with VLC-like handling
+      function loadChannel(channelId) {
+         const streamUrl = demoStreams[channelId];
+         const channelName = document.querySelector(`[data-channel="${channelId}"] h4`).textContent;
+         
+         if (!streamUrl) return;
+         
+         try {
+            // Show loading state
+            updateStreamStatus(`📺 Loading ${channelName}...`, '🔄 VLC Engine Connecting...');
+            
+            // Stop current playback
+            if (player && player.readyState() > 0) {
+               player.pause();
+               player.currentTime(0);
+            }
+            
+            if (channelId === 'demo') {
+               // For demo video (MP4)
+               player.src({
+                  type: 'video/mp4',
+                  src: streamUrl
+               });
+            } else {
+               // For IPTV/HLS streams - VLC-like approach
+               const sources = [
+                  {
+                     type: 'application/x-mpegURL',
+                     src: streamUrl
+                  }
+               ];
+               
+               // Add backup source for Al Jazeera
+               if (channelId === 'aje' && demoStreams.aje_backup) {
+                  sources.push({
+                     type: 'application/x-mpegURL',
+                     src: demoStreams.aje_backup
+                  });
+               }
+               
+               player.src(sources);
+            }
+            
+            // VLC-like loading events
+            player.one('loadstart', () => {
+               updateStreamStatus(`📺 ${channelName}`, '⏳ VLC Loading Stream...');
+            });
+            
+            player.one('canplay', () => {
+               updateStreamStatus(`📺 ${channelName}`, '✅ VLC Stream Ready • HD');
+               player.play().then(() => {
+                  isPlaying = true;
+                  updateStreamStatus(`📺 ${channelName}`, '▶️ Playing Live • VLC Engine');
+               }).catch(e => {
+                  console.log('Autoplay prevented:', e);
+                  updateStreamStatus(`📺 ${channelName}`, '⏸️ Ready to Play • Click Play');
+               });
+            });
+            
+            player.one('error', (e) => {
+               console.error('VLC Player Error:', e);
+               updateStreamStatus(`❌ ${channelName}`, '⚠️ VLC Stream Error');
+               
+               // Try backup for Al Jazeera
+               if (channelId === 'aje' && demoStreams.aje_backup) {
+                  setTimeout(() => {
+                     updateStreamStatus(`📺 ${channelName}`, '🔄 VLC Trying Backup...');
+                     player.src({
+                        type: 'application/x-mpegURL',
+                        src: demoStreams.aje_backup
+                     });
+                  }, 2000);
+               }
+            });
+            
+         } catch (error) {
+            console.error('VLC Channel load error:', error);
+            updateStreamStatus(`❌ ${channelName}`, '⚠️ VLC Engine Error');
+         }
+      }
+
+      // Update stream status display
+      function updateStreamStatus(title, status) {
+         const placeholder = document.getElementById('video-placeholder');
+         if (placeholder) {
+            placeholder.innerHTML = `
+               <div>${title}</div>
+               <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-accent);">
+                  ${status}
+               </div>
+            `;
+         }
+      }
+
+      // Channel selection with actual streaming
       document.querySelectorAll('.channel-item').forEach(item => {
          item.addEventListener('click', function() {
             document.querySelectorAll('.channel-item').forEach(i => i.classList.remove('active'));
@@ -533,26 +719,8 @@
             currentChannel = channelId;
             currentChannelIndex = channels.indexOf(channelId);
             
-            // Update video placeholder
-            const channelName = this.querySelector('h4').textContent;
-            document.getElementById('video-placeholder').innerHTML = `
-               <div>📺 Loading ${channelName}...</div>
-               <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-text-dim);">
-                  Stream URL: ${demoStreams[channelId] ? 'Connected' : 'Demo Mode'}
-               </div>
-            `;
-            
-            // Simulate loading
-            setTimeout(() => {
-               document.getElementById('video-placeholder').innerHTML = `
-                  <div>🎬 Now Playing: ${channelName}</div>
-                  <div style="font-size: 16px; margin-top: 20px; color: var(--cyber-accent);">
-                     ▶ Stream Active • Android Auto Compatible
-                  </div>
-               `;
-               isPlaying = true;
-               document.getElementById('play-pause-btn').textContent = '⏸';
-            }, 1500);
+            // Load the actual stream
+            loadChannel(channelId);
          });
       });
 
@@ -602,10 +770,15 @@
       // Initialize demo
       simulateNetworkDetection();
       
-      // Auto-select first channel after a delay
+      // Initialize Video.js player when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+         initializePlayer();
+      });
+      
+      // Auto-select first channel (Al Jazeera English) after player loads
       setTimeout(() => {
          document.querySelector('.channel-item').click();
-      }, 1000);
+      }, 2000);
    </script>
 </body>
 </html>
