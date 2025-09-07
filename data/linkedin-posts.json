@@ -1,5 +1,36 @@
 [
   {
+    "id": "post-1757261307841",
+    "content": "🚀 Just tested my LinkedIn OAuth integration! \n\nThe system successfully:\n✅ Authenticated with LinkedIn API using OAuth 2.0\n✅ Retrieved my profile information\n✅ Detected this new post (simulated)\n✅ Created a blog post automatically\n\nThis demonstrates that the OAuth token is working correctly for profile access. For post content, we can use alternative methods like RSS feeds or manual input.\n\n#LinkedIn #OAuth #Automation #TechTest",
+    "date": "2025-09-07",
+    "timestamp": 1757261307841,
+    "url": "https://www.linkedin.com/in/hzl",
+    "author": {
+      "sub": "IMcvTu6zhf",
+      "email_verified": true,
+      "name": "Harvad Li",
+      "locale": {
+        "country": "US",
+        "language": "en"
+      },
+      "given_name": "Harvad",
+      "family_name": "Li",
+      "email": "bluehawana@gmail.com",
+      "picture": "https://media.licdn.com/dms/image/v2/D4D03AQFcATr32UD3wA/profile-displayphoto-shrink_400_400/B4DZQs0deyGgAo-/0/1735918737936?e=1759968000&v=beta&t=dswyh_fU6pCA9Jd_hZL5xx15UXNhLEqItqVxvu3EklY"
+    },
+    "tags": [
+      "LinkedIn",
+      "OAuth",
+      "Automation",
+      "TechTest"
+    ],
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
     "content": "🎯 Mission Completed! Just achieved AOSP15 clean build in world top 10% fastest records! 🚀 The optimization journey from hours to minutes shows what's possible when you combine deep Android system knowledge with performance engineering. Sometimes the biggest wins come from understanding the build system internals and applying the right optimizations at the right layers. #AndroidDevelopment #AOSP15 #PerformanceEngineering #BuildOptimization",
     "date": "2025-09-07",
     "url": "https://www.linkedin.com/in/hzl",

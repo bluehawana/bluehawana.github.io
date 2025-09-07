@@ -9,7 +9,8 @@ const https = require('https');
 const fs = require('fs').promises;
 const path = require('path');
 
-const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || 'AQXaVmzjEmCown_3bbfd9y8K5bvw7R6jNPZ6c-7etLwLQci7Dy4G7GeJIJXJ4q9kIPUfOn9Cnj-hegdcVS6b-vNh9erGyYgNW3xydvA7jTg0EuDJWZzBjls8srw6HrZjWOYf0oNOgngJ3Xh43HDbibdI6wpL2psi-jxpaLD1IdFSX6Lw0inPXK4BY0e1r_fplXSvslzhUGg3IfcGjo24BMrmHghx7OS9oPnDrd_xjEiyoCnat2SdpebmqFt-mpabq-VDn0bura_RHV0MDv5PrWFkgeXLqW7QNVWOsIRce9pDhf682i6HV0g_PD4rFfF3G5f08XpmrEstneopmA_VHEbY0Y8TzA';
+// Updated OAuth 2.0 Access Token with proper scopes
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || 'AQXAaMANteu-XQoVzKWDcARMLIkUOV6n92tstpvl9noU6niFW0PWud7eD6r5uUnGDHIIdiPMN4SNk3tVbmK-pQewkWkO5BZqd3KJUxVGMxav-qgivdROWMV-z_V97d1bgDI-PScFAsGk8Pun6XasiEhxARRhLbvuDvF92mea89aZgHrx-Vc-q8bOL-_8GgNbzkUeFX3sJQrmbKWbjhaZA2I0QYVeePmbIkJclfVD53GXIoTdkEbH19FSYu5Q2BM3AyIHhFLnpoIi_3xncAUDkFZtLwieDJ9cqaQJYVXD0b2Sk9Hm92aILKJDaS24yymZyvsnJfniVCAApYMk_Px8U96cYFEfmg';
 
 const POSTS_DIR = path.join(__dirname, '_posts');
 const SYNC_LOG_FILE = path.join(__dirname, '.linkedin-sync-log.json');

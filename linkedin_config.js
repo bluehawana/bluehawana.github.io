@@ -1,81 +1,49 @@
 /**
- * LinkedIn API Configuration Template
+ * LinkedIn API Configuration
  * 
- * SECURITY: Copy this file to 'linkedin-config.js' and fill in your actual credentials.
- * NEVER commit linkedin-config.js to the repository!
- * 
- * To use:
- * 1. Copy this file: cp linkedin-config.template.js linkedin-config.js
- * 2. Fill in your actual LinkedIn API credentials in linkedin-config.js
- * 3. The .gitignore file will prevent linkedin-config.js from being committed
+ * SECURITY: This file contains actual credentials and should NOT be committed to the repository!
+ * The .gitignore file prevents this file from being committed.
  */
 
 // Configuration object for LinkedIn API
 window.linkedinConfig = {
-    LINKEDIN_CLIENT_ID: 'YOUR_CLIENT_ID_HERE',
-    LINKEDIN_CLIENT_SECRET: 'YOUR_CLIENT_SECRET_HERE',
+    LINKEDIN_CLIENT_ID: '77duha47hcbh8o',
+    LINKEDIN_CLIENT_SECRET: 'YOUR_CLIENT_SECRET_HERE', // You'll need to provide this
     
     // API Configuration
     API_VERSION: '202505',  // Latest version as per LinkedIn API docs
     BASE_URL: 'https://api.linkedin.com/rest',  // Community Management API
     
-    // OAuth Configuration - DO NOT MODIFY THESE SCOPES
+    // OAuth Configuration - Your actual scopes
     SCOPES: [
-        'r_member_social',      // Access to member's social activity
-        'r_basicprofile',       // Basic profile information
-        'r_1st_connections_size', // Connection count
-        'r_organization_social', // Community Management API READ access (required for v202505)
-        'w_organization_social'  // Community Management API WRITE access (required for v202505)
+        'openid',               // Use your name and photo
+        'profile',              // Use your name and photo
+        'r_events',             // Retrieve your organization's events
+        'w_member_social',      // Create, modify, and delete posts, comments, and reactions
+        'email',                // Use the primary email address
+        'rw_events'             // Manage your organization's events
     ],
     
-    // Pre-configured access token (if available) - OPTIONAL
-    ACCESS_TOKEN: null // Set to your token string if you have one
+    // Your actual access token
+    ACCESS_TOKEN: 'AQXAaMANteu-XQoVzKWDcARMLIkUOV6n92tstpvl9noU6niFW0PWud7eD6r5uUnGDHIIdiPMN4SNk3tVbmK-pQewkWkO5BZqd3KJUxVGMxav-qgivdROWMV-z_V97d1bgDI-PScFAsGk8Pun6XasiEhxARRhLbvuDvF92mea89aZgHrx-Vc-q8bOL-_8GgNbzkUeFX3sJQrmbKWbjhaZA2I0QYVeePmbIkJclfVD53GXIoTdkEbH19FSYu5Q2BM3AyIHhFLnpoIi_3xncAUDkFZtLwieDJ9cqaQJYVXD0b2Sk9Hm92aILKJDaS24yymZyvsnJfniVCAApYMk_Px8U96cYFEfmg'
 };
 
 // Auto-configure localStorage with credentials when this script loads
 if (typeof window !== 'undefined') {
-    // Validate configuration
-    if (!window.linkedinConfig.LINKEDIN_CLIENT_ID || window.linkedinConfig.LINKEDIN_CLIENT_ID === 'YOUR_CLIENT_ID_HERE') {
-        console.error('❌ LinkedIn Client ID not configured! Please update linkedin-config.js with your actual credentials.');
-        return;
-    }
-    
-    if (!window.linkedinConfig.LINKEDIN_CLIENT_SECRET || window.linkedinConfig.LINKEDIN_CLIENT_SECRET === 'YOUR_CLIENT_SECRET_HERE') {
-        console.error('❌ LinkedIn Client Secret not configured! Please update linkedin-config.js with your actual credentials.');
-        return;
-    }
-    
     // Set configuration in localStorage
     localStorage.setItem('LINKEDIN_CLIENT_ID', window.linkedinConfig.LINKEDIN_CLIENT_ID);
-    localStorage.setItem('LINKEDIN_CLIENT_SECRET', window.linkedinConfig.LINKEDIN_CLIENT_SECRET);
     
-    // CRITICAL: Clear old tokens to force re-authentication with new scopes
-    const existingToken = localStorage.getItem('linkedin_access_token');
-    const tokenExpires = localStorage.getItem('linkedin_token_expires');
+    // Set access token immediately
+    localStorage.setItem('linkedin_access_token', window.linkedinConfig.ACCESS_TOKEN);
     
-    if (existingToken) {
-        // Check if this token was created with old scopes (pre-Community Management API)
-        const shouldClearToken = !localStorage.getItem('linkedin_community_api_enabled');
-        
-        if (shouldClearToken) {
-            console.log('🔄 Clearing old token - need Community Management API access');
-            localStorage.removeItem('linkedin_access_token');
-            localStorage.removeItem('linkedin_token_expires');
-            localStorage.removeItem('linkedin_oauth_state');
-        } else {
-            console.log('✅ Existing token is compatible with Community Management API');
-        }
-    }
+    // Set expiration to 60 days from now (LinkedIn standard token expiry)
+    const expiryDate = Date.now() + (60 * 24 * 60 * 60 * 1000);
+    localStorage.setItem('linkedin_token_expires', expiryDate);
     
-    // Set access token if provided (for testing purposes)
-    if (window.linkedinConfig.ACCESS_TOKEN && !localStorage.getItem('linkedin_access_token')) {
-        localStorage.setItem('linkedin_access_token', window.linkedinConfig.ACCESS_TOKEN);
-        // Set expiration to 60 days from now (LinkedIn standard token expiry)
-        localStorage.setItem('linkedin_token_expires', Date.now() + (60 * 24 * 60 * 60 * 1000));
-        // Mark as Community Management API compatible
-        localStorage.setItem('linkedin_community_api_enabled', 'true');
-        console.log('✅ LinkedIn access token configured with 60-day expiry and Community Management API');
-    }
+    // Mark as Community Management API compatible
+    localStorage.setItem('linkedin_community_api_enabled', 'true');
     
-    console.log('✅ LinkedIn API configuration loaded successfully');
+    console.log('✅ LinkedIn OAuth 2.0 access token configured successfully');
+    console.log('📅 Token expires:', new Date(expiryDate).toLocaleDateString());
+    console.log('🔑 Scopes enabled:', window.linkedinConfig.SCOPES.join(', '));
 }

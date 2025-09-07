@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn OAuth 2.0 Token Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { border-color: #28a745; background: #f8fff9; }
+        .error { border-color: #dc3545; background: #fff8f8; }
+        .warning { border-color: #ffc107; background: #fffdf5; }
+        button {
+            background: #0077b5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #005885; }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        .token-info {
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔑 LinkedIn OAuth 2.0 Token Test</h1>
+        
+        <div class="test-section">
+            <h3>Token Configuration</h3>
+            <p><strong>Client ID:</strong> 77duha47hcbh8o</p>
+            <p><strong>Scopes:</strong> openid, profile, r_events, w_member_social, email, rw_events</p>
+            <div class="token-info">
+                <strong>Access Token:</strong><br>
+                AQXAaMANteu-XQoVzKWDcARMLIkUOV6n92tstpvl9noU6niFW0PWud7eD6r5uUnGDHIIdiPMN4SNk3tVbmK-pQewkWkO5BZqd3KJUxVGMxav-qgivdROWMV-z_V97d1bgDI-PScFAsGk8Pun6XasiEhxARRhLbvuDvF92mea89aZgHrx-Vc-q8bOL-_8GgNbzkUeFX3sJQrmbKWbjhaZA2I0QYVeePmbIkJclfVD53GXIoTdkEbH19FSYu5Q2BM3AyIHhFLnpoIi_3xncAUDkFZtLwieDJ9cqaQJYVXD0b2Sk9Hm92aILKJDaS24yymZyvsnJfniVCAApYMk_Px8U96cYFEfmg
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>Test Actions</h3>
+            <button onclick="testUserProfile()">Test User Profile</button>
+            <button onclick="testMemberPosts()">Test Member Posts</button>
+            <button onclick="testTokenInfo()">Test Token Info</button>
+            <button onclick="runAllTests()">Run All Tests</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="linkedin_config.js"></script>
+    <script>
+        const ACCESS_TOKEN = 'AQXAaMANteu-XQoVzKWDcARMLIkUOV6n92tstpvl9noU6niFW0PWud7eD6r5uUnGDHIIdiPMN4SNk3tVbmK-pQewkWkO5BZqd3KJUxVGMxav-qgivdROWMV-z_V97d1bgDI-PScFAsGk8Pun6XasiEhxARRhLbvuDvF92mea89aZgHrx-Vc-q8bOL-_8GgNbzkUeFX3sJQrmbKWbjhaZA2I0QYVeePmbIkJclfVD53GXIoTdkEbH19FSYu5Q2BM3AyIHhFLnpoIi_3xncAUDkFZtLwieDJ9cqaQJYVXD0b2Sk9Hm92aILKJDaS24yymZyvsnJfniVCAApYMk_Px8U96cYFEfmg';
+        
+        function addResult(title, status, message, data = null) {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `test-section ${status}`;
+            
+            let html = `<h4>${title}</h4><p>${message}</p>`;
+            if (data) {
+                html += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            }
+            
+            div.innerHTML = html;
+            results.appendChild(div);
+        }
+
+        async function testUserProfile() {
+            try {
+                const response = await fetch('https://api.linkedin.com/v2/userinfo', {
+                    headers: {
+                        'Authorization': `Bearer ${ACCESS_TOKEN}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const profile = await response.json();
+                    addResult('✅ User Profile Test', 'success', 
+                        `Profile retrieved successfully for ${profile.name}`, profile);
+                } else {
+                    addResult('❌ User Profile Test', 'error', 
+                        `Failed with status ${response.status}: ${response.statusText}`);
+                }
+            } catch (error) {
+                addResult('❌ User Profile Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        async function testMemberPosts() {
+            try {
+                // First get member ID
+                const meResponse = await fetch('https://api.linkedin.com/v2/people/(id~)', {
+                    headers: {
+                        'Authorization': `Bearer ${ACCESS_TOKEN}`,
+                        'Content-Type': 'application/json',
+                        'X-Restli-Protocol-Version': '2.0.0'
+                    }
+                });
+
+                if (!meResponse.ok) {
+                    throw new Error(`Cannot get member ID: ${meResponse.status}`);
+                }
+
+                const me = await meResponse.json();
+                const memberId = me.id;
+
+                // Now get posts
+                const postsResponse = await fetch(`https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:person:${memberId}&count=5`, {
+                    headers: {
+                        'Authorization': `Bearer ${ACCESS_TOKEN}`,
+                        'Content-Type': 'application/json',
+                        'X-Restli-Protocol-Version': '2.0.0'
+                    }
+                });
+
+                if (postsResponse.ok) {
+                    const posts = await postsResponse.json();
+                    addResult('✅ Member Posts Test', 'success', 
+                        `Found ${posts.elements ? posts.elements.length : 0} posts`, posts);
+                } else {
+                    addResult('⚠️ Member Posts Test', 'warning', 
+                        `Posts API returned ${postsResponse.status}. This might be expected if no posts are available.`);
+                }
+            } catch (error) {
+                addResult('❌ Member Posts Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        async function testTokenInfo() {
+            try {
+                const response = await fetch('https://api.linkedin.com/oauth/v2/introspectToken', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: `token=${ACCESS_TOKEN}`
+                });
+
+                if (response.ok) {
+                    const tokenInfo = await response.json();
+                    addResult('✅ Token Introspection Test', 'success', 
+                        `Token is ${tokenInfo.active ? 'active' : 'inactive'}`, tokenInfo);
+                } else {
+                    addResult('❌ Token Introspection Test', 'error', 
+                        `Failed with status ${response.status}`);
+                }
+            } catch (error) {
+                addResult('❌ Token Introspection Test', 'error', `Error: ${error.message}`);
+            }
+        }
+
+        async function runAllTests() {
+            document.getElementById('results').innerHTML = '';
+            addResult('🚀 Starting Tests', 'warning', 'Running all OAuth 2.0 token tests...');
+            
+            await testUserProfile();
+            await testMemberPosts();
+            await testTokenInfo();
+            
+            addResult('🏁 Tests Complete', 'success', 'All tests have been executed. Check results above.');
+        }
+
+        // Auto-run tests on page load
+        window.addEventListener('load', () => {
+            console.log('🔑 OAuth test page loaded');
+            console.log('📋 Token configured:', ACCESS_TOKEN ? 'Yes' : 'No');
+        });
+    </script>
+</body>
+</html>

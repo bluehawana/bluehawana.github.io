@@ -1,17 +1,93 @@
 /**
  * Improved LinkedIn Sync System
  * Multiple fallback methods for reliable LinkedIn post synchronization
+ * Now includes OAuth 2.0 API access
  */
 
 class LinkedInSyncManager {
     constructor() {
         this.methods = [
+            'oauth_api',
             'rss_feed',
             'web_scraping', 
             'manual_update',
             'static_fallback'
         ];
-        this.currentMethod = 'rss_feed';
+        this.currentMethod = 'oauth_api';
+        this.accessToken = localStorage.getItem('linkedin_access_token');
+        this.memberId = localStorage.getItem('linkedin_member_id');
+    }
+
+    /**
+     * Method 1: OAuth 2.0 API Access (Most Reliable)
+     * Uses the official LinkedIn API with OAuth token
+     */
+    async syncViaOAuthAPI() {
+        try {
+            console.log('🔄 Attempting LinkedIn OAuth API sync...');
+            
+            if (!this.accessToken) {
+                throw new Error('No OAuth access token available');
+            }
+
+            const headers = {
+                'Authorization': `Bearer ${this.accessToken}`,
+                'Content-Type': 'application/json',
+                'X-Restli-Protocol-Version': '2.0.0'
+            };
+
+            // First, get member ID if not available
+            if (!this.memberId) {
+                const meResponse = await fetch('https://api.linkedin.com/v2/people/(id~)', { headers });
+                if (meResponse.ok) {
+                    const me = await meResponse.json();
+                    this.memberId = me.id;
+                    localStorage.setItem('linkedin_member_id', this.memberId);
+                }
+            }
+
+            // Get user's posts using the shares API
+            const postsUrl = `https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:person:${this.memberId}&count=20&sortBy=CREATED_TIME`;
+            const postsResponse = await fetch(postsUrl, { headers });
+            
+            if (postsResponse.ok) {
+                const data = await postsResponse.json();
+                const posts = this.parseOAuthPosts(data.elements || []);
+                await this.savePosts(posts);
+                console.log('✅ OAuth API sync successful');
+                return posts;
+            }
+            
+            throw new Error(`API request failed: ${postsResponse.status}`);
+            
+        } catch (error) {
+            console.warn('⚠️ OAuth API sync failed:', error.message);
+            return null;
+        }
+    }
+
+    /**
+     * Parse posts from OAuth API response
+     */
+    parseOAuthPosts(shares) {
+        return shares.map(share => {
+            const text = share.text?.text || '';
+            const created = new Date(share.created?.time || Date.now());
+            
+            return {
+                id: share.id,
+                content: text,
+                date: created.toISOString().split('T')[0],
+                timestamp: created.getTime(),
+                url: `https://www.linkedin.com/feed/update/${share.id}`,
+                type: 'linkedin_oauth',
+                engagement: {
+                    likes: share.totalSocialActivityCounts?.numLikes || 0,
+                    comments: share.totalSocialActivityCounts?.numComments || 0,
+                    shares: share.totalSocialActivityCounts?.numShares || 0
+                }
+            };
+        }).filter(post => post.content.length > 0);
     }
 
     /**
