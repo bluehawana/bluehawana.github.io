@@ -31,15 +31,21 @@ function convertToDirectLinkedInURL(url, postContent = '', postData = null) {
 }
 
 /**
- * Fetch latest LinkedIn posts from data file
+ * Fetch latest LinkedIn posts with fallback methods
  */
 async function fetchLinkedInPosts() {
     try {
-        const response = await fetch('/data/linkedin-posts.json');
-        const posts = await response.json();
+        // Try multiple methods to get posts
+        let posts = await tryRSSSync();
         
-        if (!response.ok) {
-            throw new Error(`Error loading LinkedIn posts: ${response.status}`);
+        if (!posts || posts.length === 0) {
+            // Fallback to static data
+            const response = await fetch('/data/linkedin-posts.json');
+            posts = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(`Error loading LinkedIn posts: ${response.status}`);
+            }
         }
         
         const postsContainer = document.getElementById('linkedin-posts');
@@ -106,6 +112,69 @@ async function fetchLinkedInPosts() {
             postsContainer.innerHTML = '<p>Unable to load LinkedIn posts at this time.</p>';
         }
     }
+}
+
+/**
+ * Try to sync via RSS feed
+ */
+async function tryRSSSync() {
+    try {
+        console.log('🔄 Attempting RSS sync...');
+        const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/hzl/recent-activity/';
+        const response = await fetch(rssUrl);
+        const data = await response.json();
+        
+        if (data.status === 'ok' && data.items && data.items.length > 0) {
+            const posts = data.items.slice(0, 5).map(item => ({
+                content: cleanHTMLContent(item.description || item.title),
+                date: new Date(item.pubDate).toISOString().split('T')[0],
+                url: item.link || 'https://www.linkedin.com/in/hzl',
+                tags: extractTagsFromContent(item.description || item.title),
+                source: 'rss'
+            }));
+            
+            console.log('✅ RSS sync successful');
+            return posts;
+        }
+    } catch (error) {
+        console.warn('⚠️ RSS sync failed:', error.message);
+    }
+    return null;
+}
+
+/**
+ * Clean HTML content
+ */
+function cleanHTMLContent(html) {
+    if (!html) return '';
+    return html
+        .replace(/<[^>]*>/g, '')
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .trim()
+        .substring(0, 500);
+}
+
+/**
+ * Extract tags from content
+ */
+function extractTagsFromContent(content) {
+    if (!content) return ['Update'];
+    
+    const hashtags = content.match(/#\w+/g);
+    if (hashtags) {
+        return hashtags.map(tag => tag.substring(1));
+    }
+    
+    const keywords = ['development', 'coding', 'tech', 'programming', 'software', 'web', 'app', 'linkedin'];
+    const foundKeywords = keywords.filter(keyword => 
+        content.toLowerCase().includes(keyword)
+    );
+    
+    return foundKeywords.length > 0 ? foundKeywords : ['Update'];
 }
 
 // Auto-load when page loads

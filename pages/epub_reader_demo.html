@@ -470,12 +470,16 @@
 
          <div class="reading-area">
             <div class="reading-container">
-               <div class="chapter-header">
+               <video id="epub-demo-video" style="width: 100%; height: 100%; border-radius: 8px;" controls autoplay>
+                  <source src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/epubfirebase/9.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+               <div class="chapter-header" style="display: none;">
                   <h3 class="chapter-title" id="chapter-title">Professional EPUB Reader Demo</h3>
                   <div class="chapter-progress" id="chapter-progress">Page 1 of 1</div>
                </div>
                
-               <div class="reading-content" id="reading-content">
+               <div class="reading-content" id="reading-content" style="display: none;">
                   <p>Welcome to the Professional EPUB Reader demonstration. This application showcases advanced e-book reading capabilities with modern Android SDK implementation.</p>
                   <p>The reader features intelligent text parsing, customizable reading preferences, and seamless navigation through digital publications. Built with professional-grade architecture and optimized for mobile devices.</p>
                   <p>Key features include dynamic font sizing, theme customization, bookmark management, and progress tracking. The application demonstrates expertise in Android development and file processing technologies.</p>
