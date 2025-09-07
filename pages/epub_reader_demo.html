@@ -390,6 +390,77 @@
          line-height: 1.4;
       }
 
+      /* Testing Gallery Styles */
+      .testing-gallery {
+         width: 100%;
+      }
+
+      .gallery-section {
+         margin-bottom: 40px;
+      }
+
+      .screenshot-grid, .video-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+         margin-top: 20px;
+      }
+
+      .screenshot-item, .video-item {
+         background: rgba(17, 17, 17, 0.7);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         padding: 20px;
+         text-align: center;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .screenshot-item:hover, .video-item:hover {
+         border-color: var(--cyber-accent);
+         box-shadow: 0 4px 15px rgba(80, 250, 123, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .screenshot-placeholder, .video-placeholder {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .screenshot-icon, .video-icon {
+         font-size: 48px;
+         color: var(--cyber-accent);
+         margin-bottom: 10px;
+      }
+
+      .screenshot-title, .video-title {
+         color: var(--cyber-accent);
+         font-size: 16px;
+         font-weight: bold;
+         margin-bottom: 5px;
+      }
+
+      .screenshot-desc, .video-desc {
+         color: var(--cyber-text-dim);
+         font-size: 14px;
+         line-height: 1.4;
+      }
+
+      .video-duration {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         background: rgba(0, 0, 0, 0.8);
+         color: var(--cyber-accent);
+         padding: 4px 8px;
+         border-radius: 4px;
+         font-size: 12px;
+      }
+
       @media screen and (max-width: 768px) {
          .main-interface {
             flex-direction: column;
@@ -558,6 +629,98 @@
                <div class="feature-title">Cloud Processing</div>
                <div class="feature-desc">Server-side EPUB processing with R2 storage and streaming delivery</div>
             </div>
+         </div>
+      </div>
+
+      <!-- Firebase Testing Gallery Section -->
+      <div class="firebase-section" style="margin-top: 20px;">
+         <h2 class="firebase-title">📸 REAL TESTING ENVIRONMENT - FIREBASE GALLERY</h2>
+         
+         <div style="text-align: center; margin-bottom: 30px;">
+            <p style="color: var(--cyber-text-dim); font-size: 16px; line-height: 1.6;">
+               See EPUB Reader in action on real Android devices and Android Auto systems.<br>
+               Screenshots and videos from Firebase App Distribution testing.
+            </p>
+         </div>
+
+         <!-- Screenshot Gallery Grid -->
+         <div class="testing-gallery">
+            <div class="gallery-section">
+               <h3 style="color: var(--cyber-accent); text-align: center; margin-bottom: 20px;">
+                  📱 Android App Screenshots
+               </h3>
+               <div class="screenshot-grid">
+                  <div class="screenshot-item" onclick="openScreenshot('epub-library')">
+                     <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">📚</div>
+                        <div class="screenshot-title">Book Library</div>
+                        <div class="screenshot-desc">EPUB collection view</div>
+                     </div>
+                  </div>
+                  <div class="screenshot-item" onclick="openScreenshot('epub-reader')">
+                     <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">📖</div>
+                        <div class="screenshot-title">Reading Interface</div>
+                        <div class="screenshot-desc">Text display and navigation</div>
+                     </div>
+                  </div>
+                  <div class="screenshot-item" onclick="openScreenshot('epub-tts')">
+                     <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">🎙️</div>
+                        <div class="screenshot-title">TTS Controls</div>
+                        <div class="screenshot-desc">Audio playback interface</div>
+                     </div>
+                  </div>
+                  <div class="screenshot-item" onclick="openScreenshot('epub-settings')">
+                     <div class="screenshot-placeholder">
+                        <div class="screenshot-icon">⚙️</div>
+                        <div class="screenshot-title">App Settings</div>
+                        <div class="screenshot-desc">Voice and display options</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="gallery-section" style="margin-top: 40px;">
+               <h3 style="color: var(--cyber-secondary); text-align: center; margin-bottom: 20px;">
+                  🎥 Testing Videos
+               </h3>
+               <div class="video-grid">
+                  <div class="video-item" onclick="openVideo('epub-demo-video')">
+                     <div class="video-placeholder">
+                        <div class="video-icon">▶️</div>
+                        <div class="video-title">Full App Demo</div>
+                        <div class="video-desc">Complete EPUB reader walkthrough</div>
+                        <div class="video-duration">3:21</div>
+                     </div>
+                  </div>
+                  <div class="video-item" onclick="openVideo('epub-tts-demo')">
+                     <div class="video-placeholder">
+                        <div class="video-icon">🎙️</div>
+                        <div class="video-title">TTS Integration</div>
+                        <div class="video-desc">Text-to-speech functionality</div>
+                        <div class="video-duration">2:15</div>
+                     </div>
+                  </div>
+                  <div class="video-item" onclick="openVideo('epub-android-auto')">
+                     <div class="video-placeholder">
+                        <div class="video-icon">🚗</div>
+                        <div class="video-title">Android Auto Test</div>
+                        <div class="video-desc">Car integration testing</div>
+                        <div class="video-duration">1:48</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div style="text-align: center; margin-top: 30px;">
+            <a href="#" class="download-btn" onclick="viewFirebaseConsole()">
+               🔥 VIEW FIREBASE CONSOLE
+            </a>
+            <a href="#" class="download-btn" onclick="viewTestingReports()">
+               📊 TESTING REPORTS
+            </a>
          </div>
       </div>
    </div>
@@ -734,9 +897,203 @@
          alert(`🔖 Bookmark Added\n\nBookmarked: Chapter ${currentChapter + 1}\nBook: ${demoBooks[currentBook]?.title || 'Demo Book'}\n\nIn the full app, this would save your reading position for Android Auto sync.`);
       });
 
-      // APK download simulation
+      // R2 Storage Base URL
+      const R2_BASE_URL = 'https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev';
+      
+      // Screenshot mapping for EPUB Reader
+      const screenshots = {
+         'epub-library': { url: `${R2_BASE_URL}/epubfirebase/1.png`, title: 'EPUB Book Library' },
+         'epub-reader': { url: `${R2_BASE_URL}/epubfirebase/2.png`, title: 'Reading Interface' },
+         'epub-tts': { url: `${R2_BASE_URL}/epubfirebase/3.png`, title: 'TTS Controls' },
+         'epub-settings': { url: `${R2_BASE_URL}/epubfirebase/4.png`, title: 'App Settings' }
+      };
+      
+      // Video mapping for EPUB Reader
+      const videos = {
+         'epub-demo-video': { url: `${R2_BASE_URL}/epubfirebase/9.mp4`, title: 'Full App Demo' },
+         'epub-tts-demo': { url: `${R2_BASE_URL}/epubfirebase/9.mp4`, title: 'TTS Integration Demo' },
+         'epub-android-auto': { url: `${R2_BASE_URL}/epubfirebase/9.mp4`, title: 'Android Auto Test' }
+      };
+      
+      // Screenshot viewer function
+      function openScreenshot(screenshotId) {
+         const screenshot = screenshots[screenshotId];
+         if (!screenshot) {
+            console.error('Screenshot not found:', screenshotId);
+            return;
+         }
+         
+         // Create modal overlay
+         const modal = document.createElement('div');
+         modal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+         `;
+         
+         const img = document.createElement('img');
+         img.src = screenshot.url;
+         img.alt = screenshot.title;
+         img.style.cssText = `
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(80, 250, 123, 0.5);
+         `;
+         
+         const title = document.createElement('div');
+         title.textContent = screenshot.title;
+         title.style.cssText = `
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--cyber-accent);
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: var(--neon-glow);
+         `;
+         
+         modal.appendChild(img);
+         modal.appendChild(title);
+         document.body.appendChild(modal);
+         
+         // Close on click
+         modal.addEventListener('click', () => {
+            document.body.removeChild(modal);
+         });
+         
+         // Close on ESC key
+         const escapeHandler = (e) => {
+            if (e.key === 'Escape') {
+               document.body.removeChild(modal);
+               document.removeEventListener('keydown', escapeHandler);
+            }
+         };
+         document.addEventListener('keydown', escapeHandler);
+      }
+      
+      // Video player function
+      function openVideo(videoId) {
+         const video = videos[videoId];
+         if (!video) {
+            console.error('Video not found:', videoId);
+            return;
+         }
+         
+         // Create modal overlay
+         const modal = document.createElement('div');
+         modal.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+         `;
+         
+         const videoElement = document.createElement('video');
+         videoElement.src = video.url;
+         videoElement.controls = true;
+         videoElement.autoplay = true;
+         videoElement.style.cssText = `
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(189, 147, 249, 0.5);
+         `;
+         
+         const title = document.createElement('div');
+         title.textContent = video.title;
+         title.style.cssText = `
+            color: var(--cyber-secondary);
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: var(--neon-glow);
+            margin-bottom: 20px;
+         `;
+         
+         const closeBtn = document.createElement('button');
+         closeBtn.textContent = '✕ Close';
+         closeBtn.style.cssText = `
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: 2px solid var(--cyber-danger);
+            color: var(--cyber-danger);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+         `;
+         
+         modal.appendChild(title);
+         modal.appendChild(videoElement);
+         modal.appendChild(closeBtn);
+         document.body.appendChild(modal);
+         
+         // Close handlers
+         const closeModal = () => {
+            videoElement.pause();
+            document.body.removeChild(modal);
+         };
+         
+         closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeModal();
+         });
+         
+         modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+               closeModal();
+            }
+         });
+         
+         // Close on ESC key
+         const escapeHandler = (e) => {
+            if (e.key === 'Escape') {
+               closeModal();
+               document.removeEventListener('keydown', escapeHandler);
+            }
+         };
+         document.addEventListener('keydown', escapeHandler);
+         
+         // Prevent modal close when clicking video controls
+         videoElement.addEventListener('click', (e) => {
+            e.stopPropagation();
+         });
+      }
+      
+      // Firebase console viewer
+      function viewFirebaseConsole() {
+         window.open('https://console.firebase.google.com/project/bluehawana-android-auto/overview', '_blank');
+      }
+      
+      // Testing reports viewer
+      function viewTestingReports() {
+         window.open('https://console.firebase.google.com/project/bluehawana-android-auto/appdistribution/app/android:com.audiobookplayer/releases', '_blank');
+      }
+
+      // APK download via Firebase App Distribution
       function downloadAPK(appName) {
-         alert(`📱 Firebase App Distribution\n\nThis would download the ${appName} APK from Firebase.\n\nFeatures included:\n• EPUB to audiobook conversion\n• Azure TTS integration\n• Android Auto compatibility\n• QR code device linking\n• Offline reading support`);
+         if (appName === 'epub-reader') {
+            window.open('https://appdistribution.firebase.google.com/testerapps/1:215346136917:android:e56310f95c517df13a51dc/releases/2n18rld9kkio0', '_blank');
+         }
       }
 
       // Initialize demo

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Activity ID Updater - Bluehawana</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0070f3 0%, #0051a2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .status-banner {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .status-banner h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .post-card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .post-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .post-card.needs-id {
+            border-left: 4px solid #dc3545;
+        }
+        
+        .post-card.has-id {
+            border-left: 4px solid #28a745;
+        }
+        
+        .post-content {
+            font-style: italic;
+            color: #495057;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+        }
+        
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .search-section {
+            background: #e3f2fd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .search-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .search-link {
+            background: #0070f3;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        
+        .search-link:hover {
+            background: #0051a2;
+        }
+        
+        .id-input-section {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .id-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .id-input:focus {
+            outline: none;
+            border-color: #0070f3;
+        }
+        
+        .btn {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .btn:hover:not(:disabled) {
+            background: #0051a2;
+        }
+        
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .btn.success {
+            background: #28a745;
+        }
+        
+        .btn.success:hover {
+            background: #218838;
+        }
+        
+        .url-display {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            word-break: break-all;
+        }
+        
+        .url-display.valid {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .instructions h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        
+        .status-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .status-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status-message.info {
+            background: #cce5ff;
+            color: #004085;
+            border: 1px solid #b8daff;
+        }
+        
+        .copy-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .copy-btn:hover {
+            background: #5a6268;
+        }
+        
+        .scope-test-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .scope-test-section h3 {
+            margin-bottom: 15px;
+        }
+        
+        .test-results {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔗 LinkedIn Activity ID Updater</h1>
+            <p>Fix broken LinkedIn post URLs by finding and updating activity IDs</p>
+        </div>
+        
+        <div class="content">
+            <div class="status-banner">
+                <h3>⚠️ Limited API Access Detected</h3>
+                <p>Your LinkedIn access token has <strong>w_member_social</strong> scope only, which doesn't allow reading posts.</p>
+                <p>Use this tool to manually find and update activity IDs for posts with broken URLs.</p>
+            </div>
+            
+            <div class="scope-test-section">
+                <h3>🧪 Test LinkedIn API Access</h3>
+                <p>Check what endpoints are accessible with your current token scope.</p>
+                <button class="btn" onclick="testLinkedInScope()">Run Scope Test</button>
+                <div id="testResults" class="test-results" style="display: none; margin-top: 15px;">
+                    <pre id="testResultsContent">Testing...</pre>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>📖 How to Find Activity IDs</h3>
+                <ol>
+                    <li>Click the search links below each post to search on LinkedIn or Google</li>
+                    <li>Find your post in the search results and click on it</li>
+                    <li>Look at the URL - it should contain: <code>/feed/update/urn:li:activity:XXXXXXXXXXXXXXXXXXX/</code></li>
+                    <li>Copy the 19-digit number after <code>activity:</code></li>
+                    <li>Paste it in the input field and click "Update"</li>
+                </ol>
+            </div>
+            
+            <div id="statusMessage" class="status-message"></div>
+            
+            <h2>Posts Needing Activity IDs</h2>
+            <div id="postsContainer">
+                <!-- Posts will be loaded here -->
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <h3>📝 Update Summary</h3>
+                <div id="updateSummary" style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+                    <p>No updates made yet.</p>
+                </div>
+                <button class="btn success" onclick="generateUpdatedJSON()" style="margin-top: 15px;">
+                    📥 Generate Updated JSON
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentPosts = [];
+        let updates = {};
+
+        // Load posts on page load
+        async function loadPosts() {
+            try {
+                const response = await fetch('../data/linkedin-posts.json?v=' + Date.now());
+                const posts = await response.json();
+                currentPosts = posts;
+                displayPosts(posts);
+            } catch (error) {
+                showStatus('Error loading posts: ' + error.message, 'error');
+            }
+        }
+
+        // Display posts
+        function displayPosts(posts) {
+            const container = document.getElementById('postsContainer');
+            container.innerHTML = '';
+            
+            const needsId = posts.filter(post => 
+                post.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/' ||
+                !post.url.includes('/feed/update/urn:li:activity:')
+            );
+            
+            if (needsId.length === 0) {
+                container.innerHTML = '<p class="status-message success" style="display: block;">✅ All posts have valid activity IDs!</p>';
+                return;
+            }
+            
+            needsId.forEach((post, index) => {
+                const postCard = createPostCard(post, index);
+                container.appendChild(postCard);
+            });
+        }
+
+        // Create post card
+        function createPostCard(post, index) {
+            const card = document.createElement('div');
+            card.className = 'post-card needs-id';
+            card.id = `post-${index}`;
+            
+            const content = post.content.substring(0, 200) + (post.content.length > 200 ? '...' : '');
+            const searchKeywords = extractSearchKeywords(post.content);
+            
+            card.innerHTML = `
+                <div class="post-meta">
+                    <span>📅 ${post.date || 'No date'}</span>
+                    <span>🏷️ ${post.tags ? post.tags.join(', ') : 'No tags'}</span>
+                </div>
+                <div class="post-content">${content}</div>
+                <div class="search-section">
+                    <h4>🔍 Search for this post:</h4>
+                    <div class="search-links">
+                        <a href="https://www.linkedin.com/search/results/content/?keywords=${encodeURIComponent(searchKeywords)}" 
+                           target="_blank" class="search-link">LinkedIn Search</a>
+                        <a href="https://www.google.com/search?q=site:linkedin.com+%22Hongzhi+Li%22+${encodeURIComponent(searchKeywords)}" 
+                           target="_blank" class="search-link">Google Search</a>
+                        <a href="https://www.linkedin.com/in/hzl/recent-activity/all/" 
+                           target="_blank" class="search-link">Your Activity Feed</a>
+                    </div>
+                    <div class="id-input-section">
+                        <input type="text" 
+                               class="id-input" 
+                               id="activityId-${index}" 
+                               placeholder="Paste 19-digit activity ID here"
+                               maxlength="19"
+                               pattern="\\d{19}">
+                        <button class="btn" onclick="updateActivityId(${index}, '${escapeQuotes(post.content)}')">
+                            Update
+                        </button>
+                        <button class="copy-btn" onclick="copyTemplate(${index})">
+                            📋 Copy Search Text
+                        </button>
+                    </div>
+                    <div id="url-${index}" class="url-display" style="display: none;"></div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Extract search keywords
+        function extractSearchKeywords(content) {
+            // Get first 50 characters and key words
+            const words = content.substring(0, 100).split(' ');
+            const keywords = words.slice(0, 8).join(' ');
+            return keywords;
+        }
+
+        // Escape quotes for HTML
+        function escapeQuotes(str) {
+            return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
+
+        // Update activity ID
+        function updateActivityId(index, content) {
+            const input = document.getElementById(`activityId-${index}`);
+            const activityId = input.value.trim();
+            
+            if (!/^\d{19}$/.test(activityId)) {
+                showStatus('Please enter a valid 19-digit activity ID', 'error');
+                input.focus();
+                return;
+            }
+            
+            const url = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
+            
+            // Store update
+            updates[content.substring(0, 50)] = {
+                activityId: activityId,
+                url: url,
+                content: content
+            };
+            
+            // Update UI
+            const urlDisplay = document.getElementById(`url-${index}`);
+            urlDisplay.innerHTML = `✅ New URL: <a href="${url}" target="_blank">${url}</a>`;
+            urlDisplay.className = 'url-display valid';
+            urlDisplay.style.display = 'block';
+            
+            const card = document.getElementById(`post-${index}`);
+            card.classList.remove('needs-id');
+            card.classList.add('has-id');
+            
+            showStatus(`Activity ID updated! URL: ${url}`, 'success');
+            updateSummary();
+        }
+
+        // Copy search template
+        function copyTemplate(index) {
+            const post = currentPosts.filter(p => 
+                p.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/' ||
+                !p.url.includes('/feed/update/urn:li:activity:')
+            )[index];
+            
+            const searchText = post.content.substring(0, 100);
+            navigator.clipboard.writeText(searchText).then(() => {
+                showStatus('Search text copied to clipboard!', 'info');
+            });
+        }
+
+        // Update summary
+        function updateSummary() {
+            const summary = document.getElementById('updateSummary');
+            const updateCount = Object.keys(updates).length;
+            
+            if (updateCount === 0) {
+                summary.innerHTML = '<p>No updates made yet.</p>';
+            } else {
+                let html = `<p><strong>${updateCount} posts updated:</strong></p><ul>`;
+                for (const [key, value] of Object.entries(updates)) {
+                    html += `<li>"${key}..." → Activity ID: ${value.activityId}</li>`;
+                }
+                html += '</ul>';
+                summary.innerHTML = html;
+            }
+        }
+
+        // Generate updated JSON
+        function generateUpdatedJSON() {
+            if (Object.keys(updates).length === 0) {
+                showStatus('No updates to generate. Update some activity IDs first.', 'error');
+                return;
+            }
+            
+            // Update posts with new activity IDs
+            const updatedPosts = currentPosts.map(post => {
+                const updateKey = Object.keys(updates).find(key => 
+                    post.content.startsWith(key)
+                );
+                
+                if (updateKey && updates[updateKey]) {
+                    return {
+                        ...post,
+                        url: updates[updateKey].url,
+                        activityId: updates[updateKey].activityId
+                    };
+                }
+                
+                return post;
+            });
+            
+            // Create JSON
+            const json = JSON.stringify(updatedPosts, null, 2);
+            
+            // Download JSON
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'linkedin-posts-updated.json';
+            a.click();
+            
+            showStatus('Updated JSON downloaded! Replace data/linkedin-posts.json with this file.', 'success');
+        }
+
+        // Test LinkedIn scope
+        async function testLinkedInScope() {
+            const resultsDiv = document.getElementById('testResults');
+            const resultsContent = document.getElementById('testResultsContent');
+            
+            resultsDiv.style.display = 'block';
+            resultsContent.textContent = 'Running scope test...';
+            
+            try {
+                const response = await fetch('/.netlify/functions/linkedin-scope-test');
+                const results = await response.json();
+                
+                resultsContent.textContent = JSON.stringify(results, null, 2);
+            } catch (error) {
+                resultsContent.textContent = 'Error running scope test: ' + error.message;
+            }
+        }
+
+        // Show status message
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('statusMessage');
+            statusDiv.className = `status-message ${type}`;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadPosts);
+    </script>
+</body>
+</html>
