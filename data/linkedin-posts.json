@@ -1,5 +1,17 @@
 [
   {
+    "content": "🎯 Mission Completed! Just achieved AOSP15 clean build in world top 10% fastest records! 🚀 The optimization journey from hours to minutes shows what's possible when you combine deep Android system knowledge with performance engineering. Sometimes the biggest wins come from understanding the build system internals and applying the right optimizations at the right layers. #AndroidDevelopment #AOSP15 #PerformanceEngineering #BuildOptimization",
+    "date": "2025-09-07",
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "Android",
+      "AOSP",
+      "Performance",
+      "BuildSystems",
+      "Engineering"
+    ]
+  },
+  {
     "content": "💡 Interesting challenge today: Bridging communication between Swedish and Chinese development teams. Cultural context matters as much as technical specifications when building international software solutions. Language is just the beginning! 🌍",
     "date": "2025-09-07",
     "url": "https://www.linkedin.com/in/hzl",
@@ -36,14 +48,12 @@
     "content": "We receive these kinds of \"Hi, #firstname\", \"Dear #applicants\" and \"Hello #candidates\" emails almost every day. Dear #senders, before you figure out how to personalize your outreach, maybe focus on building genuine connections first. Quality over quantity always wins! 💼",
     "date": "2025-08-25",
     "url": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
-    "tags": ["Networking", "ProfessionalCommunication", "JobSearch", "Quality"],
+    "tags": [
+      "Networking",
+      "ProfessionalCommunication",
+      "JobSearch",
+      "Quality"
+    ],
     "activityId": "7364309907770126337"
-  },
-  {
-    "content": "The hardest thing in the world is to build #TRUST. Once you have that, almost everything else can be solved smoothly. So, here's a quick question: What's your approach to building trust in professional relationships? 🤝",
-    "date": "2025-08-22",
-    "url": "https://www.linkedin.com/posts/hzl_trust-trust-trustworthiness-activity-7363162496699973632-Hsk6",
-    "tags": ["Trust", "ProfessionalRelationships", "Leadership", "Business"],
-    "activityId": "7363162496699973632"
   }
 ]
