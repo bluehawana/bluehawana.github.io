@@ -43,10 +43,13 @@ jobs:
         run: |
           echo "OAuth token configured"
           
-      - name: Run LinkedIn OAuth automation
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run LinkedIn Ultimate Automation
         env:
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
-        run: node linkedin-oauth-automation.js
+        run: node linkedin-ultimate-automation.js
         
       - name: Check for changes
         id: changes

@@ -25,5 +25,9 @@
   "repository": {
     "type": "git",
     "url": "your-repo-url"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "puppeteer": "^24.19.0"
   }
 }

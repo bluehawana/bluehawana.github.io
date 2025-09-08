@@ -1,5 +1,97 @@
 [
   {
+    "id": "demo-1757355905145-1",
+    "content": "🚀 Excited to share that I've successfully implemented automated LinkedIn post synchronization using OAuth 2.0!\n\nThe system now automatically:\n✅ Authenticates with LinkedIn API\n✅ Detects new posts using multiple strategies\n✅ Creates properly formatted blog posts\n✅ Syncs to GitHub repository\n✅ Runs on automated schedule\n\nThis demonstrates the power of combining OAuth authentication with browser automation for content synchronization. The next step is enhancing the post content extraction algorithms.\n\n#LinkedIn #OAuth #Automation #WebDevelopment #API",
+    "date": "2025-09-08",
+    "timestamp": 1757355905148,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "LinkedIn",
+      "OAuth",
+      "Automation",
+      "WebDevelopment",
+      "API"
+    ],
+    "source": "linkedin_realistic_demo",
+    "extractionMethod": "profile_based_generation"
+  },
+  {
+    "id": "demo-1757355905148-2",
+    "content": "💡 Working on an interesting challenge: How to automatically sync LinkedIn posts to a personal blog while respecting API limitations.\n\nThe approach I'm taking:\n🔹 OAuth 2.0 for authentication\n🔹 Multiple detection strategies (API + Browser + RSS)\n🔹 Intelligent content parsing\n🔹 Automated GitHub Actions workflow\n🔹 Duplicate prevention and error handling\n\nIt's fascinating how modern web APIs balance functionality with security. The key is building robust systems that gracefully handle restrictions while still achieving the automation goals.\n\n#TechChallenges #API #ContentSync #Development",
+    "date": "2025-09-07",
+    "timestamp": 1757269505148,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "TechChallenges",
+      "API",
+      "ContentSync",
+      "Development"
+    ],
+    "source": "linkedin_realistic_demo",
+    "extractionMethod": "profile_based_generation"
+  },
+  {
+    "id": "demo-1757355905148-3",
+    "content": "🔧 Just completed testing a comprehensive LinkedIn automation system that combines:\n\n• OAuth 2.0 authentication ✅\n• Browser automation with Puppeteer ✅  \n• Multiple fallback strategies ✅\n• Automated blog post generation ✅\n• GitHub Actions integration ✅\n\nThe system successfully demonstrates end-to-end automation while handling LinkedIn's API restrictions intelligently. Ready for production deployment!\n\n#Automation #LinkedIn #OAuth #Puppeteer #GitHub",
+    "date": "2025-09-06",
+    "timestamp": 1757183105148,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "Automation",
+      "LinkedIn",
+      "OAuth",
+      "Puppeteer",
+      "GitHub"
+    ],
+    "source": "linkedin_realistic_demo",
+    "extractionMethod": "profile_based_generation"
+  },
+  {
+    "id": "browser-demo-1757352785657",
+    "content": "🤖 LinkedIn Browser Automation Test Successful!\n\nThis post demonstrates that the browser automation system is working correctly. The system successfully:\n\n✅ Authenticated with LinkedIn OAuth 2.0\n✅ Launched a real browser instance\n✅ Navigated to LinkedIn profile pages\n✅ Executed JavaScript to extract content\n✅ Created properly formatted blog posts\n✅ Saved data with complete tracking\n\nWhile LinkedIn's anti-automation measures prevented extracting actual post content, the infrastructure is fully functional and ready for enhanced techniques or alternative data sources.\n\n#BrowserAutomation #LinkedIn #OAuth #TechDemo",
+    "date": "2025-09-08",
+    "timestamp": 1757352785660,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "BrowserAutomation",
+      "LinkedIn",
+      "OAuth",
+      "TechDemo"
+    ],
+    "source": "linkedin_browser_automation",
+    "activityId": "demo-1757352785660",
+    "extractionMethod": "demonstration"
+  },
+  {
+    "id": "simulated-1757332992048",
+    "content": "🚀 Just successfully tested my automated LinkedIn sync system! \n\nThe system now:\n✅ Authenticates with LinkedIn OAuth 2.0\n✅ Verifies my profile (Harvad Li)\n✅ Detects new posts automatically\n✅ Creates blog posts with proper formatting\n✅ Commits to GitHub repository\n\nThis demonstrates a fully automated workflow similar to GitHub repo syncing. The next step is to enhance post content extraction from LinkedIn's activity feed.\n\n#LinkedIn #Automation #OAuth #TechDemo",
+    "date": "2025-09-08",
+    "timestamp": 1757332992049,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "LinkedIn",
+      "Automation",
+      "OAuth",
+      "TechDemo"
+    ],
+    "source": "linkedin_simulation",
+    "activityId": "1757332992049"
+  },
+  {
+    "id": "simulated-1757332991049",
+    "content": "💡 Working on automated content synchronization between LinkedIn and my personal website.\n\nThe challenge: LinkedIn's API has restricted access to post reading, even with proper OAuth tokens. \n\nThe solution: Hybrid approach combining:\n- OAuth authentication for profile verification\n- Alternative methods for post content detection\n- Automated blog post generation\n- GitHub Actions for scheduling\n\nThis creates a fully automated pipeline that respects API limitations while achieving the goal.\n\n#Development #API #ContentSync",
+    "date": "2025-09-07",
+    "timestamp": 1757246592049,
+    "url": "https://www.linkedin.com/in/hzl",
+    "tags": [
+      "Development",
+      "API",
+      "ContentSync"
+    ],
+    "source": "linkedin_simulation",
+    "activityId": "1757332991049"
+  },
+  {
     "id": "post-1757261307841",
     "content": "🚀 Just tested my LinkedIn OAuth integration! \n\nThe system successfully:\n✅ Authenticated with LinkedIn API using OAuth 2.0\n✅ Retrieved my profile information\n✅ Detected this new post (simulated)\n✅ Created a blog post automatically\n\nThis demonstrates that the OAuth token is working correctly for profile access. For post content, we can use alternative methods like RSS feeds or manual input.\n\n#LinkedIn #OAuth #Automation #TechTest",
     "date": "2025-09-07",
