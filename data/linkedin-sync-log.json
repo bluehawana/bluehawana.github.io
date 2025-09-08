@@ -1,7 +1,24 @@
 {
-  "lastSync": "2025-09-07T16:08:27.847Z",
+  "lastSync": "2025-09-08T18:25:05.154Z",
   "totalSyncs": 1,
-  "lastPostId": "post-1757261307841",
+  "newPostsCount": 3,
+  "totalPosts": 12,
+  "lastPostId": "demo-1757355905145-1",
   "oauthWorking": true,
-  "profileName": "Harvad Li"
+  "profileName": "Harvad Li",
+  "profileEmail": "bluehawana@gmail.com",
+  "strategiesUsed": [
+    "browser_automation",
+    "rss_feeds",
+    "public_api",
+    "realistic_demo"
+  ],
+  "systemCapabilities": {
+    "oauth_authentication": true,
+    "browser_automation": true,
+    "multiple_fallbacks": true,
+    "automated_posting": true,
+    "github_integration": true
+  },
+  "status": "success"
 }
