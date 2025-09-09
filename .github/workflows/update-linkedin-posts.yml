@@ -1,9 +1,9 @@
 name: Update LinkedIn Posts (OAuth)
 
 on:
-  schedule:
-    # Run every 2 hours to catch new posts quickly
-    - cron: '0 */2 * * *'
+  # schedule:
+  #   # Run every 2 hours to catch new posts quickly
+  #   - cron: '0 */2 * * *'
   workflow_dispatch:
     # Allow manual triggering
     inputs:
