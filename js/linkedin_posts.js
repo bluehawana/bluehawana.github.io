@@ -73,6 +73,50 @@ function formatMarkdownContent(content) {
 }
 
 /**
+ * Create content preview with specified word count
+ */
+function createContentPreview(content, minWords = 50, maxWords = 80) {
+    if (!content) return 'LinkedIn Post';
+    
+    // Clean content first - remove markdown syntax for word counting
+    let cleanContent = content
+        .replace(/!\[.*?\]\(.*?\)/g, '') // Remove images
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Keep link text only
+        .replace(/#{1,6}\s+/g, '') // Remove headers
+        .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
+        .replace(/\*(.*?)\*/g, '$1') // Remove italic
+        .replace(/`([^`]+)`/g, '$1') // Remove code
+        .replace(/---/g, '') // Remove separators
+        .replace(/\n+/g, ' ') // Replace line breaks with spaces
+        .trim();
+    
+    const words = cleanContent.split(/\s+/).filter(word => word.length > 0);
+    
+    if (words.length <= minWords) {
+        return cleanContent; // Return as is if already short
+    }
+    
+    // Find good break point between minWords and maxWords
+    let targetWords = Math.min(maxWords, words.length);
+    let preview = words.slice(0, targetWords).join(' ');
+    
+    // Try to end at a sentence if possible
+    const lastSentence = preview.lastIndexOf('.');
+    const lastQuestion = preview.lastIndexOf('?');
+    const lastExclamation = preview.lastIndexOf('!');
+    
+    const lastPunctuation = Math.max(lastSentence, lastQuestion, lastExclamation);
+    
+    if (lastPunctuation > preview.length * 0.7) { // If punctuation is in last 30%
+        preview = preview.substring(0, lastPunctuation + 1);
+    } else {
+        preview += '...';
+    }
+    
+    return preview;
+}
+
+/**
  * Fetch latest LinkedIn posts with fallback methods
  */
 async function fetchLinkedInPosts() {
@@ -144,8 +188,9 @@ async function fetchLinkedInPosts() {
                 const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
                 
-                // Convert markdown to HTML for better display (handles images too)
-                const formattedContent = formatMarkdownContent(content);
+                // Create preview excerpt (50-80 words) for compact view
+                const preview = createContentPreview(content, 50, 80);
+                const formattedContent = formatMarkdownContent(preview);
                 
                 // Add date display if available
                 const dateStr = post.date || post.created_at || post.synced_at;
@@ -160,9 +205,12 @@ async function fetchLinkedInPosts() {
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
                         <span style="color: var(--cyber-text-dim); font-size: 14px;">${displayDate}</span>
-                        <a href="${postUrl}" target="_blank" class="source-link">
-                            <i class="fa fa-linkedin"></i> ${linkText}
-                        </a>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <a href="${postUrl}" target="_blank" class="source-link" style="font-size: 13px;">
+                                <i class="fa fa-linkedin"></i> View on LinkedIn
+                            </a>
+                            <span style="color: var(--cyber-text-dim); font-size: 13px;">• Read more →</span>
+                        </div>
                     </div>
                 `;
                 
@@ -209,7 +257,7 @@ async function fetchLinkedInPosts() {
                 const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
                 
-                // Convert markdown to HTML for better display (handles images too)
+                // For full blog page, show full content with images
                 const formattedContent = formatMarkdownContent(content);
                 
                 // Add date display if available
