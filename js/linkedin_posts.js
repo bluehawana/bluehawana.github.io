@@ -37,14 +37,20 @@ function formatMarkdownContent(content) {
     if (!content) return '';
     
     return content
+        // Images (handle before other formatting)
+        .replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" style="max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;">')
         // Headers
         .replace(/^### (.*$)/gm, '<h3>$1</h3>')
         .replace(/^## (.*$)/gm, '<h2>$1</h2>')
         .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+        // Links (handle before other formatting)
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" style="color: var(--cyber-primary);">$1</a>')
         // Bold
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         // Italic
         .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        // Hashtags
+        .replace(/#(\w+)/g, '<span style="color: var(--cyber-accent);">#$1</span>')
         // Lists
         .replace(/^- (.*$)/gm, '<li>$1</li>')
         // Code blocks
@@ -58,7 +64,7 @@ function formatMarkdownContent(content) {
         .replace(/\n\n/g, '</p><p>')
         .replace(/\n/g, '<br>')
         // Wrap in paragraphs
-        .replace(/^(?!<[h1-6]|<li|<pre|<code)(.+)$/gm, '<p>$1</p>')
+        .replace(/^(?!<[h1-6]|<li|<pre|<code|<img)(.+)$/gm, '<p>$1</p>')
         // Clean up empty paragraphs
         .replace(/<p><\/p>/g, '')
         .replace(/<p><br><\/p>/g, '')
@@ -92,6 +98,13 @@ async function fetchLinkedInPosts() {
             } else {
                 posts = [];
             }
+            
+            // Sort posts by date (descending - latest first)
+            posts.sort((a, b) => {
+                const dateA = new Date(a.created_at || a.date || a.synced_at || 0);
+                const dateB = new Date(b.created_at || b.date || b.synced_at || 0);
+                return dateB - dateA;
+            });
         }
         
         const postsContainer = document.getElementById('linkedin-posts');
@@ -102,18 +115,36 @@ async function fetchLinkedInPosts() {
             // Show all posts (limit 5 only on homepage with #latest-activity section)
             const isHomepage = postsContainer.closest('#latest-activity');
             const postsToShow = isHomepage ? posts.slice(0, 5) : posts;
-            postsToShow.forEach(post => {
+            // Process posts sequentially to handle async loading
+            for (let i = 0; i < postsToShow.length; i++) {
+                const post = postsToShow[i];
                 const postElement = document.createElement('div');
                 postElement.className = 'linkedin-post-compact';
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
-                // Use title if content is not available, and handle activityId
-                const content = post.content || post.title || 'LinkedIn Post';
+                // Try to load full content from markdown file if available
+                let content = post.content || post.title || 'LinkedIn Post';
+                if (post.filename) {
+                    try {
+                        const mdResponse = await fetch(`/_posts/${post.filename}`);
+                        if (mdResponse.ok) {
+                            const mdContent = await mdResponse.text();
+                            // Extract content between --- headers and final ---
+                            const contentMatch = mdContent.match(/---[\s\S]*?---\n\n([\s\S]*?)\n\n---/);
+                            if (contentMatch && contentMatch[1]) {
+                                content = contentMatch[1].trim();
+                            }
+                        }
+                    } catch (e) {
+                        console.log('Could not load markdown for:', post.filename);
+                    }
+                }
+                
                 const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
                 
-                // Convert markdown to HTML for better display
+                // Convert markdown to HTML for better display (handles images too)
                 const formattedContent = formatMarkdownContent(content);
                 
                 // Add date display if available
@@ -136,7 +167,7 @@ async function fetchLinkedInPosts() {
                 `;
                 
                 postsContainer.appendChild(postElement);
-            });
+            }
         } else if (postsContainer) {
             postsContainer.innerHTML = `
                 <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
@@ -150,16 +181,36 @@ async function fetchLinkedInPosts() {
         if (postsFullContainer && posts && Array.isArray(posts) && posts.length > 0) {
             postsFullContainer.innerHTML = '';
             // Show all posts for blog page
-            posts.forEach(post => {
+            for (let i = 0; i < posts.length; i++) {
+                const post = posts[i];
                 const postElement = document.createElement('article');
                 postElement.className = 'linkedin-post-full';
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
-                // Use title if content is not available, and handle activityId
-                const content = post.content || post.title || 'LinkedIn Post';
+                // Try to load full content from markdown file if available
+                let content = post.content || post.title || 'LinkedIn Post';
+                if (post.filename) {
+                    try {
+                        const mdResponse = await fetch(`/_posts/${post.filename}`);
+                        if (mdResponse.ok) {
+                            const mdContent = await mdResponse.text();
+                            // Extract content between --- headers and final ---
+                            const contentMatch = mdContent.match(/---[\s\S]*?---\n\n([\s\S]*?)\n\n---/);
+                            if (contentMatch && contentMatch[1]) {
+                                content = contentMatch[1].trim();
+                            }
+                        }
+                    } catch (e) {
+                        console.log('Could not load markdown for:', post.filename);
+                    }
+                }
+                
                 const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
+                
+                // Convert markdown to HTML for better display (handles images too)
+                const formattedContent = formatMarkdownContent(content);
                 
                 // Add date display if available
                 const dateStr = post.date || post.created_at || post.synced_at;
@@ -170,7 +221,7 @@ async function fetchLinkedInPosts() {
                 }) : '';
                 
                 postElement.innerHTML = `
-                    <div class="post-content">${content}</div>
+                    <div class="post-content">${formattedContent}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
                         <span style="color: var(--cyber-text-dim); font-size: 14px; margin-right: 20px;">${displayDate}</span>
@@ -181,7 +232,7 @@ async function fetchLinkedInPosts() {
                 `;
                 
                 postsFullContainer.appendChild(postElement);
-            });
+            }
         } else if (postsFullContainer) {
             postsFullContainer.innerHTML = `
                 <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
