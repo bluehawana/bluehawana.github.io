@@ -10,7 +10,12 @@
 
 # Environment Variables for Production
 [build.environment]
-  # LinkedIn API Configuration
+  # LinkedIn RapidAPI Configuration (for automated sync)
+  # Note: RAPIDAPI_KEY should be set in Netlify UI for security
+  LINKEDIN_PROFILE_URN = "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+  MAX_POSTS_TO_SYNC = "10"
+  
+  # LinkedIn OAuth API Configuration (for manual auth)
   LINKEDIN_CLIENT_ID = "77duha47hcbh8o"
   # Note: LINKEDIN_CLIENT_SECRET should be set in Netlify UI for security
   # Note: LINKEDIN_ACCESS_TOKEN should be set in Netlify UI for security
@@ -114,6 +119,17 @@
   to = "/pages/automation_dashboard.html"
   status = 200
   force = true
+
+# LinkedIn Dashboard Redirect
+[[redirects]]
+  from = "/linkedin-dashboard"
+  to = "/linkedin-dashboard.html"
+  status = 200
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/linkedin-dashboard.html"
+  status = 200
 
 # 404 page for HTML pages only
 [[redirects]]

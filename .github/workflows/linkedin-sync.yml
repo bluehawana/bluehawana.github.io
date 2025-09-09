@@ -1,0 +1,74 @@
+name: LinkedIn Auto Sync
+
+on:
+  schedule:
+    # Run every 6 hours (0, 6, 12, 18 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  sync-linkedin-posts:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        if [ -f package.json ]; then
+          npm install
+        fi
+        
+    - name: Run LinkedIn sync
+      env:
+        RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        LINKEDIN_PROFILE_URN: ${{ secrets.LINKEDIN_PROFILE_URN }}
+      run: |
+        echo "🚀 Starting LinkedIn sync automation..."
+        node linkedin-sync-simple.js
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "LinkedIn Sync Bot"
+        
+        # Add new files
+        git add _posts/
+        git add data/
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "✅ No new LinkedIn posts to sync"
+        else
+          echo "📝 Committing new LinkedIn posts..."
+          git commit -m "🔄 Auto-sync LinkedIn posts - $(date '+%Y-%m-%d %H:%M UTC')"
+          git push
+          echo "🎉 Successfully synced and pushed new LinkedIn posts!"
+        fi
+
+    - name: Generate sync report
+      run: |
+        echo "📊 LinkedIn Sync Report - $(date)" >> $GITHUB_STEP_SUMMARY
+        echo "================================" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Count posts in _posts directory
+        POST_COUNT=$(find _posts -name "*linkedin*" | wc -l)
+        echo "📁 Total LinkedIn posts: $POST_COUNT" >> $GITHUB_STEP_SUMMARY
+        
+        # Show latest posts
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "🆕 Latest LinkedIn posts:" >> $GITHUB_STEP_SUMMARY
+        echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+        ls -la _posts/*linkedin* | tail -5 >> $GITHUB_STEP_SUMMARY || echo "No LinkedIn posts found" >> $GITHUB_STEP_SUMMARY
+        echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "⏰ Next sync: $(date -d '+6 hours' '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+        echo "✅ Automation is running smoothly!" >> $GITHUB_STEP_SUMMARY

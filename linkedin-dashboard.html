@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Automation Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #3498db;
+            margin: 0;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        .recent-posts {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .recent-posts h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .post-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+        
+        .post-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .post-item:last-child {
+            border-bottom: none;
+        }
+        
+        .post-title {
+            flex: 1;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-left: 20px;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .status-active {
+            background-color: #2ecc71;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-inactive {
+            background-color: #e74c3c;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+            transform: translateY(-2px);
+        }
+        
+        .refresh-info {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>🔗 LinkedIn Automation Dashboard</h1>
+            <p>Harvad Li's LinkedIn → Blog Sync System</p>
+            <p><span class="status-indicator status-active"></span>System Status: Active</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalPosts">0</div>
+                <div class="stat-label">Total Synced Posts</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number" id="todayPosts">0</div>
+                <div class="stat-label">Posts Today</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number" id="nextSync">6h</div>
+                <div class="stat-label">Next Auto Sync</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-number" id="success-rate">100%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+        
+        <div class="recent-posts">
+            <h2>📝 Recent LinkedIn Posts</h2>
+            <div id="recentPostsList">
+                <div class="post-item">
+                    <div class="post-title">Loading recent posts...</div>
+                    <div class="post-date">Please wait</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-primary" onclick="runSync()">🔄 Sync Now</button>
+            <button class="btn btn-secondary" onclick="viewLogs()">📊 View Logs</button>
+            <a href="blog.html" class="btn btn-secondary">📖 View Blog</a>
+        </div>
+        
+        <div class="refresh-info">
+            <p>🤖 Automation runs every 6 hours • Last updated: <span id="lastUpdate">Loading...</span></p>
+        </div>
+    </div>
+
+    <script>
+        async function loadDashboardData() {
+            try {
+                // Load posts data
+                const response = await fetch('data/linkedin-posts.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    
+                    // Update stats
+                    document.getElementById('totalPosts').textContent = data.total_posts || data.posts?.length || 0;
+                    
+                    // Count today's posts
+                    const today = new Date().toISOString().split('T')[0];
+                    const todayPosts = data.posts?.filter(post => 
+                        post.synced_at?.startsWith(today) || 
+                        post.created_at?.startsWith(today)
+                    ).length || 0;
+                    document.getElementById('todayPosts').textContent = todayPosts;
+                    
+                    // Calculate next sync time
+                    const lastSync = new Date(data.last_sync || Date.now());
+                    const nextSync = new Date(lastSync.getTime() + 6 * 60 * 60 * 1000);
+                    const hoursUntilNext = Math.max(0, Math.ceil((nextSync - new Date()) / (60 * 60 * 1000)));
+                    document.getElementById('nextSync').textContent = hoursUntilNext + 'h';
+                    
+                    // Show recent posts
+                    displayRecentPosts(data.posts || []);
+                    
+                    document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+                } else {
+                    throw new Error('Could not load data');
+                }
+            } catch (error) {
+                console.error('Error loading dashboard data:', error);
+                document.getElementById('recentPostsList').innerHTML = `
+                    <div class="post-item">
+                        <div class="post-title" style="color: #e74c3c;">❌ Error loading posts data</div>
+                        <div class="post-date">Check console</div>
+                    </div>
+                `;
+            }
+        }
+        
+        function displayRecentPosts(posts) {
+            const recentPosts = posts.slice(-5).reverse(); // Last 5 posts, newest first
+            const html = recentPosts.map(post => `
+                <div class="post-item">
+                    <div class="post-title">${post.title || 'LinkedIn Post'}</div>
+                    <div class="post-date">${formatDate(post.synced_at || post.created_at)}</div>
+                </div>
+            `).join('');
+            
+            document.getElementById('recentPostsList').innerHTML = html || `
+                <div class="post-item">
+                    <div class="post-title">No posts found</div>
+                    <div class="post-date">Run sync to get started</div>
+                </div>
+            `;
+        }
+        
+        function formatDate(dateString) {
+            if (!dateString) return 'Unknown';
+            return new Date(dateString).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        
+        async function runSync() {
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = '🔄 Syncing...';
+            button.disabled = true;
+            
+            try {
+                // In a real implementation, this would trigger the sync
+                alert('Manual sync would run here. For now, run: node linkedin-sync-simple.js');
+                setTimeout(() => {
+                    loadDashboardData();
+                }, 1000);
+            } catch (error) {
+                alert('Sync failed: ' + error.message);
+            }
+            
+            button.textContent = originalText;
+            button.disabled = false;
+        }
+        
+        function viewLogs() {
+            alert('Logs feature would open here. Check sync.log file for now.');
+        }
+        
+        // Load data on page load
+        loadDashboardData();
+        
+        // Refresh every 5 minutes
+        setInterval(loadDashboardData, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
