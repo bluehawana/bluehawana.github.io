@@ -9,22 +9,28 @@ const https = require('https');
 const fs = require('fs').promises;
 const path = require('path');
 
-// Updated OAuth 2.0 Access Token with proper scopes
-const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || 'AQXAaMANteu-XQoVzKWDcARMLIkUOV6n92tstpvl9noU6niFW0PWud7eD6r5uUnGDHIIdiPMN4SNk3tVbmK-pQewkWkO5BZqd3KJUxVGMxav-qgivdROWMV-z_V97d1bgDI-PScFAsGk8Pun6XasiEhxARRhLbvuDvF92mea89aZgHrx-Vc-q8bOL-_8GgNbzkUeFX3sJQrmbKWbjhaZA2I0QYVeePmbIkJclfVD53GXIoTdkEbH19FSYu5Q2BM3AyIHhFLnpoIi_3xncAUDkFZtLwieDJ9cqaQJYVXD0b2Sk9Hm92aILKJDaS24yymZyvsnJfniVCAApYMk_Px8U96cYFEfmg';
+// RapidAPI Configuration
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || '82ecb2468bmsh3c25b2ce3d4fd9bp153400jsn56283a8d38c6';
+const RAPIDAPI_HOST = 'linkedin-data-api.p.rapidapi.com';
 
 const POSTS_DIR = path.join(__dirname, '_posts');
 const SYNC_LOG_FILE = path.join(__dirname, '.linkedin-sync-log.json');
+const API_USAGE_FILE = path.join(__dirname, '.rapidapi-usage.json');
 
-async function makeLinkedInRequest(endpoint) {
+// Free tier limits - 50 requests per month
+const FREE_TIER_LIMIT = 50;
+const SYNC_FREQUENCY_DAYS = 7; // Sync once per week to stay under limit
+
+async function makeRapidAPIRequest(endpoint) {
   return new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.linkedin.com',
+      hostname: RAPIDAPI_HOST,
       path: endpoint,
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${ACCESS_TOKEN}`,
-        'Content-Type': 'application/json',
-        'X-Restli-Protocol-Version': '2.0.0'
+        'x-rapidapi-host': RAPIDAPI_HOST,
+        'x-rapidapi-key': RAPIDAPI_KEY,
+        'Content-Type': 'application/json'
       }
     };
 
@@ -33,11 +39,11 @@ async function makeLinkedInRequest(endpoint) {
       res.on('data', (chunk) => { data += chunk; });
       res.on('end', () => {
         try {
-          const jsonData = JSON.parse(data);
           if (res.statusCode === 200) {
+            const jsonData = JSON.parse(data);
             resolve(jsonData);
           } else {
-            reject(new Error(`LinkedIn API error (${res.statusCode}): ${jsonData.message || data}`));
+            reject(new Error(`RapidAPI error (${res.statusCode}): ${data}`));
           }
         } catch (error) {
           reject(new Error(`Invalid JSON response: ${data}`));
@@ -48,29 +54,115 @@ async function makeLinkedInRequest(endpoint) {
     req.on('error', reject);
     req.setTimeout(15000, () => {
       req.destroy();
-      reject(new Error('LinkedIn API request timeout'));
+      reject(new Error('RapidAPI request timeout'));
     });
     req.end();
   });
 }
 
+async function loadApiUsage() {
+  try {
+    const usageData = await fs.readFile(API_USAGE_FILE, 'utf8');
+    return JSON.parse(usageData);
+  } catch (error) {
+    return {
+      monthlyUsage: 0,
+      lastReset: new Date().toISOString(),
+      requestLog: []
+    };
+  }
+}
+
+async function saveApiUsage(usage) {
+  await fs.writeFile(API_USAGE_FILE, JSON.stringify(usage, null, 2));
+}
+
+async function checkRateLimit() {
+  const usage = await loadApiUsage();
+  const now = new Date();
+  const lastReset = new Date(usage.lastReset);
+  
+  // Reset monthly usage if it's been more than 30 days
+  if (now.getTime() - lastReset.getTime() > 30 * 24 * 60 * 60 * 1000) {
+    usage.monthlyUsage = 0;
+    usage.lastReset = now.toISOString();
+    usage.requestLog = [];
+    await saveApiUsage(usage);
+  }
+  
+  if (usage.monthlyUsage >= FREE_TIER_LIMIT) {
+    throw new Error(`🚫 Rate limit exceeded! Used ${usage.monthlyUsage}/${FREE_TIER_LIMIT} requests this month. Next reset: ${new Date(lastReset.getTime() + 30 * 24 * 60 * 60 * 1000).toDateString()}`);
+  }
+  
+  return usage;
+}
+
+async function incrementApiUsage(endpoint) {
+  const usage = await loadApiUsage();
+  usage.monthlyUsage++;
+  usage.requestLog.push({
+    endpoint,
+    timestamp: new Date().toISOString()
+  });
+  
+  // Keep only last 100 requests in log
+  if (usage.requestLog.length > 100) {
+    usage.requestLog = usage.requestLog.slice(-100);
+  }
+  
+  await saveApiUsage(usage);
+  
+  console.log(`📊 API Usage: ${usage.monthlyUsage}/${FREE_TIER_LIMIT} requests this month`);
+  
+  if (usage.monthlyUsage >= FREE_TIER_LIMIT * 0.8) {
+    console.log(`⚠️  Warning: Approaching rate limit (${usage.monthlyUsage}/${FREE_TIER_LIMIT})`);
+  }
+}
+
+async function shouldSync() {
+  const syncLog = await loadSyncLog();
+  if (!syncLog.lastSync) return true;
+  
+  const lastSync = new Date(syncLog.lastSync);
+  const now = new Date();
+  const daysSinceSync = (now - lastSync) / (1000 * 60 * 60 * 24);
+  
+  return daysSinceSync >= SYNC_FREQUENCY_DAYS;
+}
+
 async function getLinkedInPosts() {
   console.log('🔍 Fetching LinkedIn posts...');
   
+  // Check if we should sync based on frequency
+  if (!(await shouldSync())) {
+    const syncLog = await loadSyncLog();
+    const nextSync = new Date(new Date(syncLog.lastSync).getTime() + SYNC_FREQUENCY_DAYS * 24 * 60 * 60 * 1000);
+    console.log(`⏰ Sync frequency: every ${SYNC_FREQUENCY_DAYS} days. Next sync: ${nextSync.toDateString()}`);
+    return [];
+  }
+  
+  // Check rate limits
+  await checkRateLimit();
+  
   try {
-    // First get user profile for ID
-    const profile = await makeLinkedInRequest('/v2/people/(id:~)');
-    console.log(`👤 Profile: ${profile.localizedFirstName} ${profile.localizedLastName}`);
-    
-    const profileId = profile.id;
+    // Try different RapidAPI endpoints for LinkedIn posts/activities
+    const username = 'hzl'; // Your LinkedIn username - update this
     const apis = [
       {
-        name: 'Posts API',
-        endpoint: `/v2/posts?q=author&author=urn:li:person:${profileId}&count=20&sortBy=CREATED`
+        name: 'Profile Posts',
+        endpoint: `/profile/${username}/posts`
       },
       {
-        name: 'UGC Posts API', 
-        endpoint: `/v2/ugcPosts?q=authors&authors=List(urn:li:person:${profileId})&count=20&sortBy=CREATED`
+        name: 'User Activities',
+        endpoint: `/profile/${username}/activities`
+      },
+      {
+        name: 'Posts Search',
+        endpoint: `/posts/search?keyword=${username}&count=20`
+      },
+      {
+        name: 'Profile Data',
+        endpoint: `/profile/${username}`
       }
     ];
 
@@ -79,21 +171,36 @@ async function getLinkedInPosts() {
     for (const api of apis) {
       try {
         console.log(`🔄 Trying ${api.name}...`);
-        const response = await makeLinkedInRequest(api.endpoint);
+        await incrementApiUsage(api.endpoint);
+        const response = await makeRapidAPIRequest(api.endpoint);
         
-        if (response.elements && response.elements.length > 0) {
-          console.log(`✅ ${api.name}: Found ${response.elements.length} posts`);
-          allPosts.push(...response.elements.map(post => ({
-            ...post,
-            source: api.name,
-            profileId: profileId
-          })));
+        if (response && (response.posts || response.data || response.activities)) {
+          const posts = response.posts || response.data || response.activities || [];
+          console.log(`✅ ${api.name}: Found ${posts.length} posts`);
+          
+          if (Array.isArray(posts)) {
+            allPosts.push(...posts.map(post => ({
+              ...post,
+              source: api.name
+            })));
+          }
+        } else if (response && typeof response === 'object') {
+          // Handle single post or different response format
+          console.log(`✅ ${api.name}: Found data`);
+          allPosts.push({
+            ...response,
+            source: api.name
+          });
         } else {
           console.log(`📭 ${api.name}: No posts found`);
         }
       } catch (error) {
         console.log(`⚠️  ${api.name} failed: ${error.message}`);
+        // Continue with next API if current one fails
       }
+      
+      // Add delay between API calls to be respectful
+      await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
     // Remove duplicates and sort by creation date
@@ -293,6 +400,39 @@ async function syncPosts() {
 if (require.main === module) {
   const args = process.argv.slice(2);
   
+  if (args.includes('--status')) {
+    const usage = await loadApiUsage();
+    const syncLog = await loadSyncLog();
+    
+    console.log('\n📊 LinkedIn Sync Status\n');
+    console.log(`🔑 RapidAPI Key: ${RAPIDAPI_KEY.substring(0, 10)}...`);
+    console.log(`🌐 Host: ${RAPIDAPI_HOST}`);
+    console.log(`📈 API Usage: ${usage.monthlyUsage}/${FREE_TIER_LIMIT} requests this month`);
+    console.log(`📅 Usage period: ${new Date(usage.lastReset).toDateString()} - ${new Date(new Date(usage.lastReset).getTime() + 30 * 24 * 60 * 60 * 1000).toDateString()}`);
+    
+    if (syncLog.lastSync) {
+      console.log(`🕒 Last sync: ${new Date(syncLog.lastSync).toLocaleString()}`);
+      const nextSync = new Date(new Date(syncLog.lastSync).getTime() + SYNC_FREQUENCY_DAYS * 24 * 60 * 60 * 1000);
+      console.log(`⏰ Next sync: ${nextSync.toLocaleString()}`);
+    } else {
+      console.log(`🕒 Last sync: Never`);
+      console.log(`⏰ Next sync: Available now`);
+    }
+    
+    if (usage.requestLog && usage.requestLog.length > 0) {
+      console.log(`\n📋 Recent requests:`);
+      usage.requestLog.slice(-5).forEach(req => {
+        console.log(`   ${new Date(req.timestamp).toLocaleString()} - ${req.endpoint}`);
+      });
+    }
+    
+    console.log(`\n⚙️  Configuration:`);
+    console.log(`   Sync frequency: Every ${SYNC_FREQUENCY_DAYS} days`);
+    console.log(`   Free tier limit: ${FREE_TIER_LIMIT} requests/month`);
+    
+    process.exit(0);
+  }
+
   if (args.includes('--help') || args.includes('-h')) {
     console.log(`
 LinkedIn Blog Sync Tool
@@ -304,9 +444,15 @@ Options:
   --help, -h     Show this help message
   --dry-run      Show what would be synced without creating files
   --force        Force sync even if posts already exist
+  --status       Show API usage status
 
 Environment Variables:
-  LINKEDIN_ACCESS_TOKEN    Your LinkedIn API access token
+  RAPIDAPI_KEY             Your RapidAPI key (default provided)
+
+Rate Limiting:
+  Free Tier: 50 requests/month
+  Sync Frequency: Every 7 days to stay under limit
+  Usage tracked in .rapidapi-usage.json
 
 Examples:
   node sync-linkedin-posts.js
