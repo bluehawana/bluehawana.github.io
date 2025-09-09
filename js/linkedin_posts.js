@@ -71,24 +71,33 @@ function formatMarkdownContent(content) {
  */
 async function fetchLinkedInPosts() {
     try {
-        // Try multiple methods to get posts
-        let posts = await tryRSSSync();
+        // Skip RSS sync for now and go directly to local data
+        let posts = null;
         
         if (!posts || posts.length === 0) {
             // Fallback to static data with cache busting
             const cacheBuster = new Date().getTime();
             const response = await fetch(`/data/linkedin-posts.json?v=${cacheBuster}`);
-            posts = await response.json();
+            const data = await response.json();
             
             if (!response.ok) {
                 throw new Error(`Error loading LinkedIn posts: ${response.status}`);
+            }
+            
+            // Handle both old array format and new object format
+            if (data.posts && Array.isArray(data.posts)) {
+                posts = data.posts;
+            } else if (Array.isArray(data)) {
+                posts = data;
+            } else {
+                posts = [];
             }
         }
         
         const postsContainer = document.getElementById('linkedin-posts');
         const postsFullContainer = document.getElementById('linkedin-posts-full');
         
-        if (postsContainer) {
+        if (postsContainer && posts && Array.isArray(posts) && posts.length > 0) {
             postsContainer.innerHTML = '';
             // Show all posts (limit 5 only on homepage with #latest-activity section)
             const isHomepage = postsContainer.closest('#latest-activity');
@@ -99,16 +108,27 @@ async function fetchLinkedInPosts() {
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
-                const postUrl = convertToDirectLinkedInURL(post.url, post.content, post);
-                const linkText = postUrl.includes('/in/hzl') ? 'View LinkedIn Profile' : 'View Original Post';
+                // Use title if content is not available, and handle activityId
+                const content = post.content || post.title || 'LinkedIn Post';
+                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
+                const linkText = 'View Original Post';
                 
                 // Convert markdown to HTML for better display
-                const formattedContent = formatMarkdownContent(post.content);
+                const formattedContent = formatMarkdownContent(content);
+                
+                // Add date display if available
+                const dateStr = post.date || post.created_at || post.synced_at;
+                const displayDate = dateStr ? new Date(dateStr).toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric', 
+                    year: 'numeric' 
+                }) : '';
                 
                 postElement.innerHTML = `
                     <div class="post-content">${formattedContent}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-meta">
+                        <span style="color: var(--cyber-text-dim); font-size: 14px;">${displayDate}</span>
                         <a href="${postUrl}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> ${linkText}
                         </a>
@@ -117,9 +137,17 @@ async function fetchLinkedInPosts() {
                 
                 postsContainer.appendChild(postElement);
             });
+        } else if (postsContainer) {
+            postsContainer.innerHTML = `
+                <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
+                    <i class="fa fa-linkedin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
+                    No LinkedIn posts available at this time.<br>
+                    <a href="https://www.linkedin.com/in/hzl" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
+                </div>
+            `;
         }
         
-        if (postsFullContainer) {
+        if (postsFullContainer && posts && Array.isArray(posts) && posts.length > 0) {
             postsFullContainer.innerHTML = '';
             // Show all posts for blog page
             posts.forEach(post => {
@@ -128,13 +156,24 @@ async function fetchLinkedInPosts() {
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
-                const postUrl = convertToDirectLinkedInURL(post.url, post.content, post);
-                const linkText = postUrl.includes('/in/hzl') ? 'View LinkedIn Profile' : 'View Original Post';
+                // Use title if content is not available, and handle activityId
+                const content = post.content || post.title || 'LinkedIn Post';
+                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
+                const linkText = 'View Original Post';
+                
+                // Add date display if available
+                const dateStr = post.date || post.created_at || post.synced_at;
+                const displayDate = dateStr ? new Date(dateStr).toLocaleDateString('en-US', { 
+                    month: 'long', 
+                    day: 'numeric', 
+                    year: 'numeric' 
+                }) : '';
                 
                 postElement.innerHTML = `
-                    <div class="post-content">${post.content}</div>
+                    <div class="post-content">${content}</div>
                     ${tags ? `<div class="post-tags">${tags}</div>` : ''}
                     <div class="post-footer">
+                        <span style="color: var(--cyber-text-dim); font-size: 14px; margin-right: 20px;">${displayDate}</span>
                         <a href="${postUrl}" target="_blank" class="source-link">
                             <i class="fa fa-linkedin"></i> ${linkText}
                         </a>
@@ -143,6 +182,14 @@ async function fetchLinkedInPosts() {
                 
                 postsFullContainer.appendChild(postElement);
             });
+        } else if (postsFullContainer) {
+            postsFullContainer.innerHTML = `
+                <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
+                    <i class="fa fa-linkedin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
+                    No LinkedIn posts available at this time.<br>
+                    <a href="https://www.linkedin.com/in/hzl" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
+                </div>
+            `;
         }
         
     } catch (error) {
