@@ -203,14 +203,40 @@ async function getLinkedInPosts() {
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
-    // Remove duplicates and sort by creation date
-    const uniquePosts = allPosts
-      .filter((post, index, self) => index === self.findIndex(p => p.id === post.id))
-      .sort((a, b) => {
-        const dateA = new Date(a.createdAt || a.created?.time || 0);
-        const dateB = new Date(b.createdAt || b.created?.time || 0);
-        return dateB - dateA; // Newest first
-      });
+    // Remove duplicates by ID and content similarity
+    const uniquePosts = [];
+    const seenIds = new Set();
+    const seenActivityIds = new Set();
+    const seenContentHashes = new Set();
+    
+    for (const post of allPosts) {
+      // Skip if we've seen this ID
+      if (post.id && seenIds.has(post.id)) continue;
+      
+      // Check for activityId duplicates (handle both formats)
+      const activityId = post.activityId || post.id;
+      if (activityId && seenActivityIds.has(activityId)) continue;
+      
+      // Create content hash for similarity detection
+      const content = extractTextFromPost(post) || '';
+      const contentHash = content.toLowerCase().trim().substring(0, 100).replace(/\s+/g, ' ');
+      
+      if (contentHash.length > 20 && seenContentHashes.has(contentHash)) continue;
+      
+      // Add to tracking sets
+      if (post.id) seenIds.add(post.id);
+      if (activityId) seenActivityIds.add(activityId);
+      if (contentHash.length > 20) seenContentHashes.add(contentHash);
+      
+      uniquePosts.push(post);
+    }
+    
+    // Sort by creation date (newest first)
+    uniquePosts.sort((a, b) => {
+      const dateA = new Date(a.createdAt || a.created?.time || 0);
+      const dateB = new Date(b.createdAt || b.created?.time || 0);
+      return dateB - dateA;
+    });
 
     console.log(`📊 Total unique posts: ${uniquePosts.length}`);
     return uniquePosts;
@@ -401,36 +427,38 @@ if (require.main === module) {
   const args = process.argv.slice(2);
   
   if (args.includes('--status')) {
-    const usage = await loadApiUsage();
-    const syncLog = await loadSyncLog();
+    (async () => {
+      const usage = await loadApiUsage();
+      const syncLog = await loadSyncLog();
+      
+      console.log('\n📊 LinkedIn Sync Status\n');
+      console.log(`🔑 RapidAPI Key: ${RAPIDAPI_KEY.substring(0, 10)}...`);
+      console.log(`🌐 Host: ${RAPIDAPI_HOST}`);
+      console.log(`📈 API Usage: ${usage.monthlyUsage}/${FREE_TIER_LIMIT} requests this month`);
+      console.log(`📅 Usage period: ${new Date(usage.lastReset).toDateString()} - ${new Date(new Date(usage.lastReset).getTime() + 30 * 24 * 60 * 60 * 1000).toDateString()}`);
+      
+      if (syncLog.lastSync) {
+        console.log(`🕒 Last sync: ${new Date(syncLog.lastSync).toLocaleString()}`);
+        const nextSync = new Date(new Date(syncLog.lastSync).getTime() + SYNC_FREQUENCY_DAYS * 24 * 60 * 60 * 1000);
+        console.log(`⏰ Next sync: ${nextSync.toLocaleString()}`);
+      } else {
+        console.log(`🕒 Last sync: Never`);
+        console.log(`⏰ Next sync: Available now`);
+      }
+      
+      if (usage.requestLog && usage.requestLog.length > 0) {
+        console.log(`\n📋 Recent requests:`);
+        usage.requestLog.slice(-5).forEach(req => {
+          console.log(`   ${new Date(req.timestamp).toLocaleString()} - ${req.endpoint}`);
+        });
+      }
     
-    console.log('\n📊 LinkedIn Sync Status\n');
-    console.log(`🔑 RapidAPI Key: ${RAPIDAPI_KEY.substring(0, 10)}...`);
-    console.log(`🌐 Host: ${RAPIDAPI_HOST}`);
-    console.log(`📈 API Usage: ${usage.monthlyUsage}/${FREE_TIER_LIMIT} requests this month`);
-    console.log(`📅 Usage period: ${new Date(usage.lastReset).toDateString()} - ${new Date(new Date(usage.lastReset).getTime() + 30 * 24 * 60 * 60 * 1000).toDateString()}`);
-    
-    if (syncLog.lastSync) {
-      console.log(`🕒 Last sync: ${new Date(syncLog.lastSync).toLocaleString()}`);
-      const nextSync = new Date(new Date(syncLog.lastSync).getTime() + SYNC_FREQUENCY_DAYS * 24 * 60 * 60 * 1000);
-      console.log(`⏰ Next sync: ${nextSync.toLocaleString()}`);
-    } else {
-      console.log(`🕒 Last sync: Never`);
-      console.log(`⏰ Next sync: Available now`);
-    }
-    
-    if (usage.requestLog && usage.requestLog.length > 0) {
-      console.log(`\n📋 Recent requests:`);
-      usage.requestLog.slice(-5).forEach(req => {
-        console.log(`   ${new Date(req.timestamp).toLocaleString()} - ${req.endpoint}`);
-      });
-    }
-    
-    console.log(`\n⚙️  Configuration:`);
-    console.log(`   Sync frequency: Every ${SYNC_FREQUENCY_DAYS} days`);
-    console.log(`   Free tier limit: ${FREE_TIER_LIMIT} requests/month`);
-    
-    process.exit(0);
+      console.log(`\n⚙️  Configuration:`);
+      console.log(`   Sync frequency: Every ${SYNC_FREQUENCY_DAYS} days`);
+      console.log(`   Free tier limit: ${FREE_TIER_LIMIT} requests/month`);
+      
+      process.exit(0);
+    })();
   }
 
   if (args.includes('--help') || args.includes('-h')) {

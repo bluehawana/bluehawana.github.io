@@ -202,13 +202,13 @@
             </div>
             
             <div class="stat-card">
-                <div class="stat-number" id="nextSync">6h</div>
+                <div class="stat-number" id="nextSync">7d</div>
                 <div class="stat-label">Next Auto Sync</div>
             </div>
             
             <div class="stat-card">
-                <div class="stat-number" id="success-rate">100%</div>
-                <div class="stat-label">Success Rate</div>
+                <div class="stat-number" id="apiUsage">0/50</div>
+                <div class="stat-label">API Usage (Monthly)</div>
             </div>
         </div>
         
@@ -224,12 +224,13 @@
         
         <div class="controls">
             <button class="btn btn-primary" onclick="runSync()">🔄 Sync Now</button>
-            <button class="btn btn-secondary" onclick="viewLogs()">📊 View Logs</button>
-            <a href="blog.html" class="btn btn-secondary">📖 View Blog</a>
+            <button class="btn btn-secondary" onclick="checkApiStatus()">📊 API Status</button>
+            <button class="btn btn-secondary" onclick="viewLogs()">📄 View Logs</button>
+            <a href="pages/blog.html" class="btn btn-secondary">📖 View Blog</a>
         </div>
         
         <div class="refresh-info">
-            <p>🤖 Automation runs every 6 hours • Last updated: <span id="lastUpdate">Loading...</span></p>
+            <p>🤖 RapidAPI Integration • Syncs weekly to stay under 50 req/month • Last updated: <span id="lastUpdate">Loading...</span></p>
         </div>
     </div>
 
@@ -252,16 +253,19 @@
                     ).length || 0;
                     document.getElementById('todayPosts').textContent = todayPosts;
                     
-                    // Calculate next sync time
+                    // Calculate next sync time (weekly frequency)
                     const lastSync = new Date(data.last_sync || Date.now());
-                    const nextSync = new Date(lastSync.getTime() + 6 * 60 * 60 * 1000);
-                    const hoursUntilNext = Math.max(0, Math.ceil((nextSync - new Date()) / (60 * 60 * 1000)));
-                    document.getElementById('nextSync').textContent = hoursUntilNext + 'h';
+                    const nextSync = new Date(lastSync.getTime() + 7 * 24 * 60 * 60 * 1000);
+                    const daysUntilNext = Math.max(0, Math.ceil((nextSync - new Date()) / (24 * 60 * 60 * 1000)));
+                    document.getElementById('nextSync').textContent = daysUntilNext + 'd';
                     
                     // Show recent posts
                     displayRecentPosts(data.posts || []);
                     
                     document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+                    
+                    // Load API usage data
+                    loadApiUsage();
                 } else {
                     throw new Error('Could not load data');
                 }
@@ -303,6 +307,33 @@
             });
         }
         
+        async function loadApiUsage() {
+            try {
+                const response = await fetch('.rapidapi-usage.json');
+                if (response.ok) {
+                    const usage = await response.json();
+                    const usageText = `${usage.monthlyUsage || 0}/50`;
+                    document.getElementById('apiUsage').textContent = usageText;
+                    
+                    // Update color based on usage
+                    const apiUsageElement = document.getElementById('apiUsage');
+                    const percentage = (usage.monthlyUsage || 0) / 50;
+                    if (percentage >= 0.8) {
+                        apiUsageElement.style.color = '#e74c3c'; // Red when close to limit
+                    } else if (percentage >= 0.6) {
+                        apiUsageElement.style.color = '#f39c12'; // Orange when getting high
+                    } else {
+                        apiUsageElement.style.color = '#3498db'; // Blue when safe
+                    }
+                } else {
+                    document.getElementById('apiUsage').textContent = '0/50';
+                }
+            } catch (error) {
+                console.log('API usage file not found (this is normal for first run)');
+                document.getElementById('apiUsage').textContent = '0/50';
+            }
+        }
+        
         async function runSync() {
             const button = event.target;
             const originalText = button.textContent;
@@ -311,7 +342,7 @@
             
             try {
                 // In a real implementation, this would trigger the sync
-                alert('Manual sync would run here. For now, run: node linkedin-sync-simple.js');
+                alert('Manual sync would run here. For now, run: node sync-linkedin-posts.js\n\nNote: Script now uses RapidAPI with weekly sync frequency to stay under 50 requests/month limit.');
                 setTimeout(() => {
                     loadDashboardData();
                 }, 1000);
@@ -323,8 +354,12 @@
             button.disabled = false;
         }
         
+        function checkApiStatus() {
+            alert('To check detailed API status, run: node sync-linkedin-posts.js --status\n\nThis will show:\n• Monthly API usage\n• Usage period\n• Last sync time\n• Next sync time\n• Recent API requests');
+        }
+        
         function viewLogs() {
-            alert('Logs feature would open here. Check sync.log file for now.');
+            alert('To view detailed logs:\n• Check .rapidapi-usage.json for API usage\n• Check .linkedin-sync-log.json for sync history\n• Or run: node sync-linkedin-posts.js --status');
         }
         
         // Load data on page load
