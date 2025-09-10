@@ -4,22 +4,8 @@
     "linkedin_url": "https://www.linkedin.com/in/hzl/"
   },
   "last_sync": "2025-09-09T08:34:00.832Z",
-  "total_posts": 21,
+  "total_posts": 20,
   "posts": [
-    {
-      "content": "We receive these kinds of \"Hi, #firstname\", \"Dear #applicants\" and \"Hello #candidates\" emails almost every day. Dear #senders, before you figure out how to personalize your outreach, maybe focus on building genuine connections first. Quality over quantity always wins! 💼",
-      "date": "2025-08-25",
-      "url": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
-      "tags": [
-        "Networking",
-        "ProfessionalCommunication",
-        "JobSearch",
-        "Quality"
-      ],
-      "activityId": "7364309907770126337",
-      "source": "real_linkedin_post",
-      "extract_method": "manual_verification"
-    },
     {
       "activityId": "urn:li:activity:7370485217637203968",
       "title": "From the photo below, we can learn a lot about car types. Here's an intriguing q",
@@ -56,11 +42,18 @@
       "synced_at": "2025-09-09T08:24:39.257Z"
     },
     {
-      "activityId": "urn:li:activity:7364309907770126337",
-      "title": "We receive these kinds of \"Hi, \", “Dear ”and “Hello ”emails almost every day. De",
-      "filename": "2025-08-21-linkedin-we-receive-these-kinds-of-hi-dear-and-hello-emails.md",
-      "created_at": "2025-08-21T14:58:24.274Z",
-      "synced_at": "2025-09-09T08:24:39.257Z"
+      "content": "We receive these kinds of \"Hi, #firstname\", \"Dear #applicants\" and \"Hello #candidates\" emails almost every day. Dear #senders, before you figure out how to personalize your outreach, maybe focus on building genuine connections first. Quality over quantity always wins! 💼",
+      "date": "2025-08-25",
+      "url": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
+      "tags": [
+        "Networking",
+        "ProfessionalCommunication",
+        "JobSearch",
+        "Quality"
+      ],
+      "activityId": "7364309907770126337",
+      "source": "real_linkedin_post",
+      "extract_method": "manual_verification"
     },
     {
       "activityId": "urn:li:activity:7363162496699973632",
@@ -160,5 +153,6 @@
       "created_at": "2025-06-11T20:11:21.272Z",
       "synced_at": "2025-09-09T08:34:00.832Z"
     }
-  ]
+  ],
+  "last_cleanup": "2025-09-09T08:59:07.819Z"
 }

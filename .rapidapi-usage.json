@@ -1,0 +1,22 @@
+{
+  "monthlyUsage": 4,
+  "lastReset": "2025-09-09T08:39:42.832Z",
+  "requestLog": [
+    {
+      "endpoint": "/profile/hzl/posts",
+      "timestamp": "2025-09-09T08:39:42.832Z"
+    },
+    {
+      "endpoint": "/profile/hzl/activities",
+      "timestamp": "2025-09-09T08:39:44.791Z"
+    },
+    {
+      "endpoint": "/posts/search?keyword=hzl&count=20",
+      "timestamp": "2025-09-09T08:39:45.845Z"
+    },
+    {
+      "endpoint": "/profile/hzl",
+      "timestamp": "2025-09-09T08:39:46.896Z"
+    }
+  ]
+}

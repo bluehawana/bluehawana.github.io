@@ -119,7 +119,14 @@ function createContentPreview(content, minWords = 50, maxWords = 80) {
 /**
  * Fetch latest LinkedIn posts with fallback methods
  */
+// Simple re-entrancy guard to prevent duplicate renders
+window.__linkedinPostsLoading = window.__linkedinPostsLoading || false;
+
 async function fetchLinkedInPosts() {
+    if (window.__linkedinPostsLoading) {
+        return; // Prevent duplicate concurrent loads
+    }
+    window.__linkedinPostsLoading = true;
     try {
         // Skip RSS sync for now and go directly to local data
         let posts = null;
@@ -143,6 +150,34 @@ async function fetchLinkedInPosts() {
                 posts = [];
             }
             
+            // Remove duplicates by content similarity and activityId
+            const uniquePosts = [];
+            const seenActivityIds = new Set();
+            const seenContentHashes = new Set();
+            
+            for (const post of posts) {
+                // Skip if we've seen this activity ID
+                if (post.activityId && seenActivityIds.has(post.activityId)) {
+                    continue;
+                }
+                
+                // Create a content hash for similarity detection
+                const content = (post.content || post.title || '').toLowerCase().trim();
+                const contentHash = content.substring(0, 100).replace(/\s+/g, ' ');
+                
+                // Skip if we've seen very similar content (first 100 chars)
+                if (contentHash.length > 20 && seenContentHashes.has(contentHash)) {
+                    continue;
+                }
+                
+                // Add to unique lists
+                if (post.activityId) seenActivityIds.add(post.activityId);
+                if (contentHash.length > 20) seenContentHashes.add(contentHash);
+                uniquePosts.push(post);
+            }
+            
+            posts = uniquePosts;
+            
             // Sort posts by date (descending - latest first)
             posts.sort((a, b) => {
                 const dateA = new Date(a.created_at || a.date || a.synced_at || 0);
@@ -155,6 +190,11 @@ async function fetchLinkedInPosts() {
         const postsFullContainer = document.getElementById('linkedin-posts-full');
         
         if (postsContainer && posts && Array.isArray(posts) && posts.length > 0) {
+            // If we've already rendered posts, avoid rendering again
+            if (postsContainer.dataset.rendered === 'true') {
+                window.__linkedinPostsLoading = false;
+                return;
+            }
             postsContainer.innerHTML = '';
             // Show all posts (limit 5 only on homepage with #latest-activity section)
             const isHomepage = postsContainer.closest('#latest-activity');
@@ -245,6 +285,7 @@ async function fetchLinkedInPosts() {
                 
                 postsContainer.appendChild(postElement);
             }
+            postsContainer.dataset.rendered = 'true';
         } else if (postsContainer) {
             postsContainer.innerHTML = `
                 <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
@@ -373,6 +414,7 @@ async function fetchLinkedInPosts() {
             postsContainer.innerHTML = '<p>Unable to load LinkedIn posts at this time.</p>';
         }
     }
+    window.__linkedinPostsLoading = false;
 }
 
 /**
