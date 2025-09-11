@@ -9,6 +9,8 @@ on:
 jobs:
   sync-linkedin-posts:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
@@ -19,10 +21,12 @@ jobs:
       with:
         node-version: '18'
         
-    - name: Install dependencies
+    - name: Install dependencies (skip Chromium)
+      env:
+        PUPPETEER_SKIP_DOWNLOAD: 'true'
       run: |
         if [ -f package.json ]; then
-          npm install
+          npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
         fi
         
     - name: Run LinkedIn sync
@@ -53,6 +57,7 @@ jobs:
         fi
 
     - name: Generate sync report
+      if: always()
       run: |
         echo "📊 LinkedIn Sync Report - $(date)" >> $GITHUB_STEP_SUMMARY
         echo "================================" >> $GITHUB_STEP_SUMMARY

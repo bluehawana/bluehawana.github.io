@@ -3,8 +3,8 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/"
   },
-  "last_sync": "2025-09-09T08:34:00.832Z",
-  "total_posts": 20,
+  "last_sync": "2025-09-10T17:01:16.676Z",
+  "total_posts": 21,
   "posts": [
     {
       "activityId": "urn:li:activity:7370485217637203968",
@@ -152,7 +152,13 @@
       "filename": "2025-06-11-linkedin-unleash-your-inner-racer-and-conquer-the-track-wit.md",
       "created_at": "2025-06-11T20:11:21.272Z",
       "synced_at": "2025-09-09T08:34:00.832Z"
+    },
+    {
+      "activityId": "urn:li:activity:7364309907770126337",
+      "title": "We receive these kinds of \"Hi, \", “Dear ”and “Hello ”emails almost every day. De",
+      "filename": "2025-08-21-linkedin-we-receive-these-kinds-of-hi-dear-and-hello-emails-1757523676637.md",
+      "created_at": "2025-08-21T14:58:24.274Z",
+      "synced_at": "2025-09-10T17:01:16.676Z"
     }
-  ],
-  "last_cleanup": "2025-09-09T08:59:07.819Z"
+  ]
 }
