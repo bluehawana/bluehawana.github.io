@@ -1,10 +1,10 @@
 name: LinkedIn Auto Sync
 
 on:
-  schedule:
-    # Run every 6 hours (0, 6, 12, 18 UTC)
-    - cron: '0 */6 * * *'
-  workflow_dispatch: # Allow manual triggering
+  # schedule:
+  #   # Run every 6 hours (0, 6, 12, 18 UTC) - DISABLED DUE TO FAILURES
+  #   - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual triggering only
 
 jobs:
   sync-linkedin-posts:
