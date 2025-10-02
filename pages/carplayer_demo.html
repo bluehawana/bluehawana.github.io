@@ -15,8 +15,8 @@
    
    <!-- VLC Web Plugin for IPTV stream compatibility -->
    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-   <script src="https://unpkg.com/@videojs/http-streaming@3.0.2/dist/videojs-http-streaming.min.js"></script>
    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+   <script src="https://unpkg.com/@videojs/http-streaming@3.0.2/dist/videojs-http-streaming.min.js"></script>
    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet">
    
    <!-- VLC-like IPTV player styles -->
@@ -405,39 +405,67 @@
 
       <div class="main-screen">
          <div class="channel-list">
-            <div class="channel-item active" data-channel="aje">
-               <div class="channel-logo">AJE</div>
-               <div class="channel-info">
-                  <h4>Al Jazeera English</h4>
-                  <p>News • HD • Working ✅</p>
-               </div>
-            </div>
-            <div class="channel-item" data-channel="bbc">
+            <div class="channel-item active" data-channel="bbc">
                <div class="channel-logo">BBC</div>
                <div class="channel-info">
-                  <h4>BBC World News</h4>
-                  <p>News • HD • Testing</p>
+                  <h4>BBC News</h4>
+                  <p>News • HD • HTTPS ✅</p>
                </div>
             </div>
             <div class="channel-item" data-channel="cnn">
                <div class="channel-logo">CNN</div>
                <div class="channel-info">
                   <h4>CNN International</h4>
-                  <p>News • HD • Testing</p>
+                  <p>News • HD • HTTPS ✅</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="sky">
-               <div class="channel-logo">SKY</div>
+            <div class="channel-item" data-channel="cna">
+               <div class="channel-logo">CNA</div>
                <div class="channel-info">
-                  <h4>Sky News</h4>
-                  <p>News • HD • Testing</p>
+                  <h4>Channel NewsAsia</h4>
+                  <p>News • HD • HTTPS ✅</p>
                </div>
             </div>
-            <div class="channel-item" data-channel="cnbc">
-               <div class="channel-logo">CNBC</div>
+            <div class="channel-item" data-channel="gbnews">
+               <div class="channel-logo">GB</div>
                <div class="channel-info">
-                  <h4>CNBC Business</h4>
-                  <p>Business • HD • Testing</p>
+                  <h4>GB News</h4>
+                  <p>News • HD • HTTPS ✅</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="rt">
+               <div class="channel-logo">RT</div>
+               <div class="channel-info">
+                  <h4>RT News</h4>
+                  <p>News • HD • HTTPS ✅</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="euronews">
+               <div class="channel-logo">EU</div>
+               <div class="channel-info">
+                  <h4>Euronews</h4>
+                  <p>News • HD • HTTPS ✅</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="trt">
+               <div class="channel-logo">TRT</div>
+               <div class="channel-info">
+                  <h4>TRT World</h4>
+                  <p>News • HD • HTTPS ✅</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="aje">
+               <div class="channel-logo">AJE</div>
+               <div class="channel-info">
+                  <h4>Al Jazeera English</h4>
+                  <p>News • HD • Working ✅</p>
+               </div>
+            </div>
+            <div class="channel-item" data-channel="nhk">
+               <div class="channel-logo">NHK</div>
+               <div class="channel-info">
+                  <h4>NHK World</h4>
+                  <p>News • HD • HTTPS ✅</p>
                </div>
             </div>
             <div class="channel-item" data-channel="demo">
@@ -453,7 +481,7 @@
             <div class="video-container">
                <video-js id="video-player" class="video-js vjs-default-skin" 
                          controls preload="auto" width="100%" height="100%" 
-                         data-setup='{"fluid": true, "responsive": true}'>
+                        >
                   <source src="https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/10.mp4" type="video/mp4" label="Demo Video">
                   <p class="vjs-no-js">
                      To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -529,25 +557,36 @@
    </div>
 
    <script>
-      // Updated IPTV channels - Testing new sources (Al Jazeera confirmed working)
+      // Updated IPTV channels with HTTPS sources for better compatibility
       const demoStreams = {
-         'aje': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/400230347.m3u8',
-         'aje_backup': 'http://live-hls-web-aje.getaj.net/AJE/01.m3u8',
-         'bbc': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/40091.m3u8',
-         'cnn': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/36480.m3u8',
-         'sky': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153846.m3u8',
-         'cnbc': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/82803.m3u8',
-         'france24': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/153855.m3u8',
-         'rt': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/181651.m3u8',
-         'dw': 'http://mwyceyp.mhubery.xyz:80/live/2161039006/6680421603/176619.m3u8',
+         'bbc': 'https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8',
+         'cnn': 'https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8',
+         'cna': 'https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8',
+         'gbnews': 'https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-gbnewsnz-samsungnz/playlist.m3u8',
+         'rt': 'https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8',
+         'cbn': 'https://bcovlive-a.akamaihd.net/re8d9f611ee4a490a9bb59e52db91414d/us-east-1/734546207001/playlist.m3u8',
+         'livenow': 'https://jmp2.uk/rok-f9c0d48b540a55dcb98b04d2cc8abf25.m3u8',
+         'euronews': 'https://jmp2.uk/rok-dafd06b712a35fbe9935d4c04c2e8b53.m3u8',
+         'trt': 'https://tv-trtworld.medya.trt.com.tr/master_1080.m3u8',
+         'aje': 'http://live-hls-web-aje.getaj.net/AJE/01.m3u8',
+         'nhk': 'https://nhkworld-tv.akamaized.net/hls/live/2115640/nhkworld-tv/index_2M.m3u8',
+         'foxeast': 'http://fl1.moveonjoy.com/FOX_EAST/index.m3u8',
+         'cbs': 'http://panelguys.top:8080/txd7Fd/030774/21259',
+         'global': 'https://live.corusdigitaldev.com/groupd/live/49a91e7f-1023-430f-8d66-561055f3d0f7/live.isml/live-audio_1=96000-video=2499968.m3u8',
+         'newsmax2': 'https://nmxlive.akamaized.net/hls/live/529965/Live_1/1.m3u8',
+         'tbs': 'https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8',
+         'wion': 'https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8',
+         'arirang': 'https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8',
+         'taiwanplus': 'https://bcovlive-a.akamaihd.net/rce33d845cb9e42dfa302c7ac345f7858/ap-northeast-1/6282251407001/playlist.m3u8',
+         'rtd': 'https://rt-rtd.rttv.com/live/rtdoc/playlist_4500Kb.m3u8',
          'demo': 'https://pub-bdb0b5850f04423d901ad6e7e1195a2a.r2.dev/cartvfirebase/10.mp4'
       };
 
-      let currentChannel = 'aje';
+      let currentChannel = 'bbc';
       let isPlaying = false;
       let currentChannelIndex = 0;
       let player;
-      const channels = ['aje', 'bbc', 'cnn', 'sky', 'cnbc', 'demo'];
+      const channels = ['bbc', 'cnn', 'cna', 'gbnews', 'rt', 'euronews', 'trt', 'aje', 'nhk', 'demo'];
 
       // Network simulation
       function simulateNetworkDetection() {
@@ -611,7 +650,7 @@
 
          player.ready(() => {
             console.log('VLC-like IPTV player ready');
-            loadChannel('aje'); // Start with Al Jazeera English
+            loadChannel('bbc'); // Start with BBC News
          });
       }
 
@@ -620,7 +659,10 @@
          const streamUrl = demoStreams[channelId];
          const channelName = document.querySelector(`[data-channel="${channelId}"] h4`).textContent;
          
-         if (!streamUrl) return;
+         if (!streamUrl) {
+            updateStreamStatus(`Offline: ${channelName}`, 'HTTPS stream not available yet');
+            return;
+         }
          
          try {
             // Show loading state
@@ -647,22 +689,14 @@
                   }
                ];
                
-               // Add backup source for Al Jazeera
-               if (channelId === 'aje' && demoStreams.aje_backup) {
-                  sources.push({
-                     type: 'application/x-mpegURL',
-                     src: demoStreams.aje_backup
-                  });
-               }
-               
                player.src(sources);
             }
-            
+
             // VLC-like loading events
             player.one('loadstart', () => {
                updateStreamStatus(`📺 ${channelName}`, '⏳ VLC Loading Stream...');
             });
-            
+
             player.one('canplay', () => {
                updateStreamStatus(`📺 ${channelName}`, '✅ VLC Stream Ready • HD');
                player.play().then(() => {
@@ -673,21 +707,10 @@
                   updateStreamStatus(`📺 ${channelName}`, '⏸️ Ready to Play • Click Play');
                });
             });
-            
+
             player.one('error', (e) => {
                console.error('VLC Player Error:', e);
-               updateStreamStatus(`❌ ${channelName}`, '⚠️ VLC Stream Error');
-               
-               // Try backup for Al Jazeera
-               if (channelId === 'aje' && demoStreams.aje_backup) {
-                  setTimeout(() => {
-                     updateStreamStatus(`📺 ${channelName}`, '🔄 VLC Trying Backup...');
-                     player.src({
-                        type: 'application/x-mpegURL',
-                        src: demoStreams.aje_backup
-                     });
-                  }, 2000);
-               }
+               updateStreamStatus(`❌ ${channelName}`, '⚠️ VLC Stream Error - Check Network');
             });
             
          } catch (error) {
@@ -775,10 +798,12 @@
          initializePlayer();
       });
       
-      // Auto-select first channel (Al Jazeera English) after player loads
+      // Auto-select first channel (BBC News) after player loads
       setTimeout(() => {
          document.querySelector('.channel-item').click();
       }, 2000);
    </script>
 </body>
 </html>
+
+
