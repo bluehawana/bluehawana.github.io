@@ -125,22 +125,23 @@ async function downloadImage(imageUrl, postId) {
  */
 async function fetchLinkedInProfile() {
   return new Promise((resolve, reject) => {
-    // Encode the LinkedIn profile URL
-    const linkedinUrl = encodeURIComponent(`https://www.linkedin.com/in/${CONFIG.PROFILE_ID}`);
+    // Try the activity/posts URL first for better results
+    const linkedinUrl = encodeURIComponent(`https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/recent-activity/all/`);
 
     const options = {
       hostname: 'scrapingdog.p.rapidapi.com',
-      path: `/scrape?url=${linkedinUrl}&api_key=${CONFIG.SCRAPINGDOG_API_KEY}&dynamic=false`,
+      path: `/scrape?url=${linkedinUrl}&api_key=${CONFIG.SCRAPINGDOG_API_KEY}&dynamic=true&wait=5000`,
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'scrapingdog.p.rapidapi.com',
         'x-rapidapi-key': CONFIG.RAPIDAPI_KEY,
         'User-Agent': 'Mozilla/5.0 LinkedIn-Sync-Bot/1.0'
       },
-      timeout: 60000
+      timeout: 120000
     };
 
-    log('Fetching LinkedIn profile via RapidAPI...');
+    log('Fetching LinkedIn recent activity via RapidAPI...');
+    log(`URL: https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/recent-activity/all/`);
 
     const req = https.request(options, (res) => {
       let data = '';
@@ -148,10 +149,15 @@ async function fetchLinkedInProfile() {
       res.on('end', () => {
         try {
           log(`API Response Status: ${res.statusCode}`);
+          log(`Response size: ${data.length} bytes`);
 
           if (res.statusCode === 200) {
+            // Save HTML response for debugging
+            const debugHtmlPath = path.join(CONFIG.OUTPUT_DIR, 'last-response.html');
+            fs.writeFileSync(debugHtmlPath, data);
+            log(`Saved HTML response to ${debugHtmlPath} for debugging`);
+
             // Parse the HTML response and extract profile data
-            // For now, we'll use a simple extraction
             const profile = parseLinkedInHTML(data);
             log('Profile data fetched successfully');
             resolve(profile);
@@ -310,18 +316,30 @@ async function extractNewPosts(profile, existingPosts) {
   log('Extracting new posts from profile...');
 
   const existingLinks = new Set((existingPosts.posts || []).map(p => p.link));
+  log(`Found ${existingLinks.size} existing posts in database`);
+
   const newPosts = [];
+  const skippedDuplicates = [];
   const currentDate = new Date().toISOString();
 
   if (profile.activities && Array.isArray(profile.activities)) {
+    log(`Processing ${profile.activities.length} activities from profile`);
+
     for (const [index, activity] of profile.activities.entries()) {
-      if (existingLinks.has(activity.link)) continue;
+      log(`Activity ${index + 1}: ${activity.link}`);
+
+      if (existingLinks.has(activity.link)) {
+        log(`  ⏭️  Skipping duplicate: ${activity.title.substring(0, 50)}...`);
+        skippedDuplicates.push(activity.link);
+        continue;
+      }
 
       const isOwnPost = activity.activity &&
         (activity.activity.toLowerCase().includes('shared by harvad li') ||
          !activity.activity.toLowerCase().includes('liked by'));
 
       if (isOwnPost && activity.title && activity.title.trim() !== '') {
+        log(`  ✅ New post found: ${activity.title.substring(0, 50)}...`);
         const postId = `activity-${Date.now()}-${index}`;
 
         let localImagePath = null;
@@ -346,11 +364,13 @@ async function extractNewPosts(profile, existingPosts) {
         };
 
         newPosts.push(post);
+      } else {
+        log(`  ⏭️  Skipping: not own post or empty title`);
       }
     }
   }
 
-  log(`Found ${newPosts.length} new posts to sync`);
+  log(`Summary: ${newPosts.length} new posts, ${skippedDuplicates.length} duplicates skipped`);
   return newPosts.slice(0, CONFIG.MAX_POSTS_TO_SYNC);
 }
 
