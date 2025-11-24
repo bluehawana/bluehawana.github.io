@@ -30,14 +30,14 @@ jobs:
           npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
         fi
         
-    - name: Run LinkedIn sync with images
+    - name: Run LinkedIn sync with RapidAPI
       env:
-        SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
         RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
         LINKEDIN_PROFILE_URN: ${{ secrets.LINKEDIN_PROFILE_URN }}
       run: |
-        echo "🚀 Starting LinkedIn sync with image download..."
-        node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
+        echo "🚀 Starting LinkedIn sync via RapidAPI..."
+        node automated-linkedin-sync-rapidapi.js || node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
         
     - name: Commit and push changes
       run: |
