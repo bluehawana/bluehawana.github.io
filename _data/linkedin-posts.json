@@ -3,72 +3,13 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2025-08-25T09:47:23.772Z"
+    "last_sync": "2025-11-24T10:04:22.492Z"
   },
   "extraction": {
-    "date": "2025-08-25T09:47:23.772Z",
-    "method": "scrapingdog-api",
-    "api_key_used": "68ac0adb...",
-    "total_posts_found": 3,
-    "new_posts_this_sync": 3
+    "date": "2025-11-24T10:04:22.492Z",
+    "method": "force-resync",
+    "total_posts_found": 0,
+    "new_posts_this_sync": 0
   },
-  "posts": [
-    {
-      "id": "activity-1756115243771-4",
-      "platform": "linkedin",
-      "author": "Harvad Li",
-      "author_profile": "https://www.linkedin.com/in/hzl",
-      "title": "We receive these kinds of \"Hi, #firstname\", “Dear #applicants”and “Hello #candidates”emails almost every day. Dear #senders, before you figure out…",
-      "content": "We receive these kinds of \"Hi, #firstname\", “Dear #applicants”and “Hello #candidates”emails almost every day. Dear #senders, before you figure out…",
-      "activity_type": "shared",
-      "link": "https://www.linkedin.com/posts/hzl_firstname-applicants-candidates-activity-7364309907770126337-vMb5",
-      "image": "https://media.licdn.com/dms/image/v2/D5622AQGrVgrbC69V8g/feedshare-shrink_2048_1536/B56ZjNI1BbHcAw-/0/1755788303591?e=2147483647&v=beta&t=_872i9StU-JY_g1EzE6VrZ7Q6Jr1Zuc4GS7xCcUk_O4",
-      "extracted_at": "2025-08-25T09:47:23.771Z",
-      "source": "scrapingdog-api",
-      "is_own_post": true
-    },
-    {
-      "id": "activity-1756115243771-8",
-      "platform": "linkedin",
-      "author": "Harvad Li",
-      "author_profile": "https://www.linkedin.com/in/hzl",
-      "title": "The hardest thing in the world is to build #TRUST. Once you have that, almost everything else can be solved smoothly. So, here's a quick question:…",
-      "content": "The hardest thing in the world is to build #TRUST. Once you have that, almost everything else can be solved smoothly. So, here's a quick question:…",
-      "activity_type": "shared",
-      "link": "https://www.linkedin.com/posts/hzl_trust-trust-trustworthiness-activity-7363162496699973632-Hsk6",
-      "image": "https://media.licdn.com/dms/image/v2/D4D22AQEOP_FwqZzKlA/feedshare-shrink_2048_1536/B4DZi81RYeGkAo-/0/1755514739027?e=2147483647&v=beta&t=qk1aQ8BETWaLe2p-5veL8f_Tl8b9zpehUuczj8EfeXo",
-      "extracted_at": "2025-08-25T09:47:23.771Z",
-      "source": "scrapingdog-api",
-      "is_own_post": true
-    },
-    {
-      "id": "article-1756115243771-0",
-      "platform": "linkedin",
-      "author": "Harvad Li",
-      "author_profile": "https://www.linkedin.com/in/hzl",
-      "title": "Unlocking Responsive UI with MediatR in .NET Core Applications:The Imperative of a Superior User Experience",
-      "content": "Unlocking Responsive UI with MediatR in .NET Core Applications:The Imperative of a Superior User Experience",
-      "activity_type": "article",
-      "link": "https://www.linkedin.com/pulse/unlocking-responsive-ui-mediatr-net-core-imperative-superior-li-bplmf",
-      "image": "https://media.licdn.com/dms/image/v2/D4D12AQFJ_w-j4Wju9A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708853030196?e=2147483647&v=beta&t=JWnFYKOr_IYvpnK_qp3rwliFKXQn0-V0nUEuCjhyCS0",
-      "published_date": "Feb 26, 2024",
-      "extracted_at": "2025-08-25T09:47:23.771Z",
-      "source": "scrapingdog-api",
-      "is_own_post": true
-    }
-  ],
-  "userProfile": {
-    "sub": "IMcvTu6zhf",
-    "email_verified": true,
-    "name": "Harvad Li",
-    "locale": {
-      "country": "US",
-      "language": "en"
-    },
-    "given_name": "Harvad",
-    "family_name": "Li",
-    "email": "bluehawana@gmail.com",
-    "picture": "https://media.licdn.com/dms/image/v2/D4D03AQFcATr32UD3wA/profile-displayphoto-shrink_400_400/B4DZQs0deyGgAo-/0/1735918737936?e=1759968000&v=beta&t=dswyh_fU6pCA9Jd_hZL5xx15UXNhLEqItqVxvu3EklY"
-  },
-  "lastSync": "2025-09-07T16:07:18.840Z"
+  "posts": []
 }
