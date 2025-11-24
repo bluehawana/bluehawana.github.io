@@ -182,8 +182,20 @@ async function fetchLinkedInProfile() {
 }
 
 /**
+ * Extract text content from HTML, removing tags
+ */
+function stripHtmlTags(html) {
+  return html
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
  * Parse LinkedIn HTML to extract profile data
- * This is a simplified parser - RapidAPI returns HTML
+ * This is an improved parser that extracts actual post content
  */
 function parseLinkedInHTML(html) {
   const profile = {
@@ -198,20 +210,82 @@ function parseLinkedInHTML(html) {
   const activityPattern = /urn:li:activity:(\d+)/g;
   const activityMatches = [...html.matchAll(activityPattern)];
 
-  activityMatches.slice(0, 10).forEach((match, index) => {
-    const activityId = match[1];
+  // Get unique activity IDs
+  const uniqueActivityIds = [...new Set(activityMatches.map(m => m[1]))];
 
-    // Try to extract post title/content
-    // This is a simplified extraction
+  log(`Found ${uniqueActivityIds.length} unique activities in HTML`);
+
+  uniqueActivityIds.slice(0, 20).forEach((activityId, index) => {
+    // Try to find the post content near this activity ID
+    const activityUrn = `urn:li:activity:${activityId}`;
+    const activityIndex = html.indexOf(activityUrn);
+
+    if (activityIndex === -1) return;
+
+    // Extract a chunk of HTML around this activity (5000 chars before and after)
+    const startIndex = Math.max(0, activityIndex - 5000);
+    const endIndex = Math.min(html.length, activityIndex + 5000);
+    const chunk = html.substring(startIndex, endIndex);
+
+    // Try to extract post text content
+    // Look for common LinkedIn post content patterns
+    let title = '';
+    let image = '';
+
+    // Try to find post text in various containers
+    const textPatterns = [
+      /<div[^>]*class="[^"]*feed-shared-update-v2__description[^"]*"[^>]*>([\s\S]{0,2000}?)<\/div>/i,
+      /<span[^>]*class="[^"]*break-words[^"]*"[^>]*>([\s\S]{0,2000}?)<\/span>/i,
+      /<div[^>]*class="[^"]*attributed-text-segment-list__content[^"]*"[^>]*>([\s\S]{0,2000}?)<\/div>/i,
+      /<p[^>]*class="[^"]*attributed-text[^"]*"[^>]*>([\s\S]{0,2000}?)<\/p>/i
+    ];
+
+    for (const pattern of textPatterns) {
+      const match = chunk.match(pattern);
+      if (match && match[1]) {
+        const extracted = stripHtmlTags(match[1]);
+        if (extracted.length > 20 && extracted.length < 1000) {
+          title = extracted;
+          break;
+        }
+      }
+    }
+
+    // Try to find images
+    const imagePattern = /<img[^>]*src="([^"]*)"[^>]*>/gi;
+    const imageMatches = [...chunk.matchAll(imagePattern)];
+    if (imageMatches.length > 0) {
+      // Get the first image that looks like a post image (not profile pic)
+      for (const imgMatch of imageMatches) {
+        const imgUrl = imgMatch[1];
+        if (imgUrl && !imgUrl.includes('profile') && !imgUrl.includes('icon')) {
+          image = imgUrl;
+          break;
+        }
+      }
+    }
+
+    // If we couldn't extract a good title, create a placeholder
+    if (!title || title.length < 10) {
+      title = `LinkedIn Activity ${activityId.substring(0, 10)}...`;
+      log(`Could not extract text for activity ${activityId}, using placeholder`, 'WARN');
+    } else {
+      // Truncate title if too long
+      if (title.length > 200) {
+        title = title.substring(0, 197) + '...';
+      }
+      log(`Extracted post: "${title.substring(0, 50)}..."`);
+    }
+
     profile.activities.push({
       link: `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`,
-      title: `LinkedIn Post - ${new Date().toLocaleDateString()}`,
+      title: title,
       activity: 'shared by Harvad Li',
-      image: '' // Will be empty for now
+      image: image
     });
   });
 
-  log(`Parsed ${profile.activities.length} activities from HTML`);
+  log(`Parsed ${profile.activities.length} activities with content from HTML`);
   return profile;
 }
 
