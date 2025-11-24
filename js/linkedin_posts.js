@@ -209,22 +209,21 @@ async function fetchLinkedInPosts() {
                 
                 // Try to load full content and engagement stats from markdown file
                 let content = post.content || post.title || 'LinkedIn Post';
-                let engagementStats = { likes: 0, comments: 0, shares: 0, views: 0 };
-                
+                let engagementStats = { likes: 0, comments: 0, shares: 0 };
+
                 if (post.filename) {
                     try {
                         const mdResponse = await fetch(`/_posts/${post.filename}`);
                         if (mdResponse.ok) {
                             const mdContent = await mdResponse.text();
-                            
+
                             // Extract engagement stats from frontmatter
                             const statsMatch = mdContent.match(/linkedin_stats:\s*\n\s*likes:\s*(\d+)\s*\n\s*comments:\s*(\d+)\s*\n\s*shares:\s*(\d+)/);
                             if (statsMatch) {
                                 engagementStats = {
                                     likes: parseInt(statsMatch[1]) || 0,
                                     comments: parseInt(statsMatch[2]) || 0,
-                                    shares: parseInt(statsMatch[3]) || 0,
-                                    views: Math.floor(Math.random() * 200) + 50 // Generate realistic view count
+                                    shares: parseInt(statsMatch[3]) || 0
                                 };
                             }
                             
@@ -258,8 +257,7 @@ async function fetchLinkedInPosts() {
                 const bbsStats = `
                     <div style="background: #1a1a2e; border: 1px solid var(--cyber-border); border-radius: 6px; padding: 8px; margin: 10px 0; font-family: 'Courier New', monospace; font-size: 12px;">
                         <div style="color: var(--cyber-accent); margin-bottom: 4px;">╔═══ ENGAGEMENT STATS ═══╗</div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px; color: var(--cyber-text);">
-                            <span>👁️ Views: <span style="color: var(--cyber-primary);">${engagementStats.views}</span></span>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; color: var(--cyber-text);">
                             <span>👍 Likes: <span style="color: var(--cyber-accent);">${engagementStats.likes}</span></span>
                             <span>💬 Comments: <span style="color: var(--cyber-secondary);">${engagementStats.comments}</span></span>
                             <span>🔄 Shares: <span style="color: var(--cyber-primary);">${engagementStats.shares}</span></span>
