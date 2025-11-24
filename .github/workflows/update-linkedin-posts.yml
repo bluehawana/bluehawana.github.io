@@ -52,12 +52,10 @@ jobs:
             npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
           fi
 
-      - name: Run LinkedIn sync with RapidAPI
+      - name: Run LinkedIn sync with ScrapingDog Direct API
         env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
           SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
-          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
-        run: node automated-linkedin-sync-rapidapi.js || node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
+        run: node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
         
       - name: Check for changes
         id: changes
