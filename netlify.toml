@@ -41,7 +41,7 @@
     Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type, Authorization, LinkedIn-Version, X-Restli-Protocol-Version"
 
-# Static file MIME types
+# Static file MIME types and cache control
 [[headers]]
   for = "*.css"
   [headers.values]
@@ -51,6 +51,25 @@
   for = "*.js"
   [headers.values]
     Content-Type = "application/javascript"
+    Cache-Control = "public, max-age=300, must-revalidate"  # 5 minutes cache
+
+[[headers]]
+  for = "/data/*.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "public, max-age=60, must-revalidate"  # 1 minute cache
+
+[[headers]]
+  for = "/js/linkedin_posts.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Cache-Control = "public, max-age=60, must-revalidate"  # 1 minute cache
+
+[[headers]]
+  for = "/js/github_repos.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Cache-Control = "public, max-age=60, must-revalidate"  # 1 minute cache
 
 [[headers]]
   for = "*.png"
