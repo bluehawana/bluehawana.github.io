@@ -46,12 +46,12 @@
             try {
                 // Add cache busting parameter
                 const response = await fetch('/data/linkedin-posts.json?t=' + Date.now());
-                const data = await response.json();
+                const posts = await response.json();
 
                 const container = document.getElementById('posts-container');
                 container.innerHTML = '';
 
-                data.posts.slice(0, 5).forEach(post => {
+                posts.slice(0, 5).forEach(post => {
                     const postDiv = document.createElement('div');
                     postDiv.className = 'post';
 
