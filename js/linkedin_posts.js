@@ -207,36 +207,13 @@ async function fetchLinkedInPosts() {
                 
                 const tags = post.tags ? post.tags.map(tag => `<span class="tag">#${tag}</span>`).join(' ') : '';
                 
-                // Try to load full content and engagement stats from markdown file
+                // Get content and engagement stats directly from JSON
                 let content = post.content || post.title || 'LinkedIn Post';
-                let engagementStats = { likes: 0, comments: 0, shares: 0 };
-
-                if (post.filename) {
-                    try {
-                        const mdResponse = await fetch(`/_posts/${post.filename}`);
-                        if (mdResponse.ok) {
-                            const mdContent = await mdResponse.text();
-
-                            // Extract engagement stats from frontmatter
-                            const statsMatch = mdContent.match(/linkedin_stats:\s*\n\s*likes:\s*(\d+)\s*\n\s*comments:\s*(\d+)\s*\n\s*shares:\s*(\d+)/);
-                            if (statsMatch) {
-                                engagementStats = {
-                                    likes: parseInt(statsMatch[1]) || 0,
-                                    comments: parseInt(statsMatch[2]) || 0,
-                                    shares: parseInt(statsMatch[3]) || 0
-                                };
-                            }
-                            
-                            // Extract content between --- headers and final ---
-                            const contentMatch = mdContent.match(/---[\s\S]*?---\n\n([\s\S]*?)\n\n---/);
-                            if (contentMatch && contentMatch[1]) {
-                                content = contentMatch[1].trim();
-                            }
-                        }
-                    } catch (e) {
-                        console.log('Could not load markdown for:', post.filename);
-                    }
-                }
+                let engagementStats = {
+                    likes: post.engagement?.likes || 0,
+                    comments: post.engagement?.comments || 0,
+                    shares: post.engagement?.shares || 0
+                };
                 
                 const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
