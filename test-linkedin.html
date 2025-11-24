@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Posts Test - Direct from JSON</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0e27;
+            color: #fff;
+            padding: 20px;
+        }
+        .post {
+            background: #1a1a2e;
+            border: 1px solid #00d4ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .engagement {
+            background: #1a1a2e;
+            border: 1px solid #00d4ff;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 10px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .stat {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>LinkedIn Posts - Direct from JSON Test</h1>
+    <div id="posts-container">Loading...</div>
+
+    <script>
+        async function loadPosts() {
+            try {
+                // Add cache busting parameter
+                const response = await fetch('/data/linkedin-posts.json?t=' + Date.now());
+                const data = await response.json();
+
+                const container = document.getElementById('posts-container');
+                container.innerHTML = '';
+
+                data.posts.slice(0, 5).forEach(post => {
+                    const postDiv = document.createElement('div');
+                    postDiv.className = 'post';
+
+                    postDiv.innerHTML = `
+                        <h3>${post.content.substring(0, 100)}...</h3>
+                        <div class="engagement">
+                            <div style="color: #00d4ff; margin-bottom: 8px;">╔═══ ENGAGEMENT STATS ═══╗</div>
+                            <div class="stats-grid">
+                                <span>👍 Likes: <span class="stat">${post.engagement.likes}</span></span>
+                                <span>💬 Comments: <span class="stat">${post.engagement.comments}</span></span>
+                                <span>🔄 Shares: <span class="stat">${post.engagement.shares}</span></span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px; font-size: 12px; color: #888;">
+                            Published: ${new Date(post.publishedAt).toLocaleDateString()}
+                        </div>
+                    `;
+
+                    container.appendChild(postDiv);
+                });
+
+            } catch (error) {
+                console.error('Error loading posts:', error);
+                document.getElementById('posts-container').innerHTML =
+                    '<p style="color: red;">Error loading posts: ' + error.message + '</p>';
+            }
+        }
+
+        loadPosts();
+    </script>
+</body>
+</html>
