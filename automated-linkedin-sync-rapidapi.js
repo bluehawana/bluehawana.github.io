@@ -122,26 +122,55 @@ async function downloadImage(imageUrl, postId) {
 
 /**
  * Fetch LinkedIn profile using RapidAPI's ScrapingDog
+ * Try multiple URLs if one fails
  */
 async function fetchLinkedInProfile() {
+  const urls = [
+    `https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/recent-activity/all/`,
+    `https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/`,
+  ];
+
+  for (const [index, url] of urls.entries()) {
+    log(`Attempt ${index + 1}/${urls.length}: Trying ${url}`);
+
+    try {
+      const profile = await fetchUrl(url);
+      if (profile && profile.activities && profile.activities.length > 0) {
+        log(`✅ Success! Found ${profile.activities.length} activities from ${url}`);
+        return profile;
+      } else {
+        log(`⚠️  URL returned no activities: ${url}`);
+      }
+    } catch (error) {
+      log(`❌ Failed to fetch ${url}: ${error.message}`, 'ERROR');
+    }
+  }
+
+  // If all URLs failed, return the last result anyway
+  log('All URLs tried, returning last result', 'WARN');
+  return await fetchUrl(urls[0]);
+}
+
+/**
+ * Fetch a single URL via RapidAPI
+ */
+async function fetchUrl(url) {
   return new Promise((resolve, reject) => {
-    // Try the activity/posts URL first for better results
-    const linkedinUrl = encodeURIComponent(`https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/recent-activity/all/`);
+    const linkedinUrl = encodeURIComponent(url);
 
     const options = {
       hostname: 'scrapingdog.p.rapidapi.com',
-      path: `/scrape?url=${linkedinUrl}&api_key=${CONFIG.SCRAPINGDOG_API_KEY}&dynamic=true&wait=5000`,
+      path: `/scrape?url=${linkedinUrl}&api_key=${CONFIG.SCRAPINGDOG_API_KEY}&dynamic=false`,
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'scrapingdog.p.rapidapi.com',
         'x-rapidapi-key': CONFIG.RAPIDAPI_KEY,
         'User-Agent': 'Mozilla/5.0 LinkedIn-Sync-Bot/1.0'
       },
-      timeout: 120000
+      timeout: 90000
     };
 
-    log('Fetching LinkedIn recent activity via RapidAPI...');
-    log(`URL: https://www.linkedin.com/in/${CONFIG.PROFILE_ID}/recent-activity/all/`);
+    log(`Fetching: ${url}`);
 
     const req = https.request(options, (res) => {
       let data = '';
