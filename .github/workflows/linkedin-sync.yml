@@ -2,8 +2,8 @@ name: LinkedIn Auto Sync
 
 on:
   schedule:
-    # Run every 6 hours (0, 6, 12, 18 UTC)
-    - cron: '0 */6 * * *'
+    # Run every 30 minutes to catch new posts quickly
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Allow manual triggering
 
 jobs:
