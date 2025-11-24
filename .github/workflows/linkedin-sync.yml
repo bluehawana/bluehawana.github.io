@@ -29,31 +29,39 @@ jobs:
           npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
         fi
         
-    - name: Run LinkedIn sync
+    - name: Run LinkedIn sync with images
       env:
+        SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
         RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         LINKEDIN_PROFILE_URN: ${{ secrets.LINKEDIN_PROFILE_URN }}
       run: |
-        echo "🚀 Starting LinkedIn sync automation..."
-        node linkedin-sync-simple.js
+        echo "🚀 Starting LinkedIn sync with image download..."
+        node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
         
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "LinkedIn Sync Bot"
-        
-        # Add new files
+
+        # Add new files including images
         git add _posts/
         git add data/
-        
+        git add images/linkedin/ || true
+        git add _data/
+
         # Check if there are changes to commit
         if git diff --staged --quiet; then
           echo "✅ No new LinkedIn posts to sync"
         else
-          echo "📝 Committing new LinkedIn posts..."
-          git commit -m "🔄 Auto-sync LinkedIn posts - $(date '+%Y-%m-%d %H:%M UTC')"
+          echo "📝 Committing new LinkedIn posts with images..."
+          NEW_POSTS=$(git diff --staged --name-only | grep "_posts" | wc -l || echo "0")
+          NEW_IMAGES=$(git diff --staged --name-only | grep "images/linkedin" | wc -l || echo "0")
+          git commit -m "🔄 Auto-sync LinkedIn posts - $(date '+%Y-%m-%d %H:%M UTC')
+
+          📝 ${NEW_POSTS} new posts synced
+          🖼️ ${NEW_IMAGES} images downloaded"
           git push
-          echo "🎉 Successfully synced and pushed new LinkedIn posts!"
+          echo "🎉 Successfully synced and pushed ${NEW_POSTS} posts with ${NEW_IMAGES} images!"
         fi
 
     - name: Generate sync report
