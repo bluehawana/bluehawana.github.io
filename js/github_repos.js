@@ -8,6 +8,13 @@ function generateSmartDescription(repoName, language, originalDescription) {
     const projectDescriptions = {
         // Actual GitHub repo names converted to lowercase
         'bluehawana.github.io': 'Personal portfolio website showcasing full-stack development and DevOps expertise',
+        'smartmart-next-frontend': 'Next.js frontend for SmartMart e-commerce platform with modern React components and TypeScript',
+        'smrtmart-backend-go-racknerd': 'Go backend for SmartMart deployed on RackNerd VPS with microservices architecture',
+        'python-tushareapi-tv-stockselector': 'Stock selector and analyzer using Python, Tushare API, and TradingView integration for financial analysis',
+        'ai-codex-starter': 'AI-powered code generation starter kit with modern development tools and LLM integration',
+        'weatheranywhere-springboot-mysql-vps-racknerd': 'Weather application built with Spring Boot and MySQL deployed on RackNerd VPS',
+        'carbot-kotlin-androidauto': 'Kotlin-based intelligent car bot for Android Auto with AI capabilities and voice control',
+        'android15-aosp-tesing-graid-nvme': 'Android 15 AOSP testing project for performance comparison between NVMe and GRAID storage configurations',
         'epub-ttsreader-androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving using Python and text-to-speech technology',
         'epub_ttsreader_androidauto': 'An Android Auto EPUB text-to-speech reader application that can read your favorite books while driving using Python and text-to-speech technology',
         'jobhunter-python-typescript-gmailrestapi': 'An automatically working flow integrated with python, typescript, gmail RestApi and etc, for seting up workflows by searching jobs in gmail, websites, and customized resumes by job descriptions, and generate resume and cover letter and send to me for applying jobs.',
@@ -104,7 +111,7 @@ async function fetchLatestRepos(containerId = 'github-repos') {
         // Add delay to prevent rate limiting
         await new Promise(resolve => setTimeout(resolve, 100));
         
-        const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=5', {
+        const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=10', {
             headers: {
                 'Accept': 'application/vnd.github.v3+json',
                 'User-Agent': 'bluehawana-portfolio'
@@ -168,48 +175,80 @@ function displayFallbackRepos(containerId) {
             description: null,
             language: 'HTML',
             stargazers_count: 0,
-            updated_at: '2025-01-24',
+            updated_at: '2025-11-24',
             html_url: 'https://github.com/bluehawana/bluehawana.github.io'
         },
         {
-            name: 'epub-ttsreader-androidauto',
-            description: null,
-            language: 'Python',
+            name: 'smartmart-next-frontend',
+            description: 'Next.js frontend for SmartMart e-commerce platform with modern React components',
+            language: 'TypeScript',
             stargazers_count: 0,
-            updated_at: '2025-01-23',
-            html_url: 'https://github.com/bluehawana/epub-ttsreader-androidauto'
+            updated_at: '2025-11-20',
+            html_url: 'https://github.com/bluehawana/smartmart-next-frontend'
         },
         {
             name: 'JobHunter-Python-TypeScript-GmailRestAPI',
             description: 'An automatically working flow integrated with python, typescript, gmail RestApi and etc, for seting up workflows by searching jobs in gmail, websites, and customized resumes by job descriptions, and generate resume and cover letter and send to me for applying jobs.',
             language: 'Python',
             stargazers_count: 0,
-            updated_at: '2025-01-21',
+            updated_at: '2025-11-20',
             html_url: 'https://github.com/bluehawana/JobHunter-Python-TypeScript-GmailRestAPI'
         },
         {
-            name: 'carbot-js-ai',
-            description: 'A customized carbot with better funtionalities than Google Assitant from Android Auto.',
+            name: 'Python-TushareApi-TV-StockSelector',
+            description: 'Stock selector and analyzer using Python, Tushare API, and TradingView integration',
+            language: 'Python',
+            stargazers_count: 0,
+            updated_at: '2025-11-17',
+            html_url: 'https://github.com/bluehawana/Python-TushareApi-TV-StockSelector'
+        },
+        {
+            name: 'smrtmart-backend-go-racknerd',
+            description: 'Go backend for SmartMart deployed on RackNerd VPS with microservices architecture',
+            language: 'Go',
+            stargazers_count: 0,
+            updated_at: '2025-11-17',
+            html_url: 'https://github.com/bluehawana/smrtmart-backend-go-racknerd'
+        },
+        {
+            name: 'ai-codex-starter',
+            description: 'AI-powered code generation starter kit with modern development tools',
             language: 'JavaScript',
             stargazers_count: 0,
-            updated_at: '2025-01-21',
-            html_url: 'https://github.com/bluehawana/carbot-js-ai'
+            updated_at: '2025-11-14',
+            html_url: 'https://github.com/bluehawana/ai-codex-starter'
         },
         {
-            name: 'carplayer-kotlin-androidauto',
-            description: null,
-            language: 'Kotlin',
-            stargazers_count: 0,
-            updated_at: '2025-01-21',
-            html_url: 'https://github.com/bluehawana/carplayer-kotlin-androidauto'
-        },
-        {
-            name: 'GothenburgTaxiPooling-Java-ReacNative',
-            description: null,
+            name: 'weatheranywhere-springboot-mysql-vps-racknerd',
+            description: 'Weather application built with Spring Boot and MySQL deployed on RackNerd VPS',
             language: 'Java',
             stargazers_count: 0,
-            updated_at: '2025-01-18',
-            html_url: 'https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative'
+            updated_at: '2025-10-27',
+            html_url: 'https://github.com/bluehawana/weatheranywhere-springboot-mysql-vps-racknerd'
+        },
+        {
+            name: 'epub-ttsreader-androidauto',
+            description: null,
+            language: 'Python',
+            stargazers_count: 0,
+            updated_at: '2025-09-23',
+            html_url: 'https://github.com/bluehawana/epub-ttsreader-androidauto'
+        },
+        {
+            name: 'carbot-kotlin-androidauto',
+            description: 'Kotlin-based car bot for Android Auto with AI capabilities',
+            language: 'Kotlin',
+            stargazers_count: 0,
+            updated_at: '2025-09-16',
+            html_url: 'https://github.com/bluehawana/carbot-kotlin-androidauto'
+        },
+        {
+            name: 'android15-aosp-tesing-graid-nvme',
+            description: 'The goal for this project is to sync the code of aosp 15 and lunch and build locally to test the performance of on preem server with the normal Nvme, and Graid card with different comibations in order to find out the best combin',
+            language: 'Shell',
+            stargazers_count: 0,
+            updated_at: '2025-09-12',
+            html_url: 'https://github.com/bluehawana/android15-aosp-tesing-graid-nvme'
         }
     ];
 
