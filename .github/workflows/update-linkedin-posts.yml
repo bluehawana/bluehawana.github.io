@@ -2,8 +2,9 @@ name: Update LinkedIn Posts (OAuth)
 
 on:
   schedule:
-    # Run every 30 minutes to catch new posts quickly
-    - cron: '*/30 * * * *'
+    # Run every 30 minutes during business hours (8 AM - 8 PM UTC)
+    # This is approximately 9 AM - 9 PM CET/10 AM - 10 PM CEST (Sweden time)
+    - cron: '*/30 8-20 * * *'
   workflow_dispatch:
     # Allow manual triggering
     inputs:
