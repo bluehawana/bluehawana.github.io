@@ -108,9 +108,20 @@ function formatRepoName(repoName) {
  */
 async function fetchLatestRepos(containerId = 'github-repos') {
     try {
+        console.log(`[GitHub Repos] Starting fetch for container: ${containerId}`);
+
+        // Check if container exists first
+        const repoContainer = document.getElementById(containerId);
+        if (!repoContainer) {
+            console.error(`[GitHub Repos] Container #${containerId} not found!`);
+            return;
+        }
+
+        console.log(`[GitHub Repos] Container found, fetching from API...`);
+
         // Add delay to prevent rate limiting
         await new Promise(resolve => setTimeout(resolve, 100));
-        
+
         const response = await fetch('https://api.github.com/users/bluehawana/repos?sort=updated&per_page=10', {
             headers: {
                 'Accept': 'application/vnd.github.v3+json',
@@ -118,16 +129,15 @@ async function fetchLatestRepos(containerId = 'github-repos') {
             }
         });
         const repos = await response.json();
-        
+
+        console.log(`[GitHub Repos] API response: ${response.status}, repos count: ${repos.length}`);
+
         if (!response.ok) {
             console.warn(`GitHub API rate limited (${response.status}). Using fallback data.`);
             // Fallback to cached/static data when rate limited
             displayFallbackRepos(containerId);
             return;
         }
-        
-        const repoContainer = document.getElementById(containerId);
-        if (!repoContainer) return;
         
         repoContainer.innerHTML = '';
         
@@ -155,9 +165,11 @@ async function fetchLatestRepos(containerId = 'github-repos') {
             
             repoContainer.appendChild(repoElement);
         });
-        
+
+        console.log(`[GitHub Repos] Successfully rendered ${repos.length} repositories`);
+
     } catch (error) {
-        console.error('Error fetching GitHub repos:', error);
+        console.error('[GitHub Repos] Error fetching:', error);
         const repoContainer = document.getElementById(containerId);
         if (repoContainer) {
             repoContainer.innerHTML = '<p>Unable to load repositories at this time.</p>';
@@ -280,4 +292,7 @@ function displayFallbackRepos(containerId) {
 }
 
 // Auto-load when page loads
-document.addEventListener('DOMContentLoaded', fetchLatestRepos);
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('[GitHub Repos] DOMContentLoaded fired, calling fetchLatestRepos...');
+    fetchLatestRepos();
+});
