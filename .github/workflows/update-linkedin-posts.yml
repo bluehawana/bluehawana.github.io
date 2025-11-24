@@ -44,13 +44,20 @@ jobs:
         run: |
           echo "OAuth token configured"
           
-      - name: Install dependencies
-        run: npm install
-        
-      - name: Run LinkedIn Ultimate Automation
+      - name: Install dependencies (skip Chromium)
         env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+        run: |
+          if [ -f package.json ]; then
+            npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
+          fi
+
+      - name: Run LinkedIn sync with images
+        env:
+          SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
-        run: node linkedin-ultimate-automation.js
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
         
       - name: Check for changes
         id: changes
@@ -72,17 +79,22 @@ jobs:
         if: (steps.changes.outputs.has_changes == 'true' || github.event.inputs.force_update == 'true') && github.event.inputs.test_mode != 'true'
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "LinkedIn OAuth Bot"
-          git add data/ _posts/
-          
-          # Create detailed commit message
-          NEW_POSTS=$(find _posts -name "*linkedin*" -newer data/linkedin-sync-log.json 2>/dev/null | wc -l || echo "0")
-          git commit -m "🔄 LinkedIn OAuth sync - $(date '+%Y-%m-%d %H:%M:%S')
+          git config --local user.name "LinkedIn Sync Bot"
 
-          - New posts synced: ${NEW_POSTS}
-          - Updated data files and blog posts
-          - Automated via OAuth 2.0 API"
-          
+          # Add new files including images
+          git add _posts/
+          git add data/
+          git add images/linkedin/ || true
+          git add _data/
+
+          # Create detailed commit message
+          NEW_POSTS=$(git diff --staged --name-only | grep "_posts" | wc -l || echo "0")
+          NEW_IMAGES=$(git diff --staged --name-only | grep "images/linkedin" | wc -l || echo "0")
+          git commit -m "🔄 Auto-sync LinkedIn posts - $(date '+%Y-%m-%d %H:%M UTC')
+
+          📝 ${NEW_POSTS} new posts synced
+          🖼️ ${NEW_IMAGES} images downloaded"
+
           git push
           
       - name: Create sync report
