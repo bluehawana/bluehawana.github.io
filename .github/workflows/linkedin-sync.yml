@@ -2,9 +2,9 @@ name: LinkedIn Auto Sync
 
 on:
   schedule:
-    # Run every 30 minutes during business hours (8 AM - 8 PM UTC)
+    # Run every 2 hours during business hours (8 AM - 8 PM UTC) on weekdays only
     # This is approximately 9 AM - 9 PM CET/10 AM - 10 PM CEST (Sweden time)
-    - cron: '*/30 8-20 * * *'
+    - cron: '0 8-20/2 * * 1-5'  # Every 2 hours, 8am-8pm UTC, Monday-Friday
   workflow_dispatch: # Allow manual triggering
 
 jobs:
@@ -30,14 +30,14 @@ jobs:
           npm ci --omit=optional --no-audit --no-fund || npm install --no-audit --no-fund
         fi
         
-    - name: Run LinkedIn sync with RapidAPI
+    - name: Run LinkedIn sync with LinkedIn Scraper API
       env:
         RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         SCRAPINGDOG_API_KEY: ${{ secrets.SCRAPINGDOG_API_KEY }}
         LINKEDIN_PROFILE_URN: ${{ secrets.LINKEDIN_PROFILE_URN }}
       run: |
-        echo "🚀 Starting LinkedIn sync via RapidAPI..."
-        node automated-linkedin-sync-rapidapi.js || node automated-linkedin-sync-with-images.js || node automated-linkedin-sync.js
+        echo "🚀 Starting LinkedIn sync via LinkedIn Scraper API..."
+        node automated-linkedin-sync-linkedinscraper.js
         
     - name: Commit and push changes
       run: |
