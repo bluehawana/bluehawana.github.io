@@ -2,9 +2,11 @@ name: LinkedIn Auto Sync
 
 on:
   schedule:
-    # Run every 2 hours during business hours (8 AM - 8 PM UTC) on weekdays only
-    # This is approximately 9 AM - 9 PM CET/10 AM - 10 PM CEST (Sweden time)
-    - cron: '0 8-20/2 * * 1-5'  # Every 2 hours, 8am-8pm UTC, Monday-Friday
+    # Run twice per day on weekdays only to conserve API quota
+    # Morning sync: 8 AM UTC (9 AM CET / 10 AM CEST)
+    # Evening sync: 6 PM UTC (7 PM CET / 8 PM CEST)
+    - cron: '0 8 * * 1-5'   # 8:00 AM UTC, Monday-Friday
+    - cron: '0 18 * * 1-5'  # 6:00 PM UTC, Monday-Friday
   workflow_dispatch: # Allow manual triggering
 
 jobs:
@@ -84,5 +86,6 @@ jobs:
         echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
         
         echo "" >> $GITHUB_STEP_SUMMARY
-        echo "⏰ Next sync: Every 2 hours during business hours (Mon-Fri 8am-8pm UTC)" >> $GITHUB_STEP_SUMMARY
+        echo "⏰ Next sync: Twice daily (Mon-Fri 8am & 6pm UTC / 9am & 7pm CET)" >> $GITHUB_STEP_SUMMARY
+        echo "💡 Manual trigger available anytime via 'Run workflow' button" >> $GITHUB_STEP_SUMMARY
         echo "✅ Automation is running smoothly!" >> $GITHUB_STEP_SUMMARY
