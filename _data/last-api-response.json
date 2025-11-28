@@ -138,12 +138,16 @@
           {
             "count": 18,
             "type": "LIKE"
+          },
+          {
+            "count": 1,
+            "type": "EMPATHY"
           }
         ],
         "numComments": 0,
         "numImpressions": null,
         "numShares": 0,
-        "numLikes": 18
+        "numLikes": 19
       },
       "activityId": "urn:li:activity:7390356943774679040",
       "shareUrn": "urn:li:share:7379133224628867072",
@@ -378,11 +382,11 @@
       "shareUrn": "urn:li:ugcPost:7380983747728515074",
       "content": {
         "document": {
-          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1764874800&v=beta&t=-jmFXxPs4fIhY3AnPOmGjImLEUs3qamc_8g2svvQDJw",
+          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1764925200&v=beta&t=af61BdlHQg8Uh4NcEfNlPCUJePWfKwpf9GYaAjslIjQ",
           "title": "Automated Exterior Assembly with Global Datum by Tsla",
           "urn": "urn:li:digitalmediaAsset:D561FAQEXY9ZuFUGjew",
           "totalPageCount": 27,
-          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1764874800&v=beta&t=ncgb77TuQMQyXYibcNEKib-VXBWp7Ssx2BjZIRgSbHM"
+          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1764925200&v=beta&t=9E0mDqhWI1gGG319V3B5IZfWq56w4zRLHyg89CAjgoE"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_automated-exterior-assembly-with-global-datum-activity-7380983748793831424-4Pq_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
