@@ -1,23 +1,45 @@
 {
-  "sync_timestamp": "2025-12-02T08:37:18.685Z",
+  "sync_timestamp": "2025-12-09T08:37:34.240Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 42,
+  "new_posts_synced": 3,
+  "images_downloaded": 2,
+  "total_posts_in_system": 45,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2025-12-02T09:07:18.685Z",
+  "next_sync_recommended": "2025-12-09T09:07:34.240Z",
   "new_posts": [
     {
-      "title": "Grabbed a #VPS on #BlackFriday? Here's the ONE security mistake that got mine suspended.\nRead the fu...",
-      "link": "https://www.linkedin.com/posts/hzl_vps-blackfriday-cybersecurity-activity-7401208977373593600--x14?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, r...",
+      "link": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "has_image": true,
       "engagement": {
-        "likes": 1,
+        "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2025-12-02T08:37:18.665Z"
+      "sync_date": "2025-12-09T08:37:34.034Z"
+    },
+    {
+      "title": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—imp...",
+      "link": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "has_image": true,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "sync_date": "2025-12-09T08:37:34.034Z"
+    },
+    {
+      "title": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights...",
+      "link": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "has_image": false,
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "sync_date": "2025-12-09T08:37:34.034Z"
     }
   ]
 }
