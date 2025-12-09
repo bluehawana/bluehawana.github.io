@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2025-12-02T08:37:18.682Z"
+    "last_sync": "2025-12-09T08:37:34.237Z"
   },
   "extraction": {
-    "date": "2025-12-02T08:37:18.682Z",
+    "date": "2025-12-09T08:37:34.237Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 42,
-    "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "total_posts_found": 45,
+    "new_posts_this_sync": 3,
+    "images_downloaded": 2
   },
   "posts": [
     {
@@ -810,6 +810,63 @@
         "shares": 0
       },
       "posted_at": "2025-12-01T10:42:08.019Z"
+    },
+    {
+      "id": "linkedin-1765269454034-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, r...",
+      "content": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, robust specs, and seamless macOS integration make it a top choice for most of development jobs and assignments. But why does it outshine #NVIDIA's DGX Spark with #Ubuntu and other #Windows PCs? Stay tuned for my breakdown！\n\n#MacMini #HomeLab #SoloDev #AppleEcosystem #TechPreferences",
+      "link": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFJgSxeG74pEw/feedshare-shrink_800/B4EZr.EDabKYAk-/0/1765199068717?e=1766620800&v=beta&t=hkjYNikcdSQoIuNROJceil0-hHJOWGwACgEDJtMrO1w",
+      "local_image": "/images/linkedin/linkedin-1765269454034-0-00a3125c63f81e7a6cc2a6db15b4b4c4.jpg",
+      "extracted_at": "2025-12-09T08:37:34.034Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-08T13:04:30.091Z"
+    },
+    {
+      "id": "linkedin-1765269454123-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—imp...",
+      "content": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—impressive efficiency, right? But in Mölndal, things took a turn for the worse. After waiting 2 days, the driver got lost and then tried to leave my parcel at a candy shop just 30 meters from my home. They texted me saying they couldn't deliver it directly to me.\n\nIf you have options, never choose #UPS, even if you're 苹果公司 .\n\n#Apple #UPS #ShippingNightmare #UPSFail #CustomerExperience #DeliveryDisaster",
+      "link": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQGcnL5BJkAHXQ/feedshare-shrink_480/B4EZrvd1woJgAc-/0/1764954169541?e=1766620800&v=beta&t=z3MuXm9RGuQw8R9o9w76XIB7H_6r9FVvcsT7xLyqETM",
+      "local_image": "/images/linkedin/linkedin-1765269454123-1-aad97f6b60fcf287215c15ff2210bcee.jpg",
+      "extracted_at": "2025-12-09T08:37:34.034Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-05T17:02:50.781Z"
+    },
+    {
+      "id": "linkedin-1765269454218-2",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights...",
+      "content": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights, tools, and surprises. Don't miss out on this festive tech treat for AI lovers! 🎁 \n#GoogleAI #AdventCalendar",
+      "link": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2025-12-09T08:37:34.034Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-02T21:39:05.240Z"
     }
   ]
 }
