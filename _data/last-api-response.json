@@ -1,13 +1,39 @@
 {
   "data": [
     {
-      "createdAt": "2025-12-08T13:04:30.091Z",
+      "createdAt": "2025-12-09T09:26:51.112Z",
       "activity": {
         "reactionTypeCounts": {},
         "numComments": 0,
         "numImpressions": null,
         "numShares": 0,
         "numLikes": 0
+      },
+      "activityId": "urn:li:activity:7404089135017246720",
+      "shareUrn": "urn:li:share:7404089134379585537",
+      "content": {},
+      "shareUrl": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that respect IP rights. This approach is particularly advantageous for SMEs, as it allows them to adhere to cultural norms and traditions while managing expenses. It's a viable, risk-free alternative worth considering.",
+      "actor": {
+        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2025-12-08T13:04:30.091Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 1,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 1
       },
       "activityId": "urn:li:activity:7403781520479641600",
       "shareUrn": "urn:li:share:7403781519435272192",
@@ -75,7 +101,7 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765261599060?e=1765875600&v=beta&t=oehmBFr5tcLaU-HcRBd_WqbHSF57raVZuXx73s9tFtc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765275971205?e=1765911600&v=beta&t=PXvsIygtdmzwTPa6h7XxMoCmi4JawjyfUjWFB2UY0wU"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
@@ -107,7 +133,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=F3NSLA3%2BubJuuG7tLjXmCQ%3D%3D",
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=pkSk02ErEiYgN9EYTtFUZg%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -502,11 +528,11 @@
       "shareUrn": "urn:li:ugcPost:7380983747728515074",
       "content": {
         "document": {
-          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1765875600&v=beta&t=WBj6n_zP5PQbTeJSdcVIWB-OpNgwqYUb6tL1H-lg_AE",
+          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1765911600&v=beta&t=KtpscSvy8pZ5eCJ9hPky7WyUeGRX5kUovhct4HxIPnI",
           "title": "Automated Exterior Assembly with Global Datum by Tsla",
           "urn": "urn:li:digitalmediaAsset:D561FAQEXY9ZuFUGjew",
           "totalPageCount": 27,
-          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1765875600&v=beta&t=8k4yjurbcnCstmekPxOLKhH3ZBpGcDfcsC26y4bedKY"
+          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1765911600&v=beta&t=WHj_subDv-N3jgxWcCSvYX8I9CNFj6-mn1jYM7S3L0k"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_automated-exterior-assembly-with-global-datum-activity-7380983748793831424-4Pq_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
@@ -657,66 +683,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
-    },
-    {
-      "createdAt": "2025-09-25T16:08:00.456Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 7,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 1,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 7
-      },
-      "activityId": "urn:li:activity:7377010999243112448",
-      "shareUrn": "urn:li:ugcPost:7377010996562771968",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFcQpj4kZLNtQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFcQpj4kZLNtQ/feedshare-shrink_160/B4DZmBoXt2JgAc-/0/1758816478051?e=1766620800&v=beta&t=x5-qrradMJG78qZabzERYUL-p-E0uAbhH9V7G19Ws5U"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGOw3m-Wpki1g",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGOw3m-Wpki1g/feedshare-shrink_800/B4DZmBoXrZH4Ag-/0/1758816475180?e=1766620800&v=beta&t=wb-Rz8q4ith0z_KlfmwLEc72X69j3b__R-SyIUbe6U4"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGsgr3hLBgeag",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGsgr3hLBgeag/feedshare-shrink_800/B4DZmBoXrsJcAg-/0/1758816476497?e=1766620800&v=beta&t=5wfODpRcda-KbEa5jtzLwu-9SpFk9bD6vTJGnzrYP58"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQG2tlVVvdcjeg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG2tlVVvdcjeg/feedshare-shrink_480/B4DZmBoXtIJQAY-/0/1758816475297?e=1766620800&v=beta&t=NQg8epxQaSGiCm1_-4eqT8Tc1z4MboakCZSG_GWz7zU"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFrGNpPdLCQpA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrGNpPdLCQpA/feedshare-shrink_20/B4DZmBoXryIcA0-/0/1758816469370?e=1766620800&v=beta&t=DZ2iDEeRDrbdBuOD5urhetW_hjBZAvFRn5pgkBPvCjo"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGPoCxrjJfMVA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPoCxrjJfMVA/feedshare-shrink_800/B4DZmBoXtIJUAg-/0/1758816469643?e=1766620800&v=beta&t=gKYW_fEKuJsFDFZ0_TePIyZvJbACZ7vQZPVXhwvj4M8"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_gokart-championsheart-neversettle-activity-7377010999243112448-NSlm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "commentary": "Life can be a mess，\nWith doubters coming and going.\nJust keep your wins in mind,\nYou've got a champ's heart inside.\n\nYour scars show your strength,\nWear 'em with pride, it's true.\nNo matter what life throws your way,\nYour spirit's got wings to fly.\n\nDon't ever doubt a champ's heart,\nThey're strong and tough, you'll see.\nThey'll face any challenge,\nAnd come out on top, guaranteed.\n\nSo trust in those who've earned it,\nAnd learn from what they've done.\nA champion's heart can't be beat,\n'Cause their courage knows no bounds.\n\nWilliam Karadaghi Alex Kouseras \n\n#Gokart #ChampionsHeart #NeverSettle #StayStrong #TrustYourInstincts #BelieveInYourself #ResilienceIsKey",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Li",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczNzcwMTA5OTkyNDMxMTI0NDgtMTc1ODgxNjQ4MDA3NQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczNzg3NzI5MjI5NTk3MjQ1NDQtMTc1OTIzNjU1NTc3Nw==:20"
 }
