@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2025-12-09T08:37:34.237Z"
+    "last_sync": "2025-12-09T18:26:00.063Z"
   },
   "extraction": {
-    "date": "2025-12-09T08:37:34.237Z",
+    "date": "2025-12-09T18:26:00.063Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 45,
-    "new_posts_this_sync": 3,
-    "images_downloaded": 2
+    "total_posts_found": 46,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -867,6 +867,25 @@
         "shares": 0
       },
       "posted_at": "2025-12-02T21:39:05.240Z"
+    },
+    {
+      "id": "linkedin-1765304760045-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that re...",
+      "content": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that respect IP rights. This approach is particularly advantageous for SMEs, as it allows them to adhere to cultural norms and traditions while managing expenses. It's a viable, risk-free alternative worth considering.",
+      "link": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2025-12-09T18:26:00.045Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-09T09:26:51.112Z"
     }
   ]
 }
