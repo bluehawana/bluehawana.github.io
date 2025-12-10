@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2025-12-09T18:26:00.063Z"
+    "last_sync": "2025-12-10T08:36:32.367Z"
   },
   "extraction": {
-    "date": "2025-12-09T18:26:00.063Z",
+    "date": "2025-12-10T08:36:32.367Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 46,
-    "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "total_posts_found": 50,
+    "new_posts_this_sync": 4,
+    "images_downloaded": 2
   },
   "posts": [
     {
@@ -886,6 +886,82 @@
         "shares": 0
       },
       "posted_at": "2025-12-09T09:26:51.112Z"
+    },
+    {
+      "id": "linkedin-1765355791969-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that re...",
+      "content": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that respect IP rights. This approach is particularly advantageous for SMEs, as it allows them to adhere to cultural norms and traditions while managing expenses. It's a viable, risk-free alternative worth considering.",
+      "link": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2025-12-10T08:36:31.968Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 1,
+        "shares": 0
+      },
+      "posted_at": "2025-12-09T09:26:51.112Z"
+    },
+    {
+      "id": "linkedin-1765355791969-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, r...",
+      "content": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, robust specs, and seamless macOS integration make it a top choice for most of development jobs and assignments. But why does it outshine #NVIDIA's DGX Spark with #Ubuntu and other #Windows PCs? Stay tuned for my breakdown！\n\n#MacMini #HomeLab #SoloDev #AppleEcosystem #TechPreferences",
+      "link": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFJgSxeG74pEw/feedshare-shrink_800/B4EZr.EDabKYAk-/0/1765199068717?e=1767225600&v=beta&t=_kWIUIsVLEdttMTe9QBz24mv9pAEnxkl---h6qUUww4",
+      "local_image": "/images/linkedin/linkedin-1765355791969-1-dec54e3daf450e73943b03780769eadc.jpg",
+      "extracted_at": "2025-12-10T08:36:31.968Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-08T13:04:30.091Z"
+    },
+    {
+      "id": "linkedin-1765355792231-2",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—imp...",
+      "content": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—impressive efficiency, right? But in Mölndal, things took a turn for the worse. After waiting 2 days, the driver got lost and then tried to leave my parcel at a candy shop just 30 meters from my home. They texted me saying they couldn't deliver it directly to me.\n\nIf you have options, never choose #UPS, even if you're 苹果公司 .\n\n#Apple #UPS #ShippingNightmare #UPSFail #CustomerExperience #DeliveryDisaster",
+      "link": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQGcnL5BJkAHXQ/feedshare-shrink_480/B4EZrvd1woJgAc-/0/1764954169541?e=1767225600&v=beta&t=uAa6Wvg-90j9nnba10YSVEE2V7qk1TjvjtKzAF-9npo",
+      "local_image": "/images/linkedin/linkedin-1765355792231-2-9db31148ca1bbcc02d3a9a91b8737995.jpg",
+      "extracted_at": "2025-12-10T08:36:31.968Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-05T17:02:50.781Z"
+    },
+    {
+      "id": "linkedin-1765355792352-3",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights...",
+      "content": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights, tools, and surprises. Don't miss out on this festive tech treat for AI lovers! 🎁 \n#GoogleAI #AdventCalendar",
+      "link": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2025-12-10T08:36:31.968Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-02T21:39:05.240Z"
     }
   ]
 }
