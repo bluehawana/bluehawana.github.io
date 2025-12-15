@@ -1,56 +1,23 @@
 {
-  "sync_timestamp": "2025-12-10T08:36:32.370Z",
+  "sync_timestamp": "2025-12-15T08:39:57.611Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 4,
-  "images_downloaded": 2,
-  "total_posts_in_system": 50,
+  "new_posts_synced": 1,
+  "images_downloaded": 0,
+  "total_posts_in_system": 51,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2025-12-10T09:06:32.370Z",
+  "next_sync_recommended": "2025-12-15T09:09:57.612Z",
   "new_posts": [
     {
-      "title": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that re...",
-      "link": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 0,
-        "comments": 1,
-        "shares": 0
-      },
-      "sync_date": "2025-12-10T08:36:31.968Z"
-    },
-    {
-      "title": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, r...",
-      "link": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2025-12-10T08:36:31.968Z"
-    },
-    {
-      "title": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—imp...",
-      "link": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2025-12-10T08:36:31.968Z"
-    },
-    {
-      "title": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights...",
-      "link": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your...",
+      "link": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2025-12-10T08:36:31.968Z"
+      "sync_date": "2025-12-15T08:39:57.590Z"
     }
   ]
 }
