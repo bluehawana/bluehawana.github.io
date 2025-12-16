@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2025-12-15T08:39:57.610Z"
+    "last_sync": "2025-12-16T18:30:38.781Z"
   },
   "extraction": {
-    "date": "2025-12-15T08:39:57.610Z",
+    "date": "2025-12-16T18:30:38.781Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 51,
+    "total_posts_found": 52,
     "new_posts_this_sync": 1,
     "images_downloaded": 0
   },
@@ -978,6 +978,25 @@
       "engagement": {
         "likes": 0,
         "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2025-12-14T20:45:01.158Z"
+    },
+    {
+      "id": "linkedin-1765909838763-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your...",
+      "content": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your perspective matters—whether you agree, disagree, or see angles I haven't considered.",
+      "link": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2025-12-16T18:30:38.763Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 4,
         "shares": 0
       },
       "posted_at": "2025-12-14T20:45:01.158Z"
