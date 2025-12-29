@@ -674,5 +674,31 @@
       "comments": 4,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1766997555088-0",
+    "content": "Meet these two “Talk to me” toys now, and soon you'll be conversing with them in a more advanced way!\n\n#SagaToy #AI #LLM #CustomizedBot",
+    "url": "https://www.linkedin.com/posts/hzl_sagatoy-ai-llm-activity-7410623229008101376-GRP3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1766997555088-0-a24e1e95250b8f2a96aa3781316f026b.jpg",
+    "tags": [],
+    "publishedAt": "2025-12-27T10:11:00.517Z",
+    "engagement": {
+      "likes": 3,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1766997555176-1",
+    "content": "iPad Remote Development - No SSH or Terminal Apps Required\n\nHej,\nHope you all had a great Christmas. As a New Year's gift to the dev community, I want to share something I've been working on.\n\nToday I successfully connected to my VPS from my iPad Pro Gen 3 and started coding - directly from Safari. No SSH apps, no terminal emulators, just a browser.\n\nTested over Tele2 cellular 4G connection - proving this works anywhere you have mobile data.\n\nSolving iPad's Development Problem\n\nThe main reasons developers avoid iPad for serious work:\n- No proper terminal tools\n- Limited code IDE support\n- Poor SSH connection options\n- iOS sandboxing restrictions\n\nThis project solves all of these by moving the development environment to a server and accessing it through Safari. Now your iPad becomes a true development machine.\n\n What Works\n\n - Full terminal access in Safari\n - Git workflow (commit, push, PR creation)\n - File editing with vim/nano\n - AI-assisted coding (OpenAI integration)\n - Virtual keyboard optimized for touch\n - Sessions persist across disconnects\n - MFA with Google Authenticator for highest security\n\nBuilt with Kiro and Claude Code Sonnet 4.5\n\nThis entire project was built using Kiro and Claude Code Sonnet 4.5 - proving that AI-assisted development can create real, production-ready tools. Now it enables vibe coding anywhere you have your iPad and internet connection. Coffee shop, airport, wherever - just open Safari and code.\n\nWhy This Matters\n\n The iPad Pro has the hardware for serious development work, but iOS limitations have always been the blocker. By running the dev environment on a server and accessing through Safari, we bypass those limitations completely.\n\nYou get:\n- Full Linux environment\n- All your command-line tools\n- Your entire workflow, just accessible from anywhere\n- No need to carry a laptop\n- Secure access with multi-factor authentication\n\nTechnical Stack\n\n- WebSocket for real-time communication\n- xterm.js for browser terminal\n- node-pty for shell management\n- TypeScript monorepo\n- PWA support\n- TOTP-based MFA (Google Authenticator)\n\nNext Steps\n\nI'm developing several deployment scenarios for devs with(out) a VPS:\n\n1. With VPS (what I'm using now)\n2. Tailscale VPN (connect iPad to your Mac at home, no VPS needed)\n3. Cloudflare Tunnel (permanent setup with custom domain)\n4. ngrok (quick testing)\n5. GitHub Codespaces (backup option)\n\nFor developers without a VPS, options 2-5 mean you can still work remotely with just your Mac at home and your iPad.\n\nOpen Source\n\nWill be releasing this for the community soon. Whether you have a VPS, a Mac at home, or just use Codespaces - you'll be able to vibe code from your iPad anywhere you have internet. Forget your MBP and MBA, now in 2026, it is time to work from anywhere with just an iPad.\n\n Interested in trying this? Keep an eye on the updates of this projejct.\n\n#WebDev #iPad #RemoteDev #Opensource #Claudecode #SSH #TCPIP #Terminal",
+    "url": "https://www.linkedin.com/posts/hzl_webdev-ipad-remotedev-activity-7410621440426889216-3zra?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1766997555176-1-5893eecabd72855310bc65282512ba07.jpg",
+    "tags": [],
+    "publishedAt": "2025-12-27T10:03:54.086Z",
+    "engagement": {
+      "likes": 4,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]

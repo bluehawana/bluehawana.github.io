@@ -1,23 +1,34 @@
 {
-  "sync_timestamp": "2025-12-16T18:30:38.783Z",
+  "sync_timestamp": "2025-12-29T08:39:15.276Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 52,
+  "new_posts_synced": 2,
+  "images_downloaded": 2,
+  "total_posts_in_system": 54,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2025-12-16T19:00:38.783Z",
+  "next_sync_recommended": "2025-12-29T09:09:15.276Z",
   "new_posts": [
     {
-      "title": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your...",
-      "link": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "has_image": false,
+      "title": "Meet these two “Talk to me” toys now, and soon you'll be conversing with them in a more advanced way...",
+      "link": "https://www.linkedin.com/posts/hzl_sagatoy-ai-llm-activity-7410623229008101376-GRP3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "has_image": true,
       "engagement": {
-        "likes": 0,
-        "comments": 4,
+        "likes": 3,
+        "comments": 0,
         "shares": 0
       },
-      "sync_date": "2025-12-16T18:30:38.763Z"
+      "sync_date": "2025-12-29T08:39:15.088Z"
+    },
+    {
+      "title": "iPad Remote Development - No SSH or Terminal Apps Required\n\nHej,\nHope you all had a great Christmas....",
+      "link": "https://www.linkedin.com/posts/hzl_webdev-ipad-remotedev-activity-7410621440426889216-3zra?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "has_image": true,
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0
+      },
+      "sync_date": "2025-12-29T08:39:15.088Z"
     }
   ]
 }
