@@ -1,6 +1,79 @@
 {
   "data": [
     {
+      "createdAt": "2025-12-27T10:11:00.517Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 3,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 3
+      },
+      "activityId": "urn:li:activity:7410623229008101376",
+      "shareUrn": "urn:li:share:7410623228005490688",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQF4mstUHZhojQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF4mstUHZhojQ/feedshare-shrink_480/B4EZtfSioQHoAY-/0/1766830258995?e=1768435200&v=beta&t=D2VE6OHnraQysyGuEW9-XiVACRgM4jE3vhQF5TTTI28"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_sagatoy-ai-llm-activity-7410623229008101376-GRP3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "Meet these two “Talk to me” toys now, and soon you'll be conversing with them in a more advanced way!\n\n#SagaToy #AI #LLM #CustomizedBot",
+      "actor": {
+        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
+        "name": "Harvad Lee",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2025-12-27T10:03:54.086Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 4,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 4
+      },
+      "activityId": "urn:li:activity:7410621440426889216",
+      "shareUrn": "urn:li:ugcPost:7410621437629079552",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQG1VHzVWnApng",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG1VHzVWnApng/feedshare-shrink_20/B4EZtfQ7KNKUA0-/0/1766829831756?e=1768435200&v=beta&t=a252CJUpzeYmZ4KwubOOYdNoDaXOAAxdLLOQZe6QOYQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQGA4Likxw_esg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGA4Likxw_esg/feedshare-shrink_1280/B4EZtfQ7KMHEAs-/0/1766829831894?e=1768435200&v=beta&t=14cq_7oJus_-Une33KeJJQ43izEUiMdtboH_yOubgLc"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_webdev-ipad-remotedev-activity-7410621440426889216-3zra?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "iPad Remote Development - No SSH or Terminal Apps Required\n\nHej,\nHope you all had a great Christmas. As a New Year's gift to the dev community, I want to share something I've been working on.\n\nToday I successfully connected to my VPS from my iPad Pro Gen 3 and started coding - directly from Safari. No SSH apps, no terminal emulators, just a browser.\n\nTested over Tele2 cellular 4G connection - proving this works anywhere you have mobile data.\n\nSolving iPad's Development Problem\n\nThe main reasons developers avoid iPad for serious work:\n- No proper terminal tools\n- Limited code IDE support\n- Poor SSH connection options\n- iOS sandboxing restrictions\n\nThis project solves all of these by moving the development environment to a server and accessing it through Safari. Now your iPad becomes a true development machine.\n\n What Works\n\n - Full terminal access in Safari\n - Git workflow (commit, push, PR creation)\n - File editing with vim/nano\n - AI-assisted coding (OpenAI integration)\n - Virtual keyboard optimized for touch\n - Sessions persist across disconnects\n - MFA with Google Authenticator for highest security\n\nBuilt with Kiro and Claude Code Sonnet 4.5\n\nThis entire project was built using Kiro and Claude Code Sonnet 4.5 - proving that AI-assisted development can create real, production-ready tools. Now it enables vibe coding anywhere you have your iPad and internet connection. Coffee shop, airport, wherever - just open Safari and code.\n\nWhy This Matters\n\n The iPad Pro has the hardware for serious development work, but iOS limitations have always been the blocker. By running the dev environment on a server and accessing through Safari, we bypass those limitations completely.\n\nYou get:\n- Full Linux environment\n- All your command-line tools\n- Your entire workflow, just accessible from anywhere\n- No need to carry a laptop\n- Secure access with multi-factor authentication\n\nTechnical Stack\n\n- WebSocket for real-time communication\n- xterm.js for browser terminal\n- node-pty for shell management\n- TypeScript monorepo\n- PWA support\n- TOTP-based MFA (Google Authenticator)\n\nNext Steps\n\nI'm developing several deployment scenarios for devs with(out) a VPS:\n\n1. With VPS (what I'm using now)\n2. Tailscale VPN (connect iPad to your Mac at home, no VPS needed)\n3. Cloudflare Tunnel (permanent setup with custom domain)\n4. ngrok (quick testing)\n5. GitHub Codespaces (backup option)\n\nFor developers without a VPS, options 2-5 mean you can still work remotely with just your Mac at home and your iPad.\n\nOpen Source\n\nWill be releasing this for the community soon. Whether you have a VPS, a Mac at home, or just use Codespaces - you'll be able to vibe code from your iPad anywhere you have internet. Forget your MBP and MBA, now in 2026, it is time to work from anywhere with just an iPad.\n\n Interested in trying this? Keep an eye on the updates of this projejct.\n\n#WebDev #iPad #RemoteDev #Opensource #Claudecode #SSH #TCPIP #Terminal",
+      "actor": {
+        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
+        "name": "Harvad Lee",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
       "createdAt": "2025-12-14T20:45:01.158Z",
       "activity": {
         "reactionTypeCounts": {},
@@ -15,7 +88,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7406050964580827136",
           "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=dJQCcSSXpxn69QlglvTvjw%3D%3D",
+          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=EEmPapwjL0%2Bqq83uEW3WWA%3D%3D",
           "subtitle": "Harvad Lee"
         }
       },
@@ -134,7 +207,7 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1767380400&v=beta&t=NF_Sn_CLi4NOMUjR2htU1dYeWbpLr71nqXZjMdtgxYA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1767603600&v=beta&t=9QoyuygFjYJaCpJHHCGvhmkwKSeC2jYKo0hWZR7w_08"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
@@ -166,7 +239,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=yvxRTJyq0vQLk%2B4nyyWlZw%3D%3D",
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=HnPy2N8zWSq7GkL%2B0dEuNw%3D%3D",
           "subtitle": "Harvad Lee"
         }
       },
@@ -430,7 +503,7 @@
       "activity": {
         "reactionTypeCounts": [
           {
-            "count": 5764,
+            "count": 5762,
             "type": "LIKE"
           },
           {
@@ -457,7 +530,7 @@
         "numComments": 200,
         "numImpressions": null,
         "numShares": 442,
-        "numLikes": 6429
+        "numLikes": 6427
       },
       "activityId": "urn:li:activity:7384461671710306304",
       "shareUrn": "urn:li:ugcPost:7384270647306268673",
@@ -561,11 +634,11 @@
       "shareUrn": "urn:li:ugcPost:7380983747728515074",
       "content": {
         "document": {
-          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1767380400&v=beta&t=JpRxfZSLLr19EhX9qz2kGBQJwcSxP13ZGhrQagJx2U0",
+          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1767603600&v=beta&t=BX6f6aCJ-z2bjGoYrk2du2HNELCHz3ns9BI58FlWnTA",
           "title": "Automated Exterior Assembly with Global Datum by Tsla",
           "urn": "urn:li:digitalmediaAsset:D561FAQEXY9ZuFUGjew",
           "totalPageCount": 27,
-          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1767380400&v=beta&t=hzwVRQx57nySPqkGPX9aChwYffyW_Cm_hQxqd7dSVxM"
+          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1767603600&v=beta&t=p2nsOHObFQIt7AX7XWN-86sQU7i0pnXXleBC3LOuUus"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_automated-exterior-assembly-with-global-datum-activity-7380983748793831424-4Pq_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
@@ -626,71 +699,7 @@
         "actorId": "urn:li:member:553170514",
         "actorUrn": "urn:li:fsd_profile:ACoAACD4tlIBOkurCKgA6jDMMszug_LufFcSf1Y"
       }
-    },
-    {
-      "createdAt": "2025-10-05T06:46:38.534Z",
-      "activity": {
-        "reactionTypeCounts": {},
-        "numComments": 3,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 0
-      },
-      "activityId": "urn:li:activity:7380493605678788608",
-      "shareUrn": "urn:li:ugcPost:7380493604932386816",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFkLz3mhsPu7w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFkLz3mhsPu7w/feedshare-shrink_480/B4DZmzH0c5H4Ac-/0/1759646796260?e=1768435200&v=beta&t=njhGpgUDLQ3TQTvlTnd8m-mA06rK9LxZwjTmlFjRZf4"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFzgZ8XR0h6-w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFzgZ8XR0h6-w/feedshare-shrink_20/B4DZmzH0dIG8A0-/0/1759646796908?e=1768435200&v=beta&t=iwc-Xr7mnILwitTq3oF9c5A67ik75uqCALuaJJ1CHCA"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_batterytech-ev-catl-activity-7380493605678788608-k4gG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "commentary": "If you understand the difference between market leaders and market followers.…..\n\n#BatteryTech #EV #CATL #ElectricalControls #BMS",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-02T06:02:29.674Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 2,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "APPRECIATION"
-          }
-        ],
-        "numComments": 2,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 3
-      },
-      "activityId": "urn:li:activity:7379395331957895168",
-      "shareUrn": "urn:li:share:7379395331144364032",
-      "content": {},
-      "shareUrl": "https://www.linkedin.com/posts/hzl_devops-kubernetes-baremetal-activity-7379395331957895168-HFHQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "commentary": "Bare metal servers are indeed the best practice for many scenarios. However, people often opt for virtualized environments like vSphere, AKS, EKS, or GKE due to the comfort and familiarity these platforms offer. It's important to note, though, that this convenience comes with a higher cost. Cloud service providers such as Azure, AWS, and GCP capitalize on this preference, generating substantial profits from customers who value ease of use and stickiness over bare metal solutions.\n\n#BareMetal #VM #CloudComputing #K8S #AKS #EKS #GKE",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczNzkzOTUzMzE5NTc4OTUxNjgtMTc1OTM4NDk0OTYzNQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczODA5Nzk4Mzg2OTU4MjU0MDktMTc1OTc2MjcyNTQ5NA==:20"
 }
