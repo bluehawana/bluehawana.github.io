@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2025-12-31T18:28:20.714Z",
+  "sync_timestamp": "2026-01-01T08:36:25.538Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 57,
+  "total_posts_in_system": 58,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2025-12-31T18:58:20.714Z",
+  "next_sync_recommended": "2026-01-01T09:06:25.538Z",
   "new_posts": [
     {
       "title": "As we enter a new year, let's reflect on the challenges of 2025. Opportunities await those who are p...",
-      "link": "https://www.linkedin.com/posts/hzl_bestwishes-happynewyear-activity-7412158300470841344-7NSA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "link": "https://www.linkedin.com/posts/hzl_bestwishes-happynewyear-activity-7412158300470841344-7NSA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
-        "likes": 3,
+        "likes": 4,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2025-12-31T18:28:20.647Z"
+      "sync_date": "2026-01-01T08:36:25.318Z"
     }
   ]
 }
