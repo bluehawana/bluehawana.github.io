@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-01T08:36:25.535Z"
+    "last_sync": "2026-01-05T08:41:33.729Z"
   },
   "extraction": {
-    "date": "2026-01-01T08:36:25.535Z",
+    "date": "2026-01-05T08:41:33.729Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 58,
+    "total_posts_found": 59,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1114,6 +1114,25 @@
         "shares": 0
       },
       "posted_at": "2025-12-31T15:50:50.074Z"
+    },
+    {
+      "id": "linkedin-1767602493594-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year New Project\nFrom CSV files to a comprehensive Fleet Management system—featuring data analys...",
+      "content": "New Year New Project\nFrom CSV files to a comprehensive Fleet Management system—featuring data analysis, interactive visualizations, a .NET backend REST API, a Next Frontend management interference with embedded Grafana features dashboard, and AI-powered predictive modeling with MiniMax algorithms. This showcases how a full-stack developer can drive measurable cost savings and profit improvements for organizations.\nBridging the gap between real-world business bottlenecks and sustainable growth requires the right technical approach, strategic thinking and a business-driven mindset.\n\nFeel free to PM me if you’d like to learn more about this project. Happy New Year from #Valencia! 🎊\n\n#Kaggle #DataVisualization #DotNet #RestAPI #AIModeling #BusinessITIntegration #FleetManagement #FullStackDevelopment",
+      "link": "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFLr7Nihwn2Iw/feedshare-shrink_2048_1536/B4EZuJLhslHcAw-/0/1767533060582?e=1769040000&v=beta&t=9_eOZZNb8nh0OjZFCnn-7xWE6yN0X_wZQLuq8w8XhBk",
+      "local_image": "/images/linkedin/linkedin-1767602493594-0-fa584209dac52cb3fadced412acd53c0.jpg",
+      "extracted_at": "2026-01-05T08:41:33.593Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-04T13:24:22.517Z"
     }
   ]
 }
