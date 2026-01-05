@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-01-05T08:41:33.732Z",
+  "sync_timestamp": "2026-01-05T18:31:22.157Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 59,
+  "total_posts_in_system": 60,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-01-05T09:11:33.732Z",
+  "next_sync_recommended": "2026-01-05T19:01:22.157Z",
   "new_posts": [
     {
       "title": "New Year New Project\nFrom CSV files to a comprehensive Fleet Management system—featuring data analys...",
-      "link": "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "link": "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
         "likes": 1,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-01-05T08:41:33.593Z"
+      "sync_date": "2026-01-05T18:31:22.072Z"
     }
   ]
 }
