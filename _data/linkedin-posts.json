@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-05T18:31:22.153Z"
+    "last_sync": "2026-01-07T18:31:36.085Z"
   },
   "extraction": {
-    "date": "2026-01-05T18:31:22.153Z",
+    "date": "2026-01-07T18:31:36.085Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 60,
+    "total_posts_found": 61,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1152,6 +1152,25 @@
         "shares": 0
       },
       "posted_at": "2026-01-04T13:24:22.517Z"
+    },
+    {
+      "id": "linkedin-1767810695962-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year, New Project No.2: AI Math Grader\nI recently applied for a full‑stack role that requires ha...",
+      "content": "New Year, New Project No.2: AI Math Grader\nI recently applied for a full‑stack role that requires hands‑on experience with OpenAI, LangChain, Vercel AI SDK, and similar tools. I know the concepts well, but hadn’t actually built anything with them yet.\nAt the same time, my daughter has a competitive math entrance exam in a month. We covered about 65% of the material last year… and we’ve probably forgotten more than that by now : P\nSo I combined both challenges into one project.\nUsing Claude Sonnet 4.5 via Google #Antigravity, I built a full AI math‑grading system in about 3 hours. It takes iPhone photos (HEIC), reads the handwritten exam year, compares her answers against 15 years of past exams (2010–2025), runs everything through an LLM, and gives instant feedback in Swedish. It even exports a PDF for review.\n\nTech stack:\nLangChain LCEL workflow\nVercel AI SDK streaming\nGemini Pro 2.0 Flash\nProvider‑agnostic (OpenAI / Anthropic / Groq)\nNext.js 16, TypeScript, Zod\nLocal RAG built from the exam archives\n\nNow she practices, I snap a photo, and the AI project handles the grading. No more pretending I remember middle‑school math 100% correctly at 11 PM — and I get real hands‑on experience with the exact tools employers keep asking for.\nCurious to hear from others:\nHow do you help your kids prep for exams?\nDevelopers: what real‑world problems have you solved with your own #RAG setups?\nPM if you want to know more about this project, and please feel free to comment, repost, or like if this resonates with your experiences : )\n\n\nResource: https://lnkd.in/eeXjhQKb\n\n#AI #LLM #LangChain #Gemini #VercelAI #BuildInPublic #ParentingInTech #RealWorldAI #RAG",
+      "link": "https://www.linkedin.com/posts/hzl_antigravity-rag-ai-activity-7414731420222320640-RAsb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFbInnewoonhA/feedshare-shrink_20/B4EZuZq69xJoA0-/0/1767809728276?e=1769644800&v=beta&t=luITGbt30XLgQI6GK-brb2nS-NXzNufOOqXHsPYFj6s",
+      "local_image": "/images/linkedin/linkedin-1767810695962-0-5aa627c97a81c2a7f9e32690d346d778.jpg",
+      "extracted_at": "2026-01-07T18:31:35.961Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-07T18:15:29.629Z"
     }
   ]
 }
