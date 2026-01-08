@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-08T08:38:31.505Z"
+    "last_sync": "2026-01-08T18:27:33.376Z"
   },
   "extraction": {
-    "date": "2026-01-08T08:38:31.505Z",
+    "date": "2026-01-08T18:27:33.376Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 63,
-    "new_posts_this_sync": 2,
-    "images_downloaded": 2
+    "total_posts_found": 64,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -1209,6 +1209,25 @@
         "shares": 0
       },
       "posted_at": "2026-01-07T18:15:29.629Z"
+    },
+    {
+      "id": "linkedin-1767896853128-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Due to the recent extreme snowfall and the challenging road conditions expected tomorrow, considerin...",
+      "content": "Due to the recent extreme snowfall and the challenging road conditions expected tomorrow, considering public transportation for your commute is advisable. If you must drive and your vehicle is a two‑wheel‑drive automatic model from the last ten years, remember to shift to M and lock it in M2 for better traction compared to D. For older automatic vehicles, look for L2 and use that to drive out of deep snow. And if your car only has D… well, good luck 😄\nFor manual‑transmission cars, try starting in 2nd gear when moving out of deep snow. If 1st gear causes too much wheel spin or doesn’t give you enough controlled power, 2nd gear often provides smoother traction and helps the car move forward more steadily.\n\nWhen driving out of snow, keep your speed low until the wheels stop slipping, then continue smoothly at a controlled pace. For safer winter driving, preheat your front window and take extra time to thoroughly clear all windows. Maintain a safe distance from other vehicles and use gradual braking instead of sudden stops. These small habits significantly improve visibility and reduce the risk of accidents on slippery roads.\n\nThese tips come from 30+ years behind the wheel both in China and Sweden. Put them to the test again today helping a rear-wheel-drive BMW 5 Series and a front-wheel-drive XC60 get unstuck from the snow. Hope this helps someone stay safe out there this winter.\n\n#WinterDriving #SnowSafety #DrivingTips #VehicleControl #DefensiveDriving #SafeCommute #CommunitySupport #SnowFallWeather #Gothenburg #Mölndal #Lindholmen",
+      "link": "https://www.linkedin.com/posts/hzl_winterdriving-snowsafety-drivingtips-activity-7414777036604461056-NVRu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQE8YcBl6YjFWQ/feedshare-shrink_480/B4EZuaUakbKkAY-/0/1767820604381?e=1769644800&v=beta&t=Xkb76Y_AMRwqCUCJJVUEqPmZfiUEOO6LnHBMFwHm5is",
+      "local_image": "/images/linkedin/linkedin-1767896853128-0-8015989a252fa47a2adb33c031cc2089.jpg",
+      "extracted_at": "2026-01-08T18:27:33.127Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 5,
+        "comments": 1,
+        "shares": 1
+      },
+      "posted_at": "2026-01-07T21:16:45.422Z"
     }
   ]
 }
