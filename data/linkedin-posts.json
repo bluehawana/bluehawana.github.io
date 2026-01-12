@@ -843,5 +843,18 @@
       "comments": 0,
       "shares": 1
     }
+  },
+  {
+    "id": "linkedin-1768242708230-0",
+    "content": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe , foodora, UberEat, Wolt … hunting down matching invoices… printing everything… then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\t∙\tOCR scans and recognizes payments that need invoices\n\t∙\tPython connects different platform APIs to fetch correct invoices with proper format and numbers, some of them from our Gmail :)\n\t∙\tFetches everything to our dashboard where users can review and select what to print\nNow all payments from Stripe, UberEats, Foodora, Wolt are automated. Next step: SEB API and auth key integration for printing monthly reports and details of Bankgiro payments (more than one at a time).\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some #SMEs save hours every month on accounting prep, that’s real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One” that solves real problems > a perfect “Zero” that never ships. Just keep building and committing. This is what #FinTech is really about.\n\n#FinTech #Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
+    "url": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1768242708230-0-dbbcf91ceca4f640761f06f239a4fd15.jpg",
+    "tags": [],
+    "publishedAt": "2026-01-11T17:54:08.728Z",
+    "engagement": {
+      "likes": 3,
+      "comments": 0,
+      "shares": 1
+    }
   }
 ]
