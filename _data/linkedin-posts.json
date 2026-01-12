@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-08T18:27:33.376Z"
+    "last_sync": "2026-01-12T08:40:23.133Z"
   },
   "extraction": {
-    "date": "2026-01-08T18:27:33.376Z",
+    "date": "2026-01-12T08:40:23.133Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 64,
+    "total_posts_found": 65,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1228,6 +1228,25 @@
         "shares": 1
       },
       "posted_at": "2026-01-07T21:16:45.422Z"
+    },
+    {
+      "id": "linkedin-1768207223020-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year, New Project No.3: Invoice Handeling System\nFinally freed my hands from invoice processing ...",
+      "content": "New Year, New Project No.3: Invoice Handeling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe, foodora, UberEat, Wolt... hunting down matching invoices... printing everything... then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\nOCR scans and recognizes payments that need invoices\nPython connects different platform APIs to fetch correct invoices with proper format and numbers\nPrints everything automatically\n\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some of #SMEs save hours every month on accounting prep, that's real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One”that solves real problems > a perfect “Zero” that never ships. Just keep building and committing.\n\n#Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
+      "link": "https://www.linkedin.com/posts/hzl_smes-python-ocr-activity-7416175599196463104-OCoY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEUQe7eyCSEig/feedshare-shrink_2048_1536/B4EZuuMZQBLUAw-/0/1768154047718?e=1769644800&v=beta&t=DAwvTnWTtv1FylN_b4Z5ZVZ09tHADaF-gVYNpnbmwPo",
+      "local_image": "/images/linkedin/linkedin-1768207223020-0-dbbcf91ceca4f640761f06f239a4fd15.jpg",
+      "extracted_at": "2026-01-12T08:40:23.020Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 1
+      },
+      "posted_at": "2026-01-11T17:54:08.728Z"
     }
   ]
 }
