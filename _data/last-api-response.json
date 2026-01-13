@@ -1,6 +1,35 @@
 {
   "data": [
     {
+      "createdAt": "2026-01-12T19:34:24.285Z",
+      "activity": {
+        "reactionTypeCounts": {},
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 0
+      },
+      "activityId": "urn:li:activity:7416563218137083904",
+      "shareUrn": "urn:li:share:7416563217453449216",
+      "content": {
+        "article": {
+          "title": "DAN KOE (@thedankoe) on X",
+          "urn": "urn:li:article:7013209544137227451",
+          "subtitle": "x.com",
+          "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1768899600&v=beta&t=KjKmTaD3h6xlrfp5w1EviiTWurUH8UKbxTMcu-h0NYM"
+        }
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "commentary": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
       "createdAt": "2026-01-11T17:54:08.728Z",
       "activity": {
         "reactionTypeCounts": [
@@ -297,7 +326,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7406050964580827136",
           "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=t22gYMDZtIjvrfyfpEBJIA%3D%3D",
+          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=h03Cb9a9Zx3PZ7xb8zvWEQ%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -416,7 +445,7 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1768849200&v=beta&t=2AsUNIhl6fZAaVbK4bQHBcSJhIpMNcnV04ugIkzT3Fs"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1768899600&v=beta&t=DwnHYTrnOzT9VQ6SW_D_DCyivOhisbeJbFJyfst3AY0"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
@@ -448,7 +477,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=%2FmXMz3jJp23Dy41gTZcemA%3D%3D",
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=s0UU0boAuf4rCa5lZ2xhvQ%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -663,50 +692,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
-    },
-    {
-      "createdAt": "2025-10-17T07:18:10.226Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 1,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "EMPATHY"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 2
-      },
-      "activityId": "urn:li:activity:7384850194397491200",
-      "shareUrn": "urn:li:ugcPost:7384850191230734338",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGCNYIPLSSyVA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGCNYIPLSSyVA/feedshare-shrink_480/B4DZnxCGhfIcAY-/0/1760685488136?e=1769644800&v=beta&t=eAjsRYS-Be0Bxk9o6TQpA3Vv71HFhqjKBEWCW3yhpAk"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGKTd9-fS5G5Q",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGKTd9-fS5G5Q/feedshare-shrink_1280/B4DZnxCGhwJEAs-/0/1760685486732?e=1769644800&v=beta&t=E98V5jsEkndwiMYVLpqNDucTMDMTxubBZ1Jm3O4W6d4"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_baremetals-nvidia-dgxspark-activity-7384850194397491200-DPzD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "There’s been a lot of buzz around NVIDIA DGX Spark since October 15th, so let’s talk about two compact #BareMetals that keep coming up in comparison: NVIDIA’s DGX Spark and Apple’s Mac mini M4 Pro.\nHere are my observations:\n🔹 Mac mini M4 Pro\n• \t64GB unified memory\n• \tmacOS 26 “Tahoe”\n• \tSeamless integration with Apple’s ecosystem\n• \tCompact, quiet, and versatile\n🔹 NVIDIA DGX Spark\n• \t128GB RAM\n• \t4TB SSD\n• \t~273GB/s memory bandwidth\n• \tRuns a customized Ubuntu 24 Linux OS\nBoth machines deliver impressive AI performance (roughly comparable to an RTX 3090 Ti in some scenarios). But their focus is different:\n• \tDGX Spark is clearly aimed at professionals running heavy AI/ML workloads. The extra RAM and storage make it a specialized tool for model training and large‑scale experiments.\n• \tMac mini M4 Pro is an all‑rounder. It’s perfect for those who want a premium desktop that handles everyday tasks effortlessly while still being capable of serious compute work. The Apple ecosystem and macOS polish make it a smooth experience.\n💡 So which one makes sense?\n• \tIf your priority is intensive AI/ML modeling, DGX Spark is the better fit.\n• \tIf you want a versatile, user‑friendly system that balances performance with everyday usability, the Mac mini M4 Pro is hard to beat.\nFor me personally, I don’t see a reason to choose the DGX Spark at this price point. There are more cost‑effective alternatives out there — for example:\n👉 https://lnkd.in/dmrJ-pjp\nDon’t get blinded by the NVIDIA halo effect. Choose what truly fits your needs. If it were up to me, I’d go with the Mac mini M4 Pro (64GB / 2TB).\n\nResources:\n1. \thttps://lnkd.in/d7Ct_CFS\n2. \thttps://lnkd.in/dUNNav3T\n\n#NVIDIA #DGXSpark #Apple #MacMiniM4Pro #Ubuntu24 #macOS26Tahoe #MachineLearning #AIHardware",
-      "actor": {
-        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
-        "name": "Harvad Li",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczODQ4NTAxOTQzOTc0OTEyMDAtMTc2MDY4NTQ5MDE5MA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczODYzODc3ODA0MjEwMTc2MDAtMTc2MTA1MjA3OTI3NQ==:20"
 }
