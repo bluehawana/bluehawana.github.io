@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-01-12T18:31:48.327Z",
+  "sync_timestamp": "2026-01-13T08:38:54.003Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 1,
-  "total_posts_in_system": 66,
+  "images_downloaded": 0,
+  "total_posts_in_system": 67,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-01-12T19:01:48.327Z",
+  "next_sync_recommended": "2026-01-13T09:08:54.003Z",
   "new_posts": [
     {
-      "title": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing h...",
-      "link": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
+      "title": "When opportunities seem scarce, remember that you have the power to change yourself when you can't c...",
+      "link": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": false,
       "engagement": {
-        "likes": 3,
+        "likes": 0,
         "comments": 0,
-        "shares": 1
+        "shares": 0
       },
-      "sync_date": "2026-01-12T18:31:48.229Z"
+      "sync_date": "2026-01-13T08:38:53.980Z"
     }
   ]
 }

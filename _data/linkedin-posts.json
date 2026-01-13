@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-12T18:31:48.324Z"
+    "last_sync": "2026-01-13T08:38:54.000Z"
   },
   "extraction": {
-    "date": "2026-01-12T18:31:48.324Z",
+    "date": "2026-01-13T08:38:54.000Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 66,
+    "total_posts_found": 67,
     "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -1266,6 +1266,25 @@
         "shares": 1
       },
       "posted_at": "2026-01-11T17:54:08.728Z"
+    },
+    {
+      "id": "linkedin-1768293533980-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "When opportunities seem scarce, remember that you have the power to change yourself when you can't c...",
+      "content": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
+      "link": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-01-13T08:38:53.980Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-12T19:34:24.285Z"
     }
   ]
 }
