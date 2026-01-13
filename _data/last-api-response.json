@@ -1,6 +1,35 @@
 {
   "data": [
     {
+      "createdAt": "2026-01-13T12:36:11.531Z",
+      "activity": {
+        "reactionTypeCounts": {},
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 0
+      },
+      "activityId": "urn:li:activity:7416820359364063232",
+      "shareUrn": "urn:li:share:7416820358324047873",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEHqQXa_KXcUw",
+            "accessibilityText": "graphical user interface, website",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEHqQXa_KXcUw/feedshare-shrink_2048_1536/B4EZu3WziOKkAw-/0/1768307770380?e=1769644800&v=beta&t=2mt_mLE66fdY95Rv1kYoT1F0JexhL2ScFl7L0IsqZ-Y"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "commentary": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
       "createdAt": "2026-01-12T19:34:24.285Z",
       "activity": {
         "reactionTypeCounts": {},
@@ -17,7 +46,7 @@
           "urn": "urn:li:article:7013209544137227451",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1768899600&v=beta&t=KjKmTaD3h6xlrfp5w1EviiTWurUH8UKbxTMcu-h0NYM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1768935600&v=beta&t=Tv5I9K2re80u9ZQbL2ip4VkQpQJa4PIpa-vulf0vvZ0"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
@@ -326,7 +355,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7406050964580827136",
           "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=h03Cb9a9Zx3PZ7xb8zvWEQ%3D%3D",
+          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=CKw%2BoVTtKWC9JT2BGz%2BedQ%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -445,7 +474,7 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1768899600&v=beta&t=DwnHYTrnOzT9VQ6SW_D_DCyivOhisbeJbFJyfst3AY0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1768935600&v=beta&t=_Ndc5E4WGOXuhwpFr16W_FrXktC0fG11-Wn2ewk_c1k"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
@@ -477,7 +506,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=s0UU0boAuf4rCa5lZ2xhvQ%3D%3D",
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=eGPAAYTJMfZEYq8vOPfvdA%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -658,41 +687,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
-    },
-    {
-      "createdAt": "2025-10-21T13:07:59.301Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 2,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 2
-      },
-      "activityId": "urn:li:activity:7386387780421017600",
-      "shareUrn": "urn:li:share:7386387779267510272",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGK_vC9Dyh-zg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGK_vC9Dyh-zg/feedshare-shrink_2048_1536/B4DZoG4i2VH0A0-/0/1761052078332?e=1769644800&v=beta&t=Di_Wf3XfRrzbgnq1KIhj2EGw5BU5YkN_W46mnH7pL6k"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_awsdowntime-cloudcomputing-diversify-activity-7386387780421017600-QzJA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "Even when Cloud giant Amazon Web Services (AWS) promises 99.99% uptime, that 0.01% downtime can still significantly impact the public. Sure, Duolingo being temporarily unavailable might not matter to some, but imagine holding Amazon Web Services (AWS) stocks on Robinhood and wanting to sell during a dip at the same time. A grain of sand in one era can grow into a mountain of trouble for a family.Isn’t it time we asked ourselves: Why place all our eggs in a single cloud provider’s basket?\nWhen will our private clouds rise to the occasion and come to the rescue?\n\n#AWSDowntime #CloudComputing #Diversify #PrivateClouds #CloudReliability\"",
-      "actor": {
-        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
-        "name": "Harvad Li",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczODYzODc3ODA0MjEwMTc2MDAtMTc2MTA1MjA3OTI3NQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczOTAzNTY5NDM3NzQ2NzkwNDAtMTc2MTk5ODQwMTU2Mw==:20"
 }

@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-13T08:38:54.000Z"
+    "last_sync": "2026-01-13T18:30:08.789Z"
   },
   "extraction": {
-    "date": "2026-01-13T08:38:54.000Z",
+    "date": "2026-01-13T18:30:08.789Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 67,
+    "total_posts_found": 68,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -1285,6 +1285,25 @@
         "shares": 0
       },
       "posted_at": "2026-01-12T19:34:24.285Z"
+    },
+    {
+      "id": "linkedin-1768329008633-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps b...",
+      "content": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
+      "link": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEHqQXa_KXcUw/feedshare-shrink_2048_1536/B4EZu3WziOKkAw-/0/1768307770380?e=1769644800&v=beta&t=2mt_mLE66fdY95Rv1kYoT1F0JexhL2ScFl7L0IsqZ-Y",
+      "local_image": "/images/linkedin/linkedin-1768329008633-0-a16dc81b1de20b5327ddfef62518b7cf.jpg",
+      "extracted_at": "2026-01-13T18:30:08.633Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-13T12:36:11.531Z"
     }
   ]
 }
