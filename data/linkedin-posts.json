@@ -882,5 +882,44 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1768415527800-0",
+    "content": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
+    "url": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1768415527800-0-a1f278326f616e7caa8d4fb0e6bd6412.jpg",
+    "tags": [],
+    "publishedAt": "2026-01-13T12:36:11.531Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1768415527978-1",
+    "content": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
+    "url": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-01-12T19:34:24.285Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1768415527978-2",
+    "content": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe , foodora, UberEat, Wolt … hunting down matching invoices… printing everything… then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\t∙\tOCR scans and recognizes payments that need invoices\n\t∙\tPython connects different platform APIs to fetch correct invoices with proper format and numbers, some of them from our Gmail :)\n\t∙\tFetches everything to our dashboard where users can review and select what to print\nNow all payments from Stripe, UberEats, Foodora, Wolt are automated. Next step: SEB API and auth key integration for printing monthly reports and details of Bankgiro payments (more than one at a time).\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some #SMEs save hours every month on accounting prep, that’s real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One” that solves real problems > a perfect “Zero” that never ships. Just keep building and committing. This is what #FinTech is really about.\n\n#FinTech #Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
+    "url": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1768415527978-2-7f1b5c6d989b93351b5eb92b598a6c05.jpg",
+    "tags": [],
+    "publishedAt": "2026-01-11T17:54:08.728Z",
+    "engagement": {
+      "likes": 3,
+      "comments": 0,
+      "shares": 1
+    }
   }
 ]

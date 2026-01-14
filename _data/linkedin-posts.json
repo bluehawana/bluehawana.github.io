@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-13T18:30:08.789Z"
+    "last_sync": "2026-01-14T18:32:08.127Z"
   },
   "extraction": {
-    "date": "2026-01-13T18:30:08.789Z",
+    "date": "2026-01-14T18:32:08.127Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 68,
-    "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "total_posts_found": 71,
+    "new_posts_this_sync": 3,
+    "images_downloaded": 2
   },
   "posts": [
     {
@@ -1304,6 +1304,63 @@
         "shares": 0
       },
       "posted_at": "2026-01-13T12:36:11.531Z"
+    },
+    {
+      "id": "linkedin-1768415527800-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps b...",
+      "content": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
+      "link": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEHqQXa_KXcUw/feedshare-shrink_2048_1536/B4EZu3WziOKkAw-/0/1768307770380?e=1770249600&v=beta&t=8bGRE18WnXlPzRECk3HUBat-uaeM7yKRba47oBVrxUQ",
+      "local_image": "/images/linkedin/linkedin-1768415527800-0-a1f278326f616e7caa8d4fb0e6bd6412.jpg",
+      "extracted_at": "2026-01-14T18:32:07.799Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-13T12:36:11.531Z"
+    },
+    {
+      "id": "linkedin-1768415527978-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "When opportunities seem scarce, remember that you have the power to change yourself when you can't c...",
+      "content": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
+      "link": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-01-14T18:32:07.799Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-12T19:34:24.285Z"
+    },
+    {
+      "id": "linkedin-1768415527978-2",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing h...",
+      "content": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe , foodora, UberEat, Wolt … hunting down matching invoices… printing everything… then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\t∙\tOCR scans and recognizes payments that need invoices\n\t∙\tPython connects different platform APIs to fetch correct invoices with proper format and numbers, some of them from our Gmail :)\n\t∙\tFetches everything to our dashboard where users can review and select what to print\nNow all payments from Stripe, UberEats, Foodora, Wolt are automated. Next step: SEB API and auth key integration for printing monthly reports and details of Bankgiro payments (more than one at a time).\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some #SMEs save hours every month on accounting prep, that’s real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One” that solves real problems > a perfect “Zero” that never ships. Just keep building and committing. This is what #FinTech is really about.\n\n#FinTech #Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
+      "link": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEUQe7eyCSEig/feedshare-shrink_2048_1536/B4EZuuMZQBLUAw-/0/1768154047718?e=1770249600&v=beta&t=CaNggyjNJaFvGc3hny8RLReXfTUWCBmvDiVU2f_Nlv0",
+      "local_image": "/images/linkedin/linkedin-1768415527978-2-7f1b5c6d989b93351b5eb92b598a6c05.jpg",
+      "extracted_at": "2026-01-14T18:32:07.799Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 1
+      },
+      "posted_at": "2026-01-11T17:54:08.728Z"
     }
   ]
 }
