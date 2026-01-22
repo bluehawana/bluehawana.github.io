@@ -1,45 +1,23 @@
 {
-  "sync_timestamp": "2026-01-14T18:32:08.129Z",
+  "sync_timestamp": "2026-01-22T18:31:33.162Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 3,
-  "images_downloaded": 2,
-  "total_posts_in_system": 71,
+  "new_posts_synced": 1,
+  "images_downloaded": 1,
+  "total_posts_in_system": 72,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-01-14T19:02:08.129Z",
+  "next_sync_recommended": "2026-01-22T19:01:33.162Z",
   "new_posts": [
     {
-      "title": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps b...",
-      "link": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "has_image": true,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-01-14T18:32:07.799Z"
-    },
-    {
-      "title": "When opportunities seem scarce, remember that you have the power to change yourself when you can't c...",
-      "link": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "has_image": false,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-01-14T18:32:07.799Z"
-    },
-    {
-      "title": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing h...",
-      "link": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "title": "New Year, New Project No.4: Smart Job Application System \n\nSaw a lot of people complaining about com...",
+      "link": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
         "likes": 3,
         "comments": 0,
-        "shares": 1
+        "shares": 0
       },
-      "sync_date": "2026-01-14T18:32:07.799Z"
+      "sync_date": "2026-01-22T18:31:33.041Z"
     }
   ]
 }

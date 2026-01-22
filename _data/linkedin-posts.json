@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-14T18:32:08.127Z"
+    "last_sync": "2026-01-22T18:31:33.159Z"
   },
   "extraction": {
-    "date": "2026-01-14T18:32:08.127Z",
+    "date": "2026-01-22T18:31:33.159Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 71,
-    "new_posts_this_sync": 3,
-    "images_downloaded": 2
+    "total_posts_found": 72,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -1361,6 +1361,25 @@
         "shares": 1
       },
       "posted_at": "2026-01-11T17:54:08.728Z"
+    },
+    {
+      "id": "linkedin-1769106693041-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year, New Project No.4: Smart Job Application System \n\nSaw a lot of people complaining about com...",
+      "content": "New Year, New Project No.4: Smart Job Application System \n\nSaw a lot of people complaining about companies using AI tools to filter candidates. But why are you still manually preparing resumes? Serious question: What's your way to customize a resume for each job? Manually editing in #Word or simply copying into ChatGPT without additional context? How do you guarantee it passes #ATS screening?\n\nI developed a Smart Job Application System using Python, LaTeX, and LLM. The workflow includes:\n- Paste job — Submit a job URL or full job description into the web app on my #VPS.\n- Analyze JD — The system parses the posting to extract role, responsibilities, keywords, and required skills.\n- Pick LEGO Bricks — Modular “skills & experience” blocks are selected that best match the JD.\n- AI polish — A language model rewrites and tightens each block for clarity, impact, and ATS keyword alignment.\n- Generate PDF — Produce a clean, professional, ATS‑friendly LaTeX/PDF resume in minutes.\n- Result — From “nothing in your folder” to a tailored resume that reads like it was specifically preparied for that job.\n\n#DIY option — Prefer hands‑on? Use Overleaf.com with ATS‑friendly LaTeX templates to reproduce the same output yourself.\n\nBut here’s the bigger truth.\nThe job market is tough. Brutally tough. And for reasons outside our control, some people may never find a traditional employer. That’s why building things—small tools, automations, systems—matters. It’s not just about landing a job. It’s about building leverage.\n\nAs Naval says:\n- Seek wealth, not money or status.\n- Build leverage with code, content, or capital.\n- Develop specific knowledge through genuine curiosity.\n- Think long‑term.\n\nThis project is just one example of that mindset. Curious? If you want to see whether this system fits your needs, DM me. Happy to walk you through it.\nAnd even if the tool isn’t for you, at least read \"The Almanack of Naval Ravikant\". It’s one of the few books that genuinely shifts how you think.\n\n#JobHunting #Python #NextJS #LaTeX #Overleaf #Automation #ATS #Entrepreneurship #Naval #BuildInPublic #RealProblems #AI",
+      "link": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQHKfiOvEo1w8w/feedshare-shrink_160/B4DZvmzmFaI0A4-/0/1769103844208?e=1770854400&v=beta&t=lMqQBB2e4Hw-IRFzgxnj1CeGCqyo4Qi7Ej6BTo3_lXQ",
+      "local_image": "/images/linkedin/linkedin-1769106693041-0-b53890522ce60edd54840edce6264712.jpg",
+      "extracted_at": "2026-01-22T18:31:33.041Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-22T17:44:06.338Z"
     }
   ]
 }
