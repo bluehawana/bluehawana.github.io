@@ -1,6 +1,421 @@
 {
   "data": [
     {
+      "createdAt": "2026-01-23T13:24:16.868Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 2,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 2
+      },
+      "activityId": "urn:li:activity:7420456340000706560",
+      "shareUrn": "urn:li:ugcPost:7420456229510025216",
+      "content": {},
+      "shareUrl": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive tool that lets you design and edit websites, dashboards, and interfaces in real time — either by typing prompts or by manually tweaking elements. Think of it as a live, hands‑on rethink of the design workflow: build something with a prompt, then refine it instantly with direct manipulation.\nWhy it feels different\nReal‑time iteration — no long handoffs between design and prototyping; you see changes as you make them.\nPrompt + polish — start with natural language, then fine‑tune visually; great for rapid exploration.\nNot a Figma clone — it’s an alternative mindset: more interactive, more experimental, more immediate.\nShort learning curve, big payoff — it takes a minute to get used to, but once you do it speeds up ideation and reduces friction.\nTry it\nGive www.pencil.dev a spin — play with a prompt, tweak the UI, and see how fast you can go from idea to a working interface. If you’re into fast iteration and new design vibes, this one’s worth your time. \n\nCheck out Tom Krcha's post on X to learn more about Pencil and its potential to transform UX/UI design: \nResource: https://lnkd.in/erc_A7XB\n\n#DesignTools #UXUI #PencilDev",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-22T17:44:06.338Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 5,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 5
+      },
+      "activityId": "urn:li:activity:7420159339111489536",
+      "shareUrn": "urn:li:ugcPost:7420159337416781824",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHKfiOvEo1w8w",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKfiOvEo1w8w/feedshare-shrink_160/B4DZvmzmFaI0A4-/0/1769103844208?e=1770854400&v=beta&t=lMqQBB2e4Hw-IRFzgxnj1CeGCqyo4Qi7Ej6BTo3_lXQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQENcxh-bZPgwg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQENcxh-bZPgwg/feedshare-shrink_1280/B4DZvmzl8UKMAc-/0/1769103844493?e=1770854400&v=beta&t=b9Qwn1EEEMR2q6c0d6xjp4_6EZTFG2-YsO6g0s47-o8"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEltVoQDKxidA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEltVoQDKxidA/feedshare-shrink_20/B4DZvmzl09JMAM-/0/1769103842978?e=1770854400&v=beta&t=zHh7zTaieST6NHzfSn8jMTiDgAOO1U-aDhxkZ017lZ0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHVOLq37RU38Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHVOLq37RU38Q/feedshare-shrink_2048_1536/B4DZvmzlziIAAo-/0/1769103842868?e=1770854400&v=beta&t=-xYLyE9QIzjpv4f6vKRpChcdHBmxUg4-Nd6BZ6cQxfM"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "New Year, New Project No.4: Smart Job Application System \n\nSaw a lot of people complaining about companies using AI tools to filter candidates. But why are you still manually preparing resumes? Serious question: What's your way to customize a resume for each job? Manually editing in #Word or simply copying into ChatGPT without additional context? How do you guarantee it passes #ATS screening?\n\nI developed a Smart Job Application System using Python, LaTeX, and LLM. The workflow includes:\n- Paste job — Submit a job URL or full job description into the web app on my #VPS.\n- Analyze JD — The system parses the posting to extract role, responsibilities, keywords, and required skills.\n- Pick LEGO Bricks — Modular “skills & experience” blocks are selected that best match the JD.\n- AI polish — A language model rewrites and tightens each block for clarity, impact, and ATS keyword alignment.\n- Generate PDF — Produce a clean, professional, ATS‑friendly LaTeX/PDF resume in minutes.\n- Result — From “nothing in your folder” to a tailored resume that reads like it was specifically preparied for that job.\n\n#DIY option — Prefer hands‑on? Use Overleaf.com with ATS‑friendly LaTeX templates to reproduce the same output yourself.\n\nBut here’s the bigger truth.\nThe job market is tough. Brutally tough. And for reasons outside our control, some people may never find a traditional employer. That’s why building things—small tools, automations, systems—matters. It’s not just about landing a job. It’s about building leverage.\n\nAs Naval says:\n- Seek wealth, not money or status.\n- Build leverage with code, content, or capital.\n- Develop specific knowledge through genuine curiosity.\n- Think long‑term.\n\nThis project is just one example of that mindset. Curious? If you want to see whether this system fits your needs, DM me. Happy to walk you through it.\nAnd even if the tool isn’t for you, at least read \"The Almanack of Naval Ravikant\". It’s one of the few books that genuinely shifts how you think.\n\n#JobHunting #Python #NextJS #LaTeX #Overleaf #Automation #ATS #Entrepreneurship #Naval #BuildInPublic #RealProblems #AI",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-13T12:36:11.531Z",
+      "activity": {
+        "reactionTypeCounts": {},
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 0
+      },
+      "activityId": "urn:li:activity:7416820359364063232",
+      "shareUrn": "urn:li:share:7416820358324047873",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEHqQXa_KXcUw",
+            "accessibilityText": "graphical user interface, website",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEHqQXa_KXcUw/feedshare-shrink_2048_1536/B4EZu3WziOKkAw-/0/1768307770380?e=1770854400&v=beta&t=cyfbIrRZRifq_eATxTijs3KtSsPKYSiowDgpOWpklYE"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-12T19:34:24.285Z",
+      "activity": {
+        "reactionTypeCounts": {},
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 0
+      },
+      "activityId": "urn:li:activity:7416563218137083904",
+      "shareUrn": "urn:li:share:7416563217453449216",
+      "content": {
+        "article": {
+          "title": "DAN KOE (@thedankoe) on X",
+          "urn": "urn:li:article:7013209544137227451",
+          "subtitle": "x.com",
+          "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1769799600&v=beta&t=uIzKs-92ZLjE4lcxaPAZzFFvMwbkueDWFLdeRUJBbQE"
+        }
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-11T17:54:08.728Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 4,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 1,
+        "numLikes": 4
+      },
+      "activityId": "urn:li:activity:7416175599196463104",
+      "shareUrn": "urn:li:ugcPost:7416175598227951616",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEUQe7eyCSEig",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEUQe7eyCSEig/feedshare-shrink_2048_1536/B4EZuuMZQBLUAw-/0/1768154047718?e=1770854400&v=beta&t=NnfZ1o_bRi0R8EJSMm9PEizE5zk7jyjlHIslQKKpvV0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQHYXmNzv0elrg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHYXmNzv0elrg/feedshare-shrink_20/B4EZuuMZPNIkA0-/0/1768154045216?e=1770854400&v=beta&t=IhEPToJ_RvtuoHhqGi8qPl_9NreF_a87p-uopnjQM5g"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe , foodora, UberEat, Wolt … hunting down matching invoices… printing everything… then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\t∙\tOCR scans and recognizes payments that need invoices\n\t∙\tPython connects different platform APIs to fetch correct invoices with proper format and numbers, some of them from our Gmail :)\n\t∙\tFetches everything to our dashboard where users can review and select what to print\nNow all payments from Stripe, UberEats, Foodora, Wolt are automated. Next step: SEB API and auth key integration for printing monthly reports and details of Bankgiro payments (more than one at a time).\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some #SMEs save hours every month on accounting prep, that’s real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One” that solves real problems > a perfect “Zero” that never ships. Just keep building and committing. This is what #FinTech is really about.\n\n#FinTech #Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-07T21:16:45.422Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 6,
+            "type": "LIKE"
+          },
+          {
+            "count": 2,
+            "type": "INTEREST"
+          }
+        ],
+        "numComments": 1,
+        "numImpressions": null,
+        "numShares": 1,
+        "numLikes": 8
+      },
+      "activityId": "urn:li:activity:7414777036604461056",
+      "shareUrn": "urn:li:share:7414777035447017472",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQE8YcBl6YjFWQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE8YcBl6YjFWQ/feedshare-shrink_480/B4EZuaUakbKkAY-/0/1767820604381?e=1770854400&v=beta&t=vovze-YHg6IVIgmqFGT8HbT2jg3iuzUjQL4p5TvvSIM"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_winterdriving-snowsafety-drivingtips-activity-7414777036604461056-NVRu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "Due to the recent extreme snowfall and the challenging road conditions expected tomorrow, considering public transportation for your commute is advisable. If you must drive and your vehicle is a two‑wheel‑drive automatic model from the last ten years, remember to shift to M and lock it in M2 for better traction compared to D. For older automatic vehicles, look for L2 and use that to drive out of deep snow. And if your car only has D… well, good luck 😄\nFor manual‑transmission cars, try starting in 2nd gear when moving out of deep snow. If 1st gear causes too much wheel spin or doesn’t give you enough controlled power, 2nd gear often provides smoother traction and helps the car move forward more steadily.\n\nWhen driving out of snow, keep your speed low until the wheels stop slipping, then continue smoothly at a controlled pace. For safer winter driving, preheat your front window and take extra time to thoroughly clear all windows. Maintain a safe distance from other vehicles and use gradual braking instead of sudden stops. These small habits significantly improve visibility and reduce the risk of accidents on slippery roads.\n\nThese tips come from 30+ years behind the wheel both in China and Sweden. Put them to the test again today helping a rear-wheel-drive BMW 5 Series and a front-wheel-drive XC60 get unstuck from the snow. Hope this helps someone stay safe out there this winter.\n\n#WinterDriving #SnowSafety #DrivingTips #VehicleControl #DefensiveDriving #SafeCommute #CommunitySupport #SnowFallWeather #Gothenburg #Mölndal #Lindholmen",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-07T18:15:29.629Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 2,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 1,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 2
+      },
+      "activityId": "urn:li:activity:7414731420222320640",
+      "shareUrn": "urn:li:ugcPost:7414731419043794944",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFbInnewoonhA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFbInnewoonhA/feedshare-shrink_20/B4EZuZq69xJoA0-/0/1767809728276?e=1770854400&v=beta&t=dfxYT_EtrJiL3VmJ7VaEBiCxCJE4a6_oYq8_IMlIMnQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQGuEhJ0DgA7oQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGuEhJ0DgA7oQ/feedshare-shrink_20/B4EZuZq69kK4A0-/0/1767809728020?e=1770854400&v=beta&t=uZ3XzMY5p67ta2xbGUqWVXlPV5ROmuhidulcovmBf3c"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFN5wkoJ-zAcg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFN5wkoJ-zAcg/feedshare-shrink_480/B4EZuZq69VK4AY-/0/1767809726175?e=1770854400&v=beta&t=KZ-Xem4MrzUeq0stsbUI2IcmBfDzjgqqnc_EUfzSHu8"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQH7XvohWJfvAg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQH7XvohWJfvAg/feedshare-shrink_1280/B4EZuZq687K4As-/0/1767809726367?e=1770854400&v=beta&t=rWJwJpMbfcOCG4Rkqi7DoUlHSnz8gF6jfQ6KyVLBRT8"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_antigravity-rag-ai-activity-7414731420222320640-RAsb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "New Year, New Project No.2: AI Math Grader\nI recently applied for a full‑stack role that requires hands‑on experience with OpenAI, LangChain, Vercel AI SDK, and similar tools. I know the concepts well, but hadn’t actually built anything with them yet.\nAt the same time, my daughter has a competitive math entrance exam in a month. We covered about 65% of the material last year… and we’ve probably forgotten more than that by now : P\nSo I combined both challenges into one project.\nUsing Claude Sonnet 4.5 via Google #Antigravity, I built a full AI math‑grading system in about 3 hours. It takes iPhone photos (HEIC), reads the handwritten exam year, compares her answers against 15 years of past exams (2010–2025), runs everything through an LLM, and gives instant feedback in Swedish. It even exports a PDF for review.\n\nTech stack:\nLangChain LCEL workflow\nVercel AI SDK streaming\nGemini Pro 2.0 Flash\nProvider‑agnostic (OpenAI / Anthropic / Groq)\nNext.js 16, TypeScript, Zod\nLocal RAG built from the exam archives\n\nNow she practices, I snap a photo, and the AI project handles the grading. No more pretending I remember middle‑school math 100% correctly at 11 PM — and I get real hands‑on experience with the exact tools employers keep asking for.\nCurious to hear from others:\nHow do you help your kids prep for exams?\nDevelopers: what real‑world problems have you solved with your own #RAG setups?\nPM if you want to know more about this project, and please feel free to comment, repost, or like if this resonates with your experiences : )\n\n\nResource: https://lnkd.in/eeXjhQKb\n\n#AI #LLM #LangChain #Gemini #VercelAI #BuildInPublic #ParentingInTech #RealWorldAI #RAG",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2026-01-04T13:24:22.517Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 2,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 2
+      },
+      "activityId": "urn:li:activity:7413570994247802880",
+      "shareUrn": "urn:li:ugcPost:7413570993413283840",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFLr7Nihwn2Iw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFLr7Nihwn2Iw/feedshare-shrink_2048_1536/B4EZuJLhslHcAw-/0/1767533060582?e=1770854400&v=beta&t=CulxzJN5kEtPeNdSAxWLaPkPo3_AfjV4grm9M0-YMBQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQGqjSnLbo0S-g",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGqjSnLbo0S-g/feedshare-shrink_800/B4EZuJLhs0J0Ag-/0/1767533060629?e=1770854400&v=beta&t=pMaM0FLaEN_MwPZcn3Pf0StZ-alHXOMtSCdWe5Q1120"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQG6Y2uvjHWWPQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG6Y2uvjHWWPQ/feedshare-shrink_1280/B4EZuJLhsEKUAw-/0/1767533060782?e=1770854400&v=beta&t=dGIxnUdBHOji5xct5_FhLR0fKLJQHU5_a6S5hi4KsqQ"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "New Year, New Project No.1: .Net-FleetManagement-System\nFrom CSV files to a comprehensive Fleet Management system—featuring data analysis, interactive visualizations, a .NET backend REST API, a Next Frontend management interference with embedded Grafana features dashboard, and AI-powered predictive modeling with MiniMax algorithms. This showcases how a full-stack developer can drive measurable cost savings and profit improvements for organizations.\nBridging the gap between real-world business bottlenecks and sustainable growth requires the right technical approach, strategic thinking and a business-driven mindset.\n\nFeel free to PM me if you’d like to learn more about this project. Happy New Year from #Valencia! 🎊\n\n#Kaggle #DataVisualization #DotNet #RestAPI #AIModeling #BusinessITIntegration #FleetManagement #FullStackDevelopment",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2025-12-31T15:50:50.074Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 8,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 8
+      },
+      "activityId": "urn:li:activity:7412158300470841344",
+      "shareUrn": "urn:li:ugcPost:7412158299627970560",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEqlyIqdZm0tA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEqlyIqdZm0tA/feedshare-shrink_20/B4EZt1GqxoIQA0-/0/1767196248101?e=1770854400&v=beta&t=1NtIJVpYs4NnuQQWlvvG2rgKBIrUodUzi71x4KOe3OA"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEoensdeE3B1w",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEoensdeE3B1w/feedshare-shrink_2048_1536/B4EZt1GqxCGcA0-/0/1767196245540?e=1770854400&v=beta&t=cUWXhRai19R6FD9QcDiMx2WWUSMq-OFPMO384Jkwox0"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_bestwishes-happynewyear-activity-7412158300470841344-7NSA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "As we enter a new year, let's reflect on the challenges of 2025. Opportunities await those who are prepared. Instead of waiting for chances, showcase your skills and seize them! Wishing you all a prosperous year filled with growth, unlocked skills, new connections, and fulfilling careers. Remember, success favors the proactive and skilled. \nHappy New Year Guys, and see you next year!\n\n#BestWishes #HappyNewYear",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2025-12-27T10:11:00.517Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 7,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 1,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 7
+      },
+      "activityId": "urn:li:activity:7410623229008101376",
+      "shareUrn": "urn:li:share:7410623228005490688",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQF4mstUHZhojQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF4mstUHZhojQ/feedshare-shrink_480/B4EZtfSioQHoAY-/0/1766830258995?e=1770854400&v=beta&t=NgvedxNQ7x7XVx5f9W-uQ9kPwVOSBSi9eaodug7-KK8"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_sagatoy-ai-llm-activity-7410623229008101376-GRP3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "Meet these two “Talk to me” toys now, and soon you'll be conversing with them in a more advanced way! Learn more about our unique project at our website www.sagatoy.com and join our journey as an early supporter and customer if you are into it.\n\n#SagaToy #AI #LLM #CustomizedBot",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
+      "createdAt": "2025-12-27T10:03:54.086Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 8,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 8
+      },
+      "activityId": "urn:li:activity:7410621440426889216",
+      "shareUrn": "urn:li:ugcPost:7410621437629079552",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQG1VHzVWnApng",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG1VHzVWnApng/feedshare-shrink_20/B4EZtfQ7KNKUA0-/0/1766829831756?e=1770854400&v=beta&t=PLeI3CP4m0An5tiQnh5b6RPNiyByCY0eSSKsx8sjtng"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQGA4Likxw_esg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGA4Likxw_esg/feedshare-shrink_1280/B4EZtfQ7KMHEAs-/0/1766829831894?e=1770854400&v=beta&t=Xw-Mpwrfo9fciDDPUlHw0YXQz3JT8qFSfsoNhgdMAfE"
+          }
+        ]
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_webdev-ipad-remotedev-activity-7410621440426889216-3zra?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "commentary": "iPad Remote Development - No SSH or Terminal Apps Required\n\nHej,\nHope you all had a great Christmas. As a New Year's gift to the dev community, I want to share something I've been working on.\n\nToday I successfully connected to my VPS from my iPad Pro Gen 3 and started coding - directly from Safari. No SSH apps, no terminal emulators, just a browser.\n\nTested over Tele2 cellular 4G connection - proving this works anywhere you have mobile data.\n\nSolving iPad's Development Problem\n\nThe main reasons developers avoid iPad for serious work:\n- No proper terminal tools\n- Limited code IDE support\n- Poor SSH connection options\n- iOS sandboxing restrictions\n\nThis project solves all of these by moving the development environment to a server and accessing it through Safari. Now your iPad becomes a true development machine.\n\n What Works\n\n - Full terminal access in Safari\n - Git workflow (commit, push, PR creation)\n - File editing with vim/nano\n - AI-assisted coding (OpenAI integration)\n - Virtual keyboard optimized for touch\n - Sessions persist across disconnects\n - MFA with Google Authenticator for highest security\n\nBuilt with Kiro and Claude Code Sonnet 4.5\n\nThis entire project was built using Kiro and Claude Code Sonnet 4.5 - proving that AI-assisted development can create real, production-ready tools. Now it enables vibe coding anywhere you have your iPad and internet connection. Coffee shop, airport, wherever - just open Safari and code.\n\nWhy This Matters\n\n The iPad Pro has the hardware for serious development work, but iOS limitations have always been the blocker. By running the dev environment on a server and accessing through Safari, we bypass those limitations completely.\n\nYou get:\n- Full Linux environment\n- All your command-line tools\n- Your entire workflow, just accessible from anywhere\n- No need to carry a laptop\n- Secure access with multi-factor authentication\n\nTechnical Stack\n\n- WebSocket for real-time communication\n- xterm.js for browser terminal\n- node-pty for shell management\n- TypeScript monorepo\n- PWA support\n- TOTP-based MFA (Google Authenticator)\n\nNext Steps\n\nI'm developing several deployment scenarios for devs with(out) a VPS:\n\n1. With VPS (what I'm using now)\n2. Tailscale VPN (connect iPad to your Mac at home, no VPS needed)\n3. Cloudflare Tunnel (permanent setup with custom domain)\n4. ngrok (quick testing)\n5. GitHub Codespaces (backup option)\n\nFor developers without a VPS, options 2-5 mean you can still work remotely with just your Mac at home and your iPad.\n\nOpen Source\n\nWill be releasing this for the community soon. Whether you have a VPS, a Mac at home, or just use Codespaces - you'll be able to vibe code from your iPad anywhere you have internet. Forget your MBP and MBA, now in 2026, it is time to work from anywhere with just an iPad.\n\n Interested in trying this? Keep an eye on the updates of this projejct.\n\n#WebDev #iPad #RemoteDev #Opensource #Claudecode #SSH #TCPIP #Terminal",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
       "createdAt": "2025-12-14T20:45:01.158Z",
       "activity": {
         "reactionTypeCounts": {},
@@ -15,15 +430,15 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7406050964580827136",
           "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=CV0jdbh%2BQXD4luAmoUrH4A%3D%3D",
-          "subtitle": "Harvad Lee"
+          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=GLn0DLJj5Ck7vSxOjhJm0A%3D%3D",
+          "subtitle": "Harvad Li"
         }
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your perspective matters—whether you agree, disagree, or see angles I haven't considered.",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -45,11 +460,11 @@
       "activityId": "urn:li:activity:7404089135017246720",
       "shareUrn": "urn:li:share:7404089134379585537",
       "content": {},
-      "shareUrl": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_china-chinabusiness-localization-activity-7404089135017246720-6d23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "In fact, there's a option C - leveraging AI tools such as Google NanoBanana to create models that respect IP rights. This approach is particularly advantageous for SMEs, as it allows them to adhere to cultural norms and traditions while managing expenses. It's a viable, risk-free alternative worth considering.",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -75,15 +490,15 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFJgSxeG74pEw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFJgSxeG74pEw/feedshare-shrink_800/B4EZr.EDabKYAk-/0/1765199068717?e=1767225600&v=beta&t=_kWIUIsVLEdttMTe9QBz24mv9pAEnxkl---h6qUUww4"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFJgSxeG74pEw/feedshare-shrink_800/B4EZr.EDabKYAk-/0/1765199068717?e=1770854400&v=beta&t=Th92cf2NrcRSHNMli2t-NSf4tNy7dsd3uweZ_wt82Mg"
           }
         ]
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_nvidia-ubuntu-windows-activity-7403781520479641600-9Xvg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "For HomeLab enthusiasts and solo devs, the Apple Mac Mini M4 Pro reigns supreme! Its compact form, robust specs, and seamless macOS integration make it a top choice for most of development jobs and assignments. But why does it outshine #NVIDIA's DGX Spark with #Ubuntu and other #Windows PCs? Stay tuned for my breakdown！\n\n#MacMini #HomeLab #SoloDev #AppleEcosystem #TechPreferences",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -104,15 +519,15 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQGcnL5BJkAHXQ",
             "accessibilityText": "text",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGcnL5BJkAHXQ/feedshare-shrink_480/B4EZrvd1woJgAc-/0/1764954169541?e=1767225600&v=beta&t=uAa6Wvg-90j9nnba10YSVEE2V7qk1TjvjtKzAF-9npo"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGcnL5BJkAHXQ/feedshare-shrink_480/B4EZrvd1woJgAc-/0/1764954169541?e=1770854400&v=beta&t=ppsJfKxCMTAzgdLusRSZ9Anh3_PnnTlGkae-gINS3Ko"
           }
         ]
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_ups-apple-ups-activity-7402754338324074497-DIzC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "美国联合包裹服务. The worst express service I've ever had. It took 4 days from Shenzhen, China to Sweden—impressive efficiency, right? But in Mölndal, things took a turn for the worse. After waiting 2 days, the driver got lost and then tried to leave my parcel at a candy shop just 30 meters from my home. They texted me saying they couldn't deliver it directly to me.\n\nIf you have options, never choose #UPS, even if you're 苹果公司 .\n\n#Apple #UPS #ShippingNightmare #UPSFail #CustomerExperience #DeliveryDisaster",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -134,14 +549,14 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1766480400&v=beta&t=7528gu_MAPIqHxsfpfK14zLU4QYemMD5RPZkrStAWp8"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1769799600&v=beta&t=MLvOH38gzYD9XSVcBt12kP3SCM9z50ztL1XshS903VM"
         }
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "🎄 Countdown to Christmas with Google AI's Advent Calendar! 🤖 Each day, unlock exciting AI insights, tools, and surprises. Don't miss out on this festive tech treat for AI lovers! 🎁 \n#GoogleAI #AdventCalendar",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -166,15 +581,15 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=VBhzJAY8qcpDhL7WHZiLmA%3D%3D",
-          "subtitle": "Harvad Lee"
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=o0kO%2Fx1QNI9mxbjPSYyBjA%3D%3D",
+          "subtitle": "Harvad Li"
         }
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_vps-blackfriday-cybersecurity-activity-7401208977373593600--x14?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_vps-blackfriday-cybersecurity-activity-7401208977373593600--x14?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "Grabbed a #VPS on #BlackFriday? Here's the ONE security mistake that got mine suspended.\nRead the full story and the recovery trick that saved me from reinstalling everything: \n\n#CyberSecurity #SSH #DevOps #2FA",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -200,15 +615,15 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHcTq_8P9BI3w",
             "accessibilityText": "timeline",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHcTq_8P9BI3w/feedshare-shrink_1280/B4DZqsSFNVH4As-/0/1763827015865?e=1767225600&v=beta&t=tw5rRQtWOrYUUh1SlPKMKF78VOYl-6vYYarrq7te6UI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHcTq_8P9BI3w/feedshare-shrink_1280/B4DZqsSFNVH4As-/0/1763827015865?e=1770854400&v=beta&t=xnsPbHksIFyVvYm9QT87pQpyGg25pkU5o6RrkM-LC04"
           }
         ]
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_googleaistudio-nanobananapro-ai-activity-7398635243412381696-K5OE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_googleaistudio-nanobananapro-ai-activity-7398635243412381696-K5OE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "💡 Unlocking Company Profits Made Simple!\nEver wondered how a company generates profits? As a stakeholder, employee, client, customer, or curious individual, you don't need specialized knowledge or skills to understand financial reports. All you need is the company's financial report (yearly or quarterly) and some tools like #GoogleAIStudio, #NanoBananaPro and the inspiration from www.voronoi.com as well.\nLet's use Volvo Cars' Q3 2025 report as an example. By inputting the data into the AI platform, you can create a visual representation of how Volvo Cars made money in Q3 2025, similar to the provided image of Nvidia.\nThis era of #AI empowers us to overcome many barriers like Data Visualization, Data Analysis, Frontend Development, UX/UI, and more. Now, when your boss asks about the company's revenue sources and expenses, you have a clear and visually engaging answer.\n\nResources:\nVolvo Cars Q3 2025 Report: \nhttps://lnkd.in/dsSPzzNf\nVoronoiApp: \nhttps://lnkd.in/dECJEYnT\n\n#GoogleAIStudio #VoronoiApp #Nvidia #NanoBananaPro",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -225,11 +640,11 @@
       "activityId": "urn:li:activity:7397385757537062913",
       "shareUrn": "urn:li:share:7397380430615793664",
       "content": {},
-      "shareUrl": "https://www.linkedin.com/posts/hzl_iphone17-iphonex-icabanken-activity-7397385757537062913-cA0v?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_iphone17-iphonex-icabanken-activity-7397385757537062913-cA0v?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "Tonight, I successfully renewed my Finansiell ID-Teknik - BankID  using the SEB mobile app in just 25 seconds. I was prompted to do so because my BankID was about to expire in 57 days. However, my wife is facing issues installing BankID on her new #iPhone17 due to a defect in the ICA Banken's app on #iPhoneX. We contacted ICA Banken's call center, and they asked us to wait for an in-app message. Unfortunately, after two weeks waiting, with their instructions, we're still stuck in a loop when trying to sign with BankID for authenticating the installation of new BankID on new iPhone, basically nothing being changed. Following the call center's suggestion, we booked an appointment with SEB tomorrow. We might have to close our ICA Banken account, as they don't seem to care about our issue and advised us to find a bank with a physical office.\nSometimes, businesses overlook customer complaints about their products or services, believing that losing one customer isn't a big deal. However, the negative impact of such experiences goes beyond just one customer, as it spreads through word-of-mouth and online reviews.\nWith virtual banks like Revolut emerging, the advantages of traditional banks are becoming less obvious. When customers are charged 20 SEK per month and find that their app isn't compatible with new devices, it's only natural for them to switch to other banks. \nThis experience serves as a reminder that businesses can't afford to become complacent. Failing to continuously improve products and services will inevitably result in losing customers, as they seek better alternatives. Ultimately, prioritizing customer satisfaction and staying ahead of the competition are key to long-term success.\n\n#ICABanken #BankID #SEB #Revolution #CustomerService",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
@@ -255,442 +670,19 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFIwEgtIWO9_Q",
             "accessibilityText": "diagram",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFIwEgtIWO9_Q/feedshare-shrink_800/B4DZqhFqXjHwAk-/0/1763639208168?e=1767225600&v=beta&t=yK4X_YxGYZcj1pxj-HxTaBYYY5WcWmDqMd4qPl11210"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFIwEgtIWO9_Q/feedshare-shrink_800/B4DZqhFqXjHwAk-/0/1763639208168?e=1770854400&v=beta&t=Df5NkKaN9RLxdfcXeRioQtOKcwZxBPb0LELTHiGW_1k"
           }
         ]
       },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_aws-azure-gcp-activity-7397238991512698880-CEZp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_aws-azure-gcp-activity-7397238991512698880-CEZp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "commentary": "In the world of technology, things are much more fragile than you might imagine. The 99.99% up time is just a theoretical value; don't take it too seriously.\nhttps://lnkd.in/dRMSDU3X\n\n#AWS #Azure #GCP #Cloudflare",
       "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-11-11T15:49:45.384Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 3,
-            "type": "ENTERTAINMENT"
-          },
-          {
-            "count": 3,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "APPRECIATION"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 7
-      },
-      "activityId": "urn:li:activity:7394038635861307393",
-      "shareUrn": "urn:li:share:7394038634678620160",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFr7BZDEFNcLA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFr7BZDEFNcLA/feedshare-shrink_160/B4DZpzm9NJJEAc-/0/1762876184291?e=1767225600&v=beta&t=E3CXHHw_YrOBHBW4j3GRn760FblMF3B9UQx1Y1bxaco"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_theres-an-intriguing-connection-between-activity-7394038635861307393-yvWg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "There's an intriguing connection between a person's role in a company, their hairline, and the number of screens on their desk. CEOs, who might sport a receding hairline, often use just one device like an iPhone or iPad or a laptop，while developers, known for their diverse hairstyles, usually have multiple screens – sometimes more than 3!\n\nThe more monitors you have, the higher the risk of hair loss 😉",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-11-01T12:00:01.588Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 18,
-            "type": "LIKE"
-          },
-          {
-            "count": 2,
-            "type": "EMPATHY"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 20
-      },
-      "activityId": "urn:li:activity:7390356943774679040",
-      "shareUrn": "urn:li:share:7379133224628867072",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHEklgh4ULPmw",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHEklgh4ULPmw/feedshare-shrink_20/B4DZmfyjbxGsA0-/0/1759322456901?e=1767225600&v=beta&t=oIYm4V-q-nAsSUKls00I3jUUTPCI54RHqQoH-DJNxSY"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_true-friendship-and-genuine-recognition-are-activity-7390356943774679040-R1SL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "True friendship and genuine recognition are priceless and can never be bought. To my wonderful colleagues, friends, and brothers, thank you for your support and the memories we've shared. I will always treasure our experiences together, and there will always be a place in my heart for each of you.",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-21T13:07:59.301Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 2,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 2
-      },
-      "activityId": "urn:li:activity:7386387780421017600",
-      "shareUrn": "urn:li:share:7386387779267510272",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGK_vC9Dyh-zg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGK_vC9Dyh-zg/feedshare-shrink_2048_1536/B4DZoG4i2VH0A0-/0/1761052078332?e=1767225600&v=beta&t=X6rONtUmOvXuJDuV-QIH8teYiXVG6DqJq6gt9b78awY"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_awsdowntime-cloudcomputing-diversify-activity-7386387780421017600-QzJA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "Even when Cloud giant Amazon Web Services (AWS) promises 99.99% uptime, that 0.01% downtime can still significantly impact the public. Sure, Duolingo being temporarily unavailable might not matter to some, but imagine holding Amazon Web Services (AWS) stocks on Robinhood and wanting to sell during a dip at the same time. A grain of sand in one era can grow into a mountain of trouble for a family.Isn’t it time we asked ourselves: Why place all our eggs in a single cloud provider’s basket?\nWhen will our private clouds rise to the occasion and come to the rescue?\n\n#AWSDowntime #CloudComputing #Diversify #PrivateClouds #CloudReliability\"",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-17T07:18:10.226Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 1,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "EMPATHY"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 2
-      },
-      "activityId": "urn:li:activity:7384850194397491200",
-      "shareUrn": "urn:li:ugcPost:7384850191230734338",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGCNYIPLSSyVA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGCNYIPLSSyVA/feedshare-shrink_480/B4DZnxCGhfIcAY-/0/1760685488136?e=1767225600&v=beta&t=0uNVi316NGliGSaoXvjsRhA_yMSZSjvStyMhSmNHvyw"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGKTd9-fS5G5Q",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGKTd9-fS5G5Q/feedshare-shrink_1280/B4DZnxCGhwJEAs-/0/1760685486732?e=1767225600&v=beta&t=ZfbDND1eCQvu1PIAokFUdwHhInpUISjxRBdkb855dVM"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_baremetals-nvidia-dgxspark-activity-7384850194397491200-DPzD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "There’s been a lot of buzz around NVIDIA DGX Spark since October 15th, so let’s talk about two compact #BareMetals that keep coming up in comparison: NVIDIA’s DGX Spark and Apple’s Mac mini M4 Pro.\nHere are my observations:\n🔹 Mac mini M4 Pro\n• \t64GB unified memory\n• \tmacOS 26 “Tahoe”\n• \tSeamless integration with Apple’s ecosystem\n• \tCompact, quiet, and versatile\n🔹 NVIDIA DGX Spark\n• \t128GB RAM\n• \t4TB SSD\n• \t~273GB/s memory bandwidth\n• \tRuns a customized Ubuntu 24 Linux OS\nBoth machines deliver impressive AI performance (roughly comparable to an RTX 3090 Ti in some scenarios). But their focus is different:\n• \tDGX Spark is clearly aimed at professionals running heavy AI/ML workloads. The extra RAM and storage make it a specialized tool for model training and large‑scale experiments.\n• \tMac mini M4 Pro is an all‑rounder. It’s perfect for those who want a premium desktop that handles everyday tasks effortlessly while still being capable of serious compute work. The Apple ecosystem and macOS polish make it a smooth experience.\n💡 So which one makes sense?\n• \tIf your priority is intensive AI/ML modeling, DGX Spark is the better fit.\n• \tIf you want a versatile, user‑friendly system that balances performance with everyday usability, the Mac mini M4 Pro is hard to beat.\nFor me personally, I don’t see a reason to choose the DGX Spark at this price point. There are more cost‑effective alternatives out there — for example:\n👉 https://lnkd.in/dmrJ-pjp\nDon’t get blinded by the NVIDIA halo effect. Choose what truly fits your needs. If it were up to me, I’d go with the Mac mini M4 Pro (64GB / 2TB).\n\nResources:\n1. \thttps://lnkd.in/d7Ct_CFS\n2. \thttps://lnkd.in/dUNNav3T\n\n#NVIDIA #DGXSpark #Apple #MacMiniM4Pro #Ubuntu24 #macOS26Tahoe #MachineLearning #AIHardware",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-16T05:34:19.199Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 5762,
-            "type": "LIKE"
-          },
-          {
-            "count": 270,
-            "type": "EMPATHY"
-          },
-          {
-            "count": 268,
-            "type": "INTEREST"
-          },
-          {
-            "count": 94,
-            "type": "PRAISE"
-          },
-          {
-            "count": 32,
-            "type": "APPRECIATION"
-          },
-          {
-            "count": 1,
-            "type": "ENTERTAINMENT"
-          }
-        ],
-        "numComments": 200,
-        "numImpressions": null,
-        "numShares": 443,
-        "numLikes": 6427
-      },
-      "activityId": "urn:li:activity:7384461671710306304",
-      "shareUrn": "urn:li:ugcPost:7384270647306268673",
-      "content": {},
-      "shareUrl": "https://www.linkedin.com/posts/andrewyng_learn-to-build-your-own-voice-activated-ai-ugcPost-7384270647306268673-pYjX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "Learn to build your own voice-activated AI assistant that can execute tasks like gathering recent AI news from the web, scripting out a podcast, and using tools to put all that into a multi-speaker podcast. See our new short course: \"Building Live Voice Agents with Google’s ADK (Agent Development Kit),”  taught by Google’s Lavi Nigam and Sita Lakshmi Sangameswaran. \n\nADK provides modular components that make it easy to build and debug agents. It also includes a built-in web interface for tracing agentic reasoning. This course illustrates these concepts via  building a live voice agent that can chain actions to complete a complex task like creating a podcast. This requires maintaining context, implementing guardrails, reasoning, and handling audio streaming, while keeping latency low.\n\nYou’ll learn to:\n- Build voice agents that listen, reason, and respond\n- Guide your agent to follow a specific workflow to accomplish a task\n- Coordinate specialized agents to build an agentic podcast workflow that researches topics and produces multi-speaker audio\n- Understand how to deploy an agent into production\n\nEven if you’re not yet building voice systems, you'll find understanding how realtime agents stream data and maintain reliability useful for designing modern agentic applications.\n\nPlease join here: https://lnkd.in/ga6tD5rt",
-      "actor": {
-        "description": "Founder of DeepLearning.AI; Managing General Partner of AI Fund; Exec Chairman of LandingAI",
-        "name": "Andrew Ng",
-        "actorId": "urn:li:member:176238488",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAqBL5gBXJ8MGhQh-qHYyxAOW-DYlHM3VLg"
-      }
-    },
-    {
-      "createdAt": "2025-10-11T19:38:54.645Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 7,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "APPRECIATION"
-          }
-        ],
-        "numComments": 2,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 8
-      },
-      "activityId": "urn:li:activity:7382862280608223233",
-      "shareUrn": "urn:li:share:7382862279467409408",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQE2Fp7bUyGJeg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE2Fp7bUyGJeg/feedshare-shrink_480/B4DZnUyHHIKsAY-/0/1760211533477?e=1767225600&v=beta&t=II5g8Ru_OC4Mby_a8eUKv78FSTZeXBMdreuQwJhML4A"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_kudos-applepay-googlepay-activity-7382862280608223233-CUnS?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "I initially thought Revolut was an excellent online bank with a user-friendly iOS app and no fees. However, upon further experience, I discovered that their business practices involve questionable methods, such as using customers' funds without permission to purchase Revolut points.\nIt's disheartening to see a fintech company that has grown from a startup to a widely used online bank resort to earning profits in this manner. Despite receiving a refund, I will continue to monitor my account closely. If this issue persists, I will update this post and remove all my assets from Revolut, ultimately adding them to my blocked list.\n\nSome updates so far on 14th of Oct. I have got my fully refund from Revolut promptly，even earlier than my reply in this post. #Kudos to their customer service for their swift response and commitment to resolving the issue. While my experience wasn't ideal this time, Revolut remains a standout fintech company, offering support for #ApplePay, #GooglePay, #SamsungPay, and more through their visual cards. Most people appreciate the convenience of having a digital wallet on their phones, and Revolut fits the bill, especially for those who don't want to link their main bank accounts directly to Apple or Google Pay.\n\nWhat's more, their <18 feature allows you to apply and manage a kid's visual card through Revolut App from your own account – a game-changer for parents like us without local country‘s citizenship or passports. Despite any shortcomings, Revolut's innovative spirit is commendable, and I wish them continued success in revolutionizing the virtual finance landscape.\n\n#Revolut #BusinessModel #Fintech #WatchYourMoney",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-07T04:15:01.434Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 1,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 1
-      },
-      "activityId": "urn:li:activity:7381180225407082497",
-      "shareUrn": "urn:li:share:7380993681098653697",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D5622AQFotUXaks5RRA",
-            "accessibilityText": "text, whiteboard",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQFotUXaks5RRA/feedshare-shrink_480/B56Zm6OpClHQAc-/0/1759766025302?e=1767225600&v=beta&t=AfN52sYBI5kEtZFQt0elGx2xxD915W4ZTD0lkjfxl6E"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_all-the-efforts-is-not-for-making-others-activity-7381180225407082497-cbEQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "All the efforts is not for making others think you are great. But in order to truly repect myself.\n\n\n——\"The Compound Effect\" by Darren Hardy",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-06T15:14:17.759Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 5,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 5
-      },
-      "activityId": "urn:li:activity:7380983748793831424",
-      "shareUrn": "urn:li:ugcPost:7380983747728515074",
-      "content": {
-        "document": {
-          "manifestUrl": "https://media.licdn.com/dms/document/pl/v2/D561FAQEXY9ZuFUGjew/feedshare-document-master-manifest/B56Zm6DQjKH8Bc-/0/1759763046923?e=1766480400&v=beta&t=iyKcf8isKKLn1AUrEILdWdLcwOTzEflXLVP8kJFZH-E",
-          "title": "Automated Exterior Assembly with Global Datum by Tsla",
-          "urn": "urn:li:digitalmediaAsset:D561FAQEXY9ZuFUGjew",
-          "totalPageCount": 27,
-          "transcribedDocumentUrl": "https://media.licdn.com/dms/document/media/v2/D561FAQEXY9ZuFUGjew/feedshare-document-sanitized-pdf/B56Zm6DQjKH8A8-/0/1759763045159?e=1766480400&v=beta&t=H_iYXl6s7ytqaXpc4AhZNYIA6jnTRJjA9gMVpK-em3c"
-        }
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_automated-exterior-assembly-with-global-datum-activity-7380983748793831424-4Pq_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "As market followers, we believed our pace was fast enough. However, Tesla continues to rapidly innovate, with their new patent—automated assembly of external vehicle parts using a global datum—set to significantly reduce production costs and boost efficiency. This further highlights Tesla's leading edge. For us as followers, merely increasing speed is not enough; we need genuine innovation, inside and out, to challenge Tesla 's dominance.\n\nResource：\n1. https://lnkd.in/gUbV5smK\n2. https://lnkd.in/gj6zJZU4\n\n#Tesla #PatenNews #EV #Innovation #AutomotiveIndustry #Manufacturing #Competition #Disruption #Leadership",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-06T14:58:45.519Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 135,
-            "type": "LIKE"
-          },
-          {
-            "count": 15,
-            "type": "INTEREST"
-          },
-          {
-            "count": 4,
-            "type": "EMPATHY"
-          },
-          {
-            "count": 1,
-            "type": "ENTERTAINMENT"
-          },
-          {
-            "count": 1,
-            "type": "PRAISE"
-          }
-        ],
-        "numComments": 58,
-        "numImpressions": null,
-        "numShares": 9,
-        "numLikes": 156
-      },
-      "activityId": "urn:li:activity:7380979838695825409",
-      "shareUrn": "urn:li:share:7376344432255664128",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQHfyqNqMvI1pA",
-            "accessibilityText": "diagram",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHfyqNqMvI1pA/feedshare-shrink_800/B4EZl4KLBcGYAo-/0/1758657557986?e=1767225600&v=beta&t=R23H0KJs3Y-jRJ2DB9x_7o5p_WAjX8F_VvuTp04iOOk"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/peter-rydlakowski_tesla-activity-7376344433388318720-TFUB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "#Tesla \"True Unboxed Process 2.0\" patent (US 12420879 B1) \nwas granted and published today.\nWe are moving closer and closer to the real-life mass production of Matchbox cars. \n\nAbstract/Summary: The patent describes a revolutionary departure from traditional linear assembly lines (e.g., Ford's conveyor-belt model). Instead, it uses a modular \"unboxed\" architecture where vehicle components are built in parallel sub-assembly lines as independent modules (e.g., front, rear, underbody with battery, and sides/roof). These modules are pre-assembled, \"decorated\" (e.g., painted or finished), and then integrated in a final \"mainline\" step. This reduces sequential dependencies, enabling:\nParallel processing to cut cycle times.\nReduced factory footprint by up to 40%.\nCost savings of 30-50% per vehicle through fewer parts, less material waste, and automation-friendly designs. The process integrates Tesla's giga-casting (large single-piece castings for underbody) and structural battery packs, allowing seats and wiring to be installed directly on modules before final joining.",
-      "actor": {
-        "description": "Creative Problem-Solver | Solution Architect | Advocate for Open-Minded Innovation | less is more | TESLA | SpaceX",
-        "name": "Peter R.",
-        "actorId": "urn:li:member:553170514",
-        "actorUrn": "urn:li:fsd_profile:ACoAACD4tlIBOkurCKgA6jDMMszug_LufFcSf1Y"
-      }
-    },
-    {
-      "createdAt": "2025-10-05T06:46:38.534Z",
-      "activity": {
-        "reactionTypeCounts": {},
-        "numComments": 3,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 0
-      },
-      "activityId": "urn:li:activity:7380493605678788608",
-      "shareUrn": "urn:li:ugcPost:7380493604932386816",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFkLz3mhsPu7w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFkLz3mhsPu7w/feedshare-shrink_480/B4DZmzH0c5H4Ac-/0/1759646796260?e=1767225600&v=beta&t=GkgTwPF6T0C6V7JWZ1wEYJcNTXC4ixAPYoA_oeA7knM"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFzgZ8XR0h6-w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFzgZ8XR0h6-w/feedshare-shrink_20/B4DZmzH0dIG8A0-/0/1759646796908?e=1767225600&v=beta&t=HnjcrBGIEaa72L-G0aSjZmvcq2GSmORb78PaBW1IqBI"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_batterytech-ev-catl-activity-7380493605678788608-k4gG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "If you understand the difference between market leaders and market followers.…..\n\n#BatteryTech #EV #CATL #ElectricalControls #BMS",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
-    },
-    {
-      "createdAt": "2025-10-02T06:02:29.674Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 2,
-            "type": "LIKE"
-          },
-          {
-            "count": 1,
-            "type": "APPRECIATION"
-          }
-        ],
-        "numComments": 2,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 3
-      },
-      "activityId": "urn:li:activity:7379395331957895168",
-      "shareUrn": "urn:li:share:7379395331144364032",
-      "content": {},
-      "shareUrl": "https://www.linkedin.com/posts/hzl_devops-kubernetes-baremetal-activity-7379395331957895168-HFHQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "Bare metal servers are indeed the best practice for many scenarios. However, people often opt for virtualized environments like vSphere, AKS, EKS, or GKE due to the comfort and familiarity these platforms offer. It's important to note, though, that this convenience comes with a higher cost. Cloud service providers such as Azure, AWS, and GCP capitalize on this preference, generating substantial profits from customers who value ease of use and stickiness over bare metal solutions.\n\n#BareMetal #VM #CloudComputing #K8S #AKS #EKS #GKE",
-      "actor": {
-        "description": "Fullstack Developer |DevOps | Site Reliability Engineer | FinOps on Cloud | Cloud Native & Microservices | Linux Enthusiast | App Developer | Hybird Cloud Architect",
-        "name": "Harvad Lee",
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczNzkzOTUzMzE5NTc4OTUxNjgtMTc1OTM4NDk0OTYzNQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczOTcyMzg5OTE1MTI2OTg4ODAtMTc2MzYzOTIwOTYwNQ==:20"
 }
