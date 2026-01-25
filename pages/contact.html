@@ -75,9 +75,6 @@
         <div class="eight columns">
           <!-- Contact Form -->
           <form
-            action="mailto:hongzhili01@gmail.com"
-            method="post"
-            enctype="text/plain"
             id="contactForm"
             name="contactForm"
           >
@@ -286,7 +283,7 @@
     <script src="../js/init.js"></script>
 
     <script>
-      function sendEmail() {
+      async function sendEmail() {
         const name = document.getElementById("contactName").value;
         const email = document.getElementById("contactEmail").value;
         const phone = document.getElementById("contactPhone").value;
@@ -297,26 +294,56 @@
         const message = document.getElementById("contactMessage").value;
 
         if (!name || !email || !message) {
+          document.getElementById("message-warning").innerHTML = "Please fill in all required fields.";
           document.getElementById("message-warning").style.display = "block";
           document.getElementById("message-success").style.display = "none";
           return;
         }
 
-        const emailBody = `Name: ${name}
-Email: ${email}
-Phone: ${phone || "Not provided"}
-Website: ${website || "Not provided"}
+        // Disable submit button during submission
+        const submitButton = document.querySelector(".submit");
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
 
-Message:
-${message}`;
+        try {
+          const response = await fetch('https://contact-form-manager.bluehawana.workers.dev/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              name,
+              email,
+              phone,
+              website,
+              subject,
+              message
+            }),
+          });
 
-        const emailSubject = encodeURIComponent(subject);
-        const emailBodyEncoded = encodeURIComponent(emailBody);
+          const result = await response.json();
 
-        window.location.href = `mailto:hongzhili01@gmail.com?subject=${emailSubject}&body=${emailBodyEncoded}`;
+          if (result.success) {
+            document.getElementById("message-warning").style.display = "none";
+            document.getElementById("message-success").innerHTML =
+              '<i class="fa fa-check"></i>Your message was sent successfully!<br /><i class="fa fa-clock-o"></i>I\'ll respond within 24-48 hours.';
+            document.getElementById("message-success").style.display = "block";
 
-        document.getElementById("message-warning").style.display = "none";
-        document.getElementById("message-success").style.display = "block";
+            // Clear the form
+            document.getElementById("contactForm").reset();
+          } else {
+            throw new Error(result.error || 'Submission failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          document.getElementById("message-success").style.display = "none";
+          document.getElementById("message-warning").innerHTML =
+            "Error sending your message. Please try again or email me directly at hongzhili01@gmail.com";
+          document.getElementById("message-warning").style.display = "block";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = "Submit";
+        }
       }
     </script>
   </body>
