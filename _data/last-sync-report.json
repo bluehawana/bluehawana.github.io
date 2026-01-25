@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2025-12-15T08:39:57.611Z",
+  "sync_timestamp": "2026-01-23T18:34:50.915Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 51,
+  "total_posts_in_system": 74,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2025-12-15T09:09:57.612Z",
+  "next_sync_recommended": "2026-01-23T19:04:50.915Z",
   "new_posts": [
     {
-      "title": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your...",
-      "link": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive too...",
+      "link": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": false,
       "engagement": {
-        "likes": 0,
+        "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2025-12-15T08:39:57.590Z"
+      "sync_date": "2026-01-23T18:34:50.894Z"
     }
   ]
 }
