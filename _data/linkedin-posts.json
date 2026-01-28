@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-23T18:34:50.912Z"
+    "last_sync": "2026-01-28T18:36:09.604Z"
   },
   "extraction": {
-    "date": "2026-01-23T18:34:50.912Z",
+    "date": "2026-01-28T18:36:09.604Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 74,
+    "total_posts_found": 75,
     "new_posts_this_sync": 1,
     "images_downloaded": 0
   },
@@ -1411,6 +1411,25 @@
       "image": "",
       "local_image": "",
       "extracted_at": "2026-01-23T18:34:50.894Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-23T13:24:16.868Z"
+    },
+    {
+      "id": "linkedin-1769625369588-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive too...",
+      "content": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive tool that lets you design and edit websites, dashboards, and interfaces in real time — either by typing prompts or by manually tweaking elements. Think of it as a live, hands‑on rethink of the design workflow: build something with a prompt, then refine it instantly with direct manipulation.\nWhy it feels different\nReal‑time iteration — no long handoffs between design and prototyping; you see changes as you make them.\nPrompt + polish — start with natural language, then fine‑tune visually; great for rapid exploration.\nNot a Figma clone — it’s an alternative mindset: more interactive, more experimental, more immediate.\nShort learning curve, big payoff — it takes a minute to get used to, but once you do it speeds up ideation and reduces friction.\nTry it\nGive www.pencil.dev a spin — play with a prompt, tweak the UI, and see how fast you can go from idea to a working interface. If you’re into fast iteration and new design vibes, this one’s worth your time. \n\nCheck out Tom Krcha's post on X to learn more about Pencil and its potential to transform UX/UI design: \nResource: https://lnkd.in/erc_A7XB\n\n#DesignTools #UXUI #PencilDev",
+      "link": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-01-28T18:36:09.587Z",
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 2,
