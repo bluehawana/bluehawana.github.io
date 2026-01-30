@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-01-28T18:36:09.608Z",
+  "sync_timestamp": "2026-01-30T18:40:24.615Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 75,
+  "total_posts_in_system": 76,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-01-28T19:06:09.608Z",
+  "next_sync_recommended": "2026-01-30T19:10:24.615Z",
   "new_posts": [
     {
-      "title": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive too...",
-      "link": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spo...",
+      "link": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
-        "likes": 2,
+        "likes": 1,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-01-28T18:36:09.587Z"
+      "sync_date": "2026-01-30T18:40:24.593Z"
     }
   ]
 }

@@ -1,6 +1,39 @@
 {
   "data": [
     {
+      "createdAt": "2026-01-30T15:59:27.552Z",
+      "activity": {
+        "reactionTypeCounts": [
+          {
+            "count": 1,
+            "type": "LIKE"
+          }
+        ],
+        "numComments": 0,
+        "numImpressions": null,
+        "numShares": 0,
+        "numLikes": 1
+      },
+      "activityId": "urn:li:activity:7423032106898948096",
+      "shareUrn": "urn:li:ugcPost:7423032106383151104",
+      "content": {
+        "article": {
+          "urn": "urn:li:linkedInArticle:7423028158183997440",
+          "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=E%2FrV9eKqFfML41JDve0cKQ%3D%3D",
+          "subtitle": "Harvad Li"
+        }
+      },
+      "shareUrl": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "commentary": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spotify. Great event, lots of energy. But afterwards, I noticed something that's been bothering me.\nAlmost every Swedish company I talk to: Microsoft stack, VS Code, GitHub Copilot. That's it.\nWhen I ask \"why not try Claude, Gemini, or other tools?\", the answer is always: \"data security concerns.\"\nBut here's the thing - most companies already pay for Microsoft and Azure, so they add Copilot for $20/month and feel safe because \"Microsoft will protect our data.\" Is that really security thinking? Or just going with what feels familiar?\nHere's What Nobody's Talking About :\nSome of the best coding models right now are Chinese: #Qwen-3.5-coder (Alibaba), #GLM-4.7 (Zhipu), #MiniMax 2.1 (Xiyu), #Kimi 2.5 (Moonshot). They're top-ranked on Hugging Face and NVIDIA platforms. In many coding tasks, they're genuinely better than Copilot. Significantly better.\nAnd it's not just Chinese models - Anthropic's Claude, Google's Gemini - nobody's even trying them.\nFrom my experience testing these tools extensively? #Copilot wouldn't even make my top 10. I'm not exaggerating.\nMy Suggestion :\nLook, if you're scared that Chinese AI models will send your data back to China(Maybe not) - fine, I understand that concern. But at least try other American AI giants like #Anthropic's #ClaudeCode, #GoogleGemini & #Antigravity, #AWS #Kiro, or even #OpenAI's #Codex directly instead of staying trapped within Copilot.\nUnless you have factory software locked into Microsoft, why not explore what's actually best for your team?\nMost of these models are easy to access: Ollama (local) or on cloud, OpenAI-compatible APIs, NVIDIA catalog, many with free tiers. Take your actual code, run tests, compare. Then decide based on performance, not on \"this is what other Swedish companies use.\"\nA Personal Note\nI'm from China, working in tech here in Sweden. I love it here. But sometimes there's this automatic assumption: Chinese technology = risky, American technology = safe. That's not how technology works.\nFunny timing though - with all the #Greenland drama lately, suddenly Chinese companies seem a bit more \"acceptable\" in Europe :) \nMaybe it takes geopolitical chaos to remind us that technological diversity isn't just nice to have - it's strategic.\nWhat worries me: what if the US restricts AI services due to geopolitics one day? Shouldn't we at least know what alternatives exist?\nThe \"Can't Live Without AI\" theme from yesterday's meetup is true. AI is part of our work now.\nBut let's make sure we're choosing the right tools, not just the comfortable ones.\nMaybe I'm overthinking this. Maybe I'm too sensitive about the China thing. But I genuinely think we're missing out on better tools because of assumptions we haven't questioned. What do you think? Read the article for more details.\n\n#Antigravity #Kiro #ClaudeCode #DevTools #CNCF #Sweden #CodingIDE #AIModels #Huggingface #Nvidia",
+      "actor": {
+        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
+        "name": "Harvad Li",
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
+      }
+    },
+    {
       "createdAt": "2026-01-23T13:24:16.868Z",
       "activity": {
         "reactionTypeCounts": [
@@ -121,7 +154,7 @@
           "urn": "urn:li:article:7013209544137227451",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1770368400&v=beta&t=U7Uyi5FHRORnvWpErYYiC3RuCXNuKUkqt64b9y7FN4g"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1770404400&v=beta&t=bpadLJB864KIUu7XP6FKf0Cq2Q14OMzq7m7ilicDXNg"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
@@ -430,7 +463,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7406050964580827136",
           "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=Xtnx9Iry8a2EWmlDuOzOwA%3D%3D",
+          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=p1RnzcWwc7wv32jh7xKkxA%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -549,7 +582,7 @@
           "urn": "urn:li:article:8059606101847453809",
           "subtitle": "adventofagents.com",
           "url": "https://adventofagents.com/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1770368400&v=beta&t=KJwRFcl0rJDmUZtt8tTO-YJFr-NxlOBdpdn6Z1rMb0Q"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEXrBqk9i91lg/articleshare-shrink_480/B56ZrcaJg3LMAo-/0/1765434711817?e=1770404400&v=beta&t=FPVViwqilGwycTUxfoMS6_KmWdrUKHEWA8l-CUR4-40"
         }
       },
       "shareUrl": "https://www.linkedin.com/posts/hzl_advent-of-agents-2025-activity-7401736693046820864-B11T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
@@ -581,7 +614,7 @@
         "article": {
           "urn": "urn:li:linkedInArticle:7401206068107784192",
           "title": "My VPS Got Suspended for SSH Attacks... Here's How I Fixed It (And Made It Industry-Leading)",
-          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=QpZ1P3gRnevrHTLHqErbXw%3D%3D",
+          "url": "https://www.linkedin.com/pulse/my-vps-got-suspended-ssh-attacks-heres-how-i-fixed-made-harvad-li-axrdf?trackingId=9LSI3rkFpzz9cnM4b2EwTQ%3D%3D",
           "subtitle": "Harvad Li"
         }
       },
@@ -648,41 +681,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
       }
-    },
-    {
-      "createdAt": "2025-11-20T11:46:49.631Z",
-      "activity": {
-        "reactionTypeCounts": [
-          {
-            "count": 3,
-            "type": "LIKE"
-          }
-        ],
-        "numComments": 0,
-        "numImpressions": null,
-        "numShares": 0,
-        "numLikes": 3
-      },
-      "activityId": "urn:li:activity:7397238991512698880",
-      "shareUrn": "urn:li:share:7397238990409555968",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFIwEgtIWO9_Q",
-            "accessibilityText": "diagram",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFIwEgtIWO9_Q/feedshare-shrink_800/B4DZqhFqXjHwAk-/0/1763639208168?e=1771459200&v=beta&t=Y_LxAGwc50IhST7Btzdt6kMLvSqg43Mg48MgcG1IMDs"
-          }
-        ]
-      },
-      "shareUrl": "https://www.linkedin.com/posts/hzl_aws-azure-gcp-activity-7397238991512698880-CEZp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "commentary": "In the world of technology, things are much more fragile than you might imagine. The 99.99% up time is just a theoretical value; don't take it too seriously.\nhttps://lnkd.in/dRMSDU3X\n\n#AWS #Azure #GCP #Cloudflare",
-      "actor": {
-        "description": "Fullstack Developer(.Net/Java/TS/JS/Python/Go...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps",
-        "name": "Harvad Li",
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI"
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczOTcyMzg5OTE1MTI2OTg4ODAtMTc2MzYzOTIwOTYwNQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5OjczOTczODU3NTc1MzcwNjI5MTMtMTc2MzY3NDIwMTM1MA==:20"
 }
