@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-01-30T18:40:24.611Z"
+    "last_sync": "2026-02-02T08:53:39.293Z"
   },
   "extraction": {
-    "date": "2026-01-30T18:40:24.611Z",
+    "date": "2026-02-02T08:53:39.293Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 76,
+    "total_posts_found": 77,
     "new_posts_this_sync": 1,
     "images_downloaded": 0
   },
@@ -1449,6 +1449,25 @@
       "image": "",
       "local_image": "",
       "extracted_at": "2026-01-30T18:40:24.593Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-01-30T15:59:27.552Z"
+    },
+    {
+      "id": "linkedin-1770022419273-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spo...",
+      "content": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spotify. Great event, lots of energy. But afterwards, I noticed something that's been bothering me.\nAlmost every Swedish company I talk to: Microsoft stack, VS Code, GitHub Copilot. That's it.\nWhen I ask \"why not try Claude, Gemini, or other tools?\", the answer is always: \"data security concerns.\"\nBut here's the thing - most companies already pay for Microsoft and Azure, so they add Copilot for $20/month and feel safe because \"Microsoft will protect our data.\" Is that really security thinking? Or just going with what feels familiar?\nHere's What Nobody's Talking About :\nSome of the best coding models right now are Chinese: #Qwen-3.5-coder (Alibaba), #GLM-4.7 (Zhipu), #MiniMax 2.1 (Xiyu), #Kimi 2.5 (Moonshot). They're top-ranked on Hugging Face and NVIDIA platforms. In many coding tasks, they're genuinely better than Copilot. Significantly better.\nAnd it's not just Chinese models - Anthropic's Claude, Google's Gemini - nobody's even trying them.\nFrom my experience testing these tools extensively? #Copilot wouldn't even make my top 10. I'm not exaggerating.\nMy Suggestion :\nLook, if you're scared that Chinese AI models will send your data back to China(Maybe not) - fine, I understand that concern. But at least try other American AI giants like #Anthropic's #ClaudeCode, #GoogleGemini & #Antigravity, #AWS #Kiro, or even #OpenAI's #Codex directly instead of staying trapped within Copilot.\nUnless you have factory software locked into Microsoft, why not explore what's actually best for your team?\nMost of these models are easy to access: Ollama (local) or on cloud, OpenAI-compatible APIs, NVIDIA catalog, many with free tiers. Take your actual code, run tests, compare. Then decide based on performance, not on \"this is what other Swedish companies use.\"\nA Personal Note\nI'm from China, working in tech here in Sweden. I love it here. But sometimes there's this automatic assumption: Chinese technology = risky, American technology = safe. That's not how technology works.\nFunny timing though - with all the #Greenland drama lately, suddenly Chinese companies seem a bit more \"acceptable\" in Europe :) \nMaybe it takes geopolitical chaos to remind us that technological diversity isn't just nice to have - it's strategic.\nWhat worries me: what if the US restricts AI services due to geopolitics one day? Shouldn't we at least know what alternatives exist?\nThe \"Can't Live Without AI\" theme from yesterday's meetup is true. AI is part of our work now.\nBut let's make sure we're choosing the right tools, not just the comfortable ones.\nMaybe I'm overthinking this. Maybe I'm too sensitive about the China thing. But I genuinely think we're missing out on better tools because of assumptions we haven't questioned. What do you think? Read the article for more details.\n\n#Antigravity #Kiro #ClaudeCode #DevTools #CNCF #Sweden #CodingIDE #AIModels #Huggingface #Nvidia",
+      "link": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-02-02T08:53:39.272Z",
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 1,
