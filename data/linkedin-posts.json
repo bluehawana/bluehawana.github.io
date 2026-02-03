@@ -1012,5 +1012,18 @@
       "comments": 2,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1770108556341-0",
+    "content": "New Year, New Project: No.5 — Claude Code Proxy with NVIDIA Models\n\nWhat if cost wasn't the barrier to exploring the world's most advanced AI models?\nThat's what inspired me to launch Project No.5. After completing projects 1-4, I wanted to take on a bigger challenge: making high-end #AI accessible to anyone curious enough to build.\nMost developers never get to test top-tier models because they're too \"expensive\". Comparing them? Even harder. So people stick with familiar tools like #Copilot, missing out on models that could be faster, sharper, or better suited for specific tasks.\nThe game needs to be changed now.\nIntroducing the #NVIDIANIMProxySwitch —a tool that lets you switch between 182 NVIDIA NIM models in under a second. No restarts, no config edits, no hassle.\nHere's what it offers:\n- Instant model switching (under 1 second)\n- 182 models ready to explore\n- Web UI and REST API\n- Zero downtime\n- Seamless integration with Claude Code\n- Fully open source\nBuilt entirely with Qwen Coder and Kiro, this project is AI helping build AI infrastructure.\nAnd it's free to use with NVIDIA's NIM API. No more choosing between your budget and your curiosity.\nWant to try it? Drop a comment or DM me. I'm always excited to see what people create when limits disappear.\nFull write-up below: applying API, architecture, testing, setup, and how to get started.\nProject No.5 is just the beginning. It's still early in the year—plenty more to build.\n\n#AI #MachineLearning #NVIDIA #OpenSource #Python #DeveloperTools #NewYearNewProject",
+    "url": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-02-02T17:16:41.326Z",
+    "engagement": {
+      "likes": 7,
+      "comments": 2,
+      "shares": 0
+    }
   }
 ]
