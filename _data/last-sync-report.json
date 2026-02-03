@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-02T18:41:37.997Z",
+  "sync_timestamp": "2026-02-03T08:49:16.365Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 78,
+  "total_posts_in_system": 79,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-02T19:11:37.997Z",
+  "next_sync_recommended": "2026-02-03T09:19:16.365Z",
   "new_posts": [
     {
       "title": "New Year, New Project: No.5 — Claude Code Proxy with NVIDIA Models\n\nWhat if cost wasn't the barrier ...",
-      "link": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "link": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": false,
       "engagement": {
-        "likes": 3,
+        "likes": 7,
         "comments": 2,
         "shares": 0
       },
-      "sync_date": "2026-02-02T18:41:37.973Z"
+      "sync_date": "2026-02-03T08:49:16.340Z"
     }
   ]
 }
