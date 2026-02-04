@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-03T08:49:16.365Z",
+  "sync_timestamp": "2026-02-04T08:52:45.551Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 79,
+  "total_posts_in_system": 80,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-03T09:19:16.365Z",
+  "next_sync_recommended": "2026-02-04T09:22:45.551Z",
   "new_posts": [
     {
-      "title": "New Year, New Project: No.5 — Claude Code Proxy with NVIDIA Models\n\nWhat if cost wasn't the barrier ...",
-      "link": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "title": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would'v...",
+      "link": "https://www.linkedin.com/posts/hzl_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-0O8g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": false,
       "engagement": {
-        "likes": 7,
-        "comments": 2,
+        "likes": 0,
+        "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-02-03T08:49:16.340Z"
+      "sync_date": "2026-02-04T08:52:45.527Z"
     }
   ]
 }
