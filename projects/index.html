@@ -2,467 +2,342 @@
 <html class="no-js" lang="en">
 <head>
    <meta charset="utf-8">
-   <title>Projects - Hongzhi (Harvad) Li</title>
-   <meta name="description" content="Software projects and applications by Hongzhi (Harvad) Li - Full Stack Developer">
+   <title>Projects - Hongzhi (Harvad) Li | Technical Portfolio</title>
+   <meta name="description" content="Personal projects and technical experiments by Hongzhi (Harvad) Li - Senior Full Stack Developer">
    <meta name="author" content="Hongzhi (Harvad) Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   
+
    <!-- CSS -->
    <link rel="stylesheet" href="../css/default.css">
    <link rel="stylesheet" href="../css/layout.css?v=2025071903">
    <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/modern-portfolio.css">
    <link rel="shortcut icon" href="../favicon.png">
-   
-   <!-- Minimal Professional Styles -->
-   <style>
-      :root {
-         --bg-primary: #000000;
-         --bg-secondary: #111111;
-         --bg-tertiary: #1a1a1a;
-         --text-primary: #ffffff;
-         --text-secondary: #a1a1a1;
-         --text-muted: #666666;
-         --border-primary: #333333;
-         --border-secondary: #222222;
-         --accent: #ffffff;
-      }
-
-      body {
-         background: var(--bg-primary);
-         color: var(--text-primary);
-         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-         line-height: 1.6;
-         margin: 0;
-         padding: 0;
-      }
-
-      .hero-section {
-         background: var(--bg-primary);
-         padding: 80px 0 60px;
-         border-bottom: 1px solid var(--border-primary);
-      }
-
-      .hero-title {
-         font-size: 48px;
-         font-weight: 600;
-         color: var(--text-primary);
-         margin: 0 0 16px 0;
-         text-align: center;
-         letter-spacing: -0.02em;
-      }
-
-      .hero-subtitle {
-         font-size: 20px;
-         color: var(--text-secondary);
-         text-align: center;
-         margin: 0 0 40px 0;
-         font-weight: 400;
-      }
-
-      .projects-container {
-         max-width: 1200px;
-         margin: 0 auto;
-         padding: 60px 24px;
-      }
-
-      .projects-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-         gap: 32px;
-         margin-bottom: 60px;
-      }
-
-      .project-card {
-         background: var(--bg-secondary);
-         border: 1px solid var(--border-primary);
-         border-radius: 8px;
-         padding: 32px;
-         transition: all 0.2s ease;
-         cursor: pointer;
-      }
-
-      .project-card:hover {
-         border-color: var(--text-secondary);
-         background: var(--bg-tertiary);
-      }
-
-      .project-header {
-         display: flex;
-         align-items: flex-start;
-         margin-bottom: 20px;
-      }
-
-      .project-icon {
-         display: none; /* Remove childish emoji icons */
-      }
-
-      .project-info {
-         flex: 1;
-      }
-
-      .project-title {
-         font-size: 20px;
-         font-weight: 600;
-         color: var(--text-primary);
-         margin: 0 0 8px 0;
-         letter-spacing: -0.01em;
-      }
-
-      .project-tech {
-         font-size: 14px;
-         color: var(--text-muted);
-         margin: 0 0 8px 0;
-      }
-
-      .project-badges {
-         display: flex;
-         gap: 8px;
-         flex-wrap: wrap;
-      }
-
-      .badge {
-         font-size: 11px;
-         padding: 4px 8px;
-         border-radius: 4px;
-         background: var(--bg-tertiary);
-         color: var(--text-secondary);
-         border: 1px solid var(--border-secondary);
-         text-transform: uppercase;
-         letter-spacing: 0.5px;
-         font-weight: 500;
-      }
-
-      .badge.success {
-         background: rgba(34, 197, 94, 0.1);
-         color: #22c55e;
-         border-color: rgba(34, 197, 94, 0.2);
-      }
-
-      .badge.info {
-         background: rgba(59, 130, 246, 0.1);
-         color: #3b82f6;
-         border-color: rgba(59, 130, 246, 0.2);
-      }
-
-      .project-description {
-         color: var(--text-secondary);
-         line-height: 1.6;
-         margin: 20px 0;
-         font-size: 15px;
-      }
-
-      .project-actions {
-         display: flex;
-         gap: 12px;
-         margin-top: 24px;
-         flex-wrap: wrap;
-      }
-
-      .btn {
-         padding: 8px 16px;
-         border-radius: 6px;
-         font-size: 14px;
-         font-weight: 500;
-         text-decoration: none;
-         transition: all 0.2s ease;
-         border: 1px solid var(--border-primary);
-         background: transparent;
-         color: var(--text-primary);
-         cursor: pointer;
-         display: inline-block;
-      }
-
-      .btn:hover {
-         background: var(--text-primary);
-         color: var(--bg-primary);
-         border-color: var(--text-primary);
-      }
-
-      .btn.secondary {
-         color: var(--text-secondary);
-         border-color: var(--border-secondary);
-      }
-
-      .btn.secondary:hover {
-         background: var(--text-secondary);
-         color: var(--bg-primary);
-         border-color: var(--text-secondary);
-      }
-
-      .stats-section {
-         background: var(--bg-secondary);
-         border-top: 1px solid var(--border-primary);
-         border-bottom: 1px solid var(--border-primary);
-         padding: 60px 0;
-      }
-
-      .stats-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-         gap: 40px;
-         max-width: 800px;
-         margin: 0 auto;
-         text-align: center;
-      }
-
-      .stat-item {
-         padding: 0 20px;
-      }
-
-      .stat-number {
-         font-size: 36px;
-         font-weight: 600;
-         color: var(--text-primary);
-         display: block;
-         margin-bottom: 8px;
-      }
-
-      .stat-label {
-         color: var(--text-secondary);
-         font-size: 14px;
-         font-weight: 500;
-      }
-
-      .section-title {
-         font-size: 24px;
-         font-weight: 600;
-         color: var(--text-primary);
-         margin: 0 0 32px 0;
-         text-align: center;
-      }
-
-      @media screen and (max-width: 768px) {
-         .hero-title {
-            font-size: 36px;
-         }
-         
-         .projects-grid {
-            grid-template-columns: 1fr;
-            gap: 24px;
-         }
-         
-         .project-card {
-            padding: 24px;
-         }
-         
-         .projects-container {
-            padding: 40px 16px;
-         }
-         
-         .stats-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
-         }
-      }
-   </style>
 </head>
 <body>
-   <!-- Header -->
-   <header id="page-header">
-      <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+   <!-- Animated Background Gradient -->
+   <div class="gradient-bg"></div>
 
-         <ul id="nav" class="nav">
+   <!-- Modern Navigation -->
+   <nav class="nav-modern">
+      <div class="nav-container">
+         <a href="../index.html" class="nav-logo">
+            <div class="nav-logo-icon">HL</div>
+            Harvad Li
+         </a>
+         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/blog.html">Writing</a></li>
             <li><a href="../pages/resume.html">Resume</a></li>
             <li class="current"><a href="index.html">Projects</a></li>
-            <li><a href="../pages/services.html">Services</a></li>
             <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/contact.html">Connect</a></li>
          </ul>
-      </nav>
-   </header>
+      </div>
+   </nav>
 
    <!-- Hero Section -->
    <section class="hero-section">
-      <div class="row">
-         <div class="twelve columns">
-            <h1 class="hero-title">Projects</h1>
-            <p class="hero-subtitle">A collection of applications and tools I've built</p>
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Technical Portfolio</div>
+            <h1 class="section-title">My Projects</h1>
+            <p class="section-subtitle">A collection of personal projects and technical experiments</p>
          </div>
       </div>
    </section>
 
    <!-- Projects Section -->
-   <section class="projects-container">
-      <div class="projects-grid">
-
-         <!-- Android Auto Car Player Project -->
-         <div class="project-card" onclick="window.open('android-auto-player.html', '_blank')">
-            <div class="project-header">
-               <div class="project-info">
-                  <h3 class="project-title">Android Auto Car Player</h3>
-                  <div class="project-tech">Android Auto • Firebase • Automotive UI</div>
-                  <div class="project-badges">
-                     <span class="badge success">Tests Passed</span>
-                     <span class="badge info">Demo Available</span>
+   <section class="section">
+      <div class="container">
+         <div class="projects-grid">
+            <!-- JobHunter Project -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">JobHunter AI System</h3>
+                  <p class="project-description">
+                     Advanced job hunting automation system with intelligent resume customization,
+                     application tracking, and email integration. Features automated job discovery and dynamic CV generation.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Python</span>
+                     <span class="project-tech-tag">TypeScript</span>
+                     <span class="project-tech-tag">Gmail API</span>
+                     <span class="project-tech-tag">OpenAI</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="../pages/jobhunter_monitoring.html" class="btn btn-primary">System Dashboard</a>
+                     <a href="https://jobs.bluehawana.com/" target="_blank" class="btn btn-secondary">Live Application</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Professional Android Auto car player application with Firebase testing and validation. Demonstrates automotive UI/UX expertise, Android development capabilities, and in-vehicle entertainment system integration.
-            </div>
-            <div class="project-actions">
-               <a href="../autoplay/index.html" target="_blank" class="btn">View Demo</a>
-               <a href="android-auto-player.html" class="btn secondary">Details</a>
-               <a href="https://appdistribution.firebase.google.com/testerapps/1:1055425659261:android:5ee98a20ffff8d755c8c14/releases/0iusjipqajaj8?utm_source=firebase-console" target="_blank" class="btn secondary">Firebase</a>
-            </div>
-         </div>
 
-         <!-- EPUB Reader Android Project -->
-         <div class="project-card" onclick="window.open('epub-reader-android.html', '_blank')">
-            <div class="project-header">
-               <div class="project-info">
-                  <h3 class="project-title">EPUB Reader Android</h3>
-                  <div class="project-tech">Android SDK • Firebase • EPUB Parser</div>
-                  <div class="project-badges">
-                     <span class="badge success">Tests Passed</span>
-                     <span class="badge info">Demo Available</span>
+            <!-- Weather App Project -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">WeatherAnywhere CLI</h3>
+                  <p class="project-description">
+                     Creative weather application with ASCII terminal interface and AI-generated city landmarks.
+                     Features real-time weather data and unique SVG illustrations.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Node.js</span>
+                     <span class="project-tech-tag">OpenAI</span>
+                     <span class="project-tech-tag">Weather API</span>
+                     <span class="project-tech-tag">Terminal UI</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://weather.bluehawana.com/" target="_blank" class="btn btn-primary">Launch Terminal</a>
+                     <a href="../pages/weatheranywhere_app.html" class="btn btn-secondary">View Interface</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Advanced EPUB reader Android application featuring professional e-book parsing, custom reading interface, and Firebase testing pipeline. Demonstrates expertise in Android SDK development and mobile architecture.
-            </div>
-            <div class="project-actions">
-               <a href="../book/index.html" target="_blank" class="btn">View Demo</a>
-               <a href="epub-reader-android.html" class="btn secondary">Details</a>
-               <a href="https://console.firebase.google.com/project/bluehawana-android-auto/appdistribution/app/android:com.audiobookplayer/releases" target="_blank" class="btn secondary">Firebase</a>
-            </div>
-         </div>
 
-         <!-- JobHunter Project -->
-         <div class="project-card" onclick="window.location.href='/jobs'">
-            <div class="project-header">
-               <div class="project-info">
-                  <h3 class="project-title">JobHunter AI</h3>
-                  <div class="project-tech">Python • TypeScript • Gmail API • OpenAI</div>
-                  <div class="project-badges">
-                     <span class="badge success">System Operational</span>
-                     <span class="badge info">Live Monitoring</span>
+            <!-- Android Auto Projects -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">Android Auto Applications</h3>
+                  <p class="project-description">
+                     Collection of native Android Auto applications including IPTV player and EPUB reader.
+                     Tested on premium automotive systems with voice command integration and cloud storage.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Kotlin</span>
+                     <span class="project-tech-tag">Android Auto</span>
+                     <span class="project-tech-tag">Firebase</span>
+                     <span class="project-tech-tag">Cloud Storage</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="../autoplay/index.html" target="_blank" class="btn btn-primary">CarPlayer Demo</a>
+                     <a href="../book/index.html" target="_blank" class="btn btn-secondary">EPUB Reader</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Advanced AI-powered job hunting automation system with intelligent resume customization, application tracking, and email integration. Features automated job discovery, dynamic CV generation, and comprehensive analytics dashboard.
-            </div>
-            <div class="project-actions">
-               <a href="../pages/jobhunter_monitoring.html" class="btn">Monitoring Demo</a>
-               <a href="../pages/jobhunter_dashboard.html" class="btn secondary">View Demo</a>
-               <a href="https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi" target="_blank" class="btn secondary">Source Code</a>
-               <a href="https://jobs.bluehawana.com/" target="_blank" class="btn secondary">Live App</a>
-            </div>
-         </div>
 
-         <!-- Taxi Carpooling Project -->
-         <div class="project-card" onclick="window.open('taxi_carpooling.html', '_blank')">
-            <div class="project-header">
-               <div class="project-info">
+            <!-- Taxi Carpooling Project -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> IN PROGRESS
+                  </div>
                   <h3 class="project-title">Gothenburg Taxi Pooling</h3>
-                  <div class="project-tech">Spring Boot • React Native • PostgreSQL • ML</div>
-                  <div class="project-badges">
-                     <span class="badge info">Full Stack</span>
+                  <p class="project-description">
+                     Intelligent carpooling platform with real-time geolocation tracking and automated passenger matching.
+                     Cross-platform mobile application with comprehensive backend microservices.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Spring Boot</span>
+                     <span class="project-tech-tag">React Native</span>
+                     <span class="project-tech-tag">PostgreSQL</span>
+                     <span class="project-tech-tag">ML Algorithms</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="btn btn-secondary">Source Code</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Neural network-powered carpooling platform with real-time geolocation tracking, automated passenger matching algorithms, and integrated payment processing. Cross-platform mobile deployment with comprehensive backend microservices architecture.
-            </div>
-            <div class="project-actions">
-               <a href="https://github.com/bluehawana/GothenburgTaxiPooling-Java-ReacNative" target="_blank" class="btn">Source Code</a>
-               <a href="taxi_carpooling.html" class="btn secondary">Details</a>
-            </div>
-         </div>
 
-         <!-- Personal Website -->
-         <div class="project-card" onclick="window.open('https://www.bluehawana.com', '_blank')">
-            <div class="project-header">
-               <div class="project-info">
-                  <h3 class="project-title">Personal Website</h3>
-                  <div class="project-tech">LinkedIn API • GitHub API • Automation</div>
-                  <div class="project-badges">
-                     <span class="badge success">Live</span>
-                     <span class="badge info">Auto-sync</span>
+            <!-- Portfolio Website -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">Dynamic Portfolio System</h3>
+                  <p class="project-description">
+                     This very website! Dynamic portfolio platform with LinkedIn API integration and automated content synchronization.
+                     Features real-time data feeds and modern glassmorphism-inspired design.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">JavaScript</span>
+                     <span class="project-tech-tag">LinkedIn API</span>
+                     <span class="project-tech-tag">GitHub API</span>
+                     <span class="project-tech-tag">Automation</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="btn btn-primary">Source Code</a>
+                     <a href="../pages/automation_dashboard.html" class="btn btn-secondary">Sync Status</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Dynamic portfolio platform with LinkedIn API integration, automated content synchronization, and intelligent post discovery algorithms. Features real-time data feeds and automated updates every 30 minutes.
-            </div>
-            <div class="project-actions">
-               <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="btn">Source Code</a>
-               <a href="../pages/automation_dashboard.html" class="btn secondary">Sync Status</a>
-            </div>
-         </div>
 
-         <!-- Smart Mart E-commerce -->
-         <div class="project-card" onclick="window.open('https://smrtmart.com', '_blank')">
-            <div class="project-header">
-               <div class="project-info">
-                  <h3 class="project-title">SmrtMart E-commerce</h3>
-                  <div class="project-tech">Spring Boot • React • PostgreSQL • MongoDB</div>
-                  <div class="project-badges">
-                     <span class="badge success">Live</span>
-                     <span class="badge info">Microservices</span>
+            <!-- Algorithmic Art Generator -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> EXPERIMENTAL
+                  </div>
+                  <h3 class="project-title">Algorithmic Art Generator</h3>
+                  <p class="project-description">
+                     Creative coding project that generates unique algorithmic artwork using mathematical formulas
+                     and generative design principles. Outputs SVG and PNG formats.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Python</span>
+                     <span class="project-tech-tag">Processing</span>
+                     <span class="project-tech-tag">Generative Art</span>
+                     <span class="project-tech-tag">Mathematics</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="#" class="btn btn-secondary">View Gallery</a>
+                     <a href="https://github.com/bluehawana/algorithmic-art-generator" target="_blank" class="btn btn-secondary">Source Code</a>
                   </div>
                </div>
             </div>
-            <div class="project-description">
-               Full-stack e-commerce platform with microservices architecture, comprehensive order management, inventory tracking, payment processing, and customer management dashboard. Enterprise-grade platform with automated fulfillment.
-            </div>
-            <div class="project-actions">
-               <a href="https://smrtmart.com/" target="_blank" class="btn">Launch Site</a>
-               <a href="../pages/smrtmart_demo.html" class="btn secondary">Demo</a>
-               <a href="https://github.com/bluehawana/smrtmart" target="_blank" class="btn secondary">Source Code</a>
-            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Technical Exploration -->
+   <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Experimental Work</div>
+            <h2 class="section-title">Beyond Traditional Projects</h2>
+            <p class="section-subtitle">Exploring the intersection of technology and creativity</p>
          </div>
 
+         <div class="projects-grid">
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> RESEARCH
+                  </div>
+                  <h3 class="project-title">Cross-Cultural Tech Patterns</h3>
+                  <p class="project-description">
+                     Research project exploring how software development practices differ between Eastern and Western tech ecosystems.
+                     Data collection from open source contributions and developer surveys.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Data Analysis</span>
+                     <span class="project-tech-tag">Research</span>
+                     <span class="project-tech-tag">Cross-Cultural</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="#" class="btn btn-secondary">View Findings</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> EDUCATIONAL
+                  </div>
+                  <h3 class="project-title">Tech Career Transformation Guide</h3>
+                  <p class="project-description">
+                     Open source resource for professionals looking to transition into technology from other fields.
+                     Based on my personal journey and interviews with other career changers.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Documentation</span>
+                     <span class="project-tech-tag">Career Guidance</span>
+                     <span class="project-tech-tag">Open Source</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/career-transformation-guide" target="_blank" class="btn btn-primary">GitHub Repo</a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </section>
 
    <!-- Stats Section -->
-   <section class="stats-section">
-      <div class="row">
-         <div class="twelve columns">
-            <h2 class="section-title">Development Statistics</h2>
-            <div class="stats-grid">
-               <div class="stat-item">
-                  <span class="stat-number" id="total-projects">12+</span>
-                  <span class="stat-label">Projects</span>
-               </div>
-               <div class="stat-item">
-                  <span class="stat-number" id="total-repos">25+</span>
-                  <span class="stat-label">Repositories</span>
-               </div>
-               <div class="stat-item">
-                  <span class="stat-number" id="total-commits">500+</span>
-                  <span class="stat-label">Commits</span>
-               </div>
-               <div class="stat-item">
-                  <span class="stat-number" id="total-languages">8+</span>
-                  <span class="stat-label">Languages</span>
-               </div>
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Development Metrics</div>
+            <h2 class="section-title">By The Numbers</h2>
+            <p class="section-subtitle">My coding journey in statistics</p>
+         </div>
+
+         <div class="stats-grid">
+            <div class="stat-item">
+               <span class="stat-value" id="total-projects">50+</span>
+               <span class="stat-label">Personal Projects</span>
             </div>
+            <div class="stat-item">
+               <span class="stat-value" id="total-repos">75+</span>
+               <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat-item">
+               <span class="stat-value" id="total-commits">2000+</span>
+               <span class="stat-label">Commits</span>
+            </div>
+            <div class="stat-item">
+               <span class="stat-value" id="total-languages">15+</span>
+               <span class="stat-label">Technologies</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Call to Action -->
+   <section class="section">
+      <div class="container">
+         <div class="text-center">
+            <h2>Want to Explore Further?</h2>
+            <p class="section-subtitle">Check out my GitHub for additional projects and contributions</p>
+            <a href="https://github.com/bluehawana" target="_blank" class="btn btn-primary">Visit GitHub Profile</a>
          </div>
       </div>
    </section>
 
    <!-- Footer -->
-   <footer style="background: var(--bg-secondary); border-top: 1px solid var(--border-primary); padding: 40px 0;">
-      <div class="row">
-         <div class="twelve columns">
-            <ul class="social-links" style="text-align: center; margin-bottom: 20px;">
-               <li><a href="https://www.linkedin.com/in/hzl" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/bluehawana" target="_blank"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto:hongzhili01@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            </ul>
+   <footer class="footer-modern">
+      <div class="footer-content">
+         <div class="footer-brand">
+            <a href="../index.html" class="nav-logo">
+               <div class="nav-logo-icon">HL</div>
+               Hongzhi (Harvad) Li
+            </a>
+            <p>Senior Full Stack Developer focused on solving complex technical challenges.</p>
+         </div>
 
-            <ul class="copyright" style="text-align: center;">
-               <li style="color: var(--text-primary);">&copy; 2025 Hongzhi (Harvad) Li</li>
-               <li style="color: var(--text-secondary);">Full Stack Developer</li>
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Navigation</h3>
+            <ul class="footer-links">
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="../pages/blog.html">Writing</a></li>
+               <li><a href="../pages/resume.html">Resume</a></li>
+               <li><a href="index.html">Projects</a></li>
             </ul>
+         </div>
+
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Pages</h3>
+            <ul class="footer-links">
+               <li><a href="../pages/about.html">About</a></li>
+               <li><a href="../pages/contact.html">Connect</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Connect</h3>
+            <ul class="footer-links">
+               <li><a href="https://github.com/bluehawana" target="_blank">GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank">LinkedIn</a></li>
+               <li><a href="https://twitter.com/bluehawana" target="_blank">Twitter</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer-bottom">
+         <div class="footer-copyright">
+            &copy; 2025 Hongzhi (Harvad) Li. All technical content reserved.
+         </div>
+         <div class="footer-note">
+            Personal portfolio showcasing technical expertise and career journey.
          </div>
       </div>
    </footer>
@@ -477,10 +352,10 @@
    document.addEventListener('DOMContentLoaded', function() {
       // Update statistics
       const stats = {
-         'total-projects': 12,
-         'total-repos': 25,
-         'total-commits': 500,
-         'total-languages': 8
+         'total-projects': 50,
+         'total-repos': 75,
+         'total-commits': 2000,
+         'total-languages': 15
       };
 
       Object.keys(stats).forEach(id => {

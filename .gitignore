@@ -1,6 +1,7 @@
 # LinkedIn API Configuration
 config.js
 linkedin-config.js
+linkedin_config.js
 
 # Environment variables
 .env
