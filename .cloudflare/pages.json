@@ -1,0 +1,7 @@
+{
+  "pages": {
+    "entry_point": ".",
+    "output_dir": ".",
+    "build_command": "echo 'Static site - no build required'"
+  }
+}
