@@ -1,0 +1,13 @@
+{
+  "name": "bluehawana-portfolio",
+  "build": {
+    "command": "echo 'No build required for static site'",
+    "publish": "."
+  },
+  "routes": [
+    {
+      "route": "/*",
+      "zone_id": "2a35af424f8734e497a5d707344d79d5"
+    }
+  ]
+}
