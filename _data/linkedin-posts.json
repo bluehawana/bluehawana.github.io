@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-04T08:52:45.547Z"
+    "last_sync": "2026-02-04T18:49:31.251Z"
   },
   "extraction": {
-    "date": "2026-02-04T08:52:45.547Z",
+    "date": "2026-02-04T18:49:31.251Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 80,
-    "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "total_posts_found": 82,
+    "new_posts_this_sync": 2,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -1525,6 +1525,44 @@
       "image": "",
       "local_image": "",
       "extracted_at": "2026-02-04T08:52:45.527Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-03T19:17:49.496Z"
+    },
+    {
+      "id": "linkedin-1770230971100-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user ...",
+      "content": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user experience matters. So I did what needed to be done: tested all 182 models on NVIDIA's NIM platform.\n\nThe results? ✅ 113 out of 182 models (62%) work perfectly with chat and conversation ❌ 69 require paid tier or special access\n\nThis means users of my free trial at models.bluehawana.com can now confidently choose from 113 verified working models - no more guessing which ones will fail.\n\nWhy this matters:\n\nTransparency builds trust\nUsers save time (no trial and error)\nClear documentation = better UX\nEven side projects deserve quality assurance\nThe full compatibility report is now in the GitHub repo, so anyone forking or starring the project knows exactly what works.\n\nBecause good testing isn't about perfection - it's about knowing your product inside out and being honest about it.\n\n\n#AI #OpenSource #QualityAssurance #NVIDIA #DeveloperTools #BuildInPublic",
+      "link": "https://www.linkedin.com/posts/hzl_ai-opensource-qualityassurance-activity-7424785469382590464-4dEq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQGiGeYYwlYF1A/feedshare-shrink_160/B4DZwojCT0JQAw-/0/1770206800334?e=1772064000&v=beta&t=nuFqS7AAjvghFUNULmEE8HtPzbZHAey3k-H3Se4JKqk",
+      "local_image": "/images/linkedin/linkedin-1770230971100-0-e2762633397f0beba6acd07c90970a16.jpg",
+      "extracted_at": "2026-02-04T18:49:31.099Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-04T12:06:41.744Z"
+    },
+    {
+      "id": "linkedin-1770230971234-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would'v...",
+      "content": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would've ditched Xcode by now and switched to VS Code or whatever's IDE with hot AI features. Progress is progress, even if it's slow.\n\n\n#Xcode #Swift #SwiftUI #iOS #Apple",
+      "link": "https://www.linkedin.com/posts/hzl_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-0O8g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-02-04T18:49:31.099Z",
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 0,
