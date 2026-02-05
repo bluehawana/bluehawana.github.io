@@ -1038,5 +1038,31 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1770230971100-0",
+    "content": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user experience matters. So I did what needed to be done: tested all 182 models on NVIDIA's NIM platform.\n\nThe results? ✅ 113 out of 182 models (62%) work perfectly with chat and conversation ❌ 69 require paid tier or special access\n\nThis means users of my free trial at models.bluehawana.com can now confidently choose from 113 verified working models - no more guessing which ones will fail.\n\nWhy this matters:\n\nTransparency builds trust\nUsers save time (no trial and error)\nClear documentation = better UX\nEven side projects deserve quality assurance\nThe full compatibility report is now in the GitHub repo, so anyone forking or starring the project knows exactly what works.\n\nBecause good testing isn't about perfection - it's about knowing your product inside out and being honest about it.\n\n\n#AI #OpenSource #QualityAssurance #NVIDIA #DeveloperTools #BuildInPublic",
+    "url": "https://www.linkedin.com/posts/hzl_ai-opensource-qualityassurance-activity-7424785469382590464-4dEq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1770230971100-0-e2762633397f0beba6acd07c90970a16.jpg",
+    "tags": [],
+    "publishedAt": "2026-02-04T12:06:41.744Z",
+    "engagement": {
+      "likes": 1,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1770230971234-1",
+    "content": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would've ditched Xcode by now and switched to VS Code or whatever's IDE with hot AI features. Progress is progress, even if it's slow.\n\n\n#Xcode #Swift #SwiftUI #iOS #Apple",
+    "url": "https://www.linkedin.com/posts/hzl_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-0O8g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-02-03T19:17:49.496Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]
