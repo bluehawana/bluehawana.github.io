@@ -1,534 +1,114 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
    <meta charset="utf-8">
-   <title>Blog - Hongzhi Li</title>
-   <meta name="description" content="Blog posts by Hongzhi Li on cloud technologies, software development, and IT infrastructure">
-   <meta name="author" content="Hongzhi Li">
+   <title>Writing - Hongzhi (Harvad) Li</title>
+   <meta name="description"
+      content="Technical insights, career transformation stories, and cross-cultural technology perspectives by Hongzhi (Harvad) Li.">
+   <meta name="author" content="Hongzhi (Harvad) Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   
+
    <!-- CSS -->
    <link rel="stylesheet" href="../css/default.css">
-   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
-   <link rel="stylesheet" href="../css/media-queries.css">
-   <link rel="stylesheet" href="../css/magnific_popup.css">
-   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="stylesheet" href="../css/modern-portfolio.css">
    <link rel="shortcut icon" href="../favicon.png">
-   
-   <!-- Professional Cyberpunk Blog Styles -->
-   <style>
-      :root {
-         --cyber-bg: #0a0a0a;
-         --cyber-dark: #111111;
-         --cyber-primary: #00d4ff;
-         --cyber-secondary: #bd93f9;
-         --cyber-accent: #50fa7b;
-         --cyber-text: #f8f8f2;
-         --cyber-text-dim: #6272a4;
-         --cyber-border: #44475a;
-         --cyber-selection: #282a36;
-         --subtle-glow: 0 0 5px currentColor;
-      }
-
-      body {
-         background: linear-gradient(135deg, var(--cyber-bg) 0%, #0d1117 100%);
-         color: var(--cyber-text);
-         font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
-         line-height: 1.6;
-      }
-
-      .blog-hero {
-         background: linear-gradient(45deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-         padding: 40px 0 30px;
-         position: relative;
-         border-bottom: 1px solid var(--cyber-border);
-      }
-
-      .blog-hero::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         background: repeating-linear-gradient(
-            180deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 212, 255, 0.02) 2px,
-            rgba(0, 212, 255, 0.02) 4px
-         );
-      }
-
-      .blog-title {
-         font-size: 42px;
-         font-weight: 600;
-         color: var(--cyber-primary);
-         text-shadow: var(--subtle-glow);
-         margin-bottom: 16px;
-         text-align: center;
-      }
-
-      .blog-subtitle {
-         font-size: 18px;
-         color: var(--cyber-text-dim);
-         text-align: center;
-         max-width: 600px;
-         margin: 0 auto;
-      }
-
-      .content-notice {
-         background: linear-gradient(135deg, var(--cyber-dark) 0%, #1a1a2e 100%);
-         border: 1px solid var(--cyber-border);
-         border-left: 3px solid var(--cyber-accent);
-         border-radius: 8px;
-         padding: 30px;
-         margin: 40px 0;
-      }
-
-      .content-notice h3 {
-         color: var(--cyber-accent);
-         font-size: 20px;
-         margin-bottom: 16px;
-         font-weight: 600;
-      }
-
-      .content-notice p {
-         color: var(--cyber-text-dim);
-         line-height: 1.7;
-      }
-
-      .section-header {
-         border-bottom: 2px solid var(--cyber-border);
-         padding-bottom: 20px;
-         margin-bottom: 40px;
-      }
-
-      .section-header h2 {
-         color: var(--cyber-primary);
-         font-size: 28px;
-         font-weight: 600;
-         margin-bottom: 8px;
-         display: flex;
-         align-items: center;
-         gap: 12px;
-      }
-
-      .section-header h2 i {
-         color: var(--cyber-accent);
-      }
-
-      .linkedin-posts-grid {
-         display: grid;
-         gap: 24px;
-         margin-bottom: 40px;
-      }
-
-      .linkedin-post-compact {
-         background: #ffffff;
-         color: #000000;
-         border: 1px solid var(--cyber-border);
-         border-radius: 10px;
-         padding: 28px;
-         transition: all 0.3s ease;
-         position: relative;
-         overflow: hidden;
-      }
-
-      .linkedin-post-compact::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 3px;
-         height: 100%;
-         background: linear-gradient(180deg, var(--cyber-primary), var(--cyber-secondary));
-      }
-
-      .linkedin-post-compact:hover {
-         background: #f8f9fa;
-         color: #333333;
-         border-color: var(--cyber-primary);
-         box-shadow: 0 5px 20px rgba(0, 212, 255, 0.2);
-         transform: translateY(-2px);
-      }
-
-      .post-content {
-         color: inherit;
-         font-size: 16px;
-         line-height: 1.7;
-         margin-bottom: 20px;
-      }
-
-      .post-content h1 {
-         color: var(--cyber-primary);
-         font-size: 24px;
-         margin: 20px 0 15px 0;
-         font-weight: 600;
-      }
-
-      .post-content h2 {
-         color: var(--cyber-secondary);
-         font-size: 20px;
-         margin: 18px 0 12px 0;
-         font-weight: 600;
-      }
-
-      .post-content h3 {
-         color: var(--cyber-accent);
-         font-size: 18px;
-         margin: 16px 0 10px 0;
-         font-weight: 600;
-      }
-
-      .post-content ul {
-         margin: 15px 0;
-         padding-left: 25px;
-      }
-
-      .post-content li {
-         margin: 8px 0;
-         line-height: 1.6;
-      }
-
-      .post-content strong {
-         color: var(--cyber-primary);
-         font-weight: 600;
-      }
-
-      .post-content em {
-         color: var(--cyber-secondary);
-         font-style: italic;
-      }
-
-      .post-content code {
-         background: rgba(0, 212, 255, 0.1);
-         color: var(--cyber-accent);
-         padding: 2px 6px;
-         border-radius: 4px;
-         font-family: 'SF Mono', monospace;
-         font-size: 14px;
-      }
-
-      .post-content pre {
-         background: var(--cyber-dark);
-         border: 1px solid var(--cyber-border);
-         border-radius: 8px;
-         padding: 16px;
-         margin: 20px 0;
-         overflow-x: auto;
-      }
-
-      .post-content pre code {
-         background: none;
-         color: var(--cyber-text);
-         padding: 0;
-      }
-
-      .post-content p {
-         margin: 12px 0;
-      }
-
-      .post-tags {
-         margin-bottom: 20px;
-         display: flex;
-         flex-wrap: wrap;
-         gap: 8px;
-      }
-
-      .tag {
-         background: rgba(0, 212, 255, 0.1);
-         color: var(--cyber-primary);
-         padding: 4px 10px;
-         border-radius: 12px;
-         font-size: 12px;
-         font-weight: 500;
-         border: 1px solid rgba(0, 212, 255, 0.2);
-      }
-
-      .post-meta {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding-top: 16px;
-         border-top: 1px solid var(--cyber-border);
-      }
-
-      .source-link {
-         color: var(--cyber-accent) !important;
-         text-decoration: none;
-         font-size: 14px;
-         font-weight: 500;
-         display: flex;
-         align-items: center;
-         gap: 8px;
-         transition: all 0.2s ease;
-      }
-
-      .source-link:hover {
-         color: var(--cyber-primary) !important;
-         text-shadow: var(--subtle-glow);
-      }
-      
-      /* Ensure consistent styling for all posts */
-      .linkedin-post-compact .source-link {
-         color: var(--cyber-accent) !important;
-      }
-      
-      .linkedin-post-compact .source-link:hover {
-         color: var(--cyber-primary) !important;
-      }
-
-      .source-link i {
-         font-size: 16px;
-      }
-
-      .github-section {
-         background: var(--cyber-selection);
-         border-radius: 10px;
-         padding: 40px;
-         margin: 60px 0;
-         border: 1px solid var(--cyber-border);
-      }
-
-      .github-repos {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         gap: 20px;
-         margin-top: 30px;
-      }
-
-      .repo-card {
-         background: var(--cyber-dark);
-         border: 1px solid var(--cyber-border);
-         border-radius: 8px;
-         padding: 24px;
-         transition: all 0.3s ease;
-      }
-
-      .repo-card:hover {
-         border-color: var(--cyber-secondary);
-         box-shadow: 0 4px 15px rgba(189, 147, 249, 0.1);
-      }
-
-      .repo-name {
-         color: var(--cyber-primary);
-         font-size: 18px;
-         font-weight: 600;
-         margin-bottom: 8px;
-      }
-
-      .repo-description {
-         color: var(--cyber-text-dim);
-         font-size: 14px;
-         margin-bottom: 16px;
-         line-height: 1.5;
-      }
-
-      .repo-stats {
-         display: flex;
-         gap: 16px;
-         font-size: 12px;
-         color: var(--cyber-text-dim);
-      }
-
-      .repo-language {
-         color: var(--cyber-accent);
-      }
-
-      .button {
-         background: transparent;
-         border: 1px solid var(--cyber-primary);
-         color: var(--cyber-primary);
-         padding: 12px 24px;
-         font-family: inherit;
-         font-size: 14px;
-         font-weight: 500;
-         text-decoration: none;
-         border-radius: 6px;
-         transition: all 0.3s ease;
-         display: inline-block;
-         text-align: center;
-      }
-
-      .button:hover {
-         background: var(--cyber-primary);
-         color: var(--cyber-bg);
-         box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-      }
-
-      .text-center {
-         text-align: center;
-      }
-
-      footer {
-         background: var(--cyber-bg);
-         border-top: 1px solid var(--cyber-border);
-         padding: 40px 0;
-      }
-
-      .social-links li a {
-         color: var(--cyber-text-dim);
-         transition: color 0.3s ease;
-      }
-
-      .social-links li a:hover {
-         color: var(--cyber-primary);
-      }
-
-      .copyright {
-         color: var(--cyber-text-dim);
-      }
-
-      .copyright a {
-         color: var(--cyber-accent);
-      }
-
-      @media screen and (max-width: 768px) {
-         .blog-title {
-            font-size: 32px;
-         }
-         
-         .blog-subtitle {
-            font-size: 16px;
-         }
-         
-         .content-notice {
-            padding: 20px;
-         }
-         
-         .linkedin-post-compact {
-            padding: 20px;
-         }
-         
-         .github-section {
-            padding: 24px;
-         }
-      }
-   </style>
-
-   <!-- Script -->
 </head>
+
 <body>
-   <!-- Header -->
-   <header id="page-header">
-      <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+   <!-- Animated Background -->
+   <div class="gradient-bg"></div>
 
-         <ul id="nav" class="nav">
-            <li><a href="../index.html">Home</a></li>
-            <li class="current"><a href="blog.html">Blog</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="../projects/index.html">Projects</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
-      </nav>
-   </header>
+   <!-- Navigation (Injected by layout.js) -->
+   <nav class="nav-modern"></nav>
 
-   <!-- Blog Hero -->
-   <section class="blog-hero">
-      <div class="row">
-         <div class="twelve columns">
-            <h1 class="blog-title">Professional Journal</h1>
-            <p class="blog-subtitle">Real-time insights from LinkedIn and GitHub - authentic content from my development journey, business strategies, and cross-cultural technology consulting.</p>
+   <!-- Hero Section -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Journal</div>
+            <h1 class="section-title">Technical Writing</h1>
+            <p class="section-subtitle">Real-time insights from LinkedIn and GitHub - authentic content from my
+               development
+               journey, business strategies, and cross-cultural technology consulting.</p>
          </div>
       </div>
    </section>
 
-   <!-- Blog Content -->
-   <section id="blog-content" style="background: var(--cyber-bg); padding: 40px 0;">
-      <div class="row">
-         <div class="twelve columns">
-
-      <div class="row">
-         <!-- Main Content -->
-         <div class="twelve columns">
-            <div class="content-notice">
-               <h3>Authentic Professional Content</h3>
-               <p>Rather than maintaining separate blog posts, I channel my insights and experiences directly through LinkedIn posts and GitHub projects. This approach ensures you receive authentic, real-time updates about my work in full-stack development, cross-cultural business consulting, and bridging the gap between IT innovation and business strategy.</p>
-            </div>
-
-            <!-- LinkedIn Posts Section -->
-            <div class="linkedin-section">
-               <div class="section-header">
-                  <h2><i class="fa fa-linkedin"></i> LinkedIn Professional Updates</h2>
-               </div>
-               <div id="linkedin-posts" class="linkedin-posts-grid">
-                  <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
-                     <i class="fa fa-spinner fa-spin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
-                     Synchronizing LinkedIn content...
-                  </div>
-               </div>
-               <div class="text-center">
-                  <a href="https://www.linkedin.com/in/hzl" class="button" target="_blank">
-                     <i class="fa fa-linkedin"></i> View Complete LinkedIn Profile
-                  </a>
-               </div>
-            </div>
-
-            <!-- GitHub Projects Section -->
-            <div class="github-section">
-               <div class="section-header">
-                  <h2><i class="fa fa-github"></i> Recent Development Activity</h2>
-               </div>
-               <div id="github-repos" class="github-repos">
-                  <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
-                     <i class="fa fa-code-fork fa-spin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
-                     Loading repository data...
-                  </div>
-               </div>
-               <div class="text-center">
-                  <a href="https://github.com/bluehawana" class="button" target="_blank">
-                     <i class="fa fa-github"></i> Explore Full GitHub Portfolio
-                  </a>
-               </div>
-            </div>
+   <!-- content notice -->
+   <section class="section" style="padding-top: 0;">
+      <div class="container">
+         <div class="skill-category"
+            style="max-width: 800px; margin: 0 auto; border-left: 4px solid var(--accent-primary);">
+            <h3 class="skill-category-title">Authentic Professional Content</h3>
+            <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-secondary);">
+               Rather than maintaining separate blog posts, I channel my insights and experiences directly
+               through LinkedIn posts and GitHub projects. This approach ensures you receive authentic,
+               real-time updates about my work in full-stack development and bridging the gap between IT innovation and
+               business strategy.
+            </p>
          </div>
       </div>
    </section>
 
-   <!-- Footer -->
-   <footer>
-      <div class="row">
-         <div class="twelve columns">
-            <ul class="social-links">
-               <li><a href="https://twitter.com/bluehawana"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/hzl"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://bluehawana.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://github.com/bluehawana"><i class="fa fa-github"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; 2025 Hongzhi Li</li>
-               <li>Design: <a href="https://www.styleshout.com/free-templates/ceevee/">CeeVee</a> (Modified)</li>
-            </ul>
+   <!-- LinkedIn Posts Section -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">LinkedIn Activity</div>
+            <h2 class="section-title">Professional Updates</h2>
          </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="linkedin-posts" class="content-grid">
+            <!-- Loading State -->
+            <div class="skeleton" style="height: 300px;"></div>
+            <div class="skeleton" style="height: 300px;"></div>
+            <div class="skeleton" style="height: 300px;"></div>
+         </div>
+         <div class="text-center mt-xl">
+            <a href="https://www.linkedin.com/in/hzl" class="btn btn-primary" target="_blank">
+               View Full LinkedIn Profile
+            </a>
+         </div>
       </div>
-   </footer>
+   </section>
+
+   <!-- GitHub Projects Section -->
+   <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Development Activity</div>
+            <h2 class="section-title">Recent Code</h2>
+         </div>
+         <div id="github-repos" class="content-grid">
+            <!-- Loading State -->
+            <div class="skeleton" style="height: 250px;"></div>
+            <div class="skeleton" style="height: 250px;"></div>
+            <div class="skeleton" style="height: 250px;"></div>
+         </div>
+         <div class="text-center mt-xl">
+            <a href="https://github.com/bluehawana" class="btn btn-secondary" target="_blank">
+               Explore GitHub Portfolio
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer (Injected by layout.js) -->
+   <footer class="footer-modern"></footer>
 
    <!-- JavaScript -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="../js/jquery.flexslider.js"></script>
-   <script src="../js/waypoints.js"></script>
-   <script src="../js/jquery.fittext.js"></script>
-   <script src="../js/magnific-popup.js"></script>
-   <script src="../js/init.js"></script>
+   <script src="../js/layout.js"></script>
    <script src="../js/linkedin_posts.js?v=2025112401"></script>
    <script src="../js/github_repos.js"></script>
    <script>
-   // Load GitHub repos for blog page (LinkedIn posts auto-initialize in linkedin_posts.js)
-   document.addEventListener('DOMContentLoaded', function() {
-      if (typeof fetchGitHubRepos === 'function') {
-         fetchGitHubRepos('github-repos');
-      }
-   });
+      // Load GitHub repos
+      document.addEventListener('DOMContentLoaded', function () {
+         if (typeof fetchGitHubRepos === 'function') {
+            fetchGitHubRepos('github-repos');
+         }
+      });
    </script>
 </body>
+
 </html>

@@ -8,7 +8,10 @@
     "test": "node test-oauth-integration.js",
     "test-token": "node test-oauth-token.js",
     "setup": "node -e \"console.log('OAuth setup complete. Run npm run test to verify.')\"",
-    "dev": "node linkedin-oauth-automation.js && echo 'Sync complete'"
+    "dev": "node linkedin-oauth-automation.js && echo 'Sync complete'",
+    "build": "./scripts/build_site.sh",
+    "deploy": "wrangler pages deploy cf-deploy --project-name=bluehawana-portfolio",
+    "publish": "npm run build && npm run deploy"
   },
   "keywords": [
     "linkedin",

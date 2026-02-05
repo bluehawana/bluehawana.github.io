@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Live Demos - Hongzhi (Harvad) Li | Interactive Project Showcase</title>
+   <meta name="description" content="Experience live demos of personal projects by Hongzhi (Harvad) Li. Weather app, job hunting automation, Android applications - all fully deployed and operational.">
+   <meta name="keywords" content="live demos, full stack developer portfolio, weather app demo, react applications, spring boot projects, interactive showcase">
+   <meta name="author" content="Hongzhi (Harvad) Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+   <!-- Open Graph meta tags -->
+   <meta property="og:title" content="Live Demos - Interactive Project Showcase | Hongzhi (Harvad) Li">
+   <meta property="og:description" content="Experience live, fully deployed personal projects showcasing full-stack development expertise. Weather apps, job hunting automation, and Android applications.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://bluehawana.github.io/pages/demos.html">
+   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="../css/blog.css">
+   <link rel="stylesheet" href="../css/modern-portfolio.css">
+   <link rel="shortcut icon" href="../favicon.png">
+   
+   <!-- Cyberpunk Demo Styles -->
+   <style>
+      :root {
+         --cyber-bg: #0a0a0a;
+         --cyber-dark: #111111;
+         --cyber-primary: #00d4ff;
+         --cyber-secondary: #bd93f9;
+         --cyber-accent: #50fa7b;
+         --cyber-warning: #ffff00;
+         --cyber-danger: #ff073a;
+         --cyber-text: #ffffff;
+         --cyber-text-dim: #cccccc;
+         --cyber-border: #333333;
+         --neon-glow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+      }
+
+      body {
+         background: linear-gradient(135deg, var(--cyber-bg) 0%, var(--cyber-dark) 100%);
+         color: var(--cyber-text);
+         font-family: 'Courier New', 'Monaco', monospace;
+      }
+
+      .demos-hero {
+         background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #000d1a 100%);
+         position: relative;
+         overflow: hidden;
+         padding: 60px 0 40px;
+         border-bottom: 2px solid var(--cyber-primary);
+      }
+
+      .demos-hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 255, 0.03) 2px,
+            rgba(0, 255, 255, 0.03) 4px
+         );
+         animation: scan 4s linear infinite;
+      }
+
+      @keyframes scan {
+         0% { transform: translateX(-100%); }
+         100% { transform: translateX(100%); }
+      }
+
+      .demos-title {
+         font-size: 48px;
+         font-weight: bold;
+         color: var(--cyber-primary);
+         text-shadow: var(--neon-glow);
+         margin-bottom: 20px;
+         text-align: center;
+         position: relative;
+         z-index: 2;
+      }
+
+      .demos-subtitle {
+         font-size: 18px;
+         color: var(--cyber-secondary);
+         text-align: center;
+         margin-bottom: 40px;
+         position: relative;
+         z-index: 2;
+      }
+
+      .demo-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         gap: 30px;
+         padding: 40px 0;
+         background: var(--cyber-bg);
+      }
+
+      .cyber-demo {
+         background: linear-gradient(145deg, #111111 0%, #1a1a1a 50%, #0f0f0f 100%);
+         border: 1px solid var(--cyber-border);
+         border-radius: 10px;
+         padding: 30px;
+         position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease;
+      }
+
+      .cyber-demo::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+         transition: left 0.5s ease;
+      }
+
+      .cyber-demo:hover::before {
+         left: 100%;
+      }
+
+      .cyber-demo:hover {
+         border-color: var(--cyber-primary);
+         box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+         transform: translateY(-2px);
+      }
+
+      .demo-header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 20px;
+      }
+
+      .demo-icon {
+         width: 50px;
+         height: 50px;
+         background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+         border-radius: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 24px;
+         margin-right: 15px;
+         box-shadow: var(--neon-glow);
+      }
+
+      .demo-title-section {
+         flex-grow: 1;
+      }
+
+      .demo-title {
+         font-size: 20px;
+         font-weight: bold;
+         color: var(--cyber-accent);
+         margin: 0;
+      }
+
+      .demo-status {
+         font-size: 12px;
+         font-weight: bold;
+         padding: 4px 8px;
+         border-radius: 4px;
+         text-transform: uppercase;
+         margin-top: 5px;
+         display: inline-block;
+      }
+
+      .demo-status.live {
+         color: var(--cyber-accent);
+         background: rgba(80, 250, 123, 0.1);
+         border: 1px solid var(--cyber-accent);
+      }
+
+      .demo-tech {
+         color: var(--cyber-warning);
+         font-size: 12px;
+         margin-top: 5px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      .demo-desc {
+         color: var(--cyber-text-dim);
+         line-height: 1.6;
+         margin: 20px 0;
+         font-size: 14px;
+      }
+
+      .demo-features {
+         list-style: none;
+         padding: 0;
+         margin: 20px 0;
+      }
+
+      .demo-features li {
+         color: var(--cyber-text-dim);
+         padding: 4px 0;
+         font-size: 13px;
+         position: relative;
+         padding-left: 15px;
+      }
+
+      .demo-features li::before {
+         content: '▶';
+         color: var(--cyber-primary);
+         position: absolute;
+         left: 0;
+      }
+
+      .demo-actions {
+         display: flex;
+         gap: 10px;
+         margin-top: 25px;
+         flex-wrap: wrap;
+      }
+
+      .cyber-btn {
+         background: transparent;
+         border: 1px solid var(--cyber-primary);
+         color: var(--cyber-primary);
+         padding: 10px 20px;
+         font-family: inherit;
+         font-size: 12px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         text-decoration: none;
+         display: inline-block;
+         position: relative;
+         overflow: hidden;
+         border-radius: 4px;
+      }
+
+      .cyber-btn::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background: var(--cyber-primary);
+         transition: left 0.3s ease;
+         z-index: -1;
+      }
+
+      .cyber-btn:hover::before {
+         left: 0;
+      }
+
+      .cyber-btn:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+      }
+
+      .cyber-btn.accent {
+         border-color: var(--cyber-accent);
+         color: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent::before {
+         background: var(--cyber-accent);
+      }
+
+      .cyber-btn.accent:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(80, 250, 123, 0.4);
+      }
+
+      .cyber-btn.secondary {
+         border-color: var(--cyber-secondary);
+         color: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary::before {
+         background: var(--cyber-secondary);
+      }
+
+      .cyber-btn.secondary:hover {
+         color: var(--cyber-bg);
+         box-shadow: 0 0 8px rgba(189, 147, 249, 0.4);
+      }
+
+      .terminal-window {
+         background: #000000;
+         border: 1px solid var(--cyber-primary);
+         border-radius: 8px;
+         margin: 40px 0;
+         box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+         overflow: hidden;
+      }
+
+      .terminal-header {
+         background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+         padding: 10px 15px;
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid var(--cyber-primary);
+      }
+
+      .terminal-dots {
+         display: flex;
+         gap: 8px;
+      }
+
+      .terminal-dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+      }
+
+      .terminal-dot.red { background: var(--cyber-danger); }
+      .terminal-dot.yellow { background: var(--cyber-warning); }
+      .terminal-dot.green { background: var(--cyber-accent); }
+
+      .terminal-title {
+         color: var(--cyber-text);
+         margin-left: 15px;
+         font-size: 14px;
+      }
+
+      .terminal-content {
+         padding: 20px;
+         font-family: 'Courier New', monospace;
+         font-size: 14px;
+         line-height: 1.6;
+      }
+
+      .terminal-line {
+         margin-bottom: 5px;
+      }
+
+      .terminal-prompt {
+         color: var(--cyber-accent);
+      }
+
+      .terminal-command {
+         color: var(--cyber-primary);
+      }
+
+      .terminal-output {
+         color: var(--cyber-text-dim);
+         margin-left: 20px;
+      }
+
+      .demo-preview {
+         background: var(--cyber-dark);
+         border: 1px solid var(--cyber-border);
+         border-radius: 8px;
+         padding: 15px;
+         margin: 20px 0;
+         text-align: center;
+      }
+
+      .demo-preview img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 4px;
+         border: 1px solid var(--cyber-border);
+      }
+
+      .demo-url {
+         color: var(--cyber-primary);
+         font-family: 'Courier New', monospace;
+         font-size: 12px;
+         margin-top: 10px;
+         word-break: break-all;
+      }
+
+      @media screen and (max-width: 768px) {
+         .demos-title {
+            font-size: 32px;
+         }
+         
+         .demo-grid {
+            grid-template-columns: 1fr;
+         }
+         
+         .cyber-demo {
+            min-width: 300px;
+         }
+         
+         .demo-actions {
+            flex-direction: column;
+         }
+      }
+   </style>
+</head>
+<body>
+   <!-- Animated Background Gradient -->
+   <div class="gradient-bg"></div>
+
+   <!-- Modern Navigation -->
+   <nav class="nav-modern">
+      <div class="nav-container">
+         <a href="../index.html" class="nav-logo">
+            <div class="nav-logo-icon">HL</div>
+            Harvad Li
+         </a>
+         <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li class="current"><a href="demos.html">Demos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Demos Hero Section -->
+   <section class="demos-hero">
+      <div class="container">
+         <div class="section-header">
+            <h1 class="demos-title">[ LIVE_DEMOS.EXE ]</h1>
+            <p class="demos-subtitle">> Initializing interactive showcase... Loading deployed applications...</p>
+         </div>
+         
+         <div class="terminal-window">
+            <div class="terminal-header">
+               <div class="terminal-dots">
+                  <div class="terminal-dot red"></div>
+                  <div class="terminal-dot yellow"></div>
+                  <div class="terminal-dot green"></div>
+               </div>
+               <div class="terminal-title">demo-launcher.sh</div>
+            </div>
+            <div class="terminal-content">
+               <div class="terminal-line">
+                  <span class="terminal-prompt">root@demos:~$</span>
+                  <span class="terminal-command">ls -la /repos/personal/ | grep -E "(name|status)"</span>
+               </div>
+               <div class="terminal-line terminal-output">
+                 "name": "jobhunter-ai"  "status": "live"
+               </div>
+               <div class="terminal-line terminal-output">
+                 "name": "weather-anywhere"  "status": "live"
+               </div>
+               <div class="terminal-line terminal-output">
+                 "name": "android-auto-apps"  "status": "live"
+               </div>
+               <div class="terminal-line">
+                  <span class="terminal-prompt">root@demos:~$</span> 
+                  <span class="terminal-command">echo "Status: All demos operational and accessible"</span>
+               </div>
+               <div class="terminal-line terminal-output">
+                  Status: All demos operational and accessible
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Live Demos Grid -->
+   <section style="background: var(--cyber-bg); padding: 40px 0;">
+      <div class="container">
+         <div class="demo-grid">
+            
+            <!-- Weather App Demo -->
+            <div class="cyber-demo">
+               <div class="demo-header">
+                  <div class="demo-icon">🌤️</div>
+                  <div class="demo-title-section">
+                     <h3 class="demo-title">WEATHER_ANYWHERE.APP</h3>
+                     <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                     <div class="demo-tech">JavaScript × Weather API × Responsive Design</div>
+                  </div>
+               </div>
+               
+               <div class="demo-desc">
+                  Real-time weather application with global location search capabilities. Features detailed weather forecasts, 
+                  interactive maps, responsive design, and seamless API integration. Deployed with automatic scaling.
+               </div>
+               
+               <div class="demo-preview">
+                  <div class="demo-url">https://weather.bluehawana.com/</div>
+               </div>
+               
+               <ul class="demo-features">
+                  <li>Global weather data with real-time updates</li>
+                  <li>Location-based search and geolocation support</li>
+                  <li>Responsive design for all device types</li>
+                  <li>Interactive weather maps and visualizations</li>
+                  <li>7-day forecast with detailed metrics</li>
+               </ul>
+               
+               <div class="demo-actions">
+                  <a href="https://weather.bluehawana.com/" target="_blank" class="cyber-btn accent">[ LAUNCH_DEMO ]</a>
+                  <a href="https://github.com/bluehawana/check-weather-anywhere" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+               </div>
+            </div>
+
+            <!-- Job Hunter Demo -->
+            <div class="cyber-demo">
+               <div class="demo-header">
+                  <div class="demo-icon">🤖</div>
+                  <div class="demo-title-section">
+                     <h3 class="demo-title">JOBHUNTER_AI.SYS</h3>
+                     <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                     <div class="demo-tech">Python × Gmail API × OpenAI × Automation</div>
+                  </div>
+               </div>
+               
+               <div class="demo-desc">
+                  AI-powered job hunting automation system with intelligent resume customization and application tracking. 
+                  Features automated job discovery, dynamic CV generation, and comprehensive analytics dashboard.
+               </div>
+               
+               <div class="demo-preview">
+                  <div class="demo-url">https://jobs.bluehawana.com/</div>
+               </div>
+               
+               <ul class="demo-features">
+                  <li>Intelligent job discovery and filtering</li>
+                  <li>Dynamic resume customization using OpenAI</li>
+                  <li>Gmail API integration for application tracking</li>
+                  <li>Automated application submission workflows</li>
+                  <li>Real-time analytics and success metrics</li>
+                  <li>Custom dashboard with monitoring capabilities</li>
+               </ul>
+               
+               <div class="demo-actions">
+                  <a href="https://jobs.bluehawana.com/" target="_blank" class="cyber-btn accent">[ LAUNCH_APP ]</a>
+                  <a href="jobhunter_dashboard.html" class="cyber-btn secondary">[ DASHBOARD ]</a>
+                  <a href="https://github.com/bluehawana/jobhunter-python-typescript-gmailrestapi" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+               </div>
+            </div>
+
+            <!-- Android Applications Suite -->
+            <div id="android-apps" style="margin-bottom: 40px;">
+               <h3 style="color: var(--cyber-accent); font-size: 24px; text-align: center; margin-bottom: 30px;">[ ANDROID_APPLICATIONS.SUITE ]</h3>
+            </div>
+
+            <!-- CarPlayer IPTV Demo -->
+            <div class="cyber-demo">
+               <div class="demo-header">
+                  <div class="demo-icon">🚗</div>
+                  <div class="demo-title-section">
+                     <h3 class="demo-title">CARPLAYER_IPTV.APK</h3>
+                     <div class="demo-status live">● LIVE DEMO</div>
+                     <div class="demo-tech">Kotlin × Android Auto × ExoPlayer × Firebase</div>
+                  </div>
+               </div>
+               
+               <div class="demo-desc">
+                  Android Auto native media player application with smart network optimization and hybrid media engine. 
+                  Tested on premium automotive infotainment systems with voice command integration.
+               </div>
+               
+               <div class="demo-preview">
+                  <div class="demo-url">Interactive Demo Available</div>
+               </div>
+               
+               <ul class="demo-features">
+                  <li>🚗 Native Android Auto integration with car-optimized UI</li>
+                  <li>📡 Smart network detection and quality optimization</li>
+                  <li>🎬 M3U playlist support with IPTV subscription management</li>
+                  <li>🔄 Hybrid ExoPlayer + VLC media engine with fallback</li>
+                  <li>📱 Firebase App Distribution for beta testing</li>
+                  <li>🎯 Tested on Polestar 4 and Volvo XC90 systems</li>
+               </ul>
+               
+               <div class="demo-actions">
+                  <a href="carplayer_demo.html" class="cyber-btn accent">[ LAUNCH_DEMO ]</a>
+                  <a href="https://github.com/bluehawana/carplayer-kotlin-androidauto" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+               </div>
+            </div>
+
+            <!-- EPUB Reader Demo -->
+            <div class="cyber-demo">
+               <div class="demo-header">
+                  <div class="demo-icon">📚</div>
+                  <div class="demo-title-section">
+                     <h3 class="demo-title">EPUB_READER.APK</h3>
+                     <div class="demo-status live">● LIVE DEMO</div>
+                     <div class="demo-tech">Kotlin × Android Auto × Azure TTS × R2 Storage</div>
+                  </div>
+               </div>
+               
+               <div class="demo-desc">
+                  Android Auto audiobook player that converts EPUB files to high-quality audiobooks using Azure Neural Voice TTS. 
+                  Features hands-free operation, voice commands, and seamless integration with premium car infotainment systems.
+               </div>
+               
+               <div class="demo-preview">
+                  <div class="demo-url">Interactive Demo Available</div>
+               </div>
+               
+               <ul class="demo-features">
+                  <li>🎙️ Azure Neural Voice TTS with multiple voice options</li>
+                  <li>🚗 Android Auto compatible with voice commands</li>
+                  <li>📖 EPUB import and chapter navigation</li>
+                  <li>☁️ Cloudflare R2 storage for processed audiobooks</li>
+                  <li>🔖 Smart bookmarking and reading position sync</li>
+                  <li>🎯 Optimized for Polestar and Volvo infotainment</li>
+               </ul>
+               
+               <div class="demo-actions">
+                  <a href="epub_reader_demo.html" class="cyber-btn accent">[ LAUNCH_DEMO ]</a>
+                  <a href="https://github.com/bluehawana/epub-to-audiobook-bot" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+               </div>
+            </div>
+
+            <!-- Portfolio Automation Demo -->
+            <div class="cyber-demo">
+               <div class="demo-header">
+                  <div class="demo-icon">🌐</div>
+                  <div class="demo-title-section">
+                     <h3 class="demo-title">PORTFOLIO_AUTOMATION.SYS</h3>
+                     <div class="demo-status live">● LIVE DEPLOYMENT</div>
+                     <div class="demo-tech">LinkedIn API × GitHub API × Automation</div>
+                  </div>
+               </div>
+               
+               <div class="demo-desc">
+                  This very website! Dynamic portfolio system with LinkedIn API integration, GitHub repository synchronization, 
+                  and automated content updates. Features real-time data feeds and intelligent automation.
+               </div>
+               
+               <div class="demo-preview">
+                  <div class="demo-url">https://bluehawana.com</div>
+               </div>
+               
+               <ul class="demo-features">
+                  <li>LinkedIn API integration for automatic post synchronization</li>
+                  <li>GitHub API for real-time repository updates</li>
+                  <li>Automated content refresh every 30 minutes</li>
+                  <li>Cyberpunk terminal-inspired UI design</li>
+                  <li>Responsive design with mobile optimization</li>
+                  <li>SEO optimization and social media integration</li>
+               </ul>
+               
+               <div class="demo-actions">
+                  <a href="../index.html" class="cyber-btn accent">[ VIEW_LIVE ]</a>
+                  <a href="https://github.com/bluehawana/bluehawana.github.io" target="_blank" class="cyber-btn">[ SOURCE_CODE ]</a>
+                  <a href="automation_dashboard.html" class="cyber-btn secondary">[ SYNC_STATUS ]</a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- Android Auto Compatibility Showcase -->
+   <section style="background: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 100%); padding: 60px 0; border-top: 2px solid var(--cyber-accent); border-bottom: 2px solid var(--cyber-accent);">
+      <div class="container">
+         <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: var(--cyber-accent); font-size: 42px; text-shadow: var(--neon-glow); margin-bottom: 20px;">
+               🚗 ANDROID AUTO CERTIFIED
+            </h2>
+            <p style="color: var(--cyber-text-dim); font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+               Both applications have been extensively tested and optimized for premium automotive infotainment systems. 
+               Real-world testing conducted on high-end electric vehicles with cutting-edge Android Auto implementations.
+            </p>
+         </div>
+
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px;">
+            <!-- Polestar 4 -->
+            <div style="background: linear-gradient(145deg, rgba(0, 212, 255, 0.1) 0%, rgba(17, 17, 17, 0.9) 100%); border: 2px solid var(--cyber-primary); border-radius: 15px; padding: 30px; text-align: center; position: relative; overflow: hidden;">
+               <div style="font-size: 48px; margin-bottom: 20px;">🔷</div>
+               <h3 style="color: var(--cyber-primary); font-size: 24px; margin-bottom: 15px; text-shadow: 0 0 10px currentColor;">
+                  POLESTAR 4
+               </h3>
+               <p style="color: var(--cyber-text-dim); margin-bottom: 20px; line-height: 1.6;">
+                  Premium electric performance sedan with 15.4" infotainment display. 
+                  Both CarPlayer IPTV and EPUB Reader tested extensively on Google Automotive OS platform.
+               </p>
+               <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                  <span style="background: rgba(0, 212, 255, 0.2); color: var(--cyber-primary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-primary);">✓ Voice Commands</span>
+                  <span style="background: rgba(0, 212, 255, 0.2); color: var(--cyber-primary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-primary);">✓ Steering Controls</span>
+                  <span style="background: rgba(0, 212, 255, 0.2); color: var(--cyber-primary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-primary);">✓ 15.4" Display</span>
+               </div>
+            </div>
+
+            <!-- Volvo XC90 -->
+            <div style="background: linear-gradient(145deg, rgba(189, 147, 249, 0.1) 0%, rgba(17, 17, 17, 0.9) 100%); border: 2px solid var(--cyber-secondary); border-radius: 15px; padding: 30px; text-align: center; position: relative; overflow: hidden;">
+               <div style="font-size: 48px; margin-bottom: 20px;">🔶</div>
+               <h3 style="color: var(--cyber-secondary); font-size: 24px; margin-bottom: 15px; text-shadow: 0 0 10px currentColor;">
+                  VOLVO XC90
+               </h3>
+               <p style="color: var(--cyber-text-dim); margin-bottom: 20px; line-height: 1.6;">
+                  Luxury SUV with advanced Sensus Connect infotainment system. 
+                  Full compatibility testing completed for both Android Auto applications.
+               </p>
+               <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                  <span style="background: rgba(189, 147, 249, 0.2); color: var(--cyber-secondary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-secondary);">✓ Sensus Connect</span>
+                  <span style="background: rgba(189, 147, 249, 0.2); color: var(--cyber-secondary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-secondary);">✓ Premium Audio</span>
+                  <span style="background: rgba(189, 147, 249, 0.2); color: var(--cyber-secondary); padding: 8px 12px; border-radius: 20px; font-size: 12px; border: 1px solid var(--cyber-secondary);">✓ Safety First</span>
+               </div>
+            </div>
+         </div>
+
+         <!-- Testing Features Grid -->
+         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px;">
+            <div style="background: rgba(17, 17, 17, 0.7); border: 1px solid var(--cyber-border); border-radius: 10px; padding: 25px; text-align: center;">
+               <div style="font-size: 32px; color: var(--cyber-accent); margin-bottom: 15px;">🎯</div>
+               <h4 style="color: var(--cyber-accent); margin-bottom: 10px;">Real-World Testing</h4>
+               <p style="color: var(--cyber-text-dim); font-size: 14px; line-height: 1.4;">
+                  Extensive on-road testing in premium vehicles with actual Android Auto systems
+               </p>
+            </div>
+            
+            <div style="background: rgba(17, 17, 17, 0.7); border: 1px solid var(--cyber-border); border-radius: 10px; padding: 25px; text-align: center;">
+               <div style="font-size: 32px; color: var(--cyber-accent); margin-bottom: 15px;">🗣️</div>
+               <h4 style="color: var(--cyber-accent); margin-bottom: 10px;">Voice Integration</h4>
+               <p style="color: var(--cyber-text-dim); font-size: 14px; line-height: 1.4;">
+                  Hands-free operation with Google Assistant and car voice command systems
+               </p>
+            </div>
+            
+            <div style="background: rgba(17, 17, 17, 0.7); border: 1px solid var(--cyber-border); border-radius: 10px; padding: 25px; text-align: center;">
+               <div style="font-size: 32px; color: var(--cyber-accent); margin-bottom: 15px;">🛡️</div>
+               <h4 style="color: var(--cyber-accent); margin-bottom: 10px;">Safety Certified</h4>
+               <p style="color: var(--cyber-text-dim); font-size: 14px; line-height: 1.4;">
+                  Follows Android Auto safety guidelines for distraction-free driving experience
+               </p>
+            </div>
+            
+            <div style="background: rgba(17, 17, 17, 0.7); border: 1px solid var(--cyber-border); border-radius: 10px; padding: 25px; text-align: center;">
+               <div style="font-size: 32px; color: var(--cyber-accent); margin-bottom: 15px;">⚡</div>
+               <h4 style="color: var(--cyber-accent); margin-bottom: 10px;">Performance Tuned</h4>
+               <p style="color: var(--cyber-text-dim); font-size: 14px; line-height: 1.4;">
+                  Optimized for automotive hardware constraints and network conditions
+               </p>
+            </div>
+         </div>
+
+         <div style="text-align: center;">
+            <a href="#demos" style="background: linear-gradient(45deg, var(--cyber-accent), var(--cyber-primary)); color: #000; padding: 15px 30px; font-family: inherit; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: inline-block; border-radius: 6px; font-weight: bold; box-shadow: 0 0 20px rgba(80, 250, 123, 0.3);">
+               🚗 TEST THE DEMOS
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Call to Action -->
+   <section style="background: var(--cyber-dark); padding: 60px 0; text-align: center;">
+      <div class="container">
+         <div class="section-header">
+            <h2 style="color: var(--cyber-accent); font-size: 32px; margin-bottom: 20px;">Ready to Build Something Amazing?</h2>
+            <p style="color: var(--cyber-text-dim); font-size: 18px; margin-bottom: 40px;">
+               These demos showcase real-world applications built with modern technologies. 
+               Let's discuss your next project and bring your ideas to life.
+            </p>
+         </div>
+         
+         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="contact.html" class="cyber-btn accent" style="padding: 15px 30px; font-size: 14px;">[ GET_IN_TOUCH ]</a>
+            <a href="../projects/index.html" class="cyber-btn" style="padding: 15px 30px; font-size: 14px;">[ VIEW_PROJECTS ]</a>
+            <a href="https://github.com/bluehawana" target="_blank" class="cyber-btn secondary" style="padding: 15px 30px; font-size: 14px;">[ GITHUB_PROFILE ]</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer-modern">
+      <div class="footer-content">
+         <div class="footer-brand">
+            <a href="../index.html" class="nav-logo">
+               <div class="nav-logo-icon">HL</div>
+               Harvad Li
+            </a>
+            <p>Full Stack Developer crafting innovative solutions with modern web technologies.</p>
+         </div>
+         
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Navigation</h3>
+            <ul class="footer-links">
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="resume.html">Resume</a></li>
+               <li><a href="../projects/index.html">Projects</a></li>
+            </ul>
+         </div>
+         
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Pages</h3>
+            <ul class="footer-links">
+               <li><a href="demos.html">Demos</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+         
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Connect</h3>
+            <ul class="footer-links">
+               <li><a href="https://github.com/bluehawana" target="_blank">GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank">LinkedIn</a></li>
+               <li><a href="https://twitter.com/bluehawana" target="_blank">Twitter</a></li>
+            </ul>
+         </div>
+      </div>
+      
+      <div class="footer-bottom">
+         <div class="footer-copyright">
+            &copy; 2025 Hongzhi (Harvad) Li. All rights reserved.
+         </div>
+         <div class="footer-note">
+            Personal portfolio website. For commercial inquiries, visit <a href="https://hongyanab.com" target="_blank">hongyanab.com</a>.
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scripts -->
+   <script src="../js/jquery-1.10.2.min.js"></script>
+   <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="../js/jquery.flexslider.js"></script>
+   <script src="../js/waypoints.js"></script>
+   <script src="../js/jquery.fittext.js"></script>
+   <script src="../js/magnific-popup.js"></script>
+   <script src="../js/init.js"></script>
+</body>
+</html>

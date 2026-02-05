@@ -1,15 +1,12 @@
 name = "bluehawana-portfolio"
-main = "workers-site/index.js"
 compatibility_date = "2026-01-01"
-workers_dev = true
-
-[site]
-bucket = "./"
-entry-point = "workers-site"
 
 [build]
 command = ""
-watch_dir = ""
+
+[pages]
+# Directory containing static assets to deploy
+pages_build_output_dir = "cf-deploy"
 
 [vars]
 ACCOUNT_ID = "2a35af424f8734e497a5d707344d79d5"
