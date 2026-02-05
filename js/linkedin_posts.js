@@ -142,12 +142,13 @@ async function fetchLinkedInPosts() {
             }
 
             // Handle both old array format and new object format
-            if (data.posts && Array.isArray(data.posts)) {
-                posts = data.posts;
-            } else if (Array.isArray(data)) {
+            if (Array.isArray(data)) {
                 posts = data;
+            } else if (data && data.posts && Array.isArray(data.posts)) {
+                posts = data.posts;
             } else {
                 posts = [];
+                console.warn('Unknown LinkedIn data format', data);
             }
 
             // Remove duplicates by content similarity and activityId
