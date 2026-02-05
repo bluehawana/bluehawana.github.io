@@ -162,9 +162,54 @@ async function fetchLatestRepos(containerId = 'github-repos') {
                     <span class="stars">⭐ ${featuredProject.stargazers_count}</span>
                     <span class="updated">Live Site</span>
                 </div>
-            </div>
         `;
         repoContainer.appendChild(featuredElement);
+
+        // Define New Year Projects to inject
+        const newYearProjects = [
+            {
+                name: "Claude Code Proxy with NVIDIA Models (Project No.5)",
+                html_url: "https://models.bluehawana.com",
+                description: "An open-source proxy switcher allowing instant access to 182+ NVIDIA NIM models. Features zero-downtime switching, Web UI, and REST API integration.",
+                language: "Python / AI",
+                stargazers_count: "New",
+                updated_at: "2026-02-04"
+            },
+            {
+                name: "AI Math Grader (Project No.2)",
+                html_url: "https://www.linkedin.com/posts/hzl_antigravity-rag-ai-activity-7414731420222320640-RAsb",
+                description: "Full AI math-grading system using Claude Sonnet 4.5 & Google Antigravity. Features HEIC photo analysis, handwritten content recognition, and instant feedback in Swedish.",
+                language: "Next.js / AI",
+                stargazers_count: "New",
+                updated_at: "2026-01-07"
+            },
+            {
+                name: "Fleet Management System (Project No.1)",
+                html_url: "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u",
+                description: "Comprehensive Fleet Management system with data analysis, interactive visualizations, .NET backend, and AI-powered predictive modeling.",
+                language: ".NET / React",
+                stargazers_count: "New",
+                updated_at: "2026-01-04"
+            }
+        ];
+
+        // Inject New Year Projects
+        newYearProjects.forEach(proj => {
+            const projEl = document.createElement('div');
+            projEl.className = 'repo-item';
+            projEl.innerHTML = `
+                <div class="repo-card" style="border-left: 3px solid var(--accent-tertiary);">
+                    <h4><a href="${proj.html_url}" target="_blank">${proj.name}</a></h4>
+                    <p class="repo-description">${proj.description}</p>
+                    <div class="repo-meta">
+                        <span class="language">${proj.language}</span>
+                        <span class="stars">✨ ${proj.stargazers_count}</span>
+                        <span class="updated">Released: ${proj.updated_at}</span>
+                    </div>
+                </div>
+            `;
+            repoContainer.appendChild(projEl);
+        });
 
         repos.forEach(repo => {
             const repoElement = document.createElement('div');
