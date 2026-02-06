@@ -1064,5 +1064,18 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1770403789800-0",
+    "content": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user experience matters. So I did what needed to be done: tested all 182 models on NVIDIA's NIM platform.\n\nThe results? ✅ 113 out of 182 models (62%) work perfectly with chat and conversation ❌ 69 require paid tier or special access\n\nThis means users of my free trial at models.bluehawana.com can now confidently choose from 113 verified working models - no more guessing which ones will fail.\n\nWhy this matters:\n\nTransparency builds trust\nUsers save time (no trial and error)\nClear documentation = better UX\nEven side projects deserve quality assurance\nThe full compatibility report is now in the GitHub repo, so anyone forking or starring the project knows exactly what works.\n\nBecause good testing isn't about perfection - it's about knowing your product inside out and being honest about it.\n\n\n#AI #OpenSource #QualityAssurance #NVIDIA #DeveloperTools #BuildInPublic",
+    "url": "https://www.linkedin.com/posts/hzl_ai-opensource-qualityassurance-activity-7424785469382590464-4dEq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1770403789800-0-e2762633397f0beba6acd07c90970a16.jpg",
+    "tags": [],
+    "publishedAt": "2026-02-04T12:06:41.744Z",
+    "engagement": {
+      "likes": 1,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]
