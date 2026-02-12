@@ -3,13 +3,13 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-06T18:49:49.893Z"
+    "last_sync": "2026-02-12T19:01:12.870Z"
   },
   "extraction": {
-    "date": "2026-02-06T18:49:49.893Z",
+    "date": "2026-02-12T19:01:12.870Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 83,
-    "new_posts_this_sync": 1,
+    "total_posts_found": 86,
+    "new_posts_this_sync": 3,
     "images_downloaded": 1
   },
   "posts": [
@@ -1589,6 +1589,63 @@
         "shares": 0
       },
       "posted_at": "2026-02-04T12:06:41.744Z"
+    },
+    {
+      "id": "linkedin-1770922872801-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no...",
+      "content": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no MacMini M4 required anymore. 😊",
+      "link": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-02-12T19:01:12.801Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-12T15:18:58.584Z"
+    },
+    {
+      "id": "linkedin-1770922872802-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live soluti...",
+      "content": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live solution. The next step is integrating with the SEB API to automatically fetch and print monthly transaction histories, including #bankgiro transactions, multiple times a day. This setup solves a real pain point—efficient, low-cost automation—with almost zero overhead compared to expensive market alternatives.\n\nThe frontend is hosted on Cloudflare Pages, and the backend runs on my VPS, making it a fast, reliable, and completely free stack for me. It’s already saving me over 30 minutes each month on manual tasks.\nI’m considering releasing this tool to the market at a fair price. If you're running a small or medium-sized business, how much would you be willing to pay for a tool that saves you 30–40 minutes every month on invoice sorting and printing then?\n\n#CloudFlarePages #VPS #OCR #InvoiceSys #TimeSaving #LLM",
+      "link": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQESY0yly5lwXg/feedshare-shrink_2048_1536/B4DZxSEUJQIwAk-/0/1770903389806?e=1772668800&v=beta&t=DJ1U-O8jPeZkBfohyPA3wrF85clYjiekdnmQs6hm7bk",
+      "local_image": "/images/linkedin/linkedin-1770922872802-1-79cfabade171eebac0c73170cc781677.jpg",
+      "extracted_at": "2026-02-12T19:01:12.801Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-12T13:36:30.837Z"
+    },
+    {
+      "id": "linkedin-1770922872851-2",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on...",
+      "content": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
+      "link": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-02-12T19:01:12.801Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-12T09:28:20.107Z"
     }
   ]
 }
