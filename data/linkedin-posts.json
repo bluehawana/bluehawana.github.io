@@ -1077,5 +1077,44 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1770922872801-0",
+    "content": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no MacMini M4 required anymore. 😊",
+    "url": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-02-12T15:18:58.584Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1770922872802-1",
+    "content": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live solution. The next step is integrating with the SEB API to automatically fetch and print monthly transaction histories, including #bankgiro transactions, multiple times a day. This setup solves a real pain point—efficient, low-cost automation—with almost zero overhead compared to expensive market alternatives.\n\nThe frontend is hosted on Cloudflare Pages, and the backend runs on my VPS, making it a fast, reliable, and completely free stack for me. It’s already saving me over 30 minutes each month on manual tasks.\nI’m considering releasing this tool to the market at a fair price. If you're running a small or medium-sized business, how much would you be willing to pay for a tool that saves you 30–40 minutes every month on invoice sorting and printing then?\n\n#CloudFlarePages #VPS #OCR #InvoiceSys #TimeSaving #LLM",
+    "url": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1770922872802-1-79cfabade171eebac0c73170cc781677.jpg",
+    "tags": [],
+    "publishedAt": "2026-02-12T13:36:30.837Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1770922872851-2",
+    "content": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
+    "url": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-02-12T09:28:20.107Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]
