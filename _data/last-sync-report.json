@@ -1,45 +1,56 @@
 {
-  "sync_timestamp": "2026-02-12T19:01:12.873Z",
+  "sync_timestamp": "2026-02-13T18:47:13.384Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 3,
-  "images_downloaded": 1,
-  "total_posts_in_system": 86,
+  "new_posts_synced": 4,
+  "images_downloaded": 2,
+  "total_posts_in_system": 90,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-12T19:31:12.873Z",
+  "next_sync_recommended": "2026-02-13T19:17:13.384Z",
   "new_posts": [
     {
+      "title": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion prefe...",
+      "link": "https://www.linkedin.com/posts/hzl_anywear-anywear-ios-activity-7428008723673104384-NqVU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 1
+      },
+      "sync_date": "2026-02-13T18:47:13.203Z"
+    },
+    {
       "title": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no...",
-      "link": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-02-12T19:01:12.801Z"
+      "sync_date": "2026-02-13T18:47:13.203Z"
     },
     {
       "title": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live soluti...",
-      "link": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-02-12T19:01:12.801Z"
+      "sync_date": "2026-02-13T18:47:13.203Z"
     },
     {
       "title": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on...",
-      "link": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
-        "likes": 0,
+        "likes": 1,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-02-12T19:01:12.801Z"
+      "sync_date": "2026-02-13T18:47:13.203Z"
     }
   ]
 }
