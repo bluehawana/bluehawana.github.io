@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-13T18:47:13.380Z"
+    "last_sync": "2026-02-16T08:57:28.635Z"
   },
   "extraction": {
-    "date": "2026-02-13T18:47:13.380Z",
+    "date": "2026-02-16T08:57:28.635Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 90,
-    "new_posts_this_sync": 4,
-    "images_downloaded": 2
+    "total_posts_found": 91,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -1722,6 +1722,25 @@
         "shares": 0
       },
       "posted_at": "2026-02-12T09:28:20.107Z"
+    },
+    {
+      "id": "linkedin-1771232248530-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion prefe...",
+      "content": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion preferences best, coming soon to the App Store. Say goodbye to the stress of choosing what to wear or buy. With the app, you can eliminate anxiety, overspending, and waste, making dressing effortless. \n\n#AnyWear #iOS #SWIFT #SWIFTUI #XCode263  #Weekend #Nanobanana #Gemini",
+      "link": "https://www.linkedin.com/posts/hzl_anywear-anywear-ios-activity-7428008723673104384-NqVU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQH8E8ElMeoSlw/feedshare-shrink_160/B4DZxWWklxG8A4-/0/1770975284262?e=1772668800&v=beta&t=5M6baLVDGkt-u7wve3wTRtE5iGWCIhJ0BrnG1tmXQWk",
+      "local_image": "/images/linkedin/linkedin-1771232248530-0-2d1b3be48a9adedd335f5d154678b5f1.jpg",
+      "extracted_at": "2026-02-16T08:57:28.529Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 1
+      },
+      "posted_at": "2026-02-13T09:34:45.452Z"
     }
   ]
 }
