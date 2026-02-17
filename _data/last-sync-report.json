@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-17T08:55:23.551Z",
+  "sync_timestamp": "2026-02-17T18:56:32.541Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 92,
+  "total_posts_in_system": 93,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-17T09:25:23.551Z",
+  "next_sync_recommended": "2026-02-17T19:26:32.541Z",
   "new_posts": [
     {
-      "title": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NV...",
-      "link": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "title": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to ...",
+      "link": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
-        "likes": 1,
-        "comments": 0,
+        "likes": 4,
+        "comments": 1,
         "shares": 0
       },
-      "sync_date": "2026-02-17T08:55:23.397Z"
+      "sync_date": "2026-02-17T18:56:32.423Z"
     }
   ]
 }

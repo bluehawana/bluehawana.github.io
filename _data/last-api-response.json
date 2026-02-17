@@ -1,6 +1,49 @@
 {
   "data": [
     {
+      "createdAt": "2026-02-17T11:41:35.935Z",
+      "activityId": "urn:li:activity:7429490195814662144",
+      "shareUrn": "urn:li:ugcPost:7429490194933960704",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQE0lVApGbw4sQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE0lVApGbw4sQ/feedshare-shrink_160/B4DZxrZ9rWKEAw-/0/1771328494559?e=1772668800&v=beta&t=vrTIO6PBDSDzEU3H_iHkRuEK1NkXh_yL3hjBw61YpzU"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGaz_vILlAJpw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGaz_vILlAJpw/feedshare-shrink_2048_1536/B4DZxrZ9lkJIAk-/0/1771328494291?e=1772668800&v=beta&t=2D0TMJRbsGb5zN5RYQoyPNCvlbE97aT-o7qW8EjWdTA"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQE68FULzxNO3Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE68FULzxNO3Q/feedshare-shrink_20/B4DZxrZ9pYG8AM-/0/1771328494478?e=1772668800&v=beta&t=dwVCG6Tl6DnRtdQfrRjBh6mBRq7j8Tam50EBIks1X6c"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to celebrate Chinese Lunar New Year’s Eve—a small tradition that brings warmth, no matter how far from home we are.\n\nWishing all overseas Chinese a joyful and prosperous Year of the Horse.            🐎 年大吉!\n\nWhere your family is, there’s your hometown. And when we make dumplings together, it truly feels like the Spring Festival has arrived.\n\n#LunarNewYear #Dumpling #Overseas #SpringFestival",
+      "activity": {
+        "numLikes": 4,
+        "numComments": 1,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 4
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-02-16T20:07:14.345Z",
       "activityId": "urn:li:activity:7429255056463466496",
       "shareUrn": "urn:li:ugcPost:7429255055611957248",
@@ -32,13 +75,13 @@
       },
       "commentary": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NVIDIA nim platform, along with my proxy project using nim-update to try with them. We look forward to the anticipated release of #MiniMax 2.5 as well. Grateful for the offerings from these four Chinese AI giants, providing us with diverse options in LLM and AI agents. \n\n#Zhipu #Alibaba #Xiyu #Moonshot #Models #Nvidia #LLM #Agent",
       "activity": {
-        "numLikes": 1,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 1
+            "count": 2
           }
         ]
       }
@@ -87,7 +130,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1770904989085?e=1771923600&v=beta&t=u2GafRKQJOQ2CDuM4BBYX26kvbJiQfKuXV0tlkFtxPM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1770904989085?e=1771959600&v=beta&t=tTPZAr4VMmjiyo5wNyP54hhiSK_V1cgcY6Y26jZOBfU"
         }
       },
       "actor": {
@@ -142,7 +185,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=93m5ngUGVvlqjtW6apxEFA%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=%2FMKapMtVmDNepE1KyP%2FgMg%3D%3D"
         }
       },
       "actor": {
@@ -213,7 +256,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1771923600&v=beta&t=XJFX8vPHv1xKgBb4uEFBzriLDywd40DK1wyhkVu_T90"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1771959600&v=beta&t=wENhM06czgWEFqbhG2NE45TWAAt29n-8AS_hwh6lrJ0"
         }
       },
       "actor": {
@@ -240,7 +283,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=8JrPrIUv%2FPyTKJ5exh0vZQ%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=T6n2bzA6ZZiDCSrkainiFQ%3D%3D"
         }
       },
       "actor": {
@@ -272,7 +315,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=uWgY1EeDfoSABSu76cfOSA%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=Gb04yUP8fdugnzKXUyNgoA%3D%3D"
         }
       },
       "actor": {
@@ -405,7 +448,7 @@
           "title": "DAN KOE (@thedankoe) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1771923600&v=beta&t=_yyXUo9BiCwKYHwOClrjv1ZU4gNC51o9eyGh7mQddss"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1771959600&v=beta&t=VR6WUPGfChyeprg07XV4ziPN2fjMS1SQzsDn5EFLxUs"
         }
       },
       "actor": {
@@ -658,45 +701,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2025-12-27T10:03:54.086Z",
-      "activityId": "urn:li:activity:7410621440426889216",
-      "shareUrn": "urn:li:ugcPost:7410621437629079552",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_webdev-ipad-remotedev-activity-7410621440426889216-3zra?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQG1VHzVWnApng",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG1VHzVWnApng/feedshare-shrink_20/B4EZtfQ7KNKUA0-/0/1766829831756?e=1772668800&v=beta&t=eFTwDUnOw8j3VW-estGqsSmUE_DafXSgg3RclD8bOyg"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQGA4Likxw_esg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGA4Likxw_esg/feedshare-shrink_1280/B4EZtfQ7KMHEAs-/0/1766829831894?e=1772668800&v=beta&t=Uds1sQzE7yaJEcYu4rGjnORl9s9zakKnYJTrNGDXRSg"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "iPad Remote Development - No SSH or Terminal Apps Required\n\nHej,\nHope you all had a great Christmas. As a New Year's gift to the dev community, I want to share something I've been working on.\n\nToday I successfully connected to my VPS from my iPad Pro Gen 3 and started coding - directly from Safari. No SSH apps, no terminal emulators, just a browser.\n\nTested over Tele2 cellular 4G connection - proving this works anywhere you have mobile data.\n\nSolving iPad's Development Problem\n\nThe main reasons developers avoid iPad for serious work:\n- No proper terminal tools\n- Limited code IDE support\n- Poor SSH connection options\n- iOS sandboxing restrictions\n\nThis project solves all of these by moving the development environment to a server and accessing it through Safari. Now your iPad becomes a true development machine.\n\n What Works\n\n - Full terminal access in Safari\n - Git workflow (commit, push, PR creation)\n - File editing with vim/nano\n - AI-assisted coding (OpenAI integration)\n - Virtual keyboard optimized for touch\n - Sessions persist across disconnects\n - MFA with Google Authenticator for highest security\n\nBuilt with Kiro and Claude Code Sonnet 4.5\n\nThis entire project was built using Kiro and Claude Code Sonnet 4.5 - proving that AI-assisted development can create real, production-ready tools. Now it enables vibe coding anywhere you have your iPad and internet connection. Coffee shop, airport, wherever - just open Safari and code.\n\nWhy This Matters\n\n The iPad Pro has the hardware for serious development work, but iOS limitations have always been the blocker. By running the dev environment on a server and accessing through Safari, we bypass those limitations completely.\n\nYou get:\n- Full Linux environment\n- All your command-line tools\n- Your entire workflow, just accessible from anywhere\n- No need to carry a laptop\n- Secure access with multi-factor authentication\n\nTechnical Stack\n\n- WebSocket for real-time communication\n- xterm.js for browser terminal\n- node-pty for shell management\n- TypeScript monorepo\n- PWA support\n- TOTP-based MFA (Google Authenticator)\n\nNext Steps\n\nI'm developing several deployment scenarios for devs with(out) a VPS:\n\n1. With VPS (what I'm using now)\n2. Tailscale VPN (connect iPad to your Mac at home, no VPS needed)\n3. Cloudflare Tunnel (permanent setup with custom domain)\n4. ngrok (quick testing)\n5. GitHub Codespaces (backup option)\n\nFor developers without a VPS, options 2-5 mean you can still work remotely with just your Mac at home and your iPad.\n\nOpen Source\n\nWill be releasing this for the community soon. Whether you have a VPS, a Mac at home, or just use Codespaces - you'll be able to vibe code from your iPad anywhere you have internet. Forget your MBP and MBA, now in 2026, it is time to work from anywhere with just an iPad.\n\n Interested in trying this? Keep an eye on the updates of this projejct.\n\n#WebDev #iPad #RemoteDev #Opensource #Claudecode #SSH #TCPIP #Terminal",
-      "activity": {
-        "numLikes": 9,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 9
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTA2MjE0NDA0MjY4ODkyMTYtMTc2NjgyOTgzNDA1OA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTA2MjMyMjkwMDgxMDEzNzYtMTc2NjgzMDI2MDQ4OA==:20"
 }

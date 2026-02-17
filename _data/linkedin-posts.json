@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-17T08:55:23.547Z"
+    "last_sync": "2026-02-17T18:56:32.536Z"
   },
   "extraction": {
-    "date": "2026-02-17T08:55:23.547Z",
+    "date": "2026-02-17T18:56:32.536Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 92,
+    "total_posts_found": 93,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1760,6 +1760,25 @@
         "shares": 0
       },
       "posted_at": "2026-02-16T20:07:14.345Z"
+    },
+    {
+      "id": "linkedin-1771354592424-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to ...",
+      "content": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to celebrate Chinese Lunar New Year’s Eve—a small tradition that brings warmth, no matter how far from home we are.\n\nWishing all overseas Chinese a joyful and prosperous Year of the Horse.            🐎 年大吉!\n\nWhere your family is, there’s your hometown. And when we make dumplings together, it truly feels like the Spring Festival has arrived.\n\n#LunarNewYear #Dumpling #Overseas #SpringFestival",
+      "link": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQE0lVApGbw4sQ/feedshare-shrink_160/B4DZxrZ9rWKEAw-/0/1771328494559?e=1772668800&v=beta&t=vrTIO6PBDSDzEU3H_iHkRuEK1NkXh_yL3hjBw61YpzU",
+      "local_image": "/images/linkedin/linkedin-1771354592424-0-008c5a61fd54261aa6edcaca09e66019.jpg",
+      "extracted_at": "2026-02-17T18:56:32.423Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 4,
+        "comments": 1,
+        "shares": 0
+      },
+      "posted_at": "2026-02-17T11:41:35.935Z"
     }
   ]
 }
