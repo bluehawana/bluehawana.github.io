@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-16T08:57:28.638Z",
+  "sync_timestamp": "2026-02-17T08:55:23.551Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 91,
+  "total_posts_in_system": 92,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-16T09:27:28.638Z",
+  "next_sync_recommended": "2026-02-17T09:25:23.551Z",
   "new_posts": [
     {
-      "title": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion prefe...",
-      "link": "https://www.linkedin.com/posts/hzl_anywear-anywear-ios-activity-7428008723673104384-NqVU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "title": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NV...",
+      "link": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
         "likes": 1,
         "comments": 0,
-        "shares": 1
+        "shares": 0
       },
-      "sync_date": "2026-02-16T08:57:28.529Z"
+      "sync_date": "2026-02-17T08:55:23.397Z"
     }
   ]
 }

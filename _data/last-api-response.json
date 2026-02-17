@@ -1,6 +1,49 @@
 {
   "data": [
     {
+      "createdAt": "2026-02-16T20:07:14.345Z",
+      "activityId": "urn:li:activity:7429255056463466496",
+      "shareUrn": "urn:li:ugcPost:7429255055611957248",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGFKLKbAo_WfA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGFKLKbAo_WfA/feedshare-shrink_2048_1536/B4DZxoEGWJJcAk-/0/1771272432271?e=1772668800&v=beta&t=IbXq5GE0azm09TN8EEpGtV3bkHT9q_1fROJd6Yxc5f0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEF1oAAH4dQiw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEF1oAAH4dQiw/feedshare-shrink_2048_1536/B4DZxoEGSMGQAo-/0/1771272431565?e=1772668800&v=beta&t=Q4ye6M6uihyZ7wy7SjHmya8iUnTLN5pQYxgg579TISc"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGokSz8osITwg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGokSz8osITwg/feedshare-shrink_480/B4DZxoEGWTJwAs-/0/1771272432251?e=1772668800&v=beta&t=abfvbI2fmsxYDGboa2yVxyRYZ38jeIrxSUOvwc7xt5o"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NVIDIA nim platform, along with my proxy project using nim-update to try with them. We look forward to the anticipated release of #MiniMax 2.5 as well. Grateful for the offerings from these four Chinese AI giants, providing us with diverse options in LLM and AI agents. \n\n#Zhipu #Alibaba #Xiyu #Moonshot #Models #Nvidia #LLM #Agent",
+      "activity": {
+        "numLikes": 1,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-02-13T09:34:45.452Z",
       "activityId": "urn:li:activity:7428008723673104384",
       "shareUrn": "urn:li:share:7428008722762866688",
@@ -44,7 +87,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1770904989085?e=1771873200&v=beta&t=LmBwmRw-l41lxRnHT03SrEb0if8mTXMjvKQ2geInwA8"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1770904989085?e=1771923600&v=beta&t=u2GafRKQJOQ2CDuM4BBYX26kvbJiQfKuXV0tlkFtxPM"
         }
       },
       "actor": {
@@ -99,7 +142,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=1WuUNwDvJ42F1B9X%2F%2FwB0g%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=93m5ngUGVvlqjtW6apxEFA%3D%3D"
         }
       },
       "actor": {
@@ -170,7 +213,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1771873200&v=beta&t=X7oN4n_8TIcrHZH0bIpI1UHkU2camJx5IHimEjJBqwQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1771923600&v=beta&t=XJFX8vPHv1xKgBb4uEFBzriLDywd40DK1wyhkVu_T90"
         }
       },
       "actor": {
@@ -197,7 +240,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=yp9LHb%2FbcDX2r%2Bm7FISBvg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=8JrPrIUv%2FPyTKJ5exh0vZQ%3D%3D"
         }
       },
       "actor": {
@@ -229,7 +272,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=l9lBpfHiVogr0EEY78q12g%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=uWgY1EeDfoSABSu76cfOSA%3D%3D"
         }
       },
       "actor": {
@@ -362,7 +405,7 @@
           "title": "DAN KOE (@thedankoe) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1771873200&v=beta&t=2UzdSu1jDlPbMuLpLcnfgDRNZmtdxJ-3xQPHDzJl4U4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1771923600&v=beta&t=_yyXUo9BiCwKYHwOClrjv1ZU4gNC51o9eyGh7mQddss"
         }
       },
       "actor": {
@@ -653,34 +696,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2025-12-14T20:45:01.158Z",
-      "activityId": "urn:li:activity:7406071740768100353",
-      "shareUrn": "urn:li:ugcPost:7406054285232316416",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_lets-brainstorm-together-about-this-special-activity-7406071740768100353-TKPH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "content": {
-        "article": {
-          "urn": "urn:li:linkedInArticle:7406050964580827136",
-          "title": "Malmunden är här: Tesla Model Y Standard 499,990 kr - Is This the End of Retail Competition?",
-          "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/malmunden-%25C3%25A4r-h%25C3%25A4r-tesla-model-y-standard-499990-kr-end-harvad-li-t1uye?trackingId=q%2FXyrVVK%2FrhpTKceV3J3vA%3D%3D"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Let's brainstorm together about this special \"catfish\" that just entered the Swedish EV market. Your perspective matters—whether you agree, disagree, or see angles I haven't considered.",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 4,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MDYwNzE3NDA3NjgxMDAzNTMtMTc2NTc0NTEwMTEyOA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTA2MjE0NDA0MjY4ODkyMTYtMTc2NjgyOTgzNDA1OA==:20"
 }
