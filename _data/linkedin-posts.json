@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-16T08:57:28.635Z"
+    "last_sync": "2026-02-17T08:55:23.547Z"
   },
   "extraction": {
-    "date": "2026-02-16T08:57:28.635Z",
+    "date": "2026-02-17T08:55:23.547Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 91,
+    "total_posts_found": 92,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1741,6 +1741,25 @@
         "shares": 1
       },
       "posted_at": "2026-02-13T09:34:45.452Z"
+    },
+    {
+      "id": "linkedin-1771318523398-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NV...",
+      "content": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NVIDIA nim platform, along with my proxy project using nim-update to try with them. We look forward to the anticipated release of #MiniMax 2.5 as well. Grateful for the offerings from these four Chinese AI giants, providing us with diverse options in LLM and AI agents. \n\n#Zhipu #Alibaba #Xiyu #Moonshot #Models #Nvidia #LLM #Agent",
+      "link": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQGFKLKbAo_WfA/feedshare-shrink_2048_1536/B4DZxoEGWJJcAk-/0/1771272432271?e=1772668800&v=beta&t=IbXq5GE0azm09TN8EEpGtV3bkHT9q_1fROJd6Yxc5f0",
+      "local_image": "/images/linkedin/linkedin-1771318523398-0-836662d0a75099856925f3abd7a54144.jpg",
+      "extracted_at": "2026-02-17T08:55:23.397Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-16T20:07:14.345Z"
     }
   ]
 }
