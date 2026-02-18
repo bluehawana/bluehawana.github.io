@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-17T18:56:32.536Z"
+    "last_sync": "2026-02-18T08:54:41.427Z"
   },
   "extraction": {
-    "date": "2026-02-17T18:56:32.536Z",
+    "date": "2026-02-18T08:54:41.427Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 93,
-    "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "total_posts_found": 95,
+    "new_posts_this_sync": 2,
+    "images_downloaded": 2
   },
   "posts": [
     {
@@ -1779,6 +1779,44 @@
         "shares": 0
       },
       "posted_at": "2026-02-17T11:41:35.935Z"
+    },
+    {
+      "id": "linkedin-1771404881148-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to ...",
+      "content": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to celebrate Chinese Lunar New Year’s Eve—a small tradition that brings warmth, no matter how far from home we are.\n\nWishing all overseas Chinese a joyful and prosperous Year of the Horse.            🐎 年大吉!\n\nWhere your family is, there’s your hometown. And when we make dumplings together, it truly feels like the Spring Festival has arrived.\n\n#LunarNewYear #Dumpling #Overseas #SpringFestival",
+      "link": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQE0lVApGbw4sQ/feedshare-shrink_160/B4DZxrZ9rWKEAw-/0/1771328494559?e=1773273600&v=beta&t=URdf9MUm_XdcxudeJEAfTFPpQNeH_gFo_PRp64C3f3k",
+      "local_image": "/images/linkedin/linkedin-1771404881148-0-ef494f50679eecb391d6013880a88f1a.jpg",
+      "extracted_at": "2026-02-18T08:54:41.147Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 5,
+        "comments": 1,
+        "shares": 0
+      },
+      "posted_at": "2026-02-17T11:41:35.935Z"
+    },
+    {
+      "id": "linkedin-1771404881279-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NV...",
+      "content": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NVIDIA nim platform, along with my proxy project using nim-update to try with them. We look forward to the anticipated release of #MiniMax 2.5 as well. Grateful for the offerings from these four Chinese AI giants, providing us with diverse options in LLM and AI agents. \n\n#Zhipu #Alibaba #Xiyu #Moonshot #Models #Nvidia #LLM #Agent",
+      "link": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQGFKLKbAo_WfA/feedshare-shrink_2048_1536/B4DZxoEGWJJcAk-/0/1771272432271?e=1773273600&v=beta&t=-n5u3XVm3RLeJrJQt9EysZvv8TRAQ9_2WMfYDfFp91E",
+      "local_image": "/images/linkedin/linkedin-1771404881279-1-40c0716a77ba3e55b474c39f0a53aa9b.jpg",
+      "extracted_at": "2026-02-18T08:54:41.147Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-16T20:07:14.345Z"
     }
   ]
 }
