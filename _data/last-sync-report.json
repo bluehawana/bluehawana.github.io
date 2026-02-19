@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-18T18:53:37.631Z",
+  "sync_timestamp": "2026-02-19T18:49:45.361Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 96,
+  "total_posts_in_system": 97,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-18T19:23:37.631Z",
+  "next_sync_recommended": "2026-02-19T19:19:45.361Z",
   "new_posts": [
     {
       "title": "It was minus 12°C this morning. After dropping off my kid, I headed straight to Jula for #birdfood —...",
-      "link": "https://www.linkedin.com/posts/hzl_birdfood-silentlove-warmswinter-activity-7429814383440056321-a98i?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_birdfood-silentlove-warmswinter-activity-7429814383440056321-a98i?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 5,
-        "comments": 3,
+        "likes": 6,
+        "comments": 5,
         "shares": 0
       },
-      "sync_date": "2026-02-18T18:53:37.567Z"
+      "sync_date": "2026-02-19T18:49:45.179Z"
     }
   ]
 }
