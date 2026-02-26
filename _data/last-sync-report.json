@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-02-25T19:04:51.369Z",
+  "sync_timestamp": "2026-02-26T08:57:09.934Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 98,
+  "total_posts_in_system": 99,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-02-25T19:34:51.369Z",
+  "next_sync_recommended": "2026-02-26T09:27:09.934Z",
   "new_posts": [
     {
       "title": "Always on the move — and loving the learning along the way. 🚀",
-      "link": "https://www.linkedin.com/posts/hzl_always-on-the-move-and-loving-the-learning-activity-7432487281942351872-xtVR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "link": "https://www.linkedin.com/posts/hzl_always-on-the-move-and-loving-the-learning-activity-7432487281942351872-xtVR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
-        "likes": 0,
+        "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-02-25T19:04:51.227Z"
+      "sync_date": "2026-02-26T08:57:09.816Z"
     }
   ]
 }
