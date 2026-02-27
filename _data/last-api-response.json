@@ -1,6 +1,49 @@
 {
   "data": [
     {
+      "createdAt": "2026-02-27T17:24:19.346Z",
+      "activityId": "urn:li:activity:7433200323667763200",
+      "shareUrn": "urn:li:ugcPost:7433200322724012032",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_pinebookpro-kali-lenovothinkpade15-activity-7433200323667763200-Mltv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEOoJqJJBRaWA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEOoJqJJBRaWA/feedshare-shrink_1280/B4DZygIS2aHEAc-/0/1772213057693?e=1773878400&v=beta&t=9tN9QnRIS0Xkw65Jcjx8Y5qeXXEsa6iLnI8NXk1kQjU"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGQEe2aLpdx-g",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGQEe2aLpdx-g/feedshare-shrink_2048_1536/B4DZygIS12JkAk-/0/1772213057523?e=1773878400&v=beta&t=3iZSn8BiZqydIpB9KWMK54D05PPKckmQDxpLb7JSFd0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHP_UKj5mZY0w",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHP_UKj5mZY0w/feedshare-shrink_2048_1536/B4DZygIS1qJ4Ak-/0/1772213057377?e=1773878400&v=beta&t=DHd2g7euaUdfwjqN8_-l86eI2_gITWOyavUYxc8QzDY"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #PinebookPro. Last opened nearly half a year ago. The angry emojis? That’s from when I helped my daughter review math exam questions — let’s just say she wasn’t impressed. 🙃  \nTruth is, without solid app support and ecosystem maturity, it’s been gathering dust more than doing real work. Now it installed #Kali on it，almost the best Linux OS for this one.\n\nThe second: a #LenovoThinkpadE15 Gen 3 running Windows 11. I open it maybe once a month — mostly to test a project on another platform or upload something to Google Drive. It does its job, but it’s not my go-to. \n\nAnd then there’s the third: my #MacminiM4Pro — 64GB RAM, 2TB SSD. Running 24/7 as my #homelab. No dust. No breaks. This is the one I actually live on.\n\nSo — what about you?  \nWhich machine at home do you actually *use most*, and why?  \nLet’s swap setups and stories.\n\nHappy weekend, everyone!\n\n#MacMini #M4Pro #PinebookPro #HomeLab #AppleSilicon #LinuxEcosystem #DevSetup #LenovoE15 #ARMComputing #HomeOffice",
+      "activity": {
+        "numLikes": 2,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-02-25T18:10:56.951Z",
       "activityId": "urn:li:activity:7432487281942351872",
       "shareUrn": "urn:li:ugcPost:7432487281070030848",
@@ -216,7 +259,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1772131905476?e=1772787600&v=beta&t=_IIBT7IwFhjjmL3lzU6Nf7DeUx95yFlspWol4x--RWQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1772131905476?e=1772823600&v=beta&t=puioT2TlWMvAkPQZcvc4kJbWKyolqt3oxXlVPRC-Qsc"
         }
       },
       "actor": {
@@ -271,7 +314,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=TaSCHaWyTGFYkXx%2F1Ix9IQ%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=JrnDh%2Bi2rROkIY%2FPOyXurA%3D%3D"
         }
       },
       "actor": {
@@ -342,7 +385,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1772787600&v=beta&t=NqvHRHPDwi_Rbi7EoQLqkifFNmWg-mv5QccxLccehqo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1772823600&v=beta&t=9Ab8-_llFzEDnCzW4pa0aZxQnoOWZL8pCCoPEfrQwgw"
         }
       },
       "actor": {
@@ -369,7 +412,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=DQVKlJN6Dwbp%2FbK3ZflCZA%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=prYrMoi4oEaLiXnPzm%2BaGQ%3D%3D"
         }
       },
       "actor": {
@@ -401,7 +444,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=pP%2F%2F3r9mqkLq%2FdZh2AJiag%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=awDXykruL6ZMR%2B7kmr%2BgJw%3D%3D"
         }
       },
       "actor": {
@@ -534,7 +577,7 @@
           "title": "DAN KOE (@thedankoe) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1772787600&v=beta&t=AgjJAeu-7md9uDcunq8f5_nWkt2V1BgtqFsOxEw8lJc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1772823600&v=beta&t=83iK7HznvKyHuTrCdPe0PVb_Ervmm6n9ErPBWPFVOgk"
         }
       },
       "actor": {
@@ -673,50 +716,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-01-04T13:24:22.517Z",
-      "activityId": "urn:li:activity:7413570994247802880",
-      "shareUrn": "urn:li:ugcPost:7413570993413283840",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_valencia-kaggle-datavisualization-activity-7413570994247802880-978u?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQFLr7Nihwn2Iw",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFLr7Nihwn2Iw/feedshare-shrink_2048_1536/B4EZuJLhslHcAw-/0/1767533060582?e=1773878400&v=beta&t=He3nOra3KCARXta10iI_IYZ0iY5upBhCqkwvJVgLUcc"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQGqjSnLbo0S-g",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGqjSnLbo0S-g/feedshare-shrink_800/B4EZuJLhs0J0Ag-/0/1767533060629?e=1773878400&v=beta&t=wX9lduyK8DUVg1anOikaAD9D-i2i-eifbg87CSFfCDQ"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQG6Y2uvjHWWPQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG6Y2uvjHWWPQ/feedshare-shrink_1280/B4EZuJLhsEKUAw-/0/1767533060782?e=1773878400&v=beta&t=p7E3pbLIfCTGjopA-qtc-mTKp5bchnP4kfHE19vGiGI"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "IndieDev(.Net/Java/TS/JS/Python/Go/SQL...) | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "New Year, New Project No.1: .Net-FleetManagement-System\nFrom CSV files to a comprehensive Fleet Management system—featuring data analysis, interactive visualizations, a .NET backend REST API, a Next Frontend management interference with embedded Grafana features dashboard, and AI-powered predictive modeling with MiniMax algorithms. This showcases how a full-stack developer can drive measurable cost savings and profit improvements for organizations.\nBridging the gap between real-world business bottlenecks and sustainable growth requires the right technical approach, strategic thinking and a business-driven mindset.\n\nFeel free to PM me if you’d like to learn more about this project. Happy New Year from #Valencia! 🎊\n\n#Kaggle #DataVisualization #DotNet #RestAPI #AIModeling #BusinessITIntegration #FleetManagement #FullStackDevelopment",
-      "activity": {
-        "numLikes": 2,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 2
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTM1NzA5OTQyNDc4MDI4ODAtMTc2NzUzMzA2MjQ4OA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTQ3MzE0MjAyMjIzMjA2NDAtMTc2NzgwOTcyOTYwMA==:20"
 }

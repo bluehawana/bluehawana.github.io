@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-27T08:51:12.269Z"
+    "last_sync": "2026-02-27T18:41:04.662Z"
   },
   "extraction": {
-    "date": "2026-02-27T08:51:12.269Z",
+    "date": "2026-02-27T18:41:04.662Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 101,
+    "total_posts_found": 102,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1931,6 +1931,25 @@
         "shares": 0
       },
       "posted_at": "2026-02-25T18:10:56.951Z"
+    },
+    {
+      "id": "linkedin-1772217664618-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #Pineboo...",
+      "content": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #PinebookPro. Last opened nearly half a year ago. The angry emojis? That’s from when I helped my daughter review math exam questions — let’s just say she wasn’t impressed. 🙃  \nTruth is, without solid app support and ecosystem maturity, it’s been gathering dust more than doing real work. Now it installed #Kali on it，almost the best Linux OS for this one.\n\nThe second: a #LenovoThinkpadE15 Gen 3 running Windows 11. I open it maybe once a month — mostly to test a project on another platform or upload something to Google Drive. It does its job, but it’s not my go-to. \n\nAnd then there’s the third: my #MacminiM4Pro — 64GB RAM, 2TB SSD. Running 24/7 as my #homelab. No dust. No breaks. This is the one I actually live on.\n\nSo — what about you?  \nWhich machine at home do you actually *use most*, and why?  \nLet’s swap setups and stories.\n\nHappy weekend, everyone!\n\n#MacMini #M4Pro #PinebookPro #HomeLab #AppleSilicon #LinuxEcosystem #DevSetup #LenovoE15 #ARMComputing #HomeOffice",
+      "link": "https://www.linkedin.com/posts/hzl_pinebookpro-kali-lenovothinkpade15-activity-7433200323667763200-Mltv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQEOoJqJJBRaWA/feedshare-shrink_1280/B4DZygIS2aHEAc-/0/1772213057693?e=1773878400&v=beta&t=9tN9QnRIS0Xkw65Jcjx8Y5qeXXEsa6iLnI8NXk1kQjU",
+      "local_image": "/images/linkedin/linkedin-1772217664618-0-f4b98d202dc18c604f202e89f799c267.jpg",
+      "extracted_at": "2026-02-27T18:41:04.617Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-27T17:24:19.346Z"
     }
   ]
 }
