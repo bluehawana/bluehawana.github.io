@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-02-26T18:51:45.658Z"
+    "last_sync": "2026-02-27T08:51:12.269Z"
   },
   "extraction": {
-    "date": "2026-02-26T18:51:45.658Z",
+    "date": "2026-02-27T08:51:12.269Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 100,
+    "total_posts_found": 101,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -1908,6 +1908,25 @@
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-02-25T18:10:56.951Z"
+    },
+    {
+      "id": "linkedin-1772182272142-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Always on the move — and loving the learning along the way. 🚀\n\n#Chainguard #Docker #CVE #CNCFGBG #O...",
+      "content": "Always on the move — and loving the learning along the way. 🚀\n\n#Chainguard #Docker #CVE #CNCFGBG #Opensource",
+      "link": "https://www.linkedin.com/posts/hzl_chainguard-docker-cve-activity-7432487281942351872-YoEH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQG-ukbUb5cilw/feedshare-shrink_160/B4DZyV_xyAIoAs-/0/1772043053088?e=1773878400&v=beta&t=P__IX_wq-VUh31Wpms-X7Z6e3Yy9ZT-kINGrRo-92oE",
+      "local_image": "/images/linkedin/linkedin-1772182272142-0-93e02066d99be2a64314551bff49b817.jpg",
+      "extracted_at": "2026-02-27T08:51:12.142Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
         "comments": 0,
         "shares": 0
       },
