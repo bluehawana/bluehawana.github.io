@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-03-02T08:54:46.378Z",
+  "sync_timestamp": "2026-03-02T18:45:05.788Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 103,
+  "total_posts_in_system": 104,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-03-02T09:24:46.378Z",
+  "next_sync_recommended": "2026-03-02T19:15:05.788Z",
   "new_posts": [
     {
       "title": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #Pineboo...",
-      "link": "https://www.linkedin.com/posts/hzl_pinebookpro-kali-lenovothinkpade15-activity-7433200323667763200-Mltv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_pinebookpro-lenovothinkpade15-macminim4pro-activity-7433200323667763200-hUWX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "has_image": true,
       "engagement": {
         "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-03-02T08:54:46.206Z"
+      "sync_date": "2026-03-02T18:45:05.585Z"
     }
   ]
 }
