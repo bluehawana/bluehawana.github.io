@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-03-18T18:58:00.421Z",
+  "sync_timestamp": "2026-03-19T18:57:14.759Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 106,
+  "total_posts_in_system": 107,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-03-18T19:28:00.421Z",
+  "next_sync_recommended": "2026-03-19T19:27:14.759Z",
   "new_posts": [
     {
       "title": "5 Agent Skill from Google.",
-      "link": "https://www.linkedin.com/posts/hzl_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-bzyv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "link": "https://www.linkedin.com/posts/hzl_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-bzyv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-03-18T18:58:00.375Z"
+      "sync_date": "2026-03-19T18:57:14.737Z"
     }
   ]
 }
