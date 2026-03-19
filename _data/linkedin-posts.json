@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-03-18T18:58:00.400Z"
+    "last_sync": "2026-03-19T18:57:14.755Z"
   },
   "extraction": {
-    "date": "2026-03-18T18:58:00.400Z",
+    "date": "2026-03-19T18:57:14.755Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 106,
+    "total_posts_found": 107,
     "new_posts_this_sync": 1,
     "images_downloaded": 0
   },
@@ -2019,6 +2019,25 @@
       "image": "",
       "local_image": "",
       "extracted_at": "2026-03-18T18:58:00.375Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-03-18T17:08:40.480Z"
+    },
+    {
+      "id": "linkedin-1773946634738-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "5 Agent Skill from Google.",
+      "content": "5 Agent Skill from Google.",
+      "link": "https://www.linkedin.com/posts/hzl_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-bzyv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-03-19T18:57:14.737Z",
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 0,
