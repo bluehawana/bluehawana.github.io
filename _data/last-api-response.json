@@ -1,6 +1,34 @@
 {
   "data": [
     {
+      "createdAt": "2026-04-04T07:51:01.003Z",
+      "activityId": "urn:li:activity:7446102009721790464",
+      "shareUrn": "urn:li:share:7446102009054728192",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_andrej-karpathy-karpathy-on-x-activity-7446102009721790464-2kTl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "content": {
+        "article": {
+          "urn": "urn:li:article:6990043472378005643",
+          "title": "Andrej Karpathy (@karpathy) on X",
+          "subtitle": "x.com",
+          "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1776074400&v=beta&t=BisBAjzwfJyvSHRgfiUgJUzuqGCkHCudH6zyIqIYDdI"
+        }
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "How we should build our own knowledge base with LLM.",
+      "activity": {
+        "numLikes": 0,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": []
+      }
+    },
+    {
       "createdAt": "2026-03-18T17:08:40.480Z",
       "activityId": "urn:li:activity:7440081755224600576",
       "shareUrn": "urn:li:share:7440081754507563008",
@@ -11,7 +39,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1775847600&v=beta&t=0aBseDo0YJwFVnvBm3EqKLgVbFwwYc4n2nwV-g2ZCU0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1776074400&v=beta&t=i8okCsItYV1EaVD2vUyRvgSBugK8gcoBhgVrfA5qU94"
         }
       },
       "actor": {
@@ -287,7 +315,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1775847600&v=beta&t=BC8V_dnBN9LgH5eeIayGkSY_UJdNkMNtBopzt2-Um5I"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1776074400&v=beta&t=Fsbxh7sAT2iY821AimoyqZ2-MI7MIIGnN76osL4KMuI"
         }
       },
       "actor": {
@@ -342,7 +370,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=GYcp3wspWgJkx2h8MEhxAA%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=LbBAknufbg5wp0Bn00e5kA%3D%3D"
         }
       },
       "actor": {
@@ -413,7 +441,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1775847600&v=beta&t=3kIFnHiGDnL1Fsv777-AyBEV6Zesy0psPaSheEW53uk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1776074400&v=beta&t=jBdRf_HvkPtIPOdi9vCDpiFd8apo9S-e1FpbjVTaPo0"
         }
       },
       "actor": {
@@ -440,7 +468,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=OcTSfoLWUjzegJCtSaqC%2FA%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=hBEgMR7oI6ycEj8WuNPvZQ%3D%3D"
         }
       },
       "actor": {
@@ -472,7 +500,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=s9NFqvLCLvYi7Lz%2BruSqbw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=GaHzxKSoGFmPgCIOlzVD4w%3D%3D"
         }
       },
       "actor": {
@@ -605,7 +633,7 @@
           "title": "DAN KOE (@thedankoe) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1775847600&v=beta&t=GxbVp69lmVrXkwwGEKbHH2PIRb1-ZNr-W0cwZ-CcEos"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1776074400&v=beta&t=hP8bxAw8BIvyvUSyY3H4dho-XvaXQkxQM5pAGpzgQk0"
         }
       },
       "actor": {
@@ -659,44 +687,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-01-07T21:16:45.422Z",
-      "activityId": "urn:li:activity:7414777036604461056",
-      "shareUrn": "urn:li:share:7414777035447017472",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_winterdriving-snowsafety-drivingtips-activity-7414777036604461056-NVRu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQE8YcBl6YjFWQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE8YcBl6YjFWQ/feedshare-shrink_480/B4EZuaUakbKkAY-/0/1767820604381?e=1776902400&v=beta&t=oFxyj6Jx8BDPETYA1NVum6RGXuKfliUqqMQq_c1zSME"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Due to the recent extreme snowfall and the challenging road conditions expected tomorrow, considering public transportation for your commute is advisable. If you must drive and your vehicle is a two‑wheel‑drive automatic model from the last ten years, remember to shift to M and lock it in M2 for better traction compared to D. For older automatic vehicles, look for L2 and use that to drive out of deep snow. And if your car only has D… well, good luck 😄\nFor manual‑transmission cars, try starting in 2nd gear when moving out of deep snow. If 1st gear causes too much wheel spin or doesn’t give you enough controlled power, 2nd gear often provides smoother traction and helps the car move forward more steadily.\n\nWhen driving out of snow, keep your speed low until the wheels stop slipping, then continue smoothly at a controlled pace. For safer winter driving, preheat your front window and take extra time to thoroughly clear all windows. Maintain a safe distance from other vehicles and use gradual braking instead of sudden stops. These small habits significantly improve visibility and reduce the risk of accidents on slippery roads.\n\nThese tips come from 30+ years behind the wheel both in China and Sweden. Put them to the test again today helping a rear-wheel-drive BMW 5 Series and a front-wheel-drive XC60 get unstuck from the snow. Hope this helps someone stay safe out there this winter.\n\n#WinterDriving #SnowSafety #DrivingTips #VehicleControl #DefensiveDriving #SafeCommute #CommunitySupport #SnowFallWeather #Gothenburg #Mölndal #Lindholmen",
-      "activity": {
-        "numLikes": 8,
-        "numComments": 1,
-        "numShares": 1,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 6
-          },
-          {
-            "type": "INTEREST",
-            "count": 2
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTQ3NzcwMzY2MDQ0NjEwNTYtMTc2NzgyMDYwNTQwMw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTYxNzU1OTkxOTY0NjMxMDQtMTc2ODE1NDA0ODcwOQ==:20"
 }
