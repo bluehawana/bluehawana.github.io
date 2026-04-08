@@ -1415,5 +1415,18 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1775675664256-0",
+    "content": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by LLMs, do they actually perform better with faster response times in RAG scenarios?  \n\nWe’re taking inspiration from Andrej Karpathy and putting it to the test—let’s see if the way we construct our RAG systems really makes a difference and sense.\n\nThe performance is not just about speed. What if we could “enrich” the knowledge base itself by having LLMs generate novel, context-aware answers?  \n\nImagine this: instead of just retrieving facts, we’re “creating”insights—like smashing together breads, noodles, and pastas into a creative new dish, tailored exactly to the question at hand. That’s the future of RAG: not just retrieval, but intelligent synthesis.\n\nResource：https://lnkd.in/eSzCYjZ2\n\n#RAG #LLM #LargeLanguageModels #AIResearch #ArtificialIntelligence #MachineLearning #DataScience #Innovation",
+    "url": "https://www.linkedin.com/posts/hzl_rag-llm-largelanguagemodels-activity-7447639872896585729-r535?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+    "image": "/images/linkedin/linkedin-1775675664256-0-99ab582f73ba497f40b34828d649fdcf.jpg",
+    "tags": [],
+    "publishedAt": "2026-04-08T13:41:56.156Z",
+    "engagement": {
+      "likes": 4,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]

@@ -1,17 +1,50 @@
 {
   "data": [
     {
+      "createdAt": "2026-04-08T13:41:56.156Z",
+      "activityId": "urn:li:activity:7447639872896585729",
+      "shareUrn": "urn:li:share:7447639871831044096",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_rag-llm-largelanguagemodels-activity-7447639872896585729-r535?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFdH7d6_k9DKw",
+            "accessibilityText": "text, letter",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFdH7d6_k9DKw/feedshare-shrink_800/B4EZ1tU_kjJsAc-/0/1775655714473?e=1777507200&v=beta&t=DPrd7QTn-KUx5MsdBarMGpXCG6pX1CX5ZXKxuv5NWd4"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by LLMs, do they actually perform better with faster response times in RAG scenarios?  \n\nWe’re taking inspiration from Andrej Karpathy and putting it to the test—let’s see if the way we construct our RAG systems really makes a difference and sense.\n\nThe performance is not just about speed. What if we could “enrich” the knowledge base itself by having LLMs generate novel, context-aware answers?  \n\nImagine this: instead of just retrieving facts, we’re “creating”insights—like smashing together breads, noodles, and pastas into a creative new dish, tailored exactly to the question at hand. That’s the future of RAG: not just retrieval, but intelligent synthesis.\n\nResource：https://lnkd.in/eSzCYjZ2\n\n#RAG #LLM #LargeLanguageModels #AIResearch #ArtificialIntelligence #MachineLearning #DataScience #Innovation",
+      "activity": {
+        "numLikes": 4,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 4
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-04-04T07:51:01.003Z",
       "activityId": "urn:li:activity:7446102009721790464",
       "shareUrn": "urn:li:share:7446102009054728192",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_andrej-karpathy-karpathy-on-x-activity-7446102009721790464-2kTl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_andrej-karpathy-karpathy-on-x-activity-7446102009721790464-2kTl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:article:6990043472378005643",
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1776247200&v=beta&t=fHayaJsL6O7Ohg53HbkrE4w0whMJtwx4Wab3usTZjpk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1776283200&v=beta&t=VcZjspmZ5-Rc1-1wfY4E7MCR_bDRIWbs8gAvWqwebRE"
         }
       },
       "actor": {
@@ -32,14 +65,14 @@
       "createdAt": "2026-03-18T17:08:40.480Z",
       "activityId": "urn:li:activity:7440081755224600576",
       "shareUrn": "urn:li:share:7440081754507563008",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-bzyv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-bzyv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:article:7098383443279384829",
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1776247200&v=beta&t=mHJovrl7-M_RVK0Hpn_CCtqcXUm0b0589QBPqke6TCA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1776283200&v=beta&t=YY4oO_-79kBvZCdPXEJZDNJreQzQz1JznSc0PG2Jz3w"
         }
       },
       "actor": {
@@ -60,7 +93,7 @@
       "createdAt": "2026-02-27T17:24:19.346Z",
       "activityId": "urn:li:activity:7433200323667763200",
       "shareUrn": "urn:li:ugcPost:7433200322724012032",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_pinebookpro-lenovothinkpade15-macminim4pro-activity-7433200323667763200-hUWX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_pinebookpro-lenovothinkpade15-macminim4pro-activity-7433200323667763200-hUWX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -103,7 +136,7 @@
       "createdAt": "2026-02-25T18:10:56.951Z",
       "activityId": "urn:li:activity:7432487281942351872",
       "shareUrn": "urn:li:ugcPost:7432487281070030848",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_chainguard-docker-cve-activity-7432487281942351872-YoEH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_chainguard-docker-cve-activity-7432487281942351872-YoEH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -151,7 +184,7 @@
       "createdAt": "2026-02-18T09:09:48.288Z",
       "activityId": "urn:li:activity:7429814383440056321",
       "shareUrn": "urn:li:ugcPost:7429814382542385152",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_birdfood-silentlove-warmswinter-activity-7429814383440056321-a98i?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_birdfood-silentlove-warmswinter-activity-7429814383440056321-a98i?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -189,7 +222,7 @@
       "createdAt": "2026-02-17T11:41:35.935Z",
       "activityId": "urn:li:activity:7429490195814662144",
       "shareUrn": "urn:li:ugcPost:7429490194933960704",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-WNqv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -232,7 +265,7 @@
       "createdAt": "2026-02-16T20:07:14.345Z",
       "activityId": "urn:li:activity:7429255056463466496",
       "shareUrn": "urn:li:ugcPost:7429255055611957248",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_glm5-qwen3-kimi2-activity-7429255056463466496-B0jW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -275,7 +308,7 @@
       "createdAt": "2026-02-13T09:34:45.452Z",
       "activityId": "urn:li:activity:7428008723673104384",
       "shareUrn": "urn:li:share:7428008722762866688",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_anywear-anywear-ios-activity-7428008723673104384-NqVU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_anywear-anywear-ios-activity-7428008723673104384-NqVU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -308,14 +341,14 @@
       "createdAt": "2026-02-12T15:18:58.584Z",
       "activityId": "urn:li:activity:7427732961321558016",
       "shareUrn": "urn:li:share:7427732960625446912",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-4nFQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:article:7433018918508350115",
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1776247200&v=beta&t=FVVZzgEdxlIpObCSNjMtXViS8X77hN0G015p_tEG_UU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1776283200&v=beta&t=tOWVhkEPW-BBmJMrjjgXVP-ce1SEXQjvn0WXks7lovY"
         }
       },
       "actor": {
@@ -336,7 +369,7 @@
       "createdAt": "2026-02-12T13:36:30.837Z",
       "activityId": "urn:li:activity:7427707175801602048",
       "shareUrn": "urn:li:share:7427707173427834881",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_bankgiro-cloudflarepages-vps-activity-7427707175801602048-LIrw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -364,13 +397,13 @@
       "createdAt": "2026-02-12T09:28:20.107Z",
       "activityId": "urn:li:activity:7427644719553277953",
       "shareUrn": "urn:li:ugcPost:7427644716781035520",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-Rrcj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=qHwIMjVeWqNpky3dd9j8mQ%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=xutJhYYX40Zf6V7WyiPgLw%3D%3D"
         }
       },
       "actor": {
@@ -396,7 +429,7 @@
       "createdAt": "2026-02-04T12:06:41.744Z",
       "activityId": "urn:li:activity:7424785469382590464",
       "shareUrn": "urn:li:ugcPost:7424785467826573312",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_ai-opensource-qualityassurance-activity-7424785469382590464-4dEq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_ai-opensource-qualityassurance-activity-7424785469382590464-4dEq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -434,14 +467,14 @@
       "createdAt": "2026-02-03T19:17:49.496Z",
       "activityId": "urn:li:activity:7424531578732642305",
       "shareUrn": "urn:li:share:7424531578191548416",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-0O8g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-0O8g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:article:8837244262272038260",
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1776247200&v=beta&t=VKd5HTJSdkNgqpkB533Rjq0DIQmESElyZu9RCK93g3s"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1776283200&v=beta&t=gK3YafIK6Nfr49IDgqaxDsCVpHzBtv4UuU-GvgDsg4Q"
         }
       },
       "actor": {
@@ -462,13 +495,13 @@
       "createdAt": "2026-02-02T17:16:41.326Z",
       "activityId": "urn:li:activity:7424138705952661504",
       "shareUrn": "urn:li:ugcPost:7424138704455135234",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_ai-copilot-nvidianimproxyswitch-activity-7424138705952661504-yKsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=aj%2BFQO2u%2BlhuQsWCGqEU3A%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=g14F9sBMJgao6j8dDrzW5Q%3D%3D"
         }
       },
       "actor": {
@@ -494,13 +527,13 @@
       "createdAt": "2026-01-30T15:59:27.552Z",
       "activityId": "urn:li:activity:7423032106898948096",
       "shareUrn": "urn:li:ugcPost:7423032106383151104",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=l%2Bu0U1xNRRUdY4Mg2ycRGw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=N1oLylAPJoAWMqsARCXEMQ%3D%3D"
         }
       },
       "actor": {
@@ -526,7 +559,7 @@
       "createdAt": "2026-01-23T13:24:16.868Z",
       "activityId": "urn:li:activity:7420456340000706560",
       "shareUrn": "urn:li:ugcPost:7420456229510025216",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_uxui-designtools-uxui-activity-7420456340000706560-Ss8E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
@@ -550,7 +583,7 @@
       "createdAt": "2026-01-22T17:44:06.338Z",
       "activityId": "urn:li:activity:7420159339111489536",
       "shareUrn": "urn:li:ugcPost:7420159337416781824",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -598,7 +631,7 @@
       "createdAt": "2026-01-13T12:36:11.531Z",
       "activityId": "urn:li:activity:7416820359364063232",
       "shareUrn": "urn:li:share:7416820358324047873",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "images": [
           {
@@ -626,14 +659,14 @@
       "createdAt": "2026-01-12T19:34:24.285Z",
       "activityId": "urn:li:activity:7416563218137083904",
       "shareUrn": "urn:li:share:7416563217453449216",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACgIgiUBopBfFkIb09--iqWd1iES8bAcsYc",
       "content": {
         "article": {
           "urn": "urn:li:article:7013209544137227451",
           "title": "DAN KOE (@thedankoe) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1776247200&v=beta&t=gdpkF6rmwEY1pG9JN7sg81K4wLWo7yqLpSHVzEtqJW8"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1776283200&v=beta&t=uGagH_A8hGiS97jNB7JOowe4uHNEjhZOKWDZHHL17y4"
         }
       },
       "actor": {
@@ -649,45 +682,7 @@
         "numShares": 0,
         "reactionTypeCounts": []
       }
-    },
-    {
-      "createdAt": "2026-01-11T17:54:08.728Z",
-      "activityId": "urn:li:activity:7416175599196463104",
-      "shareUrn": "urn:li:ugcPost:7416175598227951616",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_smes-fintech-fintech-activity-7416175599196463104-Ac7j?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQEUQe7eyCSEig",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEUQe7eyCSEig/feedshare-shrink_2048_1536/B4EZuuMZQBLUAw-/0/1768154047718?e=1777507200&v=beta&t=d2QjxMpgrlY348iTPsECV1sJFRtTSgM6O9j7bYaaSHc"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQHYXmNzv0elrg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHYXmNzv0elrg/feedshare-shrink_20/B4EZuuMZPNIkA0-/0/1768154045216?e=1777507200&v=beta&t=Dc2NkmVvIpjuKJ6iUefE2NFcANefGxcPM2cPkBE5e44"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "New Year, New Project No.3: Invoice Handling System\nFinally freed my hands from invoice processing hell. Now helping millions of SME owners do the same.\nYou know that monthly torture? Collecting payment records from Stripe , foodora, UberEat, Wolt … hunting down matching invoices… printing everything… then doing it all over again next month?\nI was done with it. So I built an Invoice Handling System that does this automatically.\nWhat it does:\n\t∙\tOCR scans and recognizes payments that need invoices\n\t∙\tPython connects different platform APIs to fetch correct invoices with proper format and numbers, some of them from our Gmail :)\n\t∙\tFetches everything to our dashboard where users can review and select what to print\nNow all payments from Stripe, UberEats, Foodora, Wolt are automated. Next step: SEB API and auth key integration for printing monthly reports and details of Bankgiro payments (more than one at a time).\nWhy I built this:\nMy wife runs a restaurant in Sweden. Every month, the same boring invoice work falls on me. I wanted to give this time back—to all SME owners—time to sleep, think about business strategy, maybe even relax.\nIf this helps some #SMEs save hours every month on accounting prep, that’s real impact.\nMy principle:\nA working solution beats perfect theory. A shabby “One” that solves real problems > a perfect “Zero” that never ships. Just keep building and committing. This is what #FinTech is really about.\n\n#FinTech #Python #OCR #API #Stripe #Foodora #UberEats #Wolt #Automation #SME #RealProblems",
-      "activity": {
-        "numLikes": 5,
-        "numComments": 0,
-        "numShares": 1,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 5
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTYxNzU1OTkxOTY0NjMxMDQtMTc2ODE1NDA0ODcwOQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTY1NjMyMTgxMzcwODM5MDQtMTc2ODI0NjQ2NDI1MQ==:20"
 }
