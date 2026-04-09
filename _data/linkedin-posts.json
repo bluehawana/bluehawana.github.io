@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-04-08T19:14:24.366Z"
+    "last_sync": "2026-04-09T19:04:51.463Z"
   },
   "extraction": {
-    "date": "2026-04-08T19:14:24.366Z",
+    "date": "2026-04-09T19:04:51.463Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 110,
+    "total_posts_found": 111,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -2095,6 +2095,25 @@
       "image": "https://media.licdn.com/dms/image/v2/D4E22AQFdH7d6_k9DKw/feedshare-shrink_800/B4EZ1tU_kjJsAc-/0/1775655714473?e=1777507200&v=beta&t=DPrd7QTn-KUx5MsdBarMGpXCG6pX1CX5ZXKxuv5NWd4",
       "local_image": "/images/linkedin/linkedin-1775675664256-0-99ab582f73ba497f40b34828d649fdcf.jpg",
       "extracted_at": "2026-04-08T19:14:24.255Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 4,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-04-08T13:41:56.156Z"
+    },
+    {
+      "id": "linkedin-1775761491342-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by L...",
+      "content": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by LLMs, do they actually perform better with faster response times in RAG scenarios?  \n\nWe’re taking inspiration from Andrej Karpathy and putting it to the test—let’s see if the way we construct our RAG systems really makes a difference and sense.\n\nThe performance is not just about speed. What if we could “enrich” the knowledge base itself by having LLMs generate novel, context-aware answers?  \n\nImagine this: instead of just retrieving facts, we’re “creating”insights—like smashing together breads, noodles, and pastas into a creative new dish, tailored exactly to the question at hand. That’s the future of RAG: not just retrieval, but intelligent synthesis.\n\nResource：https://lnkd.in/eSzCYjZ2\n\n#RAG #LLM #LargeLanguageModels #AIResearch #ArtificialIntelligence #MachineLearning #DataScience #Innovation",
+      "link": "https://www.linkedin.com/posts/hzl_rag-llm-largelanguagemodels-activity-7447639872896585729-r535?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFdH7d6_k9DKw/feedshare-shrink_800/B4EZ1tU_kjJsAc-/0/1775655714473?e=1777507200&v=beta&t=DPrd7QTn-KUx5MsdBarMGpXCG6pX1CX5ZXKxuv5NWd4",
+      "local_image": "/images/linkedin/linkedin-1775761491342-0-99ab582f73ba497f40b34828d649fdcf.jpg",
+      "extracted_at": "2026-04-09T19:04:51.342Z",
       "source": "linkedinscraper-rapidapi",
       "engagement": {
         "likes": 4,
