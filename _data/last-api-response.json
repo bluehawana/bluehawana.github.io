@@ -1,6 +1,43 @@
 {
   "data": [
     {
+      "createdAt": "2026-04-17T08:47:49.385Z",
+      "activityId": "urn:li:activity:7450827347764764672",
+      "shareUrn": "urn:li:share:7450788285968297984",
+      "shareUrl": "https://www.linkedin.com/posts/johncrickett_17-great-books-on-linux-that-you-can-get-activity-7450800396987559936-PeAe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEKdmJRTGjxFw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEKdmJRTGjxFw/feedshare-shrink_800/B4EZ2aEdthHMAc-/0/1776406355316?e=1778112000&v=beta&t=JMW6rClnkTC7oKHNd_S8h_OMG5u0fGKpRBWL7i_bYZg"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:3298",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAAADOIB1jesEqZdnwQE5csLme2tAbpHuMg",
+        "name": "John Crickett",
+        "description": "Helping software engineers become better software engineers by building projects. With or without AI."
+      },
+      "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
+      "activity": {
+        "numLikes": 51,
+        "numComments": 4,
+        "numShares": 7,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 44
+          },
+          {
+            "type": "EMPATHY",
+            "count": 7
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-04-08T13:41:56.156Z",
       "activityId": "urn:li:activity:7447639872896585729",
       "shareUrn": "urn:li:share:7447639871831044096",
@@ -44,7 +81,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1776974400&v=beta&t=F8YS0jlmLJgvzbV5uwz4IaVBEyZIFwUHYjxB3w91QlA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777024800&v=beta&t=5t9gewYESNGhrz_UwptwCIPX3mAb32rK5Polj3VmhKQ"
         }
       },
       "actor": {
@@ -72,7 +109,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1776974400&v=beta&t=_BpFc56i1p7Cc9ZqMaLjCoE324H012K9jAnTKIOP5pU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777024800&v=beta&t=40EUkO8Wk8NrtrMLM2OrN5Qtty8QE2PNjl0Rb5Hp3gI"
         }
       },
       "actor": {
@@ -348,7 +385,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1776974400&v=beta&t=E1mq8gun5mV6kh1Nii4InwLNW0Z8b4Qz-vAqIrti8gk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777024800&v=beta&t=lK3ZW1L-sqEK6Jt8gUCr7OTYvlm47Fe9HyALx0iONt0"
         }
       },
       "actor": {
@@ -403,7 +440,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=FnqvctFQE7uJzxxWaWwY5Q%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=ndT9aaIyK3V58eYAAqPsBg%3D%3D"
         }
       },
       "actor": {
@@ -474,7 +511,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1776974400&v=beta&t=DrIpu0L_DsuZ9ufIYOfvAaFgw4RBCLAbBYpxhA0I0pE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777024800&v=beta&t=HDz1zCbKrlqzZttGnmJBz6FvUxvONkMc7rJ9p8lyHRE"
         }
       },
       "actor": {
@@ -501,7 +538,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=iD%2B8WWmfharolBHwQ%2BDclg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=nv15kXIhev%2FeQGA00V6y4g%3D%3D"
         }
       },
       "actor": {
@@ -533,7 +570,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=H6Mg3YLnmwT%2BsXM7rUybyg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=2R9rEDbPNaDTgeJEk8UkTw%3D%3D"
         }
       },
       "actor": {
@@ -654,35 +691,7 @@
         "numShares": 0,
         "reactionTypeCounts": []
       }
-    },
-    {
-      "createdAt": "2026-01-12T19:34:24.285Z",
-      "activityId": "urn:li:activity:7416563218137083904",
-      "shareUrn": "urn:li:share:7416563217453449216",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_dan-koe-thedankoe-on-x-activity-7416563218137083904-0laW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:7013209544137227451",
-          "title": "DAN KOE (@thedankoe) on X",
-          "subtitle": "x.com",
-          "url": "https://x.com/thedankoe/status/2010042119121957316?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFTAlEyhRKtfw/articleshare-shrink_480/B4EZuzsyCBJIAs-/0/1768246419824?e=1776974400&v=beta&t=UF9mGQOWRuHmnSIiGAczhMRdTADIJEPaglMPVJdm3-4"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "When opportunities seem scarce, remember that you have the power to change yourself when you can't change the environment. Embrace personal growth as a catalyst for new prospects.",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTY1NjMyMTgxMzcwODM5MDQtMTc2ODI0NjQ2NDI1MQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTY4MjAzNTkzNjQwNjMyMzItMTc2ODMwNzc3MTUwNw==:20"
 }

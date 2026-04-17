@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-04-15T19:15:53.530Z"
+    "last_sync": "2026-04-17T09:24:30.653Z"
   },
   "extraction": {
-    "date": "2026-04-15T19:15:53.530Z",
+    "date": "2026-04-17T09:24:30.654Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 151,
-    "new_posts_this_sync": 20,
-    "images_downloaded": 11
+    "total_posts_found": 152,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -2881,6 +2881,25 @@
         "shares": 0
       },
       "posted_at": "2026-01-12T19:34:24.285Z"
+    },
+    {
+      "id": "linkedin-1776417870386-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Pr...",
+      "content": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
+      "link": "https://www.linkedin.com/posts/johncrickett_17-great-books-on-linux-that-you-can-get-activity-7450800396987559936-PeAe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEKdmJRTGjxFw/feedshare-shrink_800/B4EZ2aEdthHMAc-/0/1776406355316?e=1778112000&v=beta&t=JMW6rClnkTC7oKHNd_S8h_OMG5u0fGKpRBWL7i_bYZg",
+      "local_image": "/images/linkedin/linkedin-1776417870386-0-23d145c7dcbaafc9f6852a7affdb3224.jpg",
+      "extracted_at": "2026-04-17T09:24:30.386Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 51,
+        "comments": 4,
+        "shares": 7
+      },
+      "posted_at": "2026-04-17T08:47:49.385Z"
     }
   ]
 }
