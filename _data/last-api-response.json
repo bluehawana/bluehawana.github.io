@@ -22,17 +22,29 @@
       },
       "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
       "activity": {
-        "numLikes": 51,
-        "numComments": 4,
-        "numShares": 7,
+        "numLikes": 235,
+        "numComments": 10,
+        "numShares": 23,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 44
+            "count": 202
           },
           {
             "type": "EMPATHY",
-            "count": 7
+            "count": 19
+          },
+          {
+            "type": "INTEREST",
+            "count": 8
+          },
+          {
+            "type": "PRAISE",
+            "count": 4
+          },
+          {
+            "type": "APPRECIATION",
+            "count": 2
           }
         ]
       }
@@ -81,7 +93,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777024800&v=beta&t=5t9gewYESNGhrz_UwptwCIPX3mAb32rK5Polj3VmhKQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777287600&v=beta&t=UhilyrDt8e5N0zFXeUWTqwkhmc_v7c0MwQGrrWCyrRs"
         }
       },
       "actor": {
@@ -109,7 +121,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777024800&v=beta&t=40EUkO8Wk8NrtrMLM2OrN5Qtty8QE2PNjl0Rb5Hp3gI"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777287600&v=beta&t=GMT6pGmDlLh2Z6TrgbdpiH25-EpOz2NcBj-PbpSqlv0"
         }
       },
       "actor": {
@@ -385,7 +397,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777024800&v=beta&t=lK3ZW1L-sqEK6Jt8gUCr7OTYvlm47Fe9HyALx0iONt0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777287600&v=beta&t=no4iZ3R7CkvRblj7NH4bgpDk2hNMPKjEwEzkDPkvGBY"
         }
       },
       "actor": {
@@ -440,7 +452,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=ndT9aaIyK3V58eYAAqPsBg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=oKBbuN%2F%2BkcsMTNeM2LmWMQ%3D%3D"
         }
       },
       "actor": {
@@ -511,7 +523,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777024800&v=beta&t=HDz1zCbKrlqzZttGnmJBz6FvUxvONkMc7rJ9p8lyHRE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777287600&v=beta&t=dYBCTl6LG50m74-0AZjHq3_dKBjuR5k_aui3X2KyTto"
         }
       },
       "actor": {
@@ -538,7 +550,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=nv15kXIhev%2FeQGA00V6y4g%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=t6vdO%2BZHP3iUubiA33pcRg%3D%3D"
         }
       },
       "actor": {
@@ -570,7 +582,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=2R9rEDbPNaDTgeJEk8UkTw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=PO0xBUEXfeSyMmu3wx0iFg%3D%3D"
         }
       },
       "actor": {
