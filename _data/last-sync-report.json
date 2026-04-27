@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-04-27T10:22:47.585Z",
+  "sync_timestamp": "2026-04-27T19:19:15.680Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 1,
-  "total_posts_in_system": 153,
+  "images_downloaded": 0,
+  "total_posts_in_system": 154,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-04-27T10:52:47.585Z",
+  "next_sync_recommended": "2026-04-27T19:49:15.680Z",
   "new_posts": [
     {
-      "title": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely...",
-      "link": "https://www.linkedin.com/posts/hzl_starlink-connectivity-remotework-activity-7454160802581897216-JYSp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
+      "title": "Efter över ett års kamp – först som individ och sedan som talesperson för Fair Transition – går Tidö...",
+      "link": "https://www.linkedin.com/posts/patrick-henry-gallen-9827a3138_efter-%C3%B6ver-ett-%C3%A5rs-kamp-f%C3%B6rst-som-individ-activity-7454495176808554496-Ptao?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": false,
       "engagement": {
-        "likes": 2,
-        "comments": 0,
-        "shares": 0
+        "likes": 54,
+        "comments": 5,
+        "shares": 4
       },
-      "sync_date": "2026-04-27T10:22:47.453Z"
+      "sync_date": "2026-04-27T19:19:15.656Z"
     }
   ]
 }
