@@ -1,6 +1,46 @@
 {
   "data": [
     {
+      "createdAt": "2026-04-27T16:10:55.100Z",
+      "activityId": "urn:li:activity:7454562734991450112",
+      "shareUrn": "urn:li:share:7454495175822782464",
+      "shareUrl": "https://www.linkedin.com/posts/patrick-henry-gallen-9827a3138_efter-%C3%B6ver-ett-%C3%A5rs-kamp-f%C3%B6rst-som-individ-activity-7454495176808554496-Ptao?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "actor": {
+        "actorId": "urn:li:member:563320754",
+        "actorUrn": "urn:li:fsd_profile:ACoAACGTl7IBbhMXXrKBf7G3WCyfGP10Nbxi5eM",
+        "name": "Patrick Henry Gallen",
+        "description": "Senior Advisor and Futurist at Copenhagen Institute for Futures Studies"
+      },
+      "commentary": "Efter över ett års kamp – först som individ och sedan som talesperson för Fair Transition – går Tidöregeringens proposition om skärpta krav för svenskt medborgarskap till omröstning i riksdagen på onsdag den 29 april. Att lagen kommer att röstas igenom är i princip helt säkert. Hur den kommer att se ut är det inte.\n\nTack vare tusentals engagerade och hårt arbetande människor runt om i landet finns fortfarande en möjlighet att påverka utfallet. Om bara ett fåtal ledamöter från Liberalerna väljer att stå upp för den svenska rättsstaten och en rättvis migrationspolitik tillsammans med oppositionen, kan övergångsbestämmelser säkras. Då skulle de nya reglerna endast gälla ansökningar som lämnas in efter den 6 juni.\n\nUtan sådana övergångsregler – som både regeringens egna utredare och Lagrådet har rekommenderat – riskerar 100 000 människor att få avslag på deras ansökningar. Människor som i många fall har väntat i över fyra år på besked från Migrationsverket (Swedish Migration Agency).\n\nSverige riskerar dessutom att bli det ENDA landet i Europa som inför skärpta medborgarskapskrav utan övergångsbestämmelser. Det underminerar rättsstaten, urholkar tilliten till våra institutioner och skadar vår förmåga att attrahera och behålla den internationella kompetens som vår ekonomi är beroende av.\n\nJag påverkas inte själv av de nya reglerna. Jag hade turen att bli svensk medborgare i oktober – den viktigaste händelsen i mitt liv. Men jag har inte glömt den sårbarhet, den förlamande ångest och den totala maktlöshet jag kände som icke-EU-medborgare varje dag innan dess. Och jag kommer aldrig att glömma den livsavgörande lättnad och trygghet som medborgarskapet innebar.\n\nNär jag fick mitt medborgarskap lovade jag mig själv att aldrig glömma – och att aldrig sluta kämpa för dem som är mest politiskt och juridiskt utsatta. Jag kommer alltid att använda de rättigheter och privilegier som det lilla röda passet ger för att verka för ett mer rättvist samhälle.\n\nOm man blir svensk medborgare innan den 6 juni ska inte vara en fråga om tur - och därför måste den nya lagen införas med rimliga övergångsbestämmelser.\n\nNu har våra politiker i riksdagen 48 timmar kvar att avgöra om de står upp för rättsstaten – och för ett Sverige byggt på tillit och öppenhet, snarare än rädsla, kortsiktighet och symbolpolitik.\n\nJag hoppas att de fattar rätt beslut.\nThe Local Europe Becky Waterton Emma Löfgren Cecilia Rönn Malin Danielsson Niels Paarup-Petersen",
+      "activity": {
+        "numLikes": 54,
+        "numComments": 5,
+        "numShares": 4,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 35
+          },
+          {
+            "type": "APPRECIATION",
+            "count": 9
+          },
+          {
+            "type": "PRAISE",
+            "count": 6
+          },
+          {
+            "type": "EMPATHY",
+            "count": 2
+          },
+          {
+            "type": "INTEREST",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-04-26T13:33:46.946Z",
       "activityId": "urn:li:activity:7454160802581897216",
       "shareUrn": "urn:li:ugcPost:7454160801432604672",
@@ -63,17 +103,17 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely does not improve my productivity): the Starlink Mini.\n\nMy quick at‑home measurements:\n\n• Link speed: 242 MB/s\n• Download: 105 MB/s\n• Upload: 23.4MB/s\n\n\nWhile these speeds won’t replace traditional Wi‑Fi or 5G, the real value lies elsewhere: reliable internet access in locations with zero cellular coverage. For anyone working in remote environments—field research, outdoor production, emergency response, or simply “work from anywhere”—this is a meaningful shift.\n\nI’m planning to test it in more challenging environments soon.\nIf someone has an RV（Husbil）to lend, I’m more than happy to take this experiment on the road.\n\nIf you’re curious about Starlink, use this link to start your journey and we could all get one month free of using\n👉 https://lnkd.in/dPtGuBpT\n\nAnd if you’re in Gothenburg, you’re welcome to stop by and see it in action.\n\n#Starlink #Connectivity #RemoteWork #TechLife #SatelliteInternet #WorkFromAnywhere #Gothenburg",
       "activity": {
-        "numLikes": 2,
-        "numComments": 0,
+        "numLikes": 5,
+        "numComments": 1,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 2
+            "count": 5
           }
         ]
       }
@@ -101,7 +141,7 @@
       "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
       "activity": {
         "numLikes": 241,
-        "numComments": 10,
+        "numComments": 11,
         "numShares": 23,
         "reactionTypeCounts": [
           {
@@ -145,7 +185,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by LLMs, do they actually perform better with faster response times in RAG scenarios?  \n\nWe’re taking inspiration from Andrej Karpathy and putting it to the test—let’s see if the way we construct our RAG systems really makes a difference and sense.\n\nThe performance is not just about speed. What if we could “enrich” the knowledge base itself by having LLMs generate novel, context-aware answers?  \n\nImagine this: instead of just retrieving facts, we’re “creating”insights—like smashing together breads, noodles, and pastas into a creative new dish, tailored exactly to the question at hand. That’s the future of RAG: not just retrieval, but intelligent synthesis.\n\nResource：https://lnkd.in/eSzCYjZ2\n\n#RAG #LLM #LargeLanguageModels #AIResearch #ArtificialIntelligence #MachineLearning #DataScience #Innovation",
       "activity": {
@@ -171,14 +211,14 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777892400&v=beta&t=_JFnlgOCZJS52guWcE2I2YKd2SX3gk9jsCZ7fijpDQQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777924800&v=beta&t=lIoX3q2Kvu_qzktFAY8-Y4HAErfUCHJDlc9Q93wZlJU"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "How we should build our own knowledge base with LLM.",
       "activity": {
@@ -199,14 +239,14 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777892400&v=beta&t=1-kMEGrRIiDUO33ZFkzFDsmjcwRgaVf0dWh2fq2JBs4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777924800&v=beta&t=SXAtWbV7wN2Sr27ixRsC7xNi38NN_MhhkjfHqwLgSso"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "5 Agent Skill from Google.",
       "activity": {
@@ -244,7 +284,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #PinebookPro. Last opened nearly half a year ago. The angry emojis? That’s from when I helped my daughter review math exam questions — let’s just say she wasn’t impressed. 🙃  \nTruth is, without solid app support and ecosystem maturity, it’s been gathering dust more than doing real work. Now I've installed Kali on it — it's almost the best Linux OS for this device.\n\nThe second: a #LenovoThinkpadE15 Gen 3 running Windows 11. I open it maybe once a month — mostly to test a project on another platform or upload something to Google Drive. It does its job, but it’s not my go-to. \n\nAnd then there’s the third: my #MacminiM4Pro — 64GB RAM, 2TB SSD. Running 24/7 as my #homelab. No dust. No breaks. This is the one I actually live on.\n\nSo — what about you?  \nWhich machine at home do you actually *use most*, and why?  \nLet’s swap setups and stories.\n\nHappy weekend, everyone!\n\n#MacMini #M4Pro #PinebookPro #HomeLab #AppleSilicon #LinuxEcosystem #DevSetup #LenovoE15 #ARMComputing #HomeOffice",
       "activity": {
@@ -292,7 +332,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Always on the move — and loving the learning along the way. 🚀\n\n#Chainguard #Docker #CVE #CNCFGBG #Opensource",
       "activity": {
@@ -330,7 +370,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "It was minus 12°C this morning. After dropping off my kid, I headed straight to Jula for #birdfood — only to find it sold out. Same at Rusta and Bauhaus in Sisjön.  \n\nFinally picked some up at Biltema. But what stayed with me wasn’t the cold — it was seeing a man walking out with both arms full of seed bags, like he wasn’t just feeding his own birds, but half the forest.  \n\nIn weather like this, it means something to know so many people are quietly doing their part. No fanfare, no posts — just care, one handful at a time. Every little bit helps them survive the freeze. 🐦❄️  \n\n#SilentLove #WarmsWinter #BirdLovers #Birdfood #CommunityLove #NatureInWinter",
       "activity": {
@@ -373,7 +413,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to celebrate Chinese Lunar New Year’s Eve—a small tradition that brings warmth, no matter how far from home we are.\n\nWishing all overseas Chinese a joyful and prosperous Year of the Horse.            🐎 年大吉!\n\nWhere your family is, there’s your hometown. And when we make dumplings together, it truly feels like the Spring Festival has arrived.\n\n#LunarNewYear #Dumpling #Overseas #SpringFestival",
       "activity": {
@@ -416,7 +456,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NVIDIA nim platform, along with my proxy project using nim-update to try with them. We look forward to the anticipated release of #MiniMax 2.5 as well. Grateful for the offerings from these four Chinese AI giants, providing us with diverse options in LLM and AI agents. \n\n#Zhipu #Alibaba #Xiyu #Moonshot #Models #Nvidia #LLM #Agent",
       "activity": {
@@ -449,7 +489,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion preferences best, coming soon to the App Store. Say goodbye to the stress of choosing what to wear or buy. With the app, you can eliminate anxiety, overspending, and waste, making dressing effortless. \n\n#AnyWear #iOS #SWIFT #SWIFTUI #XCode263  #Weekend #Nanobanana #Gemini",
       "activity": {
@@ -475,14 +515,14 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777892400&v=beta&t=hwkSg29uwZnoHwGIw4UzZbsJpu8OPOqXhSugiH3ET40"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777924800&v=beta&t=j0eaOiTN_hVv7CTjF0zwxkRPKvjQMEg_wHk8lcPcnAs"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no MacMini M4 required anymore. 😊",
       "activity": {
@@ -510,7 +550,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live solution. The next step is integrating with the SEB API to automatically fetch and print monthly transaction histories, including #bankgiro transactions, multiple times a day. This setup solves a real pain point—efficient, low-cost automation—with almost zero overhead compared to expensive market alternatives.\n\nThe frontend is hosted on Cloudflare Pages, and the backend runs on my VPS, making it a fast, reliable, and completely free stack for me. It’s already saving me over 30 minutes each month on manual tasks.\nI’m considering releasing this tool to the market at a fair price. If you're running a small or medium-sized business, how much would you be willing to pay for a tool that saves you 30–40 minutes every month on invoice sorting and printing then?\n\n#CloudFlarePages #VPS #OCR #InvoiceSys #TimeSaving #LLM",
       "activity": {
@@ -530,14 +570,14 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=CrtU6za1Pj4xi0cptFhT1A%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=GLC0843Vf01O4wSagZKzKQ%3D%3D"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
       "activity": {
@@ -575,7 +615,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user experience matters. So I did what needed to be done: tested all 182 models on NVIDIA's NIM platform.\n\nThe results? ✅ 113 out of 182 models (62%) work perfectly with chat and conversation ❌ 69 require paid tier or special access\n\nThis means users of my project Nividia-nim-swift can access the demo: models.bluehawana.com confidently choose from 113 verified working models - no more guessing which ones will fail.\n\nWhy this matters:\n\nTransparency builds trust\nUsers save time (no trial and error)\nClear documentation = better UX\nEven side projects deserve quality assurance\nThe full compatibility report is now in the GitHub repo, so anyone forking or starring the project knows exactly what works.\n\nBecause good testing isn't about perfection - it's about knowing your product inside out and being honest about it.\n\n\n#AI #OpenSource #QualityAssurance #NVIDIA #DeveloperTools #BuildInPublic",
       "activity": {
@@ -601,14 +641,14 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777892400&v=beta&t=CLcb4zrcn7BoavpEZxzWWMzppbLbtQNsAbEHlQSSPeY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777924800&v=beta&t=FVqW2AlCCqKNhC3bN63Z4DdLJ00CzogdH86oVrCgJNo"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would've ditched Xcode by now and switched to VS Code or whatever's IDE with hot AI features. Progress is progress, even if it's slow.\n\n\n#Xcode #Swift #SwiftUI #iOS #Apple",
       "activity": {
@@ -628,14 +668,14 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=2iopwXD%2FAXGR9HLceKYhlg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=Jqv0Z1nG8zNKc%2BBsVad3zg%3D%3D"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "New Year, New Project: No.5 — Claude Code Proxy with NVIDIA Models\n\nWhat if cost wasn't the barrier to exploring the world's most advanced AI models?\nThat's what inspired me to launch Project No.5. After completing projects 1-4, I wanted to take on a bigger challenge: making high-end #AI accessible to anyone curious enough to build.\nMost developers never get to test top-tier models because they're too \"expensive\". Comparing them? Even harder. So people stick with familiar tools like #Copilot, missing out on models that could be faster, sharper, or better suited for specific tasks.\nThe game needs to be changed now.\nIntroducing the #NVIDIANIMProxySwitch —a tool that lets you switch between 182 NVIDIA NIM models in under a second. No restarts, no config edits, no hassle.\nHere's what it offers:\n- Instant model switching (under 1 second)\n- 182 models ready to explore\n- Web UI and REST API\n- Zero downtime\n- Seamless integration with Claude Code\n- Fully open source\nBuilt entirely with Qwen Coder via this project and Kiro, this project is AI helping build AI infrastructure.\nAnd it’s completely free to use with NVIDIA’s NIM API, so you never have to choose between your budget and your curiosity.\nWant to give it a try? Here is the demo for 7 days : models.bluehawana.com\nWould like to have a deep understanding, you can find the repo in the article below. \nFeel free to star it, save it, or open a PR if you’d like to contribute.\nI'm always excited to see what people create when limits disappear.\nFull write-up below: applying API, architecture, testing, setup, and how to get started.\nProject No.5 is just the beginning. It's still early in the year—plenty more to build.\n\n#AI #MachineLearning #NVIDIA #OpenSource #Python #DeveloperTools #NewYearNewProject",
       "activity": {
@@ -660,14 +700,14 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=OU92JL1%2Bu8hJV4RzTwO82g%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=GLeVKTzd9ozd8zVXDAZEBw%3D%3D"
         }
       },
       "actor": {
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spotify. Great event, lots of energy. But afterwards, I noticed something that's been bothering me.\nAlmost every Swedish company I talk to: Windows Laptop, Microsoft stack, VS Code, GitHub Copilot. That's it.\nWhen I ask \"Why not try Claude, Gemini or others on Mac?\", the answer is always: \"data security concerns.\"\nBut here's the thing - most companies already pay for Microsoft and Azure, so they add Copilot for $20/month and feel safe because \"Microsoft will protect our data.\" Is that really security thinking? Or just going with what feels familiar?\nHere's What Nobody's Talking About :\nSome of the best coding models right now are Chinese: #Qwen-3.5-coder (Alibaba), #GLM-4.7 (Zhipu), #MiniMax 2.1 (Xiyu), #Kimi 2.5 (Moonshot). They're top-ranked on Hugging Face and NVIDIA platforms. In many coding tasks, they're genuinely better than Copilot. Significantly better.\nAnd it's not just Chinese models - Anthropic's Claude, Google's Gemini - nobody's even trying them.\nFrom my experience testing these tools extensively? #Copilot wouldn't even make my top 10. I'm not exaggerating.\nMy Suggestion :\nLook, if you're scared that Chinese AI models will send your data back to China(Maybe not) - fine, I understand that concern. But at least try other American AI giants like #Anthropic's #ClaudeCode, #GoogleGemini & #Antigravity, #AWS #Kiro, or even #OpenAI's #Codex directly instead of staying trapped within Copilot.\nUnless you have factory software locked into Microsoft, why not explore what's actually best for your team?\nMost of these models are easy to access: Ollama (local) or on cloud, OpenAI-compatible APIs, NVIDIA catalog, many with free tiers. Take your actual code, run tests, compare. Then decide based on performance, not on \"this is what other Swedish companies use.\"\nA Personal Note\nI'm from China, working in tech here in Sweden. I love it here. But sometimes there's this automatic assumption: Chinese technology = risky, American technology = safe. That's not how technology works.\nFunny timing though - with all the #Greenland drama lately, suddenly Chinese companies seem a bit more \"acceptable\" in Europe :) \nMaybe it takes geopolitical chaos to remind us that technological diversity isn't just nice to have - it's strategic.\nWhat worries me: what if the US restricts AI services due to geopolitics one day? Shouldn't we at least know what alternatives exist?\nThe \"Can't Live Without AI\" theme from yesterday's meetup is true. AI is part of our work now.\nBut let's make sure we're choosing the right tools, not just the comfortable ones.\nMaybe I'm overthinking this. Maybe I'm too sensitive about the China thing. But I genuinely think we're missing out on better tools because of assumptions we haven't questioned. What do you think? Read the article for more details.\n\n#Antigravity #Kiro #ClaudeCode #DevTools #CNCF #Sweden #CodingIDE #AIModels #Huggingface #Nvidia",
       "activity": {
@@ -691,7 +731,7 @@
         "actorId": "urn:li:member:164777712",
         "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
         "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+        "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
       "commentary": "I bet Pencil by TomKrcha will change how you think about #UXUI design. It’s a fresh, interactive tool that lets you design and edit websites, dashboards, and interfaces in real time — either by typing prompts or by manually tweaking elements. Think of it as a live, hands‑on rethink of the design workflow: build something with a prompt, then refine it instantly with direct manipulation.\nWhy it feels different\nReal‑time iteration — no long handoffs between design and prototyping; you see changes as you make them.\nPrompt + polish — start with natural language, then fine‑tune visually; great for rapid exploration.\nNot a Figma clone — it’s an alternative mindset: more interactive, more experimental, more immediate.\nShort learning curve, big payoff — it takes a minute to get used to, but once you do it speeds up ideation and reduces friction.\nTry it\nGive www.pencil.dev a spin — play with a prompt, tweak the UI, and see how fast you can go from idea to a working interface. If you’re into fast iteration and new design vibes, this one’s worth your time. \n\nCheck out Tom Krcha's post on X to learn more about Pencil and its potential to transform UX/UI design: \nResource: https://lnkd.in/erc_A7XB\n\n#DesignTools #UXUI #PencilDev",
       "activity": {
@@ -705,55 +745,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-01-22T17:44:06.338Z",
-      "activityId": "urn:li:activity:7420159339111489536",
-      "shareUrn": "urn:li:ugcPost:7420159337416781824",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_word-ats-vps-activity-7420159339111489536-4Acy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHKfiOvEo1w8w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKfiOvEo1w8w/feedshare-shrink_160/B4DZvmzmFaI0A4-/0/1769103844208?e=1778716800&v=beta&t=3JbZSRDsBztD_4Q6uNCJu3WLiW2herolRbXFFJZA7Pk"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQENcxh-bZPgwg",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQENcxh-bZPgwg/feedshare-shrink_1280/B4DZvmzl8UKMAc-/0/1769103844493?e=1778716800&v=beta&t=HYSnBMUnwbxsSuxdTnqHAV1g4JJBPpMk41q2DBv0toQ"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEltVoQDKxidA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEltVoQDKxidA/feedshare-shrink_20/B4DZvmzl09JMAM-/0/1769103842978?e=1778716800&v=beta&t=xUDbJ4x3E6CreDqB9dQuijJZN7SqurKLjBJc9FN1kqs"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHVOLq37RU38Q",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHVOLq37RU38Q/feedshare-shrink_2048_1536/B4DZvmzlziIAAo-/0/1769103842868?e=1778716800&v=beta&t=1TB6gu5j7RKz_ZUiXZiL1UEiCjH28cHsZR1dDdC7Nfw"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "New Year, New Project No.4: Smart Job Application System \n\nSaw a lot of people complaining about companies using AI tools to filter candidates. But why are you still manually preparing resumes? Serious question: What's your way to customize a resume for each job? Manually editing in #Word or simply copying into ChatGPT without additional context? How do you guarantee it passes #ATS screening?\n\nI developed a Smart Job Application System using Python, LaTeX, and LLM. The workflow includes:\n- Paste job — Submit a job URL or full job description into the web app on my #VPS.\n- Analyze JD — The system parses the posting to extract role, responsibilities, keywords, and required skills.\n- Pick LEGO Bricks — Modular “skills & experience” blocks are selected that best match the JD.\n- AI polish — A language model rewrites and tightens each block for clarity, impact, and ATS keyword alignment.\n- Generate PDF — Produce a clean, professional, ATS‑friendly LaTeX/PDF resume in minutes.\n- Result — From “nothing in your folder” to a tailored resume that reads like it was specifically preparied for that job.\n\n#DIY option — Prefer hands‑on? Use Overleaf.com with ATS‑friendly LaTeX templates to reproduce the same output yourself.\n\nBut here’s the bigger truth.\nThe job market is tough. Brutally tough. And for reasons outside our control, some people may never find a traditional employer. That’s why building things—small tools, automations, systems—matters. It’s not just about landing a job. It’s about building leverage.\n\nAs Naval says:\n- Seek wealth, not money or status.\n- Build leverage with code, content, or capital.\n- Develop specific knowledge through genuine curiosity.\n- Think long‑term.\n\nThis project is just one example of that mindset. Curious? If you want to see whether this system fits your needs, DM me. Happy to walk you through it.\nAnd even if the tool isn’t for you, at least read \"The Almanack of Naval Ravikant\". It’s one of the few books that genuinely shifts how you think.\n\n#JobHunting #Python #NextJS #LaTeX #Overleaf #Automation #ATS #Entrepreneurship #Naval #BuildInPublic #RealProblems #AI",
-      "activity": {
-        "numLikes": 5,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 5
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjAxNTkzMzkxMTE0ODk1MzYtMTc2OTEwMzg0NjMxOA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjA0NTYzNDAwMDA3MDY1NjAtMTc2OTE3NDY1Njg0Mg==:20"
 }
