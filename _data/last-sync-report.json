@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-04-17T09:24:30.659Z",
+  "sync_timestamp": "2026-04-27T10:22:47.585Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 152,
+  "total_posts_in_system": 153,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-04-17T09:54:30.659Z",
+  "next_sync_recommended": "2026-04-27T10:52:47.585Z",
   "new_posts": [
     {
-      "title": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Pr...",
-      "link": "https://www.linkedin.com/posts/johncrickett_17-great-books-on-linux-that-you-can-get-activity-7450800396987559936-PeAe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely...",
+      "link": "https://www.linkedin.com/posts/hzl_starlink-connectivity-remotework-activity-7454160802581897216-JYSp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 51,
-        "comments": 4,
-        "shares": 7
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
       },
-      "sync_date": "2026-04-17T09:24:30.386Z"
+      "sync_date": "2026-04-27T10:22:47.453Z"
     }
   ]
 }

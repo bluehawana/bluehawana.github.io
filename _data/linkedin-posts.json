@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-04-17T09:24:30.653Z"
+    "last_sync": "2026-04-27T10:22:47.580Z"
   },
   "extraction": {
-    "date": "2026-04-17T09:24:30.654Z",
+    "date": "2026-04-27T10:22:47.580Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 152,
+    "total_posts_found": 153,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -2900,6 +2900,25 @@
         "shares": 7
       },
       "posted_at": "2026-04-17T08:47:49.385Z"
+    },
+    {
+      "id": "linkedin-1777285367453-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely...",
+      "content": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely does not improve my productivity): the Starlink Mini.\n\nMy quick at‑home measurements:\n\n• Link speed: 242 MB/s\n• Download: 105 MB/s\n• Upload: 23.4MB/s\n\n\nWhile these speeds won’t replace traditional Wi‑Fi or 5G, the real value lies elsewhere: reliable internet access in locations with zero cellular coverage. For anyone working in remote environments—field research, outdoor production, emergency response, or simply “work from anywhere”—this is a meaningful shift.\n\nI’m planning to test it in more challenging environments soon.\nIf someone has an RV（Husbil）to lend, I’m more than happy to take this experiment on the road.\n\nIf you’re curious about Starlink, use this link to start your journey and we could all get one month free of using\n👉 https://lnkd.in/dPtGuBpT\n\nAnd if you’re in Gothenburg, you’re welcome to stop by and see it in action.\n\n#Starlink #Connectivity #RemoteWork #TechLife #SatelliteInternet #WorkFromAnywhere #Gothenburg",
+      "link": "https://www.linkedin.com/posts/hzl_starlink-connectivity-remotework-activity-7454160802581897216-JYSp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_800/B4DZ3J_vMEJwAc-/0/1777210425079?e=1778716800&v=beta&t=vRz5rkNNBNtVasJoJhMHQN8911s0UlQHyFao6HjmuzI",
+      "local_image": "/images/linkedin/linkedin-1777285367453-0-cfb5e008fcd2027ea3da49249402c83a.jpg",
+      "extracted_at": "2026-04-27T10:22:47.453Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-04-26T13:33:46.946Z"
     }
   ]
 }

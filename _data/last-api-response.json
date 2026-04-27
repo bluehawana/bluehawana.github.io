@@ -1,6 +1,84 @@
 {
   "data": [
     {
+      "createdAt": "2026-04-26T13:33:46.946Z",
+      "activityId": "urn:li:activity:7454160802581897216",
+      "shareUrn": "urn:li:ugcPost:7454160801432604672",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_starlink-connectivity-remotework-activity-7454160802581897216-JYSp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHtuszia2z72Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_800/B4DZ3J_vMEJwAc-/0/1777210425079?e=1778716800&v=beta&t=vRz5rkNNBNtVasJoJhMHQN8911s0UlQHyFao6HjmuzI"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGeQAtQyPvSgQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGeQAtQyPvSgQ/feedshare-shrink_480/B4DZ3J_vMFHsAk-/0/1777210425006?e=1778716800&v=beta&t=FvayxK5gUIZ05sB_sdGen1HVMWkwE7jpJYxkkTbAbqU"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEeXuEqXmCAnA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEeXuEqXmCAnA/feedshare-shrink_800/B4DZ3J_vF2I4Ac-/0/1777210421861?e=1778716800&v=beta&t=ATmKiCPlQk6ovhJy7um1eWM4QR0po4Gpb6-TMHm2tqg"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEuFKpPLuNfvA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuFKpPLuNfvA/feedshare-shrink_480/B4DZ3J_vHxK0Ak-/0/1777210422034?e=1778716800&v=beta&t=sP8EOEyEkMSjxNyWJNXhRnK9e2gYgSGuUoYNcFfoads"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEznOtKIfe59g",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEznOtKIfe59g/feedshare-shrink_800/B4DZ3J_vIGG4Ac-/0/1777210422219?e=1778716800&v=beta&t=sBkATnwg0NX_yT3ApcoQe1Sr-Cac7zUM5akuo95PXE0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQE8siW6ZG4FLg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE8siW6ZG4FLg/feedshare-shrink_480/B4DZ3J_vF0K0Ak-/0/1777210421925?e=1778716800&v=beta&t=tDruzgw429pzNRzq_b2F6q3rC9D-pdTO5SIuiLc_z04"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQH3ufh-ADV_ag",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH3ufh-ADV_ag/feedshare-shrink_800/B4DZ3J_vIjJsAc-/0/1777210422193?e=1778716800&v=beta&t=JvKPRkgsx6cHZyHzgZIyKszJBC-u0wDM3w-Uxp12eOk"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGRGZk2wojdnA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRGZk2wojdnA/feedshare-shrink_2048_1536/B4DZ3J_vIMGcAk-/0/1777210422065?e=1778716800&v=beta&t=b5CC8ILZ20e4g68HjmySIKlk8tGeFMl1EkdsyVx21GY"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHsow2xj7WS8A",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHsow2xj7WS8A/feedshare-shrink_1280/B4DZ3J_vHlH8AM-/0/1777210421987?e=1778716800&v=beta&t=GyibCsqtcKhFDHnhr1JYB3xV2FF7NstmnMbhlPhUFLU"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQHCbQbyJ7NoGg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHCbQbyJ7NoGg/feedshare-shrink_800/B4DZ3J_vH.JAAc-/0/1777210422202?e=1778716800&v=beta&t=1LEjpA6bJhV1jP916vYEIehaqXCehyxH4UcCdVw9HZk"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely does not improve my productivity): the Starlink Mini.\n\nMy quick at‑home measurements:\n\n• Link speed: 242 MB/s\n• Download: 105 MB/s\n• Upload: 23.4MB/s\n\n\nWhile these speeds won’t replace traditional Wi‑Fi or 5G, the real value lies elsewhere: reliable internet access in locations with zero cellular coverage. For anyone working in remote environments—field research, outdoor production, emergency response, or simply “work from anywhere”—this is a meaningful shift.\n\nI’m planning to test it in more challenging environments soon.\nIf someone has an RV（Husbil）to lend, I’m more than happy to take this experiment on the road.\n\nIf you’re curious about Starlink, use this link to start your journey and we could all get one month free of using\n👉 https://lnkd.in/dPtGuBpT\n\nAnd if you’re in Gothenburg, you’re welcome to stop by and see it in action.\n\n#Starlink #Connectivity #RemoteWork #TechLife #SatelliteInternet #WorkFromAnywhere #Gothenburg",
+      "activity": {
+        "numLikes": 2,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-04-17T08:47:49.385Z",
       "activityId": "urn:li:activity:7450827347764764672",
       "shareUrn": "urn:li:share:7450788285968297984",
@@ -22,17 +100,17 @@
       },
       "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
       "activity": {
-        "numLikes": 239,
+        "numLikes": 241,
         "numComments": 10,
         "numShares": 23,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 206
+            "count": 207
           },
           {
             "type": "EMPATHY",
-            "count": 19
+            "count": 20
           },
           {
             "type": "INTEREST",
@@ -93,7 +171,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777662000&v=beta&t=BM-cQPLDbZfyE6k2hqAepWPEonyoCO9gwBOVjc0xvOU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1777892400&v=beta&t=_JFnlgOCZJS52guWcE2I2YKd2SX3gk9jsCZ7fijpDQQ"
         }
       },
       "actor": {
@@ -121,7 +199,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777662000&v=beta&t=7dN9lUrpjGaZVtUj8kKTv_Uz5UWZ0jLGhuhKMsOI-t0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1777892400&v=beta&t=1-kMEGrRIiDUO33ZFkzFDsmjcwRgaVf0dWh2fq2JBs4"
         }
       },
       "actor": {
@@ -397,7 +475,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777662000&v=beta&t=x4ML-_bwYjfMLOmdQ8u59cpJ1f9zodMHWWR4XIaoSjw"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1777892400&v=beta&t=hwkSg29uwZnoHwGIw4UzZbsJpu8OPOqXhSugiH3ET40"
         }
       },
       "actor": {
@@ -452,7 +530,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=YehB3CgBZ5%2BfVHnPRnSmuQ%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=CrtU6za1Pj4xi0cptFhT1A%3D%3D"
         }
       },
       "actor": {
@@ -523,7 +601,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777662000&v=beta&t=3HURCrWi-FuronrIoawfEL89l1KLP62HvTSso1-f1hY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1777892400&v=beta&t=CLcb4zrcn7BoavpEZxzWWMzppbLbtQNsAbEHlQSSPeY"
         }
       },
       "actor": {
@@ -550,7 +628,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=Cj7ORjxIW2YUBbOcPW1Edw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=2iopwXD%2FAXGR9HLceKYhlg%3D%3D"
         }
       },
       "actor": {
@@ -582,7 +660,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=PkxRsO0R5Zjg7v1Q9YMrKw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=OU92JL1%2Bu8hJV4RzTwO82g%3D%3D"
         }
       },
       "actor": {
@@ -675,35 +753,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-01-13T12:36:11.531Z",
-      "activityId": "urn:li:activity:7416820359364063232",
-      "shareUrn": "urn:li:share:7416820358324047873",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_dakar2026-dakarrally-rallyraid-activity-7416820359364063232-1JGf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQEHqQXa_KXcUw",
-            "accessibilityText": "graphical user interface, website",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEHqQXa_KXcUw/feedshare-shrink_2048_1536/B4EZu3WziOKkAw-/0/1768307770380?e=1778716800&v=beta&t=Ld0JwzP5o_iN2n2UF3uBc-8p85YAjcnWVHkb0EZYFvI"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Fullstack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Dakar 2026 Stage 9 had that special kind of tension you can feel even through the screen. The gaps between Nani Roma, Cense, and Nassel Al‑Atyeea were razor‑thin — the kind of close fight that reminds you why Dakar is still the toughest race on earth.\n\nThis year, there's a significant narrative unfolding: American and European teams are not just participating; they are actively challenging the status quo. Ford Racing and Dacia Sandrider are fully committed to taking on Toyota's long-standing dominance. The momentum is shifting, stage by stage, dune by dune.\n\nA huge respect goes out to all the Dakar legends and every new challenger out there. They’re not just racing machines — they’re carrying the pride of entire engineering cultures, fighting for every second in the desert.they embody the pride of entire engineering cultures, battling for every second in the desert.\n\n#Dakar2026 #DakarRally #RallyRaid #MotorsportLife #FordRacing #DaciaSandrider #ToyotaGazooRacing #ChallengingToyota #RaceForGlory #DakarLegends",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MTY4MjAzNTkzNjQwNjMyMzItMTc2ODMwNzc3MTUwNw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjAxNTkzMzkxMTE0ODk1MzYtMTc2OTEwMzg0NjMxOA==:20"
 }
