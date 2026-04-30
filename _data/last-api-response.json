@@ -140,13 +140,13 @@
       },
       "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
       "activity": {
-        "numLikes": 241,
+        "numLikes": 242,
         "numComments": 11,
         "numShares": 23,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 207
+            "count": 208
           },
           {
             "type": "EMPATHY",
@@ -211,7 +211,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1778151600&v=beta&t=BYtZOwwqKxffUjiskyyOmjN62I7nc7fwtiME8QcA0Gc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_800/B4DZ1XeNaIKoAI-/0/1775289031235?e=1778184000&v=beta&t=RtuLyq8xbNjpDSbzrH8OmafxvdPQSKUQzI7ZkC_yDLc"
         }
       },
       "actor": {
@@ -239,7 +239,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1778151600&v=beta&t=nprRH-zdY8oaGQSdHSDqZ7otZbWh9P9bp0Fmg4Vs4HY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_800/B4EZ0B5wEUIQAQ-/0/1773853409869?e=1778184000&v=beta&t=iLUCK6iXYLpjw4DHxH9Bs9hWstSOVaEK8NeX4Tv7O48"
         }
       },
       "actor": {
@@ -515,7 +515,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778151600&v=beta&t=3hfUV-iqCpFswtm-a9zMjPFsdMJOSNITpw4mlXMwc8Q"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778184000&v=beta&t=bQDGbsMs0dGeDH7uNOaOwdt4zVsM4-5Okh17wTp5U1o"
         }
       },
       "actor": {
@@ -570,7 +570,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=7lyoQr9dJfBAyF8%2Bm9xfbw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=VLPWJW5zFQLm3nKw05ZGcQ%3D%3D"
         }
       },
       "actor": {
@@ -579,7 +579,7 @@
         "name": "Harvad Li",
         "description": "Agentic AI Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
-      "commentary": "New Year New Project: No.6 — SSH From Anywhere ��� With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
+      "commentary": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
       "activity": {
         "numLikes": 2,
         "numComments": 0,
@@ -641,7 +641,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1778151600&v=beta&t=TdhR-9BoJo23-K_6CdFfNjsP6A-YEVxXuHwIzg_8uYA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_800/B4EZwk04YyG0AM-/0/1770144368533?e=1778184000&v=beta&t=wN4Pmr70AqwtgCJvueCDsxpNv3pn-0_zWqdRaXlgrMo"
         }
       },
       "actor": {
@@ -668,7 +668,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=5Sq6VAUebwWku5C3vQsRNQ%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=aPrw%2FU7aORSzlnbJrkmwvQ%3D%3D"
         }
       },
       "actor": {
@@ -700,7 +700,7 @@
           "urn": "urn:li:linkedInArticle:7423028158183997440",
           "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=JHtOVz2wkAnH8YiDArEajw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=GoaRuwm7bugvfvtVz%2F68Eg%3D%3D"
         }
       },
       "actor": {
