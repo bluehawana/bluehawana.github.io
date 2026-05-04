@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-04-27T19:19:15.674Z"
+    "last_sync": "2026-05-04T10:19:12.524Z"
   },
   "extraction": {
-    "date": "2026-04-27T19:19:15.674Z",
+    "date": "2026-05-04T10:19:12.524Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 154,
+    "total_posts_found": 155,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -2938,6 +2938,25 @@
         "shares": 4
       },
       "posted_at": "2026-04-27T16:10:55.100Z"
+    },
+    {
+      "id": "linkedin-1777889952312-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "How to set up your personal #wiki or #KB(Knowledge Base)in a more efficient and smarter way — and le...",
+      "content": "How to set up your personal #wiki or #KB(Knowledge Base)in a more efficient and smarter way — and let it ‘self‑grow’ with every query, like building a knowledge ecosystem.  — where your knowledge ‘nodes’ start connecting with relationships that didn’t exist before. Follow this book and you’ll see how to get there. Build your KB with knowledge graphs and LLMs together. And if you’ve got a Mac mini as your home‑lab running Gemma 4 or Qwen 3.5, that’s pretty much the perfect setup since you do not need to pay for tokens anymore when you running your projects.\n\n#KnowledgeBase #PersonalWiki #PersonalKnoledgeManagement #KnowledgeGraph #LLM #MacMini #HomeLab #Gemma4 #Qwen3_5",
+      "link": "https://www.linkedin.com/posts/hzl_wiki-kb-knowledgebase-activity-7456720298839605248-jtC7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQEWX4q_Ees3bQ/feedshare-shrink_160/B4DZ3uXmPhI0As-/0/1777820656865?e=1779321600&v=beta&t=PGfl1apF77lCjnAj6DrIaM2DZYu4WX25LXiGW9gL5qQ",
+      "local_image": "/images/linkedin/linkedin-1777889952312-0-daecf0866e2131a51baddc0dcdc91160.jpg",
+      "extracted_at": "2026-05-04T10:19:12.312Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-05-03T15:04:18.407Z"
     }
   ]
 }
