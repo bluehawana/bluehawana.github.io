@@ -1,6 +1,84 @@
 {
   "data": [
     {
+      "createdAt": "2026-05-05T14:51:27.647Z",
+      "activityId": "urn:li:activity:7457441841769119745",
+      "shareUrn": "urn:li:ugcPost:7457441840334602240",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_agenticai-microsoftai-aihackathon-activity-7457441841769119745-h0IB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGrdXyjQH5r7w",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGrdXyjQH5r7w/feedshare-shrink_1280/B4DZ34nz1IJgAM-/0/1777992681655?e=1779321600&v=beta&t=9nGdyYtufiwCtRmM2gd05CQGSPj979bp8rXx-VDEODo"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQExqUinvYR57Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExqUinvYR57Q/feedshare-shrink_160/B4DZ34nzreI0As-/0/1777992680741?e=1779321600&v=beta&t=Io4mArvaVDpdq4TTYjZL-t7y6nxseuM_-w2y6ODAIc0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQFTY_D3mER0bg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFTY_D3mER0bg/feedshare-shrink_20/B4DZ34nzzPHoAM-/0/1777992681303?e=1779321600&v=beta&t=OCdlENqBybNI_7B2QD05SdyYKKEP4wPsH3yaGnXhBUQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGPnsFrM7n7fQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPnsFrM7n7fQ/feedshare-image-high-res/B4DZ34n025HgAY-/0/1777992685746?e=1779321600&v=beta&t=qkZvPZDHzgvOkwKLCRPG8AHpQEHiLxxWTs1e6iO63Gk"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEY7Co_qXuJAQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEY7Co_qXuJAQ/feedshare-shrink_800/B4DZ34n0VdHkAc-/0/1777992683620?e=1779321600&v=beta&t=dt5_e8MStkbUDmVmqpkCUq6LGZaHuC5koSoMEnON87o"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQEsThfEg2JLLQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEsThfEg2JLLQ/feedshare-shrink_800/B4DZ34nz_QJkAg-/0/1777992682078?e=1779321600&v=beta&t=0CzLUoxKqkMEbfx6BCQsHcPJkBLFDzdm3aPdON-j0CM"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQH7Ix5f8pQBOQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH7Ix5f8pQBOQ/feedshare-shrink_160/B4DZ34nzveHoAo-/0/1777992681056?e=1779321600&v=beta&t=Vip0ZnZ2-EqyUewVMkl4-fDhvgdzBwKIMrKuC4wWBMk"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGNS7-PGRJTWA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGNS7-PGRJTWA/feedshare-shrink_800/B4DZ34n0uVGcAc-/0/1777992685452?e=1779321600&v=beta&t=qOOCd2Evx2MnZx9XFQ9v2XRUAc1YihvLx4aYVT9-SY0"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQFw74a1BJpvWg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFw74a1BJpvWg/feedshare-shrink_480/B4DZ34nzwyHIAk-/0/1777992681807?e=1779321600&v=beta&t=5U2xp0hjziBCCD8hLA5dhaZyjHTaLbGbBE5N5c5CUhM"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQGLyKVbwD2Mrw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLyKVbwD2Mrw/feedshare-shrink_480/B4DZ34nz3lHgA0-/0/1777992682619?e=1779321600&v=beta&t=yDNHbJbOIdEyADkcpJcWHAjJHlhOUo5D4kVRMcIDbmU"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Attended the “Microsoft Agentic AI Hack” today at World of Volvo and finished the task first. \n\nWhat I learned is that regardless of how advanced the agent frameworks become, infrastructure remains crucial for the success of your project. Much of the time was spent on typical developer tasks such as:\n\n- SSL/proxy issues\n- Python version conflicts\n- Data seeding\n- Azure login/logout loops\n- Agent registration mismatches\n- Installing uv/Aspire/truststores\n\nEssentially, everything except “AI.” I didn’t have enough time to fully grasp what each agent was designed to solve. Personally, I still prefer running things on-prem on my Mac. Once you commit to one ecosystem (OpenAI, Anthropic, Google), you lose the flexibility to choose.\n\nCurrently, I’m running Claude Code with Ollama Qwen 3.6 locally on an M5 Max MacBook Pro. I replicated the entire hackathon setup at home in about 30 minutes—clean and simple.\n\nAI is evolving rapidly, but the fundamentals remain the same: computing, networking, environment setup, and debugging. If you can’t manage those, the agents won’t be of much help. \n\n#AgenticAI #MicrosoftAI #AIHackathon #DeveloperLife #InfrastructureMatters #LocalLLM #Ollama #Qwen #ClaudeCode #MacBookPro",
+      "activity": {
+        "numLikes": 3,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-05-03T15:04:18.407Z",
       "activityId": "urn:li:activity:7456720298839605248",
       "shareUrn": "urn:li:share:7456720297795198976",
@@ -46,13 +124,13 @@
       },
       "commentary": "Efter över ett års kamp – först som individ och sedan som talesperson för Fair Transition – går Tidöregeringens proposition om skärpta krav för svenskt medborgarskap till omröstning i riksdagen på onsdag den 29 april. Att lagen kommer att röstas igenom är i princip helt säkert. Hur den kommer att se ut är det inte.\n\nTack vare tusentals engagerade och hårt arbetande människor runt om i landet finns fortfarande en möjlighet att påverka utfallet. Om bara ett fåtal ledamöter från Liberalerna väljer att stå upp för den svenska rättsstaten och en rättvis migrationspolitik tillsammans med oppositionen, kan övergångsbestämmelser säkras. Då skulle de nya reglerna endast gälla ansökningar som lämnas in efter den 6 juni.\n\nUtan sådana övergångsregler – som både regeringens egna utredare och Lagrådet har rekommenderat – riskerar 100 000 människor att få avslag på deras ansökningar. Människor som i många fall har väntat i över fyra år på besked från Migrationsverket (Swedish Migration Agency).\n\nSverige riskerar dessutom att bli det ENDA landet i Europa som inför skärpta medborgarskapskrav utan övergångsbestämmelser. Det underminerar rättsstaten, urholkar tilliten till våra institutioner och skadar vår förmåga att attrahera och behålla den internationella kompetens som vår ekonomi är beroende av.\n\nJag påverkas inte själv av de nya reglerna. Jag hade turen att bli svensk medborgare i oktober – den viktigaste händelsen i mitt liv. Men jag har inte glömt den sårbarhet, den förlamande ångest och den totala maktlöshet jag kände som icke-EU-medborgare varje dag innan dess. Och jag kommer aldrig att glömma den livsavgörande lättnad och trygghet som medborgarskapet innebar.\n\nNär jag fick mitt medborgarskap lovade jag mig själv att aldrig glömma – och att aldrig sluta kämpa för dem som är mest politiskt och juridiskt utsatta. Jag kommer alltid att använda de rättigheter och privilegier som det lilla röda passet ger för att verka för ett mer rättvist samhälle.\n\nOm man blir svensk medborgare innan den 6 juni ska inte vara en fråga om tur - och därför måste den nya lagen införas med rimliga övergångsbestämmelser.\n\nNu har våra politiker i riksdagen 48 timmar kvar att avgöra om de står upp för rättsstaten – och för ett Sverige byggt på tillit och öppenhet, snarare än rädsla, kortsiktighet och symbolpolitik.\n\nJag hoppas att de fattar rätt beslut.\nThe Local Europe Becky Waterton Emma Löfgren Cecilia Rönn Malin Danielsson Niels Paarup-Petersen",
       "activity": {
-        "numLikes": 158,
+        "numLikes": 159,
         "numComments": 11,
         "numShares": 14,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 110
+            "count": 111
           },
           {
             "type": "APPRECIATION",
@@ -244,7 +322,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1778583600&v=beta&t=a_wAlppN58-Xq_wZ9TMAKmHwnJZHBUZl2PP9SJgs6X4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1778616000&v=beta&t=YWF_tg85zQNf0ezZiflBKUL0ZpnUvvqF6Q4VhmVKN8Y"
         }
       },
       "actor": {
@@ -272,7 +350,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1778583600&v=beta&t=HBIOwAbZBQDhBVeES0knECRKuRkb4ziTFHpwKZqKu8g"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1778616000&v=beta&t=lv1PgZY8v7qW34-i1c6XNqAPUhpAf2oT2QjCxUwgp8s"
         }
       },
       "actor": {
@@ -548,7 +626,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778583600&v=beta&t=E_JmAPG7T01DRkwd3WMUMeSidyf9MTP_XxUQqIKOPPo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778616000&v=beta&t=IEeMSyQ4Q_Gxakf_Q1ARM9rrt2sH1V8Zln9YBsDEo_o"
         }
       },
       "actor": {
@@ -603,7 +681,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=UfMzGRKWw%2BzdtL21VFFI%2Bg%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=7KBTXxWS8Cg5cmuvKAAMWg%3D%3D"
         }
       },
       "actor": {
@@ -674,7 +752,7 @@
           "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
           "subtitle": "developer.apple.com",
           "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_480/B4EZwk04YyG0As-/0/1770144368533?e=1778583600&v=beta&t=k_sOW-Ze9M9k_IuI-QoibFSZIkaNk4N1LRa1C9_Z8Us"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_480/B4EZwk04YyG0As-/0/1770144368533?e=1778616000&v=beta&t=ELDoePUWqCve56y3ksB0vD0NRPYatiu-sTyWWEuNOGI"
         }
       },
       "actor": {
@@ -701,7 +779,7 @@
           "urn": "urn:li:linkedInArticle:7424129558725058560",
           "title": "Beyond Copilot: Free Access to 182 Cutting-Edge AI Models on NVIDIA—My New Year Project No.5",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=D3k3BW1d7E4U36lD4JoM7A%3D%3D"
+          "url": "https://www.linkedin.com/pulse/beyond-copilot-free-access-182-cutting-edge-ai-models-harvad-li-tljbf?trackingId=KcGcFpYwL44qB8GVFqbd4g%3D%3D"
         }
       },
       "actor": {
@@ -722,39 +800,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-01-30T15:59:27.552Z",
-      "activityId": "urn:li:activity:7423032106898948096",
-      "shareUrn": "urn:li:ugcPost:7423032106383151104",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_qwen-glm-minimax-activity-7423032106898948096-wKs_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:linkedInArticle:7423028158183997440",
-          "title": "\"Can Not Live Without AI?\" ---- Reflections on AI Coding Tools Adoption in Corporation Level",
-          "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/can-live-without-ai-reflections-coding-tools-adoption-harvad-li-cvfwf?trackingId=3%2FNyivhynz2tjDWlHqtnpg%3D%3D"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Yesterday I went to a Cloud Native Computing Foundation (CNCF) meetup about AI in development at Spotify. Great event, lots of energy. But afterwards, I noticed something that's been bothering me.\nAlmost every Swedish company I talk to: Windows Laptop, Microsoft stack, VS Code, GitHub Copilot. That's it.\nWhen I ask \"Why not try Claude, Gemini or others on Mac?\", the answer is always: \"data security concerns.\"\nBut here's the thing - most companies already pay for Microsoft and Azure, so they add Copilot for $20/month and feel safe because \"Microsoft will protect our data.\" Is that really security thinking? Or just going with what feels familiar?\nHere's What Nobody's Talking About :\nSome of the best coding models right now are Chinese: #Qwen-3.5-coder (Alibaba), #GLM-4.7 (Zhipu), #MiniMax 2.1 (Xiyu), #Kimi 2.5 (Moonshot). They're top-ranked on Hugging Face and NVIDIA platforms. In many coding tasks, they're genuinely better than Copilot. Significantly better.\nAnd it's not just Chinese models - Anthropic's Claude, Google's Gemini - nobody's even trying them.\nFrom my experience testing these tools extensively? #Copilot wouldn't even make my top 10. I'm not exaggerating.\nMy Suggestion :\nLook, if you're scared that Chinese AI models will send your data back to China(Maybe not) - fine, I understand that concern. But at least try other American AI giants like #Anthropic's #ClaudeCode, #GoogleGemini & #Antigravity, #AWS #Kiro, or even #OpenAI's #Codex directly instead of staying trapped within Copilot.\nUnless you have factory software locked into Microsoft, why not explore what's actually best for your team?\nMost of these models are easy to access: Ollama (local) or on cloud, OpenAI-compatible APIs, NVIDIA catalog, many with free tiers. Take your actual code, run tests, compare. Then decide based on performance, not on \"this is what other Swedish companies use.\"\nA Personal Note\nI'm from China, working in tech here in Sweden. I love it here. But sometimes there's this automatic assumption: Chinese technology = risky, American technology = safe. That's not how technology works.\nFunny timing though - with all the #Greenland drama lately, suddenly Chinese companies seem a bit more \"acceptable\" in Europe :) \nMaybe it takes geopolitical chaos to remind us that technological diversity isn't just nice to have - it's strategic.\nWhat worries me: what if the US restricts AI services due to geopolitics one day? Shouldn't we at least know what alternatives exist?\nThe \"Can't Live Without AI\" theme from yesterday's meetup is true. AI is part of our work now.\nBut let's make sure we're choosing the right tools, not just the comfortable ones.\nMaybe I'm overthinking this. Maybe I'm too sensitive about the China thing. But I genuinely think we're missing out on better tools because of assumptions we haven't questioned. What do you think? Read the article for more details.\n\n#Antigravity #Kiro #ClaudeCode #DevTools #CNCF #Sweden #CodingIDE #AIModels #Huggingface #Nvidia",
-      "activity": {
-        "numLikes": 1,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 1
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjMwMzIxMDY4OTg5NDgwOTYtMTc2OTc4ODc2NzUzNQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjQxMzg3MDU5NTI2NjE1MDQtMTc3MDA1MjYwMTMwNw==:20"
 }
