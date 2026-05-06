@@ -1,210 +1,23 @@
 {
-  "sync_timestamp": "2026-05-06T10:23:13.185Z",
+  "sync_timestamp": "2026-05-06T19:44:01.695Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 18,
-  "images_downloaded": 12,
-  "total_posts_in_system": 174,
+  "new_posts_synced": 1,
+  "images_downloaded": 0,
+  "total_posts_in_system": 175,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-05-06T10:53:13.186Z",
+  "next_sync_recommended": "2026-05-06T20:14:01.695Z",
   "new_posts": [
     {
-      "title": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in t...",
-      "link": "https://www.linkedin.com/posts/fair-transition_fair-transition-transition-clause-for-swedish-activity-7449368381448712192-Jlr6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 64,
-        "comments": 0,
-        "shares": 6
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Attended the “Microsoft Agentic AI Hack” today at World of Volvo and finished the task first. \n\nWhat...",
-      "link": "https://www.linkedin.com/posts/harvad_agenticai-microsoftai-aihackathon-activity-7457441841769119745-eA_h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 3,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "How to set up your personal #wiki or #KB(Knowledge Base)in a more efficient and smarter way — and le...",
-      "link": "https://www.linkedin.com/posts/harvad_wiki-kb-knowledgebase-activity-7456720298839605248-nmk6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 3,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely...",
-      "link": "https://www.linkedin.com/posts/harvad_starlink-connectivity-remotework-activity-7454160802581897216-NUgI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 5,
-        "comments": 1,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "The comparison process promises to be fascinating! While unstructured data is being \"organized\" by L...",
-      "link": "https://www.linkedin.com/posts/harvad_rag-llm-largelanguagemodels-activity-7447639872896585729-qP-K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 4,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "How we should build our own knowledge base with LLM.",
-      "link": "https://www.linkedin.com/posts/harvad_andrej-karpathy-karpathy-on-x-activity-7446102009721790464-ziM7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Luck can be shared—it’s contagious. That’s why I’ll be passing it along next Friday. Not because I’v...",
+      "link": "https://www.linkedin.com/posts/harvad_george-clooney-accepts-the-chaplin-award-activity-7457838143048941568-jWEf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "5 Agent Skill from Google.",
-      "link": "https://www.linkedin.com/posts/harvad_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-hOqM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #Pineboo...",
-      "link": "https://www.linkedin.com/posts/harvad_pinebookpro-lenovothinkpade15-macminim4pro-activity-7433200323667763200-sP7a?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 4,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Always on the move — and loving the learning along the way. 🚀\n\n#Chainguard #Docker #CVE #CNCFGBG #O...",
-      "link": "https://www.linkedin.com/posts/harvad_chainguard-docker-cve-activity-7432487281942351872-CQo2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 5,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "It was minus 12°C this morning. After dropping off my kid, I headed straight to Jula for #birdfood —...",
-      "link": "https://www.linkedin.com/posts/harvad_birdfood-silentlove-warmswinter-activity-7429814383440056321-kNYD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 8,
-        "comments": 6,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Where there are dumplings, there’s the spirit of #LunarNewYear. Yesterday, we made them together to ...",
-      "link": "https://www.linkedin.com/posts/harvad_lunarnewyear-lunarnewyear-dumpling-activity-7429490195814662144-V9ke?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 6,
-        "comments": 2,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Excited to explore the capabilities of Z.ai #Glm5，\nAlibaba #Qwen3.5, and moonshot #kimi2.5 on the NV...",
-      "link": "https://www.linkedin.com/posts/harvad_glm5-qwen3-kimi2-activity-7429255056463466496-stqK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 3,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion prefe...",
-      "link": "https://www.linkedin.com/posts/harvad_anywear-anywear-ios-activity-7428008723673104384-ECSk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 2,
-        "comments": 0,
-        "shares": 1
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "A lightweight #PicoClaw is worth a try—using just 10% of the resources compared to #OpenClaw, and no...",
-      "link": "https://www.linkedin.com/posts/harvad_github-sipeedpicoclaw-picoclaw-activity-7427732961321558016-xbxI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Now hosting the invoice printing system, New Year Project No. 3, on my VPS, running as a live soluti...",
-      "link": "https://www.linkedin.com/posts/harvad_bankgiro-cloudflarepages-vps-activity-7427707175801602048-HyeO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on...",
-      "link": "https://www.linkedin.com/posts/harvad_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-4RiL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 2,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Testing isn't boring when you're ensuring quality for every user.\n\nEven for personal projects, user ...",
-      "link": "https://www.linkedin.com/posts/harvad_ai-opensource-qualityassurance-activity-7424785469382590464-BveU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 2,
-        "comments": 1,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
-    },
-    {
-      "title": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would'v...",
-      "link": "https://www.linkedin.com/posts/harvad_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-VeZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 0,
-        "comments": 0,
-        "shares": 0
-      },
-      "sync_date": "2026-05-06T10:23:11.634Z"
+      "sync_date": "2026-05-06T19:44:01.668Z"
     }
   ]
 }
