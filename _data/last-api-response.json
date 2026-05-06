@@ -1,6 +1,34 @@
 {
   "data": [
     {
+      "createdAt": "2026-05-06T17:06:13.235Z",
+      "activityId": "urn:li:activity:7457838143048941568",
+      "shareUrn": "urn:li:share:7457838142369185792",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_george-clooney-accepts-the-chaplin-award-activity-7457838143048941568-jWEf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "article": {
+          "urn": "urn:li:article:8438494665085078404",
+          "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
+          "subtitle": "youtube.com",
+          "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1778702400&v=beta&t=xJSYHg0IsTRcPZ3TkXQ-QC7wjPqFirMoQomKOfnOlrw"
+        }
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Luck can be shared—it’s contagious. That’s why I’ll be passing it along next Friday. Not because I’ve been so lucky, but because I want to help others who need it to change their path. I believe in this. Do you?",
+      "activity": {
+        "numLikes": 0,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": []
+      }
+    },
+    {
       "createdAt": "2026-05-06T05:20:41.899Z",
       "activityId": "urn:li:activity:7457660592556851200",
       "shareUrn": "urn:li:share:7449368380773605376",
@@ -11,13 +39,13 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1778670000&v=beta&t=gDnXgBfOFdidILiBvAJ1hEtuhbAZlTnF1iiUwi7qXnU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1778702400&v=beta&t=hm5YdlmFTn_EJt-ZT4CedAKmOWNsK0YOKOs5Atuyhzk"
         }
       },
       "actor": {
         "actorId": "urn:li:company:112047995",
         "name": "Fair Transition",
-        "description": "800 followers"
+        "description": "802 followers"
       },
       "commentary": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in the queue assigned you, should the rules be allowed to change while you wait?\n\nLagrådet said no. The government's own inquiry said no. 379 engineers and researchers at companies including Spotify, Klarna, Volvo, Ericsson, and Nvidia said no in their formal remissvar.\n\nThe reform itself can move forward on June 6. That isn't what we're contesting. We're asking for one thing: that the roughly 100,000 applications already sitting at Migrationsverket be assessed under the rules that existed when they were filed.\n\nThat's what transitional provisions are for. Every Nordic country uses them. Sweden has used them before. The institutions Sweden built to advise on exactly this kind of question recommended them here too.\n\nfairtransitionsweden.com",
       "activity": {
@@ -107,13 +135,13 @@
       },
       "commentary": "Attended the “Microsoft Agentic AI Hack” today at World of Volvo and finished the task first. \n\nWhat I learned is that regardless of how advanced the agent frameworks become, infrastructure remains crucial for the success of your project. Much of the time was spent on typical developer tasks such as:\n\n- SSL/proxy issues\n- Python version conflicts\n- Data seeding\n- Azure login/logout loops\n- Agent registration mismatches\n- Installing uv/Aspire/truststores\n\nEssentially, everything except “AI.” I didn’t have enough time to fully grasp what each agent was designed to solve. Personally, I still prefer running things on-prem on my Mac. Once you commit to one ecosystem (OpenAI, Anthropic, Google), you lose the flexibility to choose.\n\nCurrently, I’m running Claude Code with Ollama Qwen 3.6 locally on an M5 Max MacBook Pro. I replicated the entire hackathon setup at home in about 30 minutes—clean and simple.\n\nAI is evolving rapidly, but the fundamentals remain the same: computing, networking, environment setup, and debugging. If you can’t manage those, the agents won’t be of much help. \n\n#AgenticAI #MicrosoftAI #AIHackathon #DeveloperLife #InfrastructureMatters #LocalLLM #Ollama #Qwen #ClaudeCode #MacBookPro",
       "activity": {
-        "numLikes": 3,
+        "numLikes": 4,
         "numComments": 0,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 3
+            "count": 4
           }
         ]
       }
@@ -291,13 +319,13 @@
       },
       "commentary": "17 great books on Linux - that you can get for around 9% of the cover price right now!\n\nThe Linux Programming Interface is a great reference book and Building A Debugger really appeals to me, it's project I plan to add to Coding Challenges in future.\n\n👉 Systems Programming in Linux\n👉 The Linux Programming Interface\n👉 The Linux Command Line\n👉 Linux Basics For Hackers\n👉 How Linux Works\n👉 The Linux Memory Manager\n👉 Effective Shell\n👉 Building A Debugger\n👉 The Wireless Cookbook\n👉 The Book of Kubernetes\n👉 Practica Linux Forensics\n👉 Your Linux Toolbox\n👉 Black Hat Bask\n👉 Practical Forensic Imaging\n👉 Wicked Cool Shell Scrips\n👉 Linux Firewalls\n👉 Heavy Wizardry 101\n\nYou get all of these worth over £515 for around £45 right now through Humble’s Book Bundle and support charity, details here: https://lnkd.in/eDYZTD6z",
       "activity": {
-        "numLikes": 244,
+        "numLikes": 243,
         "numComments": 11,
         "numShares": 23,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 209
+            "count": 208
           },
           {
             "type": "EMPATHY",
@@ -362,7 +390,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1778670000&v=beta&t=bFb_oLhT34f6OHl1LuVJqtTJU2XtuNSklHvnJ2aumx8"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1778702400&v=beta&t=pQfVQJGnSmgPP2Oyw8TGkzQXE39HNDUiswCHhfgvfTE"
         }
       },
       "actor": {
@@ -390,7 +418,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1778670000&v=beta&t=wfW13qojNCotJYLwTHLwpksrO2LV35tc1zxIIYM-nGU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1778702400&v=beta&t=LBfZFjNAZNGBM6yI7HJr1GRvvhzFQNJUl1bpEGf4z1o"
         }
       },
       "actor": {
@@ -666,7 +694,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778670000&v=beta&t=DXSTzhBp3f-kXIfzMlMgC78CooWpvqOy4G4lQXwvJwk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1778702400&v=beta&t=PknaLH2mIyP-4plhakeENZx5dkA2Q2Nu7UfoHOcl71I"
         }
       },
       "actor": {
@@ -721,7 +749,7 @@
           "urn": "urn:li:linkedInArticle:7427640332340596736",
           "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
           "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=JQpvQAYX4SvSTCSk9sOsOw%3D%3D"
+          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=duLyQeF8hYlP7VSJhOBb0A%3D%3D"
         }
       },
       "actor": {
@@ -780,35 +808,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-02-03T19:17:49.496Z",
-      "activityId": "urn:li:activity:7424531578732642305",
-      "shareUrn": "urn:li:share:7424531578191548416",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_meet-agentic-coding-in-xcode-tech-talks-activity-7424531578732642305-VeZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:8837244262272038260",
-          "title": "Meet agentic coding in Xcode - Tech Talks - Videos - Apple Developer",
-          "subtitle": "developer.apple.com",
-          "url": "https://developer.apple.com/videos/play/tech-talks/111428/",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEgJnB8RyrCGg/articleshare-shrink_480/B4EZwk04YyG0As-/0/1770144368533?e=1778670000&v=beta&t=_nxKs7ZY3OenUoj4rcVNfA3xF23P5eoTRxVYeOi0naw"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Xcode and Apple might be slow, but at least they're moving. If they'd done nothing, everyone would've ditched Xcode by now and switched to VS Code or whatever's IDE with hot AI features. Progress is progress, even if it's slow.\n\n\n#Xcode #Swift #SwiftUI #iOS #Apple",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjQ1MzE1Nzg3MzI2NDIzMDUtMTc3MDE0NjI2OTQ3OQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjQ3ODU0NjkzODI1OTA0NjQtMTc3MDIwNjgwMTcyMA==:20"
 }
