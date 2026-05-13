@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-05-06T19:44:01.695Z",
+  "sync_timestamp": "2026-05-13T19:52:37.602Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 175,
+  "images_downloaded": 1,
+  "total_posts_in_system": 176,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-05-06T20:14:01.695Z",
+  "next_sync_recommended": "2026-05-13T20:22:37.602Z",
   "new_posts": [
     {
-      "title": "Luck can be shared—it’s contagious. That’s why I’ll be passing it along next Friday. Not because I’v...",
-      "link": "https://www.linkedin.com/posts/harvad_george-clooney-accepts-the-chaplin-award-activity-7457838143048941568-jWEf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "Dreams don’t arrive overnight — they arrive mile by mile.\nI met a traveler from the UAE who has cros...",
+      "link": "https://www.linkedin.com/posts/harvad_travellife-rvdreams-neverstopexploring-activity-7460382286434205696-n5Z-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-05-06T19:44:01.668Z"
+      "sync_date": "2026-05-13T19:52:37.446Z"
     }
   ]
 }
