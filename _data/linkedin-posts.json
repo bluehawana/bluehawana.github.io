@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-05-06T19:44:01.689Z"
+    "last_sync": "2026-05-13T19:52:37.490Z"
   },
   "extraction": {
-    "date": "2026-05-06T19:44:01.689Z",
+    "date": "2026-05-13T19:52:37.490Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 175,
+    "total_posts_found": 176,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -3337,6 +3337,25 @@
         "shares": 0
       },
       "posted_at": "2026-05-06T17:06:13.235Z"
+    },
+    {
+      "id": "linkedin-1778701957447-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Dreams don’t arrive overnight — they arrive mile by mile.\nI met a traveler from the UAE who has cros...",
+      "content": "Dreams don’t arrive overnight — they arrive mile by mile.\nI met a traveler from the UAE who has crossed more borders than most people dare to imagine. It reminded us that persistence always leaves a trail.\n\nFor some of us, home isn’t a fixed address.\nHome is wherever we park the RV.\nAnd in those quiet places between destinations, dreams slowly take shape.\n\n#TravelLife #RVDreams #NeverStopExploring #RemoteLiving #OnTheRoad #ChasingDreams #UAETraveler #RoadStories",
+      "link": "https://www.linkedin.com/posts/harvad_travellife-rvdreams-neverstopexploring-activity-7460382286434205696-n5Z-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1780531200&v=beta&t=2n9B8TVO2UNAMqBbcLUZWAHMUQl5qjktohb2iAVQCFw",
+      "local_image": "/images/linkedin/linkedin-1778701957447-0-282a1e1cdcd8a9dff36e1ac0403a78b7.jpg",
+      "extracted_at": "2026-05-13T19:52:37.446Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-05-13T17:35:44.286Z"
     }
   ]
 }
