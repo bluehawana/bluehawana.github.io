@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bluehawana.github.io/sitemap.xml
+
+# Allow crawling of key pages for SEO
+Allow: /index.html
+Allow: /pages/services.html
+Allow: /pages/resume.html
+Allow: /pages/contact.html
+Allow: /pages/about.html
+Allow: /pages/blog.html
+Allow: /projects/
+
+# Block admin/automation pages
+Disallow: /pages/automation_dashboard.html
+Disallow: /pages/linkedin_*
+Disallow: /pages/admin_*
+
+# Block sensitive files
+Disallow: /netlify/
+Disallow: /.git/
+Disallow: /config_sample.js
+Disallow: /linkedin_config*
+Disallow: /*.log

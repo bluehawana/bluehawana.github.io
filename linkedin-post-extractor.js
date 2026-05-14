@@ -163,7 +163,7 @@ function addPostToFile(post) {
       tags: post.tags,
       activityId: post.activityId,
       author: {
-        name: "Hongzhi (Harvad) Li",
+        name: "Harvad Li",
         profileUrl: "https://linkedin.com/in/hzl"
       },
       source: 'auto_extraction'

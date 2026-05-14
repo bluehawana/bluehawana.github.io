@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Activity ID Extractor - Bluehawana</title>
+    <style>
+        :root {
+            --cyber-bg: #0a0a0a;
+            --cyber-primary: #00d4ff;
+            --cyber-secondary: #bd93f9;
+            --cyber-accent: #50fa7b;
+            --cyber-text: #ffffff;
+            --cyber-text-dim: #cccccc;
+            --cyber-border: #333333;
+            --neon-glow: 0 0 10px currentColor;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--cyber-bg) 0%, #1a1a2e 100%);
+            color: var(--cyber-text);
+            font-family: 'Courier New', Monaco, monospace;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(145deg, #111111 0%, #1a1a1a 100%);
+            border: 2px solid var(--cyber-primary);
+            border-radius: 15px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: var(--cyber-primary);
+            text-shadow: var(--neon-glow);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--cyber-accent);
+            font-size: 1.1rem;
+        }
+
+        .section {
+            background: linear-gradient(145deg, #111111 0%, #1a1a1a 100%);
+            border: 1px solid var(--cyber-border);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--cyber-secondary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: var(--neon-glow);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: var(--cyber-accent);
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="url"], textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--cyber-bg);
+            border: 2px solid var(--cyber-border);
+            border-radius: 8px;
+            color: var(--cyber-text);
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        input[type="url"]:focus, textarea:focus {
+            border-color: var(--cyber-primary);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+            outline: none;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, var(--cyber-primary), var(--cyber-secondary));
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px 10px 10px 0;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--cyber-accent);
+            color: var(--cyber-accent);
+        }
+
+        .btn-secondary:hover {
+            background: var(--cyber-accent);
+            color: var(--cyber-bg);
+        }
+
+        .result-box {
+            background: var(--cyber-bg);
+            border: 2px solid var(--cyber-accent);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            display: none;
+        }
+
+        .activity-list {
+            margin-top: 20px;
+        }
+
+        .activity-item {
+            background: rgba(17, 17, 17, 0.7);
+            border: 1px solid var(--cyber-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .activity-item:hover {
+            border-color: var(--cyber-primary);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.15);
+        }
+
+        .activity-id {
+            color: var(--cyber-primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .activity-url {
+            color: var(--cyber-text-dim);
+            font-size: 0.9rem;
+            word-break: break-all;
+            margin-bottom: 10px;
+        }
+
+        .copy-btn {
+            background: var(--cyber-accent);
+            color: var(--cyber-bg);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .instructions {
+            background: rgba(189, 147, 249, 0.1);
+            border: 1px solid var(--cyber-secondary);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .step::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--cyber-secondary);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .instructions {
+            counter-reset: step-counter;
+        }
+
+        .status {
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .status.success {
+            background: rgba(80, 250, 123, 0.2);
+            border: 1px solid var(--cyber-accent);
+            color: var(--cyber-accent);
+        }
+
+        .status.error {
+            background: rgba(255, 7, 58, 0.2);
+            border: 1px solid #ff073a;
+            color: #ff073a;
+        }
+
+        .sync-json {
+            background: var(--cyber-bg);
+            border: 2px solid var(--cyber-secondary);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🔗 LinkedIn Activity ID Extractor</h1>
+            <p class="subtitle">Extract activity IDs from LinkedIn post URLs for automated blog sync</p>
+        </div>
+
+        <div class="instructions">
+            <h3 style="color: var(--cyber-secondary); margin-bottom: 20px;">📋 How to Use</h3>
+            <div class="step">Go to your LinkedIn profile and find your recent posts</div>
+            <div class="step">Copy the URL of each post (click "..." → "Copy link to post")</div>
+            <div class="step">Paste the URLs below, one per line</div>
+            <div class="step">Click "Extract Activity IDs" to get the IDs</div>
+            <div class="step">Copy the generated sync code and add to your blog system</div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 URL Input</h2>
+            
+            <div class="input-group">
+                <label for="linkedin-urls">LinkedIn Post URLs (one per line):</label>
+                <textarea id="linkedin-urls" placeholder="https://www.linkedin.com/posts/activity-7364309907770126337
+https://www.linkedin.com/posts/hzl_androidauto-development-activity-7123456789012345678
+...add more URLs here"></textarea>
+            </div>
+
+            <button class="btn" onclick="extractActivityIds()">🔍 Extract Activity IDs</button>
+            <button class="btn btn-secondary" onclick="clearAll()">🗑️ Clear All</button>
+        </div>
+
+        <div class="section" id="results-section" style="display: none;">
+            <h2 class="section-title">📊 Extracted Activity IDs</h2>
+            <div id="activity-list" class="activity-list"></div>
+            
+            <button class="btn" onclick="generateSyncCode()">⚡ Generate Sync Code</button>
+            <button class="btn btn-secondary" onclick="copyAllIds()">📋 Copy All IDs</button>
+        </div>
+
+        <div class="section" id="sync-section" style="display: none;">
+            <h2 class="section-title">🚀 Generated Sync Code</h2>
+            <p style="color: var(--cyber-text-dim); margin-bottom: 20px;">
+                Copy this code and add it to your sync-linkedin-activity-ids.js file:
+            </p>
+            
+            <div id="sync-code" class="sync-json"></div>
+            
+            <button class="btn" onclick="copyToClipboard('sync-code')">📋 Copy Sync Code</button>
+            <button class="btn btn-secondary" onclick="downloadSyncFile()">💾 Download File</button>
+        </div>
+    </div>
+
+    <script>
+        let extractedActivities = [];
+
+        function extractActivityIds() {
+            const input = document.getElementById('linkedin-urls').value.trim();
+            if (!input) {
+                showStatus('Please enter LinkedIn post URLs', 'error');
+                return;
+            }
+
+            const urls = input.split('\n').filter(url => url.trim());
+            extractedActivities = [];
+
+            console.log('🔍 Extracting activity IDs from URLs...');
+
+            for (const url of urls) {
+                const trimmedUrl = url.trim();
+                console.log(`Processing URL: ${trimmedUrl}`);
+
+                // Extract activity ID using regex patterns
+                const patterns = [
+                    /activity-(\d+)/,                    // Standard activity format
+                    /posts\/.*?-(\d+)/,                  // Alternative format
+                    /feed\/update\/urn:li:activity:(\d+)/, // Feed format
+                    /urn:li:activity:(\d+)/              // URN format
+                ];
+
+                let activityId = null;
+
+                for (const pattern of patterns) {
+                    const match = trimmedUrl.match(pattern);
+                    if (match) {
+                        activityId = match[1];
+                        break;
+                    }
+                }
+
+                if (activityId) {
+                    extractedActivities.push({
+                        id: activityId,
+                        originalUrl: trimmedUrl,
+                        linkedinUrl: `https://www.linkedin.com/posts/activity-${activityId}`,
+                        timestamp: new Date().toISOString()
+                    });
+                    console.log(`✅ Found activity ID: ${activityId}`);
+                } else {
+                    console.log(`❌ Could not extract activity ID from: ${trimmedUrl}`);
+                }
+            }
+
+            if (extractedActivities.length > 0) {
+                displayResults();
+                showStatus(`✅ Extracted ${extractedActivities.length} activity IDs`, 'success');
+            } else {
+                showStatus('❌ No valid activity IDs found. Check your URLs format.', 'error');
+            }
+        }
+
+        function displayResults() {
+            const resultsSection = document.getElementById('results-section');
+            const activityList = document.getElementById('activity-list');
+
+            resultsSection.style.display = 'block';
+            activityList.innerHTML = '';
+
+            extractedActivities.forEach((activity, index) => {
+                const item = document.createElement('div');
+                item.className = 'activity-item';
+                item.innerHTML = `
+                    <div class="activity-id">Activity ID: ${activity.id}</div>
+                    <div class="activity-url">${activity.originalUrl}</div>
+                    <button class="copy-btn" onclick="copyToClipboard('${activity.id}', this)">Copy ID</button>
+                    <button class="copy-btn" onclick="copyToClipboard('${activity.linkedinUrl}', this)">Copy LinkedIn URL</button>
+                `;
+                activityList.appendChild(item);
+            });
+        }
+
+        function generateSyncCode() {
+            if (extractedActivities.length === 0) {
+                showStatus('No activity IDs to generate code for', 'error');
+                return;
+            }
+
+            const syncPosts = extractedActivities.map((activity, index) => {
+                return {
+                    activityId: activity.id,
+                    title: `LinkedIn Post ${index + 1}`,
+                    content: `Add your LinkedIn post content here...
+                    
+This is activity ID: ${activity.id}
+Update this content with your actual post text, including emojis and hashtags.`,
+                    publishedAt: activity.timestamp,
+                    tags: ['linkedin-post', 'update'],
+                    type: 'linkedin_post'
+                };
+            });
+
+            const syncCode = `// Generated LinkedIn Activity Sync Data
+// Add this to your ACTIVITY_POSTS array in sync-linkedin-activity-ids.js
+
+const NEW_ACTIVITY_POSTS = ${JSON.stringify(syncPosts, null, 4)};
+
+// Or update your existing ACTIVITY_POSTS array:
+const ACTIVITY_POSTS = [
+${syncPosts.map(post => `    {
+        activityId: '${post.activityId}',
+        title: '${post.title}',
+        content: \`${post.content}\`,
+        publishedAt: '${post.publishedAt}',
+        tags: ${JSON.stringify(post.tags)},
+        type: '${post.type}'
+    }`).join(',\n')}
+];`;
+
+            document.getElementById('sync-code').textContent = syncCode;
+            document.getElementById('sync-section').style.display = 'block';
+
+            showStatus('✅ Sync code generated! Copy and paste into your sync file.', 'success');
+        }
+
+        function copyAllIds() {
+            const ids = extractedActivities.map(activity => activity.id).join('\n');
+            copyToClipboard(ids);
+            showStatus('✅ All activity IDs copied to clipboard', 'success');
+        }
+
+        function copyToClipboard(text, button) {
+            if (typeof text !== 'string') {
+                text = document.getElementById(text).textContent;
+            }
+
+            navigator.clipboard.writeText(text).then(() => {
+                if (button) {
+                    const originalText = button.textContent;
+                    button.textContent = '✅ Copied!';
+                    button.style.background = 'var(--cyber-accent)';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.background = '';
+                    }, 2000);
+                }
+                showStatus('✅ Copied to clipboard', 'success');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showStatus('❌ Failed to copy to clipboard', 'error');
+            });
+        }
+
+        function downloadSyncFile() {
+            const syncCode = document.getElementById('sync-code').textContent;
+            const blob = new Blob([syncCode], { type: 'text/javascript' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `linkedin-activity-sync-${new Date().toISOString().split('T')[0]}.js`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showStatus('✅ Sync file downloaded', 'success');
+        }
+
+        function clearAll() {
+            document.getElementById('linkedin-urls').value = '';
+            document.getElementById('results-section').style.display = 'none';
+            document.getElementById('sync-section').style.display = 'none';
+            extractedActivities = [];
+            removeStatus();
+        }
+
+        function showStatus(message, type) {
+            removeStatus(); // Remove any existing status
+
+            const status = document.createElement('div');
+            status.className = `status ${type}`;
+            status.textContent = message;
+            status.id = 'status-message';
+
+            // Insert after the first section
+            const firstSection = document.querySelector('.section');
+            firstSection.parentNode.insertBefore(status, firstSection.nextSibling);
+
+            // Auto-remove after 5 seconds
+            setTimeout(removeStatus, 5000);
+        }
+
+        function removeStatus() {
+            const existing = document.getElementById('status-message');
+            if (existing) {
+                existing.remove();
+            }
+        }
+
+        // Example URLs for demonstration
+        window.addEventListener('load', () => {
+            const exampleUrls = `https://www.linkedin.com/posts/activity-7364309907770126337
+https://www.linkedin.com/posts/hzl_androidauto-development-activity-7123456789012345678`;
+            
+            console.log('🔗 LinkedIn Activity ID Extractor loaded');
+            console.log('📝 Example URLs for testing:', exampleUrls);
+        });
+    </script>
+</body>
+</html>

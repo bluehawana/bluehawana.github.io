@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Harvad Li - Senior Full Stack Developer</title>
+   <meta name="description" content="Senior Full Stack Developer with unique cross-cultural journey from banking in China to tech in Sweden. Expertise in Java, Spring Boot, React, Next.js, and cloud technologies.">
+   <meta name="keywords" content="senior developer, full stack developer, java, spring boot, react, nextjs, cloud, sweden, cross-cultural developer">
+   <meta name="author" content="Harvad Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- Open Graph meta tags -->
+   <meta property="og:title" content="Harvad Li - Senior Full Stack Developer">
+   <meta property="og:description" content="Senior developer with unique cross-cultural journey and expertise in modern web technologies.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://bluehawana.github.io">
+   <meta property="og:image" content="https://bluehawana.github.io/images/me1.png">
+
+   <!-- Twitter Card meta tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Harvad Li - Senior Full Stack Developer">
+   <meta name="twitter:description" content="Senior developer with unique cross-cultural journey and expertise in modern web technologies.">
+   <meta name="twitter:image" content="https://bluehawana.github.io/images/me1.png">
+
+   <!-- Structured data -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Person",
+     "name": "Harvad Li",
+     "alternateName": "Harvad Li",
+     "jobTitle": "Senior Full Stack Developer",
+     "description": "Senior Full Stack Developer with unique cross-cultural journey from banking in China to tech in Sweden. Expertise in Java, Spring Boot, React, Next.js, and cloud technologies.",
+     "url": "https://bluehawana.github.io",
+     "image": "https://bluehawana.github.io/images/me1.png",
+     "sameAs": [
+       "https://www.linkedin.com/in/hzl",
+       "https://github.com/bluehawana",
+       "https://twitter.com/bluehawana"
+     ],
+     "worksFor": {
+       "@type": "Organization",
+       "name": "ECARX"
+     },
+     "workLocation": {
+       "@type": "Place",
+       "name": "Gothenburg, Sweden",
+       "address": {
+         "@type": "PostalAddress",
+         "addressLocality": "Gothenburg",
+         "addressCountry": "Sweden"
+       }
+     },
+     "knowsAbout": [
+       "Java Development",
+       "Spring Boot",
+       "Next.js",
+       "TypeScript",
+       "React",
+       "Cloud Architecture",
+       "DevOps",
+       "Full Stack Development",
+       "Cross-cultural Collaboration"
+     ],
+     "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Sweden",
+       "addressLocality": "Gothenburg"
+     }
+   }
+   </script>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css?v=2025071903">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/blog.css">
+   <link rel="stylesheet" href="css/modern-portfolio.css">
+   <link rel="shortcut icon" href="favicon.png">
+
+   <!-- Custom refined styles -->
+   <style>
+      :root {
+        /* Cultural journey colors */
+        --urumqi: #d4af37; /* Gold of Ürümqi */
+        --dalian: #0c2e61; /* Blue of Dalian */
+        --gothenburg: #009cab; /* Cyan of Gothenburg */
+
+        /* Refined theme */
+        --bg-primary: #0a0a0f;
+        --bg-secondary: #121218;
+        --bg-tertiary: #1a1a24;
+        --text-primary: #f0f0f5;
+        --text-secondary: #a0a0b0;
+        --accent-primary: var(--gothenburg);
+        --accent-secondary: #7e57c2;
+        --border-color: #2a2a3a;
+      }
+
+      /* Journey visualization elements */
+      .journey-path {
+        position: relative;
+        height: 4px;
+        background: linear-gradient(90deg, var(--urumqi), var(--dalian), var(--gothenburg));
+        margin: 40px 0;
+        border-radius: 2px;
+      }
+
+      .journey-marker {
+        position: absolute;
+        top: -8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--text-primary);
+        border: 3px solid var(--bg-primary);
+      }
+
+      .marker-urumqi { left: 0%; background: var(--urumqi); }
+      .marker-dalian { left: 33%; background: var(--dalian); }
+      .marker-gothenburg { left: 100%; background: var(--gothenburg); }
+
+      /* Tech expertise visualization */
+      .skill-level {
+        height: 6px;
+        background: var(--bg-tertiary);
+        border-radius: 3px;
+        overflow: hidden;
+        margin-top: 8px;
+      }
+
+      .skill-progress {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+        border-radius: 3px;
+      }
+
+      /* Project cards refinement */
+      .project-card-refined {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        margin-bottom: 24px;
+      }
+
+      .project-card-refined:hover {
+        transform: translateY(-4px);
+        border-color: var(--accent-primary);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Timeline refinement */
+      .timeline-refined {
+        position: relative;
+        padding-left: 30px;
+        margin: 30px 0;
+      }
+
+      .timeline-refined::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--border-color);
+      }
+
+      .timeline-item-refined {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .timeline-item-refined::before {
+        content: '';
+        position: absolute;
+        left: -36px;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent-primary);
+        border: 3px solid var(--bg-primary);
+      }
+   </style>
+</head>
+<body>
+   <!-- Animated Background Gradient -->
+   <div class="gradient-bg"></div>
+
+   <!-- Modern Navigation -->
+   <nav class="nav-modern">
+      <div class="nav-container">
+         <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">HL</div>
+            Harvad Li
+         </a>
+         <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/journey.html">Journey</a></li>
+            <li><a href="pages/blog.html">Writing</a></li>
+            <li><a href="pages/resume.html">Resume</a></li>
+            <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Connect</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="hero-section">
+      <div class="container">
+         <div class="hero-content">
+            <div class="hero-badge">
+               <span class="status-dot"></span>Senior Full Stack Developer in Gothenburg
+            </div>
+            <h1 class="hero-title">From <span style="color: var(--urumqi);">banking in China</span><br>to <span style="color: var(--gothenburg);">building in Sweden</span></h1>
+            <p class="hero-subtitle">
+              "I spent a decade in international finance before choosing a new path.<br>
+              Now I bring that cross-cultural perspective to every technical challenge I solve."
+            </p>
+            <div class="hero-cta">
+               <a href="pages/journey.html" class="btn btn-primary">My Unique Journey</a>
+               <a href="pages/resume.html" class="btn btn-secondary">Technical Resume</a>
+            </div>
+            <div class="social-links-modern">
+               <a href="https://twitter.com/bluehawana" class="social-link" target="_blank">
+                  <i class="fa fa-twitter"></i>
+               </a>
+               <a href="https://www.linkedin.com/in/hzl" class="social-link" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+               </a>
+               <a href="https://github.com/bluehawana" class="social-link" target="_blank">
+                  <i class="fa fa-github"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- About Section - Refined -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Cross-Cultural Technologist</h2>
+            <p class="section-subtitle">A unique journey from finance to technology</p>
+         </div>
+
+         <div class="about-grid">
+            <div class="about-image-container">
+               <img src="images/me1.png" alt="Harvad Li" class="about-image">
+               <div class="about-image-decoration"></div>
+            </div>
+            <div class="about-content">
+               <h2>Senior Developer & Career Transformer</h2>
+               <p>
+                  I'm Harvad Li, a senior full stack developer who uniquely bridges the worlds of international finance and cutting-edge technology.
+                  With over 5 years of hands-on experience in modern web development, I bring a rare business-oriented perspective to technical challenges.
+               </p>
+               <p>
+                  My journey—from banking director in Tianjin to technology specialist in Gothenburg—gives me insights that typical developers lack.
+                  I understand not just code, but how technology drives business outcomes across cultures and markets.
+               </p>
+
+               <div class="journey-path">
+                 <div class="journey-marker marker-urumqi" title="Ürümqi - Born & Educated"></div>
+                 <div class="journey-marker marker-dalian" title="Dalian → Tianjin - Banking Career"></div>
+                 <div class="journey-marker marker-gothenburg" title="Gothenburg - Technology Transformation"></div>
+               </div>
+
+               <div class="about-stats">
+                  <div class="stat-item">
+                     <div class="stat-value">50+</div>
+                     <div class="stat-label">Personal Projects</div>
+                  </div>
+                  <div class="stat-item">
+                     <div class="stat-value">5+</div>
+                     <div class="stat-label">Years Coding</div>
+                  </div>
+                  <div class="stat-item">
+                     <div class="stat-value">12+</div>
+                     <div class="stat-label">Technologies</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Technical Expertise -->
+   <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Technical Skills</div>
+            <h2 class="section-title">Deep Technical Expertise</h2>
+            <p class="section-subtitle">Areas where I deliver exceptional value</p>
+         </div>
+
+         <div class="skills-grid">
+            <div class="skill-category">
+               <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                     <i class="fa fa-code"></i>
+                  </div>
+                  <h3 class="skill-category-title">Frontend Mastery</h3>
+               </div>
+               <div class="skill-tags">
+                  <div>
+                    <span class="skill-tag">React</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 95%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Next.js</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 90%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">TypeScript</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 85%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Modern CSS</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 90%"></div></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="skill-category">
+               <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                     <i class="fa fa-server"></i>
+                  </div>
+                  <h3 class="skill-category-title">Backend Excellence</h3>
+               </div>
+               <div class="skill-tags">
+                  <div>
+                    <span class="skill-tag">Java/Spring Boot</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 95%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Microservices</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 85%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">RESTful APIs</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 90%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Database Design</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 88%"></div></div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="skill-category">
+               <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                     <i class="fa fa-cloud"></i>
+                  </div>
+                  <h3 class="skill-category-title">Cloud & DevOps</h3>
+               </div>
+               <div class="skill-tags">
+                  <div>
+                    <span class="skill-tag">AWS</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 85%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Containerization</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 80%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">CI/CD</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 82%"></div></div>
+                  </div>
+                  <div>
+                    <span class="skill-tag">Infrastructure</span>
+                    <div class="skill-level"><div class="skill-progress" style="width: 78%"></div></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Selected Personal Projects -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Technical Projects</div>
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-subtitle">Personal projects showcasing technical depth</p>
+         </div>
+
+         <div class="projects-grid">
+            <div class="project-card-refined">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">JobHunter AI System</h3>
+                  <p class="project-description">
+                     Advanced job hunting automation with intelligent resume customization and real-time monitoring.
+                     Built with Python, TypeScript, Gmail API integration, and OpenAI processing.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Python</span>
+                     <span class="project-tech-tag">TypeScript</span>
+                     <span class="project-tech-tag">OpenAI</span>
+                     <span class="project-tech-tag">Gmail API</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="pages/jobhunter_monitoring.html" class="btn btn-ghost">System Dashboard</a>
+                     <a href="https://jobs.bluehawana.com/" class="btn btn-primary" target="_blank">Live Application</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card-refined">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> LIVE
+                  </div>
+                  <h3 class="project-title">WeatherAnywhere CLI</h3>
+                  <p class="project-description">
+                     Creative weather application with ASCII terminal interface and AI-generated city landmarks.
+                     Features real-time weather data fetching and dynamic SVG illustration generation.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Node.js</span>
+                     <span class="project-tech-tag">OpenAI</span>
+                     <span class="project-tech-tag">Weather API</span>
+                     <span class="project-tech-tag">Terminal UI</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://weather.bluehawana.com/" class="btn btn-primary" target="_blank">Launch Terminal</a>
+                     <a href="pages/weatheranywhere_app.html" class="btn btn-ghost">View Interface</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card-refined">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> IN PROGRESS
+                  </div>
+                  <h3 class="project-title">Android Auto Applications</h3>
+                  <p class="project-description">
+                     Collection of native Android Auto applications including IPTV player and EPUB reader.
+                     Tested on premium automotive systems with voice command integration and cloud storage.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Kotlin</span>
+                     <span class="project-tech-tag">Android Auto</span>
+                     <span class="project-tech-tag">Firebase</span>
+                     <span class="project-tech-tag">Cloud Storage</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana" class="btn btn-ghost" target="_blank">Source Code</a>
+                     <a href="../autoplay/index.html" class="btn btn-primary">CarPlayer Demo</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Career Journey Timeline -->
+   <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Career Evolution</div>
+            <h2 class="section-title">My Unconventional Path</h2>
+            <p class="section-subtitle">From finance director to senior developer</p>
+         </div>
+
+         <div class="timeline-refined">
+            <div class="timeline-item-refined">
+               <div class="timeline-header">
+                  <div>
+                     <h3 class="timeline-title">Banking Director</h3>
+                     <div class="timeline-company">Tianjin Financial Sector</div>
+                  </div>
+                  <div class="timeline-date">2006 - 2016</div>
+               </div>
+               <div class="timeline-description">
+                 <p>10-year career in international finance, developing deep understanding of business processes and cross-cultural collaboration.</p>
+               </div>
+            </div>
+
+            <div class="timeline-item-refined">
+               <div class="timeline-header">
+                  <div>
+                     <h3 class="timeline-title">Career Transformation</h3>
+                     <div class="timeline-company">University of Gothenburg</div>
+                  </div>
+                  <div class="timeline-date">2016 - 2019</div>
+               </div>
+               <div class="timeline-description">
+                 <p>Moved to Sweden and pursued additional degrees in International Business and Technology, recognizing the shift toward digital transformation.</p>
+               </div>
+            </div>
+
+            <div class="timeline-item-refined">
+               <div class="timeline-header">
+                  <div>
+                     <h3 class="timeline-title">Full Stack Development</h3>
+                     <div class="timeline-company">IT-Högskolan Gothenburg</div>
+                  </div>
+                  <div class="timeline-date">2019 - 2021</div>
+               </div>
+               <div class="timeline-description">
+                 <p>Formal education in Java Integration and .NET Cloud Development, followed by intensive self-study and project building.</p>
+               </div>
+            </div>
+
+            <div class="timeline-item-refined">
+               <div class="timeline-header">
+                  <div>
+                     <h3 class="timeline-title">Senior Developer</h3>
+                     <div class="timeline-company">ECARX & Various Clients</div>
+                  </div>
+                  <div class="timeline-date">2021 - Present</div>
+               </div>
+               <div class="timeline-description">
+                 <p>Professional development career with focus on enterprise solutions, cloud architecture, and cross-cultural technology projects.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Open Source & Community -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Community Engagement</div>
+            <h2 class="section-title">Beyond Code</h2>
+            <p class="section-subtitle">Contributions to the developer ecosystem</p>
+         </div>
+
+         <div class="projects-grid">
+            <div class="project-card-refined">
+               <h3 class="project-title">GitHub Contributions</h3>
+               <p class="project-description">
+                 Active open source contributor with 40+ repositories showcasing various technologies and solutions.
+                 Focus on practical tools and educational content for fellow developers.
+               </p>
+               <div class="project-links">
+                 <a href="https://github.com/bluehawana" class="btn btn-primary" target="_blank">View GitHub Profile</a>
+               </div>
+            </div>
+
+            <div class="project-card-refined">
+               <h3 class="project-title">Technical Writing</h3>
+               <p class="project-description">
+                 Regular blog posts on advanced development topics, career transformation insights,
+                 and cross-cultural technology perspectives. Aimed at helping others navigate similar journeys.
+               </p>
+               <div class="project-links">
+                 <a href="pages/blog.html" class="btn btn-primary">Read Articles</a>
+               </div>
+            </div>
+
+            <div class="project-card-refined">
+               <h3 class="project-title">Knowledge Sharing</h3>
+               <p class="project-description">
+                 Mentorship of junior developers, technical consultation for startups,
+                 and speaking at local tech meetups about career transformation and cross-cultural development.
+               </p>
+               <div class="project-links">
+                 <a href="pages/contact.html" class="btn btn-primary">Get In Touch</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Contact CTA Section -->
+   <section class="section">
+      <div class="container">
+         <div class="text-center">
+            <h2>Interested in Technical Collaboration?</h2>
+            <p class="section-subtitle">Let's connect about technology challenges and solutions</p>
+            <a href="pages/contact.html" class="btn btn-primary">Connect Professionally</a>
+            <div class="social-links-modern" style="justify-content: center; margin-top: 30px;">
+               <a href="https://twitter.com/bluehawana" class="social-link" target="_blank">
+                  <i class="fa fa-twitter"></i>
+               </a>
+               <a href="https://www.linkedin.com/in/hzl" class="social-link" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+               </a>
+               <a href="https://github.com/bluehawana" class="social-link" target="_blank">
+                  <i class="fa fa-github"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer-modern">
+      <div class="footer-content">
+         <div class="footer-brand">
+            <a href="index.html" class="nav-logo">
+               <div class="nav-logo-icon">HL</div>
+               Harvad Li
+            </a>
+            <p>Senior Full Stack Developer focused on solving complex technical challenges with cross-cultural insights.</p>
+         </div>
+
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Navigation</h3>
+            <ul class="footer-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="pages/journey.html">Journey</a></li>
+               <li><a href="pages/resume.html">Resume</a></li>
+               <li><a href="projects/index.html">Projects</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Content</h3>
+            <ul class="footer-links">
+               <li><a href="pages/blog.html">Writing</a></li>
+               <li><a href="pages/about.html">About</a></li>
+               <li><a href="pages/contact.html">Connect</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-links-section">
+            <h3 class="footer-section-title">Connect</h3>
+            <ul class="footer-links">
+               <li><a href="https://github.com/bluehawana" target="_blank">GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/hzl" target="_blank">LinkedIn</a></li>
+               <li><a href="https://twitter.com/bluehawana" target="_blank">Twitter</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer-bottom">
+         <div class="footer-copyright">
+            &copy; 2025 Harvad Li. All technical content reserved.
+         </div>
+         <div class="footer-note">
+            Personal portfolio showcasing technical expertise and career journey.
+         </div>
+      </div>
+   </footer>
+
+   <!-- JavaScript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/github_repos.js?v=2025112404"></script>
+   <script src="js/linkedin_posts.js?v=2025112403"></script>
+   <script src="js/linkedin_api_sync.js"></script>
+   <script src="js/automation_scheduler.js"></script>
+</body>
+</html>

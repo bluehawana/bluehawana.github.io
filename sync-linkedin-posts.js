@@ -301,7 +301,7 @@ tags: [linkedin-post, social-media, professional]
 linkedin_url: "${linkedinUrl}"
 linkedin_id: "${post.id}"
 source: "${post.source || 'LinkedIn API'}"
-author: Hongzhi Li
+author: Harvad Li
 ---
 
 `;

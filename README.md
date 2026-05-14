@@ -1,4 +1,4 @@
-# Hongzhi Li - Portfolio Website
+# Harvad Li - Portfolio Website
 
 [![Live Site](https://img.shields.io/badge/live-bluehawana.com-blue)](https://www.bluehawana.com)
 [![GitHub](https://img.shields.io/badge/github-portfolio-green)](https://github.com/bluehawana/bluehawana.github.io)
@@ -103,7 +103,7 @@ MIT License - Feel free to use as inspiration for your own portfolio.
 
 ## 📞 Contact
 
-**Hongzhi Li** - Full Stack Developer  
+**Harvad Li** - Full Stack Developer  
 📧 [hongzhili01@gmail.com](mailto:hongzhili01@gmail.com)  
 💼 [LinkedIn](https://linkedin.com/in/hzl)  
 🐙 [GitHub](https://github.com/bluehawana)  

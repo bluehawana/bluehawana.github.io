@@ -100,7 +100,7 @@ function injectFooter() {
          <div class="footer-brand">
             <a href="${pathPrefix}index.html" class="nav-logo">
                <div class="nav-logo-icon">HL</div>
-               Hongzhi (Harvad) Li
+               Harvad Li
             </a>
             <p>Senior Full Stack Developer focused on solving complex technical challenges with cross-cultural insights.</p>
          </div>
@@ -136,7 +136,7 @@ function injectFooter() {
 
       <div class="footer-bottom">
          <div class="footer-copyright">
-            &copy; 2025 Hongzhi (Harvad) Li. All technical content reserved.
+            &copy; 2025 Harvad Li. All technical content reserved.
          </div>
          <div class="footer-note">
             Building scalable solutions with Swedish precision and global vision.

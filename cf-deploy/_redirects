@@ -1,0 +1,29 @@
+# Netlify Redirects File
+# This provides an alternative to netlify.toml redirects
+
+# Subdomain redirects (handled by Cloudflare Page Rules)
+# jobs.bluehawana.com/* -> https://bluehawana.com/jobs
+# weather.bluehawana.com/* -> https://weatheranywhere-917b4ca5eb69.herokuapp.com/
+
+# Project Routes
+/jobs /pages/jobhunter_dashboard.html 200
+/weather /pages/weatheranywhere_app.html 200
+
+# Automation Dashboard Access
+/automation-dashboard /automation-dashboard.html 200
+/automation-dashboard.html /automation-dashboard.html 200
+
+# LinkedIn sync page redirects  
+/linkedin-sync /pages/linkedin_auto_sync.html 200
+/linkedin_auto_sync.html /pages/linkedin_auto_sync.html 200
+/debug /pages/linkedin_debug.html 200
+
+# LinkedIn OAuth Callback
+/linkedin-callback /pages/linkedin_callback.html 200
+
+# Redirect HTTP to HTTPS
+http://bluehawana.com/* https://bluehawana.com/:splat 301!
+
+# 404 fallback - exclude dashboard pages
+/pages/*.html 200  
+/*.html /404.html 404

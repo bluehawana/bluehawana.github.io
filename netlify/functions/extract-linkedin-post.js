@@ -117,7 +117,7 @@ exports.handler = async (event, context) => {
       tags: postData.tags,
       activityId: activityId,
       author: {
-        name: "Hongzhi (Harvad) Li",
+        name: "Harvad Li",
         profileUrl: "https://linkedin.com/in/hzl"
       },
       source: 'quick_add'
