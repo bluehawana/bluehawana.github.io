@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Writing - Harvad Li</title>
+   <meta name="description"
+      content="Technical insights, career transformation stories, and cross-cultural technology perspectives by Harvad Li.">
+   <meta name="author" content="Harvad Li">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="../css/modern-portfolio.css">
+   <link rel="shortcut icon" href="../favicon.png">
+</head>
+
+<body>
+   <!-- Animated Background -->
+   <div class="gradient-bg"></div>
+
+   <!-- Navigation (Injected by layout.js) -->
+   <nav class="nav-modern"></nav>
+
+   <!-- Hero Section -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Journal</div>
+            <h1 class="section-title">Technical Writing</h1>
+            <p class="section-subtitle">Real-time insights from LinkedIn and GitHub - authentic content from my
+               development
+               journey, business strategies, and cross-cultural technology consulting.</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- content notice -->
+   <section class="section" style="padding-top: 0;">
+      <div class="container">
+         <div class="skill-category"
+            style="max-width: 800px; margin: 0 auto; border-left: 4px solid var(--accent-primary);">
+            <h3 class="skill-category-title">Authentic Professional Content</h3>
+            <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-secondary);">
+               Rather than maintaining separate blog posts, I channel my insights and experiences directly
+               through LinkedIn posts and GitHub projects. This approach ensures you receive authentic,
+               real-time updates about my work in full-stack development and bridging the gap between IT innovation and
+               business strategy.
+            </p>
+         </div>
+      </div>
+   </section>
+
+   <!-- LinkedIn Posts Section -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">LinkedIn Activity</div>
+            <h2 class="section-title">Professional Updates</h2>
+         </div>
+         <div id="linkedin-posts" class="content-grid">
+            <!-- Loading State -->
+            <div class="skeleton" style="height: 300px;"></div>
+            <div class="skeleton" style="height: 300px;"></div>
+            <div class="skeleton" style="height: 300px;"></div>
+         </div>
+         <div class="text-center mt-xl">
+            <a href="https://www.linkedin.com/in/hzl" class="btn btn-primary" target="_blank">
+               View Full LinkedIn Profile
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- GitHub Projects Section -->
+   <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Development Activity</div>
+            <h2 class="section-title">Recent Code</h2>
+         </div>
+         <div id="github-repos" class="content-grid">
+            <!-- Loading State -->
+            <div class="skeleton" style="height: 250px;"></div>
+            <div class="skeleton" style="height: 250px;"></div>
+            <div class="skeleton" style="height: 250px;"></div>
+         </div>
+         <div class="text-center mt-xl">
+            <a href="https://github.com/bluehawana" class="btn btn-secondary" target="_blank">
+               Explore GitHub Portfolio
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer (Injected by layout.js) -->
+   <footer class="footer-modern"></footer>
+
+   <!-- JavaScript -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="../js/layout.js"></script>
+   <script src="../js/linkedin_posts.js?v=2025112401"></script>
+   <script src="../js/github_repos.js"></script>
+   <script>
+      // Load GitHub repos
+      document.addEventListener('DOMContentLoaded', function () {
+         if (typeof fetchGitHubRepos === 'function') {
+            fetchGitHubRepos('github-repos');
+         }
+      });
+   </script>
+</body>
+
+</html>

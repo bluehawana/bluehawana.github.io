@@ -15,7 +15,7 @@ console.log('===================================\n');
 
 // Your LinkedIn profile info (from the successful API call)
 const PROFILE_INFO = {
-    name: "Hongzhi (Harvad) Li",
+    name: "Harvad Li",
     profileUrl: "https://linkedin.com/in/hzl",
     personURN: "urn:li:person:ACoAAB8zZBwBuEWaKs5G_v6sYsJ8qTvT6eqD9-8"
 };

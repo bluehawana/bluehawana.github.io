@@ -1,0 +1,232 @@
+/* Professional Theme - Consistent across all pages */
+:root {
+   /* Professional Color Palette */
+   --bg-primary: #000000;
+   --bg-secondary: #111111;
+   --bg-tertiary: #1a1a1a;
+   --text-primary: #ffffff;
+   --text-secondary: #a1a1a1;
+   --text-muted: #666666;
+   --border-primary: #333333;
+   --border-secondary: #222222;
+   --accent-primary: #ffffff;
+   --accent-secondary: #cccccc;
+   
+   /* Professional Typography */
+   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+   --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+   
+   /* Professional Spacing */
+   --spacing-xs: 4px;
+   --spacing-sm: 8px;
+   --spacing-md: 16px;
+   --spacing-lg: 24px;
+   --spacing-xl: 32px;
+   --spacing-xxl: 48px;
+   
+   /* Professional Borders */
+   --border-radius: 6px;
+   --border-width: 1px;
+}
+
+/* Base Styles */
+body {
+   background: var(--bg-primary);
+   color: var(--text-primary);
+   font-family: var(--font-primary);
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Professional Headers */
+.page-header {
+   background: var(--bg-primary);
+   border-bottom: var(--border-width) solid var(--border-primary);
+   padding: var(--spacing-lg) 0;
+}
+
+.page-title {
+   font-size: 48px;
+   font-weight: 600;
+   color: var(--text-primary);
+   margin: 0 0 var(--spacing-md) 0;
+   text-align: center;
+   letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+   font-size: 20px;
+   color: var(--text-secondary);
+   text-align: center;
+   margin: 0;
+   font-weight: 400;
+}
+
+/* Professional Cards */
+.professional-card {
+   background: var(--bg-secondary);
+   border: var(--border-width) solid var(--border-primary);
+   border-radius: var(--border-radius);
+   padding: var(--spacing-xl);
+   transition: all 0.2s ease;
+}
+
+.professional-card:hover {
+   border-color: var(--text-secondary);
+   background: var(--bg-tertiary);
+}
+
+/* Professional Buttons */
+.btn-professional {
+   padding: var(--spacing-sm) var(--spacing-md);
+   border-radius: var(--border-radius);
+   font-size: 14px;
+   font-weight: 500;
+   text-decoration: none;
+   transition: all 0.2s ease;
+   border: var(--border-width) solid var(--border-primary);
+   background: transparent;
+   color: var(--text-primary);
+   cursor: pointer;
+   display: inline-block;
+   font-family: var(--font-primary);
+}
+
+.btn-professional:hover {
+   background: var(--text-primary);
+   color: var(--bg-primary);
+   border-color: var(--text-primary);
+}
+
+.btn-professional.secondary {
+   color: var(--text-secondary);
+   border-color: var(--border-secondary);
+}
+
+.btn-professional.secondary:hover {
+   background: var(--text-secondary);
+   color: var(--bg-primary);
+   border-color: var(--text-secondary);
+}
+
+/* Professional Status Indicators */
+.status-indicator {
+   font-size: 11px;
+   padding: var(--spacing-xs) var(--spacing-sm);
+   border-radius: 4px;
+   background: var(--bg-tertiary);
+   color: var(--text-secondary);
+   border: var(--border-width) solid var(--border-secondary);
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   font-weight: 500;
+}
+
+.status-indicator.success {
+   background: rgba(34, 197, 94, 0.1);
+   color: #22c55e;
+   border-color: rgba(34, 197, 94, 0.2);
+}
+
+.status-indicator.info {
+   background: rgba(59, 130, 246, 0.1);
+   color: #3b82f6;
+   border-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Professional Navigation */
+.professional-nav {
+   background: var(--bg-primary);
+   border-bottom: var(--border-width) solid var(--border-primary);
+}
+
+.professional-nav a {
+   color: var(--text-secondary);
+   text-decoration: none;
+   padding: var(--spacing-md);
+   transition: color 0.2s ease;
+}
+
+.professional-nav a:hover,
+.professional-nav a.current {
+   color: var(--text-primary);
+}
+
+/* Professional Grid */
+.professional-grid {
+   display: grid;
+   gap: var(--spacing-xl);
+   margin: var(--spacing-xxl) 0;
+}
+
+.professional-grid.two-col {
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.professional-grid.three-col {
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Professional Typography */
+.professional-text {
+   color: var(--text-secondary);
+   line-height: 1.6;
+   font-size: 15px;
+}
+
+.professional-text.large {
+   font-size: 18px;
+}
+
+.professional-text.small {
+   font-size: 13px;
+}
+
+/* Professional Sections */
+.professional-section {
+   padding: var(--spacing-xxl) 0;
+}
+
+.professional-section.bordered {
+   border-top: var(--border-width) solid var(--border-primary);
+   border-bottom: var(--border-width) solid var(--border-primary);
+   background: var(--bg-secondary);
+}
+
+/* Remove childish elements */
+.no-emoji {
+   /* Hide emoji content */
+}
+
+/* Professional Media */
+.professional-media {
+   border-radius: var(--border-radius);
+   border: var(--border-width) solid var(--border-primary);
+   overflow: hidden;
+}
+
+.professional-media video,
+.professional-media img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+   .page-title {
+      font-size: 36px;
+   }
+   
+   .professional-grid.two-col,
+   .professional-grid.three-col {
+      grid-template-columns: 1fr;
+   }
+   
+   .professional-card {
+      padding: var(--spacing-lg);
+   }
+}

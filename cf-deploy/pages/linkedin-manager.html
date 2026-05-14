@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Post Manager - Bluehawana</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5;
+        }
+        .header { 
+            background: linear-gradient(135deg, #0077b5, #00a0dc); color: white;
+            padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;
+        }
+        .card { 
+            background: white; padding: 25px; border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        .form-group input, .form-group textarea { 
+            width: 100%; padding: 12px; border: 2px solid #e1e5e9; 
+            border-radius: 6px; font-size: 14px;
+        }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .btn { 
+            background: #0077b5; color: white; padding: 12px 25px; 
+            border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 600;
+        }
+        .btn:hover { background: #005582; }
+        .btn-secondary { background: #6c757d; }
+        .btn-secondary:hover { background: #545b62; }
+        .status { 
+            padding: 15px; border-radius: 6px; margin: 15px 0;
+            display: none;
+        }
+        .status.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .posts-list { margin-top: 30px; }
+        .post-item { 
+            background: #f8f9fa; padding: 20px; border-radius: 8px; 
+            margin-bottom: 15px; border-left: 4px solid #0077b5;
+        }
+        .post-meta { font-size: 12px; color: #6c757d; margin-bottom: 10px; }
+        .post-content { line-height: 1.6; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { 
+            background: white; padding: 20px; border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center;
+        }
+        .stat-number { font-size: 32px; font-weight: bold; color: #0077b5; }
+        .stat-label { color: #6c757d; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔗 LinkedIn Post Manager</h1>
+        <p>Sync your LinkedIn posts to your blog</p>
+        <p>Connected as: <strong>Harvad Li</strong></p>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Posts Synced</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">✅</div>
+            <div class="stat-label">API Connected</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">8/24/2025</div>
+            <div class="stat-label">Last Sync</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Add LinkedIn Post</h2>
+        <form id="addPostForm">
+            <div class="form-group">
+                <label for="linkedInUrl">LinkedIn Post URL *</label>
+                <input type="url" id="linkedInUrl" name="linkedInUrl" required 
+                       placeholder="https://www.linkedin.com/feed/update/urn:li:activity:1234567890/">
+            </div>
+            
+            <div class="form-group">
+                <label for="postTitle">Post Title (optional)</label>
+                <input type="text" id="postTitle" name="postTitle" 
+                       placeholder="Leave empty to auto-generate">
+            </div>
+            
+            <div class="form-group">
+                <label for="postContent">Post Content (optional)</label>
+                <textarea id="postContent" name="postContent" 
+                          placeholder="Leave empty to add placeholder content that you can edit later"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Add Post to Blog</button>
+            <button type="button" class="btn btn-secondary" onclick="syncApi()">Sync Profile</button>
+        </form>
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    
+
+    <div class="card">
+        <h2>Usage Instructions</h2>
+        <ol>
+            <li><strong>Find your LinkedIn post:</strong> Go to your LinkedIn profile and find the post you want to sync</li>
+            <li><strong>Copy the URL:</strong> Click on the post date/time to get the full URL</li>
+            <li><strong>Paste and submit:</strong> Use the form above to add the post to your blog</li>
+            <li><strong>Edit if needed:</strong> The blog post will be created in the <code>_posts</code> directory</li>
+        </ol>
+        
+        <h3>API Status</h3>
+        <p>LinkedIn's API has restrictions on reading user posts. This tool uses manual URL submission as the primary method.</p>
+        <p>Last sync: 8/24/2025, 11:00:47 AM</p>
+    </div>
+
+    <script>
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+            setTimeout(() => { status.style.display = 'none'; }, 5000);
+        }
+
+        async function syncApi() {
+            showStatus('Syncing LinkedIn profile...', 'success');
+            try {
+                const response = await fetch('/.netlify/functions/linkedin-posts-sync', {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                if (result.success) {
+                    showStatus(`Profile synced: ${result.userProfile?.name || 'Success'}`, 'success');
+                    setTimeout(() => location.reload(), 2000);
+                } else {
+                    showStatus(`Sync failed: ${result.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`Sync failed: ${error.message}`, 'error');
+            }
+        }
+
+        document.getElementById('addPostForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            if (!data.linkedInUrl) {
+                showStatus('LinkedIn URL is required', 'error');
+                return;
+            }
+            
+            showStatus('Adding post to blog...', 'success');
+            
+            try {
+                const response = await fetch('/.netlify/functions/extract-linkedin-post', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showStatus(`Post added successfully: ${result.filename || 'Blog post created'}`, 'success');
+                    e.target.reset();
+                    setTimeout(() => location.reload(), 2000);
+                } else {
+                    showStatus(`Failed to add post: ${result.error || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/js/*.js
+  Cache-Control: public, max-age=60, must-revalidate
+
+/js/linkedin_posts.js
+  Cache-Control: public, max-age=60, must-revalidate, stale-while-revalidate=30
+
+/js/github_repos.js
+  Cache-Control: public, max-age=60, must-revalidate, stale-while-revalidate=30
+
+/data/*.json
+  Cache-Control: public, max-age=60, must-revalidate, no-cache
+
+/data/linkedin-posts.json
+  Cache-Control: public, max-age=30, must-revalidate, no-cache
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff

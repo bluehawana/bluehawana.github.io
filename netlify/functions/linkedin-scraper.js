@@ -63,7 +63,7 @@ function generateSearchUrls(searchQuery) {
   
   return {
     linkedInSearch: `https://www.linkedin.com/search/results/content/?keywords=${encodedQuery}&origin=GLOBAL_SEARCH_HEADER`,
-    googleSearch: `https://www.google.com/search?q=site:linkedin.com+"Hongzhi+Li"+${encodedQuery}`,
+    googleSearch: `https://www.google.com/search?q=site:linkedin.com+"Harvad+Li"+${encodedQuery}`,
     linkedInProfile: `https://www.linkedin.com/in/hzl/recent-activity/all/`,
     manualInstructions: `
       To find the activity ID:
@@ -128,7 +128,7 @@ function generateActivityFinderHtml() {
         <p>"Undoubtedly, this is the finest beach in Sweden..."</p>
         <div class="search-links">
             <a href="https://www.linkedin.com/search/results/content/?keywords=Sweden+beach+midsummer+Louise+Nordin" target="_blank">LinkedIn Search</a>
-            <a href="https://www.google.com/search?q=site:linkedin.com+%22Hongzhi+Li%22+Sweden+beach+midsummer" target="_blank">Google Search</a>
+            <a href="https://www.google.com/search?q=site:linkedin.com+%22Harvad+Li%22+Sweden+beach+midsummer" target="_blank">Google Search</a>
         </div>
         <div>
             Activity ID: <input type="text" id="activityId1" placeholder="19-digit number">
@@ -141,7 +141,7 @@ function generateActivityFinderHtml() {
         <p>"Unleash your inner racer with Bluehawana!..."</p>
         <div class="search-links">
             <a href="https://www.linkedin.com/search/results/content/?keywords=Bluehawana+racing+go-kart" target="_blank">LinkedIn Search</a>
-            <a href="https://www.google.com/search?q=site:linkedin.com+%22Hongzhi+Li%22+Bluehawana+racing" target="_blank">Google Search</a>
+            <a href="https://www.google.com/search?q=site:linkedin.com+%22Harvad+Li%22+Bluehawana+racing" target="_blank">Google Search</a>
         </div>
         <div>
             Activity ID: <input type="text" id="activityId2" placeholder="19-digit number">
@@ -154,7 +154,7 @@ function generateActivityFinderHtml() {
         <p>"I've been following Sander Van Vugt CKA tutorial..."</p>
         <div class="search-links">
             <a href="https://www.linkedin.com/search/results/content/?keywords=CKA+tutorial+Calico+MacSilicon" target="_blank">LinkedIn Search</a>
-            <a href="https://www.google.com/search?q=site:linkedin.com+%22Hongzhi+Li%22+CKA+Calico" target="_blank">Google Search</a>
+            <a href="https://www.google.com/search?q=site:linkedin.com+%22Harvad+Li%22+CKA+Calico" target="_blank">Google Search</a>
         </div>
         <div>
             Activity ID: <input type="text" id="activityId3" placeholder="19-digit number">

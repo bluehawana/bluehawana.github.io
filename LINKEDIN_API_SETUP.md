@@ -4,7 +4,7 @@
 
 ### Application Information
 - **App Name**: `Bluehawana Community Manager`
-- **Company**: `Hongzhi Li Professional Services`
+- **Company**: `Harvad Li Professional Services`
 - **Website URL**: `https://www.bluehawana.com`
 - **Privacy Policy URL**: `https://www.bluehawana.com/privacy-policy.html`
 - **Logo**: Upload your professional logo/avatar
@@ -162,7 +162,7 @@ GET https://api.linkedin.com/v2/organizations/{organization-id}
 
 ## 📞 Contact Information
 
-**Developer**: Hongzhi Li  
+**Developer**: Harvad Li  
 **Email**: hongzhili01@gmail.com  
 **Website**: https://www.bluehawana.com  
 **Privacy Policy**: https://www.bluehawana.com/privacy-policy.html  
