@@ -1,6 +1,59 @@
 {
   "data": [
     {
+      "createdAt": "2026-05-20T19:23:23.612Z",
+      "activityId": "urn:li:activity:7462946093870448640",
+      "shareUrn": "urn:li:ugcPost:7462946091513073664",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_kognic-swamp-activity-7462946093870448640-bmuf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQH8AVsLtbbfag",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1781136000&v=beta&t=VQOekDUovW1Xcoeufm3qsdz3jyGMoSKP3_2DMoQEbZs"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQG-KOq-IrKhHA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1781136000&v=beta&t=V477s67i_BryTDEq4RZgL-f8Bf23D78Tdyx3nKWPtgo"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQETzXGr_i4p8A",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1781136000&v=beta&t=Izl_lriAm4F7SFzGPNnfe10dlhn4NPgNqjOsaFh1hGs"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQGQZlS6lz69vQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1781136000&v=beta&t=ANJakybTs0OiH-UvdyiFIiY-4bkDNe9zguYA5Hfwbkg"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQF62B864VRU5Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1781136000&v=beta&t=aarcn7Lw_9LNl-5ypfh2G-q0NzhSO2eZIE_wdia29iQ"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQHyGrGi8UQ3Ew",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1781136000&v=beta&t=4f7LXTwBgSF4LFoFfxB8hWgbn6C3W4C2r-G2C6xbLho"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "A bird perches on a branch not because it trusts the branch, but because it trusts its own wings. This message of resilience and self-reliance resonated at today’s inspiring Cloud Native Computing Foundation (CNCF) Gothenburg meetup event at #Kognic, where innovation took center stage. The innovations from Kognic and #Swamp were truly inspiring. It’s all about showing up with skill, curiosity, and real momentum—supporting bold visions by learning, adapting, and acting. Growth isn’t about waiting for permission; it’s about learning, adapting, and taking action.\n\nIn this era of AI and equal rights, a well-designed strategy can set a company apart from the competition. The more you concentrate on your AI strategy, the more you will distinguish yourself in future competitions.\n\nHats off to everyone advancing with purpose.",
+      "activity": {
+        "numLikes": 0,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": []
+      }
+    },
+    {
       "createdAt": "2026-05-13T17:35:44.286Z",
       "activityId": "urn:li:activity:7460382286434205696",
       "shareUrn": "urn:li:ugcPost:7460382285536698369",
@@ -49,7 +102,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1779879600&v=beta&t=pAadWPAs8ptyntNOqsq2NjK3B0SfdtJDi10PUXpAFeE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1779915600&v=beta&t=bpyJOpa2L1gDmhnqM_tfnJ7WKib44y0LCvb6dREmklA"
         }
       },
       "actor": {
@@ -77,13 +130,13 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1779879600&v=beta&t=NBToa0xPcHB_a28_VCAzGxHHk1HK6bPdNgvn-sBidCk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1779915600&v=beta&t=Bbcyi-x42l9BYt4_mKNDFWjsHZ-3LPgAUgPGW0W__ys"
         }
       },
       "actor": {
         "actorId": "urn:li:company:112047995",
         "name": "Fair Transition",
-        "description": "832 followers"
+        "description": "831 followers"
       },
       "commentary": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in the queue assigned you, should the rules be allowed to change while you wait?\n\nLagrådet said no. The government's own inquiry said no. 379 engineers and researchers at companies including Spotify, Klarna, Volvo, Ericsson, and Nvidia said no in their formal remissvar.\n\nThe reform itself can move forward on June 6. That isn't what we're contesting. We're asking for one thing: that the roughly 100,000 applications already sitting at Migrationsverket be assessed under the rules that existed when they were filed.\n\nThat's what transitional provisions are for. Every Nordic country uses them. Sweden has used them before. The institutions Sweden built to advise on exactly this kind of question recommended them here too.\n\nfairtransitionsweden.com",
       "activity": {
@@ -428,7 +481,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1779879600&v=beta&t=ZrwqamF2cXsA2aJ560B2ShZLY1g0FANB2R18aaK_KSA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1779915600&v=beta&t=bto_M4-iYrXN7mHqCas9S_3rGDC44GxhqeWOZAGEy5c"
         }
       },
       "actor": {
@@ -456,7 +509,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1779879600&v=beta&t=cWWxszwoCgAsCjMCX29G0uLx1c8kKDyZaFIzZ_tWaYE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1779915600&v=beta&t=JEXs8Xvu4b0BW3KTHkOpyQV8f1cIp90fkH4KOizcXMQ"
         }
       },
       "actor": {
@@ -732,7 +785,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1779879600&v=beta&t=x3HF158_zBUfrwDR2zCnf0_JebbXIaBklSQKFLCIEjM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1779915600&v=beta&t=OkfLMsuAPyjaSvxGaOcRas11NimzH1idimvk__b0_ZM"
         }
       },
       "actor": {
@@ -776,39 +829,7 @@
         "numShares": 0,
         "reactionTypeCounts": []
       }
-    },
-    {
-      "createdAt": "2026-02-12T09:28:20.107Z",
-      "activityId": "urn:li:activity:7427644719553277953",
-      "shareUrn": "urn:li:ugcPost:7427644716781035520",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_newyearnewproject-zerotrust-cloudflarezerotrust-activity-7427644719553277953-4RiL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:linkedInArticle:7427640332340596736",
-          "title": "New Year, New Project No. 6: SSH From Anywhere — With Zero Exposed Ports",
-          "subtitle": "Harvad Li",
-          "url": "https://www.linkedin.com/pulse/new-year-project-6-ssh-from-anywhere-zero-exposed-ports-harvad-li-s7vxf?trackingId=v%2FAsl4mLsfFII%2B4rEeFduQ%3D%3D"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "New Year New Project: No.6 — SSH From Anywhere — With Zero Exposed Ports\n\nThis initiative focuses on enhancing security through a zero-trust approach, utilizing tools like Cloudflare Zero Trust and Tailscale. It aims to improve remote access capabilities while ensuring robust cybersecurity measures are in place.\n\nKey components of the project include:\n- Leveraging SSH for secure connections\n- Ensuring no ports are exposed to the internet\n- Implementing mobile-first solutions for access on devices like iPhone\n- Utilizing tmux for efficient session management\n- Configuring a Mac Mini as a remote access server\n\nLooking forward to sharing insights and progress on this journey! \n\n#NewYearNewProject #ZeroTrust #CloudflareZeroTrust #SSH #Tailscale #DevOps #HomeLab #CyberSecurity #tmux #RemoteAccess #1.1.1.1 #iPhone #Termius #MacMini #SysAdmin #SRE #CloudComputing",
-      "activity": {
-        "numLikes": 2,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 2
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0Mjc2NDQ3MTk1NTMyNzc5NTMtMTc3MDg4ODUwMDA4Mw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0Mjc3MDcxNzU4MDE2MDIwNDgtMTc3MDkwMzM5MDgwOA==:20"
 }
