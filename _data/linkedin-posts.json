@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-05-14T19:43:37.869Z"
+    "last_sync": "2026-05-20T20:12:43.025Z"
   },
   "extraction": {
-    "date": "2026-05-14T19:43:37.869Z",
+    "date": "2026-05-20T20:12:43.025Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 196,
-    "new_posts_this_sync": 20,
-    "images_downloaded": 13
+    "total_posts_found": 197,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -3736,6 +3736,25 @@
         "shares": 0
       },
       "posted_at": "2026-02-12T09:28:20.107Z"
+    },
+    {
+      "id": "linkedin-1779307962657-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "A bird perches on a branch not because it trusts the branch, but because it trusts its own wings. Th...",
+      "content": "A bird perches on a branch not because it trusts the branch, but because it trusts its own wings. This message of resilience and self-reliance resonated at today’s inspiring Cloud Native Computing Foundation (CNCF) Gothenburg meetup event at #Kognic, where innovation took center stage. The innovations from Kognic and #Swamp were truly inspiring. It’s all about showing up with skill, curiosity, and real momentum—supporting bold visions by learning, adapting, and acting. Growth isn’t about waiting for permission; it’s about learning, adapting, and taking action.\n\nIn this era of AI and equal rights, a well-designed strategy can set a company apart from the competition. The more you concentrate on your AI strategy, the more you will distinguish yourself in future competitions.\n\nHats off to everyone advancing with purpose.",
+      "link": "https://www.linkedin.com/posts/harvad_kognic-swamp-activity-7462946093870448640-bmuf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1781136000&v=beta&t=VQOekDUovW1Xcoeufm3qsdz3jyGMoSKP3_2DMoQEbZs",
+      "local_image": "/images/linkedin/linkedin-1779307962657-0-6df6238ec41d60f0d6ccbd58a9b98a3c.jpg",
+      "extracted_at": "2026-05-20T20:12:42.656Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-05-20T19:23:23.612Z"
     }
   ]
 }
