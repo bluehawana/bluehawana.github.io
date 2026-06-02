@@ -90,10 +90,15 @@
       },
       "commentary": "A bird perches on a branch not because it trusts the branch, but because it trusts its own wings. This message of resilience and self-reliance resonated at today’s inspiring Cloud Native Computing Foundation (CNCF) Gothenburg meetup event at #Kognic, where innovation took center stage. The innovations from Kognic and #Swamp were truly inspiring. It’s all about showing up with skill, curiosity, and real momentum—supporting bold visions by learning, adapting, and acting. Growth isn’t about waiting for permission; it’s about learning, adapting, and taking action.\n\nIn this era of AI and equal rights, a well-designed strategy can set a company apart from the competition. The more you concentrate on your AI strategy, the more you will distinguish yourself in future competitions.\n\nHats off to everyone advancing with purpose.",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 1,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -150,7 +155,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1780956000&v=beta&t=lW1sWKTsHHkHUoxbqI31y23S4oGTsuBPhYeY51gu8Pk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1781010000&v=beta&t=ZpH-rmAW_UgScoBO5SKXAKzI2pECSJLNrVeNPunnCuk"
         }
       },
       "actor": {
@@ -178,7 +183,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1780956000&v=beta&t=ZBtclbhOtHL1ln_XHwQzrASOY_fzG4puvm_OEUXKyOk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1781010000&v=beta&t=hFCWq8czVzoYvMrhW2w4qvk_5Ti0QVUdtp1y4DzQttQ"
         }
       },
       "actor": {
@@ -529,7 +534,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1780956000&v=beta&t=IK5Jor6FnXHrWy-XZsU8hIeVTnsU_lJoVCQR9zn1jQo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1781010000&v=beta&t=_hTnZw1qoH7x_w-XfMVubsIDM9FIVwT_akQg-xVZYjQ"
         }
       },
       "actor": {
@@ -557,7 +562,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1780956000&v=beta&t=bUAX3wOg9gShvl2BcwC_AQKbJ0FwIA8VNzo7GgsYVI0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1781010000&v=beta&t=zS4MHyBkHbp55-zw2dyNoA-UbTN6D7voRKlfrapnq60"
         }
       },
       "actor": {
@@ -833,7 +838,7 @@
           "title": "GitHub - sipeed/picoclaw: picoclaw",
           "subtitle": "github.com",
           "url": "https://github.com/sipeed/picoclaw",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1780956000&v=beta&t=yo7-4mSGcM6gTfG7Oph3jTTXmfT8ecCWCsCYlAH42C0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFqXE9BE0xgTw/articleshare-shrink_800/B4DZxSKaw8JUAI-/0/1773341564736?e=1781010000&v=beta&t=gCzno28JKazk3cYfkhby_g2P_4o4mqO0wLq_G2xzdRM"
         }
       },
       "actor": {
