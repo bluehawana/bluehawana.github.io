@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-05-25T11:56:41.822Z"
+    "last_sync": "2026-06-09T11:22:38.190Z"
   },
   "extraction": {
-    "date": "2026-05-25T11:56:41.822Z",
+    "date": "2026-06-09T11:22:38.190Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 198,
+    "total_posts_found": 199,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -3774,6 +3774,25 @@
         "shares": 0
       },
       "posted_at": "2026-05-23T17:44:45.202Z"
+    },
+    {
+      "id": "linkedin-1781004158104-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBo...",
+      "content": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
+      "link": "https://www.linkedin.com/posts/shirin-khosravi-jam_12-github-repositories-every-ai-engineer-activity-7469728116333002752-fyZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1782345600&v=beta&t=ZDA1lt49dMqkcFk53IGa8n6tmA1VQ0_PtVutKgNlsfA",
+      "local_image": "/images/linkedin/linkedin-1781004158104-0-7caf3a393ce3010954e5d1d51827d5de.jpg",
+      "extracted_at": "2026-06-09T11:22:38.103Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 508,
+        "comments": 30,
+        "shares": 81
+      },
+      "posted_at": "2026-06-09T08:46:41.817Z"
     }
   ]
 }
