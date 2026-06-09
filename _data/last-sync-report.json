@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-05-25T11:56:41.828Z",
+  "sync_timestamp": "2026-06-09T11:22:38.197Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 198,
+  "total_posts_in_system": 199,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-05-25T12:26:41.829Z",
+  "next_sync_recommended": "2026-06-09T11:52:38.197Z",
   "new_posts": [
     {
-      "title": "One of the most respected companies #starlink excels in managing customer relationships. I am truly ...",
-      "link": "https://www.linkedin.com/posts/harvad_starlink-starlinkmini-offiline-activity-7464008433856405506-5iPu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBo...",
+      "link": "https://www.linkedin.com/posts/shirin-khosravi-jam_12-github-repositories-every-ai-engineer-activity-7469728116333002752-fyZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 0
+        "likes": 508,
+        "comments": 30,
+        "shares": 81
       },
-      "sync_date": "2026-05-25T11:56:41.727Z"
+      "sync_date": "2026-06-09T11:22:38.103Z"
     }
   ]
 }
