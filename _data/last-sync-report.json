@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-06-09T11:22:38.197Z",
+  "sync_timestamp": "2026-06-10T11:42:08.686Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 199,
+  "total_posts_in_system": 200,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-06-09T11:52:38.197Z",
+  "next_sync_recommended": "2026-06-10T12:12:08.686Z",
   "new_posts": [
     {
-      "title": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBo...",
-      "link": "https://www.linkedin.com/posts/shirin-khosravi-jam_12-github-repositories-every-ai-engineer-activity-7469728116333002752-fyZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you \ud83d...",
+      "link": "https://www.linkedin.com/posts/shirin-khosravi-jam_70-of-ml-engineers-fail-system-design-interviews-activity-7470081805036015617-bRmX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 508,
-        "comments": 30,
-        "shares": 81
+        "likes": 308,
+        "comments": 21,
+        "shares": 42
       },
-      "sync_date": "2026-06-09T11:22:38.103Z"
+      "sync_date": "2026-06-10T11:42:08.610Z"
     }
   ]
 }

@@ -1,6 +1,55 @@
 {
   "data": [
     {
+      "createdAt": "2026-06-09T20:17:57.988Z",
+      "activityId": "urn:li:activity:7470207584910594048",
+      "shareUrn": "urn:li:share:7470081803777830912",
+      "shareUrl": "https://www.linkedin.com/posts/shirin-khosravi-jam_70-of-ml-engineers-fail-system-design-interviews-activity-7470081805036015617-bRmX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQERfZFYrKUjSQ",
+            "accessibilityText": "diagram",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQERfZFYrKUjSQ/feedshare-shrink_20/B4DZ6sP0SnIsAI-/0/1781006288340?e=1782950400&v=beta&t=fnjw5B-YYevjhKYZl8o8HIRwbiu_6338dPUQbelh6hM"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:538934288",
+        "actorUrn": "urn:li:fsd_profile:ACoAACAffBABmg0i0TxuEnNvNKeuiy2-Kq7k_Ds",
+        "name": "Shirin Khosravi Jam",
+        "description": "Sr. Data Scientist/ AI Engineer | 350k+ AI/ML Community | Data Science, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
+      },
+      "commentary": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you 👇 \n\n🔹Youtube videos:\n1. How to Master ML System Design\n→ https://lnkd.in/d89ywdkp\n→ Step by step guide (went through it - its good)\n\n2. Stanford MLSys Seminars (playlist)\n→ https://lnkd.in/gP3UDqwn \n→ How Netflix/Uber actually scale\n\n🔹Interview examples:\n1. Spotify ML Question - Design a Recommendation System \n→ https://lnkd.in/dr87ADq8\n\n2. Instagram ML Question - Design a Ranking Model \n→ https://lnkd.in/dqMxqgNc\n\n🔹 Github Repo:\n1. System Design Primer \n→ https://lnkd.in/gmAg4nBb \n→ Master the patterns that matter\n\n🔹 Book recommendations:\n1. Designing ML Systems: https://amzn.to/41V1n9t\n2. AI Engineering: https://amzn.to/43Fa1u8\n3. ML System Design Interview: https://amzn.to/3YGed9n\n\nHope it is useful! \n \n--\n♻️ Repost to help other engineers 💚 \n➕ Join 48.000+ serious AI/ML builders here: https://lnkd.in/ds_SzEUH",
+      "activity": {
+        "numLikes": 308,
+        "numComments": 21,
+        "numShares": 42,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 288
+          },
+          {
+            "type": "EMPATHY",
+            "count": 8
+          },
+          {
+            "type": "PRAISE",
+            "count": 6
+          },
+          {
+            "type": "INTEREST",
+            "count": 5
+          },
+          {
+            "type": "APPRECIATION",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-06-09T08:46:41.817Z",
       "activityId": "urn:li:activity:7470033621240901632",
       "shareUrn": "urn:li:share:7469728114915536897",
@@ -10,7 +59,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF3jtJtp74KDg",
             "accessibilityText": "table",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1782345600&v=beta&t=ZDA1lt49dMqkcFk53IGa8n6tmA1VQ0_PtVutKgNlsfA"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1782950400&v=beta&t=3ZLQLu5Zxwnklu_NI51KfxaoW8lb0ST8JYfY1vGghkI"
           }
         ]
       },
@@ -22,25 +71,25 @@
       },
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 578,
-        "numComments": 33,
-        "numShares": 88,
+        "numLikes": 725,
+        "numComments": 37,
+        "numShares": 117,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 524
+            "count": 663
           },
           {
             "type": "INTEREST",
-            "count": 26
+            "count": 29
           },
           {
             "type": "EMPATHY",
-            "count": 11
+            "count": 14
           },
           {
             "type": "PRAISE",
-            "count": 10
+            "count": 12
           },
           {
             "type": "APPRECIATION",
@@ -59,17 +108,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEdQ7NC0KIIzw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1782345600&v=beta&t=tadJOnFw4fVCLuN2C1ssfqV_TYYqztcv6fNUj8Jdw1k"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1782950400&v=beta&t=GhvdvlFZsTkoLeAgLPGTzMWyNFMDalviTLwmTQIkr-o"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHqpKe7jYbdsQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1782345600&v=beta&t=EWRcOk1y1zeS4gftb5uPvxEY_NMNjy5WTbm2OGEqwPk"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1782950400&v=beta&t=8ns3tTbhGPJkI0rlu7M_UgUuC_CobcIm-VZSXnbHTQs"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEzejq5RakT4w",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1782345600&v=beta&t=foB9z5Y9BA7gJI5Gr4czhmCutFC30wWGx5d6oJVh6Lc"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1782950400&v=beta&t=QOhPdvt1Px-dZnnjLgHUJj6ly_hrpxyw52l2kD6MMlo"
           }
         ]
       },
@@ -102,32 +151,32 @@
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQH8AVsLtbbfag",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1782345600&v=beta&t=26nIpuKlSDZJHiPovWmO5j-psadOQDdTCsTVK1CFnHk"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1782950400&v=beta&t=MjlH7Oi4C135wFElAAkPTFv0_UEq0k_NGh4Ka0G_h3c"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQG-KOq-IrKhHA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1782345600&v=beta&t=IgAVIhcBXtccsKymejdSP1vU4H2dO0eaf0ixv03wiKQ"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1782950400&v=beta&t=ZsJk7uEEyyLdVqsgc1DYJQ5a2k2QsYvZQPLhgtVSszQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQETzXGr_i4p8A",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1782345600&v=beta&t=tHc2m9xqy-fI8RbnPgXMoFiD3ilcYD8Wor12e7X3l6s"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1782950400&v=beta&t=reR0_nlEsMxZ294ewmos175xDZgqOghSvQz3xnvmIP0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQGQZlS6lz69vQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1782345600&v=beta&t=zjb-Mcpwb_tz_VSqrxOMMqwEo3a69oGvgQ3tPIvbVA4"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1782950400&v=beta&t=VslhTSd71ihgGsWHIwpIMdhpmrT3LlE3VjCcBS2YWJA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQF62B864VRU5Q",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1782345600&v=beta&t=qhAMoVTuC1_pfq64wi4vO81slCPo0Y8htG_tBAOH70g"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1782950400&v=beta&t=G5Wh8O86iJ_RRmYYVsgh5pdfNYMY_Du2KPvApKVXhNg"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHyGrGi8UQ3Ew",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1782345600&v=beta&t=I1zzpeE-W-Lbr245YOdH_dlmJQgVelyB4-9CGWpkMK4"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1782950400&v=beta&t=PmGFHbfmtZWgmeTbhX7Qr8VgMzo8HfNI_jXS8MydC3o"
           }
         ]
       },
@@ -160,17 +209,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFFumLDVQPTDg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1782345600&v=beta&t=mWZ1XVYqJBQAPkJz27Hk5u5QplB6AB5S-yUNStkh5mM"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1782950400&v=beta&t=Zoee6y5_yd0cXYg54IyU0A5MPBIWTM9MwH07HQPNQeA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFQ341n9udACA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFQ341n9udACA/feedshare-shrink_480/B4DZ4iaIwRJUAo-/0/1778693740481?e=1782345600&v=beta&t=zro2NeezEcgVpu2kXTs80cQU6NuW7V5grLBnDzBXc60"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFQ341n9udACA/feedshare-shrink_480/B4DZ4iaIwRJUAo-/0/1778693740481?e=1782950400&v=beta&t=yBIiPVDFmfOpo8wkT6zEeJowMnupdb8n3l7Pn6vKlXw"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF2HuL-337I3g",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2HuL-337I3g/feedshare-shrink_20/B4DZ4iaJM9I8AI-/0/1778693742549?e=1782345600&v=beta&t=asQ5Qn7hhHc4KxNYm96u6u8sgzyuZxWKY224R2FHBw8"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2HuL-337I3g/feedshare-shrink_20/B4DZ4iaJM9I8AI-/0/1778693742549?e=1782950400&v=beta&t=LiF3EW3Fnv-MBa0iatoOwGSNQOT1cHD6eamu3sWdbSs"
           }
         ]
       },
@@ -204,7 +253,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1781643600&v=beta&t=AGqUXTDer-0g99rZXWMKwr7Yblc1bLAe8CXBKrHwF7I"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1781697600&v=beta&t=2HFTLD_GpnsK-LvFXTSiqWQtC8cUogIC232RtQxkJYA"
         }
       },
       "actor": {
@@ -232,13 +281,13 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1781643600&v=beta&t=i9UoJkgm27c_9jCFgQOMh5H1vbXgWZhRCor9wjFmkJs"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1781697600&v=beta&t=Zze8eciNAmtrZD491-_ao4QUz-_cTbvIPGzY9E77kJU"
         }
       },
       "actor": {
         "actorId": "urn:li:company:112047995",
         "name": "Fair Transition",
-        "description": "855 followers"
+        "description": "857 followers"
       },
       "commentary": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in the queue assigned you, should the rules be allowed to change while you wait?\n\nLagrådet said no. The government's own inquiry said no. 379 engineers and researchers at companies including Spotify, Klarna, Volvo, Ericsson, and Nvidia said no in their formal remissvar.\n\nThe reform itself can move forward on June 6. That isn't what we're contesting. We're asking for one thing: that the roughly 100,000 applications already sitting at Migrationsverket be assessed under the rules that existed when they were filed.\n\nThat's what transitional provisions are for. Every Nordic country uses them. Sweden has used them before. The institutions Sweden built to advise on exactly this kind of question recommended them here too.\n\nfairtransitionsweden.com",
       "activity": {
@@ -271,52 +320,52 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGrdXyjQH5r7w",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGrdXyjQH5r7w/feedshare-shrink_1280/B4DZ34nz1IJgAM-/0/1777992681655?e=1782345600&v=beta&t=fwqDkjrYjVudk1jWQd3QS6_QtEyOZ1J2PcEcwKYHvu0"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGrdXyjQH5r7w/feedshare-shrink_1280/B4DZ34nz1IJgAM-/0/1777992681655?e=1782950400&v=beta&t=q_w-m6W-B_s6Nq-sedaSq80Wix73chp1aPjwuy4lKtk"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQExqUinvYR57Q",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExqUinvYR57Q/feedshare-shrink_160/B4DZ34nzreI0As-/0/1777992680741?e=1782345600&v=beta&t=bS4wX65gKBSP4s83saKcH6oqBQaOWTDmfVqHEcW9bBI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExqUinvYR57Q/feedshare-shrink_160/B4DZ34nzreI0As-/0/1777992680741?e=1782950400&v=beta&t=BEfTqaxIAohsiBemq7ZZabKeL8wmaB4ouqSIVGyWwNY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFTY_D3mER0bg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFTY_D3mER0bg/feedshare-shrink_20/B4DZ34nzzPHoAM-/0/1777992681303?e=1782345600&v=beta&t=gImYLVDvcdLtVoOKgS-75869zIrE5cOoK-xMmcEVUWs"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFTY_D3mER0bg/feedshare-shrink_20/B4DZ34nzzPHoAM-/0/1777992681303?e=1782950400&v=beta&t=n3-Sehwu5tPdbth4Rno_lJunhAANcwYtplnUsWj89AQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGPnsFrM7n7fQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPnsFrM7n7fQ/feedshare-image-high-res/B4DZ34n025HgAY-/0/1777992685746?e=1782345600&v=beta&t=J4VQLvE5ARHc-28t7sfaCrA4ZqM_Q5HzGoHYT8SJ2k0"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPnsFrM7n7fQ/feedshare-image-high-res/B4DZ34n025HgAY-/0/1777992685746?e=1782950400&v=beta&t=NjazMrG3GVaSQS4nrV8IBfPt88TIRIIuoX2s3DWnYmo"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEY7Co_qXuJAQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEY7Co_qXuJAQ/feedshare-shrink_800/B4DZ34n0VdHkAc-/0/1777992683620?e=1782345600&v=beta&t=9ZK7unrlh0_Dyu262MiCvl24wBlsAU2vtnb_45jkM_s"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEY7Co_qXuJAQ/feedshare-shrink_800/B4DZ34n0VdHkAc-/0/1777992683620?e=1782950400&v=beta&t=k1Dd2dIOgtpvmODTaTtVTyMVyUmLiVznR1UjW9hFaKc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEsThfEg2JLLQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEsThfEg2JLLQ/feedshare-shrink_800/B4DZ34nz_QJkAg-/0/1777992682078?e=1782345600&v=beta&t=i9gJ8XyD0vuoksmkd8IuEwVCYqBZa7RcgCoL-gTRs1U"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEsThfEg2JLLQ/feedshare-shrink_800/B4DZ34nz_QJkAg-/0/1777992682078?e=1782950400&v=beta&t=N4cm5243h7KA9C0AtF3so-OX1ZoijuN7pcDvhz0kMGA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQH7Ix5f8pQBOQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH7Ix5f8pQBOQ/feedshare-shrink_160/B4DZ34nzveHoAo-/0/1777992681056?e=1782345600&v=beta&t=7C9tkye9DyLBLxqZ-078m9kx4ZFEoMfeQrpAlPiPB7I"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH7Ix5f8pQBOQ/feedshare-shrink_160/B4DZ34nzveHoAo-/0/1777992681056?e=1782950400&v=beta&t=WOrQybz-duhZ2_qqASrxwkjDOLJEK7AEobxYcKmtr-I"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGNS7-PGRJTWA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGNS7-PGRJTWA/feedshare-shrink_800/B4DZ34n0uVGcAc-/0/1777992685452?e=1782345600&v=beta&t=d9JTd94kfIeZescDUBQWq3Yn0UT0d50fR79ZD37Uh4g"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGNS7-PGRJTWA/feedshare-shrink_800/B4DZ34n0uVGcAc-/0/1777992685452?e=1782950400&v=beta&t=U9j5So5cjwePQwEM5cYzL9XFL3rrSeVh2sjj1dOxIxM"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFw74a1BJpvWg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFw74a1BJpvWg/feedshare-shrink_480/B4DZ34nzwyHIAk-/0/1777992681807?e=1782345600&v=beta&t=z9UrU6h5zrDc1y_gWpb8t6S6wBYMR7Ym9BpElCQq-I4"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFw74a1BJpvWg/feedshare-shrink_480/B4DZ34nzwyHIAk-/0/1777992681807?e=1782950400&v=beta&t=2Ih8GHRr5djciqhlzFjA8ivN-QQc0gjoo6c9MXOmP0g"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGLyKVbwD2Mrw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLyKVbwD2Mrw/feedshare-shrink_480/B4DZ34nz3lHgA0-/0/1777992682619?e=1782345600&v=beta&t=MrGiU7OlBhAKNbPeJTla5yN3MsxcPZj5dd7svxbbj-w"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLyKVbwD2Mrw/feedshare-shrink_480/B4DZ34nz3lHgA0-/0/1777992682619?e=1782950400&v=beta&t=VJ0oWZYHTILtsHbbXN2lSkfPB_XusbB8mMopgJ5X2wA"
           }
         ]
       },
@@ -349,7 +398,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEWX4q_Ees3bQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEWX4q_Ees3bQ/feedshare-shrink_160/B4DZ3uXmPhI0As-/0/1777820656865?e=1782345600&v=beta&t=UMQfjd_VkhkT1eqroKtAG4kHuu9f2gsHqo-bgx1YP9k"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEWX4q_Ees3bQ/feedshare-shrink_160/B4DZ3uXmPhI0As-/0/1777820656865?e=1782950400&v=beta&t=HWxDWKFL4PXw0xGVg5VFbE1eQ2QwN2T86e9t78iEf8Y"
           }
         ]
       },
@@ -422,52 +471,52 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHtuszia2z72Q",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_20/B4DZ3J_vMEJwAI-/0/1777210425079?e=1782345600&v=beta&t=a3mYY1aKr7f9EXzrHhqGvqQDc_iLsLEWA5fbpz88TsE"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_20/B4DZ3J_vMEJwAI-/0/1777210425079?e=1782950400&v=beta&t=0dMZxpZ2X7eL5xCQ1ZtzMc4M0OBEx9tRCr4ybikFPeY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGeQAtQyPvSgQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGeQAtQyPvSgQ/feedshare-shrink_800/B4DZ3J_vMFHsAc-/0/1777210424893?e=1782345600&v=beta&t=Mhh77jyJI4VMZcJdIJuD4AXvPSBcTzQBhfrvswI17c8"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGeQAtQyPvSgQ/feedshare-shrink_800/B4DZ3J_vMFHsAc-/0/1777210424893?e=1782950400&v=beta&t=rCsBp9ZS_wMuAZMS7FwNf1J0fvrQofR20C8kR4crKZk"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEeXuEqXmCAnA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEeXuEqXmCAnA/feedshare-shrink_800/B4DZ3J_vF2I4Ac-/0/1777210421861?e=1782345600&v=beta&t=acY2S100wuVqAqjnf9-zWYjUCf7gEpmW59hFHzcELHg"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEeXuEqXmCAnA/feedshare-shrink_800/B4DZ3J_vF2I4Ac-/0/1777210421861?e=1782950400&v=beta&t=M8FhEMLU5euy7qUnpzxjzRgvNuARSoP9wdbjF6SL6cs"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEuFKpPLuNfvA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuFKpPLuNfvA/feedshare-shrink_480/B4DZ3J_vHxK0Ak-/0/1777210422034?e=1782345600&v=beta&t=XSYLPYpTZzmZCZE9OJNxGKwGJhPHYemFag82nOzkTYw"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuFKpPLuNfvA/feedshare-shrink_480/B4DZ3J_vHxK0Ak-/0/1777210422034?e=1782950400&v=beta&t=C0vAoXvwVC6L0r-sLNZEbmCwulS6z8k200Dn3crGDX0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEznOtKIfe59g",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEznOtKIfe59g/feedshare-shrink_800/B4DZ3J_vIGG4Ac-/0/1777210422219?e=1782345600&v=beta&t=wnOKFh-GoCf7NDZYGlLe8i_BWSsppVl6iyhj2iqD5AI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEznOtKIfe59g/feedshare-shrink_800/B4DZ3J_vIGG4Ac-/0/1777210422219?e=1782950400&v=beta&t=Wmx4M4_OVj_vfMxzdod-DcD9uoAAUihFft0f1f-BSBc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQE8siW6ZG4FLg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE8siW6ZG4FLg/feedshare-shrink_800/B4DZ3J_vF0K0Ac-/0/1777210421926?e=1782345600&v=beta&t=_KL7Jrmh-q89MkfG8IfYEyerEGj6xI8Fy7i1FE8p0ng"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE8siW6ZG4FLg/feedshare-shrink_800/B4DZ3J_vF0K0Ac-/0/1777210421926?e=1782950400&v=beta&t=MjyPGJy2_DYnS6459v-pij3QsIFhY9rOm4QTmHXmIJY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQH3ufh-ADV_ag",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH3ufh-ADV_ag/feedshare-shrink_800/B4DZ3J_vIjJsAc-/0/1777210422193?e=1782345600&v=beta&t=kr5yXy2MAN5BMwktXfC_GqSKX9-oW8jN5kPcbgxFAdk"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH3ufh-ADV_ag/feedshare-shrink_800/B4DZ3J_vIjJsAc-/0/1777210422193?e=1782950400&v=beta&t=SJVke6psB8q_0B07AKqOyz8nE8dWwBZ5-Y9PYn7LLU4"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGRGZk2wojdnA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRGZk2wojdnA/feedshare-shrink_160/B4DZ3J_vIMGcAs-/0/1777210422066?e=1782345600&v=beta&t=owBlRAC7XKYfwH-hsTZ5d6genOdL3zF1fIavz492y_s"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRGZk2wojdnA/feedshare-shrink_160/B4DZ3J_vIMGcAs-/0/1777210422066?e=1782950400&v=beta&t=bZG6VHtMAmw_bqiibLuteESQS7q_nllIVIeGTbkKjf4"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHsow2xj7WS8A",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHsow2xj7WS8A/feedshare-shrink_1280/B4DZ3J_vHlH8AM-/0/1777210421987?e=1782345600&v=beta&t=4fxjC0gu1liVb_PbFpcVRtElbnVHHHye0BNOBuP8EUU"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHsow2xj7WS8A/feedshare-shrink_1280/B4DZ3J_vHlH8AM-/0/1777210421987?e=1782950400&v=beta&t=vpdCW0lfafC-tY148sbKZO_Xj4wBXV-LtNxSCm8gEYo"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHCbQbyJ7NoGg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHCbQbyJ7NoGg/feedshare-shrink_20/B4DZ3J_vH.JAAI-/0/1777210422096?e=1782345600&v=beta&t=qrwyTN_7v10ULzfY18JmPHANAZeLR8-I_34dnyksjho"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHCbQbyJ7NoGg/feedshare-shrink_20/B4DZ3J_vH.JAAI-/0/1777210422096?e=1782950400&v=beta&t=WKhK8bQt-nwktAnSLQw33bTf_I724WxTbG7gquAYBMk"
           }
         ]
       },
@@ -500,7 +549,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQEKdmJRTGjxFw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEKdmJRTGjxFw/feedshare-shrink_20/B4EZ2aEdthHMAI-/0/1776406355316?e=1782345600&v=beta&t=6h-DeO7m-zsumSUJ-JVZEK6Mkw9G9_GLAuVcH6JX9lk"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEKdmJRTGjxFw/feedshare-shrink_20/B4EZ2aEdthHMAI-/0/1776406355316?e=1782950400&v=beta&t=VGe5IgeULngAFwkR4ReZ4aGhA8Q5X9hAPOJJZMRK1y8"
           }
         ]
       },
@@ -549,7 +598,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFdH7d6_k9DKw",
             "accessibilityText": "text, letter",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFdH7d6_k9DKw/feedshare-image-high-res/B4EZ1tU_kjJsAU-/0/1775655714473?e=1782345600&v=beta&t=qMZvxjto28jJ7TwsIMReASDsNdIOJJcrD0PBGSK2tpY"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFdH7d6_k9DKw/feedshare-image-high-res/B4EZ1tU_kjJsAU-/0/1775655714473?e=1782950400&v=beta&t=D4Y7rwfeRY-L6SL8hKvmob12MnRe1SpVQ6RFokHRNKY"
           }
         ]
       },
@@ -583,7 +632,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1781643600&v=beta&t=opXC2Yx_08w9luN87IbUO5ZkInJV-mxskuA0ETXXndo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1781697600&v=beta&t=ccvRAPZ_6rm3yyC5k9jbe_UvRCFD-YTNqQh0v96cPow"
         }
       },
       "actor": {
@@ -611,7 +660,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1781643600&v=beta&t=imlG5stUbz6Q45GWGmO4grQLA25jxdaknPvSZGyWtdk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1781697600&v=beta&t=eNH6y4eIDBMCPmbKzRLxHejNRP1vXCDDAzej1uBX450"
         }
       },
       "actor": {
@@ -638,17 +687,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEOoJqJJBRaWA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEOoJqJJBRaWA/feedshare-shrink_1280/B4DZygIS2aHEAc-/0/1772213057693?e=1782345600&v=beta&t=R2k7VhLMfXyYV1j_fOgpIzztY7h1e2ZgrjeuiHJ034U"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEOoJqJJBRaWA/feedshare-shrink_1280/B4DZygIS2aHEAc-/0/1772213057693?e=1782950400&v=beta&t=uDFvcnl1jaf7KK0tSX8ku1Oj4hHbt_iluoB0LjkUhUU"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGQEe2aLpdx-g",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGQEe2aLpdx-g/feedshare-shrink_160/B4DZygIS12JkAs-/0/1772213057602?e=1782345600&v=beta&t=BXshMhaQZD9OB7xNbkDVIbtp67hPOPwwMwbcMtXwpdM"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGQEe2aLpdx-g/feedshare-shrink_160/B4DZygIS12JkAs-/0/1772213057602?e=1782950400&v=beta&t=c36kiAsgGKX52bdsNtUMBUutCd_P6Ojc_5ynz9BfxoI"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHP_UKj5mZY0w",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHP_UKj5mZY0w/feedshare-shrink_160/B4DZygIS1qJ4As-/0/1772213057865?e=1782345600&v=beta&t=vepu5waEWa0lK-gWZwrhcvr_gBbmyljmSGWMIHO6FnU"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHP_UKj5mZY0w/feedshare-shrink_160/B4DZygIS1qJ4As-/0/1772213057865?e=1782950400&v=beta&t=1z8r9zt_XfQPdz232ziv9_YT-SGJDjnjKAPGlcJox0M"
           }
         ]
       },
@@ -681,22 +730,22 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQG-ukbUb5cilw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG-ukbUb5cilw/feedshare-image-high-res/B4DZyV_xyAIoAU-/0/1772043053088?e=1782345600&v=beta&t=Q4QDTTE7TKBk6s3kl3-KQTcP-YNubjwvFyaxB9oRRyA"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG-ukbUb5cilw/feedshare-image-high-res/B4DZyV_xyAIoAU-/0/1772043053088?e=1782950400&v=beta&t=5dhdXTzfAhI5qVmsp41J9VpIoA3yeTcbwklYs8LimJw"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFuhWjmQIsPQw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFuhWjmQIsPQw/feedshare-image-high-res/B4DZyV_yNbIwAY-/0/1772043055018?e=1782345600&v=beta&t=qiiHu60txqn-OGGVLIziV4CN0s5ZKOcnvzS1B-OrmPg"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFuhWjmQIsPQw/feedshare-image-high-res/B4DZyV_yNbIwAY-/0/1772043055018?e=1782950400&v=beta&t=ySaqiKx-_bH4UFFfi8UVo_ZrjfuR6LDxXoF2IYz83sM"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEbm5db4j8ybQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEbm5db4j8ybQ/feedshare-shrink_20/B4DZyV_xKzJwAQ-/0/1772043050519?e=1782345600&v=beta&t=x7XKD9J589sGFKoR_zagjqS0goeAm_OYhf3YpBgBEhw"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEbm5db4j8ybQ/feedshare-shrink_20/B4DZyV_xKzJwAQ-/0/1772043050519?e=1782950400&v=beta&t=L78Cjn7AN2gr-IcF4NHLaDg9C0qFK4FH_1VMvHqQVdU"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQE1wAx2TGx7iQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1wAx2TGx7iQ/feedshare-shrink_480/B4DZyV_xZ_HIBo-/0/1772043051659?e=1782345600&v=beta&t=daDkEp0IQ08RmoE9vqYbTQH17cHpq2L3OOgS5yufUIo"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1wAx2TGx7iQ/feedshare-shrink_480/B4DZyV_xZ_HIBo-/0/1772043051659?e=1782950400&v=beta&t=rv5v7betKHZyQgWNRu88hW4wWn2UuVyfThHOAddLzIg"
           }
         ]
       },
@@ -729,12 +778,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFV7WvKOSoB8Q",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFV7WvKOSoB8Q/feedshare-shrink_20/B4DZxwAypnJwAM-/0/1771405786476?e=1782345600&v=beta&t=aEv0vsWucmD3AgX_n6EnX_etpqAaN5vMwND7xeXIiOI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFV7WvKOSoB8Q/feedshare-shrink_20/B4DZxwAypnJwAM-/0/1771405786476?e=1782950400&v=beta&t=F6QVSGRfKNhwhngJvKI0aP-VUL4irAKCrS-BTkFCMU0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFVIUKRqoC5TQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFVIUKRqoC5TQ/feedshare-shrink_1280/B4DZxwAyqoG8Ag-/0/1771405785048?e=1782345600&v=beta&t=0SOIWtAyXhz5lRoUqQaxZF-STdicGHAcm3DOcs2dn8g"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFVIUKRqoC5TQ/feedshare-shrink_1280/B4DZxwAyqoG8Ag-/0/1771405785048?e=1782950400&v=beta&t=QFGa5W5k0y4EuEeO-38yCxkmPFb1plkQ9JNlCtGxcSQ"
           }
         ]
       },
@@ -767,17 +816,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQE0lVApGbw4sQ",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE0lVApGbw4sQ/feedshare-shrink_160/B4DZxrZ9rWKEAw-/0/1771328494559?e=1782345600&v=beta&t=KPneUpwhyh_OaU2HfQBnvaWI3mFLih3DYQO_uTRgTkE"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE0lVApGbw4sQ/feedshare-shrink_160/B4DZxrZ9rWKEAw-/0/1771328494559?e=1782950400&v=beta&t=1p9gODKaxbXaHwPweZ7eFQlkDnLhNnCCBosSPXpE8ns"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGaz_vILlAJpw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGaz_vILlAJpw/feedshare-shrink_1280/B4DZxrZ9lkJIAc-/0/1771328494291?e=1782345600&v=beta&t=ZiweyYIjSvddD4-PWeLxTRW9an8O8Spx3OIDn_6s_RM"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGaz_vILlAJpw/feedshare-shrink_1280/B4DZxrZ9lkJIAc-/0/1771328494291?e=1782950400&v=beta&t=z7Cjd3umA4UYSmHLH5tszP0yHSEkx2LQ8TXJLD9GiW8"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQE68FULzxNO3Q",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE68FULzxNO3Q/feedshare-image-high-res/B4DZxrZ9pYG8AU-/0/1771328494478?e=1782345600&v=beta&t=0aFgQgc2CuW7ESUKM6BsgfZxQd7vN0qkmrB974a_lD4"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE68FULzxNO3Q/feedshare-image-high-res/B4DZxrZ9pYG8AU-/0/1771328494478?e=1782950400&v=beta&t=hLbbTwo1XLbWU9xPOZg0dBp0p-39RxAZ2a4Krp8PIhI"
           }
         ]
       },
@@ -810,17 +859,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGFKLKbAo_WfA",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGFKLKbAo_WfA/feedshare-shrink_1280/B4DZxoEGWJJcAc-/0/1771272432272?e=1782345600&v=beta&t=bmJU2sH9XIN4Z_NSa1hxYrJzsCcwlPKzAatf6ULOZw0"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGFKLKbAo_WfA/feedshare-shrink_1280/B4DZxoEGWJJcAc-/0/1771272432272?e=1782950400&v=beta&t=F6TJW9Y558jdtrFmKq7yKnSfp1aYblaLYoSVk6xwEeE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEF1oAAH4dQiw",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEF1oAAH4dQiw/feedshare-shrink_1280/B4DZxoEGSMGQAg-/0/1771272431565?e=1782345600&v=beta&t=rNz6aRUKZA7wJbFqSEVfVbdnAZREqIkQwDHQ5ZpY3dU"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEF1oAAH4dQiw/feedshare-shrink_1280/B4DZxoEGSMGQAg-/0/1771272431565?e=1782950400&v=beta&t=FuT6e4yqKoN2eifyz7jOFybClRCd_QLZnprQjnTCvFc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGokSz8osITwg",
             "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGokSz8osITwg/feedshare-shrink_480/B4DZxoEGWTJwAs-/0/1771272432251?e=1782345600&v=beta&t=IrQN9pAuqO6MFPZYGXZCqmIK2UcobM7kuxtDJpePnVw"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGokSz8osITwg/feedshare-shrink_480/B4DZxoEGWTJwAs-/0/1771272432251?e=1782950400&v=beta&t=MjiIh0qwH_3VBX-_Boew6TzsfrbNj8bumxtwIwJ1wKA"
           }
         ]
       },
@@ -842,40 +891,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-02-13T09:34:45.452Z",
-      "activityId": "urn:li:activity:7428008723673104384",
-      "shareUrn": "urn:li:share:7428008722762866688",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_anywear-anywear-ios-activity-7428008723673104384-ECSk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQH8E8ElMeoSlw",
-            "accessibilityText": "graphical user interface, application",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH8E8ElMeoSlw/feedshare-shrink_160/B4DZxWWklxG8A4-/0/1770975284262?e=1782345600&v=beta&t=p5XdkZ4la46DemSOOXJjMUhD3kVNBY7b2e4xwj4Xaf4"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Happy Friday, folks. Stay tuned for our first iOS app, #Anywear, that understands your fashion preferences best, coming soon to the App Store. Say goodbye to the stress of choosing what to wear or buy. With the app, you can eliminate anxiety, overspending, and waste, making dressing effortless. \n\n#AnyWear #iOS #SWIFT #SWIFTUI #XCode263  #Weekend #Nanobanana #Gemini",
-      "activity": {
-        "numLikes": 2,
-        "numComments": 0,
-        "numShares": 1,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 2
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjgwMDg3MjM2NzMxMDQzODQtMTc3MDk3NTI4NTQzNA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MjkyNTUwNTY0NjM0NjY0OTYtMTc3MTI3MjQzNDMxOQ==:20"
 }
