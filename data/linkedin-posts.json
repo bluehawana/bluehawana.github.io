@@ -2611,5 +2611,18 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1781642936978-0",
+    "content": "New Year, New Project #7\n\nGrafana + Splunk on Azure ARO (Practical Enterprise Integration)\n\nMany teams using Splunk today ask the same question: \"Can we introduce Grafana without disrupting what already works?\" The short answer is yes — if you design it as an integration strategy, not a tool replacement.\n\nWhat we are implementing:\n- GitOps-first delivery with ArgoCD\n- Grafana on Azure ARO for operational dashboards and platform visibility\n- Splunk retained for log intelligence and analysis\n- Continuous feedback loop from Splunk findings to logging configuration tuning\n\nWhy this matters:\n- Better signal quality\n- Lower noise and unnecessary ingestion\n- Faster troubleshooting for engineering teams\n- Clearer ownership between platform and application layers\n\nObservability is powerful. But unchecked, it becomes expensive noise. Here's the architecture we built to balance reliability, visibility, and cost:\n→ Delivery — Teams push config to GitOps. ArgoCD syncs. ARO runs.\n→ Observability — SignalFx feeds metrics into Grafana. Dashboards stay sharp.\n→ Insight — App logs flow to Splunk. Patterns surface automatically.\n→ The loop — Splunk insights feed back into logging config via GitOps. Less noise. Lower cost. Better signal.\n\nThe key insight: the feedback loop is the product. Without it, you're just paying more for more dashboards.\n\nBuilt with: Azure Red Hat OpenShift · Grafana · SignalFx · Splunk · ArgoCD\n\nThis is not about \"more monitoring tools.\" It is about building a monitoring model that is scalable, cost-aware, and enterprise-ready. If your organization is Splunk-first and considering Grafana, this path is realistic and incremental. \n\n#Grafana #Splunk #Azure #ARO #ArgoCD #GitOps #Observability #PlatformEngineering #SRE #CloudArchitecture",
+    "url": "https://www.linkedin.com/posts/harvad_grafana-splunk-azure-activity-7472690710711005184-X4-x?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1781642936978-0-42d18d421f3692d9362ae91e20a23790.jpg",
+    "tags": [],
+    "publishedAt": "2026-06-16T16:45:01.313Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]
