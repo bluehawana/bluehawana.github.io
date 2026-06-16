@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-06-10T11:42:08.679Z"
+    "last_sync": "2026-06-16T12:59:01.343Z"
   },
   "extraction": {
-    "date": "2026-06-10T11:42:08.679Z",
+    "date": "2026-06-16T12:59:01.343Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 200,
+    "total_posts_found": 201,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -3812,6 +3812,25 @@
         "shares": 42
       },
       "posted_at": "2026-06-09T20:17:57.988Z"
+    },
+    {
+      "id": "linkedin-1781614740915-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "An exciting product announcement is on the way. This innovative solution promises to be significantl...",
+      "content": "An exciting product announcement is on the way. This innovative solution promises to be significantly smarter than #GoogleAssistant in your car and your phone, transforming your experience with electric and intelligent vehicles. Stay tuned, as this could revolutionize your perception of intelligent auto informative systems. \n\n#AAOS #Android15 #TTS #Gemma #Spotify #CoDriver #LLM",
+      "link": "https://www.linkedin.com/posts/harvad_googleassistant-aaos-android15-activity-7472556263160274944-1lx3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1782950400&v=beta&t=rL-i0XITnY3RaZ22sJ0vxsIsGumr5bcFvd0FsDW3KJw",
+      "local_image": "/images/linkedin/linkedin-1781614740915-0-d32db61d1722167d11b48091eb2aa8bf.jpg",
+      "extracted_at": "2026-06-16T12:59:00.915Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-06-16T07:50:46.519Z"
     }
   ]
 }
