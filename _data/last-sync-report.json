@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-06-16T12:59:01.350Z",
+  "sync_timestamp": "2026-06-16T20:48:57.049Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
   "images_downloaded": 1,
-  "total_posts_in_system": 201,
+  "total_posts_in_system": 202,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-06-16T13:29:01.350Z",
+  "next_sync_recommended": "2026-06-16T21:18:57.050Z",
   "new_posts": [
     {
-      "title": "An exciting product announcement is on the way. This innovative solution promises to be significantl...",
-      "link": "https://www.linkedin.com/posts/harvad_googleassistant-aaos-android15-activity-7472556263160274944-1lx3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "New Year, New Project #7\n\nGrafana + Splunk on Azure ARO (Practical Enterprise Integration)\n\nMany tea...",
+      "link": "https://www.linkedin.com/posts/harvad_grafana-splunk-azure-activity-7472690710711005184-X4-x?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 1,
+        "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-06-16T12:59:00.915Z"
+      "sync_date": "2026-06-16T20:48:56.978Z"
     }
   ]
 }
