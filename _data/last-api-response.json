@@ -1,6 +1,58 @@
 {
   "data": [
     {
+      "createdAt": "2026-06-23T15:12:12.349Z",
+      "activityId": "urn:li:activity:7475204067842027520",
+      "shareUrn": "urn:li:ugcPost:7475204066944425984",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_claimgenerationbot-hackathon2026-volvotruck-activity-7475204067842027520-rZic?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQEhaQ-P1d987A",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1783555200&v=beta&t=SS9taSeapGBjkHMMCNi6l5jBIuHzmAXrcLxLzkzFPEA"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQElF8FVdjob2Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1783555200&v=beta&t=YViOlDCLyindJB3eCU1sGR_6EGSbC0jLNH50RxDxxws"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQEYCUQqY53EiQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1783555200&v=beta&t=Nabzd2rF90T3LwBB1JMaCs2I3xzOOv8b9W1GK0EhaK4"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D5622AQHq5X1l2NW43Q",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1783555200&v=beta&t=qGmn1O-CkprCn9YDFaC-lohB_SmOCR8v3PuMICr_ebg"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Excited to share that our team won a trophy at Volvo Group’s 2026 Hackathon after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot #MacStudio #Qwen35",
+      "activity": {
+        "numLikes": 5,
+        "numComments": 3,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 4
+          },
+          {
+            "type": "PRAISE",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-06-16T16:45:01.313Z",
       "activityId": "urn:li:activity:7472690710711005184",
       "shareUrn": "urn:li:ugcPost:7472622930636632064",
@@ -137,7 +189,7 @@
       },
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 1083,
+        "numLikes": 1084,
         "numComments": 47,
         "numShares": 186,
         "reactionTypeCounts": [
@@ -147,7 +199,7 @@
           },
           {
             "type": "INTEREST",
-            "count": 38
+            "count": 39
           },
           {
             "type": "EMPATHY",
@@ -319,7 +371,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1782820800&v=beta&t=6tWSIoFjy2akWMNGteJ06rBKcFi-ZgjOV12FqvUDsJg"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1782853200&v=beta&t=w1L8HefCJExAU_E0caUuFhddwhq6YKZjmmCdSVf8C6c"
         }
       },
       "actor": {
@@ -347,7 +399,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1782820800&v=beta&t=kY555zYZxWI9Qj3rf-LJCEgUbRYNTDefH8CbBJHxHPE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1782853200&v=beta&t=jRzPqeBDh-G6OeKtHcUvkwkGv7nJCHMcAWSiRLr0zjc"
         }
       },
       "actor": {
@@ -698,7 +750,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1782820800&v=beta&t=FsQvNqtF-6nQeF7a0NlTKXeO54rQs5cx96lgdzg98-o"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1782853200&v=beta&t=nyu9PEMsIbTNhllkD444T3UqJ2lZLLDgI4XEw9S_N8Y"
         }
       },
       "actor": {
@@ -726,7 +778,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1782820800&v=beta&t=BFAGTiO8Pn72wQfAw3GWsHMOxzyB3sJXTq--Z8aByt0"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1782853200&v=beta&t=GGWS0r6LZ84FbL8JJrdsFi2inoavrXiZG6jC_32kiq0"
         }
       },
       "actor": {
@@ -833,45 +885,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-02-18T09:09:48.288Z",
-      "activityId": "urn:li:activity:7429814383440056321",
-      "shareUrn": "urn:li:ugcPost:7429814382542385152",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_birdfood-silentlove-warmswinter-activity-7429814383440056321-kNYD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFV7WvKOSoB8Q",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFV7WvKOSoB8Q/feedshare-shrink_20/B4DZxwAypnJwAM-/0/1771405786476?e=1783555200&v=beta&t=31_49QMwx0KpUs_iKLxHqWPo2e_Gs7245B6Odwhit9s"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFVIUKRqoC5TQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFVIUKRqoC5TQ/feedshare-shrink_1280/B4DZxwAyqoG8Ag-/0/1771405785048?e=1783555200&v=beta&t=bhR7nPZYqCBoAJ_xlOjSq71lFrFYDz1nFz30FkZBVH4"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "It was minus 12°C this morning. After dropping off my kid, I headed straight to Jula for #birdfood — only to find it sold out. Same at Rusta and Bauhaus in Sisjön.  \n\nFinally picked some up at Biltema. But what stayed with me wasn’t the cold — it was seeing a man walking out with both arms full of seed bags, like he wasn’t just feeding his own birds, but half the forest.  \n\nIn weather like this, it means something to know so many people are quietly doing their part. No fanfare, no posts — just care, one handful at a time. Every little bit helps them survive the freeze. 🐦❄️  \n\n#SilentLove #WarmsWinter #BirdLovers #Birdfood #CommunityLove #NatureInWinter",
-      "activity": {
-        "numLikes": 8,
-        "numComments": 6,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 8
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0Mjk4MTQzODM0NDAwNTYzMjEtMTc3MTQwNTc4ODI2OQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MzI0ODcyODE5NDIzNTE4NzItMTc3MjA0MzA1NjkzMA==:20"
 }

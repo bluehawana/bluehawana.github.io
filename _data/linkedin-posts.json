@@ -3,12 +3,12 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-06-16T20:48:57.042Z"
+    "last_sync": "2026-06-23T20:01:37.959Z"
   },
   "extraction": {
-    "date": "2026-06-16T20:48:57.042Z",
+    "date": "2026-06-23T20:01:37.959Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 202,
+    "total_posts_found": 203,
     "new_posts_this_sync": 1,
     "images_downloaded": 1
   },
@@ -3850,6 +3850,25 @@
         "shares": 0
       },
       "posted_at": "2026-06-16T16:45:01.313Z"
+    },
+    {
+      "id": "linkedin-1782244897878-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Excited to share that our team won a trophy at Volvo Group’s 2026 Hackathon after two days of intens...",
+      "content": "Excited to share that our team won a trophy at Volvo Group’s 2026 Hackathon after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot #MacStudio #Qwen35",
+      "link": "https://www.linkedin.com/posts/harvad_claimgenerationbot-hackathon2026-volvotruck-activity-7475204067842027520-rZic?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1783555200&v=beta&t=SS9taSeapGBjkHMMCNi6l5jBIuHzmAXrcLxLzkzFPEA",
+      "local_image": "/images/linkedin/linkedin-1782244897878-0-e74282357994b54963973eac055a39f5.jpg",
+      "extracted_at": "2026-06-23T20:01:37.878Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 5,
+        "comments": 3,
+        "shares": 0
+      },
+      "posted_at": "2026-06-23T15:12:12.349Z"
     }
   ]
 }
