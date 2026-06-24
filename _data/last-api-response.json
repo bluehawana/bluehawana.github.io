@@ -1,10 +1,51 @@
 {
   "data": [
     {
+      "createdAt": "2026-06-24T12:03:28.810Z",
+      "activityId": "urn:li:activity:7475518961342767104",
+      "shareUrn": "urn:li:share:7475518958230519811",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_hackday2026-activity-7475518961342767104-bLOB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQFrBX5uDDr8Rg",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1784160000&v=beta&t=Qy0y8nhtHV8zPgTAsi0jfht9fs0e8zv2nnSJ8m7iu_I"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "As we embark on our journey under #Hackday2026, we start as strangers, having just met in the meeting room this Monday. While no one knows if we are destined to win, I hold that belief firmly. When team members approached me one by one to join my team, my response was simple: yes, why not.\n\nKey aspects to consider include:\n1. As the team leader, ambition to win is crucial.\n2. Fostering collaboration among team members and earning their trust in a short time is essential.\n\nI recognize that no one expects our team to win except for me. Yet, they trust and support me to the best of their abilities. This gives us the opportunity to validate our proposal in the business world. I am dedicated to ensuring they leave with something meaningful to share, rather than disappointment.\n\nWe all need a champion's heart, as this experience is truly unforgettable. With this mindset, we can challenge ourselves to step out of our comfort zones and dare to do something different, honoring ourselves and our team members as well. That is the addiction of victories; once you taste it, you will never forget it.\n\nA big applause to all of you! Mahnoor Ali Cheema, Sara Asghari, Chirag Ashiyani, Mattias Jakobsson, Roman Dolanski",
+      "activity": {
+        "numLikes": 9,
+        "numComments": 0,
+        "numShares": 1,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 7
+          },
+          {
+            "type": "PRAISE",
+            "count": 1
+          },
+          {
+            "type": "APPRECIATION",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-06-23T15:12:12.349Z",
       "activityId": "urn:li:activity:7475204067842027520",
       "shareUrn": "urn:li:ugcPost:7475204066944425984",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_claimgenerationbot-hackathon2026-volvotruck-activity-7475204067842027520-rZic?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_2026hackday-claimgenerationbot-hackathon2026-activity-7475204067842027520-IGou?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "content": {
         "images": [
           {
@@ -35,19 +76,19 @@
         "name": "Harvad Li",
         "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
-      "commentary": "Excited to share that our team won a trophy at Volvo Group’s 2026 Hackathon after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot #MacStudio #Qwen35",
+      "commentary": "Excited to share that our team won a trophy at Volvo Group’s #2026HackDay after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot #MacStudio #Qwen35",
       "activity": {
-        "numLikes": 10,
-        "numComments": 3,
+        "numLikes": 20,
+        "numComments": 5,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 9
+            "count": 13
           },
           {
             "type": "PRAISE",
-            "count": 1
+            "count": 7
           }
         ]
       }
@@ -140,13 +181,13 @@
       },
       "commentary": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you 👇 \n\n🔹Youtube videos:\n1. How to Master ML System Design\n→ https://lnkd.in/d89ywdkp\n→ Step by step guide (went through it - its good)\n\n2. Stanford MLSys Seminars (playlist)\n→ https://lnkd.in/gP3UDqwn \n→ How Netflix/Uber actually scale\n\n🔹Interview examples:\n1. Spotify ML Question - Design a Recommendation System \n→ https://lnkd.in/dr87ADq8\n\n2. Instagram ML Question - Design a Ranking Model \n→ https://lnkd.in/dqMxqgNc\n\n🔹 Github Repo:\n1. System Design Primer \n→ https://lnkd.in/gmAg4nBb \n→ Master the patterns that matter\n\n🔹 Book recommendations:\n1. Designing ML Systems: https://amzn.to/41V1n9t\n2. AI Engineering: https://amzn.to/43Fa1u8\n3. ML System Design Interview: https://amzn.to/3YGed9n\n\nHope it is useful! \n \n--\n♻️ Repost to help other engineers 💚 \n➕ Join 48.000+ serious AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 429,
+        "numLikes": 430,
         "numComments": 22,
         "numShares": 63,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 401
+            "count": 402
           },
           {
             "type": "EMPATHY",
@@ -190,12 +231,12 @@
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
         "numLikes": 1088,
-        "numComments": 47,
+        "numComments": 48,
         "numShares": 187,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 1004
+            "count": 1005
           },
           {
             "type": "INTEREST",
@@ -203,7 +244,7 @@
           },
           {
             "type": "EMPATHY",
-            "count": 19
+            "count": 18
           },
           {
             "type": "PRAISE",
@@ -371,7 +412,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1782903600&v=beta&t=RrrS1AcM9Qxv7Aru-65EjPc0sWJoR8VmCqisUpp7eUM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1782936000&v=beta&t=MpwDsXnQSoCKNqoSig97VWBxhwdvtCeyzmIVVI0pibI"
         }
       },
       "actor": {
@@ -399,7 +440,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1782903600&v=beta&t=qxcScklTN7WC8BBMD29W0f2798TsdJm3ZZn-Ba2Ka0U"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1782936000&v=beta&t=aM2GRNc6-LEnp_-weAy0-6KDLP3_cgtCOnl1qBf8oUE"
         }
       },
       "actor": {
@@ -750,7 +791,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1782903600&v=beta&t=8bqQG-oYQ9V5W-giAPOkZJNGZDOMXePr5xtygEYvKZE"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1782936000&v=beta&t=_XGvmRxfSFB0cFQS_c_3BxjHJAMp5GC2hwWVBWG6bJU"
         }
       },
       "actor": {
@@ -778,7 +819,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1782903600&v=beta&t=9MgpgIY7lqsaMaJAgDQpIqdTHTHTd1l_ghBJqKAEsFw"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1782936000&v=beta&t=ptrL7PE5P_mrF8PObqJTwAF38ral5lyDVwSgHdUCdwg"
         }
       },
       "actor": {
@@ -837,55 +878,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-02-25T18:10:56.951Z",
-      "activityId": "urn:li:activity:7432487281942351872",
-      "shareUrn": "urn:li:ugcPost:7432487281070030848",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_chainguard-docker-cve-activity-7432487281942351872-CQo2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQG-ukbUb5cilw",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG-ukbUb5cilw/feedshare-image-high-res/B4DZyV_xyAIoAU-/0/1772043053088?e=1784160000&v=beta&t=BfQWZU3iTkv24Pnb3b95b83qANTJj-8shU2VTt3QpbY"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFuhWjmQIsPQw",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFuhWjmQIsPQw/feedshare-image-high-res/B4DZyV_yNbIwAY-/0/1772043055018?e=1784160000&v=beta&t=SvxEI6JLLUicwlVZ6UjB50-lOIaOG-N6vvUu7x3rArE"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEbm5db4j8ybQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEbm5db4j8ybQ/feedshare-shrink_20/B4DZyV_xKzJwAQ-/0/1772043050519?e=1784160000&v=beta&t=5FzAlVhPmEyqC6pZYdOo88sGoRrlf9egHKTxghG8xtg"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQE1wAx2TGx7iQ",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE1wAx2TGx7iQ/feedshare-shrink_480/B4DZyV_xZ_HIBo-/0/1772043051659?e=1784160000&v=beta&t=QcpUpEaQqn_KZXgSeZuNMgLJChQhffMghC_fIBDCyEo"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Always on the move — and loving the learning along the way. 🚀\n\n#Chainguard #Docker #CVE #CNCFGBG #Opensource",
-      "activity": {
-        "numLikes": 5,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 5
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MzI0ODcyODE5NDIzNTE4NzItMTc3MjA0MzA1NjkzMA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MzMyMDAzMjM2Njc3NjMyMDAtMTc3MjIxMzA1OTMyNg==:20"
 }
