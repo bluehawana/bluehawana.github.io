@@ -1,34 +1,23 @@
 {
-  "sync_timestamp": "2026-06-24T19:43:45.086Z",
+  "sync_timestamp": "2026-06-26T19:44:41.815Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 2,
-  "images_downloaded": 2,
-  "total_posts_in_system": 205,
+  "new_posts_synced": 1,
+  "images_downloaded": 1,
+  "total_posts_in_system": 206,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-06-24T20:13:45.086Z",
+  "next_sync_recommended": "2026-06-26T20:14:41.815Z",
   "new_posts": [
     {
-      "title": "As we embark on our journey under #Hackday2026, we start as strangers, having just met in the meetin...",
-      "link": "https://www.linkedin.com/posts/harvad_hackday2026-activity-7475518961342767104-bLOB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. A...",
+      "link": "https://www.linkedin.com/posts/harvad_embrace-the-sunshine-and-the-energy-of-summer-activity-7476228250072059905-wn5h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
-        "likes": 9,
+        "likes": 1,
         "comments": 0,
-        "shares": 1
-      },
-      "sync_date": "2026-06-24T19:43:44.806Z"
-    },
-    {
-      "title": "Excited to share that our team won a trophy at Volvo Group’s #2026HackDay after two days of intense ...",
-      "link": "https://www.linkedin.com/posts/harvad_2026hackday-claimgenerationbot-hackathon2026-activity-7475204067842027520-IGou?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": true,
-      "engagement": {
-        "likes": 20,
-        "comments": 5,
         "shares": 0
       },
-      "sync_date": "2026-06-24T19:43:44.806Z"
+      "sync_date": "2026-06-26T19:44:41.635Z"
     }
   ]
 }
