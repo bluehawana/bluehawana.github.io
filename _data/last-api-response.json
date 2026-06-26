@@ -1,6 +1,54 @@
 {
   "data": [
     {
+      "createdAt": "2026-06-26T11:01:56.421Z",
+      "activityId": "urn:li:activity:7476228250072059905",
+      "shareUrn": "urn:li:ugcPost:7476228249166065664",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_embrace-the-sunshine-and-the-energy-of-summer-activity-7476228250072059905-wn5h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEAz61UF_-1VA",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1784160000&v=beta&t=j1PHuQbpQvp2aeGEW4G7P5JFh11uSziHjI3O3tJXZbg"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQHADbZpGpHTFQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1784160000&v=beta&t=xEqC-sPCyueXU8oFVPVw8-QICNSmrgGhXIftqGKjM84"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQExuRHdswz0lw",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1784160000&v=beta&t=nAKLVec6rUfYB3lMlxATGwmH9wlLtsiiKphwRvCmV40"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFiFGQId9DdJQ",
+            "accessibilityText": "No alternative text description for this image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1784160000&v=beta&t=Xh8jRVMBmdJiKE8tSiL70SOHJCJmbbMxrg_S14j_rjA"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. As adults, it can be challenging to acknowledge that someone else may excel beyond us. This often leads to a tendency to step back and observe or even critique from the sidelines. Recognizing this instinct is the first step toward understanding and overcoming it.\nTrue strength comes from committing to your own journey of growth, without being distracted by gossip or the opinions of others. Stay authentic, focus on your path, and persist with determination until you achieve your goals. One day, someone may pause and say, “I finally understand them now.”",
+      "activity": {
+        "numLikes": 1,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "INTEREST",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-06-24T12:03:28.810Z",
       "activityId": "urn:li:activity:7475518961342767104",
       "shareUrn": "urn:li:share:7475518958230519811",
@@ -181,13 +229,13 @@
       },
       "commentary": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you 👇 \n\n🔹Youtube videos:\n1. How to Master ML System Design\n→ https://lnkd.in/d89ywdkp\n→ Step by step guide (went through it - its good)\n\n2. Stanford MLSys Seminars (playlist)\n→ https://lnkd.in/gP3UDqwn \n→ How Netflix/Uber actually scale\n\n🔹Interview examples:\n1. Spotify ML Question - Design a Recommendation System \n→ https://lnkd.in/dr87ADq8\n\n2. Instagram ML Question - Design a Ranking Model \n→ https://lnkd.in/dqMxqgNc\n\n🔹 Github Repo:\n1. System Design Primer \n→ https://lnkd.in/gmAg4nBb \n→ Master the patterns that matter\n\n🔹 Book recommendations:\n1. Designing ML Systems: https://amzn.to/41V1n9t\n2. AI Engineering: https://amzn.to/43Fa1u8\n3. ML System Design Interview: https://amzn.to/3YGed9n\n\nHope it is useful! \n \n--\n♻️ Repost to help other engineers 💚 \n➕ Join 48.000+ serious AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 431,
+        "numLikes": 432,
         "numComments": 22,
-        "numShares": 63,
+        "numShares": 64,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 403
+            "count": 404
           },
           {
             "type": "EMPATHY",
@@ -412,7 +460,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1783076400&v=beta&t=BAMsQ0_YWJI3rX_anmLV4AoYqnbiwEKOhLdxzWcEypc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1783108800&v=beta&t=YqyixvCXM0SyI-gEDnoox-l_JpkfLV1kA-CyXVWn3TQ"
         }
       },
       "actor": {
@@ -440,7 +488,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1783076400&v=beta&t=mCfKb7MyOcEqHzWwBxZScW6ayZTYhZ3dUqj-EGc3Qv4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZxOVWTgHwAo-/0/1770840745463?e=1783108800&v=beta&t=uoPZVRn9SxxXLxpgzITX9xTidHg66PJiz8ha3Qgktio"
         }
       },
       "actor": {
@@ -791,7 +839,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1783076400&v=beta&t=2rLNimDFksfij76tsgRP6hpuW5beZwClVRrGZnhBOFI"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1783108800&v=beta&t=r53U9ydXP07-Yh251_JNykppTKsnzJPjws39AN_te8E"
         }
       },
       "actor": {
@@ -819,7 +867,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1783076400&v=beta&t=BHoZIdqS7CZ9x-1ARenCNvW89ZGlHj7TQGxTUilf7Zw"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1783108800&v=beta&t=9MKk3b5pZLrEmHl06wzXZxj1QxGUL0M2lJdcIK1FA0Q"
         }
       },
       "actor": {
@@ -835,50 +883,7 @@
         "numShares": 0,
         "reactionTypeCounts": []
       }
-    },
-    {
-      "createdAt": "2026-02-27T17:24:19.346Z",
-      "activityId": "urn:li:activity:7433200323667763200",
-      "shareUrn": "urn:li:ugcPost:7433200322724012032",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_pinebookpro-lenovothinkpade15-macminim4pro-activity-7433200323667763200-sP7a?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEOoJqJJBRaWA",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEOoJqJJBRaWA/feedshare-shrink_1280/B4DZygIS2aHEAc-/0/1772213057693?e=1784160000&v=beta&t=YdvH-yDg4_L9LqncaAzyP6Xr03A3WJ7THQeilEClbno"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGQEe2aLpdx-g",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGQEe2aLpdx-g/feedshare-shrink_160/B4DZygIS12JkAs-/0/1772213057602?e=1784160000&v=beta&t=vu6jlxhSn4DKdCcc7bseegs2L62A_-YWgg6dHJ3OStY"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHP_UKj5mZY0w",
-            "accessibilityText": "No alternative text description for this image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHP_UKj5mZY0w/feedshare-shrink_160/B4DZygIS1qJ4As-/0/1772213057865?e=1784160000&v=beta&t=O__GpzvLfXkLtEN6kmmV94LObn1u65G4DCJ7fkzXk0U"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "From the dust on the laptops, you can tell which one gets the most love.\n\nThe first one? My #PinebookPro. Last opened nearly half a year ago. The angry emojis? That’s from when I helped my daughter review math exam questions — let’s just say she wasn’t impressed. 🙃  \nTruth is, without solid app support and ecosystem maturity, it’s been gathering dust more than doing real work. Now I've installed Kali on it — it's almost the best Linux OS for this device.\n\nThe second: a #LenovoThinkpadE15 Gen 3 running Windows 11. I open it maybe once a month — mostly to test a project on another platform or upload something to Google Drive. It does its job, but it’s not my go-to. \n\nAnd then there’s the third: my #MacminiM4Pro — 64GB RAM, 2TB SSD. Running 24/7 as my #homelab. No dust. No breaks. This is the one I actually live on.\n\nSo — what about you?  \nWhich machine at home do you actually *use most*, and why?  \nLet’s swap setups and stories.\n\nHappy weekend, everyone!\n\n#MacMini #M4Pro #PinebookPro #HomeLab #AppleSilicon #LinuxEcosystem #DevSetup #LenovoE15 #ARMComputing #HomeOffice",
-      "activity": {
-        "numLikes": 4,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 4
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0MzMyMDAzMjM2Njc3NjMyMDAtMTc3MjIxMzA1OTMyNg==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NDAwODE3NTUyMjQ2MDA1NzYtMTc3Mzg1MzcyMDQ2Mw==:20"
 }

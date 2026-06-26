@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-06-24T19:43:45.079Z"
+    "last_sync": "2026-06-26T19:44:41.808Z"
   },
   "extraction": {
-    "date": "2026-06-24T19:43:45.079Z",
+    "date": "2026-06-26T19:44:41.808Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 205,
-    "new_posts_this_sync": 2,
-    "images_downloaded": 2
+    "total_posts_found": 206,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -3907,6 +3907,25 @@
         "shares": 0
       },
       "posted_at": "2026-06-23T15:12:12.349Z"
+    },
+    {
+      "id": "linkedin-1782503081637-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. A...",
+      "content": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. As adults, it can be challenging to acknowledge that someone else may excel beyond us. This often leads to a tendency to step back and observe or even critique from the sidelines. Recognizing this instinct is the first step toward understanding and overcoming it.\nTrue strength comes from committing to your own journey of growth, without being distracted by gossip or the opinions of others. Stay authentic, focus on your path, and persist with determination until you achieve your goals. One day, someone may pause and say, “I finally understand them now.”",
+      "link": "https://www.linkedin.com/posts/harvad_embrace-the-sunshine-and-the-energy-of-summer-activity-7476228250072059905-wn5h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1784160000&v=beta&t=j1PHuQbpQvp2aeGEW4G7P5JFh11uSziHjI3O3tJXZbg",
+      "local_image": "/images/linkedin/linkedin-1782503081637-0-cc117318f01618393d9e89feab5d6d21.jpg",
+      "extracted_at": "2026-06-26T19:44:41.635Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-06-26T11:01:56.421Z"
     }
   ]
 }
