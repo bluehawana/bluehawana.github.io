@@ -70,13 +70,13 @@
       },
       "commentary": "As we embark on our journey under #Hackday2026, we start as strangers, having just met in the meeting room this Monday. While no one knows if we are destined to win, I hold that belief firmly. When team members approached me one by one to join my team, my response was simple: yes, why not.\n\nKey aspects to consider include:\n1. As the team leader, ambition to win is crucial.\n2. Fostering collaboration among team members and earning their trust in a short time is essential.\n\nI recognize that no one expects our team to win except for me. Yet, they trust and support me to the best of their abilities. This gives us the opportunity to validate our proposal in the business world. I am dedicated to ensuring they leave with something meaningful to share, rather than disappointment.\n\nWe all need a champion's heart, as this experience is truly unforgettable. With this mindset, we can challenge ourselves to step out of our comfort zones and dare to do something different, honoring ourselves and our team members as well. That is the addiction of victories; once you taste it, you will never forget it.\n\nA big applause to all of you! Mahnoor Ali Cheema, Sara Asghari, Chirag Ashiyani, Mattias Jakobsson, Roman Dolanski",
       "activity": {
-        "numLikes": 21,
+        "numLikes": 22,
         "numComments": 0,
         "numShares": 1,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 18
+            "count": 19
           },
           {
             "type": "PRAISE",
@@ -229,13 +229,13 @@
       },
       "commentary": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you 👇 \n\n🔹Youtube videos:\n1. How to Master ML System Design\n→ https://lnkd.in/d89ywdkp\n→ Step by step guide (went through it - its good)\n\n2. Stanford MLSys Seminars (playlist)\n→ https://lnkd.in/gP3UDqwn \n→ How Netflix/Uber actually scale\n\n🔹Interview examples:\n1. Spotify ML Question - Design a Recommendation System \n→ https://lnkd.in/dr87ADq8\n\n2. Instagram ML Question - Design a Ranking Model \n→ https://lnkd.in/dqMxqgNc\n\n🔹 Github Repo:\n1. System Design Primer \n→ https://lnkd.in/gmAg4nBb \n→ Master the patterns that matter\n\n🔹 Book recommendations:\n1. Designing ML Systems: https://amzn.to/41V1n9t\n2. AI Engineering: https://amzn.to/43Fa1u8\n3. ML System Design Interview: https://amzn.to/3YGed9n\n\nHope it is useful! \n \n--\n♻️ Repost to help other engineers 💚 \n➕ Join 48.000+ serious AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 434,
+        "numLikes": 441,
         "numComments": 22,
         "numShares": 64,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 406
+            "count": 413
           },
           {
             "type": "EMPATHY",
@@ -278,13 +278,13 @@
       },
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 1100,
+        "numLikes": 1106,
         "numComments": 48,
-        "numShares": 188,
+        "numShares": 189,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 1016
+            "count": 1022
           },
           {
             "type": "INTEREST",
@@ -460,7 +460,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1783713600&v=beta&t=c4s5NDYV3iMRSTaJ8HnYvPSAX6NP9NaZtf9YiXW0Ri4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1783947600&v=beta&t=q0BdnuoIKWXFyTxzL7l4EziMntvTBYARexNlh8r4yQQ"
         }
       },
       "actor": {
@@ -488,7 +488,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1783713600&v=beta&t=bb-TglLbOkkMt0bmFVaSeIEQoLzp9aYOyBkoUlKFBeM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1783947600&v=beta&t=TTsO2Ad8TDrqFyesLMgVTLPlGPTfpy2q5hswJK2eEGw"
         }
       },
       "actor": {
@@ -839,7 +839,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1783713600&v=beta&t=vWVW65I_1Gf1xJa5-O_8SzukcJ-8fkkliXx_r6MahkA"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1783947600&v=beta&t=CbpLyi9Gp7RXuguHikDBhLi_bPUyN79yhSGOmVKg5Pc"
         }
       },
       "actor": {
@@ -867,7 +867,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1783713600&v=beta&t=14v8crtToiZ7ZX8oP9mQr4rPNXLnLsrQkRyE3H_kzMI"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1783947600&v=beta&t=5laLISWyDtPlpoaeENd58rxWvkpkpO7pdV_90UvPIIA"
         }
       },
       "actor": {
