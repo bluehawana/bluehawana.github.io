@@ -37,10 +37,14 @@
       },
       "commentary": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. As adults, it can be challenging to acknowledge that someone else may excel beyond us. This often leads to a tendency to step back and observe or even critique from the sidelines. Recognizing this instinct is the first step toward understanding and overcoming it.\nTrue strength comes from committing to your own journey of growth, without being distracted by gossip or the opinions of others. Stay authentic, focus on your path, and persist with determination until you achieve your goals. One day, someone may pause and say, “I finally understand them now.”",
       "activity": {
-        "numLikes": 1,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
         "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          },
           {
             "type": "INTEREST",
             "count": 1
@@ -460,7 +464,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784232000&v=beta&t=--lABxdA8S03D1Govwz-ELuwq6lzQo-2wDygVoRaNq4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784289600&v=beta&t=RYjjWBKs5nmBglZCfDjsy6SDVPQ7J-b4_tE6V4xjDBU"
         }
       },
       "actor": {
@@ -488,7 +492,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784232000&v=beta&t=T5Yqyngn-gh7NPFptjYFj8DdjGdR1c-AW9JhVG0cI1Q"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784289600&v=beta&t=XNXR9n02JaPcIUFTDTjnxNaagFA8FkPMaHWl99FGCvU"
         }
       },
       "actor": {
@@ -839,7 +843,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1784232000&v=beta&t=wcOgS-cCsFslWeatQc_NsBxv13dBWSRtIEnYSCM0mBU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1784289600&v=beta&t=WzbEqollE45wZ1NbwJ5EpCqP6nCXkc39fY6FrRhgZMY"
         }
       },
       "actor": {
@@ -867,7 +871,7 @@
           "title": "Google Cloud Tech (@GoogleCloudTech) on X",
           "subtitle": "x.com",
           "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1784232000&v=beta&t=EmG6e2oRJZXDdDZO6riLVKdOs5MI311--nkrNFZAnXQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1784289600&v=beta&t=uGMejFWBIqUwAUXZwOeC_NxKDmxw1AO0_KWMitQ5b7s"
         }
       },
       "actor": {
