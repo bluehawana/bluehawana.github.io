@@ -1,6 +1,39 @@
 {
   "data": [
     {
+      "createdAt": "2026-07-10T20:00:15.938Z",
+      "activityId": "urn:li:activity:7481437154183659520",
+      "shareUrn": "urn:li:share:7481437153433042944",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_alex-smith-ninjamaths-on-x-activity-7481437154183659520-7uOw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "article": {
+          "urn": "urn:li:article:7982492070767995898",
+          "title": "Alex Smith (@ninja_maths) on X",
+          "subtitle": "x.com",
+          "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1784548800&v=beta&t=bEn54gXEwnVS2xHnLUlVLiqk4_06dFiOpdVohzC6AOo"
+        }
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Exploring the potential of knowledge graph RAG is truly fascinating. Imagine if all domains of knowledge could be structured in such a wonderful way, not just in mathematics and STEM, but across all majors in universities. \n\nConsider the possibility of having all wikis and RAGs within each company interconnected through a knowledge graph. This would create a beautiful framework for organizing knowledge, allowing us to master subjects step by step. \n\nFrom the perspective of each company, investing in such an innovative system would undoubtedly be worthwhile. This vision of a connected knowledge landscape is indeed amazing. \n\n#AlexSmith #NinjaMaths #KB #KnowledgeGraphRAG #LLM",
+      "activity": {
+        "numLikes": 1,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-06-26T11:01:56.421Z",
       "activityId": "urn:li:activity:7476228250072059905",
       "shareUrn": "urn:li:ugcPost:7476228249166065664",
@@ -283,7 +316,7 @@
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
         "numLikes": 1105,
-        "numComments": 48,
+        "numComments": 47,
         "numShares": 188,
         "reactionTypeCounts": [
           {
@@ -464,7 +497,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784318400&v=beta&t=_xsLHHvVl7S99TM6lX0KJK3dxmPytxG4ciWwgOZLsUw"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784548800&v=beta&t=2UiGua2riYwB5aPJp_wB_hnh6rq1CzebVjG75KCq1cg"
         }
       },
       "actor": {
@@ -492,13 +525,13 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784318400&v=beta&t=mbUlVVEY5543X520uA9IoJ0bmafnyPdiyE2D3E20snY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784548800&v=beta&t=cU-8MMZ-EjD_Eg9GK6z9ENN76-MoSm_0vZGc9WTWx3Y"
         }
       },
       "actor": {
         "actorId": "urn:li:company:112047995",
         "name": "Fair Transition",
-        "description": "869 followers"
+        "description": "870 followers"
       },
       "commentary": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in the queue assigned you, should the rules be allowed to change while you wait?\n\nLagrådet said no. The government's own inquiry said no. 379 engineers and researchers at companies including Spotify, Klarna, Volvo, Ericsson, and Nvidia said no in their formal remissvar.\n\nThe reform itself can move forward on June 6. That isn't what we're contesting. We're asking for one thing: that the roughly 100,000 applications already sitting at Migrationsverket be assessed under the rules that existed when they were filed.\n\nThat's what transitional provisions are for. Every Nordic country uses them. Sweden has used them before. The institutions Sweden built to advise on exactly this kind of question recommended them here too.\n\nfairtransitionsweden.com",
       "activity": {
@@ -843,7 +876,7 @@
           "title": "Andrej Karpathy (@karpathy) on X",
           "subtitle": "x.com",
           "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1784318400&v=beta&t=qwclEgHHgJulEcf4fp-jugYQkxYVMvCPBcaALwxzVYg"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1784548800&v=beta&t=cPkDzsB3xSweABE-RLgPGPMNyeChYvDBIlxCodZiKhc"
         }
       },
       "actor": {
@@ -859,35 +892,7 @@
         "numShares": 0,
         "reactionTypeCounts": []
       }
-    },
-    {
-      "createdAt": "2026-03-18T17:08:40.480Z",
-      "activityId": "urn:li:activity:7440081755224600576",
-      "shareUrn": "urn:li:share:7440081754507563008",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_google-cloud-tech-googlecloudtech-on-x-activity-7440081755224600576-hOqM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:7098383443279384829",
-          "title": "Google Cloud Tech (@GoogleCloudTech) on X",
-          "subtitle": "x.com",
-          "url": "https://x.com/googlecloudtech/status/2033953579824758855?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH-9o9ExozTnA/articleshare-shrink_480/B4EZ0B5wEUIQAw-/0/1773853409869?e=1784318400&v=beta&t=Wk_0eGqZ0AdyuGhwzsPoOhL9HDKoeBUJ2F1chObbtdY"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "5 Agent Skill from Google.",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NDAwODE3NTUyMjQ2MDA1NzYtMTc3Mzg1MzcyMDQ2Mw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NDYxMDIwMDk3MjE3OTA0NjQtMTc3NTI4OTA2MDk3Mw==:20"
 }
