@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-06-26T19:44:41.808Z"
+    "last_sync": "2026-07-13T11:18:48.552Z"
   },
   "extraction": {
-    "date": "2026-06-26T19:44:41.808Z",
+    "date": "2026-07-13T11:18:48.552Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 206,
+    "total_posts_found": 207,
     "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -3926,6 +3926,25 @@
         "shares": 0
       },
       "posted_at": "2026-06-26T11:01:56.421Z"
+    },
+    {
+      "id": "linkedin-1783941528534-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Exploring the potential of knowledge graph RAG is truly fascinating. Imagine if all domains of knowl...",
+      "content": "Exploring the potential of knowledge graph RAG is truly fascinating. Imagine if all domains of knowledge could be structured in such a wonderful way, not just in mathematics and STEM, but across all majors in universities. \n\nConsider the possibility of having all wikis and RAGs within each company interconnected through a knowledge graph. This would create a beautiful framework for organizing knowledge, allowing us to master subjects step by step. \n\nFrom the perspective of each company, investing in such an innovative system would undoubtedly be worthwhile. This vision of a connected knowledge landscape is indeed amazing. \n\n#AlexSmith #NinjaMaths #KB #KnowledgeGraphRAG #LLM",
+      "link": "https://www.linkedin.com/posts/harvad_alex-smith-ninjamaths-on-x-activity-7481437154183659520-7uOw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-07-13T11:18:48.533Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-07-10T20:00:15.938Z"
     }
   ]
 }
