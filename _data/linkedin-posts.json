@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-07-13T11:18:48.552Z"
+    "last_sync": "2026-07-14T10:03:41.139Z"
   },
   "extraction": {
-    "date": "2026-07-13T11:18:48.552Z",
+    "date": "2026-07-14T10:03:41.139Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 207,
+    "total_posts_found": 208,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -3945,6 +3945,25 @@
         "shares": 0
       },
       "posted_at": "2026-07-10T20:00:15.938Z"
+    },
+    {
+      "id": "linkedin-1784023421023-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "I just ran a 744-billion-parameter model on my MacBook. It technically worked. That's the whole poin...",
+      "content": "I just ran a 744-billion-parameter model on my MacBook. It technically worked. That's the whole point — and the whole problem. 🐦\n\nToday I tried colibrì by JustVugg — an open-source engine that does something that shouldn't be possible: running GLM-5.2 (744B MoE) on consumer hardware by streaming expert weights straight from the nvme. The whole engine is ~2,400 lines of dependency-free C, written and tested by one person on a 12-core laptop with 25 GB of RAM. Massive respect. 👏\n\n🔗 Project: https://lnkd.in/dP4yXdqg\n\nThe setup on my M5 Max (128GB):\n- ~370 GB int4 model on disk, only ~10 GB resident in RAM\n- 21,504 experts stream from SSD on demand, with an LRU cache that learns your usage and literally gets faster the more you use it\n- Great Apple Silicon support: Metal backend with zero-copy unified memory, hand-written NEON kernels, speculative decoding\n\nAnd it answered. Correctly. A frontier-class 744B model, on a laptop.\n\nNow the reality check: my first \"hello\" took 75+ seconds. Cold decode reads ~11 GB from disk per token; even fully warmed up, this machine tops out around ~2 tokens/sec. So no — this isn't a daily-work tool. It's a beautiful proof of physics. For real work on a Mac, a 4-bit ~100B model that fits entirely in RAM is 20–30× faster.\n\nSmall contribution back: every macOS user hits a \"Too many open files\" crash on first launch (the engine opens 144+ model shards; macOS defaults to 256 file descriptors). We fixed it and sent a PR upstream: https://lnkd.in/dqP7BeuV\n\nWant to try it yourself? You need ~400 GB of free NVMe/SSD space and patience:\n- ⚙️ Engine: https://lnkd.in/dP4yXdqg (cd c && ./setup.sh, on a Mac add make glm METAL=1)\n- 🤗 Model (pre-converted int4, ~370 GB — use this one, it has the int8 MTP heads speculative decoding needs): https://lnkd.in/dzhi9dhv\n\nScreenshot: A 744B model saying hello on my MacBook. Worth the 75-second wait, even if it crashed on the second prompt. Theoretical working state, but not quite practical yet. Can't wait for a project that makes running GLM 5.2 truly viable on a MacBook Pro M5 Max! 😄\n\n#LLM #AppleSilicon #OpenSource #GLM #LocalAI #MachineLearning",
+      "link": "https://www.linkedin.com/posts/harvad_llm-applesilicon-opensource-activity-7482546597378080768-Zbl3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1785369600&v=beta&t=c8CH5jSOl7GeR8BuGIXnx-98k0tfar14curlLf5tFHI",
+      "local_image": "/images/linkedin/linkedin-1784023421023-0-15642926d27f0b0543c85bcb25a78137.jpg",
+      "extracted_at": "2026-07-14T10:03:41.022Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 2,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-07-13T21:28:47.808Z"
     }
   ]
 }

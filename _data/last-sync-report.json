@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-07-13T11:18:48.559Z",
+  "sync_timestamp": "2026-07-14T10:03:41.146Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 207,
+  "images_downloaded": 1,
+  "total_posts_in_system": 208,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-07-13T11:48:48.559Z",
+  "next_sync_recommended": "2026-07-14T10:33:41.146Z",
   "new_posts": [
     {
-      "title": "Exploring the potential of knowledge graph RAG is truly fascinating. Imagine if all domains of knowl...",
-      "link": "https://www.linkedin.com/posts/harvad_alex-smith-ninjamaths-on-x-activity-7481437154183659520-7uOw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "I just ran a 744-billion-parameter model on my MacBook. It technically worked. That's the whole poin...",
+      "link": "https://www.linkedin.com/posts/harvad_llm-applesilicon-opensource-activity-7482546597378080768-Zbl3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
-        "likes": 1,
+        "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-07-13T11:18:48.533Z"
+      "sync_date": "2026-07-14T10:03:41.022Z"
     }
   ]
 }
