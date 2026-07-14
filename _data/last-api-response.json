@@ -1,6 +1,43 @@
 {
   "data": [
     {
+      "createdAt": "2026-07-13T21:28:47.808Z",
+      "activityId": "urn:li:activity:7482546597378080768",
+      "shareUrn": "urn:li:share:7482546595754999808",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_llm-applesilicon-opensource-activity-7482546597378080768-Zbl3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4D22AQG941xdOiaPBQ",
+            "accessibilityText": "text",
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1785369600&v=beta&t=c8CH5jSOl7GeR8BuGIXnx-98k0tfar14curlLf5tFHI"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "I just ran a 744-billion-parameter model on my MacBook. It technically worked. That's the whole point — and the whole problem. 🐦\n\nToday I tried colibrì by JustVugg — an open-source engine that does something that shouldn't be possible: running GLM-5.2 (744B MoE) on consumer hardware by streaming expert weights straight from the nvme. The whole engine is ~2,400 lines of dependency-free C, written and tested by one person on a 12-core laptop with 25 GB of RAM. Massive respect. 👏\n\n🔗 Project: https://lnkd.in/dP4yXdqg\n\nThe setup on my M5 Max (128GB):\n- ~370 GB int4 model on disk, only ~10 GB resident in RAM\n- 21,504 experts stream from SSD on demand, with an LRU cache that learns your usage and literally gets faster the more you use it\n- Great Apple Silicon support: Metal backend with zero-copy unified memory, hand-written NEON kernels, speculative decoding\n\nAnd it answered. Correctly. A frontier-class 744B model, on a laptop.\n\nNow the reality check: my first \"hello\" took 75+ seconds. Cold decode reads ~11 GB from disk per token; even fully warmed up, this machine tops out around ~2 tokens/sec. So no — this isn't a daily-work tool. It's a beautiful proof of physics. For real work on a Mac, a 4-bit ~100B model that fits entirely in RAM is 20–30× faster.\n\nSmall contribution back: every macOS user hits a \"Too many open files\" crash on first launch (the engine opens 144+ model shards; macOS defaults to 256 file descriptors). We fixed it and sent a PR upstream: https://lnkd.in/dqP7BeuV\n\nWant to try it yourself? You need ~400 GB of free NVMe/SSD space and patience:\n- ⚙️ Engine: https://lnkd.in/dP4yXdqg (cd c && ./setup.sh, on a Mac add make glm METAL=1)\n- 🤗 Model (pre-converted int4, ~370 GB — use this one, it has the int8 MTP heads speculative decoding needs): https://lnkd.in/dzhi9dhv\n\nScreenshot: A 744B model saying hello on my MacBook. Worth the 75-second wait, even if it crashed on the second prompt. Theoretical working state, but not quite practical yet. Can't wait for a project that makes running GLM 5.2 truly viable on a MacBook Pro M5 Max! 😄\n\n#LLM #AppleSilicon #OpenSource #GLM #LocalAI #MachineLearning",
+      "activity": {
+        "numLikes": 2,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "PRAISE",
+            "count": 1
+          },
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-07-10T20:00:15.938Z",
       "activityId": "urn:li:activity:7481437154183659520",
       "shareUrn": "urn:li:share:7481437153433042944",
@@ -11,7 +48,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1784577600&v=beta&t=Vq49GYzBIXrTXj2KHiCOt5MEFiA-fi9ia69MJGA2iJU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1784631600&v=beta&t=vnalsg3MCDjsJSTMsY9udyyUpXx_75nr6lYJ8wOsN_c"
         }
       },
       "actor": {
@@ -42,22 +79,22 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQEAz61UF_-1VA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1785369600&v=beta&t=R4sznYOENSKW2eHGOraIF6vwAUf_doiBwDB6eieMmMA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQHADbZpGpHTFQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1785369600&v=beta&t=p1Urah5jHA208t_KglU_tP29gA9qXwo273-3WmLqSes"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQExuRHdswz0lw",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1785369600&v=beta&t=s8RHqOU_i-xNeuf36GhnoLdq3J3x8l6KuCAMO1pV6t4"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFiFGQId9DdJQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1785369600&v=beta&t=jH2Eig1dhzegz_9wCkmxEOlDNOQ4xCoLFLHl3O4N0RM"
           }
         ]
@@ -94,7 +131,7 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFrBX5uDDr8Rg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1785369600&v=beta&t=dNVNRKnu0FNaX6vly9lJNh8Tg77eWQNTDvkBRldCDy0"
           }
         ]
@@ -135,22 +172,22 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEhaQ-P1d987A",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1785369600&v=beta&t=djo7lZKYobGxp8DmCq5mf6wD5Isap4NORNtCG0ptarQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQElF8FVdjob2Q",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1785369600&v=beta&t=w_ydwwcal1MHX6C3QV8nI6ktURF9NE0KSYZjmtbOwRE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEYCUQqY53EiQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1785369600&v=beta&t=1XX6XVqjT5i9R0RkYOtIz3A1Zyu2itjTH7d7MiwdCxg"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHq5X1l2NW43Q",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1785369600&v=beta&t=IoS7fDG00GYuRQiHPPI7IKtcQcYQMLVxYOgrZ3p-EPI"
           }
         ]
@@ -187,12 +224,12 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFeqs_9Qnif9A",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1785369600&v=beta&t=45lPGKEIpx_KRzHeSo5o-KyTXexKDWLB6Q3Q3fphQn8"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHKo1M7N4E92g",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1785369600&v=beta&t=-AEsG6ahKx3E5tsBAzt3b0CG650YByUEYKvWEfZiRNo"
           }
         ]
@@ -220,7 +257,7 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEZoyI8ZLY12g",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1785369600&v=beta&t=n7Qyb-obK4dFQH7fOjxvIrtTgJ4d3fiKsybMqMp0n98"
           }
         ]
@@ -316,7 +353,7 @@
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
         "numLikes": 1105,
-        "numComments": 47,
+        "numComments": 46,
         "numShares": 188,
         "reactionTypeCounts": [
           {
@@ -351,17 +388,17 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEdQ7NC0KIIzw",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1785369600&v=beta&t=TdW7XK4BMRkfiqoLJhFoWO2cuAFcER1I6DpAeay75zw"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHqpKe7jYbdsQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1785369600&v=beta&t=6JAq1OdOKcHOXiwA67bNzkUSxCHvhGVbzdoRft3b2FE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEzejq5RakT4w",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1785369600&v=beta&t=7aLh5aUEHglGZtK04UtonDRukBSinJ61rXqHHoi9fVQ"
           }
         ]
@@ -394,32 +431,32 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQH8AVsLtbbfag",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1785369600&v=beta&t=lqeCt2Vng9CxKWyW7b7JdWy5-jG1VFAx4_rSMmLpIbQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQG-KOq-IrKhHA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1785369600&v=beta&t=URX9Q_aUlOJpdpynPRz_IPnaG7pwhCo5_JhZVTzhX7o"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQETzXGr_i4p8A",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1785369600&v=beta&t=0wzBduVCg8fJpRRMt2Mm2BSrmSpQUlBexgOTDkoU6g0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQGQZlS6lz69vQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1785369600&v=beta&t=BSm3JTmZzclum_lyvCO5hwQ_Aq3zCZCfKYEmkESL5nk"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQF62B864VRU5Q",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1785369600&v=beta&t=QP2pehr4IQzddl096KAZBRInt5RssbwZ0NNuWh7jU0g"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHyGrGi8UQ3Ew",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1785369600&v=beta&t=LSBvdEAaT1nbQp2HQ8ixfkiKdRBNtIEdoGQKhrhch9k"
           }
         ]
@@ -452,17 +489,17 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFFumLDVQPTDg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1785369600&v=beta&t=etuQeA3uGMibr3P09xaSdptdDfbCkoJFPI9U_9HBEEo"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFQ341n9udACA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFQ341n9udACA/feedshare-shrink_480/B4DZ4iaIwRJUAo-/0/1778693740481?e=1785369600&v=beta&t=sIVedz669SREBN3Jb7n60DniKq3Ik0vn3m7cJwpYpR8"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF2HuL-337I3g",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2HuL-337I3g/feedshare-shrink_20/B4DZ4iaJM9I8AI-/0/1778693742549?e=1785369600&v=beta&t=4jO4W4fU4oZS_fORGKaiYWISqsY2NnF5qecedG--9_Q"
           }
         ]
@@ -497,7 +534,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784577600&v=beta&t=OgkvnCoP2reYTHDPhnxOGVu7TsC0g7MARtKrJD_oI3M"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1784631600&v=beta&t=ydkYwO0I-0OhNQma2uUKGvoG4cPI_SYDrmqWpoKpd7c"
         }
       },
       "actor": {
@@ -525,7 +562,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784577600&v=beta&t=APWQ-VzfmPqSgKjYMuHhj7p9dMrjwtOHFibo7KM8tro"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1784631600&v=beta&t=f2FVTrPpthodoMfNvelQMRCmafT_-kjHjdzlBqKVo40"
         }
       },
       "actor": {
@@ -563,52 +600,52 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGrdXyjQH5r7w",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGrdXyjQH5r7w/feedshare-shrink_1280/B4DZ34nz1IJgAM-/0/1777992681655?e=1785369600&v=beta&t=nCy6mxnAUA8WKPd16qcl1RxRTS2gwsGxFSAaXS7_-Xc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQExqUinvYR57Q",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQExqUinvYR57Q/feedshare-shrink_160/B4DZ34nzreI0As-/0/1777992680741?e=1785369600&v=beta&t=icLUitG_9HoGYceXZIqBqAbN6z_jtA6sD986f-QXwRE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFTY_D3mER0bg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFTY_D3mER0bg/feedshare-shrink_20/B4DZ34nzzPHoAM-/0/1777992681303?e=1785369600&v=beta&t=MXQEsnIUtAur1NRqaQGzqtyPqpVj826DuLn8Jy84_oo"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGPnsFrM7n7fQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPnsFrM7n7fQ/feedshare-image-high-res/B4DZ34n025HgAY-/0/1777992685746?e=1785369600&v=beta&t=LvO4s8JESgZvd12udX9WgxCUwNBOhedCvHhOd7MERbU"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEY7Co_qXuJAQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEY7Co_qXuJAQ/feedshare-shrink_800/B4DZ34n0VdHkAc-/0/1777992683620?e=1785369600&v=beta&t=C3Ey_JzEuS--kUMVMF1DP5wTxlshKvrlhsQoPBJFghg"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEsThfEg2JLLQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEsThfEg2JLLQ/feedshare-shrink_800/B4DZ34nz_QJkAg-/0/1777992682078?e=1785369600&v=beta&t=DdSRXyf8tQhCd63KaiiUoMEfn4h11zLltawOE7PoVfU"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQH7Ix5f8pQBOQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQH7Ix5f8pQBOQ/feedshare-shrink_160/B4DZ34nzveHoAo-/0/1777992681056?e=1785369600&v=beta&t=jvG9eZD-XlEyiPlkYU0wNVwx1v7Ip5RE1bExoS8JkoE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGNS7-PGRJTWA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGNS7-PGRJTWA/feedshare-shrink_800/B4DZ34n0uVGcAc-/0/1777992685452?e=1785369600&v=beta&t=eT0DWNQ4hNlfX0kB9wsQoT5pA1zryPwTTHg595YcMtE"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFw74a1BJpvWg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQFw74a1BJpvWg/feedshare-shrink_480/B4DZ34nzwyHIAk-/0/1777992681807?e=1785369600&v=beta&t=jZsLEHFy3OIuZtW2k8iaT6OibqnbW2sHneAkOdqTsy4"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGLyKVbwD2Mrw",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLyKVbwD2Mrw/feedshare-shrink_480/B4DZ34nz3lHgA0-/0/1777992682619?e=1785369600&v=beta&t=WmNnHkTx1o1gHsLT2kxa--XK6aQ8YSvAUpt8bmsH2eY"
           }
         ]
@@ -641,7 +678,7 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEWX4q_Ees3bQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEWX4q_Ees3bQ/feedshare-shrink_160/B4DZ3uXmPhI0As-/0/1777820656865?e=1785369600&v=beta&t=LTsO3skl-brrzjX8fThdwIAv_m02CaQUkRynsIxLLBI"
           }
         ]
@@ -714,52 +751,52 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHtuszia2z72Q",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_20/B4DZ3J_vMEJwAI-/0/1777210425079?e=1785369600&v=beta&t=SKZAMbc5t891EaYTpW-jNeAYZV_6cOCT_ukqIZGn6NY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGeQAtQyPvSgQ",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGeQAtQyPvSgQ/feedshare-shrink_800/B4DZ3J_vMFHsAc-/0/1777210424893?e=1785369600&v=beta&t=-2Ywad5tJ81kp_RCJ3OIUoNE3RCrjCwuGRnM6UVGfUY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEeXuEqXmCAnA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEeXuEqXmCAnA/feedshare-shrink_800/B4DZ3J_vF2I4Ac-/0/1777210421861?e=1785369600&v=beta&t=w8Qs7BVjrKv9dqKdB9TXyl-3WYpAQzvcLkLZXm2VOto"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEuFKpPLuNfvA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuFKpPLuNfvA/feedshare-shrink_480/B4DZ3J_vHxK0Ak-/0/1777210422034?e=1785369600&v=beta&t=RBKKmN5TOD5zb-WPqMNToWBf1UTSoeSlRbjDQDY1BkY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEznOtKIfe59g",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQEznOtKIfe59g/feedshare-shrink_800/B4DZ3J_vIGG4Ac-/0/1777210422219?e=1785369600&v=beta&t=BmMzjW_v8Zvs1lQrzod3L7jWi7XaLO6aGRuSBv6BG4Y"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQE8siW6ZG4FLg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQE8siW6ZG4FLg/feedshare-shrink_800/B4DZ3J_vF0K0Ac-/0/1777210421926?e=1785369600&v=beta&t=t9ZlJ0jocC60JdV-Z71wmd0h7Ox-mrOFbSb4Zcy0EvQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQH3ufh-ADV_ag",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQH3ufh-ADV_ag/feedshare-shrink_800/B4DZ3J_vIjJsAc-/0/1777210422193?e=1785369600&v=beta&t=ZrG-TgnI0ck7KLU5NS-QWW8mq6RxZQCI9NEoEfZA0kY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQGRGZk2wojdnA",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRGZk2wojdnA/feedshare-shrink_160/B4DZ3J_vIMGcAs-/0/1777210422066?e=1785369600&v=beta&t=zVtuiBWAgATsTKPn0e_UTDEAbo_k49gdVr7nBKEx00I"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHsow2xj7WS8A",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQHsow2xj7WS8A/feedshare-shrink_1280/B4DZ3J_vHlH8AM-/0/1777210421987?e=1785369600&v=beta&t=Un0AcYZnZM-G93cx8GfQED8hlAu9tHRh9DACCOtOVUU"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHCbQbyJ7NoGg",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4D22AQHCbQbyJ7NoGg/feedshare-shrink_20/B4DZ3J_vH.JAAI-/0/1777210422096?e=1785369600&v=beta&t=wsA3dzzwQWuJCCaDEgddPFpdE9eAqcCXIewlgkV2_tk"
           }
         ]
@@ -792,7 +829,7 @@
         "images": [
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQEKdmJRTGjxFw",
-            "accessibilityText": "No alternative text description for this image",
+            "accessibilityText": "View image",
             "url": "https://media.licdn.com/dms/image/v2/D4E22AQEKdmJRTGjxFw/feedshare-shrink_20/B4EZ2aEdthHMAI-/0/1776406355316?e=1785369600&v=beta&t=U2QxMDEFjjwGSvY0rTxSvJRUfTegq30xhLMPQLTa5ls"
           }
         ]
@@ -864,35 +901,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-04-04T07:51:01.003Z",
-      "activityId": "urn:li:activity:7446102009721790464",
-      "shareUrn": "urn:li:share:7446102009054728192",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_andrej-karpathy-karpathy-on-x-activity-7446102009721790464-ziM7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:6990043472378005643",
-          "title": "Andrej Karpathy (@karpathy) on X",
-          "subtitle": "x.com",
-          "url": "https://x.com/karpathy/status/2039805659525644595?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQEcPj2pneOqFA/articleshare-shrink_480/B4DZ1XeNaIKoAo-/0/1775289031235?e=1784577600&v=beta&t=wPRTqNJxwmodQmbWQoVkUxBakRhjMwN6aki5CKDP-DE"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "How we should build our own knowledge base with LLM.",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NDYxMDIwMDk3MjE3OTA0NjQtMTc3NTI4OTA2MDk3Mw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NDc2Mzk4NzI4OTY1ODU3MjktMTc3NTY1NTcxNjEzNg==:20"
 }
