@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-07-14T19:16:40.435Z"
+    "last_sync": "2026-07-23T10:28:31.742Z"
   },
   "extraction": {
-    "date": "2026-07-14T19:16:40.435Z",
+    "date": "2026-07-23T10:28:31.742Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 209,
+    "total_posts_found": 210,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -3983,6 +3983,25 @@
         "shares": 0
       },
       "posted_at": "2026-07-14T16:23:11.973Z"
+    },
+    {
+      "id": "linkedin-1784802511693-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Caught a glimpse of the 6‑seat #TeslaModelYL in a Beijing garage today — a configuration that’s stil...",
+      "content": "Caught a glimpse of the 6‑seat #TeslaModelYL in a Beijing garage today — a configuration that’s still unavailable in the EU. The setup is interesting: Champagne Gold exterior, 255/275 staggered tyres, six independent seats, and the 84/87 kWh battery pack that aligns with recent test data.Given the Nürburgring spy photos, the development cycle looks mature enough for a September–October appearance. Always exciting to see engineering progress up close before it reaches nordic markets.\n#Beijing #TeslaModelYL #EV #6Seats",
+      "link": "https://www.linkedin.com/posts/harvad_teslamodelyl-beijing-teslamodelyl-activity-7485850892483735552-iTLZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQFPM1MWYlL9vQ/feedshare-shrink_480/B4EZ.MVt3gKIAk-/0/1784765931361?e=1786579200&v=beta&t=nom_Pfz_bIrDz3SZDSQuMbwDg1PSmqxTBhBjab667Yo",
+      "local_image": "/images/linkedin/linkedin-1784802511693-0-48bca53245d1c34e4d162e3ef5226968.jpg",
+      "extracted_at": "2026-07-23T10:28:31.691Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-07-23T00:18:53.152Z"
     }
   ]
 }
