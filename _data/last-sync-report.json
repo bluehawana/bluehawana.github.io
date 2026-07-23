@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-07-14T19:16:40.442Z",
+  "sync_timestamp": "2026-07-23T10:28:31.749Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 209,
+  "images_downloaded": 1,
+  "total_posts_in_system": 210,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-07-14T19:46:40.442Z",
+  "next_sync_recommended": "2026-07-23T10:58:31.749Z",
   "new_posts": [
     {
-      "title": "New Year, New Project: No.8 — KB-Graph: A Self-Learning Math Island for My Daughter\n\nWhat if studyin...",
-      "link": "https://www.linkedin.com/posts/harvad_mathacademy-ai-llm-activity-7482832079177822208-dKxv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "Caught a glimpse of the 6‑seat #TeslaModelYL in a Beijing garage today — a configuration that’s stil...",
+      "link": "https://www.linkedin.com/posts/harvad_teslamodelyl-beijing-teslamodelyl-activity-7485850892483735552-iTLZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
         "likes": 0,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-07-14T19:16:40.414Z"
+      "sync_date": "2026-07-23T10:28:31.691Z"
     }
   ]
 }
