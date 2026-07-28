@@ -1,6 +1,30 @@
 {
   "data": [
     {
+      "createdAt": "2026-07-28T04:40:29.277Z",
+      "activityId": "urn:li:activity:7487728666131587072",
+      "shareUrn": "urn:li:share:7487728665275912194",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_releasing-the-model-weights-and-technical-activity-7487728666131587072-PCzJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Kimi (Moonshot AI) has just released #K3, and while the launch was quiet, the specifications are impressive enough to capture attention. Featuring a 2.8T MoE model with open weights, native visual understanding, and a remarkable 1M-token context window, K3 stands out for its size and efficiency. With innovations like Kimi Delta Attention and Attention Residual layers, this model is not only large but also sharp and elegant.\n\nInterestingly, some segments of the industry still seem to operate under the notion that only two AI companies exist, treating everything else as unexpected developments. Meanwhile, the open-source community continues to deliver upgrades at a rapid pace.\n\nIt may be time for the European Commission to broaden its perspective and seek collaboration before we find ourselves in another situation reminiscent of the Greenland acquisition discussions. No petition for #Greenland is needed this time.\n\n#Opensource is advancing, and the real question is who will choose to join this movement. \n\n#Kimi #K3 #MoE #LLM #OpenSource #Innovation #FutureOfAI",
+      "activity": {
+        "numLikes": 3,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-07-23T00:18:53.152Z",
       "activityId": "urn:li:activity:7485850892483735552",
       "shareUrn": "urn:li:ugcPost:7485850891661725696",
@@ -109,7 +133,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1785787200&v=beta&t=flljW4MVJtIxMIJgqlyABgGWcN_2AaOdFAp8Y7kY14E"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1785841200&v=beta&t=bPX5X5ezHI5qA5J5Wp1-XMqgPgmf0epTDXxn4Zln1CM"
         }
       },
       "actor": {
@@ -595,7 +619,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1785787200&v=beta&t=GnWrRhRCXKp62aN0LoW4EZ5wg2S9wM1SdzPxCe1MLWg"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1785841200&v=beta&t=kGVyHS0X0mMEJEZ014YcG0fntvztgP790R19iL919zo"
         }
       },
       "actor": {
@@ -623,7 +647,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1785787200&v=beta&t=2mbpjMJuR0zQDsIqcaJZMh-IymoxJ-bqIsuYeT632NY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1785841200&v=beta&t=0aAOtFbesFP1zvV1yn8yq9_E6z3fI0B9XbGV1qmVJzc"
         }
       },
       "actor": {
@@ -802,85 +826,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-04-26T13:33:46.946Z",
-      "activityId": "urn:li:activity:7454160802581897216",
-      "shareUrn": "urn:li:ugcPost:7454160801432604672",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_starlink-connectivity-remotework-activity-7454160802581897216-NUgI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHtuszia2z72Q",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHtuszia2z72Q/feedshare-shrink_20/B4DZ3J_vMEJwAI-/0/1777210425079?e=1786579200&v=beta&t=95fqNng_8MN13D3p5CR3Q91_o8pJm0RhrhO0SlcoQ-s"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGeQAtQyPvSgQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGeQAtQyPvSgQ/feedshare-shrink_800/B4DZ3J_vMFHsAc-/0/1777210424893?e=1786579200&v=beta&t=pPGw-rNuARQezWOef6juHfB8uba-8PvHRRBbA9vWcIQ"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEeXuEqXmCAnA",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEeXuEqXmCAnA/feedshare-shrink_800/B4DZ3J_vF2I4Ac-/0/1777210421861?e=1786579200&v=beta&t=7f3i39tievIROgXESr6Hvf_DFD_37ZtGSXEhVIuU7KA"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEuFKpPLuNfvA",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEuFKpPLuNfvA/feedshare-shrink_480/B4DZ3J_vHxK0Ak-/0/1777210422034?e=1786579200&v=beta&t=-bQu-t5A4hatencpoZOPbqqqlfpVf6dH-55f1jrHb3Y"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEznOtKIfe59g",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEznOtKIfe59g/feedshare-shrink_800/B4DZ3J_vIGG4Ac-/0/1777210422219?e=1786579200&v=beta&t=5IJ_hqWBcGXm5ewCOXRji-NoUbOphRWTe4F0_NsVUAM"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQE8siW6ZG4FLg",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQE8siW6ZG4FLg/feedshare-shrink_800/B4DZ3J_vF0K0Ac-/0/1777210421926?e=1786579200&v=beta&t=KppKF-lFQs-Ip7EJfvA_9XDJ7SOgjL2PyMdErhjX7Ko"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQH3ufh-ADV_ag",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH3ufh-ADV_ag/feedshare-shrink_800/B4DZ3J_vIjJsAc-/0/1777210422193?e=1786579200&v=beta&t=oIlJk4nkQmntGeVmyK5rbyfMrOR07hzO1Eo0HLU_ATE"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGRGZk2wojdnA",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGRGZk2wojdnA/feedshare-shrink_160/B4DZ3J_vIMGcAs-/0/1777210422066?e=1786579200&v=beta&t=gVSN3VeIp3PDhHcmDPM9t-keMaxdYQEAdiVoF6fRTvo"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHsow2xj7WS8A",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHsow2xj7WS8A/feedshare-shrink_1280/B4DZ3J_vHlH8AM-/0/1777210421987?e=1786579200&v=beta&t=bJ7BNTp6caRV9Y0Clx_1Olh_QA9AKAue7-TgwPy7SLI"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHCbQbyJ7NoGg",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHCbQbyJ7NoGg/feedshare-shrink_20/B4DZ3J_vH.JAAI-/0/1777210422096?e=1786579200&v=beta&t=oraZRho826C-42OWVkCDP_BsTDJY_-b4UAPPgu_lT6Q"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Never waste a good excuse to play with new tech.\nThis weekend’s “productivity tool” (that absolutely does not improve my productivity): the Starlink Mini.\n\nMy quick at‑home measurements:\n\n• Link speed: 242 MB/s\n• Download: 105 MB/s\n• Upload: 23.4MB/s\n\n\nWhile these speeds won’t replace traditional Wi‑Fi or 5G, the real value lies elsewhere: reliable internet access in locations with zero cellular coverage. For anyone working in remote environments—field research, outdoor production, emergency response, or simply “work from anywhere”—this is a meaningful shift.\n\nI’m planning to test it in more challenging environments soon.\nIf someone has an RV（Husbil）to lend, I’m more than happy to take this experiment on the road.\n\nIf you’re curious about Starlink, use this link to start your journey and we could all get one month free of using\n👉 https://lnkd.in/dPtGuBpT\n\nAnd if you’re in Gothenburg, you’re welcome to stop by and see it in action.\n\n#Starlink #Connectivity #RemoteWork #TechLife #SatelliteInternet #WorkFromAnywhere #Gothenburg",
-      "activity": {
-        "numLikes": 5,
-        "numComments": 1,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 5
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NTQxNjA4MDI1ODE4OTcyMTYtMTc3NzIxMDQyNjkxNA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NTQ1NjI3MzQ5OTE0NTAxMTItMTc3NzMwNjI1NTA4NQ==:20"
 }
