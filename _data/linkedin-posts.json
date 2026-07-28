@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-07-23T10:28:31.742Z"
+    "last_sync": "2026-07-28T10:40:14.786Z"
   },
   "extraction": {
-    "date": "2026-07-23T10:28:31.742Z",
+    "date": "2026-07-28T10:40:14.786Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 210,
+    "total_posts_found": 211,
     "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -4002,6 +4002,25 @@
         "shares": 0
       },
       "posted_at": "2026-07-23T00:18:53.152Z"
+    },
+    {
+      "id": "linkedin-1785235214766-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Kimi (Moonshot AI) has just released #K3, and while the launch was quiet, the specifications are imp...",
+      "content": "Kimi (Moonshot AI) has just released #K3, and while the launch was quiet, the specifications are impressive enough to capture attention. Featuring a 2.8T MoE model with open weights, native visual understanding, and a remarkable 1M-token context window, K3 stands out for its size and efficiency. With innovations like Kimi Delta Attention and Attention Residual layers, this model is not only large but also sharp and elegant.\n\nInterestingly, some segments of the industry still seem to operate under the notion that only two AI companies exist, treating everything else as unexpected developments. Meanwhile, the open-source community continues to deliver upgrades at a rapid pace.\n\nIt may be time for the European Commission to broaden its perspective and seek collaboration before we find ourselves in another situation reminiscent of the Greenland acquisition discussions. No petition for #Greenland is needed this time.\n\n#Opensource is advancing, and the real question is who will choose to join this movement. \n\n#Kimi #K3 #MoE #LLM #OpenSource #Innovation #FutureOfAI",
+      "link": "https://www.linkedin.com/posts/harvad_releasing-the-model-weights-and-technical-activity-7487728666131587072-PCzJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-07-28T10:40:14.765Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-07-28T04:40:29.277Z"
     }
   ]
 }
