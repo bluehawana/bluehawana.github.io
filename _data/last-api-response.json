@@ -1,6 +1,48 @@
 {
   "data": [
     {
+      "createdAt": "2026-08-02T21:00:46.834Z",
+      "activityId": "urn:li:activity:7489787304174211072",
+      "shareUrn": "urn:li:ugcPost:7489787303050153984",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQE6UO2doeacRQ",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE6UO2doeacRQ/feedshare-shrink_160/B4EZ_ER2o4KcAk-/0/1785704445397?e=1787184000&v=beta&t=rbxi3oaF8olzqDFxqVBizcRQAMY2u19gVQk8oPtAV84"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFmOpSVVNPfrQ",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFmOpSVVNPfrQ/feedshare-shrink_1280/B4EZ_ER2KoHMAM-/0/1785704441701?e=1787184000&v=beta&t=yu9JvP0rqizkNvoQEKmRz0ANi4d6UK8O2hIWi2xqOuc"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n---\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n---\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n---\nWhat actually cost me the evening wasn’t the code\n→ Picked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\n→ Tuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\n→ Automation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n---\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
+      "activity": {
+        "numLikes": 2,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "EMPATHY",
+            "count": 1
+          },
+          {
+            "type": "INTEREST",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-07-28T04:40:29.277Z",
       "activityId": "urn:li:activity:7487728666131587072",
       "shareUrn": "urn:li:share:7487728665275912194",
@@ -133,7 +175,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1786132800&v=beta&t=-ktsakC7ZT1Zb9tTAJco3RZG3Cray8D6WNViId9bLF4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1786363200&v=beta&t=hTlwyyLGoSVoIIJclTlXRK9x5n5utavgtqxzY4Va8rQ"
         }
       },
       "actor": {
@@ -144,13 +186,13 @@
       },
       "commentary": "Exploring the potential of knowledge graph RAG is truly fascinating. Imagine if all domains of knowledge could be structured in such a wonderful way, not just in mathematics and STEM, but across all majors in universities. \n\nConsider the possibility of having all wikis and RAGs within each company interconnected through a knowledge graph. This would create a beautiful framework for organizing knowledge, allowing us to master subjects step by step. \n\nFrom the perspective of each company, investing in such an innovative system would undoubtedly be worthwhile. This vision of a connected knowledge landscape is indeed amazing. \n\n#AlexSmith #NinjaMaths #KB #KnowledgeGraphRAG #LLM",
       "activity": {
-        "numLikes": 1,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 1
+            "count": 2
           }
         ]
       }
@@ -619,7 +661,7 @@
           "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
           "subtitle": "youtube.com",
           "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1786132800&v=beta&t=q8HHGkQdKVQepKJ7haxkIshs-j-0Gyxl6aWkJuHnZQo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1786363200&v=beta&t=q93A6veehl1MCtcbpEcn2dOk7TvdXHLCDW2UQ7UN5_Q"
         }
       },
       "actor": {
@@ -647,7 +689,7 @@
           "title": "Fair Transition — Transition Clause for Swedish Citizenship",
           "subtitle": "fairtransitionsweden.com",
           "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1786132800&v=beta&t=SkDc_reQ6B0I7ARWdivjOwkpOlw_2cuIi198hXl4M4c"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1786363200&v=beta&t=IexfqYGycclnU7gsRCabrVIYtqnD6PF_0sS9I8qywvs"
         }
       },
       "actor": {
@@ -786,47 +828,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-04-27T16:10:55.100Z",
-      "activityId": "urn:li:activity:7454562734991450112",
-      "shareUrn": "urn:li:share:7454495175822782464",
-      "shareUrl": "https://www.linkedin.com/posts/patrick-henry-gallen-9827a3138_efter-%C3%B6ver-ett-%C3%A5rs-kamp-f%C3%B6rst-som-individ-activity-7454495176808554496-Ptao?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "actor": {
-        "actorId": "urn:li:member:563320754",
-        "actorUrn": "urn:li:fsd_profile:ACoAACGTl7IBbhMXXrKBf7G3WCyfGP10Nbxi5eM",
-        "name": "Patrick Henry Gallen",
-        "description": "Futures // Migration Justice // Europe for Everyone"
-      },
-      "commentary": "Efter över ett års kamp – först som individ och sedan som talesperson för Fair Transition – går Tidöregeringens proposition om skärpta krav för svenskt medborgarskap till omröstning i riksdagen på onsdag den 29 april. Att lagen kommer att röstas igenom är i princip helt säkert. Hur den kommer att se ut är det inte.\n\nTack vare tusentals engagerade och hårt arbetande människor runt om i landet finns fortfarande en möjlighet att påverka utfallet. Om bara ett fåtal ledamöter från Liberalerna väljer att stå upp för den svenska rättsstaten och en rättvis migrationspolitik tillsammans med oppositionen, kan övergångsbestämmelser säkras. Då skulle de nya reglerna endast gälla ansökningar som lämnas in efter den 6 juni.\n\nUtan sådana övergångsregler – som både regeringens egna utredare och Lagrådet har rekommenderat – riskerar 100 000 människor att få avslag på deras ansökningar. Människor som i många fall har väntat i över fyra år på besked från Migrationsverket (Swedish Migration Agency).\n\nSverige riskerar dessutom att bli det ENDA landet i Europa som inför skärpta medborgarskapskrav utan övergångsbestämmelser. Det underminerar rättsstaten, urholkar tilliten till våra institutioner och skadar vår förmåga att attrahera och behålla den internationella kompetens som vår ekonomi är beroende av.\n\nJag påverkas inte själv av de nya reglerna. Jag hade turen att bli svensk medborgare i oktober – den viktigaste händelsen i mitt liv. Men jag har inte glömt den sårbarhet, den förlamande ångest och den totala maktlöshet jag kände som icke-EU-medborgare varje dag innan dess. Och jag kommer aldrig att glömma den livsavgörande lättnad och trygghet som medborgarskapet innebar.\n\nNär jag fick mitt medborgarskap lovade jag mig själv att aldrig glömma – och att aldrig sluta kämpa för dem som är mest politiskt och juridiskt utsatta. Jag kommer alltid att använda de rättigheter och privilegier som det lilla röda passet ger för att verka för ett mer rättvist samhälle.\n\nOm man blir svensk medborgare innan den 6 juni ska inte vara en fråga om tur - och därför måste den nya lagen införas med rimliga övergångsbestämmelser.\n\nNu har våra politiker i riksdagen 48 timmar kvar att avgöra om de står upp för rättsstaten – och för ett Sverige byggt på tillit och öppenhet, snarare än rädsla, kortsiktighet och symbolpolitik.\n\nJag hoppas att de fattar rätt beslut.\nThe Local Europe Becky Waterton Emma Löfgren Cecilia Rönn Malin Danielsson Niels Paarup-Petersen",
-      "activity": {
-        "numLikes": 162,
-        "numComments": 11,
-        "numShares": 14,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 114
-          },
-          {
-            "type": "APPRECIATION",
-            "count": 30
-          },
-          {
-            "type": "PRAISE",
-            "count": 13
-          },
-          {
-            "type": "EMPATHY",
-            "count": 3
-          },
-          {
-            "type": "INTEREST",
-            "count": 2
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NTQ1NjI3MzQ5OTE0NTAxMTItMTc3NzMwNjI1NTA4NQ==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NTY3MjAyOTg4Mzk2MDUyNDgtMTc3NzgyMDY1ODM4Mg==:20"
 }
