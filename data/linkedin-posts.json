@@ -2741,5 +2741,18 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1785756739860-0",
+    "content": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n---\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n---\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n---\nWhat actually cost me the evening wasn’t the code\n→ Picked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\n→ Tuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\n→ Automation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n---\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
+    "url": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1785756739860-0-5501246b9297fa56413a16778aa3116a.jpg",
+    "tags": [],
+    "publishedAt": "2026-08-02T21:00:46.834Z",
+    "engagement": {
+      "likes": 2,
+      "comments": 0,
+      "shares": 0
+    }
   }
 ]

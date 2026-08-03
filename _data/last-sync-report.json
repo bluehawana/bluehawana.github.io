@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-07-28T10:40:14.793Z",
+  "sync_timestamp": "2026-08-03T11:32:20.098Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 211,
+  "images_downloaded": 1,
+  "total_posts_in_system": 212,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-07-28T11:10:14.793Z",
+  "next_sync_recommended": "2026-08-03T12:02:20.098Z",
   "new_posts": [
     {
-      "title": "Kimi (Moonshot AI) has just released #K3, and while the launch was quiet, the specifications are imp...",
-      "link": "https://www.linkedin.com/posts/harvad_releasing-the-model-weights-and-technical-activity-7487728666131587072-PCzJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge L...",
+      "link": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
-        "likes": 3,
+        "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-07-28T10:40:14.765Z"
+      "sync_date": "2026-08-03T11:32:19.858Z"
     }
   ]
 }
