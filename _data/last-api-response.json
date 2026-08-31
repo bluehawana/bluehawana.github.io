@@ -1,21 +1,52 @@
 {
   "data": [
     {
-      "createdAt": "2026-08-02T21:00:46.834Z",
-      "activityId": "urn:li:activity:7489787304174211072",
-      "shareUrn": "urn:li:ugcPost:7489787303050153984",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "createdAt": "2026-08-24T16:19:12.852Z",
+      "activityId": "urn:li:activity:7497688978721206272",
+      "shareUrn": "urn:li:share:7497688978012352512",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_knowledgegraph-graphdb-analytics-activity-7497688978721206272-ZZ1p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Knowledge graphing with everything in your wiki/confluence/notion/obsidian/notebooklm. And you will find out more interesting things like knowledge chunks, nodes, connections and all of them will help you to have a better understanding of your business domain and configurations. Based on this, LLM knowledge base, Ehanced RAG, LLM embedded. We are in an exiting AI era, so dare to dream big and start bringing your ideas to life.",
+      "activity": {
+        "numLikes": 17,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 14
+          },
+          {
+            "type": "EMPATHY",
+            "count": 1
+          },
+          {
+            "type": "PRAISE",
+            "count": 1
+          },
+          {
+            "type": "INTEREST",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "createdAt": "2026-08-23T06:53:25.983Z",
+      "activityId": "urn:li:activity:7497184207367217153",
+      "shareUrn": "urn:li:share:7497184206138228736",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_thunderbolt5-thunderbolt5-apple-activity-7497184207367217153-0pvG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "content": {
         "images": [
           {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQE6UO2doeacRQ",
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFe8061goCR1A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE6UO2doeacRQ/feedshare-shrink_160/B4EZ_ER2o4KcAk-/0/1785704445397?e=1787788800&v=beta&t=JWKg-Sno51258lfDi6prUpqgFZ5UGjWzoXrrH76E0gY"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4E22AQFmOpSVVNPfrQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFmOpSVVNPfrQ/feedshare-shrink_1280/B4EZ_ER2KoHMAM-/0/1785704441701?e=1787788800&v=beta&t=4zyObUSWuFzdrZ8jBefj7drQh8DuzDSBRRt0SN6mH8E"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFe8061goCR1A/feedshare-shrink_480/B4EaAtZTBCH8Ag-/0/1787468004415?e=1789603200&v=beta&t=36Rme0H6s1RhNbRkJmbUV7VUJdHAk7VYY_Cgq8mOdeU"
           }
         ]
       },
@@ -25,15 +56,105 @@
         "name": "Harvad Li",
         "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
-      "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n---\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n---\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n---\nWhat actually cost me the evening wasn’t the code\n→ Picked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\n→ Tuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\n→ Automation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n---\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
+      "commentary": "Finally, the #Thunderbolt5 cable arrived — time to stack my MacBook Pro with the Mac mini. But why does Apple’s Thunderbolt 5 cable cost $95? And why are people still willing to pay for it? It’s not just the Apple ecosystem — it’s also the trust built through years of reliable innovation and the weight of Apple‘s earned reputation. Even though we all know it’s essentially a premium Type-C cable made by Apple. \n\n#Thunderbolt5 #Apple #Stack #LocalLLM",
       "activity": {
-        "numLikes": 5,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
             "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "createdAt": "2026-08-20T21:25:09.838Z",
+      "activityId": "urn:li:activity:7496316422038446080",
+      "shareUrn": "urn:li:share:7496316420503392256",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_newyearnewproject-macbookpro-qwen3827b-activity-7496316422038446080-JQx1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQG0u9oh9EulJg",
+            "accessibilityText": "graphical user interface, application",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG0u9oh9EulJg/feedshare-shrink_800/B4EaAhED2oHYAc-/0/1787261108966?e=1789603200&v=beta&t=HWUugHQlfUWtlquMhNThofeqIH6e-Ej2YlKGblgrY-g"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "#NewYearNewProject No.10 --Smart Charging\nMy #MacBookPro shut down while plugged in. M5 Max, running a #Qwen3827B model locally. macOS reported \"Charging\" the entire time the battery went to zero.\nThat is a measurable claim, so I measured it. What ioreg returns is exact, and it turned out there were three separate faults, not one.\n1 — The cable, not the charger. A 100 W adapter was negotiating 60 W. Every profile it offered capped at exactly 3000 mA on a full 20 V rail. Above 3 A a USB-C cable must carry an e-marker chip identifying itself; without one the standard requires the charger to stop there. 20 V × 3 A = 60 W. The charger was not weak — it was being refused.\n2 — The port. Same cable, same charger, three ports: 140 W, 100 W, 30 W. The distinguishing signal is the voltage rail, not the wattage. A cable cap lowers current. A slow port lowers voltage. Both present as \"charging slowly\" and need opposite fixes.\n3 — A stuck negotiation. Once, the same port settled at 22 W instead of 30 W and stayed there. Reconnecting the cable restored it. No symptom, no log entry, nothing to notice.\nThen a generational finding while comparing two UGREEN chargers four years apart. The 2022 unit's highest rail is 20 V, so 100 W is a hardware ceiling — no cable lifts it. 140 W requires the 28 V rail introduced with USB-PD 3.1. So \"100 W vs 200 W\" understates it; the real difference is a rail that either exists or does not.\nThe practical outcome mattered more than the diagnosis. One 200 W GaN charger now runs both my MacBook Pro at 140 W and my Dell Precision 7680 at 130 W over USB-C — Dell publishes that figure. Two machines, one charger, one outlet, instead of a 1.5 kg workstation brick plus a second adapter. USB-PD is a standard, not a vendor feature.\nSo I built the instrumentation I wanted: a menu bar app that reads the same sensor continuously and names which component is limiting you. Free, open source, signed and notarised.\nYou can run the analysis without installing anything. The diagnostic rules are ported to JavaScript and execute in the browser — click a sample reading, or paste one command's output from your own Mac. Nothing is uploaded.\n🔗 https://lnkd.in/eKEVTA4f\nBuilding it surfaced a second gap: every App Store screenshot generator targets iPhone and Android, and the Mac App Store wants 16:10 at its own sizes. That is open source now too.\nIf you run local LLMs on a MacBook, check your wattage first. The figure is already on your machine.\n\n#macOS #AppleSilicon #LocalLLM #OpenSource #IndieDev #Swift",
+      "activity": {
+        "numLikes": 0,
+        "numComments": 2,
+        "numShares": 0,
+        "reactionTypeCounts": []
+      }
+    },
+    {
+      "createdAt": "2026-08-15T11:34:43.305Z",
+      "activityId": "urn:li:activity:7494355893061582848",
+      "shareUrn": "urn:li:ugcPost:7494355809473273856",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_localllm-deepseekv4-mpb-activity-7494355893061582848-6WGc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Running DeepSeek-V4-Flash Locally on a MacBook M5 Max 128GB?\n\n\nI spent the past few days testing DeepSeek-V4-Flash-0731 — DeepSeek's 284B-parameter MoE model — using AtomicChat's 2.8-bit GGUF quant on a MacBook M5 Max (128 GB RAM).\n\nIt runs locally at 33 tokens/sec.\n\nI recorded a one-minute clip of it answering \"What is DDD in .NET\". The output arrives faster than I can read it.\n\nMost people assume a model this size requires a datacenter. The full checkpoint is 162 GB; the 2.8-bit quantized version I run is 104 GB. Consumer GPUs can't hold either, but Apple Silicon can — unified memory gives the GPU full access to system RAM.\n\nDeepSeek-V4-Flash is a Mixture-of-Experts model, so only ~13B parameters activate per token, while the model retains the knowledge of the full 284B. To be clear: this is a compressed copy, not the original weights. But because DeepSeek trained the experts directly in 4-bit, the quant still matches the original's token choice 83.6% of the time.\n\n\nMaking it work with Ollama\n\nOllama doesn't support sharded GGUF downloads, and the available quants on Hugging Face come in four shards. Local import fails for the same reason.\n\nI merged the shards into a single GGUF using llama.cpp and re-hosted it. After that, the entire setup becomes one command:\n\nollama run bluehawana/deepseek-v4-flash:iq2_m\n\nNothing else required.\n\nIf you want other quants or other sharded models, the repo includes a script that handles download → merge → import automatically.\n\n\nPerformance numbers (measured via Ollama)\n\n33 tok/s generation (consistent from 128–512 token outputs)\n545 tok/s prompt processing on a 2,700-token prompt\n3.9 s warm load time\n\nWith 103 GB of weights inside 128 GB RAM, context needs to be capped at 8192 for stable long sessions. Full benchmark sheet in the first comment.\n\n\nNotes from the setup\n\nollama create fails on sharded GGUFs (\"has 1 shards, expected 4\"). Merging first is required.\nThe default chat template inside the GGUF is outdated; multi-turn reasoning improves noticeably with a corrected template.\nAll troubleshooting steps are documented in the repo.\n\nWhat this actually is:\n\nThe model is DeepSeek's (MIT).\nThe quantization is by AtomicChat.\nI found the work through Rohan Paul's post on x.com https://lnkd.in/dguG6d-K\nMy part was merging the shards and documenting a reproducible path.\nI created nothing new here — I merged two files and wrote down the steps.\n\nWhy run it locally: offline, private, and no per-token cost. One Mac can serve an entire LAN through Ollama's API.\n\nHardware: a 128 GB Apple Silicon Mac.\n\nRepo: https://lnkd.in/d4tCBSHP\nModel on Ollama: https://lnkd.in/d8mfXb9Q\nModel on Hugging Face: https://lnkd.in/dARbrKj4\n\n#LocalLLM #DeepSeekV4 #MPB #Ollama #AppleSilicon #BuildInPublic",
+      "activity": {
+        "numLikes": 2,
+        "numComments": 1,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "createdAt": "2026-08-02T21:00:46.834Z",
+      "activityId": "urn:li:activity:7489787304174211072",
+      "shareUrn": "urn:li:ugcPost:7489787303050153984",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQE6UO2doeacRQ",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE6UO2doeacRQ/feedshare-shrink_160/B4EZ_ER2o4KcAk-/0/1785704445397?e=1789603200&v=beta&t=CVonnrnXnhSMJ3jc2YASUkWlvUDCIiJaJCRaLVnVUeM"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQFmOpSVVNPfrQ",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFmOpSVVNPfrQ/feedshare-shrink_1280/B4EZ_ER2KoHMAM-/0/1785704441701?e=1789603200&v=beta&t=mEctt-oL6FoqFCk0FGHbrGPTTEE-ZwlKM4Kq7gF1dfQ"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n\nWhat actually cost me the evening wasn’t the code\nPicked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\nTuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\nAutomation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
+      "activity": {
+        "numLikes": 6,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 3
           },
           {
             "type": "INTEREST",
@@ -80,12 +201,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFPM1MWYlL9vQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFPM1MWYlL9vQ/feedshare-shrink_480/B4EZ.MVt3gKIAk-/0/1784765931361?e=1787788800&v=beta&t=-oMBembl4IAqtPu3_ekYzO1Qk0px23Z3R4N4-iXX99Q"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFPM1MWYlL9vQ/feedshare-shrink_480/B4EZ.MVt3gKIAk-/0/1784765931361?e=1789603200&v=beta&t=yGcHh3ZeViZ5bVD1C8xep0ISwoy42C5gm8lq_DCUuiA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQF49hZT2mt8gA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF49hZT2mt8gA/feedshare-shrink_480/B4EZ.MVt_5KoAk-/0/1784765931842?e=1787788800&v=beta&t=kSqkE_zhdwrJmoD2jGJJ8In_7jR_S7hiMfMgxVH9Lcg"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF49hZT2mt8gA/feedshare-shrink_480/B4EZ.MVt_5KoAk-/0/1784765931842?e=1789603200&v=beta&t=UzbYkYj9cqMITz9HQc0r-uHB-S3rPef9maggZjXHLHY"
           }
         ]
       },
@@ -97,10 +218,15 @@
       },
       "commentary": "Caught a glimpse of the 6‑seat #TeslaModelYL in a Beijing garage today — a configuration that’s still unavailable in the EU. The setup is interesting: Champagne Gold exterior, 255/275 staggered tyres, six independent seats, and the 84/87 kWh battery pack that aligns with recent test data.Given the Nürburgring spy photos, the development cycle looks mature enough for a September–October appearance. Always exciting to see engineering progress up close before it reaches nordic markets.\n#Beijing #TeslaModelYL #EV #6Seats",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 1,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -141,7 +267,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQG941xdOiaPBQ",
             "accessibilityText": "text",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1787788800&v=beta&t=b4OQQ3zX49DtZpG-9EgrOISvWeUPMx24swFbAOVFQKI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1789603200&v=beta&t=hFENWYBlaVEhwwow1OdXn6ryKlckafOAGzpZ01CUcXI"
           }
         ]
       },
@@ -179,7 +305,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1786734000&v=beta&t=GsQuetCPgamgftXDErhynTKlxO36tfPyzxHZPeQ7sqU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1788800400&v=beta&t=DeFoVAFE-4UBtWPKqYv4VUyLouhH6v7DMcowxjyh5co"
         }
       },
       "actor": {
@@ -211,22 +337,22 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQEAz61UF_-1VA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1787788800&v=beta&t=yTdbbx_S5zsyjzDH3xcL3Gd8oRr230PdURiryCmyGFI"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1789603200&v=beta&t=qsr1XKrjbq3wyrR9ip-4GfgSlKttH8z8HBYJXGXpu1I"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQHADbZpGpHTFQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1787788800&v=beta&t=y8k6LqrfuwYlw0qih6xjJthizPyxCIYSUeqVVj1LdqE"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1789603200&v=beta&t=DojGGGdj_hVjA_u9v7Ra5JweNO_o5qF23qXn15rt-Nc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQExuRHdswz0lw",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1787788800&v=beta&t=Rkkm8jtzRmx6TcCWMAcvlrB8JvDWeJaNjbMMyPZ6l58"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1789603200&v=beta&t=zllUyh3BdKPMJDloYp937xhQL7yijy-Qhrl_PEbxPxY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFiFGQId9DdJQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1787788800&v=beta&t=d0-UYvbXyjrtYCp2CDpsNZ_jJrpDTuTjcUSNba3r5bM"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1789603200&v=beta&t=56RPsojNPxMeHOaikvWZc9IBKSDW-8FnmUx1uHd5Om4"
           }
         ]
       },
@@ -263,7 +389,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFrBX5uDDr8Rg",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1787788800&v=beta&t=eoEOf7O8S_0448Wy_8fndBpwc27c2kdEb6Ym1heE-9c"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1789603200&v=beta&t=1ayRYB8Xpdbvjj-c2MuMKwHI3kTKAxytx-9X5VM9x_Q"
           }
         ]
       },
@@ -275,13 +401,13 @@
       },
       "commentary": "As we embark on our journey under #Hackday2026, we start as strangers, having just met in the meeting room this Monday. While no one knows if we are destined to win, I hold that belief firmly. When team members approached me one by one to join my team, my response was simple: yes, why not.\n\nKey aspects to consider include:\n1. As the team leader, ambition to win is crucial.\n2. Fostering collaboration among team members and earning their trust in a short time is essential.\n\nI recognize that no one expects our team to win except for me. Yet, they trust and support me to the best of their abilities. This gives us the opportunity to validate our proposal in the business world. I am dedicated to ensuring they leave with something meaningful to share, rather than disappointment.\n\nWe all need a champion's heart, as this experience is truly unforgettable. With this mindset, we can challenge ourselves to step out of our comfort zones and dare to do something different, honoring ourselves and our team members as well. That is the addiction of victories; once you taste it, you will never forget it.\n\nA big applause to all of you! Mahnoor Ali Cheema, Sara Asghari, Chirag Ashiyani, Mattias Jakobsson, Roman Dolanski",
       "activity": {
-        "numLikes": 23,
+        "numLikes": 24,
         "numComments": 0,
         "numShares": 1,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 20
+            "count": 21
           },
           {
             "type": "PRAISE",
@@ -304,22 +430,22 @@
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEhaQ-P1d987A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1787788800&v=beta&t=8yLlwNEDaHhgQSVSijoVYUAYfIMsrTnRVK2FM-Dfe08"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1789603200&v=beta&t=z1KosKWrV8rTrkGk_aOYAQ5dzevKxvYnhYff4YOZWII"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQElF8FVdjob2Q",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1787788800&v=beta&t=ZaTJlsUkdzZBxl9_RtBP8XBlx0U0FlUS4UdiVBUOgsY"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1789603200&v=beta&t=4HSEV2UJ-W5MX4Aiu2cEcFW1gjgla1h7DtBccmhvfAc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEYCUQqY53EiQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1787788800&v=beta&t=WyKLZJek9RPo5q-qGfMyRwv1eHYIFMlGOEiPJzb1o5I"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1789603200&v=beta&t=HjWzFjzDreqUWM4TFJ0i1nyd4S-1ILIRbuhAF78xpMM"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHq5X1l2NW43Q",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1787788800&v=beta&t=3mybKu0DbIr1Fx3eL7vA7fGhBTsvJi8aYpYRNwO_4N0"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1789603200&v=beta&t=XrnmmF3XUKrxT6Md6MoaWeJXHVc58_flkOsim3SinxM"
           }
         ]
       },
@@ -356,12 +482,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFeqs_9Qnif9A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1787788800&v=beta&t=BEt2vx8TZM9XXYVkOZKf3SxCA4q6Zf46j9ljRVV2iuw"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1789603200&v=beta&t=VthQB3mmWHH3GfgX_CpYfNDPdqMN_Zrvu3U8wdtcsp0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHKo1M7N4E92g",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1787788800&v=beta&t=PuHgNZ8-VS2ldIWckeSlcyA_Ik5JYJPgqeWvJFwREqk"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1789603200&v=beta&t=4C27K4wWKFx0DUgO46BcxNp7CIaAvPxh7v0sE5eNfZc"
           }
         ]
       },
@@ -389,7 +515,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEZoyI8ZLY12g",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1787788800&v=beta&t=J86Dv7GkD9xNTuP5ed_yJcmhevvLXR8-MAlxkVcupcg"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1789603200&v=beta&t=u9PelFzcJvEVWHPDm4LIfrkwxnZVGBRIM8-8REDFLMI"
           }
         ]
       },
@@ -422,7 +548,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQERfZFYrKUjSQ",
             "accessibilityText": "diagram",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQERfZFYrKUjSQ/feedshare-shrink_20/B4DZ6sP0SnIsAI-/0/1781006288340?e=1787788800&v=beta&t=cqrzdEf3Qef-WHz2Np2tUFm8kEczO8TPnxva3lvp7Dk"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQERfZFYrKUjSQ/feedshare-shrink_20/B4DZ6sP0SnIsAI-/0/1781006288340?e=1789603200&v=beta&t=gokceoooqOd_S0TNA8ud7T2uDVolRmUXDKA2bgKiGmA"
           }
         ]
       },
@@ -430,7 +556,7 @@
         "actorId": "urn:li:member:538934288",
         "actorUrn": "urn:li:fsd_profile:ACoAACAffBABmg0i0TxuEnNvNKeuiy2-Kq7k_Ds",
         "name": "Shirin Khosravi Jam",
-        "description": "Engineering Manager - AI Engineering | 500k+ AI/ML Community | Data Science, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
+        "description": "Engineering Manager - AI Engineering | 500k+ AI/ML Community | Machine learning, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
       },
       "commentary": "70% of ML engineers fail system design interviews.\n\n4 Videos . 1 Github Repo . 3 Books to help you 👇 \n\n🔹Youtube videos:\n1. How to Master ML System Design\n→ https://lnkd.in/d89ywdkp\n→ Step by step guide (went through it - its good)\n\n2. Stanford MLSys Seminars (playlist)\n→ https://lnkd.in/gP3UDqwn \n→ How Netflix/Uber actually scale\n\n🔹Interview examples:\n1. Spotify ML Question - Design a Recommendation System \n→ https://lnkd.in/dr87ADq8\n\n2. Instagram ML Question - Design a Ranking Model \n→ https://lnkd.in/dqMxqgNc\n\n🔹 Github Repo:\n1. System Design Primer \n→ https://lnkd.in/gmAg4nBb \n→ Master the patterns that matter\n\n🔹 Book recommendations:\n1. Designing ML Systems: https://amzn.to/41V1n9t\n2. AI Engineering: https://amzn.to/43Fa1u8\n3. ML System Design Interview: https://amzn.to/3YGed9n\n\nHope it is useful! \n \n--\n♻️ Repost to help other engineers 💚 \n➕ Join 48.000+ serious AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
@@ -471,7 +597,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF3jtJtp74KDg",
             "accessibilityText": "table",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1787788800&v=beta&t=HiNTmcXqqx0NBDP0AHKnA6V54KpG6GuVqp1PwJCuEi0"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1789603200&v=beta&t=SrQPYjnE-ZYM-hvIYDcnrL5NZBiPsHa_YEdZ5rRD9x0"
           }
         ]
       },
@@ -479,17 +605,17 @@
         "actorId": "urn:li:member:538934288",
         "actorUrn": "urn:li:fsd_profile:ACoAACAffBABmg0i0TxuEnNvNKeuiy2-Kq7k_Ds",
         "name": "Shirin Khosravi Jam",
-        "description": "Engineering Manager - AI Engineering | 500k+ AI/ML Community | Data Science, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
+        "description": "Engineering Manager - AI Engineering | 500k+ AI/ML Community | Machine learning, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
       },
       "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
       "activity": {
-        "numLikes": 1108,
+        "numLikes": 1107,
         "numComments": 45,
         "numShares": 187,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 1024
+            "count": 1023
           },
           {
             "type": "INTEREST",
@@ -520,17 +646,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEdQ7NC0KIIzw",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1787788800&v=beta&t=6fBZtzMFZbsBHjf1YqaSiGtU6500Yt4qpZDd4WhybvI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1789603200&v=beta&t=jWXHHm7-Lz-wqjNAOQa4vtZSiBfFon1MFQdD2VT47b0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHqpKe7jYbdsQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1787788800&v=beta&t=0l5sHfb9Bj_wGX3xz7B9nIXbtGnxCG80JrJyszji0NY"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1789603200&v=beta&t=1yntm5jmi48Pge_H217Lam-qC4OalTKx8jysBme43u0"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEzejq5RakT4w",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1787788800&v=beta&t=cmF33bSRsruqwEy5m15hDLHUXziunVQV-dfhYpK5cLY"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1789603200&v=beta&t=I9QZGgv0vgB6Qaet-kiaXL4Qs_6mjqnYQw2sUPqxSxA"
           }
         ]
       },
@@ -563,32 +689,32 @@
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQH8AVsLtbbfag",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1787788800&v=beta&t=sC3K5KgLzmVd3-dpuzgSdQzdtR2M_st0Fk7M07xVtN0"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQH8AVsLtbbfag/feedshare-shrink_1280/B56Z5G16MwKwAM-/0/1779305001300?e=1789603200&v=beta&t=ymvlSrFld_cBSK919p5tPzb5x93H2cu0WOeWK6-5qnQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQG-KOq-IrKhHA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1787788800&v=beta&t=fZscZa6EcI2VxgnXxalRWRkhqf-LkqG6mNZwXtW-ETM"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQG-KOq-IrKhHA/feedshare-shrink_20/B56Z5G16Q6JwAI-/0/1779305000954?e=1789603200&v=beta&t=Voj2VluEpiUnGzaGvu61n32iAewRnOszBKOHareLG9A"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQETzXGr_i4p8A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1787788800&v=beta&t=Yvqco5-BIb-ydpaiMJkuso8wu7KDikZHlfBmXocfGBo"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQETzXGr_i4p8A/feedshare-shrink_20/B56Z5G16I6HwAM-/0/1779305000313?e=1789603200&v=beta&t=TxgAz9TkQ0lmnOGUl5DktZpQVdTOdosMxbkqBZBwMos"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQGQZlS6lz69vQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1787788800&v=beta&t=GXUc-LfSJYHyqvtFVlcb7MIXyN50j2wHsiBb3wU1F00"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQGQZlS6lz69vQ/feedshare-shrink_800/B56Z5G16KBHwAs-/0/1779305000431?e=1789603200&v=beta&t=ayINoMaUXiT2_1bfPBRwhcytCvGs_RSPJaIsCB5FuV4"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQF62B864VRU5Q",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1787788800&v=beta&t=keXHgOyRYpYo-WlF0a3-m0RC2qgXZPx17Pgy8KEvH_4"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQF62B864VRU5Q/feedshare-image-high-res/B56Z5G16B3HUAU-/0/1779304997222?e=1789603200&v=beta&t=p54Sx8WI0fM_iI-9vVBYwv9YJJkyUPrEF6Ries7vCqg"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHyGrGi8UQ3Ew",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1787788800&v=beta&t=ue7zvEDUJedpohn0g8kJctougs39TKe4kLorce6puRQ"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHyGrGi8UQ3Ew/feedshare-shrink_480/B56Z5G16KwHsAg-/0/1779305000285?e=1789603200&v=beta&t=WYWu_pvFvFwsyjdyBxd4G8p988efG4bxRIJcg5SiYZI"
           }
         ]
       },
@@ -621,17 +747,17 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFFumLDVQPTDg",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1787788800&v=beta&t=xWcknGkxaeYUd1u9Fbl9UgxBa5hFB7x04BEmC9z-Wc0"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFFumLDVQPTDg/feedshare-shrink_800/B4DZ4iaIwmJcAc-/0/1778693740115?e=1789603200&v=beta&t=Y80wssHW2Dzf9XQ7ir1fqLeKUkLKeKCvWdEV41OZpSg"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFQ341n9udACA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFQ341n9udACA/feedshare-shrink_480/B4DZ4iaIwRJUAo-/0/1778693740481?e=1787788800&v=beta&t=N5Peks2qRDMAKq3btZ1Nwzizij_6OsaMYjpgK-k3nwI"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFQ341n9udACA/feedshare-shrink_480/B4DZ4iaIwRJUAo-/0/1778693740481?e=1789603200&v=beta&t=bmFy5_yMd-Iiq0li7RwuYMnwqmxAZPVWC-uyIn7v76Q"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF2HuL-337I3g",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2HuL-337I3g/feedshare-shrink_20/B4DZ4iaJM9I8AI-/0/1778693742549?e=1787788800&v=beta&t=E3-ysgJpotGdl5ByKszNLHpcDRYPKZ0NC4xAQc37bqE"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2HuL-337I3g/feedshare-shrink_20/B4DZ4iaJM9I8AI-/0/1778693742549?e=1789603200&v=beta&t=VOU3NyC6ZEyiYBVF8YHvpz4BEvWWhsWiVkNLNJj0AGs"
           }
         ]
       },
@@ -653,186 +779,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-05-06T17:06:13.235Z",
-      "activityId": "urn:li:activity:7457838143048941568",
-      "shareUrn": "urn:li:share:7457838142369185792",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_george-clooney-accepts-the-chaplin-award-activity-7457838143048941568-jWEf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:8438494665085078404",
-          "title": "George Clooney Accepts the Chaplin Award at the 51st Chaplin Award Gala",
-          "subtitle": "youtube.com",
-          "url": "https://youtu.be/eEo6Q6Xfycw?is=IRw91tT6_5q4qzmz",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGGSF66HbHVow/articleshare-shrink_480/B4EZ3q0gwJHMAo-/0/1777761127992?e=1786734000&v=beta&t=HLHEBEgaki9Xw-Er7xHoZYCyljYR05ZeOAqmUYV_eIY"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Luck can be shared—it’s contagious. That’s why I’ll be passing it along next Friday. Not because I’ve been so lucky, but because I want to help others who need it to change their path. I believe in this. Do you?",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
-    },
-    {
-      "createdAt": "2026-05-06T05:20:41.899Z",
-      "activityId": "urn:li:activity:7457660592556851200",
-      "shareUrn": "urn:li:share:7449368380773605376",
-      "shareUrl": "https://www.linkedin.com/posts/fair-transition_fair-transition-transition-clause-for-swedish-activity-7449368381448712192-Jlr6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "article": {
-          "urn": "urn:li:article:8957253010250507256",
-          "title": "Fair Transition — Transition Clause for Swedish Citizenship",
-          "subtitle": "fairtransitionsweden.com",
-          "url": "http://fairtransitionsweden.com",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFfUndu04a7Sw/articleshare-shrink_480/B4DZ8Hpp5HI0AM-/0/1782539789311?e=1786734000&v=beta&t=VNsp2BSa1-N7-iM3HUFgpPDMp8ZXmIQrhWXGD1erOuc"
-        }
-      },
-      "actor": {
-        "actorId": "urn:li:company:112047995",
-        "name": "Fair Transition",
-        "description": "871 followers"
-      },
-      "commentary": "If you submit an application to a Swedish authority, follow every rule, pay every fee, and wait in the queue assigned you, should the rules be allowed to change while you wait?\n\nLagrådet said no. The government's own inquiry said no. 379 engineers and researchers at companies including Spotify, Klarna, Volvo, Ericsson, and Nvidia said no in their formal remissvar.\n\nThe reform itself can move forward on June 6. That isn't what we're contesting. We're asking for one thing: that the roughly 100,000 applications already sitting at Migrationsverket be assessed under the rules that existed when they were filed.\n\nThat's what transitional provisions are for. Every Nordic country uses them. Sweden has used them before. The institutions Sweden built to advise on exactly this kind of question recommended them here too.\n\nfairtransitionsweden.com",
-      "activity": {
-        "numLikes": 72,
-        "numComments": 0,
-        "numShares": 7,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 53
-          },
-          {
-            "type": "APPRECIATION",
-            "count": 15
-          },
-          {
-            "type": "EMPATHY",
-            "count": 4
-          }
-        ]
-      }
-    },
-    {
-      "createdAt": "2026-05-05T14:51:27.647Z",
-      "activityId": "urn:li:activity:7457441841769119745",
-      "shareUrn": "urn:li:ugcPost:7457441840334602240",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_agenticai-microsoftai-aihackathon-activity-7457441841769119745-eA_h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGrdXyjQH5r7w",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGrdXyjQH5r7w/feedshare-shrink_1280/B4DZ34nz1IJgAM-/0/1777992681655?e=1787788800&v=beta&t=LbBF5X8Tt0XIx_SYTvKMlGk2X5tSrjOBeudJIgaDQ5w"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQExqUinvYR57Q",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQExqUinvYR57Q/feedshare-shrink_160/B4DZ34nzreI0As-/0/1777992680741?e=1787788800&v=beta&t=-8HgRQ85Q3Yr9x7moO800MRPYRZK1EsbOzsGri9WY-Y"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFTY_D3mER0bg",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFTY_D3mER0bg/feedshare-shrink_20/B4DZ34nzzPHoAM-/0/1777992681303?e=1787788800&v=beta&t=C35826KmKL-qNKJrCk3I3JZuIHWX5Qu59mnjMVfYqpo"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGPnsFrM7n7fQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGPnsFrM7n7fQ/feedshare-image-high-res/B4DZ34n025HgAY-/0/1777992685746?e=1787788800&v=beta&t=hFnHqYBN1IKPKaH7c9yrILnfyPMDAgemDRteTNTO824"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEY7Co_qXuJAQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEY7Co_qXuJAQ/feedshare-shrink_800/B4DZ34n0VdHkAc-/0/1777992683620?e=1787788800&v=beta&t=EQEvtKJnzu_l4PVVgYwhJy7K44lWHRu9PlWpr9nm0pY"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEsThfEg2JLLQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEsThfEg2JLLQ/feedshare-shrink_800/B4DZ34nz_QJkAg-/0/1777992682078?e=1787788800&v=beta&t=uEIwLNdKb4w_zfV3LsJf5Hb1jBDjbv57vik6VujQgX0"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQH7Ix5f8pQBOQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH7Ix5f8pQBOQ/feedshare-shrink_160/B4DZ34nzveHoAo-/0/1777992681056?e=1787788800&v=beta&t=8KOsFhzhtUUXsOj_WhHSnhV4RP8KoMpneBJp19Mbqjs"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGNS7-PGRJTWA",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGNS7-PGRJTWA/feedshare-shrink_800/B4DZ34n0uVGcAc-/0/1777992685452?e=1787788800&v=beta&t=oFSU3xWt0XY_ypSvW4QU8KbMIBtNdITkWHVc07gEKNw"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFw74a1BJpvWg",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFw74a1BJpvWg/feedshare-shrink_480/B4DZ34nzwyHIAk-/0/1777992681807?e=1787788800&v=beta&t=X0tYYXeXeP4vH0Ttgxs4mmKP3W2gG5TVdsUeH8fDoJg"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQGLyKVbwD2Mrw",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQGLyKVbwD2Mrw/feedshare-shrink_480/B4DZ34nz3lHgA0-/0/1777992682619?e=1787788800&v=beta&t=FFUuO3YFB-wugQ0Zo7DjsgvOG5PRKVXL276rqVG1g4k"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Attended the “Microsoft Agentic AI Hack” today at World of Volvo and finished the task first. \n\nWhat I learned is that regardless of how advanced the agent frameworks become, infrastructure remains crucial for the success of your project. Much of the time was spent on typical developer tasks such as:\n\n- SSL/proxy issues\n- Python version conflicts\n- Data seeding\n- Azure login/logout loops\n- Agent registration mismatches\n- Installing uv/Aspire/truststores\n\nEssentially, everything except “AI.” I didn’t have enough time to fully grasp what each agent was designed to solve. Personally, I still prefer running things on-prem on my Mac. Once you commit to one ecosystem (OpenAI, Anthropic, Google), you lose the flexibility to choose.\n\nCurrently, I’m running Claude Code with Ollama Qwen 3.6 locally on an M5 Max MacBook Pro. I replicated the entire hackathon setup at home in about 30 minutes—clean and simple.\n\nAI is evolving rapidly, but the fundamentals remain the same: computing, networking, environment setup, and debugging. If you can’t manage those, the agents won’t be of much help. \n\n#AgenticAI #MicrosoftAI #AIHackathon #DeveloperLife #InfrastructureMatters #LocalLLM #Ollama #Qwen #ClaudeCode #MacBookPro",
-      "activity": {
-        "numLikes": 4,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 4
-          }
-        ]
-      }
-    },
-    {
-      "createdAt": "2026-05-03T15:04:18.407Z",
-      "activityId": "urn:li:activity:7456720298839605248",
-      "shareUrn": "urn:li:share:7456720297795198976",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_wiki-kb-knowledgebase-activity-7456720298839605248-nmk6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEWX4q_Ees3bQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEWX4q_Ees3bQ/feedshare-shrink_160/B4DZ3uXmPhI0As-/0/1777820656865?e=1787788800&v=beta&t=etqi9b7XAuZR6biVv7-k0CTQ3F33TmolBCoxaEkZHRU"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "How to set up your personal #wiki or #KB(Knowledge Base)in a more efficient and smarter way — and let it ‘self‑grow’ with every query, like building a knowledge ecosystem.  — where your knowledge ‘nodes’ start connecting with relationships that didn’t exist before. Follow this book and you’ll see how to get there. Build your KB with knowledge graphs and LLMs together. And if you’ve got a Mac mini as your home‑lab running Gemma 4 or Qwen 3.5, that’s pretty much the perfect setup since you do not need to pay for tokens anymore when you running your projects.\n\n#KnowledgeBase #PersonalWiki #PersonalKnoledgeManagement #KnowledgeGraph #LLM #MacMini #HomeLab #Gemma4 #Qwen3_5",
-      "activity": {
-        "numLikes": 3,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 3
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NTY3MjAyOTg4Mzk2MDUyNDgtMTc3NzgyMDY1ODM4Mg==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NjAzODIyODY0MzQyMDU2OTYtMTc3ODY5Mzc0NDI2NQ==:20"
 }

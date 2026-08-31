@@ -1,23 +1,56 @@
 {
-  "sync_timestamp": "2026-08-03T11:32:20.098Z",
+  "sync_timestamp": "2026-08-31T16:01:55.063Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 1,
-  "images_downloaded": 1,
-  "total_posts_in_system": 212,
+  "new_posts_synced": 4,
+  "images_downloaded": 2,
+  "total_posts_in_system": 216,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-08-03T12:02:20.098Z",
+  "next_sync_recommended": "2026-08-31T16:31:55.063Z",
   "new_posts": [
     {
-      "title": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge L...",
-      "link": "https://www.linkedin.com/posts/harvad_smartplug-ios-swift-activity-7489787304174211072-ymRH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "Knowledge graphing with everything in your wiki/confluence/notion/obsidian/notebooklm. And you will ...",
+      "link": "https://www.linkedin.com/posts/harvad_knowledgegraph-graphdb-analytics-activity-7497688978721206272-ZZ1p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": false,
+      "engagement": {
+        "likes": 17,
+        "comments": 0,
+        "shares": 0
+      },
+      "sync_date": "2026-08-31T16:01:54.624Z"
+    },
+    {
+      "title": "Finally, the #Thunderbolt5 cable arrived — time to stack my MacBook Pro with the Mac mini. But why d...",
+      "link": "https://www.linkedin.com/posts/harvad_thunderbolt5-thunderbolt5-apple-activity-7497184207367217153-0pvG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": true,
       "engagement": {
         "likes": 2,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-08-03T11:32:19.858Z"
+      "sync_date": "2026-08-31T16:01:54.624Z"
+    },
+    {
+      "title": "#NewYearNewProject No.10 --Smart Charging\nMy #MacBookPro shut down while plugged in. M5 Max, running...",
+      "link": "https://www.linkedin.com/posts/harvad_newyearnewproject-macbookpro-qwen3827b-activity-7496316422038446080-JQx1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
+      "engagement": {
+        "likes": 0,
+        "comments": 2,
+        "shares": 0
+      },
+      "sync_date": "2026-08-31T16:01:54.624Z"
+    },
+    {
+      "title": "Running DeepSeek-V4-Flash Locally on a MacBook M5 Max 128GB?\n\n\nI spent the past few days testing Dee...",
+      "link": "https://www.linkedin.com/posts/harvad_localllm-deepseekv4-mpb-activity-7494355893061582848-6WGc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": false,
+      "engagement": {
+        "likes": 2,
+        "comments": 1,
+        "shares": 0
+      },
+      "sync_date": "2026-08-31T16:01:54.624Z"
     }
   ]
 }
