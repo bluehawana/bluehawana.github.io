@@ -2754,5 +2754,57 @@
       "comments": 0,
       "shares": 0
     }
+  },
+  {
+    "id": "linkedin-1788192114624-0",
+    "content": "Knowledge graphing with everything in your wiki/confluence/notion/obsidian/notebooklm. And you will find out more interesting things like knowledge chunks, nodes, connections and all of them will help you to have a better understanding of your business domain and configurations. Based on this, LLM knowledge base, Ehanced RAG, LLM embedded. We are in an exiting AI era, so dare to dream big and start bringing your ideas to life.",
+    "url": "https://www.linkedin.com/posts/harvad_knowledgegraph-graphdb-analytics-activity-7497688978721206272-ZZ1p?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-08-24T16:19:12.852Z",
+    "engagement": {
+      "likes": 17,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1788192114624-1",
+    "content": "Finally, the #Thunderbolt5 cable arrived — time to stack my MacBook Pro with the Mac mini. But why does Apple’s Thunderbolt 5 cable cost $95? And why are people still willing to pay for it? It’s not just the Apple ecosystem — it’s also the trust built through years of reliable innovation and the weight of Apple‘s earned reputation. Even though we all know it’s essentially a premium Type-C cable made by Apple. \n\n#Thunderbolt5 #Apple #Stack #LocalLLM",
+    "url": "https://www.linkedin.com/posts/harvad_thunderbolt5-thunderbolt5-apple-activity-7497184207367217153-0pvG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1788192114624-1-2c871f6540dd5d31ad752000ff057e38.jpg",
+    "tags": [],
+    "publishedAt": "2026-08-23T06:53:25.983Z",
+    "engagement": {
+      "likes": 2,
+      "comments": 0,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1788192114759-2",
+    "content": "#NewYearNewProject No.10 --Smart Charging\nMy #MacBookPro shut down while plugged in. M5 Max, running a #Qwen3827B model locally. macOS reported \"Charging\" the entire time the battery went to zero.\nThat is a measurable claim, so I measured it. What ioreg returns is exact, and it turned out there were three separate faults, not one.\n1 — The cable, not the charger. A 100 W adapter was negotiating 60 W. Every profile it offered capped at exactly 3000 mA on a full 20 V rail. Above 3 A a USB-C cable must carry an e-marker chip identifying itself; without one the standard requires the charger to stop there. 20 V × 3 A = 60 W. The charger was not weak — it was being refused.\n2 — The port. Same cable, same charger, three ports: 140 W, 100 W, 30 W. The distinguishing signal is the voltage rail, not the wattage. A cable cap lowers current. A slow port lowers voltage. Both present as \"charging slowly\" and need opposite fixes.\n3 — A stuck negotiation. Once, the same port settled at 22 W instead of 30 W and stayed there. Reconnecting the cable restored it. No symptom, no log entry, nothing to notice.\nThen a generational finding while comparing two UGREEN chargers four years apart. The 2022 unit's highest rail is 20 V, so 100 W is a hardware ceiling — no cable lifts it. 140 W requires the 28 V rail introduced with USB-PD 3.1. So \"100 W vs 200 W\" understates it; the real difference is a rail that either exists or does not.\nThe practical outcome mattered more than the diagnosis. One 200 W GaN charger now runs both my MacBook Pro at 140 W and my Dell Precision 7680 at 130 W over USB-C — Dell publishes that figure. Two machines, one charger, one outlet, instead of a 1.5 kg workstation brick plus a second adapter. USB-PD is a standard, not a vendor feature.\nSo I built the instrumentation I wanted: a menu bar app that reads the same sensor continuously and names which component is limiting you. Free, open source, signed and notarised.\nYou can run the analysis without installing anything. The diagnostic rules are ported to JavaScript and execute in the browser — click a sample reading, or paste one command's output from your own Mac. Nothing is uploaded.\n🔗 https://lnkd.in/eKEVTA4f\nBuilding it surfaced a second gap: every App Store screenshot generator targets iPhone and Android, and the Mac App Store wants 16:10 at its own sizes. That is open source now too.\nIf you run local LLMs on a MacBook, check your wattage first. The figure is already on your machine.\n\n#macOS #AppleSilicon #LocalLLM #OpenSource #IndieDev #Swift",
+    "url": "https://www.linkedin.com/posts/harvad_newyearnewproject-macbookpro-qwen3827b-activity-7496316422038446080-JQx1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "/images/linkedin/linkedin-1788192114759-2-4d421575bea5a44e6be23521954b5fcf.jpg",
+    "tags": [],
+    "publishedAt": "2026-08-20T21:25:09.838Z",
+    "engagement": {
+      "likes": 0,
+      "comments": 2,
+      "shares": 0
+    }
+  },
+  {
+    "id": "linkedin-1788192115018-3",
+    "content": "Running DeepSeek-V4-Flash Locally on a MacBook M5 Max 128GB?\n\n\nI spent the past few days testing DeepSeek-V4-Flash-0731 — DeepSeek's 284B-parameter MoE model — using AtomicChat's 2.8-bit GGUF quant on a MacBook M5 Max (128 GB RAM).\n\nIt runs locally at 33 tokens/sec.\n\nI recorded a one-minute clip of it answering \"What is DDD in .NET\". The output arrives faster than I can read it.\n\nMost people assume a model this size requires a datacenter. The full checkpoint is 162 GB; the 2.8-bit quantized version I run is 104 GB. Consumer GPUs can't hold either, but Apple Silicon can — unified memory gives the GPU full access to system RAM.\n\nDeepSeek-V4-Flash is a Mixture-of-Experts model, so only ~13B parameters activate per token, while the model retains the knowledge of the full 284B. To be clear: this is a compressed copy, not the original weights. But because DeepSeek trained the experts directly in 4-bit, the quant still matches the original's token choice 83.6% of the time.\n\n\nMaking it work with Ollama\n\nOllama doesn't support sharded GGUF downloads, and the available quants on Hugging Face come in four shards. Local import fails for the same reason.\n\nI merged the shards into a single GGUF using llama.cpp and re-hosted it. After that, the entire setup becomes one command:\n\nollama run bluehawana/deepseek-v4-flash:iq2_m\n\nNothing else required.\n\nIf you want other quants or other sharded models, the repo includes a script that handles download → merge → import automatically.\n\n\nPerformance numbers (measured via Ollama)\n\n33 tok/s generation (consistent from 128–512 token outputs)\n545 tok/s prompt processing on a 2,700-token prompt\n3.9 s warm load time\n\nWith 103 GB of weights inside 128 GB RAM, context needs to be capped at 8192 for stable long sessions. Full benchmark sheet in the first comment.\n\n\nNotes from the setup\n\nollama create fails on sharded GGUFs (\"has 1 shards, expected 4\"). Merging first is required.\nThe default chat template inside the GGUF is outdated; multi-turn reasoning improves noticeably with a corrected template.\nAll troubleshooting steps are documented in the repo.\n\nWhat this actually is:\n\nThe model is DeepSeek's (MIT).\nThe quantization is by AtomicChat.\nI found the work through Rohan Paul's post on x.com https://lnkd.in/dguG6d-K\nMy part was merging the shards and documenting a reproducible path.\nI created nothing new here — I merged two files and wrote down the steps.\n\nWhy run it locally: offline, private, and no per-token cost. One Mac can serve an entire LAN through Ollama's API.\n\nHardware: a 128 GB Apple Silicon Mac.\n\nRepo: https://lnkd.in/d4tCBSHP\nModel on Ollama: https://lnkd.in/d8mfXb9Q\nModel on Hugging Face: https://lnkd.in/dARbrKj4\n\n#LocalLLM #DeepSeekV4 #MPB #Ollama #AppleSilicon #BuildInPublic",
+    "url": "https://www.linkedin.com/posts/harvad_localllm-deepseekv4-mpb-activity-7494355893061582848-6WGc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+    "image": "",
+    "tags": [],
+    "publishedAt": "2026-08-15T11:34:43.305Z",
+    "engagement": {
+      "likes": 2,
+      "comments": 1,
+      "shares": 0
+    }
   }
 ]
