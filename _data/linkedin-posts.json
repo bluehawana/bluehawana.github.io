@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-08-31T16:01:55.037Z"
+    "last_sync": "2026-09-02T12:40:26.755Z"
   },
   "extraction": {
-    "date": "2026-08-31T16:01:55.037Z",
+    "date": "2026-09-02T12:40:26.755Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 216,
-    "new_posts_this_sync": 4,
-    "images_downloaded": 2
+    "total_posts_found": 218,
+    "new_posts_this_sync": 2,
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -4116,6 +4116,44 @@
         "shares": 0
       },
       "posted_at": "2026-08-15T11:34:43.305Z"
+    },
+    {
+      "id": "linkedin-1788352826735-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "The #AI era is moving incredibly fast. It feels like when the first car hit the road—no one asked th...",
+      "content": "The #AI era is moving incredibly fast. It feels like when the first car hit the road—no one asked the horse‑carriage owners whether they were happy, and nobody really cared. Technology doesn’t wait. It evolves, and we adapt. That’s the spirit behind our newest robot toy: #Microduck.\n\nResource:\n1. https://lnkd.in/dirKMAiY\n2. https://lnkd.in/dGfWegSv\n3. https://lnkd.in/dWKPSkhK\n\n#AI #Robotics #MicroDuck #Phyicalai",
+      "link": "https://www.linkedin.com/posts/harvad_ai-microduck-ai-activity-7500855543389904896-om-T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-09-02T12:40:26.734Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-09-02T10:02:00.701Z"
+    },
+    {
+      "id": "linkedin-1788352826735-1",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "This #microduck will revolutionize your understanding of AI toys; you can even make one yourself, if...",
+      "content": "This #microduck will revolutionize your understanding of AI toys; you can even make one yourself, if $400 and six months seem too far-fetched for you...",
+      "link": "https://www.linkedin.com/posts/harvad_thomas-wolf-thomwolf-on-x-activity-7500791382882775040-Cmcy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-09-02T12:40:26.734Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 1
+      },
+      "posted_at": "2026-09-02T05:47:03.644Z"
     }
   ]
 }
