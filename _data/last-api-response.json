@@ -13,10 +13,15 @@
       },
       "commentary": "The #AI era is moving incredibly fast. It feels like when the first car hit the road—no one asked the horse‑carriage owners whether they were happy, and nobody really cared. Technology doesn’t wait. It evolves, and we adapt. That’s the spirit behind our newest robot toy: #Microduck.\n\nResource:\n1. https://lnkd.in/dirKMAiY\n2. https://lnkd.in/dGfWegSv\n3. https://lnkd.in/dWKPSkhK\n\n#AI #Robotics #MicroDuck #Phyicalai",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 1,
         "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
+        "numShares": 1,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -30,7 +35,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1788987600&v=beta&t=PeY6H2ibU4qqGNMKXwcKpNv8AzgS8r4htJDPnUGWiOk"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1789045200&v=beta&t=yz6kD87pOxg4ei0qEyo-oO-j9nDmB68AsFjUcPQbCu4"
         }
       },
       "actor": {
@@ -357,7 +362,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1788987600&v=beta&t=OkCJ5ns45xVp89jZYVLx3azmKxtkz1i5NmT5WzKGGOU"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1789045200&v=beta&t=jZ82GjtbOGmbP-MSWbKApP70k9U-poDPpDmEkpZvqmg"
         }
       },
       "actor": {
