@@ -1,34 +1,23 @@
 {
-  "sync_timestamp": "2026-09-02T12:40:26.762Z",
+  "sync_timestamp": "2026-09-03T20:30:52.709Z",
   "profile_name": "Harvad Li",
-  "new_posts_synced": 2,
+  "new_posts_synced": 1,
   "images_downloaded": 0,
-  "total_posts_in_system": 218,
+  "total_posts_in_system": 219,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-09-02T13:10:26.762Z",
+  "next_sync_recommended": "2026-09-03T21:00:52.709Z",
   "new_posts": [
     {
-      "title": "The #AI era is moving incredibly fast. It feels like when the first car hit the road—no one asked th...",
-      "link": "https://www.linkedin.com/posts/harvad_ai-microduck-ai-activity-7500855543389904896-om-T?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "title": "What was #Nokia’s strategy when it chose to reject #Android and stick with #Symbian? And how did the...",
+      "link": "https://www.linkedin.com/posts/harvad_nokia-android-symbian-activity-7501289375088091137-jKc6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
       "has_image": false,
       "engagement": {
-        "likes": 0,
+        "likes": 3,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-09-02T12:40:26.734Z"
-    },
-    {
-      "title": "This #microduck will revolutionize your understanding of AI toys; you can even make one yourself, if...",
-      "link": "https://www.linkedin.com/posts/harvad_thomas-wolf-thomwolf-on-x-activity-7500791382882775040-Cmcy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
-      "engagement": {
-        "likes": 1,
-        "comments": 0,
-        "shares": 1
-      },
-      "sync_date": "2026-09-02T12:40:26.734Z"
+      "sync_date": "2026-09-03T20:30:52.686Z"
     }
   ]
 }

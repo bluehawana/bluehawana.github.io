@@ -3,13 +3,13 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-09-02T12:40:26.755Z"
+    "last_sync": "2026-09-03T20:30:52.702Z"
   },
   "extraction": {
-    "date": "2026-09-02T12:40:26.755Z",
+    "date": "2026-09-03T20:30:52.702Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 218,
-    "new_posts_this_sync": 2,
+    "total_posts_found": 219,
+    "new_posts_this_sync": 1,
     "images_downloaded": 0
   },
   "posts": [
@@ -4154,6 +4154,25 @@
         "shares": 1
       },
       "posted_at": "2026-09-02T05:47:03.644Z"
+    },
+    {
+      "id": "linkedin-1788467452687-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "What was #Nokia’s strategy when it chose to reject #Android and stick with #Symbian? And how did the...",
+      "content": "What was #Nokia’s strategy when it chose to reject #Android and stick with #Symbian? And how did they view #Apple as a competitor—what assumptions shaped their understanding of that rivalry?\n\nWe may never know for sure. But in those pivotal moments, standing at a crossroads, every decision points either toward embracing the future or clinging to past success. It was a truly challenging time—one that tested the wisdom of corporate leadership.\n\nCould there have been a middle path? A way to integrate, adapt, and compromise?\n\nLet’s find out.\n\n#CorporationStrategy #Nokia #Apple #Android #Symbian #Crossroads",
+      "link": "https://www.linkedin.com/posts/harvad_nokia-android-symbian-activity-7501289375088091137-jKc6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-09-03T20:30:52.686Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-09-03T14:45:54.238Z"
     }
   ]
 }

@@ -1,6 +1,34 @@
 {
   "data": [
     {
+      "createdAt": "2026-09-03T14:45:54.238Z",
+      "activityId": "urn:li:activity:7501289375088091137",
+      "shareUrn": "urn:li:share:7501289374479704065",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_nokia-android-symbian-activity-7501289375088091137-jKc6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "What was #Nokia’s strategy when it chose to reject #Android and stick with #Symbian? And how did they view #Apple as a competitor—what assumptions shaped their understanding of that rivalry?\n\nWe may never know for sure. But in those pivotal moments, standing at a crossroads, every decision points either toward embracing the future or clinging to past success. It was a truly challenging time—one that tested the wisdom of corporate leadership.\n\nCould there have been a middle path? A way to integrate, adapt, and compromise?\n\nLet’s find out.\n\n#CorporationStrategy #Nokia #Apple #Android #Symbian #Crossroads",
+      "activity": {
+        "numLikes": 3,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          },
+          {
+            "type": "INTEREST",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-09-02T10:02:00.701Z",
       "activityId": "urn:li:activity:7500855543389904896",
       "shareUrn": "urn:li:ugcPost:7500855380831485953",
@@ -35,7 +63,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1789045200&v=beta&t=yz6kD87pOxg4ei0qEyo-oO-j9nDmB68AsFjUcPQbCu4"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1789074000&v=beta&t=7PtURms2XeO1XXf_pbHzMWxkqVyiuqNIzr3vZ1NTnkM"
         }
       },
       "actor": {
@@ -362,7 +390,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1789045200&v=beta&t=jZ82GjtbOGmbP-MSWbKApP70k9U-poDPpDmEkpZvqmg"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1789074000&v=beta&t=zHZcWiTqa6PEibSsbiS37QxMX7TGxMSGqgZ15dmfIgc"
         }
       },
       "actor": {
@@ -692,50 +720,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-05-23T17:44:45.202Z",
-      "activityId": "urn:li:activity:7464008433856405506",
-      "shareUrn": "urn:li:ugcPost:7464008433139322880",
-      "shareUrl": "https://www.linkedin.com/posts/harvad_starlink-starlinkmini-offiline-activity-7464008433856405506-5iPu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEdQ7NC0KIIzw",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEdQ7NC0KIIzw/feedshare-shrink_480/B4DZ5V8HgQIMAk-/0/1779558283538?e=1790208000&v=beta&t=I0golvlRiMyoQMYHQLNoTpVp1M25IgipkKVNtVXETiE"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHqpKe7jYbdsQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHqpKe7jYbdsQ/feedshare-shrink_20/B4DZ5V8HbNI4AQ-/0/1779558283405?e=1790208000&v=beta&t=A_fStgJCEbiHEIr8ARXSnPfLKp1TL1lrB6k-l6YqZ9o"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQEzejq5RakT4w",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEzejq5RakT4w/feedshare-shrink_800/B4DZ5V8HXzJoAc-/0/1779558283023?e=1790208000&v=beta&t=iF63VmhSKQea0bxChn9-CNmLzjdc8w_C7ooOzmzizYs"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "One of the most respected companies #starlink excels in managing customer relationships. I am truly grateful for their efforts. Despite having policies and rules in place, the employees understand the frustrations and challenges faced by customers. They actively work to help customers appreciate their products and services in a different light. My respect for them is unwavering. \n\n#StarlinkMini #Offiline #Roam #RV",
-      "activity": {
-        "numLikes": 1,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 1
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NjQwMDg0MzM4NTY0MDU1MDYtMTc3OTU1ODI4NTE4Mg==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzAwMzM2MjEyNDA5MDE2MzItMTc4MDk5NDgwMTc5OA==:20"
 }
