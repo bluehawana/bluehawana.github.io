@@ -63,7 +63,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1789506000&v=beta&t=FMFd7ZTzwul-C-WsO0kCpmQ3jGLtf67S8uPoWlywC7E"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aBDMR4.KkAU-/0/1787833688864?e=1789563600&v=beta&t=duhyLcgoBZjbJljG7YhTV5ouh_kYuoR4ZDhMrWIhmC4"
         }
       },
       "actor": {
@@ -131,7 +131,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFe8061goCR1A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFe8061goCR1A/feedshare-shrink_480/B4EaAtZTBCH8Ag-/0/1787468004415?e=1790208000&v=beta&t=MJ6g9So2D-w6WhwcWzBQaAC9jo1mnPw3z7k3zxy4MFQ"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFe8061goCR1A/feedshare-shrink_480/B4EaAtZTBCH8Ag-/0/1787468004415?e=1790812800&v=beta&t=wzCxNn8D85gT3DAFFE8xZO-WcePc-oJGIeLNbZfQZ9g"
           }
         ]
       },
@@ -164,7 +164,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQG0u9oh9EulJg",
             "accessibilityText": "graphical user interface, application",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG0u9oh9EulJg/feedshare-shrink_800/B4EaAhED2oHYAc-/0/1787261108966?e=1790208000&v=beta&t=LYkzupFkzmze5YdzztxQxlB2P8VLddIPBfVVNG6bG5M"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQG0u9oh9EulJg/feedshare-shrink_800/B4EaAhED2oHYAc-/0/1787261108966?e=1790812800&v=beta&t=h-ZbPdJt91MrS7qButJH0WxMOpDAYXg3xGYglcQ3_zA"
           }
         ]
       },
@@ -216,12 +216,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQE6UO2doeacRQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE6UO2doeacRQ/feedshare-shrink_160/B4EZ_ER2o4KcAk-/0/1785704445397?e=1790208000&v=beta&t=RuN-P37DMKT9Hp_xt3pW8Ko0OjeldwT5iDJrN0cuZvY"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQE6UO2doeacRQ/feedshare-shrink_160/B4EZ_ER2o4KcAk-/0/1785704445397?e=1790812800&v=beta&t=qM79RiiZr5oNO2ZC0HYMatJMUw32QqyR46bhlArJX20"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFmOpSVVNPfrQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFmOpSVVNPfrQ/feedshare-shrink_1280/B4EZ_ER2KoHMAM-/0/1785704441701?e=1790208000&v=beta&t=j-5_QJG7VJ0zEXchSc0ZV1rPrN8xme1Gkxvx6fMByYA"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFmOpSVVNPfrQ/feedshare-shrink_1280/B4EZ_ER2KoHMAM-/0/1785704441701?e=1790812800&v=beta&t=gtXG_lx6c0liu4El_KHIXyau5zvlVSN7ehc6Uf0RE-Q"
           }
         ]
       },
@@ -231,7 +231,7 @@
         "name": "Harvad Li",
         "description": "Full-stack Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
       },
-      "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n\nWhat actually cost me the evening wasn’t the code\nPicked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\nTuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\nAutomation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
+      "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn��t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n\nWhat actually cost me the evening wasn’t the code\nPicked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\nTuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\nAutomation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
       "activity": {
         "numLikes": 6,
         "numComments": 0,
@@ -286,12 +286,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFPM1MWYlL9vQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFPM1MWYlL9vQ/feedshare-shrink_480/B4EZ.MVt3gKIAk-/0/1784765931361?e=1790208000&v=beta&t=RWSUN7FvhFzI3kbnxPMDswYcnrvyzcfo06-4T14Qt3Q"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFPM1MWYlL9vQ/feedshare-shrink_480/B4EZ.MVt3gKIAk-/0/1784765931361?e=1790812800&v=beta&t=srWx8V9bjtl020VIVup0dwCgXiDIhTPd5iVoWGfPwHc"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQF49hZT2mt8gA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF49hZT2mt8gA/feedshare-shrink_480/B4EZ.MVt_5KoAk-/0/1784765931842?e=1790208000&v=beta&t=dN6VQJXe78WVHOMmKlx4aFlSft4rKKjYAR56GyBPJ-Y"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQF49hZT2mt8gA/feedshare-shrink_480/B4EZ.MVt_5KoAk-/0/1784765931842?e=1790812800&v=beta&t=1iEDL7Ot_Ipa1IkUeV88iN2YMEKMViSOIQat4tv-Ty4"
           }
         ]
       },
@@ -352,7 +352,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQG941xdOiaPBQ",
             "accessibilityText": "text",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1790208000&v=beta&t=U5WdbJJqrSvnm35ddat-xs_oUNiISjBz8RJelkkfMyo"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQG941xdOiaPBQ/feedshare-shrink_160/B4DZ9dYemCH0Ak-/0/1783978126203?e=1790812800&v=beta&t=-XEqkWfM6QLb1mHKaf6XG-VW5YVy8_t3MrncOiMP3p0"
           }
         ]
       },
@@ -390,7 +390,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1789506000&v=beta&t=7vK2AdP649WTxGPQVIeKPlwL_1O3shvsjfJxePJcXmc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1789563600&v=beta&t=YMOxeKTLMejHra24w7rPmoCIgoeJrqJDBvqAfIccvCQ"
         }
       },
       "actor": {
@@ -422,22 +422,22 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQEAz61UF_-1VA",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1790208000&v=beta&t=ToGW2SVT5izgsbtk6symu7_OZi35G48kzMTLS_3-Fs8"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEAz61UF_-1VA/feedshare-shrink_20/B4EZ8Dl86UK4AM-/0/1782471712651?e=1790812800&v=beta&t=aRK4AX6bWQUezoUC1hrLzVqICVdChlXehczQcFBzPJA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQHADbZpGpHTFQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1790208000&v=beta&t=W-KNtXC0aMPqkVHGCfAWnEQQncFZVCVk3Q7S3Af-T90"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHADbZpGpHTFQ/feedshare-shrink_480/B4EZ8Dl9mBKAAg-/0/1782471713935?e=1790812800&v=beta&t=pMm8NqnYlStuFxjw9MawXprkir9wHW67LimtUPgXLp8"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQExuRHdswz0lw",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1790208000&v=beta&t=7ECvR_21YCyrWyxvXwpnw0o5o1UMixkI6tY5DsxIKwY"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQExuRHdswz0lw/feedshare-image-high-res/B4EZ8Dl9Z6JYAc-/0/1782471714963?e=1790812800&v=beta&t=WbUwTATeXtEcD5JB1cs6PXwpwEROvTTH4JXRZAg-ypA"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4E22AQFiFGQId9DdJQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1790208000&v=beta&t=eglAHiTgK-bi-Ic-3QHv1fnBVLxDlcEuSckWjUtvZ2k"
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQFiFGQId9DdJQ/feedshare-image-high-res/B4EZ8Dl9gbJYAU-/0/1782471713761?e=1790812800&v=beta&t=zFGli3tcLG7141JHR6qdE58sR8FSPudkdllXKt2qVkw"
           }
         ]
       },
@@ -474,7 +474,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFrBX5uDDr8Rg",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1790208000&v=beta&t=Yic8Ctc3aWXUkpMiAukZQjobkOyoUAAM12_dN5nBK4A"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1790812800&v=beta&t=S2--isB7_NCXxdY9mnxrTpQ0j_Bgq0L4b8tqyVUto3M"
           }
         ]
       },
@@ -515,22 +515,22 @@
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEhaQ-P1d987A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1790208000&v=beta&t=t-6rIIAus6gXrvwGrbfpxU6LGHyDKmkEE5KvQ5ADElc"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1790812800&v=beta&t=MepsPehxOv4BKszP-F28-8Mr13rLTVqI-xMIRG8j1WQ"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQElF8FVdjob2Q",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1790208000&v=beta&t=UCIw_ngjuNerBNcp8fGnGVNKzNkJpxdFjFnrXsjtK1M"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1790812800&v=beta&t=fEzsZl22lGLq6QakWn6cKvGGm_NBBifQvdwBwFhqjWY"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQEYCUQqY53EiQ",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1790208000&v=beta&t=O8_bafbmB_JxZ0zAgUwdDBHfNMLoEWysf2BjnyqCBU4"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1790812800&v=beta&t=d6T-nWaOerEO3WCufbiDyu9diDtGwdAwCF_Ox2ASi5s"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D5622AQHq5X1l2NW43Q",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1790208000&v=beta&t=OESesnL0PVdSIH_UKemnLRAlmhkz_xLbQxsR1MwsjgU"
+            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1790812800&v=beta&t=OubWD3cnQkUKGir9CE0WsYWX3XLvsbAYzhR84e5DX7o"
           }
         ]
       },
@@ -567,12 +567,12 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQFeqs_9Qnif9A",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1790208000&v=beta&t=jnGrRzfUqRYjaJTxEr484znO-xgDEHACdxtlBmgeDKM"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1790812800&v=beta&t=KydRp5DasNJqaxWGKk03UIAqpR7aRkpXKjfyOSDA_hw"
           },
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQHKo1M7N4E92g",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1790208000&v=beta&t=9FWVKU0ANBX5NLnCIW7tpiK-iYnMqfEcw1aqv_-nN_c"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1790812800&v=beta&t=korJJz9T-XaCQeENYWBbDhO4DUd9oN6RqD4G9aTONzM"
           }
         ]
       },
@@ -600,7 +600,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQEZoyI8ZLY12g",
             "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1790208000&v=beta&t=JF56FwJ_81VnvUbhzB_HtehY63KeYSmRoF9vK4YvhsM"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEZoyI8ZLY12g/feedshare-shrink_1280/B4DZ7PaUNlHEAM-/0/1781596245254?e=1790812800&v=beta&t=9I84AKfunLXYdkQfbhwB_uQ5k6bQiXFDLDzPzJktk94"
           }
         ]
       },
@@ -633,7 +633,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQERfZFYrKUjSQ",
             "accessibilityText": "diagram",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQERfZFYrKUjSQ/feedshare-shrink_20/B4DZ6sP0SnIsAI-/0/1781006288340?e=1790208000&v=beta&t=yki6iiIoMIO4ihDd1y_Jr7OpYeMLcK-CvJl7u9qiJ1o"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQERfZFYrKUjSQ/feedshare-shrink_20/B4DZ6sP0SnIsAI-/0/1781006288340?e=1790812800&v=beta&t=8cXWZszVyNUgI_GWvyzxPcfdZcqDnhtd1JKD7pbKPMU"
           }
         ]
       },
@@ -682,7 +682,7 @@
           {
             "urn": "urn:li:digitalmediaAsset:D4D22AQF3jtJtp74KDg",
             "accessibilityText": "table",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1790208000&v=beta&t=HxwFkI7Uy5_nAvonC81tRpSC90zhE5VTrD6o_ioP9UY"
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1790812800&v=beta&t=6iLsgcrY_E8g-YYZELPVwJfvvWyynfe15xgr-x_iTBg"
           }
         ]
       },
