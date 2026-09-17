@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-09-03T20:30:52.709Z",
+  "sync_timestamp": "2026-09-17T13:15:48.911Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 219,
+  "images_downloaded": 1,
+  "total_posts_in_system": 220,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-09-03T21:00:52.709Z",
+  "next_sync_recommended": "2026-09-17T13:45:48.911Z",
   "new_posts": [
     {
-      "title": "What was #Nokia’s strategy when it chose to reject #Android and stick with #Symbian? And how did the...",
-      "link": "https://www.linkedin.com/posts/harvad_nokia-android-symbian-activity-7501289375088091137-jKc6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "Raining, rainbow then sunny and cloudy that is today’s weather conditions. What can we learn from it...",
+      "link": "https://www.linkedin.com/posts/harvad_raining-rainbow-then-sunny-and-cloudy-that-activity-7506261019976089600-rWx_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
-        "likes": 3,
+        "likes": 1,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-09-03T20:30:52.686Z"
+      "sync_date": "2026-09-17T13:15:48.747Z"
     }
   ]
 }

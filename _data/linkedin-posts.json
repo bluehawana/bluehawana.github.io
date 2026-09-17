@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-09-03T20:30:52.702Z"
+    "last_sync": "2026-09-17T13:15:48.904Z"
   },
   "extraction": {
-    "date": "2026-09-03T20:30:52.702Z",
+    "date": "2026-09-17T13:15:48.904Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 219,
+    "total_posts_found": 220,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -4173,6 +4173,25 @@
         "shares": 0
       },
       "posted_at": "2026-09-03T14:45:54.238Z"
+    },
+    {
+      "id": "linkedin-1789650948748-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Raining, rainbow then sunny and cloudy that is today’s weather conditions. What can we learn from it...",
+      "content": "Raining, rainbow then sunny and cloudy that is today’s weather conditions. What can we learn from it?\nYou need to have a 🦄 unicorn in your mind，how about it comes to you one day? Always believe that something wonderful is about to happen.",
+      "link": "https://www.linkedin.com/posts/harvad_raining-rainbow-then-sunny-and-cloudy-that-activity-7506261019976089600-rWx_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4E22AQHNMLIdnia_IA/feedshare-shrink_160/B4EaCuYnRFI0Ak-/0/1789632083613?e=1791417600&v=beta&t=5whq0HGfLzJjCNr9yMIYSgUIgNCsR2E1SsLNLGnkMoA",
+      "local_image": "/images/linkedin/linkedin-1789650948748-0-7722b86baa2f4ce1026350d81a591580.jpg",
+      "extracted_at": "2026-09-17T13:15:48.747Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 1,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-09-17T08:01:26.748Z"
     }
   ]
 }
