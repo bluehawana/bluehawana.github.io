@@ -1,6 +1,44 @@
 {
   "data": [
     {
+      "createdAt": "2026-09-17T08:01:26.748Z",
+      "activityId": "urn:li:activity:7506261019976089600",
+      "shareUrn": "urn:li:ugcPost:7506261018835345410",
+      "shareUrl": "https://www.linkedin.com/posts/harvad_raining-rainbow-then-sunny-and-cloudy-that-activity-7506261019976089600-rWx_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "images": [
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQHNMLIdnia_IA",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQHNMLIdnia_IA/feedshare-shrink_160/B4EaCuYnRFI0Ak-/0/1789632083613?e=1791417600&v=beta&t=5whq0HGfLzJjCNr9yMIYSgUIgNCsR2E1SsLNLGnkMoA"
+          },
+          {
+            "urn": "urn:li:digitalmediaAsset:D4E22AQEYoYsbwme1Kg",
+            "accessibilityText": "View image",
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQEYoYsbwme1Kg/feedshare-image-high-res/B4EaCuYnhrH8AY-/0/1789632084753?e=1791417600&v=beta&t=dtq9VYmAC8jZLNrb7O67lS1U3aDte8N1vIywlNGq3Cc"
+          }
+        ]
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "Developer @ Volvo Group | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "Raining, rainbow then sunny and cloudy that is today’s weather conditions. What can we learn from it?\nYou need to have a 🦄 unicorn in your mind，how about it comes to you one day? Always believe that something wonderful is about to happen.",
+      "activity": {
+        "numLikes": 1,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "createdAt": "2026-09-03T14:45:54.238Z",
       "activityId": "urn:li:activity:7501289375088091137",
       "shareUrn": "urn:li:share:7501289374479704065",
@@ -63,7 +101,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aCjBRs5GUAU-/0/1789441417083?e=1790197200&v=beta&t=CHLFyvCC2tesffn38s01TBW-wYliP8dALbenI7CHA9k"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aCjBRs5GUAU-/0/1789441417083?e=1790258400&v=beta&t=DeMUWF872AaDh0CzA-qNz2PIsaudildJVUCxu6V3zfQ"
         }
       },
       "actor": {
@@ -390,7 +428,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1790197200&v=beta&t=ELMksBemUiARA_GjBPXSK-fWTBYzuL_HXWi0G8xJQ2U"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1790258400&v=beta&t=0U0XfgUWTBWiZWhzzRXtr-m26iEKIn6iezaCQRQkn3w"
         }
       },
       "actor": {
@@ -671,56 +709,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-06-09T08:46:41.817Z",
-      "activityId": "urn:li:activity:7470033621240901632",
-      "shareUrn": "urn:li:share:7469728114915536897",
-      "shareUrl": "https://www.linkedin.com/posts/shirin-khosravi-jam_12-github-repositories-every-ai-engineer-activity-7469728116333002752-fyZl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQF3jtJtp74KDg",
-            "accessibilityText": "table",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQF3jtJtp74KDg/feedshare-shrink_20/B4DZ6nOJAVIYAI-/0/1780921962829?e=1791417600&v=beta&t=u1WvVu1fLz-j4v5IvFd6160go38zaMarUD0JmVx967g"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:538934288",
-        "actorUrn": "urn:li:fsd_profile:ACoAACAffBABmg0i0TxuEnNvNKeuiy2-Kq7k_Ds",
-        "name": "Shirin Khosravi Jam",
-        "description": "Engineering Manager - AI Engineering | 500k+ AI/ML Community | Machine learning, RAG, AI Agents, & MLOps | Germany’s Top Female Voice in AI (Favikon) 🇩🇪 | Opinions are my own!"
-      },
-      "commentary": "12 Github repositories every AI Engineer should know! \n(Covering ML, RAG, PyTorch, MLOps, Agents)\nBookmark them! 👇 \n\n1️⃣ Machine Learning for Beginners by Microsoft\n→ Start here if you’re brand new to ML.\nCovers basic ML concepts in Jupyter notebooks beginner-friendly and visual.\n🔗 https://lnkd.in/gGithBVP\n\n2️⃣ Learn PyTorch for Deep Learning\n→ A great repo to learn PyTorch - could be a bit outdated but the concepts still applies.\n🔗 https://lnkd.in/d4ptSuUY\n\n3️⃣ Hands-on Large Language Models\n→ This repo supports the Hands-On LLM book.\nLearn everything from basic language models to finetuning with real notebooks.\n🔗 https://lnkd.in/gpvPemeG\n\n4️⃣ AI Agents for Beginners\n→ A fantastic beginner-friendly course to get started with AI agents.\nFree 11-lesson hands-on curriculum - no fluff, just code.\n🔗 https://lnkd.in/gVm5gmv7\n\n5️⃣ Prompt Engineering Guide\n→ One-stop-shop for prompt engineering.\nGuides, papers, lectures, and tons of curated examples.\n🔗 https://lnkd.in/gDt3Sknr\n\n6️⃣ LLM Course\n→ Hands-on course covering the entire LLM lifecycle — design to deployment.\nIncludes roadmaps + Colab notebooks.\n🔗 https://lnkd.in/gUPJmWNM\n\n6️⃣ GenAI Agents\n→ Great tutorials + code for building agent-based LLM systems.\nCovers everything from simple tool-using agents to advanced workflows.\n🔗 https://lnkd.in/gaiZgzpA\n\n7️⃣ RAG Techniques\n→ One of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available\n🔗 https://lnkd.in/dcGtjFgY\n\n8️⃣ Agents towards production\n→ It is your hands-on guide to every building block of a GenAI agent stack.\n🔗 https://lnkd.in/dnnkrJbE\n\n9️⃣ Awesome Generative AI\n→ Massive curated list of GenAI tools, papers, interviews, repos, and more. Use it as your personal R&D knowledge base.\n🔗 https://lnkd.in/gsTk5nXx\n\n🔟 Made With ML\n→ Covers full ML product lifecycle: from design to CI/CD and monitoring. If you’re serious about building production-grade ML systems, this is gold.\n🔗 https://lnkd.in/gn2RhT_m\n\n1️⃣1️⃣ Designing Machine Learning Systems\n→ Summaries + code + diagrams from the popular O’Reilly book.\nA must-read if you want to architect real-world ML pipelines.\n🔗 https://lnkd.in/g26KNXfb\n\n1️⃣2️⃣ Jam With AI\n→ Hands on RAG and AI Agent projects\n🔗 https://lnkd.in/dkphZt25\n\n♻️ Repost & save if you found it insightful 💚\n➕ Join 48.000+ AI/ML builders here: https://lnkd.in/ds_SzEUH",
-      "activity": {
-        "numLikes": 1107,
-        "numComments": 44,
-        "numShares": 186,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 1023
-          },
-          {
-            "type": "INTEREST",
-            "count": 39
-          },
-          {
-            "type": "EMPATHY",
-            "count": 19
-          },
-          {
-            "type": "PRAISE",
-            "count": 18
-          },
-          {
-            "type": "APPRECIATION",
-            "count": 8
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzAwMzM2MjEyNDA5MDE2MzItMTc4MDk5NDgwMTc5OA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzAyMDc1ODQ5MTA1OTQwNDgtMTc4MTAzNjI3Nzk1OQ==:20"
 }
