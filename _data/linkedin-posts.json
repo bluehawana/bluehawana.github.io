@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-09-17T13:15:48.904Z"
+    "last_sync": "2026-09-21T14:59:18.620Z"
   },
   "extraction": {
-    "date": "2026-09-17T13:15:48.904Z",
+    "date": "2026-09-21T14:59:18.620Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 220,
+    "total_posts_found": 221,
     "new_posts_this_sync": 1,
-    "images_downloaded": 1
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -4192,6 +4192,25 @@
         "shares": 0
       },
       "posted_at": "2026-09-17T08:01:26.748Z"
+    },
+    {
+      "id": "linkedin-1790002758598-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "Great to see Volvo Trucks leading the way once again.\n\nThis award reminds us that long-term success ...",
+      "content": "Great to see Volvo Trucks leading the way once again.\n\nThis award reminds us that long-term success is not about standing still and protecting yesterday's achievements. It's about building on your strengths while adapting to new technologies, new customer needs, and new market realities.\n\nElectrification and intelligent solutions are clearly shaping the future, and it's exciting to be part of this journey. Let's see how we can make it happen and help Volvo Trucks keep winning.",
+      "link": "https://www.linkedin.com/posts/harvad_itoy2027-electrictrucksinreality-activity-7507795049993113600-QzDK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-09-21T14:59:18.598Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-09-21T13:37:08.005Z"
     }
   ]
 }
