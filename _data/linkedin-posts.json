@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-09-21T14:59:18.620Z"
+    "last_sync": "2026-11-05T16:19:36.788Z"
   },
   "extraction": {
-    "date": "2026-09-21T14:59:18.620Z",
+    "date": "2026-11-05T16:19:36.788Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 221,
+    "total_posts_found": 222,
     "new_posts_this_sync": 1,
-    "images_downloaded": 0
+    "images_downloaded": 1
   },
   "posts": [
     {
@@ -4211,6 +4211,25 @@
         "shares": 0
       },
       "posted_at": "2026-09-21T13:37:08.005Z"
+    },
+    {
+      "id": "linkedin-1793895576630-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "After finally settling down, one thing I absolutely wasn't willing to lose was my morning coffee wit...",
+      "content": "After finally settling down, one thing I absolutely wasn't willing to lose was my morning coffee with De'Longhi .\n\nA few days ago, my trusted #DeLonghi suddenly stopped making coffee. The grinder worked; the water heated up and pumped. Everything sounded normal. But nothing came out.\n\nInstead, I found a completely dry coffee puck, compressed so hard it looked like the machine had given up on life.\n\nA few years ago, I would have done what most people used to do:\n\n\t•\tAssume it's broken.\n\t•\tBuy a new machine for 4,000+ SEK.\n\t•\tOr send it for service and pay hundreds just for someone to diagnose it, plus another thousand to replace the component or fix it.\n\nThis time, I did something different. Since we have AI now, I described the symptoms to Microsoft Copilot with some photos and descriptions.\n\nAfter a few rounds of troubleshooting, it pointed to a worn sealing ring in the brewing unit. It explained why pressure was building up in the wrong place and even helped me find replacement options online, sending me the links directly.\n\nIn the end, it was me who fixed the coffee machine myself. However, AI helped me understand the problem well enough to make a confident decision.\n\nThat's the real value: AI helping us bridge the gap between something is wrong and knowing how to fix it.\n\nFree Copilot helped me revive the coffee machine—a repair that saved several thousand kronor. Through my #ClaudePro subscription, I've built DIY solutions to replace numerous SaaS, PaaS, and IaaS services, which has delivered significant cost savings.\n\nMaybe the biggest shift isn't AI itself. Maybe it's learning to ask better questions and fully use the potential of your AI tools.\n\n#AI #Copilot #ClaudeCode #ProblemSolving #DIY #Technology #Productivity",
+      "link": "https://www.linkedin.com/posts/harvad_delonghi-claudepro-ai-activity-7512112893719371776-6GlJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "https://media.licdn.com/dms/image/v2/D4D22AQEQt1LxWehU9Q/feedshare-shrink_480/B4DaEBi3YOGsAk-/0/1791027279929?e=1795651200&v=beta&t=Zb-_azaB_YFSnyp-scfUeL9qXGEWGe4yHwAA9Wf05cY",
+      "local_image": "/images/linkedin/linkedin-1793895576630-0-f4ced653f4525d0f8ecac617edd84c2a.jpg",
+      "extracted_at": "2026-11-05T16:19:36.629Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 3,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-10-03T11:34:42.171Z"
     }
   ]
 }
