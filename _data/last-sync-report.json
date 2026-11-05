@@ -1,23 +1,23 @@
 {
-  "sync_timestamp": "2026-09-21T14:59:18.752Z",
+  "sync_timestamp": "2026-11-05T16:19:36.794Z",
   "profile_name": "Harvad Li",
   "new_posts_synced": 1,
-  "images_downloaded": 0,
-  "total_posts_in_system": 221,
+  "images_downloaded": 1,
+  "total_posts_in_system": 222,
   "api_status": "working",
   "api_method": "linkedinscraper-rapidapi",
-  "next_sync_recommended": "2026-09-21T15:29:18.752Z",
+  "next_sync_recommended": "2026-11-05T16:49:36.794Z",
   "new_posts": [
     {
-      "title": "Great to see Volvo Trucks leading the way once again.\n\nThis award reminds us that long-term success ...",
-      "link": "https://www.linkedin.com/posts/harvad_itoy2027-electrictrucksinreality-activity-7507795049993113600-QzDK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "has_image": false,
+      "title": "After finally settling down, one thing I absolutely wasn't willing to lose was my morning coffee wit...",
+      "link": "https://www.linkedin.com/posts/harvad_delonghi-claudepro-ai-activity-7512112893719371776-6GlJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "has_image": true,
       "engagement": {
-        "likes": 0,
+        "likes": 3,
         "comments": 0,
         "shares": 0
       },
-      "sync_date": "2026-09-21T14:59:18.598Z"
+      "sync_date": "2026-11-05T16:19:36.629Z"
     }
   ]
 }
