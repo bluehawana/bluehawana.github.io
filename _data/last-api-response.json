@@ -168,7 +168,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1794610800&v=beta&t=SW3C3iMy2spiPpGHFCCtXB96msLBR_f0M80R23KXpWc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1794855600&v=beta&t=288fs1Lw2S4Y_TZEKYvQjajX5b437eujPWjfp_eDnMY"
         }
       },
       "actor": {
@@ -495,7 +495,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1794610800&v=beta&t=MJ7ZzKxuNF-Vf7X2a4MyMIxv-nFtuHoiPOxfIlwBFfw"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1794855600&v=beta&t=BFBkRO-Es74xH_ioEd9tHVGPvwy9OkU8dwSU8ErZ9G0"
         }
       },
       "actor": {
@@ -647,13 +647,13 @@
       },
       "commentary": "Excited to share that our team won a trophy at Volvo Group’s #2026HackDay after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot",
       "activity": {
-        "numLikes": 32,
+        "numLikes": 33,
         "numComments": 5,
         "numShares": 0,
         "reactionTypeCounts": [
           {
             "type": "LIKE",
-            "count": 21
+            "count": 22
           },
           {
             "type": "PRAISE",
