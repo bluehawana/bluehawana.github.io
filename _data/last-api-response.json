@@ -37,10 +37,15 @@
       },
       "commentary": "After finally settling down, one thing I absolutely wasn't willing to lose was my morning coffee with De'Longhi .\n\nA few days ago, my trusted #DeLonghi suddenly stopped making coffee. The grinder worked; the water heated up and pumped. Everything sounded normal. But nothing came out.\n\nInstead, I found a completely dry coffee puck, compressed so hard it looked like the machine had given up on life.\n\nA few years ago, I would have done what most people used to do:\n\n\t•\tAssume it's broken.\n\t•\tBuy a new machine for 4,000+ SEK.\n\t•\tOr send it for service and pay hundreds just for someone to diagnose it, plus another thousand to replace the component or fix it.\n\nThis time, I did something different. Since we have AI now, I described the symptoms to Microsoft Copilot with some photos and descriptions.\n\nAfter a few rounds of troubleshooting, it pointed to a worn sealing ring in the brewing unit. It explained why pressure was building up in the wrong place and even helped me find replacement options online, sending me the links directly.\n\nIn the end, it was me who fixed the coffee machine myself. However, AI helped me understand the problem well enough to make a confident decision.\n\nThat's the real value: AI helping us bridge the gap between something is wrong and knowing how to fix it.\n\nFree Copilot helped me revive the coffee machine—a repair that saved several thousand kronor. Through my #ClaudePro subscription, I've built DIY solutions to replace numerous SaaS, PaaS, and IaaS services, which has delivered significant cost savings.\n\nMaybe the biggest shift isn't AI itself. Maybe it's learning to ask better questions and fully use the potential of your AI tools.\n\n#AI #Copilot #ClaudeCode #ProblemSolving #DIY #Technology #Productivity",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 3,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 3
+          }
+        ]
       }
     },
     {
@@ -89,10 +94,15 @@
       },
       "commentary": "Raining, rainbow then sunny and cloudy that is today’s weather conditions. What can we learn from it?\nYou need to have a 🦄 unicorn in your mind，how about it comes to you one day? Always believe that something wonderful is about to happen.",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
       }
     },
     {
@@ -136,10 +146,15 @@
       },
       "commentary": "The #AI era is moving incredibly fast. It feels like when the first car hit the road—no one asked the horse‑carriage owners whether they were happy, and nobody really cared. Technology doesn’t wait. It evolves, and we adapt. That’s the spirit behind our newest robot toy: #Microduck.\n\nResource:\n1. https://lnkd.in/dirKMAiY\n2. https://lnkd.in/dGfWegSv\n3. https://lnkd.in/dWKPSkhK\n\n#AI #Robotics #MicroDuck #Phyicalai",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 1,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
       }
     },
     {
@@ -153,7 +168,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1795194000&v=beta&t=rPOcSXllKh3n8gZcq9t615EfCBUzY09CxpR8rr4l2hY"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1795219200&v=beta&t=AvU6F--01yOn5bKEaHpR1VruhZgysR2o3TbUZVONgMc"
         }
       },
       "actor": {
@@ -285,10 +300,15 @@
       },
       "commentary": "Running DeepSeek-V4-Flash Locally on a MacBook M5 Max 128GB?\n\n\nI spent the past few days testing DeepSeek-V4-Flash-0731 — DeepSeek's 284B-parameter MoE model — using AtomicChat's 2.8-bit GGUF quant on a MacBook M5 Max (128 GB RAM).\n\nIt runs locally at 33 tokens/sec.\n\nI recorded a one-minute clip of it answering \"What is DDD in .NET\". The output arrives faster than I can read it.\n\nMost people assume a model this size requires a datacenter. The full checkpoint is 162 GB; the 2.8-bit quantized version I run is 104 GB. Consumer GPUs can't hold either, but Apple Silicon can — unified memory gives the GPU full access to system RAM.\n\nDeepSeek-V4-Flash is a Mixture-of-Experts model, so only ~13B parameters activate per token, while the model retains the knowledge of the full 284B. To be clear: this is a compressed copy, not the original weights. But because DeepSeek trained the experts directly in 4-bit, the quant still matches the original's token choice 83.6% of the time.\n\n\nMaking it work with Ollama\n\nOllama doesn't support sharded GGUF downloads, and the available quants on Hugging Face come in four shards. Local import fails for the same reason.\n\nI merged the shards into a single GGUF using llama.cpp and re-hosted it. After that, the entire setup becomes one command:\n\nollama run bluehawana/deepseek-v4-flash:iq2_m\n\nNothing else required.\n\nIf you want other quants or other sharded models, the repo includes a script that handles download → merge → import automatically.\n\n\nPerformance numbers (measured via Ollama)\n\n33 tok/s generation (consistent from 128–512 token outputs)\n545 tok/s prompt processing on a 2,700-token prompt\n3.9 s warm load time\n\nWith 103 GB of weights inside 128 GB RAM, context needs to be capped at 8192 for stable long sessions. Full benchmark sheet in the first comment.\n\n\nNotes from the setup\n\nollama create fails on sharded GGUFs (\"has 1 shards, expected 4\"). Merging first is required.\nThe default chat template inside the GGUF is outdated; multi-turn reasoning improves noticeably with a corrected template.\nAll troubleshooting steps are documented in the repo.\n\nWhat this actually is:\n\nThe model is DeepSeek's (MIT).\nThe quantization is by AtomicChat.\nI found the work through Rohan Paul's post on x.com https://lnkd.in/dguG6d-K\nMy part was merging the shards and documenting a reproducible path.\nI created nothing new here — I merged two files and wrote down the steps.\n\nWhy run it locally: offline, private, and no per-token cost. One Mac can serve an entire LAN through Ollama's API.\n\nHardware: a 128 GB Apple Silicon Mac.\n\nRepo: https://lnkd.in/d4tCBSHP\nModel on Ollama: https://lnkd.in/d8mfXb9Q\nModel on Hugging Face: https://lnkd.in/dARbrKj4\n\n#LocalLLM #DeepSeekV4 #MPB #Ollama #AppleSilicon #BuildInPublic",
       "activity": {
-        "numLikes": 0,
-        "numComments": 0,
+        "numLikes": 2,
+        "numComments": 1,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 2
+          }
+        ]
       }
     },
     {
@@ -318,10 +338,23 @@
       },
       "commentary": "New Year, New Project No.9 — Saving your old iPhone’s battery, and its life.\n\nApple ships a Charge Limit feature — 80/85/90/95% — that stops your phone from topping up to 100% and slowly cooking its battery.\nBut it only exists on iPhone 15 and later.\nEverything older gets Optimized Battery Charging, which is adaptive and unpredictable. It decides when to go to 100%. You can’t pin it. My iPhone 12 Pro Max sat at 100% every single night.\nSo I built the hard cap Apple didn’t ship.\nCharge Guard watches for the battery crossing ~80%, then switches off the WiFi smart plug powering the charger. Charging simply stops.\nHere’s the part most people don’t know: almost every cheap WiFi smart plug runs on Tuya Smart underneath. DELTACO, Smart Life, and hundreds of white‑label brands are the same platform in different boxes.\nOne integration works for nearly all of them — and Tuya gives you a free developer account with a proper Cloud API.\nThe constraint that shaped the design: iOS won’t let an app monitor battery level in the background. So I didn’t try.\nThe OS‑level Shortcuts automation is the trigger — my app is only the muscle.\nBattery automation → App Intent → Tuya Cloud API → plug off\n\nHow to do it yourself — full tutorial in the README\nPair any Tuya‑compatible plug in the Smart Life app (move your Deltaco plug from Deltaco Smart Home → Smart Life).\nCreate a free Cloud project at iot.tuya.com — pick the data center matching your country → copy Access ID + Secret.\nAuthorize IoT Core, link your app account via QR → copy the Device ID.\ncp .env.example .env → ./scripts/setup.sh → run it on your iPhone.\nShortcuts → Battery Level rises → Run Immediately.\nAbout 20 minutes, mostly waiting.\nThere’s a scripts/tuya.py that translates Tuya’s error codes into actual fixes — run it from your Mac before touching the phone.\n\nThe honest version: you can do this with zero code\nIf your plug is already in Smart Life, you can build this with a Tap‑to‑Run scene triggered by the battery automation.\nIt’s the first section of the README. Use it if it works for you.\n\nWhat actually cost me the evening wasn’t the code\nPicked Western Europe instead of Central Europe — different Tuya API host, everything failed silently.\nTuya’s device‑linking QR rejects white‑label apps; had to move the plug from Deltaco → Smart Life.\nAutomation fired perfectly and did nothing. “Ask Before Running” was on, waiting for a tap I was asleep for.\nAll three are in the troubleshooting section so you don’t lose that evening too.\n\nNo credentials in the binary — no plaintext strings. Every user enters their own, stored in the iOS Keychain.\nHardware: one DELTACO #SmartPlug, ~€10. Cheaper than the battery replacement it prevents.\n\nSwift · SwiftUI · App Intents · Keychain · HMAC‑SHA256 · XcodeGen\nMIT‑licensed repo 👇\nhttps://lnkd.in/em-CyZ2m\n\n#iOS #Swift #SwiftUI #AppIntents #BatteryHealth #Sustainability #BuildInPublic",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 6,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 3
+          },
+          {
+            "type": "INTEREST",
+            "count": 2
+          },
+          {
+            "type": "EMPATHY",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -375,10 +408,15 @@
       },
       "commentary": "Caught a glimpse of the 6‑seat #TeslaModelYL in a Beijing garage today — a configuration that’s still unavailable in the EU. The setup is interesting: Champagne Gold exterior, 255/275 staggered tyres, six independent seats, and the 84/87 kWh battery pack that aligns with recent test data.Given the Nürburgring spy photos, the development cycle looks mature enough for a September–October appearance. Always exciting to see engineering progress up close before it reaches nordic markets.\n#Beijing #TeslaModelYL #EV #6Seats",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 1,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -394,10 +432,19 @@
       },
       "commentary": "New Year, New Project: No.8 — KB-Graph: A Self-Learning Math Island for My Daughter\n\nWhat if studying gymnasium math felt like playing Animal Crossing instead of grinding a textbook? This idea sparked Project No.8. This August, my daughter starts spetsutbildning i matematik at Hvitfeldtska — the accelerated track. In such programs, one hidden knowledge gap can make everything above it collapse.\n\nI discovered \"The Math Academy Way\" — a 510-page handbook by Justin Skycak (#MathAcademy). It presents knowledge graphs, mastery learning, and spaced repetition — decades of learning science distilled into one openly published draft. While their product is US-focused, the ideas are universal.\n\nMost students never experience learning built on this science. They receive chapters and homework, making studying feel like grinding, leading to less engagement, growing gaps, and ultimately, too late to catch up by exam time. It's time to change the game.\n\nIntroducing KB-Graph — a knowledge-graph RAG that transforms the entire Swedish gymnasium curriculum (Gy25) into a self-learning, self-evaluating, self-improving island for one very important user: my daughter.\n\nWhat it includes:\n- 253 topics mapped as a knowledge graph (math åk7 → Matematik 5/spets + Fysik 1–2), aligned with Skolverket’s ämnesplaner\n- 454 prerequisite edges + 312 “encompassing” edges — advanced practice silently refreshes fundamentals\n- 2,500+ questions generated by a local LLM (Qwen via MLX, zero API cost)\n- Every answer verified by SymPy — never trust an LLM with arithmetic\n- Self-learning: the graph always knows her frontier — exactly what she’s ready for\n- Self-evaluating: instant feedback, accuracy tracking, spaced repetition tuned to her forgetting curve\n- Self-improving: struggling topics trigger refinement and targeted remediation\n\nAnd the Animal Crossing heart: every mastered topic becomes a species in her museum. Algebra is butterflies. Calculus is dinosaurs. Reviews are a daily safari where knowledge fades if not revisited. Rewards come only from demonstrated mastery — no loopholes. Kids find loopholes.\n\nBuilt entirely with Claude Fable 5 orchestrating the pipeline — digesting the handbook, designing the graph, writing the code, deploying to my VPS, and E2E-testing every flow in three days. AI helping build an AI teacher.\n\nOpen knowledge about how humans learn, turned into a private island for one kid. That’s the internet at its best. Her three-year goal sits at the top of her map: Matematik- och fysikprovet → Chalmers. Now she climbs it one confetti at a time.\n\nThe site stays private — it’s her island. But if you’re curious about the architecture, the graph schema, or building this for your own kid’s curriculum, comments and DMs are open. \n\n#AI #LLM #KnowledgeGraph #RAG #ClaudeCode #SpacedRepetition #AnimalCrossing #Chalmers #NewYearNewProject",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 5,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 4
+          },
+          {
+            "type": "EMPATHY",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -448,7 +495,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1795194000&v=beta&t=GOXx4BRhSH5pV9QtJrteljy7TFhrYfjVv8-dB44XMyM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1795219200&v=beta&t=ltSbdzyRPWSM-vgig_nPNDIXfHgYGlU04hD622oF-xI"
         }
       },
       "actor": {
@@ -507,10 +554,19 @@
       },
       "commentary": "Embrace the sunshine and the energy of summer while it lasts—you’ll surely miss it when it’s gone. As adults, it can be challenging to acknowledge that someone else may excel beyond us. This often leads to a tendency to step back and observe or even critique from the sidelines. Recognizing this instinct is the first step toward understanding and overcoming it.\nTrue strength comes from committing to your own journey of growth, without being distracted by gossip or the opinions of others. Stay authentic, focus on your path, and persist with determination until you achieve your goals. One day, someone may pause and say, “I finally understand them now.”",
       "activity": {
-        "numLikes": 0,
+        "numLikes": 2,
         "numComments": 0,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 1
+          },
+          {
+            "type": "INTEREST",
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -591,10 +647,19 @@
       },
       "commentary": "Excited to share that our team won a trophy at Volvo Group’s #2026HackDay after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot",
       "activity": {
-        "numLikes": 0,
-        "numComments": 0,
+        "numLikes": 33,
+        "numComments": 5,
         "numShares": 0,
-        "reactionTypeCounts": []
+        "reactionTypeCounts": [
+          {
+            "type": "LIKE",
+            "count": 22
+          },
+          {
+            "type": "PRAISE",
+            "count": 11
+          }
+        ]
       }
     },
     {
