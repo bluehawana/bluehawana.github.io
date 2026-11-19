@@ -5,7 +5,7 @@
 
 # Configuration
 CLIENT_ID="77duha47hcbh8o"
-CLIENT_SECRET="REMOVED_SECRET"
+CLIENT_SECRET="REMOVED_SET_LINKEDIN_CLIENT_SECRET_IN_ENV"
 REDIRECT_URI="https://oauth.pstmn.io/v1/callback"
 SCOPE="r_liteprofile r_emailaddress w_member_social"
 

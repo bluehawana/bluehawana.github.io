@@ -19,7 +19,7 @@ const readline = require('readline');
 // LinkedIn OAuth Configuration
 const CONFIG = {
     CLIENT_ID: '77duha47hcbh8o',
-    CLIENT_SECRET: 'REMOVED_SECRET',
+    CLIENT_SECRET: process.env.LINKEDIN_CLIENT_SECRET,
     REDIRECT_URI: 'https://oauth.pstmn.io/v1/callback',
     SCOPE: 'r_liteprofile r_emailaddress w_member_social'
 };

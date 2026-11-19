@@ -11,7 +11,7 @@ const path = require('path');
 
 // Your LinkedIn credentials
 const LINKEDIN_CLIENT_ID = '77duha47hcbh8o';
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 console.log('🔧 LinkedIn API Token Test');
 console.log('===========================\n');

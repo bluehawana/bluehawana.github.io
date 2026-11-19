@@ -9,7 +9,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || 'REMOVED_SECRET';
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || process.env.RAPIDAPI_KEY;
 const PROFILE_URN = 'urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI';
 const POSTS_DIR = path.join(__dirname, '_posts');
 

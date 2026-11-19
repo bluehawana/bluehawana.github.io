@@ -10,7 +10,7 @@ const path = require('path');
 const https = require('https');
 
 // OAuth Configuration
-const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN || process.env.LINKEDIN_ACCESS_TOKEN;
 
 const DATA_DIR = path.join(__dirname, 'data');
 const POSTS_FILE = path.join(DATA_DIR, 'linkedin-posts.json');

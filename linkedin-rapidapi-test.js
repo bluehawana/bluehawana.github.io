@@ -7,7 +7,7 @@
 
 const https = require('https');
 
-const RAPIDAPI_KEY = 'REMOVED_SECRET';
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 const RAPIDAPI_HOST = 'linkedin-jobs-data-api.p.rapidapi.com';
 
 class LinkedInRapidAPITest {

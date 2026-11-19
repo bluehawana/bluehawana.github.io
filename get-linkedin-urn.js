@@ -6,7 +6,7 @@
 
 const https = require('https');
 
-const RAPIDAPI_KEY = process.argv[2] || process.env.RAPIDAPI_KEY || 'REMOVED_SECRET';
+const RAPIDAPI_KEY = process.argv[2] || process.env.RAPIDAPI_KEY || process.env.RAPIDAPI_KEY;
 const PROFILE_USERNAME = process.argv[3] || 'hzl';
 
 console.log('\n🔍 Finding LinkedIn Profile URN\n');

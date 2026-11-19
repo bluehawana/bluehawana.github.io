@@ -33,7 +33,7 @@ In your Netlify site settings → **Environment variables**, add:
 
 ```
 LINKEDIN_CLIENT_ID=78j5zi980vkc3v
-LINKEDIN_CLIENT_SECRET=REMOVED_SECRET
+LINKEDIN_CLIENT_SECRET=REMOVED_SET_LINKEDIN_CLIENT_SECRET_IN_ENV
 LINKEDIN_ACCESS_TOKEN=[Your LinkedIn OAuth token]
 GITHUB_TOKEN=[Your GitHub Personal Access Token]
 GITHUB_REPO=bluehawana/bluehawana.github.io

@@ -6,7 +6,7 @@
 
 const https = require('https');
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 const MEMBER_ID = 'IMcvTu6zhf';
 
 function makeRestRequest(path, description, version = '202405') {

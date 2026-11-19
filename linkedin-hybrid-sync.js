@@ -10,7 +10,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const https = require('https');
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 class LinkedInHybridSync {
     constructor() {

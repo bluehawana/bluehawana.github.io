@@ -23,7 +23,7 @@ const path = require('path');
 
 // Configuration
 const CONFIG = {
-  RAPIDAPI_KEY: process.env.RAPIDAPI_KEY || 'REMOVED_SECRET',
+  RAPIDAPI_KEY: process.env.RAPIDAPI_KEY || process.env.RAPIDAPI_KEY,
   PROFILE_URN: 'urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI',
   RAPIDAPI_HOST: 'linkedinscraper.p.rapidapi.com',
   API_ENDPOINT: '/profile-posts',

@@ -3,7 +3,7 @@
  * Tests the LinkedIn API access token and available scopes
  */
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 async function testOAuthToken() {
     console.log('🔍 Testing OAuth 2.0 Access Token...');

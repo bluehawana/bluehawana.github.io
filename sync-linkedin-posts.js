@@ -10,7 +10,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // RapidAPI Configuration
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || 'REMOVED_SECRET';
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || process.env.RAPIDAPI_KEY;
 const RAPIDAPI_HOST = 'linkedin-data-api.p.rapidapi.com';
 
 const POSTS_DIR = path.join(__dirname, '_posts');

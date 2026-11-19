@@ -4,8 +4,8 @@
 
 You already have both API keys we need! I found them in your curl command:
 
-1. **RapidAPI Key**: `REMOVED_SECRET`
-2. **ScrapingDog API Key**: `REMOVED_SECRET`
+1. **RapidAPI Key**: `REMOVED_SET_RAPIDAPI_KEY_IN_ENV`
+2. **ScrapingDog API Key**: `REMOVED_SET_API_KEY_IN_ENV`
 
 ---
 
@@ -18,13 +18,13 @@ Go to: **https://github.com/bluehawana/bluehawana.github.io/settings/secrets/act
 #### Add Secret #1: RAPIDAPI_KEY
 1. Click "**New repository secret**"
 2. **Name**: `RAPIDAPI_KEY`
-3. **Value**: `REMOVED_SECRET`
+3. **Value**: `REMOVED_SET_RAPIDAPI_KEY_IN_ENV`
 4. Click "**Add secret**"
 
 #### Add Secret #2: SCRAPINGDOG_API_KEY
 1. Click "**New repository secret**" again
 2. **Name**: `SCRAPINGDOG_API_KEY`
-3. **Value**: `REMOVED_SECRET`
+3. **Value**: `REMOVED_SET_API_KEY_IN_ENV`
 4. Click "**Add secret**"
 
 **That's it!** ✅
@@ -82,13 +82,13 @@ YOUR WEBSITE UPDATES! 🎉
 **Your curl command breakdown:**
 ```bash
 curl --request GET \
-  --url 'https://scrapdog.p.rapidapi.com/scrape?url=...&api_key=REMOVED_SECRET&dynamic=false' \
+  --url 'https://scrapdog.p.rapidapi.com/scrape?url=...&api_key=REMOVED_SET_API_KEY_IN_ENV&dynamic=false' \
   --header 'x-rapidapi-host: scrapingdog.p.rapidapi.com' \
-  --header 'x-rapidapi-key: REMOVED_SECRET'
+  --header 'x-rapidapi-key: REMOVED_SET_RAPIDAPI_KEY_IN_ENV'
 ```
 
 **Translation:**
-- **URL parameter**: `api_key=REMOVED_SECRET` ← ScrapingDog API Key
+- **URL parameter**: `api_key=REMOVED_SET_API_KEY_IN_ENV` ← ScrapingDog API Key
 - **Header**: `x-rapidapi-key: 82ecb2468...` ← RapidAPI Key
 - **Service**: ScrapingDog via RapidAPI
 
@@ -167,7 +167,7 @@ You should see:
 Go to: https://github.com/bluehawana/bluehawana.github.io/settings/secrets/actions
 Click: New repository secret
 Name: RAPIDAPI_KEY
-Value: REMOVED_SECRET
+Value: REMOVED_SET_RAPIDAPI_KEY_IN_ENV
 Click: Add secret
 ```
 
@@ -175,7 +175,7 @@ Click: Add secret
 ```
 Click: New repository secret (again)
 Name: SCRAPINGDOG_API_KEY
-Value: REMOVED_SECRET
+Value: REMOVED_SET_API_KEY_IN_ENV
 Click: Add secret
 ```
 

@@ -7,7 +7,7 @@
 
 const https = require('https');
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 const MEMBER_ID = 'IMcvTu6zhf'; // From userinfo endpoint
 
 function makeRequest(path, description) {

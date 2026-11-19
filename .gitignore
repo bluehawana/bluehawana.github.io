@@ -27,3 +27,6 @@ node_modules/
 # Backup files
 *.bak
 *~
+# Local credential files
+.env.*
+!.env.example

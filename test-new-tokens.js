@@ -6,8 +6,8 @@
 
 const https = require('https');
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
-const REFRESH_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
+const REFRESH_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 async function makeLinkedInRequest(endpoint, method = 'GET') {
   return new Promise((resolve, reject) => {

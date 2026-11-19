@@ -8,7 +8,7 @@
 const fs = require('fs');
 
 // Your LinkedIn credentials
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 console.log('🔍 LinkedIn Profile & Posts Discovery');
 console.log('====================================\n');

@@ -7,7 +7,7 @@
 
 const https = require('https');
 
-const ACCESS_TOKEN = 'REMOVED_SECRET';
+const ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 
 function makeRequest(path, description) {
     return new Promise((resolve, reject) => {
