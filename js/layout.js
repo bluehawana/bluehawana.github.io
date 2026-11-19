@@ -102,7 +102,7 @@ function injectFooter() {
                <div class="nav-logo-icon">HL</div>
                Harvad Li
             </a>
-            <p>Senior Full Stack Developer focused on solving complex technical challenges with cross-cultural insights.</p>
+            <p>AI Solution Engineer & Full-Stack Developer focused on solving complex technical challenges with cross-cultural insights.</p>
          </div>
 
          <div class="footer-links-section">
