@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <title>Projects - Harvad Li | Technical Portfolio</title>
    <meta name="description"
-      content="Personal projects and technical experiments by Harvad Li - AI Solution Engineer & Full-Stack Developer">
+      content="AI products at Volvo Group, open-source work and personal projects by Harvad Li - AI Solution Engineer & Full-Stack Developer">
    <meta name="author" content="Harvad Li">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -28,8 +28,132 @@
          <div class="section-header">
             <div class="section-label">Technical Portfolio</div>
             <h1 class="section-title">My Projects</h1>
-            <p class="section-subtitle">A collection of personal projects and technical experiments built with modern
-               stacks.</p>
+            <p class="section-subtitle">AI products built at Volvo Group, open-source work, and personal projects.</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- AI at Volvo Group -->
+   <section class="section">
+      <div class="container">
+         <div class="section-header">
+            <div class="section-label">Professional Work · 2026</div>
+            <h2 class="section-title">AI at Volvo Group</h2>
+            <p class="section-subtitle">AI products I built and run as Full-Stack Developer & AI Solution Engineer at
+               Volvo Group Digital Technology & Operations. Internal systems, so described here without source links.</p>
+         </div>
+         <div class="projects-grid">
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> ON-PREMISES
+                  </div>
+                  <h3 class="project-title">Shared On-Premises AI Platform</h3>
+                  <p class="project-description">
+                     The model-serving layer behind every bot below: two Mac Studio M2 Ultra servers running Ollama with round-robin load balancing and automatic failover, exposed through OpenAI-compatible endpoints so each product can change model without code changes. Open-weight models run on Volvo's own hardware, so no data goes to an outside AI service, at zero cloud API cost.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Ollama</span>
+                     <span class="project-tech-tag">MLX</span>
+                     <span class="project-tech-tag">OpenAI-compatible API</span>
+                     <span class="project-tech-tag">Failover</span>
+                     <span class="project-tech-tag">Load Balancing</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> HACKDAY 2026 · 2ND OF 16
+                  </div>
+                  <h3 class="project-title">ClaimGenerationBot</h3>
+                  <p class="project-description">
+                     Automated service-contract generation for Volvo Trucks: plate number in, the agent retrieves truck profile, service history and parts data, drafts the contract and books the workshop, and a human approves the final step. From about 40 minutes to near-instant.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Python</span>
+                     <span class="project-tech-tag">FastAPI</span>
+                     <span class="project-tech-tag">.NET</span>
+                     <span class="project-tech-tag">RAG</span>
+                     <span class="project-tech-tag">AI Agent</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> APR 2026 · IN DAILY USE
+                  </div>
+                  <h3 class="project-title">Support Chatbot — First RAG System in DTO</h3>
+                  <p class="project-description">
+                     A support assistant on an LLM wiki knowledge base, used daily by L1–L3 support engineers in two teams. Cut support-ticket processing time by 35%. Answers cite their sources and carry a confidence score, low-confidence answers are escalated to a specialist, and screenshots are read with vision OCR.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">.NET 10</span>
+                     <span class="project-tech-tag">SignalR</span>
+                     <span class="project-tech-tag">RAG</span>
+                     <span class="project-tech-tag">Vision OCR</span>
+                     <span class="project-tech-tag">SQLite</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> MAY 2026
+                  </div>
+                  <h3 class="project-title">DevBot — AI Pull-Request Review</h3>
+                  <p class="project-description">
+                     Junior mode analyses a developer's changes and their risks and suggests how to get the PR approved. Senior mode shows what changed in the codebase and the likely result of approving the merge. Cut average senior review time from 6 hours to 60 minutes.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Python</span>
+                     <span class="project-tech-tag">aiohttp</span>
+                     <span class="project-tech-tag">Teams Bot Framework</span>
+                     <span class="project-tech-tag">Azure DevOps</span>
+                     <span class="project-tech-tag">Qwen Coder</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> JUN 2026
+                  </div>
+                  <h3 class="project-title">OfficeBot — Slides from Plain Text</h3>
+                  <p class="project-description">
+                     Turns plain text and a prompt into an HTML slide deck with the Volvo Group logo, colour theme and fonts applied automatically. Saves about 90% of the time compared with building the deck by hand.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">LLM</span>
+                     <span class="project-tech-tag">HTML</span>
+                     <span class="project-tech-tag">Automation</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> MAY 2026
+                  </div>
+                  <h3 class="project-title">Observability & Failover</h3>
+                  <p class="project-description">
+                     Grafana dashboards the whole team reads at a glance: Argo CD sync status, pipeline runs and a delivery health index. Black-box probes alert on the real cause when the service is down or slow, and a failover controller moves traffic from on-premises hosts to Azure and back on Prometheus signals.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Prometheus</span>
+                     <span class="project-tech-tag">Grafana</span>
+                     <span class="project-tech-tag">Alertmanager</span>
+                     <span class="project-tech-tag">HAProxy</span>
+                     <span class="project-tech-tag">Bicep</span>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </section>
@@ -37,6 +161,11 @@
    <!-- Projects Section -->
    <section class="section">
       <div class="container">
+         <div class="section-header">
+            <div class="section-label">Open Source & Demos</div>
+            <h2 class="section-title">Open Source & Personal Projects</h2>
+            <p class="section-subtitle">Public demos, open-source work and side projects.</p>
+         </div>
          <div class="projects-grid">
             <!-- Co-Driver -->
             <div class="project-card">
@@ -103,6 +232,50 @@
                   </div>
                   <div class="project-links">
                      <a href="https://github.com/bluehawana/nvidia-nim-switch-python" class="btn btn-primary" target="_blank">Source Code</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- From CV: open source -->
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> OPEN SOURCE
+                  </div>
+                  <h3 class="project-title">Qwen 27B on Apple Silicon</h3>
+                  <p class="project-description">
+                     An OpenAI- and Anthropic-compatible gateway for serving a 27B Qwen model concurrently on Apple Silicon with SGLang, with admission control and metrics.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">SGLang</span>
+                     <span class="project-tech-tag">Apple Silicon</span>
+                     <span class="project-tech-tag">LLM Gateway</span>
+                     <span class="project-tech-tag">Metrics</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://github.com/bluehawana/Qwen3.827B-SGLang-mpbm5max" class="btn btn-primary" target="_blank">Source Code</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="project-card">
+               <div class="project-card-content">
+                  <div class="project-status">
+                     <span class="dot"></span> OPEN SOURCE
+                  </div>
+                  <h3 class="project-title">Open-Weight Models & SGLang Contribution</h3>
+                  <p class="project-description">
+                     12+ custom models published to Ollama and Hugging Face, plus Apple Silicon concurrent-inference support contributed to the open-source SGLang serving framework.
+                  </p>
+                  <div class="project-tech">
+                     <span class="project-tech-tag">Ollama</span>
+                     <span class="project-tech-tag">Hugging Face</span>
+                     <span class="project-tech-tag">SGLang</span>
+                     <span class="project-tech-tag">Quantization</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://ollama.com/bluehawana" class="btn btn-primary" target="_blank">Ollama</a>
+                     <a href="https://huggingface.co/bluehawana" class="btn btn-secondary" target="_blank">Hugging Face</a>
                   </div>
                </div>
             </div>
