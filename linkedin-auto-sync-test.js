@@ -264,7 +264,7 @@ class LinkedInAutoSync {
      * Generate LinkedIn post URL
      */
     generatePostUrl(postId) {
-        if (!postId) return 'https://www.linkedin.com/in/harvad';
+        if (!postId) return 'https://www.linkedin.com/in/hzl';
         
         if (postId.includes('activity:')) {
             return `https://www.linkedin.com/feed/update/${postId}/`;
@@ -275,7 +275,7 @@ class LinkedInAutoSync {
             return `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
         }
         
-        return 'https://www.linkedin.com/in/harvad';
+        return 'https://www.linkedin.com/in/hzl';
     }
 
     /**

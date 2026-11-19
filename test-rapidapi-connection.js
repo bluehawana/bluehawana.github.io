@@ -58,7 +58,7 @@ if (!SCRAPINGDOG_API_KEY) {
 // Test the API connection
 console.log('\n📡 Step 2: Testing API Connection...\n');
 
-const testUrl = encodeURIComponent('https://www.linkedin.com/in/harvad');
+const testUrl = encodeURIComponent('https://www.linkedin.com/in/hzl');
 
 const options = {
   hostname: 'scrapingdog.p.rapidapi.com',
@@ -74,7 +74,7 @@ const options = {
 
 console.log('🌐 Making test request to RapidAPI...');
 console.log(`   Host: ${options.hostname}`);
-console.log(`   Testing with profile: linkedin.com/in/harvad`);
+console.log(`   Testing with profile: linkedin.com/in/hzl`);
 
 const req = https.request(options, (res) => {
   let data = '';

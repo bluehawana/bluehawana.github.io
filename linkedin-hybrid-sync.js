@@ -66,7 +66,7 @@ Your recent LinkedIn activity will be synced here using our hybrid approach:
 #LinkedIn #OAuth #Automation #Blog`,
             date: now.toISOString().split('T')[0],
             timestamp: now.getTime(),
-            url: 'https://www.linkedin.com/in/harvad',
+            url: 'https://www.linkedin.com/in/hzl',
             type: 'linkedin_oauth_test',
             engagement: { likes: 0, comments: 0, shares: 0 },
             tags: ['LinkedIn', 'OAuth', 'Automation', 'Test'],

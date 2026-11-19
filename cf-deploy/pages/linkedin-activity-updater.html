@@ -348,7 +348,7 @@
             container.innerHTML = '';
             
             const needsId = posts.filter(post => 
-                post.url === 'https://www.linkedin.com/in/harvad/recent-activity/all/' ||
+                post.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/' ||
                 !post.url.includes('/feed/update/urn:li:activity:')
             );
             
@@ -385,7 +385,7 @@
                            target="_blank" class="search-link">LinkedIn Search</a>
                         <a href="https://www.google.com/search?q=site:linkedin.com+%22Harvad+Li%22+${encodeURIComponent(searchKeywords)}" 
                            target="_blank" class="search-link">Google Search</a>
-                        <a href="https://www.linkedin.com/in/harvad/recent-activity/all/" 
+                        <a href="https://www.linkedin.com/in/hzl/recent-activity/all/" 
                            target="_blank" class="search-link">Your Activity Feed</a>
                     </div>
                     <div class="id-input-section">
@@ -459,7 +459,7 @@
         // Copy search template
         function copyTemplate(index) {
             const post = currentPosts.filter(p => 
-                p.url === 'https://www.linkedin.com/in/harvad/recent-activity/all/' ||
+                p.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/' ||
                 !p.url.includes('/feed/update/urn:li:activity:')
             )[index];
             

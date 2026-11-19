@@ -49,7 +49,7 @@ function smartLinkedInURLConverter(url, postContent = '') {
             } else {
                 // Return a search URL for now, but log that we need the activity ID
                 console.warn(`Missing activity ID for post: ${mapping.searchHint}`);
-                return `https://www.linkedin.com/in/harvad/recent-activity/all/?search=${encodeURIComponent(mapping.searchHint)}`;
+                return `https://www.linkedin.com/in/hzl/recent-activity/all/?search=${encodeURIComponent(mapping.searchHint)}`;
             }
         }
     }

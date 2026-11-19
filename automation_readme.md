@@ -31,7 +31,7 @@ This website automatically updates content from your GitHub and LinkedIn profile
 {
   "content": "Your LinkedIn post content",
   "date": "2025-07-19",
-  "url": "https://linkedin.com/in/harvad"
+  "url": "https://linkedin.com/in/hzl"
 }
 ```
 3. Commit and push changes

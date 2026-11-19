@@ -591,7 +591,7 @@
                 
                 // Count broken URLs
                 const brokenCount = posts.filter(post => 
-                    post.url === 'https://www.linkedin.com/in/harvad/recent-activity/all/'
+                    post.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/'
                 ).length;
                 brokenUrls.textContent = `${brokenCount} remaining`;
                 
@@ -718,7 +718,7 @@
                 const newPost = {
                     content: content,
                     date: new Date().toISOString().split('T')[0],
-                    url: activityId ? `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/` : 'https://www.linkedin.com/in/harvad',
+                    url: activityId ? `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/` : 'https://www.linkedin.com/in/hzl',
                     activityId: activityId || null,
                     tags: tags
                 };

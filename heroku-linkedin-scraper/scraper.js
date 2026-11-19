@@ -9,7 +9,7 @@ const axios = require('axios');
 
 class LinkedInScraper {
     constructor() {
-        this.profileUrl = 'https://www.linkedin.com/in/harvad';
+        this.profileUrl = 'https://www.linkedin.com/in/hzl';
         this.userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36';
     }
 
@@ -84,7 +84,7 @@ class LinkedInScraper {
                             extractedPosts.push({
                                 content: content.substring(0, 500),
                                 date: date,
-                                url: url || `https://www.linkedin.com/in/harvad`,
+                                url: url || `https://www.linkedin.com/in/hzl`,
                                 activityId: activityId,
                                 source: 'puppeteer'
                             });

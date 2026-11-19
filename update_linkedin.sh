@@ -23,7 +23,7 @@ if [ "$1" = "--sync" ]; then
     echo "🔄 Attempting LinkedIn RSS sync..."
     
     # Try RSS2JSON service
-    RSS_RESPONSE=$(curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/harvad/recent-activity/")
+    RSS_RESPONSE=$(curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/hzl/recent-activity/")
     
     if echo "$RSS_RESPONSE" | grep -q '"status":"ok"'; then
         echo "✅ RSS feed accessible, but LinkedIn has restricted content"
@@ -88,7 +88,7 @@ NEW_POST=$(cat << EOF
 {
   "content": "$CONTENT",
   "date": "$DATE",
-  "url": "https://www.linkedin.com/in/harvad",
+  "url": "https://www.linkedin.com/in/hzl",
   "tags": $TAGS_JSON
 }
 EOF

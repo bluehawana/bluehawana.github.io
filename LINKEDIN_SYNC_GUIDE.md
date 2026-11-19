@@ -89,7 +89,7 @@ This improved LinkedIn sync system provides multiple reliable methods to keep yo
 
 ### RSS Feed Settings
 
-The system uses `https://www.linkedin.com/in/harvad/recent-activity/` as the RSS source. To change this:
+The system uses `https://www.linkedin.com/in/hzl/recent-activity/` as the RSS source. To change this:
 
 1. **Update the profile URL** in:
    - `linkedin-sync-improved.js`
@@ -98,7 +98,7 @@ The system uses `https://www.linkedin.com/in/harvad/recent-activity/` as the RSS
 
 2. **Change from**:
    ```javascript
-   const rssUrl = 'https://www.linkedin.com/in/harvad/recent-activity/';
+   const rssUrl = 'https://www.linkedin.com/in/hzl/recent-activity/';
    ```
 
 3. **Change to**:

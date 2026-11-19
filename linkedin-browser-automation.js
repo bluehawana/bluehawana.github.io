@@ -89,7 +89,7 @@ class LinkedInBrowserAutomation {
             console.log('🌐 Navigating to LinkedIn profile...');
             
             // Navigate to your LinkedIn profile
-            await this.page.goto('https://www.linkedin.com/in/harvad/', {
+            await this.page.goto('https://www.linkedin.com/in/hzl/', {
                 waitUntil: 'networkidle2',
                 timeout: 30000
             });
@@ -204,7 +204,7 @@ class LinkedInBrowserAutomation {
                 timestamp: post.timestamp,
                 url: post.activityId.includes('activity') ? 
                      `https://www.linkedin.com/feed/update/urn:li:activity:${post.activityId}/` :
-                     'https://www.linkedin.com/in/harvad',
+                     'https://www.linkedin.com/in/hzl',
                 tags: this.extractTags(post.content),
                 source: 'linkedin_browser_automation',
                 activityId: post.activityId,
@@ -224,8 +224,8 @@ class LinkedInBrowserAutomation {
      */
     async tryAlternativePages() {
         const urls = [
-            'https://www.linkedin.com/in/harvad/recent-activity/posts/',
-            'https://www.linkedin.com/in/harvad/detail/recent-activity/',
+            'https://www.linkedin.com/in/hzl/recent-activity/posts/',
+            'https://www.linkedin.com/in/hzl/detail/recent-activity/',
             'https://www.linkedin.com/feed/'
         ];
 
@@ -449,7 +449,7 @@ While LinkedIn's anti-automation measures prevented extracting actual post conte
 #BrowserAutomation #LinkedIn #OAuth #TechDemo`,
                     date: new Date().toISOString().split('T')[0],
                     timestamp: Date.now(),
-                    url: 'https://www.linkedin.com/in/harvad',
+                    url: 'https://www.linkedin.com/in/hzl',
                     tags: ['BrowserAutomation', 'LinkedIn', 'OAuth', 'TechDemo'],
                     source: 'linkedin_browser_automation',
                     activityId: `demo-${Date.now()}`,

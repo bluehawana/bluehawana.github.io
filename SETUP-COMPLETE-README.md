@@ -142,7 +142,7 @@ cat _data/last-sync-report.json
 - **Netlify Dashboard**: https://app.netlify.com/sites/bluehawana
 - **GitHub Repository**: https://github.com/bluehawana/bluehawana.github.io
 - **GitHub Actions**: https://github.com/bluehawana/bluehawana.github.io/actions
-- **LinkedIn Profile**: https://www.linkedin.com/in/harvad
+- **LinkedIn Profile**: https://www.linkedin.com/in/hzl
 
 ## 🎯 What Happens Now (Automatic)
 

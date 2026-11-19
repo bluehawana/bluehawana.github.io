@@ -34,7 +34,7 @@ This Heroku app automatically scrapes your LinkedIn posts every 2 hours and upda
    - `GITHUB_TOKEN`: Your GitHub personal access token
    - `GITHUB_REPO_OWNER`: `bluehawana`
    - `GITHUB_REPO_NAME`: `bluehawana.github.io`
-   - `LINKEDIN_PROFILE_URL`: `https://www.linkedin.com/in/harvad`
+   - `LINKEDIN_PROFILE_URL`: `https://www.linkedin.com/in/hzl`
 
 3. Click "Deploy app"
 
@@ -97,7 +97,7 @@ This Heroku app automatically scrapes your LinkedIn posts every 2 hours and upda
 | `GITHUB_TOKEN` | GitHub Personal Access Token | Required |
 | `GITHUB_REPO_OWNER` | Repository owner | `bluehawana` |
 | `GITHUB_REPO_NAME` | Repository name | `bluehawana.github.io` |
-| `LINKEDIN_PROFILE_URL` | Your LinkedIn profile | `https://www.linkedin.com/in/harvad` |
+| `LINKEDIN_PROFILE_URL` | Your LinkedIn profile | `https://www.linkedin.com/in/hzl` |
 | `SCRAPE_INTERVAL_HOURS` | Scraping frequency | `2` |
 | `MAX_POSTS_TO_KEEP` | Posts to retain | `10` |
 

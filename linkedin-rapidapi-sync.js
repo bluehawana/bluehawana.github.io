@@ -320,7 +320,7 @@ function updatePostsData(existingData, newPosts) {
   const updatedData = {
     profile: {
       name: "Harvad Li", 
-      linkedin_url: "https://www.linkedin.com/in/harvad/",
+      linkedin_url: "https://www.linkedin.com/in/hzl/",
       profile_urn: CONFIG.PROFILE_URN,
       last_sync: new Date().toISOString()
     },

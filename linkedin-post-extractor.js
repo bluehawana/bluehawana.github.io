@@ -164,7 +164,7 @@ function addPostToFile(post) {
       activityId: post.activityId,
       author: {
         name: "Harvad Li",
-        profileUrl: "https://linkedin.com/in/harvad"
+        profileUrl: "https://linkedin.com/in/hzl"
       },
       source: 'auto_extraction'
     });

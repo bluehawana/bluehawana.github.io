@@ -233,7 +233,7 @@ async function main() {
     const dataToSave = {
       profile: {
         name: "Harvad Li",
-        linkedin_url: "https://www.linkedin.com/in/harvad/"
+        linkedin_url: "https://www.linkedin.com/in/hzl/"
       },
       last_sync: new Date().toISOString(),
       total_posts: allPosts.length,

@@ -118,7 +118,7 @@ exports.handler = async (event, context) => {
       activityId: activityId,
       author: {
         name: "Harvad Li",
-        profileUrl: "https://linkedin.com/in/harvad"
+        profileUrl: "https://linkedin.com/in/hzl"
       },
       source: 'quick_add'
     };

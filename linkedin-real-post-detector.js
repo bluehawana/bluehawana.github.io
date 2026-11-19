@@ -57,9 +57,9 @@ class LinkedInRealPostDetector {
             console.log('🔍 Trying LinkedIn RSS feed...');
             
             const rssUrls = [
-                'https://www.linkedin.com/in/harvad/recent-activity/posts.rss',
-                'https://www.linkedin.com/in/harvad/recent-activity.rss',
-                'https://linkedin.com/in/harvad.rss'
+                'https://www.linkedin.com/in/hzl/recent-activity/posts.rss',
+                'https://www.linkedin.com/in/hzl/recent-activity.rss',
+                'https://linkedin.com/in/hzl.rss'
             ];
 
             let completed = 0;
@@ -144,7 +144,7 @@ class LinkedInRealPostDetector {
                     title: title,
                     date: pubDate.toISOString().split('T')[0],
                     timestamp: pubDate.getTime(),
-                    url: link || 'https://www.linkedin.com/in/harvad',
+                    url: link || 'https://www.linkedin.com/in/hzl',
                     tags: this.extractTags(description),
                     source: 'linkedin_rss',
                     rawData: { title, description, link, pubDate: dateMatch ? dateMatch[1] : null }
@@ -248,9 +248,9 @@ class LinkedInRealPostDetector {
         console.log('🔍 Trying web scraping approaches...');
         
         const urls = [
-            'https://www.linkedin.com/in/harvad/recent-activity/',
-            'https://www.linkedin.com/in/harvad/detail/recent-activity/posts/',
-            'https://www.linkedin.com/in/harvad/'
+            'https://www.linkedin.com/in/hzl/recent-activity/',
+            'https://www.linkedin.com/in/hzl/detail/recent-activity/posts/',
+            'https://www.linkedin.com/in/hzl/'
         ];
 
         for (const url of urls) {
@@ -411,7 +411,7 @@ class LinkedInRealPostDetector {
             } else {
                 console.log('\n⚠️ No real posts detected automatically.');
                 console.log('💡 To sync your newest post:');
-                console.log('   1. Go to https://www.linkedin.com/in/harvad');
+                console.log('   1. Go to https://www.linkedin.com/in/hzl');
                 console.log('   2. Find your newest post');
                 console.log('   3. Copy the post URL');
                 console.log('   4. Share it with me to extract and sync');

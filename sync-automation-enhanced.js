@@ -604,7 +604,7 @@ const ACTIVITY_POSTS = ${JSON.stringify(ACTIVITY_POSTS, null, 4)};
 
 const PROFILE_INFO = {
     name: "Harvad Li",
-    profileUrl: "https://linkedin.com/in/harvad",
+    profileUrl: "https://linkedin.com/in/hzl",
     personURN: "urn:li:person:ACoAAB8zZBwBuEWaKs5G_v6sYsJ8qTvT6eqD9-8"
 };
 
@@ -976,7 +976,7 @@ async function syncPosts() {
         activityId: post.activityId,
         author: {
             name: "Harvad Li",
-            profileUrl: "https://linkedin.com/in/harvad"
+            profileUrl: "https://linkedin.com/in/hzl"
         },
         featured: post.featured || false,
         metadata: post.metadata || {},

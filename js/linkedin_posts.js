@@ -23,7 +23,7 @@ function convertToDirectLinkedInURL(url, postContent = '', postData = null) {
     // For posts without activity IDs, return profile URL as fallback
     if (url.includes('/in/hzl') || !url.includes('activity')) {
         console.warn(`Post missing activity ID, using profile fallback: ${postContent.substring(0, 50)}...`);
-        return 'https://www.linkedin.com/in/harvad';
+        return 'https://www.linkedin.com/in/hzl';
     }
 
     // Default fallback
@@ -216,7 +216,7 @@ async function fetchLinkedInPosts() {
                     shares: post.engagement?.shares || 0
                 };
 
-                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/harvad');
+                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
 
                 // Create preview excerpt (50-80 words) for compact view
@@ -266,7 +266,7 @@ async function fetchLinkedInPosts() {
                 <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
                     <i class="fa fa-linkedin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
                     No LinkedIn posts available at this time.<br>
-                    <a href="https://www.linkedin.com/in/harvad" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/hzl" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
                 </div>
             `;
         }
@@ -313,7 +313,7 @@ async function fetchLinkedInPosts() {
                     }
                 }
 
-                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/harvad');
+                const postUrl = post.url || (post.activityId ? `https://www.linkedin.com/feed/update/${post.activityId}/` : 'https://www.linkedin.com/in/hzl');
                 const linkText = 'View Original Post';
 
                 // For full blog page, show full content with images
@@ -377,7 +377,7 @@ async function fetchLinkedInPosts() {
                 <div style="text-align: center; padding: 40px; color: var(--cyber-text-dim);">
                     <i class="fa fa-linkedin" style="font-size: 24px; margin-bottom: 16px;"></i><br>
                     No LinkedIn posts available at this time.<br>
-                    <a href="https://www.linkedin.com/in/harvad" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/hzl" target="_blank" style="color: var(--cyber-primary);">Visit LinkedIn Profile</a>
                 </div>
             `;
         }
@@ -398,7 +398,7 @@ async function fetchLinkedInPosts() {
 async function tryRSSSync() {
     try {
         console.log('🔄 Attempting RSS sync...');
-        const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/harvad/recent-activity/';
+        const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/hzl/recent-activity/';
         const response = await fetch(rssUrl);
         const data = await response.json();
 
@@ -406,7 +406,7 @@ async function tryRSSSync() {
             const posts = data.items.slice(0, 5).map(item => ({
                 content: cleanHTMLContent(item.description || item.title),
                 date: new Date(item.pubDate).toISOString().split('T')[0],
-                url: item.link || 'https://www.linkedin.com/in/harvad',
+                url: item.link || 'https://www.linkedin.com/in/hzl',
                 tags: extractTagsFromContent(item.description || item.title),
                 source: 'rss'
             }));
