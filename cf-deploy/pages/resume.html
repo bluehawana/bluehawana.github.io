@@ -3,9 +3,9 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Resume - Harvad Li | Senior Developer</title>
+   <title>Resume - Harvad Li | AI Solution Engineer</title>
    <meta name="description"
-      content="Professional resume of Harvad Li - Senior Full Stack Developer. Java, .NET, React, AWS/Azure expertise.">
+      content="Resume of Harvad Li - Full-Stack Developer & AI Solution Engineer at Volvo Group. On-premises AI platforms, AI agents, RAG, cloud infrastructure, Python, .NET.">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- CSS -->
@@ -74,6 +74,38 @@
          color: var(--text-secondary);
       }
 
+      .resume-sidebar-content a {
+         color: var(--accent-primary);
+         text-decoration: none;
+      }
+
+      .resume-profile {
+         color: var(--text-secondary);
+         font-size: 1rem;
+         line-height: 1.8;
+      }
+
+      .resume-list {
+         color: var(--text-secondary);
+         line-height: 1.8;
+         margin: 0;
+         padding-left: var(--space-lg);
+      }
+
+      .resume-list li {
+         margin-bottom: var(--space-sm);
+      }
+
+      .resume-list strong,
+      .timeline-description strong {
+         color: var(--text-primary);
+      }
+
+      .timeline-description a,
+      .resume-list a {
+         color: var(--accent-primary);
+      }
+
       @media (max-width: 992px) {
          .resume-grid {
             grid-template-columns: 1fr;
@@ -100,8 +132,8 @@
             <div class="section-label">Curriculum Vitae</div>
             <h1 class="section-title">Professional Experience</h1>
             <p class="section-subtitle">
-               Bridging large-scale enterprise systems with innovative full-stack solutions.
-               Focusing on Java, .NET, and Cloud native architectures.
+               Full-Stack Developer & AI Solution Engineer at Volvo Group.
+               Building on-premises AI platforms and the AI agents that run on them.
             </p>
          </div>
 
@@ -112,71 +144,181 @@
                   <div class="resume-sidebar-title">Contact</div>
                   <div class="resume-sidebar-content">
                      hongzhili01@gmail.com<br>
-                     Gothenburg, Sweden
+                     Gothenburg, Sweden<br><br>
+                     <a href="https://www.linkedin.com/in/harvad" target="_blank" rel="noopener">LinkedIn</a><br>
+                     <a href="https://github.com/bluehawana" target="_blank" rel="noopener">GitHub</a><br>
+                     <a href="https://huggingface.co/bluehawana" target="_blank" rel="noopener">Hugging Face</a>
                   </div>
                </div>
 
                <div class="resume-sidebar-item">
                   <div class="resume-sidebar-title">Expertise</div>
                   <div class="skill-tag-group">
-                     <span class="skill-pill">Java / Spring Boot</span>
-                     <span class="skill-pill">C# / .NET Core</span>
-                     <span class="skill-pill">React / Next.js</span>
-                     <span class="skill-pill">TypeScript</span>
-                     <span class="skill-pill">AWS / Azure</span>
+                     <span class="skill-pill">AI Agents</span>
+                     <span class="skill-pill">RAG</span>
+                     <span class="skill-pill">On-Prem LLM Serving</span>
+                     <span class="skill-pill">Python / FastAPI</span>
+                     <span class="skill-pill">C# / .NET</span>
+                     <span class="skill-pill">TypeScript / React</span>
+                     <span class="skill-pill">Kotlin / AOSP</span>
                      <span class="skill-pill">Kubernetes</span>
-                     <span class="skill-pill">PostgreSQL</span>
+                     <span class="skill-pill">Terraform / Bicep</span>
+                     <span class="skill-pill">Azure</span>
+                     <span class="skill-pill">Prometheus / Grafana</span>
+                     <span class="skill-pill">Claude Code</span>
                   </div>
                </div>
 
                <div class="resume-sidebar-item">
                   <div class="resume-sidebar-title">Education</div>
                   <div class="resume-sidebar-content">
-                     <strong>IT Högskolan</strong><br>
-                     .NET Cloud Dev (2023)<br>
-                     Java Integration (2021)<br><br>
-                     <strong>Guo Da (UGOT)</strong><br>
-                     M.S. Int'l Business (2019)
+                     <strong>IT-Högskolan, Gothenburg</strong><br>
+                     B.Sc. .NET Cloud Development (2021–2023)<br>
+                     Java Integration (2019–2021)<br><br>
+                     <strong>University of Gothenburg</strong><br>
+                     M.Sc. International Business and Trade (2017–2019)<br><br>
+                     <strong>Tianjin University of Technology</strong><br>
+                     B.Sc. Software Engineering (2011–2015)
                   </div>
                </div>
 
                <div class="resume-sidebar-item">
                   <div class="resume-sidebar-title">Certifications</div>
                   <div class="resume-sidebar-content">
-                     AWS Solutions Architect<br>
-                     AWS Developer Assoc.<br>
-                     Azure Fundamentals
+                     AWS Solutions Architect – Associate (2022)<br>
+                     AWS Data Analytics – Specialty (2022)<br>
+                     AWS Developer – Associate (2022)<br>
+                     Azure Fundamentals AZ-900 (2022)<br>
+                     CNCF Scholarship Recipient (CKAD)
                   </div>
                </div>
 
-               <div style="margin-top: 50px;">
-                  <a href="../resume.pdf" class="btn btn-secondary" style="width: 100%; justify-content: center;">
-                     Download PDF
-                  </a>
+               <div class="resume-sidebar-item">
+                  <div class="resume-sidebar-title">Languages</div>
+                  <div class="resume-sidebar-content">
+                     English (fluent)<br>
+                     Swedish (B2, professional)<br>
+                     Chinese (native)
+                  </div>
                </div>
             </aside>
 
             <!-- Main Content -->
             <main>
                <div class="resume-section">
+                  <div class="resume-section-title">Profile</div>
+                  <p class="resume-profile">
+                     Senior software engineer with 6+ years across full-stack development, cloud infrastructure and
+                     AI, now building and running the on-premises AI platform at Volvo Group Digital Technology &
+                     Operations (DTO) and the AI agents that run on it. I own what I build end to end in production,
+                     including its roadmap, incidents and costs. I write code with AI coding agents (Claude Code)
+                     every day, and I know commercial-vehicle software from inside Volvo Group.
+                  </p>
+               </div>
+
+               <div class="resume-section">
+                  <div class="resume-section-title">AI at Volvo Group — Highlights</div>
+                  <ul class="resume-list">
+                     <li><strong>2nd place of 16 teams at Volvo Group HackDay 2026</strong>, leading the team behind
+                        ClaimGenerationBot; Volvo Trucks asked for a production rollout.</li>
+                     <li><strong>Built the first RAG system in Volvo Group DTO</strong> (Support Chatbot, April
+                        2026), in daily use by two teams and cutting support-ticket processing time by 35%.</li>
+                     <li><strong>Four AI products in four months</strong> (April to July 2026), each with a measured
+                        result: senior PR review time from 6 hours to 60 minutes, about 90% less time to build a
+                        slide deck, and a three-agent system for trucks.</li>
+                     <li><strong>Run the platform underneath them:</strong> open-weight models served on Volvo's own
+                        hardware, so no data goes to an outside AI service, at zero cloud API cost.</li>
+                     <li><strong>Teach it:</strong> two company-wide sessions on RAG, agents and on-premises LLMs
+                        (74 and 71 registered participants).</li>
+                  </ul>
+               </div>
+
+               <div class="resume-section">
                   <div class="resume-section-title">Work Experience</div>
 
                   <div class="timeline-item-refined">
                      <div class="timeline-header">
                         <div>
-                           <h3 class="timeline-title">IT/Infrastructure Specialist</h3>
-                           <div class="timeline-company">ECARX</div>
+                           <h3 class="timeline-title">Full-Stack Developer & AI Solution Engineer</h3>
+                           <div class="timeline-company">Volvo Group — Software Configurator, Software Factory, DTO,
+                              Gothenburg</div>
                         </div>
-                        <div class="timeline-date">Oct 2024 - Present</div>
+                        <div class="timeline-date">Mar 2026 - Present</div>
                      </div>
                      <div class="timeline-description">
                         <ul>
-                           <li>Leading infrastructure optimization and system integration for automotive technology
-                              solutions.</li>
-                           <li>Migrating services from AKS to local Kubernetes clusters, significantly reducing
-                              operational costs.</li>
-                           <li>Implementing advanced monitoring with Grafana and custom scripting for enterprise
-                              reliability.</li>
+                           <li><strong>Shared AI platform (on-premises):</strong> Designed and run the model-serving
+                              layer behind the bots below: two Mac Studio M2 Ultra servers running Ollama with
+                              round-robin load balancing and automatic failover, exposed through OpenAI-compatible
+                              endpoints so each product can change model without code changes. Published 12+ custom
+                              models to <a href="https://ollama.com/bluehawana" target="_blank"
+                                 rel="noopener">Ollama</a> and <a href="https://huggingface.co/bluehawana"
+                                 target="_blank" rel="noopener">Hugging Face</a>, and contributed Apple Silicon
+                              concurrent-inference support to the open-source SGLang serving framework.</li>
+                           <li><strong>Volvo Smart Vehicle — three agents on one truck record</strong> (Jul 2026;
+                              Android Automotive/AOSP, Kotlin, FastAPI, Whisper, Gemma 4 on Ollama, MLX, Docker):
+                              Built a working prototype in which three agents read and write one record keyed by the
+                              registration plate and call each other instead of starting over. <em>Co-Driver</em> is
+                              a hands-free voice agent in the cab with 33 tools that plans routes and rest breaks
+                              against EU driving-time rules, explains dashboard warning lamps from the handbook and
+                              books workshop service. <em>ClaimBot</em> settles who pays for a repair from contract
+                              tier, warranty and open campaigns, and drafts the claim. <em>Fleet Manager</em> gives
+                              the office a live view of every truck and relays customer changes to the driver. About
+                              1 s per direct voice turn and 3–4 s when a turn crosses all three agents. Model chosen
+                              by benchmark against three alternatives, with an MLX failover. Agents only quote what
+                              the record returns and never report an unconfirmed booking; an end-to-end voice test
+                              rig and a 14-truck scenario fleet check every stage. Designed as one platform for any
+                              truck brand: the wake word and brand are configuration, and all data stays in the
+                              manufacturer's own cloud. Built with Claude Code. Code, architecture and a 10-minute
+                              demo: <a href="https://github.com/bluehawana/CoDriver-LLM-TTS-Demo" target="_blank"
+                                 rel="noopener">github.com/bluehawana/CoDriver-LLM-TTS-Demo</a></li>
+                           <li><strong>ClaimGenerationBot — 2nd place of 16 teams, Volvo Group HackDay 2026</strong>
+                              (Python/FastAPI, .NET, RAG): Automated service-contract generation for Volvo Trucks:
+                              plate number in, the agent retrieves truck profile, service history and parts data,
+                              drafts the contract and books the workshop, and a human approves the final step.
+                              <strong>From about 40 minutes to near-instant.</strong></li>
+                           <li><strong>Support Chatbot</strong> (Apr 2026; .NET 10, SignalR, llama3.3:70b,
+                              nomic-embed-text, qwen3-vl, SQLite): Built the first RAG system in DTO, a support
+                              assistant on a Karpathy-style LLM wiki knowledge base for the Software Configurator
+                              and SWES teams, whose L1–L3 support engineers use it in their daily work. <strong>Cut
+                                 support-ticket processing time by 35%.</strong> Answers cite their sources and
+                              carry a confidence score, low-confidence answers are escalated to a specialist,
+                              screenshots are read with vision OCR, and every conversation is stored for audit.</li>
+                           <li><strong>DevBot — AI pull-request review</strong> (May 2026; Python, aiohttp,
+                              Microsoft Teams Bot Framework, Azure DevOps webhooks, Qwen Coder): Junior mode
+                              analyses a developer's changes and their risks and suggests how to get the PR
+                              approved. Senior mode shows what changed in the codebase and the likely result of
+                              approving the merge. <strong>Cut average senior review time from 6 hours to 60
+                                 minutes.</strong> Path-based review rules and incremental reviews, with documented
+                              secret handling and rotation.</li>
+                           <li><strong>OfficeBot — slides from plain text</strong> (Jun 2026; LLM, HTML): Turns
+                              plain text and a prompt into an HTML slide deck with the Volvo Group logo, colour
+                              theme and fonts applied automatically. <strong>Saves about 90% of the time</strong>
+                              compared with building the deck by hand.</li>
+                           <li><strong>AI coding agents for the team, through the gateway</strong> (PowerShell,
+                              Entra ID): Packaged a Claude Code setup that reaches Claude models through Volvo's
+                              GenAI Hub AI Gateway with short-lived Entra ID tokens instead of API keys, with an
+                              installer and a smoke test so any developer reproduces it in minutes.</li>
+                           <li><strong>AI assets as code, and security</strong> (GitHub Actions, Azure Pipelines,
+                              Bicep, Azure Automation): Keep each bot's knowledge base and configuration in its own
+                              versioned repository, separate from the container image, so the application ships
+                              with no secrets and no Volvo data and a knowledge change is reviewed and traceable.
+                              CI and CD through GitHub Actions, with reusable Azure Pipelines templates for build,
+                              infrastructure, publish and security steps. Wrote a daily runbook that uses a managed
+                              identity with read-only Graph access to warn the team before app secrets and
+                              certificates expire.</li>
+                           <li><strong>Observability and resilience</strong> (May 2026; Prometheus, Grafana,
+                              Alertmanager, HAProxy, .NET, Bicep): Replaced hard-to-read Splunk dashboards with
+                              Grafana dashboards the whole team reads at a glance: Argo CD sync status, pipeline
+                              runs, Azure DevOps activity per developer and a delivery health index built from
+                              recording rules. Added black-box probes that alert on the real cause when the service
+                              website is down or slow, and built a failover controller that moves traffic from
+                              on-premises hosts to Azure and back on Prometheus signals.</li>
+                           <li><strong>Team knowledge as data, and mentoring:</strong> Wrote the team's coding
+                              handbook by reviewing every team repository, published as chapters for people and as
+                              a versioned knowledge base for retrieval, and built an LLM-generated 3D knowledge
+                              graph of the team's services and processes used for onboarding. Mentor colleagues
+                              adopting AI coding agents and local models.</li>
                         </ul>
                      </div>
                   </div>
@@ -184,10 +326,29 @@
                   <div class="timeline-item-refined">
                      <div class="timeline-header">
                         <div>
-                           <h3 class="timeline-title">Azure Fullstack Developer</h3>
-                           <div class="timeline-company">Synteda</div>
+                           <h3 class="timeline-title">Infrastructure Engineer & Full-Stack Developer</h3>
+                           <div class="timeline-company">ECARX Technology (Automotive Infotainment), Gothenburg
+                           </div>
                         </div>
-                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-date">Oct 2024 - Nov 2025</div>
+                     </div>
+                     <div class="timeline-description">
+                        <ul>
+                           <li>Cut cloud spend by 35%.</li>
+                           <li>Ran a zero-downtime migration from Azure AKS to on-premises Kubernetes (Helm, Argo
+                              CD, Terraform).</li>
+                           <li>Reduced MTTR by 35% with Prometheus and Grafana.</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="timeline-item-refined">
+                     <div class="timeline-header">
+                        <div>
+                           <h3 class="timeline-title">.NET and Azure Integration Developer (Freelance)</h3>
+                           <div class="timeline-company">Synteda AB</div>
+                        </div>
+                        <div class="timeline-date">Aug 2023 - Sep 2024</div>
                      </div>
                      <div class="timeline-description">
                         <ul>
@@ -202,10 +363,10 @@
                   <div class="timeline-item-refined">
                      <div class="timeline-header">
                         <div>
-                           <h3 class="timeline-title">Platform Architect</h3>
+                           <h3 class="timeline-title">Platform Architect & Full-Stack Developer</h3>
                            <div class="timeline-company">Senior Material (Europe) AB</div>
                         </div>
-                        <div class="timeline-date">2022</div>
+                        <div class="timeline-date">Jan 2022 - Dec 2022</div>
                      </div>
                      <div class="timeline-description">
                         <ul>
@@ -224,7 +385,7 @@
                            <h3 class="timeline-title">Fullstack Developer</h3>
                            <div class="timeline-company">Pembio AB</div>
                         </div>
-                        <div class="timeline-date">2020 - 2021</div>
+                        <div class="timeline-date">Oct 2020 - Sep 2021</div>
                      </div>
                      <div class="timeline-description">
                         <ul>
@@ -236,7 +397,65 @@
                </div>
 
                <div class="resume-section">
-                  <div class="resume-section-title">Major Technical Projects</div>
+                  <div class="resume-section-title">Technical Skills</div>
+                  <ul class="resume-list">
+                     <li><strong>AI platform, model APIs and gateways:</strong> Access to AI models across providers
+                        (Azure OpenAI, Anthropic Claude, Gemini API, Groq, NVIDIA NIM) and on-premises model serving
+                        (Ollama, MLX, SGLang, llama.cpp), AI gateway, OpenAI-compatible endpoints, failover and load
+                        balancing, model versions, benchmarking, quantization</li>
+                     <li><strong>AI agents and retrieval (RAG):</strong> Agent harnesses and agent loops with tool
+                        calling, multi-agent systems, tool integrations, retrieval-augmented generation, knowledge
+                        bases, embeddings, vector search, prompts and prompt engineering, vision OCR, speech
+                        (Whisper, TTS)</li>
+                     <li><strong>Evaluations and observability:</strong> Evaluations of answer quality (confidence
+                        scoring, grounded answers with sources, human escalation), model benchmarks, end-to-end test
+                        rigs, latency logging, audit trails, monitoring and alerting with Prometheus and Grafana</li>
+                     <li><strong>Security and safety:</strong> Least privilege, secrets management (Azure Key Vault,
+                        managed identities, token rotation), Entra ID, data sovereignty, agent guardrails that limit
+                        prompt injection (tool allow-lists, grounded answers, human approval before actions)</li>
+                     <li><strong>Cloud infrastructure as code and CI/CD:</strong> Terraform, Azure Bicep, Kubernetes
+                        (AKS, OpenShift ARO, on-premises), Helm, Argo CD, Docker, automated pipelines with Azure
+                        DevOps and GitHub Actions, resilience and failover, cost optimisation</li>
+                     <li><strong>Languages and testing:</strong> Python (FastAPI, asyncio, pytest), C#/.NET,
+                        TypeScript/React, Kotlin (Android Automotive, AOSP), SQL, PowerShell; well-tested,
+                        maintainable code, code review</li>
+                     <li><strong>AI coding agents:</strong> Claude Code, GitHub Copilot, local coder models (Qwen
+                        Coder) in daily use; mentoring engineers to adopt them safely</li>
+                  </ul>
+               </div>
+
+               <div class="resume-section">
+                  <div class="resume-section-title">Open Source & Projects</div>
+
+                  <div class="timeline-item-refined">
+                     <div class="timeline-header">
+                        <div>
+                           <h3 class="timeline-title">NVIDIA NIM Switch</h3>
+                           <div class="timeline-company">Open Source — Model Gateway</div>
+                        </div>
+                     </div>
+                     <div class="timeline-description">
+                        <p>Model gateway that lets Claude Code run against 180+ NVIDIA NIM models, with a published
+                           compatibility report for all 182. <a
+                              href="https://github.com/bluehawana/nvidia-nim-switch-python" target="_blank"
+                              rel="noopener">github.com/bluehawana/nvidia-nim-switch-python</a></p>
+                     </div>
+                  </div>
+
+                  <div class="timeline-item-refined">
+                     <div class="timeline-header">
+                        <div>
+                           <h3 class="timeline-title">Qwen 27B on Apple Silicon</h3>
+                           <div class="timeline-company">Open Source — Concurrent Model Serving</div>
+                        </div>
+                     </div>
+                     <div class="timeline-description">
+                        <p>OpenAI- and Anthropic-compatible gateway with admission control and metrics for
+                           concurrent serving. <a
+                              href="https://github.com/bluehawana/Qwen3.827B-SGLang-mpbm5max" target="_blank"
+                              rel="noopener">github.com/bluehawana/Qwen3.827B-SGLang-mpbm5max</a></p>
+                     </div>
+                  </div>
 
                   <div class="timeline-item-refined">
                      <div class="timeline-header">
