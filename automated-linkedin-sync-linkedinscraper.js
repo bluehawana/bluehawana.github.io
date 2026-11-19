@@ -120,9 +120,31 @@ async function downloadImage(imageUrl, postId) {
 }
 
 /**
- * Fetch LinkedIn profile posts using LinkedIn Scraper API
+ * Fetch LinkedIn profile posts, retrying when the API is slow or briefly down.
+ * One 60-second timeout used to fail the whole run; the API usually answers in
+ * under two seconds, so a later attempt often succeeds.
  */
 async function fetchLinkedInPosts() {
+  const waitsMs = [15000, 45000, 90000]; // pauses between the 4 attempts
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await fetchLinkedInPostsOnce();
+    } catch (error) {
+      const status = Number((/status (\d+)/.exec(error.message) || [])[1]);
+      // A 4xx other than 429 means a bad key or request: retrying cannot help.
+      const retryable = !status || status === 429 || status >= 500;
+      if (!retryable || attempt > waitsMs.length) throw error;
+      const wait = waitsMs[attempt - 1];
+      log(`Attempt ${attempt} failed (${error.message}); retrying in ${wait / 1000}s`, 'WARN');
+      await new Promise((r) => setTimeout(r, wait));
+    }
+  }
+}
+
+/**
+ * One request to the LinkedIn Scraper API
+ */
+async function fetchLinkedInPostsOnce() {
   return new Promise((resolve, reject) => {
     const encodedUrn = encodeURIComponent(CONFIG.PROFILE_URN);
 
