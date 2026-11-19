@@ -216,7 +216,7 @@ class LinkedInDirectClient {
         return shares.map(share => {
             let content = '';
             let activityId = null;
-            let url = 'https://www.linkedin.com/in/hzl';
+            let url = 'https://www.linkedin.com/in/harvad';
             
             // Extract content
             if (share.text?.text) {
@@ -261,7 +261,7 @@ class LinkedInDirectClient {
         return posts.map(post => {
             let content = '';
             let activityId = null;
-            let url = 'https://www.linkedin.com/in/hzl';
+            let url = 'https://www.linkedin.com/in/harvad';
             
             // Extract content
             if (post.commentary?.text) {
@@ -304,7 +304,7 @@ class LinkedInDirectClient {
         return activities.map(activity => {
             let content = '';
             let activityId = null;
-            let url = 'https://www.linkedin.com/in/hzl';
+            let url = 'https://www.linkedin.com/in/harvad';
             
             // Extract content from various activity types
             if (activity.updateContent?.person?.headline) {

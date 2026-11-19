@@ -80,7 +80,7 @@ class LinkedInUltimateAutomation {
             await this.page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
             
             console.log('🌐 Navigating to LinkedIn profile...');
-            await this.page.goto('https://www.linkedin.com/in/hzl/', {
+            await this.page.goto('https://www.linkedin.com/in/harvad/', {
                 waitUntil: 'networkidle2',
                 timeout: 30000
             });
@@ -138,7 +138,7 @@ class LinkedInUltimateAutomation {
                     content: post.content,
                     date: new Date(Date.now() - (index * 24 * 60 * 60 * 1000)).toISOString().split('T')[0],
                     timestamp: Date.now() - (index * 24 * 60 * 60 * 1000),
-                    url: 'https://www.linkedin.com/in/hzl',
+                    url: 'https://www.linkedin.com/in/harvad',
                     tags: this.extractTags(post.content),
                     source: 'linkedin_browser_automation',
                     extractionMethod: post.selector
@@ -163,9 +163,9 @@ class LinkedInUltimateAutomation {
         console.log('\n📡 Strategy 2: RSS Feed Detection');
         
         const rssUrls = [
-            'https://www.linkedin.com/in/hzl/recent-activity/posts.rss',
-            'https://www.linkedin.com/in/hzl.rss',
-            'https://linkedin.com/in/hzl/feed.rss'
+            'https://www.linkedin.com/in/harvad/recent-activity/posts.rss',
+            'https://www.linkedin.com/in/harvad.rss',
+            'https://linkedin.com/in/harvad/feed.rss'
         ];
 
         for (const url of rssUrls) {
@@ -253,7 +253,7 @@ This demonstrates the power of combining OAuth authentication with browser autom
 #LinkedIn #OAuth #Automation #WebDevelopment #API`,
                 date: new Date().toISOString().split('T')[0],
                 timestamp: Date.now(),
-                url: 'https://www.linkedin.com/in/hzl',
+                url: 'https://www.linkedin.com/in/harvad',
                 tags: ['LinkedIn', 'OAuth', 'Automation', 'WebDevelopment', 'API'],
                 source: 'linkedin_realistic_demo',
                 extractionMethod: 'profile_based_generation'
@@ -274,7 +274,7 @@ It's fascinating how modern web APIs balance functionality with security. The ke
 #TechChallenges #API #ContentSync #Development`,
                 date: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0],
                 timestamp: Date.now() - 24 * 60 * 60 * 1000,
-                url: 'https://www.linkedin.com/in/hzl',
+                url: 'https://www.linkedin.com/in/harvad',
                 tags: ['TechChallenges', 'API', 'ContentSync', 'Development'],
                 source: 'linkedin_realistic_demo',
                 extractionMethod: 'profile_based_generation'
@@ -294,7 +294,7 @@ The system successfully demonstrates end-to-end automation while handling Linked
 #Automation #LinkedIn #OAuth #Puppeteer #GitHub`,
                 date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
                 timestamp: Date.now() - 2 * 24 * 60 * 60 * 1000,
-                url: 'https://www.linkedin.com/in/hzl',
+                url: 'https://www.linkedin.com/in/harvad',
                 tags: ['Automation', 'LinkedIn', 'OAuth', 'Puppeteer', 'GitHub'],
                 source: 'linkedin_realistic_demo',
                 extractionMethod: 'profile_based_generation'
@@ -360,7 +360,7 @@ The system successfully demonstrates end-to-end automation while handling Linked
                     content: this.cleanHTMLContent(descMatch[1]),
                     date: dateMatch ? new Date(dateMatch[1]).toISOString().split('T')[0] : new Date().toISOString().split('T')[0],
                     timestamp: dateMatch ? new Date(dateMatch[1]).getTime() : Date.now(),
-                    url: linkMatch ? linkMatch[1] : 'https://www.linkedin.com/in/hzl',
+                    url: linkMatch ? linkMatch[1] : 'https://www.linkedin.com/in/harvad',
                     tags: this.extractTags(descMatch[1]),
                     source: 'linkedin_rss_feed'
                 });
@@ -386,7 +386,7 @@ The system successfully demonstrates end-to-end automation while handling Linked
                     content: content,
                     date: new Date(Date.now() - (index * 12 * 60 * 60 * 1000)).toISOString().split('T')[0],
                     timestamp: Date.now() - (index * 12 * 60 * 60 * 1000),
-                    url: 'https://www.linkedin.com/in/hzl',
+                    url: 'https://www.linkedin.com/in/harvad',
                     tags: this.extractTags(content),
                     source: 'linkedin_public_api'
                 });

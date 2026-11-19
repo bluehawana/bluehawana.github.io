@@ -27,7 +27,7 @@ if (fs.existsSync(dataFile)) {
   fs.writeFileSync(dataFile, JSON.stringify({
     profile: {
       name: "Harvad Li",
-      linkedin_url: "https://www.linkedin.com/in/hzl/",
+      linkedin_url: "https://www.linkedin.com/in/harvad/",
       public_identifier: "hzl",
       last_sync: new Date().toISOString()
     },

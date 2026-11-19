@@ -4,7 +4,7 @@
  * This module helps extract LinkedIn post data through alternative methods
  */
 
-const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/hzl/';
+const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/harvad/';
 
 /**
  * Extract LinkedIn posts using web scraping techniques
@@ -64,7 +64,7 @@ function generateSearchUrls(searchQuery) {
   return {
     linkedInSearch: `https://www.linkedin.com/search/results/content/?keywords=${encodedQuery}&origin=GLOBAL_SEARCH_HEADER`,
     googleSearch: `https://www.google.com/search?q=site:linkedin.com+"Harvad+Li"+${encodedQuery}`,
-    linkedInProfile: `https://www.linkedin.com/in/hzl/recent-activity/all/`,
+    linkedInProfile: `https://www.linkedin.com/in/harvad/recent-activity/all/`,
     manualInstructions: `
       To find the activity ID:
       1. Search for the post using the search URLs above

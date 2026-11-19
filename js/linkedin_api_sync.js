@@ -543,7 +543,7 @@ class LinkedInAPISync {
         let content = this.extractPostContent(post);
 
         // Generate URL
-        let url = 'https://www.linkedin.com/in/hzl/recent-activity/all/';
+        let url = 'https://www.linkedin.com/in/harvad/recent-activity/all/';
         if (activityId) {
             url = `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
         }
@@ -843,7 +843,7 @@ class LinkedInAPISync {
             const isNewContent = !existingContents.has(contentPreview);
             
             // Don't add if URL is the generic fallback URL
-            const isGenericUrl = post.url === 'https://www.linkedin.com/in/hzl/recent-activity/all/';
+            const isGenericUrl = post.url === 'https://www.linkedin.com/in/harvad/recent-activity/all/';
             
             return (isNewUrl && isNewContent) && !isGenericUrl;
         });

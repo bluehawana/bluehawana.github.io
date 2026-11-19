@@ -14,7 +14,7 @@ const ACCESS_TOKEN = 'REMOVED_SECRET';
 class LinkedInHybridSync {
     constructor() {
         this.accessToken = ACCESS_TOKEN;
-        this.profileUrl = 'https://www.linkedin.com/in/hzl';
+        this.profileUrl = 'https://www.linkedin.com/in/harvad';
         this.profile = null;
     }
 
@@ -177,7 +177,7 @@ This demonstrates a fully automated workflow similar to GitHub repo syncing. The
 #LinkedIn #Automation #OAuth #TechDemo`,
                 date: new Date().toISOString().split('T')[0],
                 timestamp: Date.now(),
-                url: 'https://www.linkedin.com/in/hzl',
+                url: 'https://www.linkedin.com/in/harvad',
                 tags: ['LinkedIn', 'Automation', 'OAuth', 'TechDemo'],
                 source: 'linkedin_simulation',
                 activityId: Date.now().toString()
@@ -199,7 +199,7 @@ This creates a fully automated pipeline that respects API limitations while achi
 #Development #API #ContentSync`,
                 date: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0],
                 timestamp: Date.now() - 24 * 60 * 60 * 1000,
-                url: 'https://www.linkedin.com/in/hzl',
+                url: 'https://www.linkedin.com/in/harvad',
                 tags: ['Development', 'API', 'ContentSync'],
                 source: 'linkedin_simulation',
                 activityId: (Date.now() - 1000).toString()

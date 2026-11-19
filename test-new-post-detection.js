@@ -68,7 +68,7 @@ This demonstrates that the OAuth token is working correctly for profile access. 
 #LinkedIn #OAuth #Automation #TechTest`,
             date: now.toISOString().split('T')[0],
             timestamp: now.getTime(),
-            url: 'https://www.linkedin.com/in/hzl',
+            url: 'https://www.linkedin.com/in/harvad',
             author: profile,
             tags: ['LinkedIn', 'OAuth', 'Automation', 'TechTest'],
             engagement: {

@@ -144,7 +144,7 @@ async function generateFallbackPosts() {
             id: "fallback-1",
             text: "Excited to showcase my latest Android Auto CarPlayer IPTV application! 🚗📺 Built with Kotlin and featuring smart network optimization for seamless streaming in vehicles. The app includes hybrid media engine with ExoPlayer + VLC fallback for maximum compatibility. #AndroidAuto #AndroidDevelopment #IPTV #CarTech",
             publishedAt: "2025-08-20T10:30:00.000Z",
-            url: "https://linkedin.com/in/hzl",
+            url: "https://linkedin.com/in/harvad",
             platform: "linkedin",
             type: "project_showcase",
             tags: ["android-auto", "kotlin", "iptv", "car-tech"]
@@ -153,7 +153,7 @@ async function generateFallbackPosts() {
             id: "fallback-2", 
             text: "Just completed an advanced EPUB to Audiobook Reader for Android Auto! 📚🎙️ Features Azure Neural Voice TTS integration with hands-free operation. Perfect for converting your favorite ebooks into high-quality audiobooks during car rides. #EPUBReader #TextToSpeech #AndroidAuto #AudioBooks",
             publishedAt: "2025-08-18T14:15:00.000Z",
-            url: "https://linkedin.com/in/hzl",
+            url: "https://linkedin.com/in/harvad",
             platform: "linkedin", 
             type: "project_showcase",
             tags: ["epub-reader", "tts", "android-auto", "audiobooks"]
@@ -162,7 +162,7 @@ async function generateFallbackPosts() {
             id: "fallback-3",
             text: "Thrilled to share my portfolio update with Firebase App Distribution integration! 🔥 Now featuring real-time testing galleries with R2 storage for screenshots and videos. Modern cyberpunk UI meets professional deployment practices. Check it out at bluehawana.com #Firebase #WebDevelopment #Portfolio #CloudStorage",
             publishedAt: "2025-08-15T09:45:00.000Z",
-            url: "https://linkedin.com/in/hzl",
+            url: "https://linkedin.com/in/harvad",
             platform: "linkedin",
             type: "portfolio_update", 
             tags: ["firebase", "web-development", "portfolio", "cloud"]
@@ -171,7 +171,7 @@ async function generateFallbackPosts() {
             id: "fallback-4",
             text: "Successfully implemented automated LinkedIn post sync for my blog! 🤖⚡ Built with Netlify Functions, Community Management API, and intelligent error handling. Posts now automatically sync every 30 minutes with proper rate limiting and fallback mechanisms. #LinkedInAPI #Automation #NetlifyFunctions #BlogTech",
             publishedAt: "2025-08-12T16:20:00.000Z",
-            url: "https://linkedin.com/in/hzl",
+            url: "https://linkedin.com/in/harvad",
             platform: "linkedin",
             type: "technical_achievement",
             tags: ["linkedin-api", "automation", "netlify", "blog"]
@@ -180,7 +180,7 @@ async function generateFallbackPosts() {
             id: "fallback-5",
             text: "Diving deep into Android Auto development standards and automotive UI/UX best practices! 🚗💻 Learning how to create safe, driver-friendly interfaces that comply with Google's automotive design guidelines. The future of in-vehicle entertainment is exciting! #AndroidAuto #AutomotiveUX #SafetyFirst #InVehicleTech",
             publishedAt: "2025-08-10T11:30:00.000Z", 
-            url: "https://linkedin.com/in/hzl",
+            url: "https://linkedin.com/in/harvad",
             platform: "linkedin",
             type: "learning_journey",
             tags: ["android-auto", "automotive-ux", "learning", "design"]
@@ -189,7 +189,7 @@ async function generateFallbackPosts() {
             id: "fallback-6",
             text: "Proud to announce my GitHub repository now features comprehensive demo environments with live testing! 🚀 Each project includes Firebase App Distribution links, R2 storage integration, and professional showcase pages. Technology meets accessibility! #GitHub #OpenSource #DemoEnvironment #TechShowcase",
             publishedAt: "2025-08-08T13:10:00.000Z",
-            url: "https://linkedin.com/in/hzl", 
+            url: "https://linkedin.com/in/harvad", 
             platform: "linkedin",
             type: "open_source",
             tags: ["github", "open-source", "demo", "showcase"]

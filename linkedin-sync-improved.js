@@ -99,7 +99,7 @@ class LinkedInSyncManager {
             console.log('🔄 Attempting LinkedIn RSS sync...');
             
             // LinkedIn RSS URL format: https://www.linkedin.com/in/USERNAME/recent-activity/
-            const rssUrl = 'https://www.linkedin.com/in/hzl/recent-activity/';
+            const rssUrl = 'https://www.linkedin.com/in/harvad/recent-activity/';
             
             // Use RSS to JSON service
             const rssToJsonUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
@@ -132,7 +132,7 @@ class LinkedInSyncManager {
             
             // Use CORS proxy to access LinkedIn profile
             const proxyUrl = 'https://api.allorigins.win/get?url=';
-            const linkedinUrl = 'https://www.linkedin.com/in/hzl/recent-activity/';
+            const linkedinUrl = 'https://www.linkedin.com/in/harvad/recent-activity/';
             
             const response = await fetch(proxyUrl + encodeURIComponent(linkedinUrl));
             const data = await response.json();
@@ -221,7 +221,7 @@ class LinkedInSyncManager {
     async addManualPost() {
         const content = document.getElementById('post-content').value;
         const tags = document.getElementById('post-tags').value;
-        const url = document.getElementById('post-url').value || 'https://www.linkedin.com/in/hzl';
+        const url = document.getElementById('post-url').value || 'https://www.linkedin.com/in/harvad';
         
         if (!content.trim()) {
             alert('Please enter post content');
@@ -301,7 +301,7 @@ jobs:
         return items.slice(0, 5).map(item => ({
             content: this.cleanHTMLContent(item.description || item.title),
             date: new Date(item.pubDate).toISOString().split('T')[0],
-            url: item.link || 'https://www.linkedin.com/in/hzl',
+            url: item.link || 'https://www.linkedin.com/in/harvad',
             tags: this.extractTags(item.description || item.title),
             source: 'rss'
         }));

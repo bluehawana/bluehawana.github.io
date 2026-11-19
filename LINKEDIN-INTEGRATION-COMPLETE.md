@@ -11,7 +11,7 @@ The LinkedIn automation for Harvad Li is now **FULLY OPERATIONAL** using the Scr
 ### ✅ API Integration Status
 - **ScrapingDog API**: ✅ Working perfectly
 - **API Key**: `[HIDDEN]` (configured via environment variable)
-- **Profile Target**: https://www.linkedin.com/in/hzl/ (Harvad Li)
+- **Profile Target**: https://www.linkedin.com/in/harvad/ (Harvad Li)
 - **Posts Extraction**: ✅ Successfully extracting real LinkedIn posts
 - **Blog Generation**: ✅ Automatically generating Jekyll blog posts
 - **Automation Ready**: ✅ Scheduled sync script operational

@@ -128,7 +128,7 @@ function injectFooter() {
             <h3 class="footer-section-title">Social</h3>
             <ul class="footer-links">
                <li><a href="https://github.com/bluehawana" target="_blank">GitHub</a></li>
-               <li><a href="https://www.linkedin.com/in/hzl" target="_blank">LinkedIn</a></li>
+               <li><a href="https://www.linkedin.com/in/harvad" target="_blank">LinkedIn</a></li>
                <li><a href="https://twitter.com/bluehawana" target="_blank">Twitter</a></li>
             </ul>
          </div>

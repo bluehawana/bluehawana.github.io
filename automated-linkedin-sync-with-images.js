@@ -341,7 +341,7 @@ function updatePostsData(existingData, newPosts, profile) {
   const updatedData = {
     profile: {
       name: profile.fullName || "Harvad Li",
-      linkedin_url: "https://www.linkedin.com/in/hzl/",
+      linkedin_url: "https://www.linkedin.com/in/harvad/",
       public_identifier: profile.public_identifier || "hzl",
       last_sync: new Date().toISOString()
     },

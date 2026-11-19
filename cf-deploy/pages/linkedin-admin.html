@@ -260,7 +260,7 @@
         async function addPost() {
             const content = document.getElementById('post-content').value.trim();
             const tags = document.getElementById('post-tags').value.trim();
-            const url = document.getElementById('post-url').value.trim() || 'https://www.linkedin.com/in/hzl';
+            const url = document.getElementById('post-url').value.trim() || 'https://www.linkedin.com/in/harvad';
             
             if (!content) {
                 showStatus('Please enter post content', 'error');
@@ -374,7 +374,7 @@
             
             try {
                 // Try RSS sync
-                const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/hzl/recent-activity/';
+                const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/in/harvad/recent-activity/';
                 const response = await fetch(rssUrl);
                 const data = await response.json();
                 
@@ -382,7 +382,7 @@
                     const newPosts = data.items.slice(0, 5).map(item => ({
                         content: cleanContent(item.description || item.title),
                         date: new Date(item.pubDate).toISOString().split('T')[0],
-                        url: item.link || 'https://www.linkedin.com/in/hzl',
+                        url: item.link || 'https://www.linkedin.com/in/harvad',
                         tags: extractTags(item.description || item.title),
                         source: 'rss_sync'
                     }));

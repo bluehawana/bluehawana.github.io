@@ -98,8 +98,8 @@ class LinkedInAdvancedScraper {
     async scrapeMobileLinkedIn() {
         try {
             const mobileUrls = [
-                'https://m.linkedin.com/in/hzl',
-                'https://touch.www.linkedin.com/in/hzl'
+                'https://m.linkedin.com/in/harvad',
+                'https://touch.www.linkedin.com/in/harvad'
             ];
 
             for (const url of mobileUrls) {
@@ -124,9 +124,9 @@ class LinkedInAdvancedScraper {
     async scrapeDesktopLinkedIn() {
         try {
             const urls = [
-                'https://www.linkedin.com/in/hzl/recent-activity/posts/',
-                'https://www.linkedin.com/in/hzl/detail/recent-activity/',
-                'https://www.linkedin.com/in/hzl/'
+                'https://www.linkedin.com/in/harvad/recent-activity/posts/',
+                'https://www.linkedin.com/in/harvad/detail/recent-activity/',
+                'https://www.linkedin.com/in/harvad/'
             ];
 
             for (const url of urls) {
@@ -191,7 +191,7 @@ class LinkedInAdvancedScraper {
      */
     async extractJavaScriptData() {
         try {
-            const html = await this.fetchWithBrowserHeaders('https://www.linkedin.com/in/hzl/');
+            const html = await this.fetchWithBrowserHeaders('https://www.linkedin.com/in/harvad/');
             
             if (html && html.length > 50000) {
                 console.log(`⚡ Analyzing JavaScript data in ${html.length} bytes...`);
@@ -242,7 +242,7 @@ class LinkedInAdvancedScraper {
                                                 content: data.text,
                                                 date: new Date(Date.now() - (index * 12 * 60 * 60 * 1000)).toISOString().split('T')[0],
                                                 timestamp: Date.now() - (index * 12 * 60 * 60 * 1000),
-                                                url: 'https://www.linkedin.com/in/hzl',
+                                                url: 'https://www.linkedin.com/in/harvad',
                                                 tags: this.extractTags(data.text),
                                                 source: 'linkedin_javascript_json',
                                                 rawData: data
@@ -385,7 +385,7 @@ class LinkedInAdvancedScraper {
                         content: content,
                         date: new Date().toISOString().split('T')[0],
                         timestamp: Date.now(),
-                        url: 'https://www.linkedin.com/in/hzl',
+                        url: 'https://www.linkedin.com/in/harvad',
                         tags: this.extractTags(content),
                         source: 'linkedin_mobile_scraping'
                     });
@@ -463,7 +463,7 @@ class LinkedInAdvancedScraper {
                     content: content,
                     date: new Date(Date.now() - (index * 12 * 60 * 60 * 1000)).toISOString().split('T')[0],
                     timestamp: Date.now() - (index * 12 * 60 * 60 * 1000),
-                    url: 'https://www.linkedin.com/in/hzl',
+                    url: 'https://www.linkedin.com/in/harvad',
                     tags: this.extractTags(content),
                     source: `linkedin_api_${endpoint.split('/')[1]}`,
                     rawData: item

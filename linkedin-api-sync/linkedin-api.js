@@ -218,7 +218,7 @@ class LinkedInAPI {
             return `https://www.linkedin.com/feed/update/urn:li:activity:${activityId}/`;
         }
         
-        return 'https://www.linkedin.com/in/hzl';
+        return 'https://www.linkedin.com/in/harvad';
     }
 
     /**

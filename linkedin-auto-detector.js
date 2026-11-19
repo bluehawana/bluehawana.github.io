@@ -5,7 +5,7 @@
 
 class LinkedInAutoDetector {
     constructor() {
-        this.profileUrl = 'https://www.linkedin.com/in/hzl';
+        this.profileUrl = 'https://www.linkedin.com/in/harvad';
         this.methods = [
             'rss_feeds',
             'web_scraping',
@@ -19,8 +19,8 @@ class LinkedInAutoDetector {
      */
     async tryRSSFeeds() {
         const rssSources = [
-            'https://www.linkedin.com/in/hzl/recent-activity/',
-            'https://www.linkedin.com/in/hzl/detail/recent-activity/',
+            'https://www.linkedin.com/in/harvad/recent-activity/',
+            'https://www.linkedin.com/in/harvad/detail/recent-activity/',
             'https://www.linkedin.com/feed/hashtag/hzl'
         ];
 
@@ -95,7 +95,7 @@ class LinkedInAutoDetector {
             const endpoints = [
                 'https://www.linkedin.com/voyager/api/identity/profiles/hzl/networkinfo',
                 'https://www.linkedin.com/voyager/api/feed/updates',
-                'https://www.linkedin.com/in/hzl/detail/recent-activity/posts/'
+                'https://www.linkedin.com/in/harvad/detail/recent-activity/posts/'
             ];
 
             for (const endpoint of endpoints) {

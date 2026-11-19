@@ -105,7 +105,7 @@ MIT License - Feel free to use as inspiration for your own portfolio.
 
 **Harvad Li** - Full Stack Developer  
 📧 [hongzhili01@gmail.com](mailto:hongzhili01@gmail.com)  
-💼 [LinkedIn](https://linkedin.com/in/hzl)  
+💼 [LinkedIn](https://linkedin.com/in/harvad)  
 🐙 [GitHub](https://github.com/bluehawana)  
 
 ---

@@ -35,7 +35,7 @@ loadEnvFile(path.join(__dirname, '.env.local'));
 const CONFIG = {
   RAPIDAPI_KEY: process.env.RAPIDAPI_KEY,
   PROFILE_URN: process.env.LINKEDIN_PROFILE_URN || 'urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI', // Harvad Li
-  PROFILE_ID: 'hzl',
+  PROFILE_ID: 'harvad',
   MAX_POSTS_TO_SYNC: 20,
   OUTPUT_DIR: path.join(__dirname, '_data'),
   POSTS_DIR: path.join(__dirname, '_posts'),
@@ -347,8 +347,8 @@ function updatePostsData(existingData, newPosts) {
   const updatedData = {
     profile: {
       name: "Harvad Li",
-      linkedin_url: "https://www.linkedin.com/in/hzl/",
-      public_identifier: "hzl",
+      linkedin_url: "https://www.linkedin.com/in/harvad/",
+      public_identifier: "harvad",
       last_sync: new Date().toISOString()
     },
     extraction: {

@@ -249,7 +249,7 @@ class LinkedInOAuth {
             
             // Extract activity ID
             let activityId = null;
-            let url = 'https://www.linkedin.com/in/hzl';
+            let url = 'https://www.linkedin.com/in/harvad';
             
             if (item.id) {
                 // Extract activity ID from the URN

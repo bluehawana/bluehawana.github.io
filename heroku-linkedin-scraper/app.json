@@ -44,7 +44,7 @@
     },
     "LINKEDIN_PROFILE_URL": {
       "description": "Your LinkedIn profile URL",
-      "value": "https://www.linkedin.com/in/hzl"
+      "value": "https://www.linkedin.com/in/harvad"
     },
     "SCRAPE_INTERVAL_HOURS": {
       "description": "How often to scrape (in hours)",
