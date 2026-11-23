@@ -3,14 +3,14 @@
     "name": "Harvad Li",
     "linkedin_url": "https://www.linkedin.com/in/hzl/",
     "public_identifier": "hzl",
-    "last_sync": "2026-11-19T17:13:07.938Z"
+    "last_sync": "2026-11-23T19:59:43.422Z"
   },
   "extraction": {
-    "date": "2026-11-19T17:13:07.938Z",
+    "date": "2026-11-23T19:59:43.422Z",
     "method": "linkedinscraper-rapidapi",
-    "total_posts_found": 242,
-    "new_posts_this_sync": 20,
-    "images_downloaded": 11
+    "total_posts_found": 243,
+    "new_posts_this_sync": 1,
+    "images_downloaded": 0
   },
   "posts": [
     {
@@ -4610,6 +4610,25 @@
         "shares": 0
       },
       "posted_at": "2026-06-16T16:45:01.313Z"
+    },
+    {
+      "id": "linkedin-1795463983408-0",
+      "platform": "linkedin",
+      "author": "Harvad Li",
+      "author_profile": "https://www.linkedin.com/in/hzl",
+      "title": "https://lnkd.in/ernim_eX",
+      "content": "https://lnkd.in/ernim_eX",
+      "link": "https://www.linkedin.com/posts/hzl_how-linkedin-runs-compute-self-managed-kubernetes-activity-7530184159210676224-n1U3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "image": "",
+      "local_image": "",
+      "extracted_at": "2026-11-23T19:59:43.407Z",
+      "source": "linkedinscraper-rapidapi",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "posted_at": "2026-11-22T08:23:27.612Z"
     }
   ]
 }

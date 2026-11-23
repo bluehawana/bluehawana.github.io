@@ -1,6 +1,33 @@
 {
   "data": [
     {
+      "createdAt": "2026-11-22T08:23:27.612Z",
+      "activityId": "urn:li:activity:7530184159210676224",
+      "shareUrn": "urn:li:share:7530184158518657024",
+      "shareUrl": "https://www.linkedin.com/posts/hzl_how-linkedin-runs-compute-self-managed-kubernetes-activity-7530184159210676224-n1U3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
+      "content": {
+        "article": {
+          "urn": "urn:li:article:7421396817949782335",
+          "title": "How LinkedIn Runs Compute: Self-Managed Kubernetes on 500,000+ Bare-Metal Servers",
+          "subtitle": "linkedin.com",
+          "url": "https://www.linkedin.com/blog/engineering/infrastructure/how-linkedin-runs-compute-self-managed-kubernetes-on-500000-bare-metal-servers"
+        }
+      },
+      "actor": {
+        "actorId": "urn:li:member:164777712",
+        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
+        "name": "Harvad Li",
+        "description": "AI initiative product builder | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
+      },
+      "commentary": "https://lnkd.in/ernim_eX",
+      "activity": {
+        "numLikes": 0,
+        "numComments": 0,
+        "numShares": 0,
+        "reactionTypeCounts": []
+      }
+    },
+    {
       "createdAt": "2026-10-03T11:34:42.171Z",
       "activityId": "urn:li:activity:7512112893719371776",
       "shareUrn": "urn:li:ugcPost:7512112890661867520",
@@ -168,7 +195,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1795824000&v=beta&t=VATf060E0lW2mdwnG0dvAU7WTztLtMd4WDKEziCWQvo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1796068800&v=beta&t=0rsOks_--SSNtRL4eD9xcSOfmoDPPs-5EwOfk7CkihM"
         }
       },
       "actor": {
@@ -495,7 +522,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1795824000&v=beta&t=eVOggvpeStq0gTIYiksbKeG6PqLpI3veGBjdOdDk-gQ"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1796068800&v=beta&t=_1uXrfff-XItZiNPjBqS6l0vYXyoPSWNnzvBny6LjDo"
         }
       },
       "actor": {
@@ -661,40 +688,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-06-16T16:45:01.313Z",
-      "activityId": "urn:li:activity:7472690710711005184",
-      "shareUrn": "urn:li:ugcPost:7472622930636632064",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_grafana-splunk-azure-activity-7472690710711005184-GOpO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFeqs_9Qnif9A",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFeqs_9Qnif9A/feedshare-shrink_480/B4DZ7QW9NYI8Ag-/0/1781612139827?e=1796860800&v=beta&t=_XKJ_nXy_tNzNZKL7MApfEuUUOq_FLJkzNXZUEEii2Q"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQHKo1M7N4E92g",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQHKo1M7N4E92g/feedshare-shrink_20/B4DZ7QW9SoJwAM-/0/1781612140024?e=1796860800&v=beta&t=rSrysgU0uqn8aoaHEEbzDRqKYRtu-CZ_wRo1wyV_nXw"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "AI initiative product builder | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "New Year, New Project #7\n\nGrafana + Splunk on Azure ARO (Practical Enterprise Integration)\n\nMany teams using Splunk today ask the same question: \"Can we introduce Grafana without disrupting what already works?\" The short answer is yes — if you design it as an integration strategy, not a tool replacement.\n\nWhat we are implementing:\n- GitOps-first delivery with ArgoCD\n- Grafana on Azure ARO for operational dashboards and platform visibility\n- Splunk retained for log intelligence and analysis\n- Continuous feedback loop from Splunk findings to logging configuration tuning\n\nWhy this matters:\n- Better signal quality\n- Lower noise and unnecessary ingestion\n- Faster troubleshooting for engineering teams\n- Clearer ownership between platform and application layers\n\nObservability is powerful. But unchecked, it becomes expensive noise. Here's the architecture we built to balance reliability, visibility, and cost:\n→ Delivery — Teams push config to GitOps. ArgoCD syncs. ARO runs.\n→ Observability — SignalFx feeds metrics into Grafana. Dashboards stay sharp.\n→ Insight — App logs flow to Splunk. Patterns surface automatically.\n→ The loop — Splunk insights feed back into logging config via GitOps. Less noise. Lower cost. Better signal.\n\nThe key insight: the feedback loop is the product. Without it, you're just paying more for more dashboards.\n\nBuilt with: Azure Red Hat OpenShift · Grafana · SignalFx · Splunk · ArgoCD\n\nThis is not about \"more monitoring tools.\" It is about building a monitoring model that is scalable, cost-aware, and enterprise-ready. If your organization is Splunk-first and considering Grafana, this path is realistic and incremental. \n\n#Grafana #Splunk #Azure #ARO #ArgoCD #GitOps #Observability #PlatformEngineering #SRE #CloudArchitecture",
-      "activity": {
-        "numLikes": 0,
-        "numComments": 0,
-        "numShares": 0,
-        "reactionTypeCounts": []
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzI2OTA3MTA3MTEwMDUxODQtMTc4MTYyODMwMTI5MA==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzUyMDQwNjc4NDIwMjc1MjAtMTc4MjIyNzUzMjMyNw==:20"
 }
