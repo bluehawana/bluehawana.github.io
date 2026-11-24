@@ -195,7 +195,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1796097600&v=beta&t=fp51JHW8dDqtrzj2i2PR3lW9t1K6TUbv6ZWwVXZcPcc"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1796155200&v=beta&t=nWlA4RRmPLKFjhJq8VEzCnT4RF_1jj6EJxFZxy5gZLc"
         }
       },
       "actor": {
@@ -522,7 +522,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1796097600&v=beta&t=dRtoBDq25XYU6F0IHoJOqroJWdGFlm2b76jD7z6Rehs"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1796155200&v=beta&t=BwBY0EvzDMOsWkuSgxgcXOTeA48mETpOMMLdJdhxzsQ"
         }
       },
       "actor": {
@@ -595,48 +595,6 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-06-24T12:03:28.810Z",
-      "activityId": "urn:li:activity:7475518961342767104",
-      "shareUrn": "urn:li:share:7475518958230519811",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_hackday2026-activity-7475518961342767104-L9O8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D4D22AQFrBX5uDDr8Rg",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFrBX5uDDr8Rg/feedshare-shrink_480/B4DZ75g4KWGwAk-/0/1782302607094?e=1796860800&v=beta&t=7FeyXBCy8Yy3b4DJikXk5dpIeXwQRn9NIDmB7Gq4pgE"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "AI initiative product builder | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "As we embark on our journey under #Hackday2026, we start as strangers, having just met in the meeting room this Monday. While no one knows if we are destined to win, I hold that belief firmly. When team members approached me one by one to join my team, my response was simple: yes, why not.\n\nKey aspects to consider include:\n1. As the team leader, ambition to win is crucial.\n2. Fostering collaboration among team members and earning their trust in a short time is essential.\n\nI recognize that no one expects our team to win except for me. Yet, they trust and support me to the best of their abilities. This gives us the opportunity to validate our proposal in the business world. I am dedicated to ensuring they leave with something meaningful to share, rather than disappointment.\n\nWe all need a champion's heart, as this experience is truly unforgettable. With this mindset, we can challenge ourselves to step out of our comfort zones and dare to do something different, honoring ourselves and our team members as well. That is the addiction of victories; once you taste it, you will never forget it.\n\nA big applause to all of you! Mahnoor Ali Cheema, Sara Asghari, Chirag Ashiyani, Mattias Jakobsson, Roman Dolanski",
-      "activity": {
-        "numLikes": 26,
-        "numComments": 0,
-        "numShares": 1,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 22
-          },
-          {
-            "type": "PRAISE",
-            "count": 2
-          },
-          {
-            "type": "APPRECIATION",
-            "count": 2
-          }
-        ]
-      }
     }
-  ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzU1MTg5NjEzNDI3NjcxMDQtMTc4MjMwMjYwODc4OA==:20"
+  ]
 }
