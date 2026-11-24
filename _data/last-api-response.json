@@ -195,7 +195,7 @@
           "title": "Thomas Wolf (@Thom_Wolf) on X",
           "subtitle": "x.com",
           "url": "https://x.com/thom_wolf/status/2092923071829049592?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1796068800&v=beta&t=0rsOks_--SSNtRL4eD9xcSOfmoDPPs-5EwOfk7CkihM"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEpekpo3-T-Bw/articleshare-shrink_480/B56aGARa73IsAM-/0/1793153414657?e=1796097600&v=beta&t=fp51JHW8dDqtrzj2i2PR3lW9t1K6TUbv6ZWwVXZcPcc"
         }
       },
       "actor": {
@@ -522,7 +522,7 @@
           "title": "Alex Smith (@ninja_maths) on X",
           "subtitle": "x.com",
           "url": "https://x.com/ninja_maths/status/2074178148069949834?s=12&t=mk5m41Ua9Xufxc5A8Ia-eA",
-          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1796068800&v=beta&t=_1uXrfff-XItZiNPjBqS6l0vYXyoPSWNnzvBny6LjDo"
+          "image_url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQFpKheJRarCoA/articleshare-shrink_480/B4DZ9NnGBgJ8AU-/0/1783713523106?e=1796097600&v=beta&t=dRtoBDq25XYU6F0IHoJOqroJWdGFlm2b76jD7z6Rehs"
         }
       },
       "actor": {
@@ -636,59 +636,7 @@
           }
         ]
       }
-    },
-    {
-      "createdAt": "2026-06-23T15:12:12.349Z",
-      "activityId": "urn:li:activity:7475204067842027520",
-      "shareUrn": "urn:li:ugcPost:7475204066944425984",
-      "shareUrl": "https://www.linkedin.com/posts/hzl_2026hackday-claimgenerationbot-hackathon2026-activity-7475204067842027520-r3Q8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWNEOYBdb1mUVFywmMzK0UKcw_6cTpqScY",
-      "content": {
-        "images": [
-          {
-            "urn": "urn:li:digitalmediaAsset:D5622AQEhaQ-P1d987A",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEhaQ-P1d987A/feedshare-shrink_160/B56Z71CeTyHIAk-/0/1782227530004?e=1796860800&v=beta&t=KryQb8oOxRCiqBrOlcoTrLhICJmpYCm8q9UHBFLOeKM"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D5622AQElF8FVdjob2Q",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQElF8FVdjob2Q/feedshare-shrink_1280/B56Z71CdycJsAU-/0/1782227527472?e=1796860800&v=beta&t=fyDUOC7_HFmsy8WIJuLiYp-FEiG0RlHfqv7Uy_sBguE"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D5622AQEYCUQqY53EiQ",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQEYCUQqY53EiQ/feedshare-shrink_800/B56Z71CeFpGgAc-/0/1782227529066?e=1796860800&v=beta&t=mDPuH9Obi6RsxPhHovMEXKFldf6W8tVbEDXobacw-GA"
-          },
-          {
-            "urn": "urn:li:digitalmediaAsset:D5622AQHq5X1l2NW43Q",
-            "accessibilityText": "View image",
-            "url": "https://media.licdn.com/dms/image/v2/D5622AQHq5X1l2NW43Q/feedshare-image-high-res/B56Z71CdsdKEAU-/0/1782227527480?e=1796860800&v=beta&t=ipSbz3qJwlC8nKPnCscwMHjGPImvpds-3eH8zKzcMns"
-          }
-        ]
-      },
-      "actor": {
-        "actorId": "urn:li:member:164777712",
-        "actorUrn": "urn:li:fsd_profile:ACoAAAnSTvABXgay-z5smZQ1OOq0MblgiB2GRLI",
-        "name": "Harvad Li",
-        "description": "AI initiative product builder | Cloud-Native (Kubernetes, Microservices) | Cloud Architect | DevOps | FinOps"
-      },
-      "commentary": "Excited to share that our team won a trophy at Volvo Group’s #2026HackDay after two days of intense collaboration. While we didn't take first place, it was still a proud win.\n\nWe launched #ClaimGenerationBot, an LLM-powered tool designed to boost efficiency, reduce labor costs, and accelerate claim generation. It’s rewarding to see it recognized and appreciated in action.\n\n#Hackathon2026 #VolvoTruck #AI #LLM #ClaimGenerationBot",
-      "activity": {
-        "numLikes": 33,
-        "numComments": 5,
-        "numShares": 0,
-        "reactionTypeCounts": [
-          {
-            "type": "LIKE",
-            "count": 22
-          },
-          {
-            "type": "PRAISE",
-            "count": 11
-          }
-        ]
-      }
     }
   ],
-  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzUyMDQwNjc4NDIwMjc1MjAtMTc4MjIyNzUzMjMyNw==:20"
+  "cursor": "dXJuOmxpOmFjdGl2aXR5Ojc0NzU1MTg5NjEzNDI3NjcxMDQtMTc4MjMwMjYwODc4OA==:20"
 }
